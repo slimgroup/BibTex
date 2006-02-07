@@ -1,14 +1,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% TECHNICAL REPORTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+@TECHREPORT{hennenfent06sssr,
+AUTHOR = {G. Hennenfent},
+YEAR = 2006,
+TITLE = {Stable seismic signal recovery},
+INSTITUTION =  {University of British Columbia}
+}
 @TECHREPORT{hennenfent06sssr2,
 AUTHOR = {G. Hennenfent and F.J. Herrmann},
 YEAR = 2006,
 TITLE = {Stable seismic signal recovery: Application to data continuation in {2/3D}},
 INSTITUTION =  {University of British Columbia}
 }
-
 @TECHREPORT{hennenfent06sssr1,
 AUTHOR = {G. Hennenfent and F.J. Herrmann},
 YEAR = 2006,
@@ -16,14 +20,14 @@ TITLE = {Stable seismic signal recovery: Theory},
 INSTITUTION =  {University of British Columbia}
 }
 
+
 @TECHREPORT{sastry06ssr,
-AUTHOR = {C.S. Sastry and F. J. Herrmann },
+AUTHOR = {C.S. Sastry and F.J. Herrmann },
 YEAR = 2006,
 TITLE = {Recent developments in sparse signal reconstruction and their application in seismic imaging},
 INSTITUTION =  {University of British Columbia},
 NOTE = {(In preparation)}
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% JOURNAL PAPERS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,11 +37,6 @@ TITLE = {Seismic denoising with non-uniformly sampled curvelets},
 JOURNAL = {Computing in Science and Engineering},
 YEAR = 2006,
 NOTE = {(Invited paper)}
-\abstract{In this paper, we present an extension of the Fast Discrete Curvelet
-  Transform (FDCT) to non-uniformly sampled data, NFDCT. With this
-  extension to non-uniform grids, we are able to not only restore
-  curvelet compression rates for non-uniformly sampled data but also
-  remove noise and map the data to a regular grid.}
 }
 
 @ARTICLE{herrmannn06sssr,
@@ -47,96 +46,25 @@ NOTE = {(In preparation)},
 YEAR = 2006
 }
 
-@ARTICLE{gae,
-AUTHOR = {P.P. Moghaddam and H. Amindavar, R.L. Kirlin},
-TITLE = {Synthetic Seismograms for a Controlled Seismic Source Experiment: An Application of Reciprocity},
-JOURNAL = {Geophysics},
-YEAR = 2004,
-NOTE= {(Accepted, under revision)}
-}
-
 @ARTICLE{felixSparconti,
-AUTHOR = {F. J. Herrmann and P. P. Moghaddam and C. Stolk},
-TITLE = {Sparsity- and continuity-promoting seismic image recovery with
-  curvelet frames},
-JOURNAL = {abcd},
+AUTHOR = {F.J. Herrmann and P.P. Moghaddam and C. Stolk},
+TITLE = {Sparsity- and continuity-promoting seismic image recovery with curvelet frames},
 YEAR = 2006,
-\abstract{A nonlinear singularity-preserving solution to seismic image
-  recovery with sparseness and continuity constraints is proposed. The
-  method explicitly explores the curvelet transform as a directional
-  frame expansion that, by virtue of its sparsity on seismic images
-  and its invariance under the Hessian of the linearized imaging
-  problem, allows for a stable recovery of the migration amplitudes
-  from noisy data. The method corresponds to a preconditioning that
-  corrects the amplitudes during a post-processing step.  The solution
-  is formulated as a nonlinear optimization problem where sparsity in
-  the curvelet domain as well as continuity along the imaged
-  reflectors are jointly promoted. To enhance sparsity, the
-  $\ell_1$-norm on the curvelet coefficients is minimized while
-  continuity is promoted by minimizing an anisotropic diffusion norm
-  on the image. The performance of the recovery scheme is evaluated
-  with a post-stack 'wave-equation' migration code on a synthetic
-  dataset.}
-
+NOTE = {(In preparation)}
 }
 
 @ARTICLE{FelixPrimaMult,
-AUTHOR = {F. J. Herrmann and U. Boeniger and D.J. Verschuur},
-TITLE = {Nonlinear primary-multiple separation with directional
-  curvelet frames},
-JOURNAL = {In preparation},
+AUTHOR = {F.J. Herrmann and U. Boeniger and D.J. Verschuur},
+TITLE = {Nonlinear primary-multiple separation with directional curvelet frames},
 YEAR = 2006,
-\abstract{Predictive multiple suppression methods consist of two main steps: a
-  prediction step, during which multiples are predicted from seismic
-  data, and a primary-multiple separation step, during which the
-  predicted multiples are matched with the true multiples in the data.
-  The last step is crucial in practice: an incorrect separation, by
-  adaptive subtraction for instance, will cause residual multiple
-  energy in the result or may lead to a distortion
-  in the primaries, or both. To reduce these adverse effects, a new
-  transform domain is proposed where primaries and multiples are
-  separated rather than matched. The separation is carried out on the
-  basis of differences in the multiscale and multidirectional
-  characteristics of these two signal components. Our method is based
-  on the curvelet transform that maps the data into almost orthogonal
-  localized prototype waveforms with varying directional and
-  spatial-temporal content. The data is separated into its primaries-only
-  and multiples-only components by an iterative thresholding
-  scheme which is stable under noisy input data. The separation is
-  formulated as an optimization problem that minimizes the data misfit
-  and imposes sparseness (weighted $\ell^1$-norm) on both signal
-  components in the transformed domain.  Whenever the prediction for
-  the two signal components correlate the signal is suppressed while
-  for regions where the correlation is small the method seeks the
-  sparsest set of coefficients that represent either signal component.
-  As such our method differs from traditional matched filtering
-  techniques. The Bayesian interpretation of our method is that the
-  $\log$-likelyhood function is minimized while the two signal
-  components are assumed to be given by a superposition of prototype
-  waveforms drawn independently from a probability function weighted
-  by predictions for the primaries and multiples. Synthetic and field
-  data examples based on multiple prediction by the data-driven
-  surface-related multiple elimination (SRME) method show a considerable
-  improvement in multiple suppression compared to the tradictional
-  adaptive matching, which translates in an improved interpretation of the primaries.}
+NOTE = {(In preparation)}
 }
 
 @ARTICLE{TimeLapse,
-AUTHOR = {M. Beyreuther and J. Cristall and F. J.  Herrmann},
+AUTHOR = {M. Beyreuther and J. Cristall and F.J.  Herrmann},
 TITLE = {Computation of time-lapse differences with 3D directional frames},
-JOURNAL = {abcd},
 YEAR = 2006,
-\abstract{We present an alternative method of extracting production related
-differences from time-lapse seismic data sets. Our method is not
-based on the actual subtraction of the two data sets, risking the
-enhancement of noise and introduction of artifacts due to local
-phase rotation
-and slightly misaligned events.  Rather, it mutes events of the
-monitor survey with respect to the baseline survey based on the
-magnitudes of coefficients in a sparse and local atomic
-decomposition. Our technique is demonstrated to be an effective
-tool for enhancing the time-lapse signal from surveys which have
-been cross-equalized.}
+NOTE = {(In preparation)}
 }
 
 @ARTICLE{redundantDict,
@@ -145,10 +73,6 @@ TITLE = {Seismic singularity characterization with redundant dictionaries},
 NOTE = {(In preparation)},
 YEAR = 2006
 }
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% EXPANDED ABSTRACTS & RELATED PRESENTATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -159,7 +83,6 @@ TITLE = {Sparseness-constrained data continuation with frames: Applications to m
 BOOKTITLE = {SEG International Exposition and 75th Annual Meeting},
 YEAR = 2005
 }
-
 @INPROCEEDINGS{hennenfent05seg_pres,
 AUTHOR = {G. Hennenfent and F.J. Herrmann},
 TITLE = {Sparseness-constrained data continuation with frames: Applications to missing traces and aliased signals in {2/3D}},
@@ -168,13 +91,13 @@ YEAR = 2005,
 NOTE = {(presentation slides)}
 }
 
+
 @INPROCEEDINGS{hennenfent04seg,
 AUTHOR = {G. Hennenfent and F.J. Herrmann},
 TITLE = {Three-term Amplitude-Versus-Offset ({AVO}) inversion revisited by Curvelet and Wavelet transforms},
 BOOKTITLE = {SEG International Exposition and 74th Annual Meeting},
 YEAR = 2004
 }
-
 @INPROCEEDINGS{hennenfent04seg_pres,
 AUTHOR = {G. Hennenfent and F.J. Herrmann},
 TITLE = {Three-term Amplitude-Versus-Offset ({AVO}) inversion revisited by Curvelet and Wavelet transforms},
@@ -183,26 +106,44 @@ YEAR = 2004,
 NOTE = {(presentation slides)}
 }
 
-@INPROCEEDINGS{herrmann2004segIm1,
+
+@INPROCEEDINGS{herrmann04segMig,
 AUTHOR = {P.P. Moghaddam and F.J. Herrmann},
 TITLE = {Migration preconditioning with Curvelets},
 BOOKTITLE = {SEG International Exposition and 74th Annual Meeting},
 YEAR = 2004
 }
 
-@INPROCEEDINGS{herrmann2004segIm,
-AUTHOR = {F.J. Herrmann and P.P. Moghaddam},
-TITLE = {Curvelet-domain preconditioned "wave-equation" depth-migration with sparseness & illumination constraints},
+
+@INPROCEEDINGS{herrmann04segMult,
+AUTHOR = {F.J. Herrmann and E.J. Verschuur},
+TITLE = {Curvelet-domain multiple elimination with sparseness constraints},
 BOOKTITLE = {SEG International Exposition and 74th Annual Meeting},
 YEAR = 2004
 }
+@INPROCEEDINGS{herrmann04segMult_pres,
+AUTHOR = {F.J. Herrmann and E.J. Verschuur},
+TITLE = {Curvelet-domain multiple elimination with sparseness constraints},
+BOOKTITLE = {SEG International Exposition and 74th Annual Meeting},
+YEAR = 2004,
+NOTE = {(presentation slides)}
+}
 
-@INPROCEEDINGS{herrmann2004segOverview,
+
+@INPROCEEDINGS{herrmann04segOverview,
 AUTHOR = {F.J. Herrmann and P.P. Moghaddam},
 TITLE = {Curvelet-based non-linear adaptive subtraction with sparseness constraints},
 BOOKTITLE = {SEG International Exposition and 74th Annual Meeting},
 YEAR = 2004
 }
+@INPROCEEDINGS{herrmann04segOverview_pres,
+AUTHOR = {F.J. Herrmann and P.P. Moghaddam},
+TITLE = {Curvelet-based non-linear adaptive subtraction with sparseness constraints},
+BOOKTITLE = {SEG International Exposition and 74th Annual Meeting},
+YEAR = 2004,
+NOTE = {(presentation slides)}
+}
+
 
 %%% EAGE
 @INPROCEEDINGS{hennenfent05eage,
@@ -211,7 +152,6 @@ TITLE = {Seismic deconvolution revisited with Curvelet frames},
 BOOKTITLE = {67th EAGE conference \& Exhibition},
 YEAR = 2005
 }
-
 @INPROCEEDINGS{hennenfent05eage_poster,
 AUTHOR = {G. Hennenfent and F.J. Herrmann and R. Neelamani},
 TITLE = {Seismic deconvolution revisited with Curvelet frames},
@@ -220,37 +160,37 @@ YEAR = 2005,
 NOTE = {(poster)}
 }
 
-@INPROCEEDINGS{mayasami_poster,
-AUTHOR = {M. Mayasami and F.J. Herrmann},
-TITLE = {Seismic singularity characterization with redundant dictionaries},
-BOOKTITLE = {NSERC CRD site visit},
-YEAR = 2006,
-NOTE = {(poster)}
+
+@INPROCEEDINGS{herrmann05eageInt,
+AUTHOR = {F.J. Herrmann and G. Hennenfent},
+TITLE = {Robust curvelet-domain data continuation with sparseness constraints},
+BOOKTITLE = {67th EAGE conference \& Exhibition},
+YEAR = 2005
+}
+@INPROCEEDINGS{herrmann05eageInt_pres,
+AUTHOR = {F.J. Herrmann and G. Hennenfent},
+TITLE = {Robust curvelet-domain data continuation with sparseness constraints},
+BOOKTITLE = {67th EAGE conference \& Exhibition},
+YEAR = 2005,
+NOTE = {(presentation slides)}
 }
 
-@INPROCEEDINGS{urs_poster,
-AUTHOR = {U. Boeniger and F.J. Herrmann},
-TITLE = {Curvelet-domain multiple elimination with sparseness constraints},
-BOOKTITLE = {NSERC CRD site visit},
-YEAR = 2006,
-NOTE = {(poster)}
-}
 
-
-
-@INPROCEEDINGS{herrmann2004eageIm,
+@INPROCEEDINGS{herrmann04eageMig,
 AUTHOR = {F.J. Herrmann and P.P. Moghaddam},
 TITLE = {Curvelet-domain least-squares migration with sparseness constraints},
 BOOKTITLE = {66th EAGE conference \& Exhibition},
 YEAR = 2004
 }
 
-@INPROCEEDINGS{EAGE2005im1,
+
+@INPROCEEDINGS{herrmann05eageMig,
 AUTHOR = {F.J. Herrmann and P.P. Moghaddam and R. Kirlin},
 TITLE = {Optimization strategies for sparseness- and continuity-enhanced imaging: theory},
 BOOKTITLE = {67th EAGE conference \& Exhibition},
 YEAR = 2005
 }
+
 
 %%% CSEG
 @INPROCEEDINGS{herrmann05cseg,
@@ -259,6 +199,14 @@ TITLE = {Non-linear data continuation with redundant frames},
 BOOKTITLE = {CSEG National Convention},
 YEAR = 2005
 }
+@INPROCEEDINGS{herrmann05cseg_pres,
+AUTHOR = {F.J. Herrmann and G. Hennenfent},
+TITLE = {Non-linear data continuation with redundant frames},
+BOOKTITLE = {CSEG National Convention},
+YEAR = 2005,
+NOTE = {(presentation slides)}
+}
+
 
 @INPROCEEDINGS{hennenfent05cseg,
 AUTHOR = {G. Hennenfent and F.J. Herrmann and R. Neelamani},
@@ -266,7 +214,6 @@ TITLE = {Sparseness-constrained seismic deconvolution with Curvelets},
 BOOKTITLE = {CSEG National Convention},
 YEAR = 2005
 }
-
 @INPROCEEDINGS{hennenfent05cseg_pres,
 AUTHOR = {G. Hennenfent and F.J. Herrmann and R. Neelamani},
 TITLE = {Sparseness-constrained seismic deconvolution with Curvelets},
@@ -275,13 +222,20 @@ YEAR = 2005,
 NOTE = {(presentation slides)}
 }
 
-INPROCEEDINGS{herrmann2005csegMigration,
+
+@INPROCEEDINGS{herrmann05csegMig,
 AUTHOR = {F.J. Herrmann and P.P. Moghaddam},
 TITLE = {Non-linear regularization in seismic imaging},
 BOOKTITLE = {CSEG National Convention},
 YEAR = 2005
- }
-
+}
+@INPROCEEDINGS{herrmann05csegMig_pres,
+AUTHOR = {F.J. Herrmann and P.P. Moghaddam},
+TITLE = {Non-linear regularization in seismic imaging},
+BOOKTITLE = {CSEG National Convention},
+YEAR = 2005,
+NOTE = {(presentation slides)}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% MISC
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -291,21 +245,64 @@ BOOKTITLE = {Proceedings on {Q} estimation},
 YEAR = 2004
 }
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% MISC PRESENTATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 @INPROCEEDINGS{hennenfent06gradsem,
-AUTHOR = "G. Hennenfent",
-TITLE = "Uniform Uncertainty Principle Applied to Seismic Signal Recovery",
-BOOKTITLE = "EOS@UBC Graduate Seminar Series",
+AUTHOR = {G. Hennenfent},
+TITLE = {Uniform Uncertainty Principle Applied to Seismic Signal Recovery},
+BOOKTITLE = {EOS@UBC Graduate Seminar Series},
 MONTH = {January},
 YEAR = 2006,
 NOTE = {(presentation slides)}
 }
 
-@INPROCEEDINGS{sastry06_pres,
+@INPROCEEDINGS{sastry05uup_pres,
 AUTHOR = {C.S. Sastry},
 TITLE = {Signal reconstruction from incomplete and inaccurate measurements},
 MONTH = {December},
 YEAR = 2005
+}
+
+@INPROCEEDINGS{sastry06nfft_pres,
+AUTHOR = {C.S. Sastry and G. Hennenfent and F.J. Herrmann},
+TITLE = {Non-uniform fast {F}ourier transform},
+MONTH = {February},
+BOOKTITLE = {NSERC CRD site visit},
+YEAR = 2006
+}
+
+@INPROCEEDINGS{hennenfent06sssr_pres,
+AUTHOR = {G. Hennenfent and F.J. Herrmann},
+TITLE = {Stable seismic signal recovery},
+MONTH = {February},
+BOOKTITLE = {NSERC CRD site visit},
+YEAR = 2006
+}
+
+@INPROCEEDINGS{boeniger06mult_pres,
+AUTHOR = {U. Boeniger and F.J. Herrmann},
+TITLE = {Curvelet domain primary-multiple separation with sparseness constraints},
+MONTH = {February},
+BOOKTITLE = {NSERC CRD site visit},
+YEAR = 2006
+}
+
+@INPROCEEDINGS{moghaddam06imag_pres,
+AUTHOR = {P.P. Moghaddam and F.J. Herrmann},
+TITLE = {Sparsity and continuity enhancing seismic imaging using curvelet frames},
+MONTH = {February},
+BOOKTITLE = {NSERC CRD site visit},
+YEAR = 2006
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% MISC POSTERS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@INPROCEEDINGS{maysami_poster,
+AUTHOR = {M. Maysami and F.J. Herrmann},
+TITLE = {Seismic singularity characterization with redundant dictionaries},
+BOOKTITLE = {NSERC CRD site visit},
+YEAR = 2006,
+NOTE = {(poster)}
 }

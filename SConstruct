@@ -28,6 +28,8 @@ author = ARGUMENTS.get('author','all')
 year   = int(ARGUMENTS.get('year',0))
 kwd    = ARGUMENTS.get('kwd','all')
 
+bibfile = 'slimbib.bib'
+
 cond = ''
 if author is not 'all':
     cond = cond+'''-c 'author : "%s" ' '''%author
@@ -36,4 +38,8 @@ if year is not 0:
 if kwd is not 'all':
     cond = cond+'''-c 'keywords : "%s" ' '''%kwd
 
-Command('res.bib','slimbib.bib','bib2bib -ob $TARGET $SOURCE '+cond)
+Default(Command('res.bib',bibfile,
+                'bib2bib -ob $TARGET $SOURCE '+cond))
+
+Command('ghennenfent.bib',bibfile,
+        '''bib2bib -ob $TARGET $SOURCE  -c 'author : "Hennenfent" ' ''')

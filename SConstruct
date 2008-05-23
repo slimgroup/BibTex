@@ -32,6 +32,7 @@ author = ARGUMENTS.get('author','all')
 year   = int(ARGUMENTS.get('year',0))
 kwd    = ARGUMENTS.get('kwd','all')
 fname  = ARGUMENTS.get('fname','res.bib')
+ptype  = ARGUMENTS.get('type','all')
 
 bibfile = 'slimbib.bib'
 
@@ -42,6 +43,8 @@ if year is not 0:
     cond = cond+'-c year=%d '%year
 if kwd is not 'all':
     cond = cond+'''-c 'keywords : "%s" ' '''%kwd
+if ptype is not 'all':
+    cond = cond+'''-c '$$type="%s" ' '''%ptype
 
 Command(fname,bibfile,
         'bib2bib -ob $TARGET $SOURCE '+cond)

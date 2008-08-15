@@ -1,10 +1,46 @@
 
-%% Created for James Johnson at 2008-08-14 16:35:47 -0700 
+%% Created for James Johnson at 2008-08-15 11:33:26 -0700 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@techreport{herrmann08csf,
+
+	Abstract = {The fact that the numerical complexity of
+	wavefield simulation is proportional to the size of the
+	discretized model and acquisition geometry, and not to the
+	complexity of the simulated wavefield, is the main impediment
+	within seismic imaging. By turning simulation into a
+	compressive sensing problem---where simulated data is
+	recovered from a relatively small number of independent
+	simultaneous sources---we remove this impediment by showing
+	that compressively sampling a simulation is equivalent to
+	compressively sampling the sources, followed by solving a
+	reduced system. As in compressive sensing, this allows for a
+	reduction in sampling rate and hence in simulation costs. We
+	demonstrate this principle for the time-harmonic Helmholtz
+	solver. The solution is computed by inverting the reduced
+	system, followed by a recovery of the full wavefield with a
+	sparsity promoting program. Depending on the wavefield's
+	sparsity, this approach can lead to significant cost
+	reductions, in particular when combined with the implicit
+	preconditioned Helmholtz solver, which is known to converge
+	even for decreasing mesh sizes and increasing angular
+	frequencies. These properties make our scheme a viable
+	alternative to explicit time-domain finite-differences.},
+
+	Author = {Felix J. Herrmann and Yogi A. Erlangga and Tim T.Y. Lin},
+	Date-Added = {2008-08-15 11:30:17 -0700},
+	Date-Modified = {2008-08-15 11:33:18 -0700},
+	Institution = {UBC Earth and Ocean Sciences Department},
+	Keywords = {SLIM, full-waveform},
+	Month = {August},
+	Number = {TR-2008-3},
+	Title = {Compressive simultaneous full-waveform simulation},
+	Year = {2008},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann08csf.pdf}}
 
 @techreport{hennenfent08onr,
 	Abstract = {Geophysical inverse problems typically involve a
@@ -25,12 +61,12 @@
 	curvelet reconstructions with sparsity promoting inversion.},
 	Author = {Gilles Hennenfent and Felix J. Herrmann},
 	Date-Added = {2008-08-14 13:48:52 -0700},
-	Date-Modified = {2008-08-14 16:35:10 -0700},
+	Date-Modified = {2008-08-15 11:27:58 -0700},
 	Institution = {UBC Earth and Ocean Sciences Department},
 	Keywords = {SLIM},
 	Month = {August},
 	Number = {1},
-	Title = {One-norm regularized inversino: Learning form the Pareto curve},
+	Title = {One-norm regularized inversion: Learning form the Pareto curve},
 	Url = {http://slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2008/hennenfent08seg.pdf},
 	Year = {2008},
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2008/hennenfent08seg.pdf}}

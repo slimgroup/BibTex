@@ -1,10 +1,153 @@
 
-%% Created for Reza Shahidi at 2008-08-24 17:21:56 -0700 
+%% Created for James Johnson at 2008-08-26 15:47:29 -0700 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@unpublished{vandenberg08esr,
+	Author = {E. van den Berg},
+	Date-Added = {2008-08-26 15:44:44 -0700},
+	Date-Modified = {2008-08-26 15:45:58 -0700},
+	Keywords = {SLIM, IAM, Presentation},
+	Title = {Exact sparse reconstruction and neighbourly polytopes},
+	Year = {2008},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Private/Presentations/2008/vandenberg08iam_pres.pdf}}
+
+@unpublished{herrmann08csa,
+	Abstract = {Seismic data processing and imaging are firmly rooted in the well-established paradigm of regular Nyquist sampling. Faced with a typical uncooperative environment, practitioners of seismic data acquisition make all efforts to comply to this theory by creating regularly-sampled seismic-data volumes that are suitable for Fourier-based processing flows. The current advent of new alternative transform domains--- such as the sparsifying curvelet domain, where seismic data is decomposed into localized, multiscale and multidirectional plane waves--- opens the possibility to change this paradigm by no longer combating sampling irregularity but by embracing it. During this talk, we show that as long as seismic data volumes permit a compressible representation---i.e., data can be represented as a superposition of relatively few number of elementary waveforms--- Nyquist sampling is unnecessary pessimistic. So far, nothing new, we all know from the work on Fourier- or other transform-based seismic-data regularization methodologies that wavefields can be recovered accurately from sub-Nyquist samplings through some sort of optimization procedure. What is new, however, are recent insights from the field of "compressive sampling", which dictate the conditions that guarantee or, at least, in practice provide conditions that favor sparsity-promoting recovery from sub-Nyquist sampling. Random sub-sampling, or to be more precise, jitter sub-sampling creates favorable conditions for curvelet-based recovery. We explain this phenomenon by arguing that this type of sampling leads to noisy data, hence our slogan "Simply denoise: wavefield reconstruction via jittered undersampling", where we bank on separating incoherent sub-sampling noise with curvelet-domain sparsity promotion. During our presentation, we introduce you to what curvelets are, why random jitter sampling is important and why this opens a pathway towards a new paradigm of curvelet-domain seismic data processing. Our claims will be supported by examples on synthetic and field data. This is joint work with Gilles Hennenfent, PhD. student at SLIM. },
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:42:38 -0700},
+	Date-Modified = {2008-08-26 15:43:48 -0700},
+	Keywords = {SLIM, ION, Presentation},
+	Title = {Compressive sampling: a new paradigm for seismic data acquistion and processing?},
+	Year = {2008},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2008/herrmann08ion_pres.pdf}}
+
+@unpublished{herrmann07smc,
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:41:05 -0700},
+	Date-Modified = {2008-08-26 15:42:07 -0700},
+	Keywords = {SLIM, Cyber, Presentation},
+	Title = {Seismology meets compressive sampling},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07Cyber.pdf}}
+
+@unpublished{herrmann07csm,
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:39:14 -0700},
+	Date-Modified = {2008-08-26 15:39:52 -0700},
+	Keywords = {SLIM, PIMS, Presentation},
+	Title = {Compressive sampling meets seismic imaging},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07PIMS.pdf}}
+
+@unpublished{herrmann07sdp1,
+	Abstract = {In this abstract, we present a nonlinear curvelet-based sparsity-promoting formulation of a seismic processing flow, consisting of the following steps: seismic data regularization and the restoration of migration amplitudes. We show that the curvelet's wavefront detection capability and invariance under the migration-demigration operator lead to a formulation that is stable under noise and missing data.},
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:37:27 -0700},
+	Date-Modified = {2008-08-26 15:38:09 -0700},
+	Keywords = {SLIM, SEG, Presentation},
+	Title = {Seismic data processing with curvelets: a multiscale and nonlinear approach},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07SEGPROC.pdf}}
+
+@unpublished{herrmann07mpf1,
+	Abstract = {Incomplete data represents a major challenge for a successful prediction and subsequent removal of multiples. In this paper, a new method will be represented that tackles this challenge in a two-step approach. During the first step, the recenly developed curvelet-based recovery by sparsity-promoting inversion (CRSI) is applied to the data, followed by a prediction of the primaries. During the second high-resolution step, the estimated primaries are used to improve the frequency content of the recovered data by combining the focal transform, defined in terms of the estimated primaries, with the curvelet transform. This focused curvelet transform leads to an improved recovery, which can subsequently be used as input for a second stage of multiple prediction and primary-multiple separation.},
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:32:29 -0700},
+	Date-Modified = {2008-08-26 15:36:49 -0700},
+	Keywords = {SLIM, SEG, Presentation},
+	Title = {Multiple prediction from incomplete data with the focused curvelet transform},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07SEGPRED.pdf}}
+
+@unpublished{lin07cwe2,
+	Abstract = {An \emph{explicit} algorithm for the extrapolation of one-way wavefields is proposed which combines recent developments in information theory and theoretical signal processing with the physics of wave propagation. Because of excessive memory requirements, explicit formulations for wave propagation have proven to be a challenge in {3-D}. By using ideas from ``\emph{compressed sensing}'', we are able to formulate the (inverse) wavefield extrapolation problem on small subsets of the data volume{,} thereby reducing the size of the operators. According {to} compressed sensing theory, signals can successfully be recovered from an imcomplete set of measurements when the measurement basis is \emph{incoherent} with the representation in which the wavefield is sparse. In this new approach, the eigenfunctions of the Helmholtz operator are recognized as a basis that is incoherent with curvelets that are known to compress seismic wavefields. By casting the wavefield extrapolation problem in this framework, wavefields can successfully be extrapolated in the modal domain via a computationally cheaper operatoion. A proof of principle for the ``compressed sensing'' method is given for wavefield extrapolation in {2-D}. The results show that our method is stable and produces identical results compared to the direct application of the full extrapolation operator.},
+	Author = {Tim T. Y. Lin},
+	Date-Added = {2008-08-26 15:31:03 -0700},
+	Date-Modified = {2008-08-26 15:36:23 -0700},
+	Keywords = {SLIM, SEG, Presentation},
+	Title = {Compressed wavefield extrapolation with curvelets},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/lin07SEG.pdf}}
+
+@unpublished{herrmann07pti,
+	Abstract = {In this paper, two different applications of phase transitions to exploration seismology will be discussed. The first application concerns a phase diagram ruling the recovery conditions for seismic data volumes from incomplete and noisy data while the second phase transition describes the behavior of bi-compositional mixtures as a function of the volume fraction. In both cases, the phase transitions are the result of randomness in large system of equations in combination with nonlinearity. The seismic recovery problem from incomplete data involves the inversion of a rectangular matrix. Recent results from the field of "compressive sensing" provide the conditions for a successful recovery of functions that are sparse in some basis (wavelet) or frame (curvelet) representation, by means of a sparsity ($\ell_1$-norm) promoting nonlinear program. The conditions for a successful recovery depend on a certain randomness of the matrix and on two parameters that express the matrix' aspect ratio and the ratio of the number of nonzero entries in the coefficient vector for the sparse signal representation over the number of measurements. It appears that the ensemble average for the success rate for the recovery of the sparse transformed data vector by a nonlinear sparsity promoting program, can be described by a phase transition, demarcating the regions for the two ratios for which recovery of the sparse entries is likely to be successful or likely to fail. Consistent with other phase transition phenomena, the larger the system the sharper the transition. The randomness in this example is related to the construction of the matrix, which for the recovery of spike trains corresponds to the randomly restricted Fourier matrix. It is shown, that these ideas can be extended to the curvelet recovery by sparsity-promoting inversion (CRSI) . The second application of phase transitions in exploration seismology concerns the upscaling problem. To counter the intrinsic smoothing of singularities by conventional equivalent medium upscaling theory, a percolation-based nonlinear switch model is proposed. In this model, the transport properties of bi-compositional mixture models for rocks undergo a sudden change in the macroscopic transport properties as soon as the volume fraction of the stronger material reaches a critical point. At this critical point, the stronger material forms a connected cluster, which leads to the creation of a cusp-like singularity in the elastic moduli, which in turn give rise to specular reflections. In this model, the reflectivity is no longer explicitly due to singularities in the rocks composition. Instead, singularities are created whenever the volume fraction exceeds the critical point. We will show that this concept can be used for a singularity-preserved lithological upscaling.},
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:29:22 -0700},
+	Date-Modified = {2008-08-26 15:35:51 -0700},
+	Keywords = {SLIM, Presentation},
+	Title = {Phase transitions in explorations seismology: statistical mechanics meets information theory},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07COIP.pdf}}
+
+@unpublished{herrmann07csi,
+	Abstract = {Seismic imaging involves the solution of an inverse-scattering problem during which the energy of (extremely) large data volumes is collapsed onto the Earth's reflectors. We show how the ideas from 'compressive sampling' can alleviate this task by exploiting the curvelet transform's 'wavefront-set detection' capability and 'invariance' property under wave propagation. First, a wavelet-vaguellete technique is reviewed, where seismic amplitudes are recovered from complete data by diagonalizing the Gramm matrix of the linearized scattering problem. Next, we show how the recovery of seismic wavefields from incomplete data can be cast into a compressive sampling problem, followed by a proposal to compress wavefield extrapolation operators via compressive sampling in the modal domain. During the latter approach, we explicitly exploit the mutual incoherence between the eigenfunctions of the Helmholtz operator and the curvelet frame elements that compress the extrapolated wavefield. This is joint work with Gilles Hennenfent, Peyman Moghaddam, Tim Lin, Chris Stolk and Deli Wang.},
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:27:49 -0700},
+	Date-Modified = {2008-08-26 15:34:54 -0700},
+	Keywords = {SLIM, AMS Von Neumann, Presentation},
+	Title = {Compressive seismic imaging},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07Neumann.pdf}}
+
+@unpublished{herrmann07sit,
+	Abstract = {Inverse problems in (exploration) seismology are known for their large to very large scale. For instance, certain sparsity-promoting inversion techniques involve vectors that easily exceed 230 unknowns while seismic imaging involves the construction and application of matrix-free discretized operators where single matrix-vector evaluations may require hours, days or even weeks on large compute clusters. For these reasons, software development in this field has remained the domain of highly technical codes programmed in low-level languages with little eye for easy development, code reuse and integration with (nonlinear) programs that solve inverse problems. Following ideas from the Symes' Rice Vector Library and Bartlett's C++ object-oriented interface, Thyra, and Reduction/Transformation operators (both part of the Trilinos software package), we developed a software-development environment based on overloading. This environment provides a pathway from in-core prototype development to out-of-core and MPI 'production' code with a high level of code reuse. This code reuse is accomplished by integrating the out-of-core and MPI functionality into the dynamic object-oriented programming language Python. This integration is implemented through operator overloading and allows for the development of a coordinate-free solver framework that (i) promotes code reuse; (ii) analyses the statements in an abstract syntax tree and (iii) generates executable statements. In the current implementation, we developed an interface to generate executable statements for the out-of-core unix-pipe based (seismic) processing package RSF-Madagascar (rsf.sf.net). The modular design allows for interfaces to other seismic processing packages and to in-core Python packages such as numpy. So far, the implementation overloads linear operators and elementwise reduction/transformation operators. We are planning extensions towards nonlinear operators and integration with existing (parallel) solver frameworks such as Trilinos.},
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:26:42 -0700},
+	Date-Modified = {2008-08-26 15:34:28 -0700},
+	Keywords = {SLIM, AIP, Presentation},
+	Title = {Seismic inversion through operator overloading},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07AIP2.pdf}}
+
+@unpublished{herrmann07ssd,
+	Abstract = {In this talk, directional frames, known as curvelets, are used to recover seismic data and images from noisy and incomplete data. Sparsity and invariance properties of curvelets are exploited to formulate the recovery by a `1-norm promoting program. It is shown that our data recovery approach is closely linked to the recent theory of ``compressive sensing'' and can be seen as a first step towards a nonlinear sampling theory for wavefields. The second problem that will be discussed concerns the recovery of the amplitudes of seismic images in clutter. There, the invariance of curvelets is used to approximately invert the Gramm operator of seismic imaging. In the high-frequency limit, this Gramm matrix corresponds to a pseudo-differential operator, which is near diagonal in the curvelet domain.In this talk, directional frames, known as curvelets, are used to recover seismic data and images from noisy and incomplete data. Sparsity and invariance properties of curvelets are exploited to formulate the recovery by a l1-norm promoting program. It is shown that our data recovery approach is closely linked to the recent theory of ``compressive sensing'' and can be seen as a first step towards a nonlinear sampling theory for wavefields. The second problem that will be discussed concerns the recovery of the amplitudes of seismic images in clutter. There, the invariance of curvelets is used to approximately invert the Gramm operator of seismic imaging. In the high-frequency limit, this Gramm matrix corresponds to a pseudo-differential operator, which is near diagonal in the curvelet domain.},
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:24:30 -0700},
+	Date-Modified = {2008-08-26 15:34:02 -0700},
+	Keywords = {SLIM, AIP, Presentation},
+	Title = {Stable seismic data recovery},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07AIP.pdf}}
+
+@unpublished{herrmann07srm1,
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:23:23 -0700},
+	Date-Modified = {2008-08-26 15:24:15 -0700},
+	Keywords = {SLIM, EAGE, Presentation},
+	Title = {Surface related multiple prediction from incomplete data},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07EAGPRED.pdf}}
+
+@unpublished{herrmann07sia1,
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:21:35 -0700},
+	Date-Modified = {2008-08-26 15:23:16 -0700},
+	Keywords = {SLIM, EAGE, Presentation},
+	Title = {Seismic imaging and processing with curvelets},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07EAGEIMPROC.pdf}}
+
+@unpublished{herrmann07rdi1,
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:19:34 -0700},
+	Date-Modified = {2008-08-26 15:20:22 -0700},
+	Keywords = {SLIM, EAGE, Presentation},
+	Title = {Recent developments in curvelet-based seismic processing},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07EAGEWSDEV.pdf}}
+
+@unpublished{herrmann07jda1,
+	Author = {Felix J. Herrmann},
+	Date-Added = {2008-08-26 15:17:35 -0700},
+	Date-Modified = {2008-08-26 15:18:14 -0700},
+	Institution = {UBC Earth and Ocean Sciences Department},
+	Title = {Just diagonalize: a curvelet-based approach to seismic amplitude recovery},
+	Year = {2007},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07EAGEWSIM.pdf}}
 
 @inproceedings{Herrmann03msa,
 	Author = {Felix J. Herrmann},
@@ -42,8 +185,10 @@
 	Abstract = {Compressive sensing has led to fundamental new insights in the recovery of compressible signals from sub-Nyquist samplings. It is shown how jittered subsampling can be used to create favorable recovery conditions. Applications include mitigation of incomplete acquisitions and wavefield computations. While the former is a direct adaptation of compressive sampling, the latter application represents a new way of compressing wavefield extrapolation operators. Operators are not diagonalized but are compressively sampled reducing the computational costs.},
 	Author = {Felix J. Herrmann and Yogi Erlangga and Tim T. Y. Lin},
 	Date-Added = {2008-08-21 18:22:42 -0700},
-	Date-Modified = {2008-08-22 12:44:03 -0700},
+	Date-Modified = {2008-08-26 15:46:39 -0700},
+	Keywords = {SLIM, SIAM, Presentation},
 	Title = {Compressive sampling meets seismic imaging},
+	Year = {2008},
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2008/herrmann08siam08.pdf}}
 
 @unpublished{yarham08bss,

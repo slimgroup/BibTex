@@ -14,6 +14,7 @@
 }
 
 @conference{hennenfent06apo,
+	Abstract = {During this presentation an introduction will be given on the method of stable recovery from noisy and incomplete data. Strong recovery conditions that guarantee the recovery for arbitrary acquisition geometries will be reviewed and numerical recovery examples will be presented.},
 	Author = {Gilles Hennenfent},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {A primer on stable signal recovery},
@@ -23,6 +24,7 @@
 }
 
 @conference{herrmann06sra,
+	Abstract = {During this presentation an overview will be given on how seismic data regularization and separation problems can be cast into the framework of stable signal recovery. It is shown that the successful solution of these two problems depends on the existence of signal expansions that are compressible. Preliminary examples will be shown.},
 	Author = {Felix Herrmann},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {Stable recovery and separation of seismic data},
@@ -32,6 +34,7 @@
 }
 
 @conference{herrmann06apo,
+ 	Abstract = {During this presentation an overview will be given on the different sparsity transforms that are used at SLIM. Emphasis will be on two directional and multiscale wavelet transforms, namely the curvelet and the recently introduced wave-atom transforms. The main properties of these transforms will be listed and their performance on seismic data will be discussed.},
 	Author = {Felix Herrmann},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {A primer on sparsity transforms: curvelets and wave atoms},
@@ -41,6 +44,7 @@
 }
 
 @conference{hennenfent06ros,
+	Abstract = {We propose a method for seismic data interpolation based on 1) the reformulation of the problem as a stable signal recovery problem and 2) the fact that seismic data is sparsely represented by curvelets. This method does not require information on the seismic velocities. Most importantly, this formulation potentially leads to an explicit recovery condition. We also propose a large-scale problem solver for the l1-regularization minimization involved in the recovery and successfully illustrate the performance of our algorithm on 2D synthetic and real examples.},
 	Author = {Gilles Hennenfent},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {Recovery of seismic data: practical considerations},
@@ -50,6 +54,7 @@
 }
 
 @conference{herrmann06apow,
+	Abstract = {During this presentation an introduction will be given on the method of stable recovery from noisy and incomplete data. Weak recovery conditions that guarantee the recovery for typical acquisition geometries will be reviewed and numerical recovery examples will be presented. The advantage of these weak conditions is that they are less pessimistic and `verifiable' or very large-scale acquisition geometries.},
 	Author = {Felix Herrmann},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {A primer on weak conditions for stable recovery},
@@ -59,6 +64,7 @@
 }
 
 @conference{yarham06apo,
+	Abstract = {During this presentation an introduction will be given on morphological component analysis to separate signal components. Main concepts such as the sparck and block solvers will be introduced.},
 	Author = {Carson Yarham},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {A primer on morphological component analysis},
@@ -68,6 +74,7 @@
 }
 
 @conference{herrmann06pms,
+	Abstract = {Predictive multiple suppression methods consist of two main steps: a prediction step, during which multiples are predicted from seismic data, and a primary-multiple separation step, during which the predicted multiples are 'matched' with the true multiples in the data and subsequently removed. The last step is crucial in practice: an incorrect separation will cause residual multiple energy in the result or may lead to a distortion of the primaries, or both. To reduce these adverse effects, a new transformed-domain method is proposed where primaries and multiples are separated rather than matched. This separation is carried out on the basis of differences in the multiscale and multidirectional characteristics of these two signal components. Our method uses the curvelet transform, which maps multidimensional data volumes into almost orthogonal localized multidimensional prototype waveforms that vary in directional and spatio-temporal content. Primaries-only and multiples-only signal components are recovered from the total data volume by a nonlinear optimization scheme that is stable under noisy input data. During the optimization, the two signal components are separated by enhancing sparseness (through weighted l1-norms) in the transformed domain subject to fitting the observed data as the sum of the separated components to within a user-defined tolerance level. Whenever the prediction for the two signal components in the transformed domain correlate, the recovery is suppressed while for regions where the correlation is small the method seeks the sparsest set of coefficients that represent each signal component. Our algorithm does not seek a matched filter and as such it differs fundamentally from traditional adaptive subtraction methods. The method derives its stability from the sparseness obtained by a non-parametric multiscale and multidirectional overcomplete signal representation. This sparsity serves as prior information and allows for a Bayesian interpretation of our method during which the log-likelihood function is minimized while the two signal components are assumed to be given by a superposition of prototype waveforms, drawn independently from a probability function that is weighted by the predicted primaries and multiples. In this paper, the predictions are based on the data-driven surface-related multiple elimination (SRME) method.  Synthetic and field data examples show a clean separation leading to a considerable improvement in multiple suppression compared to the conventional method of adaptive matched filtering. This improved separation translates into an improved stack.},
 	Author = {Felix Herrmann},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {Primary-multiple separation by curvelet frames},
@@ -77,6 +84,7 @@
 }
 
 @conference{yarham06grr,
+	Abstract = {We have effectively identified and removed ground roll through a twostep process. The first step is to identify the major components of the ground roll through various methods including multiscale separation, directional or frequency filtering or by any other method that identifies the ground roll. Given this estimate for ground roll, the recorded signal is separated during the second step through a block-coordinate relaxation method that seeks the sparsest set for weighted curvelet coefficients of the ground roll and the sought-after reflectivity. The combination of these two methods allows us to separate out the ground roll signal while preserving the reflector information. Since our method is iterative, we have control of the separation process. We successfully tested our algorithm on a real data set with a complex ground roll and reflector structure.},
 	Author = {Carson Yarham},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {Ground-roll removal},
@@ -86,6 +94,7 @@
 }
 
 @conference{hennenfent06tnf,
+	Abstract = {The authors present an extension of the fast discrete curvelet transform (FDCT) to nonuniformly sampled data. This extension not only restores curvelet compression rates for nonuniformly sampled data but also removes noise and maps the data to a regular grid.},
 	Author = {Gilles Hennenfent},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {The Nonuniform Fast Discrete Curvelet Transform (NFDCT)},
@@ -104,6 +113,7 @@
 }
 
 @conference{maysami06rro,
+	Abstract = {One of the important steps in seismic imaging is to provide suitable information about boundaries. Sharp variation of physical properties at a layer boundary cause reflection the wavefield. In previous work done by C. M. Dupuis, seismic signal characterization is divided into two steps: detection and estimation. In the detection phase, the goal is to find all singularities in a seismic section regardless of their order and then to categorize the data to different events by windowing each singularity. In the estimation step, we determine the order of singularity more precisely by using a rough estimate based on the detection phase. Traditionally, a redundant dictionary method is employed for the detection part. However, we attempt to instead use a new L1-solver developed by D.L. Donoho: the Stagewise Orthogonal Matching Pursuit (StOMP). It approximates the solution to inverse problems while promoting the sparsity in the solution vector. This algorithm will allow us to experimentally confirm the recent analysis by S. Mallat on spiky deconvolution limits, which imposes a required minimum distance between spikes. This required minimum distance between different spikes is dependent on the number of spikes as well as the width of  the chosen source wavelet used in convolution with the train. These results allow for the design of more robust and accurate detection schemes for seismic signal characterization.},
 	Author = {Mohammad Maysami},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {Recent results on seismic deconvolution},
@@ -113,6 +123,7 @@
 }
 
 @conference{moghaddam06sac,
+	Abstract = {During this presentation, the importance of sparsity and continuity enhancing energy norms is emphasized for seismic imaging and inversion. The continuity promoting energy norm is justified by the apparent smoothness of reflectors in the direction along and the oscillatory behavior across the interfaces. This energy norm is called anisotropic diffusion and will be defined mathematically. Denoising examples will be given during which seismic images are recovered from the noise by a joint norm-one and continuity promoting minimization.},
 	Author = {Peyman Moghaddam},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {Sparsity- and continuity-promoting norms for seismic images},
@@ -122,6 +133,7 @@
 }
 
 @conference{herrmann06sac,
+	Abstract = {A nonlinear singularity-preserving solution to seismic image recovery with sparseness and continuity constraints is proposed. The method explicitly explores the curvelet transform as a directional frame expansion that, by virtue of its sparsity on seismic images and its invariance under the Hessian of the linearized imaging problem, allows for a stable recovery of the migration amplitudes from noisy data. The method corresponds to a preconditioning that corrects the amplitudes during a post-processing step.  The solution is formulated as a nonlinear optimization problem where sparsity in the curvelet domain as well as continuity along the imaged reflectors are jointly promoted. To enhance sparsity, the l1-norm on the curvelet coefficients is minimized while continuity is promoted by minimizing an anisotropic diffusion norm on the image. The performance of the recovery scheme is evaluated with 'wave-equation' migration code on a synthetic dataset. This is joint work with Peyman Moghaddam.},
 	Author = {Felix Herrmann},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {Sparsity- and continuity-promoting seismic image recovery with curvelets},
@@ -131,6 +143,7 @@
 }
 
 @conference{moghaddam06ioa,
+	Abstract = {In this presentation, the normal (demigation-migration) operator is studied in terms of a pseudo-differential operator. The invariance of curvelets under this operator and their sparsity on the seismic images is used to precondition the migration operator. A brief overview will be given on some of the theory from micro-local analysis which proofs that curvelets remain approximately invariant under the operator. The proper setting for which a diagonal approximation in the curvelet domain is accurate is discussed together with different methods that estimate this diagonal from of-the-shelf migration operators. This is joint work with Chris Stolk.},
 	Author = {Peyman Moghaddam},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {Imaging operator approximation using Curvelets},
@@ -149,6 +162,7 @@
 }
 
 @conference{lin06ci,
+	Abstract = {In 1998 Grimbergen et. al. introduced a new method for computing wavefield propagation which improved on the previously employed local explicit operator method in that it exhibited no dip limitation, accurately handled laterally varying background ground velocity models, and is unconditionally stable. These desirable properties are mainly attributed to bringing the propagation problem into an eigenvector basis that diagonalizes the propagation operators. This modal-transform method, however, requires at each depth-level the solution of a large-scale sparse eigenvalue problem to compute the square-root of the Helmholtz operator. By using recent results from compressed sensing, we hope to reduce these computational costs that typically involve the synthesizes of the imaging operators and the cost of matrix-vector products. To reduce these costs, we compress the extrapolation operators by using only a fraction of the positive eigenvalues and temporal frequencies. This reduction not only leads to smaller matrices but also to reduced synthesis costs. These reductions go at the expense of solving a recovery problem from incomplete data. During the presentation, we show that wavefields can accurately be extrapolated with a compressed operators and competitive costs.},
 	Author = {Tim Lin},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {Compressed imaging},
@@ -158,6 +172,9 @@
 }
 
 @conference{thomson06lss,
+	Abstract = {We propose using overlapping, tapered windows to process seismic data in parallel.  This method consists of numerically tight linear operators and adjoints that are suitable for use in iterative algorithms.  This method is also highly scalable and makes parallelprocessing of large seismic data sets feasible.  We use this scheme to define the Parallel Windowed Fast Discrete Curvelet Transform (PWFDCT), which we have applied to a seismic data interpolation algorithm. Some preliminary results will be shown.
+Henryk Modzeleweski: Design and specifications for SLIMPy's software framework
+The SLIM group is actively developing software for seismic imaging. This talk will give a general overview of the software development philosophy adopted by SLIM. The covered topics will include: 1) adopting Python for object-oriented programming, 2) including parallelism into the algorithms used in seismic imaging/modeling, 3) in-house algorithms for seismic imaging, and 4) contributions to Madagascar (RSF). The talk will serve as an introduction to the other presentations in the session ``SINBAD Software releases".},
 	Author = {Darren Thomson},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {Large-scale seismic data recovery by the Parallel Windowed Curvelet Transform},
@@ -176,6 +193,7 @@
 }
 
 @conference{thomson06ppe,
+	Abstract = {The parallel extensions to the SLIMpy environment enable pipe-based processing of large data sets in an MPI-based parallel environment. Parallel processing can be done by straightforward slicing of data, or by using an overlapping domain decomposition that requires communication between different processors.  The principal aim of the parallel extensions is to leave abstract numerical algorithms (ANA's) and applications programmed for use in SLIMpy untouched when moving to parallel processing.  The object-oriented functionality of Python makes this possible.},
 	Author = {Darren Thomson},
 	Keywords = {SLIM, SINBAD, Presentation},
 	Title = {(P)SLIMPy: parallel extension},

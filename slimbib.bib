@@ -4,6 +4,94 @@
 
 %% Saved with string encoding Unicode (UTF-8) 
 
+@conference{hennenfent07jdn,
+	Abstract = {In this talk, we turn the interpolation problem of coarsely-sampled data into a denoising problem. From this point of view, we illustrate the benefit of random sampling at sub-Nyquist rate over regular sampling at the same rate. We show that, using nonlinear sparsity-promoting optimization, coarse random sampling may actually lead to significantly better wavefield reconstruction than equivalent regularly sampled data.},
+	Author = {Gilles Hennenfent},
+	Keywords = {SLIM, SINBAD, Presentation},
+	Title = {Just denoise. Nonlinear recovery from randomly sampled data},
+	Year = {2007},
+	Booktitle = {SINBAD 2007}
+}
+
+@conference{herrmann07rdi,
+	Abstract = {In this talk, we present a novel primary-multiple separation scheme which makes use of the sparsity of both primaries and multiples in a transform domain, such as the curvelet transform, to provide estimates of each. The proposed algorithm utilizes seismic data as well as the output of a preliminary step that provides (possibly) erroneous predictions of the multiples. The algorithm separates the signal components, i.e., the primaries and multiples, by solving an optimization problem that assumes noisy input data and can be derived from a Bayesian perspective. More precisely, the optimization problem can be arrived at via an assumption of a weighted Laplacian distribution for the primary and multiple coefficients in the transform domain and of white Gaussian noise contaminating both the seismic data and the preliminary prediction of the multiples, which both serve as input to the algorithm. Time permitted, we will also briefly discuss a propasal for adaptive curvelet-domain matched filtering. This is joint work with Deli Wang, Rayan Saaba, Ozgur Yilmaz and Eric Verschuur.},
+	Author = {Felix J. Herrmann},
+	Keywords = {SLIM, SINBAD, Presentation},
+	Title = {Recent developments in primary-multiple separation},
+	Year = {2007},
+	Booktitle = {SINBAD 2007}
+}
+
+@conference{yarham07nsw,
+	Abstract = {Removal of surface waves is an integral step in seismic processing. There are many standard techniques for removal of this type of coherent noise, such as f-k filtering, but these methods are not always effective.  One of the common problems with removal of surface waves is that they tend to be aliased in the frequency domain.  This can make removal difficult and affect the frequency content of the reflector signals, as this signals will not be completely separated. As seen in (Hennenfent, G. and F. Herrmann, 2006, Application of stable signal recovery to seismic interpolation) interpolation can be used effectively to resample the seismic record thus dealiasing the surface waves.  This separates the signals in the frequency domain allowing for a more precise and complete removal.  The use of this technique with curvelet based surface wave predictions and an iterative L1 separation scheme can be used to remove surface waves from shot records more completely that with standard techniques.},
+	Author = {Carson Yarham},
+	Keywords = {SLIM, SINBAD, Presentation},
+	Title = {Nonlinear surface wave prediction and separation},
+	Year = {2007},
+	Booktitle = {SINBAD 2007}
+}
+
+@conference{sastry07nor,
+	Abstract = {Seismic traces are sampled irregularly and insufficiently due to  practical and economical limitations. The use of such data in seismic imaging results  in image artifacts and poor spatial resolution. Therefore, before being used, the measurements are to be interpolated onto a regular grid. One of the methods achieving this objective is based on the Fourier reconstruction, which deals with the under-determined system of  equations. The recent pursuit techniques (namely, basis pursuit, matching pursuit etc) admit certain promising features such as faster and simpler  implementation even in large scale settings.  
+The  presentation discusses the application of the pursuit  algorithms to the Fourier-based interpolation problem for the signals that have sparse Fourier spectra.  In particular, the objective of the presentation includes:
+1).  studying the performance of the algorithm  if, and how far, the measurement coordinates can be shifted from uniform distribution on the continuous interval.  
+2).  studying what could be the allowable misplacement in the measurement coordinates that does not alter the quality of  the reconstruction process      },
+	Author = {Challa Sastry},
+	Keywords = {SLIM, SINBAD, Presentation},
+	Title = {Norm-one recovery from irregular sampled data},
+	Year = {2007},
+	Booktitle = {SINBAD 2007}
+}
+
+@conference{hennenfent07rii,
+	Abstract = {During this talk, an overview is given on our work on norm-one solvers as part of the DNOISE project. Gilles will explain the ins and outs of our iterative thresholding solver based on log cooling while Felix will present the work of Michael Friedlander "A Newton root-finding algorithms for large-scale basis pursuit denoise". Both approaches involve the solution of the basis pursuit problem that seeks a minimum one-norm solution of an underdetermined least-squares problem. Basis pursuit denoise (BPDN) fits the least-squares problem only approximately, and a single parameter determines a curve that traces the trade-off between the least-squares fit and the one-norm of the solution.
+ 
+In the work of Friedlander, it is shown show that the function that describes this curve is convex and continuously differentiable over all points of interest. They describe an efficient procedure for evaluating this function and its derivatives. As a result, they can compute arbitrary points on this curve. Their method is suitable for large-scale problems. Only matrix-vector operations are required. This is joint work with Ewout van der Berg and Michael P. Friedlander},
+	Author = {Gilles Hennenfent and Felix J. Herrmann},
+	Keywords = {SLIM, SINBAD, Presentation},
+	Title = {Recent insights in $L_1$ solvers},
+	Year = {2007},
+	Booktitle = {SINBAD 2007}
+}
+
+@conference{herrmann07sia,
+	Abstract = {In this talk, we recover the amplitude of a seismic image by approximating the normal (demigration-migration) operator. In this approximation, we make use of the property that curvelets remain invariant under the action of the normal operator. We propose a seismic amplitude recovery method that employs an eigenvalue like decomposition for the normal operator using curvelets as eigen-vectors. Subsequently, we propose an approximate nonlinear singularity-preserving solution to the least-squares seismic imaging
+problem with sparseness in the curvelet domain and spatial continuity constraints. Our method is tested with a reverse-time 'wave-equation' migration code simulating the acoustic wave equation on the SEG-AA
+salt model. This is joint work with Peyman Moghaddam and Chris Stolk (University of Twente)},
+	Author = {Felix J. Herrmann},
+	Keywords = {SLIM, SINBAD, Presentation},
+	Title = {Seismic image amplitude recovery},
+	Year = {2007},
+	Booktitle = {SINBAD 2007}
+}
+
+@conference{herrmann07frw,
+	Abstract = {Incomplete data represents a major challenge for a successful prediction and subsequent removal of multiples. In this paper, a new method will be represented that tackles this challenge in a two-step approach. During the first step, the recently developed curvelet-based recovery by sparsity-promoting inversion (CRSI) is applied to the data, followed by a prediction of the primaries. During the second high-resolution step, the estimated primaries are used to improve the frequency content of the recovered data by combining the focal transform, defined in terms of the estimated primaries, with the curvelet transform. This focused curvelet transform leads to an improved recovery, which can subsequently be used as input for a second stage of multiple prediction and primary-multiple separation. This is joint work with Deli Wang and Gilles Hennenfent.},
+	Author = {Felix J. Herrmann},
+	Keywords = {SLIM, SINBAD, Presentation},
+	Title = {Focused recovery with the curvelet transform},
+	Year = {2007},
+	Booktitle = {SINBAD 2007}
+}
+
+@conference{herrmann07cwe,
+	Abstract = {An explicit algorithm for the extrapolation of one-way wavefields is proposed which combines recent developments in information theory and theoretical signal processing with the physics of wave propagation. Because of excessive memory requirements, explicit formulations for wave propagation have proven to be a challenge in 3-D. By using ideas from ``compressed sensing'', we are able to formulate the (inverse) wavefield extrapolation problem on small subsets of the data volume, thereby reducing the size of the operators. According to compressed sensing theory, signals can successfully be recovered from an incomplete set of measurements when the measurement basis is incoherent with the representation in which the wavefield is sparse. In this new approach, the eigenfunctions of the Helmholtz operator are recognized as a basis that is incoherent with curvelets that are known to compress seismic wavefields. By casting the wavefield extrapolation problem in this framework, wavefields can successfully be extrapolated in the modal domain via a computationally cheaper operation. A proof of principle for the ``compressed sensing'' method is given for wavefield extrapolation in 2-D. The results show that our method is stable and produces identical results compared to the direct application of the full extrapolation operator. This is joint work with Tim Lin.},
+	Author = {Felix J. Herrmann},
+	Keywords = {SLIM, SINBAD, Presentation},
+	Title = {Focused recovery with the curvelet transform},
+	Year = {2007},
+	Booktitle = {SINBAD 2007}
+}
+
+@conference{maysami07src,
+	Abstract = {Seismic transitions of the subsurface are typically considered as zero-order singularities (step functions). According to this model, the conventional deconvolution problem aims at recovering the seismic reflectivity as a sparse spike train. However, recent multiscale analysis on sedimentary records revealed the existence of accumulations of varying order singularities in the subsurface, which give rise to fractional-order discontinuities. This observation not only calls for a richer class of seismic reflection waveforms, but it also requires a different methodology to detect and characterize these reflection events. For instance, the assumptions underlying conventional deconvolution no longer hold. Because of the bandwidth limitation of seismic data, multiscale analysis methods based on the decay rate of wavelet coefficients may yield ambiguous results. We avoid this problem by formulating the estimation of the singularity orders by a parametric nonlinear inversion method.},
+	Author = {Mohammad Maysami},
+	Keywords = {SLIM, SINBAD, Presentation},
+	Title = {Seismic reflector characterization by detection-estimation},
+	Year = {2007},
+	Booktitle = {SINBAD 2007}
+}
+
 @conference{herrmann06om,
 	Author = {Felix Herrmann},
 	Keywords = {SLIM, SINBAD, Presentation},
@@ -272,7 +360,7 @@ The SLIM group is actively developing software for seismic imaging. This talk wi
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07SEGPRED.pdf}}
 
 @conference{lin07cwe2,
-	Abstract = {An \emph{explicit} algorithm for the extrapolation of one-way wavefields is proposed which combines recent developments in information theory and theoretical signal processing with the physics of wave propagation. Because of excessive memory requirements, explicit formulations for wave propagation have proven to be a challenge in {3-D}. By using ideas from ``\emph{compressed sensing}'', we are able to formulate the (inverse) wavefield extrapolation problem on small subsets of the data volume{,} thereby reducing the size of the operators. According {to} compressed sensing theory, signals can successfully be recovered from an imcomplete set of measurements when the measurement basis is \emph{incoherent} with the representation in which the wavefield is sparse. In this new approach, the eigenfunctions of the Helmholtz operator are recognized as a basis that is incoherent with curvelets that are known to compress seismic wavefields. By casting the wavefield extrapolation problem in this framework, wavefields can successfully be extrapolated in the modal domain via a computationally cheaper operatoion. A proof of principle for the ``compressed sensing'' method is given for wavefield extrapolation in {2-D}. The results show that our method is stable and produces identical results compared to the direct application of the full extrapolation operator.},
+	Abstract = {An \emph{explicit} algorithm for the extrapolation of one-way wavefields is proposed which combines recent developments in information theory and theoretical signal processing with the physics of wave propagation. Because of excessive memory requirements, explicit formulations for wave propagation have proven to be a challenge in {3-D}. By using ideas from ``\emph{compressed sensing}'', we are able to formulate the (inverse) wavefield extrapolation problem on small subsets of the data volume{,} thereby reducing the size of the operators. According to compressed sensing theory, signals can successfully be recovered from an imcomplete set of measurements when the measurement basis is \emph{incoherent} with the representation in which the wavefield is sparse. In this new approach, the eigenfunctions of the Helmholtz operator are recognized as a basis that is incoherent with curvelets that are known to compress seismic wavefields. By casting the wavefield extrapolation problem in this framework, wavefields can successfully be extrapolated in the modal domain via a computationally cheaper operatoion. A proof of principle for the ``compressed sensing'' method is given for wavefield extrapolation in 2-D. The results show that our method is stable and produces identical results compared to the direct application of the full extrapolation operator.},
 	Author = {Tim T. Y. Lin},
 	Date-Added = {2008-08-26 15:31:03 -0700},
 	Date-Modified = {2008-08-26 15:36:23 -0700},

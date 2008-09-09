@@ -30,10 +30,10 @@ distances of p-convex bodies to their convex hulls.},
 	journal = {Submitted for publication},
 	Year = {2008},
 	Keywords = {SLIM},
-	pdf = {saab08srb.pdf}
+	pdf = {http://arxiv.org/pdf/0809.0745v1}
 }
 
-@mastersthesis{fenelon08msc,
+@misc{fenelon08msc,
 	Abstract = {Physical constraints during seismic acquisitions lead to incomplete seismic 
 datasets. Curvelet Reconstruction with Sparsity promoting Inversion 
 (CRSI) is one of the most efficient interpolation method available to recover 
@@ -49,21 +49,21 @@ quality seismic imaging.
 	Author = {Lloyd Fenelon},
 	Date-Added = {2008-09-03 16:18:08 -0700},
 	Date-Modified = {2008-09-03 16:25:10 -0700},
-	Keywords = {SLIM, MSc},
+	Keywords = {SLIM, BSc},
 	Month = {August},
-	School = {Ecole Nationale Superieure De Physique De Strasbourg},
+	howpublished = {BSc thesis, Ecole Nationale Superieure De Physique de Strasbourg},
 	Title = {Nonequispaced discrete curvelet transform for seismic data reconstruction},
 	Year = {2008},
 	pdf = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/fenelon08msc.pdf},
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/fenelon08msc.pdf}}
 
-@mastersthesis{lin08cco,
+@misc{lin08cco,
 	Abstract = {In this work an explicit algorithm for the extrapolation of one-way wavefields is proposed which combines recent developments in information theory and theoretical signal processing with the physics of wave propagation. Because of excessive memory requirements, explicit formulations for wave propagation have proven to be a challenge in 3-D. By using ideas from ``compressed sensing'', we are able to formulate the (inverse) wavefield extrapolation problem on small subsets of the data volume, thereby reducing the size of the operators. Compressed sensing entails a new paradigm for signal recovery that provides conditions under which signals can be recovered from incomplete samplings by \emph{nonlinear} recovery methods that promote sparsity of the to-be-recovered signal. According to this theory, signals can successfully be recovered when the measurement basis is \emph{incoherent} with the representation in which the wavefield is sparse. In this new approach, the eigenfunctions of the Helmholtz operator are recognized as a basis that is incoherent with sparsity transforms that are known to compress seismic wavefields. By casting the wavefield extrapolation problem in this framework, wavefields can successfully be extrapolated in the modal domain, despite evanescent wave modes. The degree to which the wavefield can be recovered depends on the number of missing (evanescent) wave modes and on the complexity of the wavefield. A proof of principle for the ``compressed sensing'' method is given for inverse wavefield extrapolation in 2-D. The results show that our method is stable, has reduced dip limitations and handles evanescent waves in inverse extrapolation.},
 	Author = {Tim Lin},
 	Keywords = {SLIM, BSc},
 	Month = {April},
-	School = {The University of British Columbia},
 	Title = {Compressed computation of large-scale wavefield extrapolation in inhomogeneous medium},
+	howpublished = {BSc Honours thesis, The University of British Columbia},
 	Year = {2008},
 	pdf = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/timlin08bsch.pdf},
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/timlin08bsch.pdf}}
@@ -181,6 +181,7 @@ ering seismic wavefields from incomplete measurements.
   Our basic algorithm for the BP dual unifies several existing
   algorithms and is applicable to large-scale examples.},
 	Author = {M. P. Friedlander and M. A. Saunders},
+	Title = {Active-set methods for basis pursuit},
 	Booktitle = {West Coast Opitmization Meeting (WCOM)},
 	Month = {September},
 	Year = {2008},
@@ -406,7 +407,7 @@ ming from a wide spectrum of interest areas. },
 	Keywords = {SLIM},
 	Month = {August},
 	Organization = {Seismic Laboratory for Imaging and Modeling},
-	Title = {TR2008-4 Repro: a Python package for automating reproducible research in scientific computing},
+	Title = {TR2008-7 Repro: a Python package for automating reproducible research in scientific computing},
 	Type = {software package},
 	Year = {2008}}
 
@@ -780,7 +781,8 @@ The SLIM group is actively developing software for seismic imaging. This talk wi
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2007/herrmann07SEGPRED.pdf}}
 
 @article{vandenberg08gsv,
-	Abstract = {We present an efficient spectral projected-gradient algorithm for optimization subject to a group one-norm constraint. Our approach is based on a novel linear-time algorithm for Euclidean projection onto the one- and group one-norm constraints. Numerical experiments on large data sets suggest that the proposed method is substantially more efficient and scalable than existing methods.},
+	Abstract = {We present an efficient spectral projected-gradient algorithm for optimization subject to a group one-norm constraint. Our approach is based on a novel linear-time algorithm for Euclidean projection onto the one- and group one-norm constraints. Numerical experiments on large data sets suggest that the proposed method is substantially more efficient and scalable than existing methods.},	
+	Title = {Group sparsity via linear-time projection},
 	Author = {E. van den Berg and M. Schmidt and M. P. Friedlander and K. Murphy},
 	pdf = {http://www.optimization-online.org/DB_FILE/2008/07/2056.pdf},
 	Keywords = {SLIM},
@@ -1392,12 +1394,10 @@ compared our results with that of Spiky deconvolution approach.},
 	Author = {F. J. Herrmann and C. Brown and Y. Erlangga and P. Moghaddam},
 	Institution = {The University of British Columbia},
 	Note = {Submitted for publication},
-	Number = {TR-2008-4},
-	pdf = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann08csf.pdf},
+	Number = {TR-2008-8},
 	Title = {Curvelet-based migration preconditioning},
 	Year = {2008},
-	Keywords = {SLIM},
-	Bdsk-Url-1 = {//http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann08csf.pdf}}
+	Keywords = {SLIM}}
 
 @techreport{herrmann08csf,
 	Abstract = {The fact that the numerical complexity of
@@ -2296,7 +2296,7 @@ synthetic examples.  },
 	pdf = {http://www.cseg.ca/conventions/abstracts/2005/2005abstracts/037S0131-Herrmann_F_Migration_nonlinear_regularization.pdf},
 	Publisher = {CSEG},
 	Title = {Non-linear regularization in seismic imaging},
-	talkurl = {http://slim.eos.ubc.ca/Publications/Public/Presentations/cseg/herrmann04nlr.pdf},
+	talkurl = {http://slim.eos.ubc.ca/Publications/Public/Presentations/cseg/herrmann05nlr.pdf},
 	Year = {2005},
 	Bdsk-Url-1 = {http://www.cseg.ca/conventions/abstracts/2005/2005abstracts/037S0131-Herrmann_F_Migration_nonlinear_regularization.pdf}}
 
@@ -2326,7 +2326,7 @@ gathers.},
 	Keywords = {SLIM},
 	Month = {May},
 	pdf = {http://www.cseg.ca/conventions/abstracts/2005/2005abstracts/101S0201-Herrmann_F_Non_Linear_Data_Continuation.pdf},
-	talkurl = {http://slim.eos.ubc.ca/Publications/Public/Presentations/cseg/herrmann04nld.pdf},
+	talkurl = {http://slim.eos.ubc.ca/Publications/Public/Presentations/cseg/herrmann05nld.pdf},
 	Publisher = {CSEG},
 	Title = {Non-linear data continuation with redundant frames},
 	Year = {2005},

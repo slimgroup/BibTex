@@ -57,6 +57,17 @@ quality seismic imaging.
 	pdf = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/fenelon08msc.pdf},
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/fenelon08msc.pdf}}
 
+@mastersthesis{lin08cco,
+	Abstract = {In this work an explicit algorithm for the extrapolation of one-way wavefields is proposed which combines recent developments in information theory and theoretical signal processing with the physics of wave propagation. Because of excessive memory requirements, explicit formulations for wave propagation have proven to be a challenge in 3-D. By using ideas from ``compressed sensing'', we are able to formulate the (inverse) wavefield extrapolation problem on small subsets of the data volume, thereby reducing the size of the operators. Compressed sensing entails a new paradigm for signal recovery that provides conditions under which signals can be recovered from incomplete samplings by \emph{nonlinear} recovery methods that promote sparsity of the to-be-recovered signal. According to this theory, signals can successfully be recovered when the measurement basis is \emph{incoherent} with the representation in which the wavefield is sparse. In this new approach, the eigenfunctions of the Helmholtz operator are recognized as a basis that is incoherent with sparsity transforms that are known to compress seismic wavefields. By casting the wavefield extrapolation problem in this framework, wavefields can successfully be extrapolated in the modal domain, despite evanescent wave modes. The degree to which the wavefield can be recovered depends on the number of missing (evanescent) wave modes and on the complexity of the wavefield. A proof of principle for the ``compressed sensing'' method is given for inverse wavefield extrapolation in 2-D. The results show that our method is stable, has reduced dip limitations and handles evanescent waves in inverse extrapolation.},
+	Author = {Tim Lin},
+	Keywords = {SLIM, BSc},
+	Month = {April},
+	School = {The University of British Columbia},
+	Title = {Compressed computation of large-scale wavefield extrapolation in inhomogeneous medium},
+	Year = {2008},
+	pdf = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/timlin08bsch.pdf},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/timlin08bsch.pdf}}
+
 @mastersthesis{lebed08msc,
 	Abstract = {The ability to efficiently and sparsely represent seismic data is becoming
 an increasingly important problem in geophysics. Over the last thirty years
@@ -90,6 +101,8 @@ ering seismic wavefields from incomplete measurements.
  Number = {TR-2008-2},
  pdf = {http://slim.eos.ubc.ca/Publications/Public/Journals/Yogi/erlangga-nabben-helmholtz.pdf}
 }
+
+
 
 @conference{herrmann03oiw,
 	Author = {F. J. Herrmann},
@@ -155,6 +168,24 @@ ering seismic wavefields from incomplete measurements.
 	talkurl = {http://www.cs.ubc.ca/~mpf/public/mpf08siopt.pdf},
 	Title = {Active-set Approaches to Basis Pursuit Denoising},
 	Year = {2008}}
+
+@conference{friedlander08asm,
+	Abstract = {Many imaging and compressed sensing applications seek sparse
+  solutions to large under-determined least-squares problems.  The
+  basis pursuit (BP) approach minimizes the 1-norm of the solution,
+  and the BP denoising (BPDN) approach balances it against the
+  least-squares fit.  The duals of these problems are
+  conventional linear and quadratic programs.  We introduce a
+  modified parameterization of the BPDN problem and explore the
+  effectiveness of active-set methods for solving its dual.
+  Our basic algorithm for the BP dual unifies several existing
+  algorithms and is applicable to large-scale examples.},
+	Author = {M. P. Friedlander and M. A. Saunders},
+	Booktitle = {West Coast Opitmization Meeting (WCOM)},
+	Month = {September},
+	Year = {2008},
+	talkurl = {http://www.cs.ubc.ca/~mpf/public/mpf08siopt.pdf}
+}
 
 @unpublished{friedlander07ero1,
 	Author = {M. P. Friedlander and P. Tseng},
@@ -2644,24 +2675,26 @@ surface effects.},
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2007/herrmann07a.pdf}}
 
 @conference{maysami07src,
-	Abstract = {Seismic transitions of the subsurface are
-typically considered as zero-order singularities (step
-functions). According to this model, the conventional deconvolution
-problem aims at recovering the seismic reflectivity as a sparse spike
-train. However, recent multiscale analysis on sedimentary records
-revealed the existence of accumulations of varying or- der
-singularities in the subsurface, which give rise to fractional-order
-discontinuities.  This observation not only calls for a richer class
-of seismic reflection waveforms, but it also requires a different
-methodology to detect and characterize these reflection events.  For
-instance, the assumptions underlying conventional deconvolution no
-longer hold.  Because of the bandwidth limitation of seismic data,
-multiscale analysis methods based on the decay rate of wavelet
-coefficients may yield ambiguous results. We avoid this problem by
-formulating the estimation of the singularity orders by a parametric
-nonlin- ear inversion method.  },
 	Author = {M. Maysami and F. J. Herrmann},
-	Booktitle = {EAGE Technical Program Expanded Abstracts},
+	Abstract = {Seismic transitions of the subsurface are
+	typically considered as zero-order singularities (step
+	functions). According to this model, the conventional
+	deconvolution problem aims at recovering the seismic
+	reflectivity as a sparse spike train. However, recent
+	multiscale analysis on sedimentary records revealed the
+	existence of accumulations of varying order singularities in
+	the subsurface, which give rise to fractional-order
+	discontinuities. This observation not only calls for a richer
+	class of seismic reflection waveforms, but it also requires a
+	different methodology to detect and characterize these
+	reflection events. For instance, the assumptions underlying
+	conventional deconvolution no longer hold. Because of the
+	bandwidth limitation of seismic data, multiscale analysis
+	methods based on the decay rate of wavelet coefficients may
+	yield ambiguous results. We avoid this problem by formulating
+	the estimation of the singularity orders by a parametric
+	nonlinear inversion method.},	
+        Booktitle = {EAGE Technical Program Expanded Abstracts},
 	Date-Added = {2008-05-21 13:50:08 -0700},
 	Date-Modified = {2008-08-14 14:23:09 -0700},
 	Keywords = {SLIM},
@@ -3060,7 +3093,8 @@ predictions. {\copyright}2007 Society of Exploration Geophysicists},
 	Keywords = {SLIM},
 	Number = {1},
 	Pages = {2535-2539},
-	pdf = {http://link.aip.org/link/?SGA/26/2535/1},
+	pdf = {http://link.aip.org/link/?SGA/26/2535/1},	
+	talkurl = {http://slim.eos.ubc.ca/Publications/Public/Presentations/seg/seg07/verschuur07mtm.pdf},
 	Publisher = {SEG},
 	Title = {Multiterm multiple prediction using separated reflections and diffractions combined with curvelet-based subtraction},
 	Volume = {26},

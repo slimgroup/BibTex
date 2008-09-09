@@ -34,8 +34,8 @@ distances of p-convex bodies to their convex hulls.},
 }
 
 @mastersthesis{fenelon08msc,
-	Abstract = {Physical constraints during seismic acquisitions lead to incomplete seis- 
-mic datasets. Curvelet Reconstruction with Sparsity promoting Inversion 
+	Abstract = {Physical constraints during seismic acquisitions lead to incomplete seismic 
+datasets. Curvelet Reconstruction with Sparsity promoting Inversion 
 (CRSI) is one of the most efficient interpolation method available to recover 
 complete datasets from data with missing traces. The method uses in its 
 definition the curvelet transform which is well suited to process seismic data. 
@@ -290,35 +290,27 @@ the usefulness of l1 regularization in finding sparse solutions.},
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications//Public/Conferences/SEG/2008/herrmann08segmat.pdf}}
 
 @techreport{BergFriedlander:2008,
-	Abstract = {The basis pursuit problem seeks a minimum one-norm solution of an underdetermined least-squares problem. Basis pursuit denoise (B
-PDN) fits the least-squares problem only approximately, and a single parameter determines a curve that traces the optimal trade-of between the leas
+	Abstract = {The basis pursuit problem seeks a minimum one-norm solution of an underdetermined least-squares problem. Basis pursuit denoise (BPDN) 
+fits the least-squares problem only approximately, and a single parameter determines a curve that traces the optimal trade-of between the leas
 t-squares fit and the one-norm of the solution. We prove that this curve is convex and continuously differentiable over all points of interest, and
- show that it gives an explicit relationship to two other optimization problems closely related to BPDN.  We describe a root-fnding algorithm for f
-inding arbitrary points on this curve; the algorithm is suitable for problems that are large scale and for those that are in the complex domain. At
- each iteration, a spectral gradient-projection method approximately minimizes a least-squares problem with an explicit one-norm constraint. Only m
-atrix-vector operations are required. The primal-dual solution of this problem gives function and derivative information needed for the root-findin
-g method.  Numerical experiments on a comprehensive set of test problems demonstrate that the method scales well to large problems.},
+ show that it gives an explicit relationship to two other optimization problems closely related to BPDN.  We describe a root-fnding algorithm for finding arbitrary points on this curve; the algorithm is suitable for problems that are large scale and for those that are in the complex domain. At
+ each iteration, a spectral gradient-projection method approximately minimizes a least-squares problem with an explicit one-norm constraint. Only matrix-vector operations are required. The primal-dual solution of this problem gives function and derivative information needed for the root-finding method.  Numerical experiments on a comprehensive set of test problems demonstrate that the method scales well to large problems.},
 	Address = {University of British Columbia},
 	Author = {E. {van den} Berg and M. P. Friedlander},
 	Institution = {Department of Computer Science},
 	Month = {January},
 	Note = {To appear in {\it SIAM J. Sci. Comp.}},
 	Number = {TR-2008-01},
-	pdf = {http://www.cs.ubc.ca/~mpf/downloads/BergFriedlander08.pdf},
+	pdf = {http://www.cs.ubc.ca/~mpf/downloads/BergFriedlander08.pdf},	
+	talkurl = {http://slim.eos.ubc.ca/Publications/Public/Presentations/vandenberg07ipo.pdf},
 	Title = {Probing the {P}areto frontier for basis pursuit solutions},
 	Keywords = {SLIM},
 	Year = 2008}
 
 @inproceedings{Herrmann2003SPIE,
-	Abstract = { Seismic imaging commits itself to locating singularities in the elastic properties of the Earth's subsurface.  Using the high-freq
-uency ray-Born approximation for scattering from non-intersecting smooth interfaces, seismic data can be represented by a generalized Radon transfo
-rm mapping the singularities in the medium to seismic data. Even though seismic data are bandwidth limited, signatures of the singularities in the
-medium carry through this transform and its inverse and this mapping property presents us with the possibility to develop new imaging techniques th
-at preserve and characterize the singularities from incomplete, bandwidth-limited and noisy data. In this paper we propose a non-adaptive Curvelet/
-Contourlet technique to image and preserve the singularities and a data-adaptive Matching Pursuit method to characterize these imaged singularities
- by Multi-fractional Splines. This first technique borrows from the ideas within the Wavelet-Vaguelette/Quasi-SVD approach. We use the almost diago
-nalization of the scattering operator to approximately compensate for (i) the coloring of the noise and hence facilitate estimation; (ii) the norma
-l operator itself. Results of applying these techniques to seismic imaging are encouraging although many open fundamental questions remain. },
+	Abstract = { Seismic imaging commits itself to locating singularities in the elastic properties of the Earth's subsurface.  Using the high-frequency ray-Born approximation for scattering from non-intersecting smooth interfaces, seismic data can be represented by a generalized Radon transform mapping the singularities in the medium to seismic data. Even though seismic data are bandwidth limited, signatures of the singularities in the
+medium carry through this transform and its inverse and this mapping property presents us with the possibility to develop new imaging techniques that preserve and characterize the singularities from incomplete, bandwidth-limited and noisy data. In this paper we propose a non-adaptive Curvelet/Contourlet technique to image and preserve the singularities and a data-adaptive Matching Pursuit method to characterize these imaged singularities
+ by Multi-fractional Splines. This first technique borrows from the ideas within the Wavelet-Vaguelette/Quasi-SVD approach. We use the almost diagonalization of the scattering operator to approximately compensate for (i) the coloring of the noise and hence facilitate estimation; (ii) the normal operator itself. Results of applying these techniques to seismic imaging are encouraging although many open fundamental questions remain. },
 	Author = {F. J. Herrmann},
 	Booktitle = {Proceedings of SPIE Technical Conference on Wavelets: Applications in Signal and Image Processing X},
 	Editor = {M. Unser and A. Aldroubi},
@@ -419,7 +411,8 @@ At the core of the sparse recovery problem is the linear system $Ax+r=b$, where 
 	Booktitle = {SEG Technical Program Expanded Abstracts},
 	Issue = {1},
 	Keywords = {SLIM},
-	Month = {November},
+	Month = {November},	
+	Year = {2008},
 	Number = {1},
 	Optdate-Added = {2008-08-14 13:17:16 -0700},
 	Optdate-Modified = {2008-08-14 16:34:43 -0700},
@@ -1365,20 +1358,12 @@ compared our results with that of Spiky deconvolution approach.},
 	Year = {2008}}
 
 @techreport{herrmann08cmp,
-	Abstract = { The extreme large size of typical seismic imaging problems has been one of the major stumbling blocks for a successful applica
-tion of iterative techniques from numerical linear algebra to attain accurate migration amplitudes. These iterative methods are important because t
-hey complement theoretically-driven approaches that are hampered by mundane different to control problems such as finite-acquisition aperture, sour
-ce-receiver frequency response, and directivity. To solve this problem, we apply the well-know technique of preconditioning that significantly incr
-eases the convergence of iterative solvers, making least-squares migration more tangible. First, we discuss different levels of preconditioning tha
-t range from corrections for the order of the migration operator to corrections for spherical spreading, and position and reflector-dip dependent a
-mplitude errors. While the first two corrections correspond to simple scalings in the Fourier and physical space, the third correction requires an
-intricate phase-space scaling, which we carry out with curvelets. We conclude by showing that our combined preconditioner leads to a significant im
-provement for the convergence of least-squares `wave-equation' migration on a line from the SEG AA' Salt model.},
+	Abstract = { The extreme large size of typical seismic imaging problems has been one of the major stumbling blocks for a successful application of iterative techniques from numerical linear algebra to attain accurate migration amplitudes. These iterative methods are important because they complement theoretically-driven approaches that are hampered by mundane different to control problems such as finite-acquisition aperture, source-receiver frequency response, and directivity. To solve this problem, we apply the well-know technique of preconditioning that significantly increases the convergence of iterative solvers, making least-squares migration more tangible. First, we discuss different levels of preconditioning that range from corrections for the order of the migration operator to corrections for spherical spreading, and position and reflector-dip dependent amplitude errors. While the first two corrections correspond to simple scalings in the Fourier and physical space, the third correction requires an intricate phase-space scaling, which we carry out with curvelets. We conclude by showing that our combined preconditioner leads to a significant improvement for the convergence of least-squares `wave-equation' migration on a line from the SEG AA' Salt model.},
 	Author = {F. J. Herrmann and C. Brown and Y. Erlangga and P. Moghaddam},
 	Institution = {The University of British Columbia},
 	Note = {Submitted for publication},
 	Number = {TR-2008-4},
-	pdf = {//http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann08csf.pdf},
+	pdf = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann08csf.pdf},
 	Title = {Curvelet-based migration preconditioning},
 	Year = {2008},
 	Keywords = {SLIM},
@@ -1741,8 +1726,8 @@ approach along with the assumption of approximate curvelet-domain
 independence of the to-be-separated signal components, we construct an
 iterative algorithm that takes the predictions produced by for example
 SRME as input and separates these components in a robust fashion. In
-addition, the proposed algorithm controls the energy mismatch be-
-tween the separated and predicted components. Such a control, which
+addition, the proposed algorithm controls the energy mismatch between 
+the separated and predicted components. Such a control, which
 was lacking in earlier curvelet-domain formulations, produces improved
 results for primary-multiple separation on both synthetic and real
 data.  },
@@ -2636,7 +2621,7 @@ subsampling that is typically weaker and Gaussian-like.},
 
 @conference{herrmann07srm,
 	Abstract = {Incomplete data, unknown source-receiver
-signatures and free-surface reflectivity rep- resent challenges for a
+signatures and free-surface reflectivity represent challenges for a
 successful prediction and subsequent removal of multiples. In this
 paper, a new method will be represented that tackles these challenges
 by combining what we know about wavefield (de-)focussing, by weighted
@@ -2644,7 +2629,7 @@ convolutions/correlations, and recently developed curvelet-based
 recovery by sparsity-promoting inversion (CRSI).  With this
 combination, we are able to leverage recent insights from wave physics
 to- wards a nonlinear formulation for the multiple-prediction problem
-that works for in- complete data and without detailed knowledge on the
+that works for incomplete data and without detailed knowledge on the
 surface effects.},
 	Author = {F. J. Herrmann},
 	Booktitle = {EAGE Technical Program Expanded Abstracts},
@@ -2693,7 +2678,7 @@ nonlin- ear inversion method.  },
 curvelet-based sparsity-promoting formulation for three problems in
 seismic processing and imaging namely, seismic data regularization
 from data with large percentages of traces missing; seismic amplitude
-recovery for sub- salt images obtained by reverse-time migration and
+recovery for sub-salt images obtained by reverse-time migration and
 primary-multiple separation, given an inaccurate multiple
 prediction. We argue why these nonlinear formulations are beneficial.  },
 	Author = {F. J. Herrmann and G. Hennenfent and P. P. Moghaddam},
@@ -2743,11 +2728,11 @@ use of such data results in image artifacts and poor spatial
 resolution. Sometimes due to practical limitations, measurements may
 be available on a perturbed grid, instead of on the designated
 grid. Due to algorithmic requirements, when such measurements are
-viewed as those on the designated grid, the recovery pro- cedures may
+viewed as those on the designated grid, the recovery procedures may
 result in additional artifacts. This paper interpolates incomplete
 data onto regular grid via the Fourier domain, using a recently
 developed greedy algorithm. The basic objective is to study
-experimentally as to what could be the size of the perturba- tion in
+experimentally as to what could be the size of the perturbation in
 measurement coordinates that allows for the measurements on the
 perturbed grid to be considered as on the designated grid for faithful
 recovery. Our experimental work shows that for compressible signals, a
@@ -2859,7 +2844,7 @@ low frequency loss of information due to band ...  },
 	are known to compress seismic wavefields. By casting the
 	wavefield extrapolation problem in this framework, wavefields
 	can successfully be extrapolated in the modal domain via a
-	computationally cheaper operatoion. A proof of principle for
+	computationally cheaper operation. A proof of principle for
 	the ``compressed sensing'' method is given for wavefield
 	extrapolation in 2-D. The results show that our method is
 	stable and produces identical results compared to the direct
@@ -3619,12 +3604,12 @@ seismic processing flow.  For instance, unsuccessful interpolation
 leads to erroneous multiple predictions that adversely affect the
 performance of multiple elimination, and to imaging artifacts. We
 present a new non-parametric transform-based reconstruction method
-that exploits the compression of seismic data by the re- cently
+that exploits the compression of seismic data by the recently
 developed curvelet transform. The elements of this transform, called
 curvelets, are multi-dimensional, multi-scale, and
 multi-directional. They locally resemble wavefronts present in the
 data, which leads to a compressible representation for seismic
-data. This compression enables us to formu- late a new curvelet-based
+data. This compression enables us to formulate a new curvelet-based
 seismic data recovery algorithm through sparsity-promoting inversion
 (CRSI). The concept of sparsity-promoting inversion is in itself not
 new to geophysics. However, the recent insights from the field of
@@ -3635,7 +3620,7 @@ sub-Nyquist sampling strategy that subdues coherent aliases in the
 sparsifying domain, and a data-consistent sparsity-promoting program.
 After a brief overview of the curvelet transform and our
 seismic-oriented extension to the fast discrete curvelet transform, we
-detail the CRSI formu- lation and illustrate its performance on
+detail the CRSI formulation and illustrate its performance on
 synthetic and real datasets. Then, we introduce a sub-Nyquist sampling
 scheme, termed jittered undersampling, and show that, for the same
 amount of data acquired, jittered data are best interpolated using
@@ -3658,12 +3643,12 @@ results on multiple removal and migration-amplitude recovery.},
 
 @mastersthesis{yarham08msc,
 	Abstract = {The removal of coherent noise generated by surface
-waves in land based seis- mic is a prerequisite to imaging the
+waves in land based seismic is a prerequisite to imaging the
 subsurface. These surface waves, termed as ground roll, overlay
 important reflector information in both the t-x and f-k
 domains. Standard techniques of ground roll removal commonly alter
 reflector information as a consequence of the ground roll removal. We
-pro- pose the combined use of the curvelet domain as a sparsifying
+propose the combined use of the curvelet domain as a sparsifying
 basis in which to perform signal separation techniques that can
 preserve reflector informa- tion while increasing ground roll
 removal. We examine two signal separation techniques, a

@@ -1,10 +1,255 @@
 
-%% Created for James Johnson at 2009-01-29 17:16:41 -0800 
+%% Created for James Johnson at 2009-06-23 16:26:05 -0700 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@conference{herrmann09sns,
+	Author = {F. J. Herrmann},
+	Date-Added = {2009-06-23 16:23:30 -0700},
+	Date-Modified = {2009-06-23 16:24:40 -0700},
+	Keywords = {SEG},
+	Organization = {SEG},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/herrmann09segsss.pdf},
+	Title = {Sub-Nyquist sampling and sparsity: getting more information from fewer samples},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/herrmann09segsss.pdf}}
+
+@conference{tang09hdb,
+	Abstract = {In combination with compressive sensing, a successful reconstruction scheme called Curvelet-based Recovery by Sparsity-promoting Inversion (CRSI) has been developed, and has proven to be useful for seismic data processing. One of the most important issues for CRSI is the sampling scheme, which can greatly affect the quality of reconstruction. Unlike usual regular undersampling, stochastic sampling can convert aliases to easy-to-eliminate noise. Some stochastic sampling methods have been developed for CRSI, e.g. jittered sampling, however most have only been applied to 1D sampling along a line. Seismic datasets are usually higher dimensional and very large, thus it is desirable and often necessary to develop higher dimensional sampling methods to deal with these data. For dimensions higher than one, few results have been reported, except uniform random sampling, which does not perform well. In the present paper, we explore 2D sampling methodologies for curvelet-based reconstruction, possessing sampling spectra with blue noise characteristics, such as Poisson Disk sampling, Farthest Point Sampling, and the 2D extension of jittered sampling. These sampling methods are shown to lead to better recovery and results are compared to the other more traditional sampling protocols.},
+	Author = {G. Tang and R. Shahidi and F. J. Herrmann and J. Ma},
+	Date-Added = {2009-06-23 16:21:51 -0700},
+	Date-Modified = {2009-06-23 16:23:09 -0700},
+	Keywords = {SEG},
+	Organization = {SEG},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/tang09seghdb.pdf},
+	Title = {Higher dimensional blue-noise sampling schemes for curvelet-based seismic data recovery},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/tang09seghdb.pdf}}
+
+@conference{yan09gpb,
+	Abstract = {The removal of groundroll in land based seismic data is a critical step for seismic imaging. In this paper, we introduce a work flow to predict the groundroll by interferometry and then separate the groundroll in the curvelet domain. Thus workflow is similar to the workflow of surface-related multiple elimination (SRME). By exploiting the adaptability and sparsity of curvelets, we are able to significantly improve the separation of groundroll in comparison to results yielded by frequency-domain adaptive subtraction methods. We provide synthetic data example to illustrate our claim.},
+	Author = {J. Yan and F. J. Herrmann},
+	Date-Added = {2009-06-23 16:19:18 -0700},
+	Date-Modified = {2009-06-23 16:20:43 -0700},
+	Keywords = {SEG},
+	Organization = {SEG},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/yan09seggrp.pdf},
+	Title = {Groundroll prediction by interferometry and separation by curvelet-domain matched filtering},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/yan09seggrp.pdf}}
+
+@conference{kumar09ins,
+	Abstract = {The separation of signal and noise is a key issue in seismic data processing. By noise we refer to the incoherent noise that is present in the data. We use the recently introduced multiscale and multidirectional curvelet transform for suppression of random noise. The curvelet transform decomposes data into directional plane waves that are local in nature. The coherent features of the data occupy the large coefficients in the curvelet domain, whereas the incoherent noise lives in the small coefficients. In other words, signal and noise have minimal overlap in the curvelet domain. This gives us a chance to use curvelets to suppress noise present in data.},
+	Author = {V. Kumar and F. J. Herrmann},
+	Date-Added = {2009-06-23 16:18:02 -0700},
+	Date-Modified = {2009-06-23 16:19:00 -0700},
+	Keywords = {SEG},
+	Organization = {SEG},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/kumar09segins.pdf},
+	Title = {Incoherent noise suppression with curvelet-domain sparsity},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/kumar09segins.pdf}}
+
+@conference{erlangga09swi,
+	Abstract = {This abstract discusses an implicit implementation of the Gauss-Newton method, used for the frequency-domain full-waveform inversion, where the inverse of the Hessian for the update is never formed explicitly. Instead, the inverse of the Hessian is computed approximately by a conjugate gradient (CG) method, which only requires the action of the Hessian on the CG search direction. This procedure avoids an excessive computer storage, usually needed for storing the Hessian, at the expense of extra computational work in CG. An effective preconditioner for the Hessian is important to improve the convergence of CG, and hence to reduce the overall computational work.},
+	Author = {Y. A. Erlangga and F. J. Herrmann},
+	Date-Added = {2009-06-23 16:16:22 -0700},
+	Date-Modified = {2009-06-23 16:17:46 -0700},
+	Keywords = {SEG},
+	Organization = {SEG},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/erlangga09segswi.pdf},
+	Title = {Seismic waveform inversion with Gauss-Newton-Krylov method},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/erlangga09segswi.pdf}}
+
+@conference{sahidi09cdm,
+	Abstract = {In Herrmann et al. (2008), it is shown that zero-order pseudodifferential operators, which model the migration-demigration operator and the operator mapping the predicted multiples to the true multiples, can be represented by a diagonal weighting in the curvelet domain. In that paper, a smoothness constraint was introduced in the phase space of the operator in order to regularize the solution to make it unique. In this paper, we use recent results in Demanet and Ying (2008) on the discrete symbol calculus to impose a further smoothness constraint, this time in the frequency domain. It is found that with this additional constraint, faster convergence is realized. Results on a synthetic pseudodifferential operator as well as on an example of primary-multiple separation in seismic data are included, comparing the model with and without the new smoothness constraint, from which it is found that results of improved quality are also obtained.},
+	Author = {R. Shahidi and F. J. Herrmann},
+	Date-Added = {2009-06-23 16:14:41 -0700},
+	Date-Modified = {2009-06-23 16:15:54 -0700},
+	Keywords = {SEG},
+	Organization = {SEG},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/shahidi09segcmf.pdf},
+	Title = {Curvelet-domain matched filtering with frequency-domain regularization},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/shahidi09segcmf.pdf}}
+
+@conference{lin09ucs,
+	Abstract = {The central promise of simultaneous acquisition is a vastly improved crew efficiency during acquisition at the cost of additional post-processing to obtain conventional source-separated data volumes. Using recent theories from the field of compressive sensing, we present a way to systematically model the effects of simultaneous acquisition. Our formulation form a new framework in the study of acquisition design and naturally leads to an inversion-based approach for the separation of shot records. Furthermore, we show how other inversion-based methods, such as a recently proposed method from van Groenestijn and Verschuur (2009) for primary estimation, can be processed together with the demultiplexing problem to achieve a better result compared to a separate treatment of these problems.},
+	Author = {T.T.Y. Lin and F. J. Herrmann},
+	Date-Added = {2009-06-23 16:13:09 -0700},
+	Date-Modified = {2009-06-23 16:14:15 -0700},
+	Keywords = {SEG},
+	Organization = {SEG},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/lin09segucf.pdf},
+	Title = {Unified compressive sensing framework for simultaneous acquisition with primary estimation},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/lin09segucf.pdf}}
+
+@conference{herrmann09csf,
+	Abstract = {The fact that the computational complexity of wavefield simulation is proportional to the size of the discretized model and acquisition geometry, and not to the complexity of the simulated wavefield, is a major impediment within seismic imaging. By turning simulation into a compressive sensing problem--where simulated data is recovered from a relatively small number of independent simultaneous sources--we remove this impediment by showing that compressively sampling a simulation is equivalent to compressively sampling the sources, followed by solving a reduced system. As in compressive sensing, this allows for a reduction in sampling rate and hence in simulation costs. We demonstrate this principle for the time-harmonic Helmholtz solver. The solution is computed by inverting the reduced system, followed by a recovery of the full wavefield with a sparsity promoting program. Depending on the wavefield's sparsity, this approach can lead to a significant cost reduction, in particular when combined with the implicit preconditioned Helmholtz solver, which is known to converge even for decreasing mesh sizes and increasing angular frequencies. These properties make our scheme a viable alternative to explicit time-domain finite-difference.},
+	Author = {F. J. Herrmann and T.T.Y. Lin and Y. A. Erlangga},
+	Date-Added = {2009-06-23 16:11:16 -0700},
+	Date-Modified = {2009-06-23 16:12:44 -0700},
+	Keywords = {SEG},
+	Organization = {SEG},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/lin09segcss.pdf},
+	Publisher = {SEG},
+	Title = {Compressive simultaneous full-waveform simulation},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/lin09segcss.pdf}}
+
+@conference{herrmann09cib,
+	Abstract = {Migration relies on multi-dimensional correlations between source- and residual wavefields. These multi-dimensional correlations are computationally expensive because they involve operations with explicit and full matrices that contain both wavefields. By leveraging recent insights from compressive sampling, we present an alternative method where linear correlation-based imaging is replaced by imaging via multidimensional deconvolutions of compressibly sampled wavefields. Even though this approach goes at the expense of having to solve a sparsity-promotion recovery program for the image, our wavefield inversion approach has the advantage of reducing the system size in accordance to transform-domain sparsity of the image. Because seismic images also exhibit a focusing of the energy towards zero offset, the compressive-wavefield inversion itself is carried out using a recent extension of one-norm solver technology towards matrix-valued problems. These so-called hybrid $(1,\,2)$-norm solvers allow us to penalize pre-stack energy away from zero offset while exploiting joint sparsity amongst near-offset images. Contrary to earlier work to reduce modeling and imaging costs through random phase-encoded sources, our method compressively samples wavefields in model space. This approach has several advantages amongst which improved system-size reduction, and more flexibility during subsequent inversions for subsurface properties.},
+	Author = {F. J. Herrmann},
+	Date-Added = {2009-06-23 16:09:07 -0700},
+	Date-Modified = {2009-06-23 16:10:54 -0700},
+	Keywords = {SEG},
+	Organization = {SEG},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/herrmann09segciw.pdf},
+	Publisher = {SEG},
+	Title = {Compressive imaging by wavefield inversion with group sparsity},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/herrmann09segciw.pdf}}
+
+@conference{herrmann09rpl,
+	Abstract = {By combining Percolation models with lithological smoothing, we arrive at method for upscaling rock elastic constants that preserves reflections. In this approach, the Percolation model predicts sharp onsets in the elastic moduli of sand-shale mixtures when the shales reach a critical volume fraction. At that point, the shale inclusions form a connected cluster, and the macroscopic rock properties change with the power-law growth of the cluster. This switch-like nonlinearity preserves singularities, and hence reflections, even if no sharp transition exists in the lithology or if they are smoothed out using standard upscaling procedures.},
+	Author = {F. J. Herrmann},
+	Date-Added = {2009-06-23 16:07:07 -0700},
+	Date-Modified = {2009-06-23 16:09:04 -0700},
+	Keywords = {SEG},
+	Organization = {SEG},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/herrmann09segrlu.pdf},
+	Publisher = {SEG},
+	Title = {Reflector-preserved lithological upscaling},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2009/herrmann09segrlu.pdf}}
+
+@conference{saab09asn,
+	Abstract = {In this note, we summarize the results we recently proved in\cite{SY08} on the theoretical performance guarantees of the decoders $\Delta_p$. These decoders rely on $\ell^p$ minimization with $p \in (0,1)$ to recover estimates of sparse and compressible signals from incomplete and inaccurate measurements. Our guarantees generalize the results of \cite{CRT05} and \cite{Wojtaszczyk08} about decoding by $\ell_p$ minimization with $p=1$, to the setting where $p \in (0,1)$ and are obtained under weaker sufficient conditions. We also present novel extensions of our results in \cite{SY08} that follow from the recent work of DeVore et al. in \cite{DPW08}. Finally, we show some insightful numerical experiments displaying the trade-off in the choice of $p \in (0,1]$ depending on certain properties of the input signal.},
+	Author = {R. Saab and O. Yilmaz},
+	Date-Added = {2009-06-23 16:04:31 -0700},
+	Date-Modified = {2009-06-23 16:06:19 -0700},
+	Organization = {SAMPTA},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SAMPTA/SY09sampta.pdf},
+	Title = {A short note on non-convex compressed sensing},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SAMPTA/SY09sampta.pdf}}
+
+@conference{Herrmann09cws,
+	Abstract = {Full-waveform inversion's high demand on computational resources forms, along with the non-uniqueness problem, the major impediment withstanding its widespread use on industrial-size datasets. Turning modeling and inversion into a compressive sensing problem---where simulated data are recovered from a relatively small number of independent simultaneous sources---can effectively mitigate this high-cost impediment. The key is in showing that we can design a sub-sampling operator that commutes with the time-harmonic Helmholtz system. As in compressive sensing, this leads to a reduction in simulation cost. Moreover, this reduction is commensurate with the transform-domain sparsity of the solution, implying that computational costs are no longer determined by the size of the discretization but by transform-domain sparsity of the solution of the CS problem which forms our data. The combination of this sub-sampling strategy with our recent work on implicit solvers for the Helmholtz equation provides a viable alternative to full-waveform inversion schemes based on explicit finite-difference methods.},
+	Author = {F. J. Herrmann and Y. A. Erlangga and T.T.Y. Lin},
+	Date-Added = {2009-06-23 16:02:17 -0700},
+	Date-Modified = {2009-06-23 16:04:25 -0700},
+	Keywords = {SAMPTA},
+	Organization = {SAMPTA},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SAMPTA/herrmann09sampta.pdf},
+	Title = {Compressive-waveefield simulations},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SAMPTA/herrmann09sampta.pdf}}
+
+@conference{lin09dsa,
+	Author = {T.T.Y. Lin and F. J. Herrmann},
+	Date-Added = {2009-06-23 16:00:19 -0700},
+	Date-Modified = {2009-06-23 16:02:03 -0700},
+	Keywords = {EAGE},
+	Organization = {EAGE},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2009/CompAq.pdf},
+	Publisher = {EAGE},
+	Title = {Designing simultaneous acquisitions with compressive sensing},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2009/CompAq.pdf}}
+
+@conference{Herrmann09csa,
+	Abstract = {With the recent resurgence of full-waveform inversion, the computational cost of solving forward modelingproblems has become---aside from issues with non-uniqueness---one of the major impedimentswithstanding successful application of this technology to industry-size data volumes. To overcome thisimpediment, we argue that further improvements in this area will depend on a problem formulation witha computational complexity that is no longer strictly determined by the size of the discretization butby transform-domain sparsity of its solution. In this new paradigm, we bring computational costs in parwith our ability to compress seismic data and images. This premise is related to two recent developments.First, there is the new field of compressive sensing (CS in short throughout the paper, Cand`es et al., 2006;Donoho, 2006)---where the argument is made, and rigorously proven, that compressible signals can berecovered from severely sub-Nyquist sampling by solving a sparsity promoting program. Second, thereis in the seismic community the recent resurgence of simultaneous-source acquisition (Beasley, 2008;Krohn and Neelamani, 2008; Herrmann et al., 2009; Berkhout, 2008; Neelamani et al., 2008), and continuingefforts to reduce the cost of seismic modeling, imaging, and inversion through phase encodingof simultaneous sources (Morton and Ober, 1998; Romero et al., 2000; Krohn and Neelamani, 2008;Herrmann et al., 2009), removal of subsets of angular frequencies (Sirgue and Pratt, 2004; Mulder andPlessix, 2004; Lin et al., 2008) or plane waves (Vigh and Starr, 2008). By using CS principles, weremove sub-sampling interferences asocciated with these approaches through a combination of exploitingtransform-domain sparsity, properties of certain sub-sampling schemes, and the existence of sparsitypromoting solvers.},
+	Author = {F. J. Herrmann and Y. A. Erlangga and T.T.Y. Lin},
+	Date-Added = {2009-06-23 15:57:24 -0700},
+	Date-Modified = {2009-06-23 15:59:58 -0700},
+	Keywords = {EAGE},
+	Organization = {EAGE},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2009/herrmann09eage.pdf},
+	Publisher = {EAGE},
+	Title = {Compressive sensing applied to full-waveform inversion},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2009/herrmann09eage.pdf}}
+
+@conference{Erlangga09mwi,
+	Abstract = {From the measured seismic data, the location and the amplitude of reflectors can be determined via amigration algorithm. Classically, following Claerbout's imaging principle [2], a reflector is located atthe position where the source's forward-propagated wavefield correlates with the backward-propagatedwavefield of the receiver data. Lailly and Tarantola later showed that this imaging principle is an instanceof inverse problems, with the associated migration operator formulated via a least-squares functional;see [6, 12, 13]. Furthermore, they showed that the migrated image is associated with the gradient of thisfunctional with respect to the image. If the solution of the least-squares functional is done iteratively,the correlation-based image coincides up to a constant with the first iteration of a gradient method. Inpractice, this migration is done either in the time domain or in the frequency domain.In the frequency-domain migration, the main bottleneck thus far, which renders its full implementationto large scale problems, is the lack of efficient solvers for computing wavefields. Robust directmethods easily run into excessive memory requirements as the size of the problem increases. On theother hand, iterative methods, which are less demanding in terms of memory, suffered from lack of convergence.During the past years, however, progress has been made in the development of an efficientiterative method [4, 3] for the frequency-domain wavefield computations. In this paper, we will showthe significance of this method (called MKMG) in the context of the frequency-domain migration, wheremulti-shot-frequency wavefields (of order of 10,000 related wavefields) need to be computed.},
+	Author = {Y. A. Erlangga and F. J. Herrmann},
+	Date-Added = {2009-06-23 15:51:04 -0700},
+	Date-Modified = {2009-06-23 15:56:25 -0700},
+	Keywords = {EAGE migration},
+	Organization = {EAGE},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2009/erlangga2009.pdf},
+	Publisher = {EAGE},
+	Title = {Migration with implicit solvers for the time-harmonic Helmholtz equation},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2009/erlangga2009.pdf}}
+
+@conference{vandenberg08ocf,
+	Abstract = {An optimization algorithm for minimizing a
+smooth function over a convex set is described.
+Each iteration of the method computes a
+descent direction by minimizing, over the
+original constraints, a diagonal-plus low-rank
+quadratic approximation to the function. The
+quadratic approximation is constructed using
+a limited-memory quasi-Newton update. The
+method is suitable for large-scale problems
+where evaluation of the function is substan-
+tially more expensive than projection onto the
+constraint set. Numerical experiments on one-
+norm regularized test problems indicate that
+the proposed method is competitve with state-
+of-the-art methods such as bound-constrained
+L-BFGS and orthant-wise descent. We further
+show that the method generalizes to a wide
+class of problems, and substantially improves
+on state-of-the-art methods for problems such
+as learning the structure of Gaussian graphi-
+cal models (involving positive-denite matrix
+constraints) and Markov random elds (in-
+volving second-order cone constraints).},
+	Author = {E. {van den} Berg, and M. Schmidt, and M. P. Friedlander, and K. Murphy},
+	Date-Added = {2009-01-29 17:02:44 -0800},
+	Date-Modified = {2009-01-29 17:13:16 -0800},
+	Keywords = {SLIM},
+	Month = {April},
+	Pdf = {http://www.cs.ubc.ca/~mpf/public/group.pdf},
+	Series = {Twelfth International Conference on Artificial Intelligence and Statistics},
+	Title = {Optimizing Costly Functions with Simple Constraints: A Limited-Memory Projected Quasi-Newton Algorithm},
+	Volume = {12},
+	Year = {2009}}
+
+@conference{Herrmann08cdm3,
+	Abstract = {Matching seismic wavefields lies at the heart of seismic processing
+  whether one is adaptively subtracting multiples predictions or
+  groundroll. In both cases, the predictions are matched to the actual
+  to-be-separated wavefield components in the observed data. The
+  success of these wavefield matching procedures depends on our
+  ability to (i) control possible overfitting, which may lead to
+  accidental removal of primary energy, (ii) handle data with
+  nonunique dips, and (iii) apply wavefield separation after matching
+  stably. In this paper, we show that the curvelet transform allows us
+  to address these issues by imposing smoothness in phase space, by
+  using their capability to handle conflicting dips, and by leveraging
+  their ability to represent seismic data sparsely.},
+	Author = {F. J. Herrmann},
+	Booktitle = {SEG Technical Program Expanded Abstracts},
+	Date-Added = {2008-11-21 14:54:57 -0800},
+	Date-Modified = {2008-11-21 14:59:01 -0800},
+	Keywords = {SLIM, SEG},
+	Month = {November},
+	Number = {1},
+	Pages = {3643-3647},
+	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2008/herrmann08segws.pdf},
+	Publisher = {SEG},
+	Title = {Curvelet-domain matched filtering},
+	Volume = {27},
+	Year = {2008}}
 
 @conference{vandenberg08ocf,
 	Abstract = {An optimization algorithm for minimizing a

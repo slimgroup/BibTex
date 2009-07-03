@@ -1,10 +1,36 @@
 
-%% Created for James Johnson at 2009-06-23 16:26:05 -0700 
+%% Created for James Johnson at 2009-07-03 13:14:11 -0700 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{herrmann09cbm,
+	Abstract = {The extremely large size of typical seismic imaging problems has been one of the major stumbling blocks for iterative techniques to attain accurate migration amplitudes. These iterative methods are important because they complement theoretical approaches that are hampered by difficulties to control problems such as finite-acquisition aperture, source-receiver frequency response, and directivity. To solve these problems, we apply preconditioning, which significantly improves convergence of least-squares migration. We discuss different levels of preconditioning that range from corrections for the order of the migration operator to corrections for spherical spreading, and position and reflector-dip dependent amplitude errors. While the first two corrections correspond to simple scalings in the Fourier and physical domain, the third correction requires phase-space (space spanned by location and dip) scaling, which we carry out with curvelets. We show that our combined preconditioner leads to a significant improvement of the convergence of least-squares `wave-equation' migration on a line from the SEG AA' salt model.},
+	Author = {F. J. Herrmann and C. R. Brown and Y. A. Erlangga and P. P. Moghaddam},
+	Date-Added = {2009-07-03 13:10:26 -0700},
+	Date-Modified = {2009-07-03 13:13:32 -0700},
+	Journal = {Geophysics},
+	Keywords = {migration},
+	Pages = {A41},
+	Title = {Curvelet-based migration preconditioning and scaling},
+	Volume = {74},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann08cmp-r.pdf}}
+
+@article{herrmann09csf,
+	Abstract = {The fact that computational complexity of wavefield simulation is proportional to the size of the discretized model and acquisition geometry, and not to the complexity of the simulated wavefield, is a major impediment within seismic imaging. By turning simulation into a compressive sensing problem---where simulated data is recovered from a relatively small number of independent simultaneous sources---we remove this impediment by showing that compressively sampling a simulation is equivalent to compressively sampling the sources, followed by solving a reduced system. As in compressive sensing, this allows for a reduction in sampling rate and hence in simulation costs. We demonstrate this principle for the time-harmonic Helmholtz solver. The solution is computed by inverting the reduced system, followed by a recovery of the full wavefield with a sparsity promoting program. Depending on the wavefield's sparsity, this approach can lead to significant cost reductions, in particular when combined with the implicit preconditioned Helmholtz solver, which is known to converge even for decreasing mesh sizes and increasing angular frequencies. These properties make our scheme a viable alternative to explicit time-domain finite-differences.},
+	Author = {F. J. Herrmann and Y. A. Erlangga and T.T.Y. Lin},
+	Date-Added = {2009-07-03 13:04:56 -0700},
+	Date-Modified = {2009-07-03 13:10:18 -0700},
+	Journal = {Geophysics},
+	Keywords = {full-waveform},
+	Pages = {A35},
+	Title = {Compressive simultaneous full-waveform simulation},
+	Volume = {74},
+	Year = {2009},
+	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/TechReports/herrmann08csf-r.pdf}}
 
 @conference{herrmann09sns,
 	Author = {F. J. Herrmann},
@@ -164,7 +190,25 @@
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2009/CompAq.pdf}}
 
 @conference{Herrmann09csa,
-	Abstract = {With the recent resurgence of full-waveform inversion, the computational cost of solving forward modelingproblems has become---aside from issues with non-uniqueness---one of the major impedimentswithstanding successful application of this technology to industry-size data volumes. To overcome thisimpediment, we argue that further improvements in this area will depend on a problem formulation witha computational complexity that is no longer strictly determined by the size of the discretization butby transform-domain sparsity of its solution. In this new paradigm, we bring computational costs in parwith our ability to compress seismic data and images. This premise is related to two recent developments.First, there is the new field of compressive sensing (CS in short throughout the paper, Cand`es et al., 2006;Donoho, 2006)---where the argument is made, and rigorously proven, that compressible signals can berecovered from severely sub-Nyquist sampling by solving a sparsity promoting program. Second, thereis in the seismic community the recent resurgence of simultaneous-source acquisition (Beasley, 2008;Krohn and Neelamani, 2008; Herrmann et al., 2009; Berkhout, 2008; Neelamani et al., 2008), and continuingefforts to reduce the cost of seismic modeling, imaging, and inversion through phase encodingof simultaneous sources (Morton and Ober, 1998; Romero et al., 2000; Krohn and Neelamani, 2008;Herrmann et al., 2009), removal of subsets of angular frequencies (Sirgue and Pratt, 2004; Mulder andPlessix, 2004; Lin et al., 2008) or plane waves (Vigh and Starr, 2008). By using CS principles, weremove sub-sampling interferences asocciated with these approaches through a combination of exploitingtransform-domain sparsity, properties of certain sub-sampling schemes, and the existence of sparsitypromoting solvers.},
+	Abstract = {With the recent resurgence of full-waveform inversion, the computational cost of solving forward modeling
+problems has become---aside from issues with non-uniqueness---one of the major impediments
+withstanding successful application of this technology to industry-size data volumes. To overcome this
+impediment, we argue that further improvements in this area will depend on a problem formulation with
+a computational complexity that is no longer strictly determined by the size of the discretization but
+by transform-domain sparsity of its solution. In this new paradigm, we bring computational costs in par
+with our ability to compress seismic data and images. This premise is related to two recent developments.
+First, there is the new field of compressive sensing (CS in short throughout the paper, Cand`es et al., 2006;
+Donoho, 2006)---where the argument is made, and rigorously proven, that compressible signals can be
+recovered from severely sub-Nyquist sampling by solving a sparsity promoting program. Second, there
+is in the seismic community the recent resurgence of simultaneous-source acquisition (Beasley, 2008;
+Krohn and Neelamani, 2008; Herrmann et al., 2009; Berkhout, 2008; Neelamani et al., 2008), and continuing
+efforts to reduce the cost of seismic modeling, imaging, and inversion through phase encoding
+of simultaneous sources (Morton and Ober, 1998; Romero et al., 2000; Krohn and Neelamani, 2008;
+Herrmann et al., 2009), removal of subsets of angular frequencies (Sirgue and Pratt, 2004; Mulder and
+Plessix, 2004; Lin et al., 2008) or plane waves (Vigh and Starr, 2008). By using CS principles, we
+remove sub-sampling interferences asocciated with these approaches through a combination of exploiting
+transform-domain sparsity, properties of certain sub-sampling schemes, and the existence of sparsity
+promoting solvers.},
 	Author = {F. J. Herrmann and Y. A. Erlangga and T.T.Y. Lin},
 	Date-Added = {2009-06-23 15:57:24 -0700},
 	Date-Modified = {2009-06-23 15:59:58 -0700},
@@ -177,7 +221,23 @@
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2009/herrmann09eage.pdf}}
 
 @conference{Erlangga09mwi,
-	Abstract = {From the measured seismic data, the location and the amplitude of reflectors can be determined via amigration algorithm. Classically, following Claerbout's imaging principle [2], a reflector is located atthe position where the source's forward-propagated wavefield correlates with the backward-propagatedwavefield of the receiver data. Lailly and Tarantola later showed that this imaging principle is an instanceof inverse problems, with the associated migration operator formulated via a least-squares functional;see [6, 12, 13]. Furthermore, they showed that the migrated image is associated with the gradient of thisfunctional with respect to the image. If the solution of the least-squares functional is done iteratively,the correlation-based image coincides up to a constant with the first iteration of a gradient method. Inpractice, this migration is done either in the time domain or in the frequency domain.In the frequency-domain migration, the main bottleneck thus far, which renders its full implementationto large scale problems, is the lack of efficient solvers for computing wavefields. Robust directmethods easily run into excessive memory requirements as the size of the problem increases. On theother hand, iterative methods, which are less demanding in terms of memory, suffered from lack of convergence.During the past years, however, progress has been made in the development of an efficientiterative method [4, 3] for the frequency-domain wavefield computations. In this paper, we will showthe significance of this method (called MKMG) in the context of the frequency-domain migration, wheremulti-shot-frequency wavefields (of order of 10,000 related wavefields) need to be computed.},
+	Abstract = {From the measured seismic data, the location and the amplitude of reflectors can be determined via a
+migration algorithm. Classically, following Claerbout's imaging principle [2], a reflector is located at
+the position where the source's forward-propagated wavefield correlates with the backward-propagated
+wavefield of the receiver data. Lailly and Tarantola later showed that this imaging principle is an instance
+of inverse problems, with the associated migration operator formulated via a least-squares functional;
+see [6, 12, 13]. Furthermore, they showed that the migrated image is associated with the gradient of this
+functional with respect to the image. If the solution of the least-squares functional is done iteratively,
+the correlation-based image coincides up to a constant with the first iteration of a gradient method. In
+practice, this migration is done either in the time domain or in the frequency domain.
+In the frequency-domain migration, the main bottleneck thus far, which renders its full implementation
+to large scale problems, is the lack of efficient solvers for computing wavefields. Robust direct
+methods easily run into excessive memory requirements as the size of the problem increases. On the
+other hand, iterative methods, which are less demanding in terms of memory, suffered from lack of convergence.
+During the past years, however, progress has been made in the development of an efficient
+iterative method [4, 3] for the frequency-domain wavefield computations. In this paper, we will show
+the significance of this method (called MKMG) in the context of the frequency-domain migration, where
+multi-shot-frequency wavefields (of order of 10,000 related wavefields) need to be computed.},
 	Author = {Y. A. Erlangga and F. J. Herrmann},
 	Date-Added = {2009-06-23 15:51:04 -0700},
 	Date-Modified = {2009-06-23 15:56:25 -0700},

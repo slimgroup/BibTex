@@ -1,10 +1,32 @@
 
-%% Created for James Johnson at 2009-10-05 14:07:03 -0700 
+%% Created for James Johnson at 2010-01-25 11:46:38 -0800 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@conference{lin10soe,
+	Abstract = {Recent works on surface-related multiple removal include a direct estimation method proposed by vanGroenestijn and Verschuur (2009), where under a sparsity assumption the primary impulse response isdetermined directly from a data-driven wavefield inversion process called Estimation of Primaries bySparse Inversion (EPSI). The authors have shown that this approach is superior to traditional estimationsubtractionprocesses such as SRME on shallow bottom marine data, where by expanding the model tosimultaneously invert for the near-offset traces, which are not directly available in most situation but areobservable in the data multiples, a large improvement over Radon interpolation is demonstrated.One of the major roadblocks to the widespread adoption of EPSI is that one must have precise knowledgeof a time-window that contains multiple-free primaries during each update. There is some anecdotal evidencethat the inversion result is unstable under errors in the time-window length, a behaviour that runscontrary to the strengths of EPSI and diminishes its effectiveness for shallow-bottom marine data wheremultiples are closely spaced. Moreover, due to the nuances involved in regularizing the model impulseresponse in the inverse problem, the EPSI approach has an additional number of inversion parameters tochoose and often also does not often lead to a stable solution under perturbations to these parameters.We show that the specific sparsity constraint on the EPSI updates lead to an inherently intractable problem,and that the time-window and other inversion variables arise as additional regularizations on theunknown towards a meaningful solution. We furthermore suggest a way to remove almost all of theseparameters via a L0 to L1 convexification, which stabilizes the inversion while preserving the crucialsparsity assumption in the primary impulse response model.},
+	Author = {T.T.Y. Lin and F. J. Herrmann},
+	Date-Added = {2010-01-25 11:44:30 -0800},
+	Date-Modified = {2010-01-25 11:46:09 -0800},
+	Keywords = {EAGE},
+	Organization = {EAGE},
+	Publisher = {EAGE},
+	Title = {Stabilization of estimation of primaries via sparse inversion},
+	Year = {2010}}
+
+@conference{johnson10eop,
+	Abstract = {Accurate removal of surface related multiples is a key step in seismic data processing. The industrystandard for removing multiples is SRME, which involves convolving the data with itself to predictthe multiples, followed by an adaptive subtraction procedure to recover the primaries (Verschuur andBerkhout, 1997). Other methods involve multidimensional division of the up-going and down-goingwavefields (Amundsen, 2001). However, this apporach may suffer from stability problems. With theintroduction of the ``estimation of primaries by sparse inversion''(EPSI), van Groenestijn and Verschuur(2009) resentely reformulated SRME to jointly estimate the surface-free impulse response and the sourcesignature directly from the data. The advantage of EPSI is that it recovers the primary response directly,and does not require a second processing step for the subtraction of estimated multiples from the originaldata. However, because it estimates both the primary impulse response and source signature from thedata EPSI must be regularized.Motivated by recent successful application of the curvelet transform in seismic data processing (Herrmannet al., 2007), we formulate EPSI as a bi-convex optimization problem that seeks sparsity on thesurface-free Green's function and Fourier-domain smoothness on the source wavelet. Our main contributioncompared to previous work (Lin and Herrmann, 2009), and the conntribution of that author tothe proceedings of this meeting(Lin and Herrmann, 2010), is that we employ the physical principle ofas source-receiver reciprocity to improve the inversion.},
+	Author = {J.G.A. Johnson and T.T.Y. Lin and F. J. Herrmann},
+	Date-Added = {2010-01-25 11:41:50 -0800},
+	Date-Modified = {2010-01-25 11:44:04 -0800},
+	Keywords = {EAGE},
+	Organization = {EAGE},
+	Publisher = {EAGE},
+	Title = {Estimation of primaries via sparse inversion with reciprocity},
+	Year = {2010}}
 
 @mastersthesis{alhashim09msc,
 	Abstract = {The process of obtaining high quality seismic images is very challenging

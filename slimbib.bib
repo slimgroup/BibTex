@@ -754,6 +754,30 @@ ering seismic wavefields from incomplete measurements.
 	Year = {2007},
 	Bdsk-Url-1 = {http://www.cs.ubc.ca/~mpf/public/mpf07ams.pdf}}
 
+@conference{friedlander09a,
+	Author = {M. P. Friedlander},
+	Booktitle = {2009 High Performance Scientific Computing Conference},
+	Keywords = {SLIM,minimization, Presentation},
+	Title = {Computing sparse and group-sparse approximations},
+        address = {Hanoi, Vietnam},
+	Year = {2009}}
+
+@conference{friedlander09b,
+	Author = {M. P. Friedlander},
+	Booktitle = {IEMS Colloquim Speaker},
+	Keywords = {SLIM,minimization, Presentation},
+	Title = {Algorithms for large-scale sparse reconstruction},
+        address = {Northwestern University},
+	Year = {2009}}
+
+@conference{friedlander09b,
+	Author = {E. van den Berg and M. P. Friedlander},
+	Booktitle = {SCAIM Seminar},
+	Keywords = {SLIM,minimization, Presentation},
+	Title = {Spot: A linear-operator toolbox for Matlab},
+        address = {University of British Columbia},
+	Year = {2009}}
+
 @articletechreport{vandendberg07ipo,
 	Abstract = {The basis pursuit technique is used to find a minimum one-norm solution of an un-
 derdetermined least-squares problem. Basis pursuit denoise fits the least-squares
@@ -817,6 +841,64 @@ the usefulness of l1 regularization in finding sparse solutions.},
 	Volume = {35},
 	Year = {2007},
 	Bdsk-Url-1 = {http://www.cs.ubc.ca/~mpf/downloads/FriedlanderSaunders08.pdf}}
+
+
+
+@techreport{BergFriedlander:2010,
+  Address =      {University of British Columbia, Vancouver},
+  Author =       {E. van den Berg and M. P. Friedlander},
+  Institution =  {Department of Computer Science},
+  Month =        {January},
+  Type =         {Tech. Rep.},
+  Number =       {TR-2010-02},
+  Title =        {Sparse optimization with least-squares constraints},
+  Year =         2010,
+  abstract =     {The use of convex optimization for the recovery of
+                  sparse signals from incomplete or compressed data is
+                  now common practice. Motivated by the success of
+                  basis pursuit in recovering sparse vectors, new
+                  formulations have been proposed that take advantage
+                  of different types of sparsity. In this paper we
+                  propose an efficient algorithm for solving a general
+                  class of sparsifying formulations. For several
+                  common types of sparsity we provide applications,
+                  along with details on how to apply the algorithm,
+                  and experimental results.  }
+}
+
+
+@techreport{BergFriedlander:2009,
+  Address =      {University of British Columbia, Vancouver},
+  Author =       {E. van den Berg and M. P. Friedlander},
+  Institution =  {Department of Computer Science},
+  Month =        {September},
+  Type =         {Tech. Rep.},
+  Number =       {TR-2009-7},
+  Title =        {Theoretical and empirical results for recovery from
+                  multiple measurements},
+  Year =         2009,
+  Note =         {to appear in {\it IEEE Trans. Info. Th.}},
+  abstract =     {The joint-sparse recovery problem aims to recover,
+                  from sets of compressed measurements, unknown sparse
+                  matrices with nonzero entries restricted to a subset
+                  of rows. This is an extension of the
+                  single-measurement-vector (SMV) problem widely
+                  studied in compressed sensing. We analyze the
+                  recovery properties for two types of recovery
+                  algorithms. First, we show that recovery using
+                  sum-of-norm minimization cannot exceed the uniform
+                  recovery rate of sequential SMV using L1
+                  minimization, and that there are problems that can
+                  be solved with one approach but not with the
+                  other. Second, we analyze the performance of the
+                  ReMBo algorithm [M. Mishali and Y. Eldar, IEEE
+                  Trans. Sig. Proc., 56 (2008)] in combination with L1
+                  minimization, and show how recovery improves as more
+                  measurements are taken. From this analysis it
+                  follows that having more measurements than number of
+                  nonzero rows does not improve the potential
+                  theoretical recovery rate.}
+}
 
 @techreport{herrmann08cdm1,
 	Abstract = {Matching seismic wavefields and images lies at the

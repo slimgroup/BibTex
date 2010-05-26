@@ -1053,6 +1053,7 @@ Year = {2010}}
 	Date-Modified = {2009-06-23 16:06:19 -0700},
 	Organization = {SAMPTA},
 	Pdf = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SAMPTA/SY09sampta.pdf},
+        Talkurl = {},
 	Title = {A short note on non-convex compressed sensing},
 	Year = {2009},
 	Bdsk-Url-1 = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SAMPTA/SY09sampta.pdf}}
@@ -7812,6 +7813,97 @@ Year = {2010}}
 	School = {Delft University of Technology},
 	Title = {Fourier reconstruction with sparse inversion},
 	Year = {2005}}
+
+
+@conference{yilmaz09ismp,
+        Abstract={It has been recently shown that one can
+                  recover/decode estimates of sparse signals from an
+                  “incomplete” set of noisy measurements via one-norm
+                  minimization methods under certain conditions on the
+                  ``measurement matrix'' that are satisfied, e.g.,
+                  when it is a random Gaussian matrix. In this talk,
+                  we present the theoretical recovery guarantees
+                  obtained when decoding by p-quasinorm minimization
+                  with p between 0 and 1: we prove that the
+                  corresponding guarantees are better than those one
+                  can obtain in the case of one-norm minimization. We
+                  show that these decoders are (2,p) instance
+                  optimal. Moreover, they are (2,2) instance optimal
+                  in probability (this relates to distances of
+                  p-convex bodies to their convex hulls).}, 
+	Author = {{\"O}. Y{\i}lmaz},
+	Booktitle = {ISMP},
+        Talkurl = {},
+	Keywords = {non-convex, compressed sensing},
+	Title = {Non-convex sparse recovery},
+	Year = {2010}}
+
+@conference{saab09birs,
+        Abstract={It has been recently shown that one can
+                  recover/decode estimates of sparse and compressible
+                  signals from an ”incomplete” set of noisy
+                  measurements via l1-norm minimization methods under
+                  certain conditions on the ”measurement matrix”. For
+                  example, these conditions are satisﬁed when the
+                  matrix is a random matrix whose entries are drawn
+                  i.i.d. from a Gaussian distribution.  In this talk,
+                  we present the theoretical recovery guarantees
+                  obtained when decoding by p-quasinorm minimization
+                  with $0<p<1$ in the setting described above, and we
+                  prove that the corresponding guarantees can be
+                  better than those one can obtain in the case of
+                  one-norm minimization. In particular, we show that
+                  decoders based on p-quasinorm minimization are
+                  $(\ell^2,\ell^p )$ instance optimal. Moreover, these
+                  decoders are $(\ell^2,\ell^2)$ instance optimal in
+                  probability (this latter relates to a result on
+                  distances of p-convex bodies to their convex
+                  hulls). Finally, we comment on algorithmic issues.}, 
+	Author = {{R. Saab},
+	Booktitle = {{BIRS Workshop on "Frames from first principles:
+                  Error correction, symmetry goals, and numerical
+                  efficiency}},
+        Talkurl = {http://www.math.ubc.ca/~oyilmaz/talks/ismp09.pdf},
+	Keywords = {non-convex, compressed sensing},
+	Title = {Sparse recovery by nonconvex optimization -- instance optimality},
+	Year = {2010}}
+
+
+@inproceedings{SCY,
+	Abstract = {An optimization algorithm for minimizing a smooth
+                  function over a convex set is described. Each
+                  iteration of the method computes a descent direction
+                  by minimizing, over the original constraints, a
+                  diagonal-plus low-rank quadratic approximation to
+                  the function. The quadratic approximation is
+                  constructed using a limited-memory quasi-Newton
+                  update. The method is suitable for large-scale
+                  problems where evaluation of the function is
+                  substantially more expensive than projection onto
+                  the constraint set. Numerical experiments on
+                  one-norm regularized test problems indicate that the
+                  proposed method is competitive with state-of-the-art
+                  methods such as bound-constrained L-BFGS and
+                  orthant-wise descent. We further show that the
+                  method generalizes to a wide class of problems, and
+                  substantially improves on state-of-the-art methods
+                  for problems such as learning the structure of
+                  Gaussian graphical models (involving
+                  positive-definite matrix constraints) and Markov
+                  random fields (involving second-order cone
+                  constraints).},
+	Author = {R. Saab and R. Chartrand and {\"O}. Y{\i}lmaz },
+	Booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2009},
+	Title = {Stable sparse approximations via nonconvex optimization},
+        Url = {http://dx.doi.org/10.1109/ICASSP.2008.4518502},
+        Pages = {3385--3388},
+	Year = {2009}}
+
+
+
+
+
+
 
 @comment{BibDesk Smart Groups{
 <?xml version="1.0" encoding="UTF-8"?>

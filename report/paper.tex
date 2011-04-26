@@ -1,0 +1,487 @@
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage[colorlinks=true, pdfstartview=FitV, bookmarks=false,
+linkcolor=blue,citecolor=blue, urlcolor=blue]{hyperref} 
+\newcommand{\ozgur}{\"Ozg\"ur Y{\i}lmaz}
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage{bm}
+
+\usepackage[utf8]{inputenc} 
+\usepackage[pdftex]{graphicx}
+\usepackage{natbib}
+\usepackage{bibentry}
+\newcommand{\Order}{\mbox{${\cal O}$}} \def\bindex#1{{\mathcal{#1}}}
+\def\argmin{\mathop{\rm arg\,min}}
+\def\vec{\mbox{$\mathrm{vec}$}}
+\def\ivec{\mbox{$\mathrm{vec}^{-1}$}}
+\newcommand{\rr}{{{r}}}
+\newcommand{\m}{{\mathsf{m}}}
+\newcommand{\PsDO}{\mbox{PsDO\,}}
+\newcommand{\R}{\mbox{$\mathbb{R}$}}
+\newcommand{\Z}{\mbox{$\mathbb{Z}$}}
+\newcommand{\C}{\mbox{$\mathbb{C}$}}
+\newcommand{\DE}{:=}
+\def\pector#1{\mathrm{\mathbf{#1}}}
+\def\vector#1{\mathbf{#1}}
+\def\tensor#1{\mathbf{#1}}
+\def\fvector#1{{\widehat{\vector{#1}}}}
+\def\evector#1{{\widetilde{\vector{#1}}}}
+\def\pvector#1{{\breve{\vector{#1}}}}
+\def\pector#1{\mathrm{#1}}
+\def\ctensor#1{\bm{\mathcal{#1}}}
+\def\tensorm#1{\bm{#1}}
+\newcommand{\disctensor}[1]{\text{\textnormal{\textbf{\textsf{#1}}}}}
+\def\censor#1{{\boldsymbol{\underline{\mathsf{#1}}}}}
+\def\cector#1{{\vector{\underline{#1}}}}
+\def\hensor#1{{\boldsymbol{\mathsf{#1}}}}
+\def\hector#1{{\boldsymbol{\mathsf{#1}}}}
+\def\hfector#1{\hat{\boldsymbol{\mathsf{#1}}}}
+\def\ctensor#1{{\tensor{\underline{\underline{\mathsf{#1}}}}}}
+\newcommand{\minimize}[1]{\displaystyle\mathop{\hbox{minimize}}_{#1}}
+\newcommand{\BP}{\ensuremath{\mbox{\small BP}}}
+\newcommand{\BPs}{\ensuremath{\mbox{\small BP}_\sigma}}
+\newcommand{\LSt}{\ensuremath{\mbox{\small LS}_\tau}}
+\newcommand{\MMVs}{\ensuremath{\mbox{\small MMV}_\sigma}}
+\newcommand{\GRPs}{\ensuremath{\mbox{\small Group}_\sigma}}
+\newcommand{\spgl}{{\small SPGL1}}
+\newcommand{\repro}{\textsc{Repro}} 
+
+\title{Final report for the SINBAD project}
+\author{Felix J. Herrmann and the \href{http://slim.eos.ubc.ca}{SLIM} team}
+\bibliographystyle{abstract}
+
+\begin{document}
+\nobibliography{slimbib}
+\section*{Applications of curvelets}
+
+\subsubsection*{Journal publications}
+\label{sec:journal-publications-1}
+
+\noindent
+\bibentry{hennenfent06sdw} 
+\noindent
+\bibentry{herrmann08cbs} 
+
+\subsubsection*{SEG/CSEG/EAGE abstracts}
+\label{sec:segcseage-abstracts}
+
+\noindent
+\bibentry{herrmann04cia} 
+\noindent
+\bibentry{herrmann04cbn} 
+\noindent
+\bibentry{herrmann07sia} 
+\noindent
+\bibentry{herrmann07rdi} 
+\noindent
+\bibentry{herrmann07jda} 
+\noindent
+\bibentry{herrmann07sdp}
+
+\subsubsection*{Miscellaneous}
+\label{sec:seg-workshop}
+\noindent
+\bibentry{herrmann07fsd}
+\noindent
+\bibentry{herrmann07snt}
+
+
+\section*{Wavefield reconstruction by curvelet-domain sparsity promotion}
+\label{sec:wavef-reconstr-curv}
+%
+\subsubsection*{Journal publications}
+\label{sec:journal-publications}
+
+\noindent
+\bibentry{herrmann08nps} 
+
+\noindent
+\bibentry{hennenfent08sdw} 
+
+\noindent
+\bibentry{hennenfent10nct} 
+
+\noindent
+\bibentry{herrmann10rsg} 
+
+\subsubsection*{SEG/CSEG/EAGE abstracts}
+\label{sec:segcs-abstr}
+
+\noindent
+\bibentry{herrmann05rcd} 
+
+\noindent
+\bibentry{herrmann05nld} 
+
+\noindent
+\bibentry{hennenfent05scd} 
+
+\noindent
+\bibentry{hennenfent06aos} 
+
+\noindent
+\bibentry{thomson06apw} 
+
+\noindent
+\bibentry{hennenfent07isf} 
+
+\noindent
+\bibentry{hennenfent07crw} 
+
+\noindent
+\bibentry{hennenfent07rsn} 
+
+\noindent
+\bibentry{challa07srf} 
+
+\noindent
+\bibentry{tang09hdb}
+
+\noindent
+\bibentry{lin09dsa}
+
+\noindent
+\bibentry{saab09asn}
+\subsubsection*{Technical reports}
+
+\noindent
+\bibentry{lebed08ahg} 
+
+\noindent
+\bibentry{tang09dtr} 
+\noindent
+\bibentry{tang09hdb}
+\noindent
+\bibentry{herrmann09sns}
+\noindent
+\bibentry{herrmann10rss}
+
+\section*{Design of sparsity-promoting solvers}
+\label{sec:design-spars-prom}
+%
+\subsubsection*{Journal publications}
+\label{sec:journal-publications-4}
+\noindent
+\bibentry{BergFriedlander:2008} 
+
+\noindent
+\bibentry{hennenfent08nii} 
+
+\noindent
+\bibentry{vandenberg07sat} 
+
+\noindent
+\bibentry{saab08srb}
+
+\subsubsection*{Technical reports}
+
+\noindent
+\bibentry{hennenfent08onr} 
+
+\noindent
+\bibentry{vandenberg08gsv} 
+
+\noindent
+\bibentry{friedlander08asm} 
+
+\noindent
+\bibentry{Friedlander11hds} 
+
+
+\subsubsection*{AISTATS/SEG/CSEG/EAGE Abstract}
+\noindent
+\bibentry{Vandenberg09ocf}
+\noindent
+\bibentry{eso08ira}
+\noindent
+\bibentry{herrmann09cib}
+
+\section*{Wavefield deconvolution by curvelet-domain sparsity
+  promotion}\label{sec:wavef-deconv-curv}
+
+\subsubsection*{Journal publication}
+\label{sec:journal-publication}
+
+\noindent
+\bibentry{herrmann05sdb} 
+
+\subsubsection*{SEG/CSEG/EAGE abstracts}
+\label{sec:segcs-abstr}
+\noindent
+\bibentry{hennenfent05scs} 
+
+\noindent
+\bibentry{hennenfent05sdr} 
+
+\noindent \bibentry{maysami07src} 
+
+\noindent \bibentry{maysami08lcf} 
+
+\noindent \bibentry{kumar08crs} 
+
+\noindent
+\bibentry{kumar08dwc} 
+
+\section*{Wavefield matching by curvelet-domain scaling}
+\label{sec:matching}
+%
+\subsubsection*{Journal publications}
+\label{sec:journal-publications-5}
+
+\noindent
+\bibentry{herrmann08acd} 
+
+\subsubsection*{SEG abstract}
+\label{sec:seg-abstract}
+
+\noindent
+\bibentry{herrmann08cmf} 
+\noindent
+\bibentry{sahidi09cdm}
+
+\subsubsection*{Technical report}
+\label{sec:technical-report-1}
+
+\noindent
+\bibentry{herrmann08cdm1} 
+
+\section*{Wavefield separation by curvelet-domain sparsity
+  promotion}\label{sec:wavefield-separation}
+%
+\subsubsection*{Journal publications}
+\label{sec:journal-publications-3}
+
+\noindent
+\bibentry{herrmann07nlp} 
+\noindent
+\bibentry{wang08bws} 
+
+\subsubsection*{SEG/CSEG/EAGE abstracts}
+\label{sec:seg.cs-abstr}
+%
+\paragraph{Multiple removal:}
+\label{sec:multiple-removal}
+%
+\noindent
+\bibentry{herrmann04sop} 
+\noindent
+\bibentry{herrmann04cia1} 
+\noindent
+\bibentry{herrmann04cdm} 
+\noindent
+\bibentry{herrmann05rcd1} 
+\noindent
+\bibentry{wang07rri} 
+\noindent
+\bibentry{saab07cbp} 
+\noindent
+\bibentry{verschuur07mmp} 
+\noindent
+\bibentry{kumar09ins}
+\noindent
+\bibentry{frijlink10cos}
+\noindent
+\bibentry{lin11eage} 
+
+\paragraph{Surface-wave removal:}
+\label{sec:surface-wave-removal}
+
+\noindent
+\bibentry{yarham04cpa} 
+\noindent
+\bibentry{yarham06cbg} 
+\noindent
+\bibentry{yarham08bgr} 
+\noindent
+\bibentry{yan09gpb}
+
+\paragraph{4-D:}
+
+\noindent
+\bibentry{cristall04cpa} 
+\noindent
+\bibentry{beyreuther04cdo} 
+\noindent
+\bibentry{beyreuther05cot} 
+
+
+\section*{Wavefield inversion by curvelet-domain sparsity promotion}
+\label{sec:wavefield-inversion}
+\noindent
+\bibentry{herrmann07srm} 
+\noindent
+\bibentry{herrmann07mpf} 
+\noindent
+\bibentry{herrmann08swi} 
+\noindent
+\bibentry{lin09ucs}
+\noindent
+\bibentry{lin10seo}
+\noindent
+\bibentry{johnson10eop}
+
+\section*{Compressive/Simultaneous-source wavefield modeling}
+\label{sec:wavefield-modeling}
+%
+\subsubsection*{Journal publications}
+\label{sec:journal-publications-5}
+
+\noindent
+\bibentry{lin07cwe} 
+\noindent
+\bibentry{herrmann09csf}
+
+%\subsubsection*{Technical report}
+%\label{sec:technical-report-2}
+
+\subsubsection*{SEG/CSEG/EAGE abstracts}
+\label{sec:segcs-abstr-2}
+
+\noindent
+\bibentry{lin07cwe1} 
+\noindent
+\bibentry{lin08iso} 
+\noindent
+\bibentry{erlangga08aim}
+\noindent
+\bibentry{Er07N}
+\noindent
+\bibentry{Herrmann09cws}
+
+\section*{Wavefield imaging}\label{sec:wavefield-imaging}
+%
+\subsubsection*{Journal publications}
+\label{sec:journal-publications-2}
+
+\noindent
+\bibentry{herrmann08sac}
+\noindent
+\bibentry{herrmann09cbm}
+
+%\subsubsection*{Technical report}
+%\label{sec:technical-report-3}
+
+
+\subsubsection*{SPIE/SEG/CSEG/EAGE abstracts}
+\label{sec:segcs-abstr-1}
+\noindent
+\bibentry{Herrmann2003SPIE} 
+\noindent
+\bibentry{herrmann04cdl} 
+\noindent
+\bibentry{moghaddam04mpw} 
+\noindent
+\bibentry{herrmann04mpw.pdf}
+\noindent
+\bibentry{herrmann04cdl1} 
+\noindent
+\bibentry{herrmann05nlr} 
+\noindent
+\bibentry{herrmann05osf} 
+\noindent
+\bibentry{moghaddam07mar} 
+\noindent
+\bibentry{moghaddam07sac} 
+\noindent
+\bibentry{moghaddam07sar}  
+\noindent
+\bibentry{moghaddam07rsi}
+\noindent
+\bibentry{moghaddam08cbm} 
+\noindent
+\bibentry{erlangga09mwi}
+\noindent
+\bibentry{lin10spm}
+\noindent
+\bibentry{tu11eage}
+\noindent
+\bibentry{Herrmann11eage}
+
+%\subsubsection*{Preconditioned least-squares migration}
+%\label{sec:prec-least-squar}
+%
+
+%\subsubsection*{SEG/CSEG/EAGE abstracts}
+%\label{sec:segcs-abstr-3}
+
+\section*{Full waveform inversion}
+
+\subsubsection*{Journal publications}
+\noindent
+\bibentry{vanleeuwen11swi}
+
+\subsubsection*{Technical report}
+\noindent
+\bibentry{Haber2010emp}
+
+\subsubsection*{SEG/CSEG/EAGE abstracts}
+
+\noindent
+\bibentry{herrmann09csa}
+\noindent
+\bibentry{herrmann09csf}
+\noindent
+\bibentry{erlangga09swi}
+\noindent
+\bibentry{herrman10rdr}
+\noindent
+\bibentry{moghaddam10rfw}
+\noindent
+\bibentry{li10fwi}
+\noindent
+\bibentry{li11eage}
+\noindent
+\bibentry{vanleeuwen11eage}
+\noindent
+\bibentry{aravkin11eage}
+
+
+\section*{Upscaling}
+
+%\subsubsection*{Journal publications}
+
+%\subsubsection*{Technical report}
+
+\subsubsection*{SEG/CSEG/EAGE abstracts}
+\noindent
+\bibentry{herrmann09rpl}
+
+\section*{Software}
+\label{sec:software}
+
+\subsubsection*{(Parallel) Development Environment}
+\label{sec:parall-curv-transf}
+
+\noindent
+\bibentry{sparco07} 
+\noindent
+\bibentry{thomson06apw} 
+\noindent
+\bibentry{slimpy08} 
+
+\subsubsection*{$\ell_1$-norm sparsity promoting solvers}
+\label{sec:ell_1-solvers}
+
+\noindent
+\bibentry{spgl107} 
+\noindent
+\bibentry{vandenberg08gsv}
+
+\subsubsection*{Reproducible research}
+\label{sec:repr-rese}
+
+\subsubsection*{Technical report}
+\label{sec:technical-report}
+
+\noindent
+\bibentry{hennenfent08rap}
+
+\end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

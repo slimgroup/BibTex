@@ -1,0 +1,8 @@
+import os
+os.system('svn export https://wave.eos.ubc.ca/SLIM/SLIM.Projects.bibtex.database/slimbib.bib')
+
+env = Environment( ENV=os.environ )
+
+texfile = 'paper.tex'
+
+env.PDF('paper.pdf',texfile)

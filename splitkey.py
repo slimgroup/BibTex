@@ -55,7 +55,8 @@ else:
 					split_entry= entry.split("{")[1]
 					key=split_entry.split(",")[0]
 					if key in int_keys:
-						print "The key", key, " already exists in file",each," Not added again"
+						print "Error: The key", key, " already exists in file",each,".Not added again.Edit it and try again"
+						quit()
 					int_keys.add(key)						
 		setlist.append(int_keys)
 

@@ -1,0 +1,78 @@
+/*
+ * Reference Manual for writing a bibtex entry
+ * Author: Shruti Kapoor
+ * Date: Sept 1,2011
+ * Seismic Laboratory for Imaging and Modeling, UBC
+ */
+
+WHAT IS BIBTEX?
+Bibtex is a reference management software for formatting publications and references. Bibtex  makes it easy to cite sources by writing them in a standard format and syntax. Each bibtex file ends with a ".bib" extension. 
+
+VIEWING A BIBTEX FILE
+On a Command line interface, a bibtex file can be read in the Vi editor. 
+For advanced operations such as sort, filter, etc, a GUI interface can be used. Commonly installed application-Aquamac Emac can be found on your Mac. JabRef is another popular application that makes it very easy to handle a bibtex file.
+
+WRITING A BIBTEX ENTRY
+Bibtex provides standard fields to reference a publication. These fields are recognized by anybibtex application. DO NOT ADD any non-standard fields since this may lead to loss of data while viewing in different applications. 
+Example: Heres a bibtex entry that shows different fields and how to write a bibtex entry:
+
+ 
+1 @CONFERENCE{AA11nbpdn,
+2  author = {Aleksandr Y. Aravkin and Tristan van Leeuwen and James Burke and Felix J.
+3        Herrmann},
+4  title = {Sparsity promoting formulations and algorithms for FWI. Presented
+5        at AMP Medical and Seismic Imaging, 2011, Vancouver BC.},
+6  year = {2011},
+7  organization = {ICIAM 2011},
+8  abstract = {Full Waveform Inversion (FWI) is a computational procedure to extract
+9        medium parameters from seismic data. FWI is typically formulated
+10        as a nonlinear least squares optimization problem, and various regularization
+11       techniques are used to guide the optimization because the problem
+12        is ill-posed. We propose a novel sparse regularization which exploits
+13        the ability of curvelets to efficiently represent geophysical images.
+14        We then formulate a corresponding sparsity promoting constrained
+15        optimization problem, which we solve using an open source algorithm.
+16        The techniques are applicable to any inverse problem where sparsity
+17        modeling is appropriate.
+18
+19        We demonstrate the efficacy of the formulation on a toy example (stylized
+20        cross-well experiment) and on a realistic Seismic example (partial
+21       Marmoussi model). We also discuss the tradeoff between model fit
+22        and sparsity promotion, with a view to extend existing techniques
+23        for linear inverse problems to the case where the forward model is
+24        nonlinear. },
+25  date-added = {2011-07-15},
+26 presentation={http://slim.eos.ubc.ca/Publications/Public/Presentations/2011/aravkin2011AMP.pdf},
+27  url = {http://slim/Publications/Public/Presentations/2011/aravkin2011AMP.pdf}
+28 }
+
+
+Type  		: The first word @CONFERENCE determines the type of publication. This is a conference paper. This field would be changed to @ARTICLE, @BOOK, etc. when referencing an article, book, etc.
+Key   		: AA11nbpdn determines the key of this type of publication. This key must be unique i.e. no two entries can have the same keys. 
+Author		: All authors of this publication must be written in this field. To separate multiple authors, use "and" between the names.DO NOT USE COMMAS TO SEPARATE NAMES
+Title		: Title of the publication
+Year		: The year this publication was published in
+Organization	: Organization that published this conference paper
+Abstract	: Abstract of the presentation
+Date-added	: The date when this entry was written in bibtex file
+Presentation	: If this paper has a presentation associated with it, this field must be used to display URL of the presentation. THIS IS A CUSTOM FIELD MADE FOR THE WEBSITE.
+URL		: Link to the full text of this paper. 
+
+
+For a complete list of all standard fields and entry types, check out this link: http://bibliographic.openoffice.org/bibtex-defs.html
+
+
+IMPORTANT CASES
+Case 1. Tech Report graduated to become a Conference Paper:
+In such a case, make sure you do not add another entry with the same key. To ensure this, copy the existing record a make a duplicate entry. Update the original entry with the link to the latest Conference Paper. Change the type from "Tech Report" to "Conference". In the duplicate entry, add "tr" to the key of the entry that contains link to the Tech Report. This will ensure that the original key always has link to the most updated paper.
+
+Case 2. A link to a presentation during a conference needs to be added:
+Remember, presentation links must always be added in "presentation" field and not URL field. If this presentation is associated with a paper, add a presentation field within this entry. If not, make a new entry with unique key and add presentation field.
+
+
+----------------------------IMPORTANT THINGS TO REMEMBER---------------------
+1. Do not duplicate keys.
+2. URL field must be used to display links to full-text papers
+3. Presentation field must be used to display links to presentation
+4. Do not add any non-standard fields 
+

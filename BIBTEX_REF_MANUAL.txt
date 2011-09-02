@@ -63,10 +63,10 @@ For a complete list of all standard fields and entry types, check out this link:
 
 
 IMPORTANT CASES
-Case 1. Tech Report graduated to become a Conference Paper:
+Case 1. TECH REPORT GRADUATED TO BECOME A CONFERENCE PAPER:
 In such a case, make sure you do not add another entry with the same key. To ensure this, copy the existing record a make a duplicate entry. Update the original entry with the link to the latest Conference Paper. Change the type from "Tech Report" to "Conference". In the duplicate entry, add "tr" to the key of the entry that contains link to the Tech Report. This will ensure that the original key always has link to the most updated paper.
 
-Case 2. A link to a presentation during a conference needs to be added:
+Case 2. A PRESENTATION GIVEN IN A CONFERENCE NEEDS TO BE ADDED:
 Remember, presentation links must always be added in "presentation" field and not URL field. If this presentation is associated with a paper, add a presentation field within this entry. If not, make a new entry with unique key and add presentation field.
 
 
@@ -75,4 +75,4 @@ Remember, presentation links must always be added in "presentation" field and no
 2. URL field must be used to display links to full-text papers
 3. Presentation field must be used to display links to presentation
 4. Do not add any non-standard fields 
-
+5. To add multiple authors, separate them with "and" and not a comma.

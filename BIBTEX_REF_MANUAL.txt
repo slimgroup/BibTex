@@ -44,7 +44,11 @@ Example: Heres a bibtex entry that shows different fields and how to write a bib
 25  date-added = {2011-07-15},
 26 presentation={http://slim.eos.ubc.ca/Publications/Public/Presentations/2011/aravkin2011AMP.pdf},
 27  url = {http://slim/Publications/Public/Presentations/2011/aravkin2011AMP.pdf}
-28 }
+28 url2 = {http://slimweb.eos.ubc.ca}
+29 url3 = {http://slimweb.eos.ubc.ca}
+30
+31
+}
 
 
 Type  		: The first word @CONFERENCE determines the type of publication. This is a conference paper. This field would be changed to @ARTICLE, @BOOK, etc. when referencing an article, book, etc.
@@ -57,6 +61,8 @@ Abstract	: Abstract of the presentation
 Date-added	: The date when this entry was written in bibtex file
 Presentation	: If this paper has a presentation associated with it, this field must be used to display URL of the presentation. THIS IS A CUSTOM FIELD MADE FOR THE WEBSITE.
 URL		: Link to the full text of this paper. 
+URL2		: Alternate URL
+URL3		: ALternate URL
 
 
 For a complete list of all standard fields and entry types, check out this link: http://bibliographic.openoffice.org/bibtex-defs.html
@@ -72,7 +78,7 @@ Remember, presentation links must always be added in "presentation" field and no
 
 ----------------------------IMPORTANT THINGS TO REMEMBER---------------------
 1. Do not duplicate keys.
-2. URL field must be used to display links to full-text papers
-3. Presentation field must be used to display links to presentation
+2. URL fields must be used to display links to full-text papers
+3. Presentation field must be used to display links to a presentation
 4. Do not add any non-standard fields 
 5. To add multiple authors, separate them with "and" and not a comma.

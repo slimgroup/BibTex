@@ -60,7 +60,6 @@ else:
 					int_keys.add(key)						
 		setlist.append(int_keys)
 
-
 #----------Checking for duplicate keys between files----------
 	length=len(setlist)
 	j=0
@@ -81,6 +80,7 @@ else:
 	for each in input_files:
 		for line in open(each):
 			fout.write(line)
-		print "File" ,each, "copied successfully in ", output 	
+		print "File" ,each, "copied successfully to ", output 	
+		 
 	fout.close()
 		

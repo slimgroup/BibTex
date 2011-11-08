@@ -7,371 +7,369 @@
 
 
 @CONFERENCE{beyreuther05cot,
-  author = {Moritz Beyreuther and J. Cristall and Felix J. Herrmann},
-  title = {Computation of time-lapse differences with {3-D} directional frames},
-  booktitle = {SEG Technical Program Expanded Abstracts},
-  year = {2005},
-  volume = {24},
-  number = {1},
-  pages = {2488-2491},
+  author       = {Moritz Beyreuther and Jamin Cristall and Felix J. Herrmann},
+  title        = {Computation of time-lapse differences with {3-D} directional frames},
+  booktitle    = {SEG Technical Program Expanded Abstracts},
+  year         = {2005},
+  volume       = {24},
+  number       = {1},
+  pages        = {2488-2491},
   organization = {SEG},
-  publisher = {SEG},
-  abstract = {We present an alternative method of extracting production related
-	differences from time-lapse seismic data sets. Our method is not
-	based on the actual subtraction of the two data sets, risking the
-	enhancement of noise and introduction of artifacts due to local phase
-	rotation and slightly misaligned events. Rather, it mutes events
-	of the monitor survey with respect to the baseline survey based on
-	the magnitudes of coefficients in a sparse and local atomic decomposition.
-	Our technique is demonstrated to be an effective tool for enhancing
-	the time-lapse signal from surveys which have been cross-equalized.
-	{\copyright}2005 Society of Exploration Geophysicists},
-  doi = {10.1190/1.2148227},
-  file = {1:http\://link.aip.org/link/?SGA/24/2488/1:PDF},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/seg4D2005.pdf}
+  publisher    = {SEG},
+  abstract     = {We present an alternative method of extracting production related
+	          differences from time-lapse seismic data sets. Our method is not
+	          based on the actual subtraction of the two data sets, risking the
+	          enhancement of noise and introduction of artifacts due to local phase
+                  rotation and slightly misaligned events. Rather, it mutes events
+        	  of the monitor survey with respect to the baseline survey based on
+	          the magnitudes of coefficients in a sparse and local atomic decomposition.
+	          Our technique is demonstrated to be an effective tool for enhancing
+	          the time-lapse signal from surveys which have been cross-equalized.
+	          {\copyright}2005 Society of Exploration Geophysicists},
+  doi          = {10.1190/1.2148227},
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/seg4D2005.pdf},
+  url2         = {http://dx.doi.org/10.1190/1.2148227}
 }
 
 
 
 
 @CONFERENCE{hennenfent05scd,
-  author = {Gilles Hennenfent and Felix J. Herrmann},
-  title = {Sparseness-constrained data continuation with frames: applications
-	to missing traces and aliased signals in {2/3-D}},
-  booktitle = {SEG Technical Program Expanded Abstracts},
-  year = {2005},
-  volume = {24},
-  number = {1},
-  pages = {2162-2165},
+  author       = {Gilles Hennenfent and Felix J. Herrmann},
+  title        = {Sparseness-constrained data continuation with frames: applications 
+                  to missing traces and aliased signals in {2/3-D}},
+  booktitle    = {SEG Technical Program Expanded Abstracts},
+  year         = {2005},
+  volume       = {24},
+  number       = {1},
+  pages        = {2162-2165},
   organization = {SEG},
-  publisher = {SEG},
-  abstract = {We present a robust iterative sparseness-constrained interpolation
-	algorithm using 2-/3-D curvelet frames and Fourier-like transforms
-	that exploits continuity along reflectors in seismic data. By choosing
-	generic transforms, we circumvent the necessity to make parametric
-	assumptions (e.g. through linear/parabolic Radon or demigration)
-	regarding the shape of events in seismic data. Simulation and real
-	data examples for data with moderately sized gaps demonstrate that
-	our algorithm provides interpolated traces that accurately reproduce
-	the wavelet shape as well as the AVO behavior. Our method also shows
-	good results for de-aliasing judged by the behavior of the ($f-k$)-spectrum
-	before and after regularization. {\copyright}2005 Society of Exploration
-	Geophysicists},
-  doi = {10.1190/1.2148142},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/SEG2005_Data_Cont.pdf}
+  publisher    = {SEG},
+  abstract     = {We present a robust iterative sparseness-constrained interpolation
+	          algorithm using 2-/3-D curvelet frames and Fourier-like transforms
+	          that exploits continuity along reflectors in seismic data. By choosing
+	          generic transforms, we circumvent the necessity to make parametric
+	          assumptions (e.g. through linear/parabolic Radon or demigration)
+	          regarding the shape of events in seismic data. Simulation and real
+		  data examples for data with moderately sized gaps demonstrate that
+		  our algorithm provides interpolated traces that accurately reproduce
+	       	  the wavelet shape as well as the AVO behavior. Our method also shows
+		  good results for de-aliasing judged by the behavior of the ($f-k$)-spectrum
+		  before and after regularization. {\copyright}2005 Society of Exploration
+		  Geophysicists},
+  doi          = {10.1190/1.2148142},
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/SEG2005_Data_Cont.pdf}
 }
 
 
 
 
 @CONFERENCE{hennenfent05scs,
-  author = {Gilles Hennenfent and Felix J. Herrmann and R. Neelamani},
-  title = {Sparseness-constrained seismic deconvolution with curvelets},
-  booktitle = {CSEG Technical Program Expanded Abstracts},
-  year = {2005},
-  month = {May},
+  author       = {Gilles Hennenfent and Felix J. Herrmann and R. Neelamani},
+  title        = {Sparseness-constrained seismic deconvolution with curvelets},
+  booktitle    = {CSEG Technical Program Expanded Abstracts},
+  year	       = {2005},
+  month        = {May},
   organization = {CSEG},
-  publisher = {CSEG},
-  abstract = {Continuity along reflectors in seismic images is used via Curvelet
-	representation to stabilize the convolution operator inversion. The
-	Curvelet transform is a new multiscale transform that provides sparse
-	representations for images that comprise smooth objects separated
-	by piece-wise smooth discontinuities (e.g. seismic images). Our iterative
-	Curvelet-regularized deconvolution algorithm combines conjugate gradient-based
-	inversion with noise regularization performed using non-linear Curvelet
-	coefficient thresholding. The thresholding operation enhances the
-	sparsity of Curvelet representations. We show on a synthetic example
-	that our algorithm provides improved resolution and continuity along
-	reflectors as well as reduced ringing effect compared to the iterative
-	Wiener-based deconvolution approach.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/Hennenfent_G_Sparseness_Constrained_Deconvolution_w_Curvelets.doc}
+  publisher    = {CSEG},
+  abstract     = {Continuity along reflectors in seismic images is used via Curvelet
+	          representation to stabilize the convolution operator inversion. The
+	          Curvelet transform is a new multiscale transform that provides sparse
+	          representations for images that comprise smooth objects separated
+	          by piece-wise smooth discontinuities (e.g. seismic images). Our iterative
+	          Curvelet-regularized deconvolution algorithm combines conjugate gradient-based
+	          inversion with noise regularization performed using non-linear Curvelet
+	          coefficient thresholding. The thresholding operation enhances the
+	          sparsity of Curvelet representations. We show on a synthetic example
+	          that our algorithm provides improved resolution and continuity along
+	          reflectors as well as reduced ringing effect compared to the iterative
+ 	          Wiener-based deconvolution approach.},
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/Hennenfent_G_Sparseness_Constrained_Deconvolution_w_Curvelets.doc}
 }
 
 
 
 
 @CONFERENCE{hennenfent05sdr,
-  author = {Gilles Hennenfent and R. Neelamani and Felix J. Herrmann},
-  title = {Seismic deconvolution revisited with curvelet frames},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
-  year = {2005},
-  month = {June},
+  author       = {Gilles Hennenfent and R. Neelamani and Felix J. Herrmann},
+  title        = {Seismic deconvolution revisited with curvelet frames},
+  booktitle    = {EAGE Technical Program Expanded Abstracts},
+  year         = {2005},
+  month        = {June},
   organization = {EAGE},
-  publisher = {EAGE},
-  abstract = {We propose an efficient iterative curvelet-regularized deconvolution
-	algorithm that exploits continuity along reflectors in seismic images.
-	Curvelets are a new multiscale transform that provides sparse representations
-	for images (such as seismic images) that comprise smooth objects
-	separated by piece-wise smooth discontinuities. Our technique combines
-	conjugate gradient-based convolution operator inversion with noise
-	regularization that is performed using non-linear curvelet coefficient
-	shrinkage (thresholding). The shrinkage operation leverages the sparsity
-	of curvelets representations. Simulations demonstrate that our algorithm
-	provides improved resolution compared to the traditional Wiener-based
-	deconvolution approach.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/hennenfent05eage_poster.pdf}
+  publisher    = {EAGE},
+  abstract     = {We propose an efficient iterative curvelet-regularized deconvolution
+		  algorithm that exploits continuity along reflectors in seismic images.
+		  Curvelets are a new multiscale transform that provides sparse representations
+		  for images (such as seismic images) that comprise smooth objects
+		  separated by piece-wise smooth discontinuities. Our technique combines
+		  conjugate gradient-based convolution operator inversion with noise
+		  regularization that is performed using non-linear curvelet coefficient
+		  shrinkage (thresholding). The shrinkage operation leverages the sparsity
+		  of curvelets representations. Simulations demonstrate that our algorithm
+		  provides improved resolution compared to the traditional Wiener-based
+		  deconvolution approach.},
+  keywords     = {SLIM},
+  presentation = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/hennenfent05eage_poster.pdf}
 }
 
 
 
 
 @CONFERENCE{herrmann05nld,
-  author = {Felix J. Herrmann and Gilles Hennenfent},
-  title = {Non-linear data continuation with redundant frames},
-  booktitle = {CSEG Technical Program Expanded Abstracts},
-  year = {2005},
-  month = {May},
+  author       = {Felix J. Herrmann and Gilles Hennenfent},
+  title        = {Non-linear data continuation with redundant frames},
+  booktitle    = {CSEG Technical Program Expanded Abstracts},
+  year         = {2005},
+  month        = {May},
   organization = {CSEG},
-  publisher = {CSEG},
-  abstract = {We propose an efficient iterative data interpolation method using
-	continuity along reflectors in seismic images via curvelet and discrete
-	cosine transforms. The curvelet transform is a new multiscale transform
-	that provides sparse representations for images that comprise smooth
-	objects separated by piece-wise smooth discontinuities (e.g. seismic
-	images). The advantage of using curvelets is that these frames are
-	sparse for high-frequency caustic-free solutions of the wave-equation.
-	Since we are dealing with less than ideal data (e.g. bandwidth-limited),
-	we compliment the curvelet frames with the discrete cosine transform.
-	The latter is motivated by the successful data continuation with
-	the discrete Fourier transform. By choosing generic basis functions
-	we circumvent the necessity to make parametric assumptions (e.g.
-	through linear/parabolic Radon or demigration) regarding the shape
-	of events in seismic data. Synthetic and real data examples demonstrate
-	that our algorithm provides interpolated traces that accurately reproduce
-	the wavelet shape as well as the AVO behavior along events in shot
-	gathers.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Presentations/cseg/herrmann05nld.pdf}
+  publisher    = {CSEG},
+  abstract     = {We propose an efficient iterative data interpolation method using
+		  continuity along reflectors in seismic images via curvelet and discrete
+		  cosine transforms. The curvelet transform is a new multiscale transform
+		  that provides sparse representations for images that comprise smooth
+		  objects separated by piece-wise smooth discontinuities (e.g. seismic
+		  images). The advantage of using curvelets is that these frames are
+		  sparse for high-frequency caustic-free solutions of the wave-equation.
+		  Since we are dealing with less than ideal data (e.g. bandwidth-limited),
+		  we compliment the curvelet frames with the discrete cosine transform.
+		  The latter is motivated by the successful data continuation with
+		  the discrete Fourier transform. By choosing generic basis functions
+		  we circumvent the necessity to make parametric assumptions (e.g.
+		  through linear/parabolic Radon or demigration) regarding the shape
+		  of events in seismic data. Synthetic and real data examples demonstrate
+		  that our algorithm provides interpolated traces that accurately reproduce
+		  the wavelet shape as well as the AVO behavior along events in shot
+		  gathers.},
+  keywords     = {SLIM},
+  presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/cseg/herrmann05nld.pdf}
 }
 
 
 
 
 @CONFERENCE{herrmann05nlr,
-  author = {Felix J. Herrmann and Peyman P. Moghaddam},
-  title = {Non-linear regularization in seismic imaging},
-  booktitle = {CSEG Technical Program Expanded Abstracts},
-  year = {2005},
-  month = {May},
+  author       = {Felix J. Herrmann and Peyman P. Moghaddam},
+  title        = {Non-linear regularization in seismic imaging},
+  booktitle    = {CSEG Technical Program Expanded Abstracts},
+  year         = {2005},
+  month        = {May},
   organization = {CSEG},
-  publisher = {CSEG},
-  abstract = {Two complementary solution strategies to the least-squares imaging
-	problem with sparseness \& continuity continuity constraints are
-	proposed. The applied formalism explores the sparseness of curvelets
-	coefficients of the reflectivity and their invariance under the demigration-migration
-	operator. We achieve the solution by jointly minimizing a weighted
-	l1-norm on the curvelet coefficients and an anisotropic difussion
-	or total variation norm on the imaged reflectivity model. The l1-norm
-	exploits the sparsenss of the reflectivity in the curvelet domain
-	whereas the anisotropic norm enhances the continuity along the reflections
-	while removing artifacts residing in between reflectors. While the
-	two optimization methods (convex versus non-convex) share the same
-	type of regularization, they differ in flexibility how to handle
-	additional constraints on the coefficients of the imaged reflectivity
-	and in computational expense. A brief sketch of the theory is provided
-	along with a number of synthetic examples.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Presentations/cseg/herrmann05nlr.pdf}
+  publisher    = {CSEG},
+  abstract     = {Two complementary solution strategies to the least-squares imaging
+		  problem with sparseness \& continuity continuity constraints are
+		  proposed. The applied formalism explores the sparseness of curvelets
+		  coefficients of the reflectivity and their invariance under the demigration-migration
+		  operator. We achieve the solution by jointly minimizing a weighted
+		  l1-norm on the curvelet coefficients and an anisotropic difussion
+		  or total variation norm on the imaged reflectivity model. The l1-norm
+		  exploits the sparsenss of the reflectivity in the curvelet domain
+		  whereas the anisotropic norm enhances the continuity along the reflections
+		  while removing artifacts residing in between reflectors. While the
+		  two optimization methods (convex versus non-convex) share the same
+		  type of regularization, they differ in flexibility how to handle
+		  additional constraints on the coefficients of the imaged reflectivity
+		  and in computational expense. A brief sketch of the theory is provided
+		  along with a number of synthetic examples.},
+  keywords     = {SLIM},
+  presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/cseg/herrmann05nlr.pdf}
 }
 
 
 
 
 @CONFERENCE{herrmann05osf,
-  author = {Felix J. Herrmann and Peyman P. Moghaddam and R. Kirlin},
-  title = {Optimization strategies for sparseness- and continuity-enhanced imaging:
-	theoretical considerations},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
-  year = {2005},
-  month = {June},
+  author       = {Felix J. Herrmann and Peyman P. Moghaddam and R. Kirlin},
+  title        = {Optimization strategies for sparseness- and continuity-enhanced imaging:
+	          theory},
+  booktitle    = {EAGE Technical Program Expanded Abstracts},
+  year         = {2005},
+  month        = {June},
   organization = {EAGE},
-  publisher = {EAGE},
-  abstract = {Two complementary solution strategies to the least-squares migration
-	problem with sparseness- and continuity constraints are proposed.
-	The applied formalism explores the sparseness of curvelets on the
-	reflectivity and their invariance under the demigration-migration
-	operator. Sparseness is enhanced by (approximately) minimizing a
-	(weighted) l1-norm on the curvelet coefficients. Continuity along
-	imaged reflectors is brought out by minimizing the anisotropic diffusion
-	or total variation norm which penalizes variations along and in between
-	reflectors. A brief sketch of the theory is provided as well as a
-	number of synthetic examples. Technical details on the implementation
-	of the optimization strategies are deferred to an accompanying paper:
-	implementation},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/EAGEIM12005.pdf}
+  publisher    = {EAGE},
+  abstract     = {Two complementary solution strategies to the least-squares migration
+		  problem with sparseness- and continuity constraints are proposed.
+		  The applied formalism explores the sparseness of curvelets on the
+		  reflectivity and their invariance under the demigration-migration
+		  operator. Sparseness is enhanced by (approximately) minimizing a
+		  (weighted) l1-norm on the curvelet coefficients. Continuity along
+	          imaged reflectors is brought out by minimizing the anisotropic diffusion
+		  or total variation norm which penalizes variations along and in between
+		  reflectors. A brief sketch of the theory is provided as well as a
+		  number of synthetic examples. Technical details on the implementation
+		  of the optimization strategies are deferred to an accompanying paper:
+		  implementation.},
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/EAGEIM12005.pdf}
 }
 
 
 
 
 @CONFERENCE{herrmann05rcd,
-  author = {Felix J. Herrmann},
-  title = {Robust curvelet-domain data continuation with sparseness constraints},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
-  year = {2005},
-  month = {June},
+  author       = {Felix J. Herrmann and Gilles Hennenfent},
+  title        = {Robust curvelet-domain data continuation with sparseness constraints},
+  booktitle    = {EAGE Technical Program Expanded Abstracts},
+  year         = {2005},
+  month        = {June},
   organization = {EAGE},
-  publisher = {EAGE},
-  abstract = {A robust data interpolation method using curvelets frames is presented.
-	The advantage of this method is that curvelets arguably provide an
-	optimal sparse representation for solutions of wave equations with
-	smooth coefficients. As such curvelets frames circum- vent {\textendash}
-	besides the assumption of caustic-free data {\textendash} the necessity
-	to make parametric assumptions (e.g. through linear/parabolic Radon
-	or demigration) regarding the shape of events in seismic data. A
-	brief sketch of the theory is provided as well as a number of examples
-	on synthetic and real data.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Presentations/eage/eage05/herrmann05rcd.pdf}
+  publisher    = {EAGE},
+  abstract     = {A robust data interpolation method using curvelets frames is presented.
+	          The advantage of this method is that curvelets arguably provide an
+		  optimal sparse representation for solutions of wave equations with
+		  smooth coefficients. As such curvelets frames circum- vent {\textendash}
+		  besides the assumption of caustic-free data {\textendash} the necessity
+		  to make parametric assumptions (e.g. through linear/parabolic Radon
+		  or demigration) regarding the shape of events in seismic data. A
+		  brief sketch of the theory is provided as well as a number of examples
+		  on synthetic and real data.},
+  keywords     = {SLIM},
+  presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/eage/eage05/herrmann05rcd.pdf}
 }
 
 
 
 
 @CONFERENCE{herrmann05rcd1,
-  author = {Felix J. Herrmann and D. J. Verschuur},
-  title = {Robust curvelet-domain primary-multiple separation with sparseness
-	constraints},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
-  year = {2005},
-  month = {June},
+  author       = {Felix J. Herrmann and D. J. Verschuur},
+  title        = {Robust curvelet-domain primary-multiple separation with sparseness
+		  constraints},
+  booktitle    = {EAGE Technical Program Expanded Abstracts},
+  year         = {2005},
+  month        = {June},
   organization = {EAGE},
-  publisher = {EAGE},
-  abstract = {A non-linear primary-multiple separation method using curvelets frames
-	is presented. The advantage of this method is that curvelets arguably
-	provide an optimal sparse representation for both primaries and multiples.
-	As such curvelets frames are ideal candidates to separate primaries
-	from multiples given inaccurate predictions for these two data components.
-	The method derives its robustness regarding the presence of noise;
-	errors in the prediction and missing data from the curvelet frame{\textquoteright}s
-	ability (i) to represent both signal components with a limited number
-	of multi-scale and directional basis functions; (ii) to separate
-	the components on the basis of differences in location, orientation
-	and scales and (iii) to minimize correlations between the coefficients
-	of the two components. A brief sketch of the theory is provided as
-	well as a number of examples on synthetic and real data.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/EAGEM2005.pdf}
+  publisher    = {EAGE},
+  abstract     = {A non-linear primary-multiple separation method using curvelets frames
+		  is presented. The advantage of this method is that curvelets arguably
+	          provide an optimal sparse representation for both primaries and multiples.
+		  As such curvelets frames are ideal candidates to separate primaries
+		  from multiples given inaccurate predictions for these two data components.
+	          The method derives its robustness regarding the presence of noise;
+		  errors in the prediction and missing data from the curvelet frame{\textquoteright}s
+		  ability (i) to represent both signal components with a limited number
+		  of multi-scale and directional basis functions; (ii) to separate
+		  the components on the basis of differences in location, orientation
+		  and scales and (iii) to minimize correlations between the coefficients
+		  of the two components. A brief sketch of the theory is provided as
+		  well as a number of examples on synthetic and real data.},
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/EAGEM2005.pdf}
 }
 
 
 
 
 @CONFERENCE{beyreuther04cdo,
-  author = {Moritz Beyreuther and Felix J. Herrmann and J. Cristall},
-  title = {Curvelet denoising of 4-D seismic},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
-  year = {2004},
-  month = {June},
+  author       = {Moritz Beyreuther and Felix J. Herrmann and Jamin Cristall},
+  title        = {Curvelet denoising of {4-D} seismic},
+  booktitle    = {EAGE Technical Program Expanded Abstracts},
+  year         = {2004},
+  month        = {June},
   organization = {EAGE},
-  publisher = {EAGE},
-  abstract = {With burgeoning world demand and a limited rate of discovery of new
-	reserves, there is increasing impetus upon the industry to optimize
-	recovery from already existing fields. 4D, or time-lapse, seismic
-	imaging is an emerging technology that holds great promise to better
-	monitor and optimise reservoir production. The basic idea behind
-	4D seismic is that when multiple 3D surveys are acquired at separate
-	calendar times over a producing field, the reservoir geology will
-	not change from survey to survey but the state of the reservoir fluids
-	will change. Thus, taking the difference between two 3D surveys should
-	remove the static geologic contribution to the data and isolate the
-	time- varying fluid flow component. However, a major challenge in
-	4D seismic is that acquisition and processing differences between
-	3D surveys often overshadow the changes caused by fluid flow. This
-	problem is compounded when 4D effects are sought to be derived from
-	vintage 3D data sets that were not originally acquired with 4D in
-	mind. The goal of this study is to remove the acquisition and imaging
-	artefacts from a 4D seismic difference cube using Curvelet processing
-	techniques.},
-  file = {EAGE4D2004.pdf:http\://slim.eos.ubc.ca/~felix/public/EAGE4D2004.pdf:PDF},
-  keywords = {SLIM},
-  presentation = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2008/yarham08seg.pdf
-	},
-  url = {http://slim.eos.ubc.ca/~felix/public/Herrmann_F_Curvelet_imaging.doc}
+  publisher    = {EAGE},
+  abstract     = {With burgeoning world demand and a limited rate of discovery of new
+		  reserves, there is increasing impetus upon the industry to optimize
+		  recovery from already existing fields. 4D, or time-lapse, seismic
+		  imaging is an emerging technology that holds great promise to better
+		  monitor and optimise reservoir production. The basic idea behind
+		  4D seismic is that when multiple 3D surveys are acquired at separate
+		  calendar times over a producing field, the reservoir geology will
+		  not change from survey to survey but the state of the reservoir fluids
+		  will change. Thus, taking the difference between two 3D surveys should
+		  remove the static geologic contribution to the data and isolate the
+		  time- varying fluid flow component. However, a major challenge in
+	 	  4D seismic is that acquisition and processing differences between
+		  3D surveys often overshadow the changes caused by fluid flow. This
+		  problem is compounded when 4D effects are sought to be derived from
+		  vintage 3D data sets that were not originally acquired with 4D in
+	          mind. The goal of this study is to remove the acquisition and imaging
+		  artefacts from a 4D seismic difference cube using Curvelet processing
+		  techniques.},
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/~felix/public/EAGE4D2004.pdf},
+  url2         = {https://circle.ubc.ca/bitstream/handle/2429/453/EAGE4D2004.pdf?sequence=1}
 }
 
 
 
 
 @CONFERENCE{cristall04cpa,
-  author = {J. Cristall and Moritz Beyreuther and Felix J. Herrmann},
-  title = {Curvelet processing and imaging: 4-D adaptive subtraction},
-  booktitle = {CSEG Technical Program Expanded Abstracts},
-  year = {2004},
-  month = {May},
+  author       = {Jamin Cristall and Moritz Beyreuther and Felix J. Herrmann},
+  title        = {Curvelet processing and imaging: {4-D} adaptive subtraction},
+  booktitle    = {CSEG Technical Program Expanded Abstracts},
+  year         = {2004},
+  month        = {May},
   organization = {CSEG},
-  publisher = {CSEG},
-  abstract = {With burgeoning world demand and a limited rate of discovery of new
-	reserves, there is increasing impetus upon the industry to optimize
-	recovery from already existing fields. 4D, or time-lapse, seismic
-	imaging holds great promise to better monitor and optimise reservoir
-	production. The basic idea behind 4D seismic is that when multiple
-	3D surveys are acquired at separate calendar times over a producing
-	field, the reservoir geology will not change from survey to survey
-	but the state of the reservoir fluids will change. Thus, taking the
-	difference between two 3D surveys should remove the static geologic
-	contribution to the data and isolate the time-varying fluid flow
-	component. However, a major challenge in 4D seismic is that acquisition
-	and processing differences between 3D surveys often overshadow the
-	changes caused by fluid flow. This problem is compounded when 4D
-	effects are sought to be derived from legacy 3D data sets that were
-	not originally acquired with 4D in mind. The goal of this study is
-	to remove the acquisition and imaging artefacts from a 4D seismic
-	difference cube using Curvelet processing techniques.},
-  keywords = {SLIM},
-  url = {http://www.cseg.ca/conventions/abstracts/2004/2004abstracts/059S0201-Cristall_J_Curvelet_4D.pdf}
+  publisher    = {CSEG},
+  abstract     = {With burgeoning world demand and a limited rate of discovery of new
+		  reserves, there is increasing impetus upon the industry to optimize
+		  recovery from already existing fields. 4D, or time-lapse, seismic
+		  imaging holds great promise to better monitor and optimise reservoir
+		  production. The basic idea behind 4D seismic is that when multiple
+		  3D surveys are acquired at separate calendar times over a producing
+		  field, the reservoir geology will not change from survey to survey
+		  but the state of the reservoir fluids will change. Thus, taking the
+		  difference between two 3D surveys should remove the static geologic
+		  contribution to the data and isolate the time-varying fluid flow
+		  component. However, a major challenge in 4D seismic is that acquisition
+		  and processing differences between 3D surveys often overshadow the
+		  changes caused by fluid flow. This problem is compounded when 4D
+		  effects are sought to be derived from legacy 3D data sets that were
+		  not originally acquired with 4D in mind. The goal of this study is
+		  to remove the acquisition and imaging artefacts from a 4D seismic
+		  difference cube using Curvelet processing techniques.},
+  keywords     = {SLIM},
+  url          = {http://www.cseg.ca/conventions/abstracts/2004/2004abstracts/059S0201-Cristall_J_Curvelet_4D.pdf}
 }
 
 
 
 
 @CONFERENCE{hennenfent04tta,
-  author = {Gilles Hennenfent and Felix J. Herrmann},
-  title = {Three-term amplitude-versus-offset ({AVO}) inversion revisited by
-	curvelet and wavelet transforms},
-  booktitle = {SEG Technical Program Expanded Abstracts},
-  year = {2004},
-  volume = {23},
-  number = {1},
-  pages = {211-214},
+  author       = {Gilles Hennenfent and Felix J. Herrmann},
+  title        = {Three-term amplitude-versus-offset ({AVO}) inversion revisited by
+	          curvelet and wavelet transforms},
+  booktitle    = {SEG Technical Program Expanded Abstracts},
+  year         = {2004},
+  volume       = {23},
+  number       = {1},
+  pages        = {211-214},
   organization = {SEG},
-  publisher = {SEG},
-  abstract = {We present a new method to stabilize the three-term AVO inversion
-	using Curvelet and Wavelet transforms. Curvelets are basis functions
-	that effectively represent otherwise smooth objects having discontinuities
-	along smooth curves. The applied formalism explores them to make
-	the most of the continuity along reflectors in seismic images. Combined
-	with Wavelets, Curvelets are used to denoise the data by penalizing
-	high frequencies and small contributions in the AVO-cube. This approach
-	is based on the idea that rapid amplitude changes along the ray-parameter
-	axis are most likely due to noise. The AVO-inverse problem is linearized,
-	formulated and solved for all (x, z) at once. Using densities and
-	velocities of the Marmousi model to define the fluctuations in the
-	elastic properties, the performance of the proposed method is studied
-	and compared with the smoothing along the ray-parameter direction
-	only. We show that our method better approximates the true data after
-	the denoising step, especially when noise level increases. {\copyright}2004
-	Society of Exploration Geophysicists},
-  doi = {10.1190/1.1851201},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/hennenfent04seg.pdf}
+  publisher    = {SEG},
+  abstract     = {We present a new method to stabilize the three-term AVO inversion
+		  using Curvelet and Wavelet transforms. Curvelets are basis functions
+		  that effectively represent otherwise smooth objects having discontinuities
+		  along smooth curves. The applied formalism explores them to make
+		  the most of the continuity along reflectors in seismic images. Combined
+		  with Wavelets, Curvelets are used to denoise the data by penalizing
+		  high frequencies and small contributions in the AVO-cube. This approach
+		  is based on the idea that rapid amplitude changes along the ray-parameter
+		  axis are most likely due to noise. The AVO-inverse problem is linearized,
+		  formulated and solved for all (x, z) at once. Using densities and
+		  velocities of the Marmousi model to define the fluctuations in the
+		  elastic properties, the performance of the proposed method is studied
+		  and compared with the smoothing along the ray-parameter direction
+		  only. We show that our method better approximates the true data after
+		  the denoising step, especially when noise level increases. {\copyright}2004
+		  Society of Exploration Geophysicists},
+  doi          = {10.1190/1.1851201},
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/hennenfent04seg.pdf}
 }
 
 
 
 
 @CONFERENCE{hennenfent04tta1,
-  author = {Gilles Hennenfent},
-  title = {Three-term amplitude-versus-offset ({AVO}) inversion revisited by
-	curvelet and wavelet transforms},
-  booktitle = {SEG 2004},
-  year = {2004},
-  keywords = {Presentation, SEG, SLIM},
+  author       = {Gilles Hennenfent},
+  title        = {Three-term amplitude-versus-offset ({AVO}) inversion revisited by
+	          curvelet and wavelet transforms},
+  booktitle    = {SEG 2004},
+  year         = {2004},
+  keywords     = {Presentation, SEG, SLIM},
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/seg/seg04/hennenfent04tta.pdf}
 }
 
@@ -379,43 +377,43 @@
 
 
 @CONFERENCE{herrmann04cbn,
-  author = {Felix J. Herrmann and Peyman P. Moghaddam},
-  title = {Curvelet-based non-linear adaptive subtraction with sparseness constraints},
-  booktitle = {SEG Technical Program Expanded Abstracts},
-  year = {2004},
-  volume = {23},
-  number = {1},
-  pages = {1977-1980},
+  author       = {Felix J. Herrmann and Peyman P. Moghaddam},
+  title        = {Curvelet-based non-linear adaptive subtraction with sparseness constraints},
+  booktitle    = {SEG Technical Program Expanded Abstracts},
+  year         = {2004},
+  volume       = {23},
+  number       = {1},
+  pages        = {1977-1980},
   organization = {SEG},
-  publisher = {SEG},
-  abstract = {In this paper an overview is given on the application of directional
-	basis functions, known under the name Curvelets/Contourlets, to various
-	aspects of seismic processing and imaging, which involve adaptive
-	subtraction. Key concepts in the approach are the use of directional
-	basis functions that localize in both domains (e.g. space and angle);
-	non-linear estimation, which corresponds to localized muting on the
-	coefficients, possibly supplemented by constrained optimization.
-	We will discuss applications that include multiple, ground-roll removal
-	and migration denoising. {\copyright}2004 Society of Exploration
-	Geophysicists},
-  doi = {10.1190/1.1851181},
-  keywords = {SLIM},
+  publisher    = {SEG},
+  abstract     = {In this paper an overview is given on the application of directional
+		  basis functions, known under the name Curvelets/Contourlets, to various
+		  aspects of seismic processing and imaging, which involve adaptive
+		  subtraction. Key concepts in the approach are the use of directional
+		  basis functions that localize in both domains (e.g. space and angle);
+		  non-linear estimation, which corresponds to localized muting on the
+		  coefficients, possibly supplemented by constrained optimization.
+		  We will discuss applications that include multiple, ground-roll removal
+		  and migration denoising. {\copyright}2004 Society of Exploration
+		  Geophysicists},
+  doi          = {10.1190/1.1851181},
+  keywords     = {SLIM},
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/seg/seg04/herrmann04cbn.pdf},
-  url = {http://slim.eos.ubc.ca/~felix/public/SEGAD2004.pdf}
+  url          = {http://slim.eos.ubc.ca/~felix/public/SEGAD2004.pdf}
 }
 
 
 
 
 @CONFERENCE{herrmann04cdl,
-  author = {Felix J. Herrmann and Peyman P. Moghaddam},
-  title = {Curvelet-domain least-squares migration with sparseness constraints},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
-  year = {2004},
-  month = {June},
+  author       = {Felix J. Herrmann and Peyman P. Moghaddam},
+  title        = {Curvelet-domain preconditioned 'wave-equation' depth-migration with sparseness and illumination constraints},
+  booktitle    = {EAGE Technical Program Expanded Abstracts},
+  year         = {2004},
+  month        = {June},
   organization = {EAGE},
-  publisher = {EAGE},
-  abstract = {A non-linear edge-preserving solution to the least-squares migration
+  publisher    = {EAGE},
+  abstract     = {A non-linear edge-preserving solution to the least-squares migration
 	problem with sparseness constraints is introduced. The applied formalism
 	explores Curvelets as basis functions that, by virtue of their sparseness
 	and locality, not only allow for a reduction of the dimensionality
@@ -426,22 +424,22 @@
 	This optimization is designed to also restore the amplitudes by (approximately)
 	inverting the normal operator, which is like-wise the (de)-migration
 	operators, almost diagonalized by the Curvelet transform.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/TechReports/herrmann04mpw.pdf}
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/Publications/Public/TechReports/herrmann04mpw.pdf}
 }
 
 
 
 
 @CONFERENCE{herrmann04cdl1,
-  author = {Felix J. Herrmann and Peyman P. Moghaddam},
-  title = {Curvelet-domain least-squares migration with sparseness constraints},
-  booktitle = {CSEG Technical Program Expanded Abstracts},
-  year = {2004},
-  month = {May},
+  author       = {Felix J. Herrmann and Peyman P. Moghaddam},
+  title        = {Curvelet-domain least-squares migration with sparseness constraints},
+  booktitle    = {CSEG Technical Program Expanded Abstracts},
+  year         = {2004},
+  month        = {May},
   organization = {CSEG},
-  publisher = {CSEG},
-  abstract = {A non-linear edge-preserving solution to the least-squares migration
+  publisher    = {CSEG},
+  abstract     = {A non-linear edge-preserving solution to the least-squares migration
 	problem with sparseness constraints is introduced. The applied formalism
 	explores Curvelets as basis functions that, by virtue of their sparseness
 	and locality, not only allow for a reduction of the dimensionality
@@ -452,15 +450,24 @@
 	This optimization is designed to also restore the amplitudes by (approximately)
 	inverting the normal operator, which is like-wise the (de)-migration
 	operators, almost diagonalized by the Curvelet transform.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Presentations/eage/eage04/herrmann04cdl.pdf}
+  keywords     = {SLIM},
+  presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/eage/eage04/herrmann04cdl.pdf}
 }
 
 
 
 
 @CONFERENCE{herrmann04cdm,
-  abstract = {Predictive multiple suppression methods consist of two main steps:
+  author       = {Felix J. Herrmann and D. J. Verschuur},
+  title        = {Curvelet-domain multiple elimination with sparseness constraints},
+  booktitle    = {SEG Technical Program Expanded Abstracts},
+  year         = {2004},
+  volume       = {23},
+  number       = {1},
+  pages        = {1333-1336},
+  organization = {SEG},
+  publisher    = {SEG},
+  abstract     = {Predictive multiple suppression methods consist of two main steps:
 	a prediction step, in which multiples are predicted from the seismic
 	data, and a subtraction step, in which the predicted multiples are
 	matched with the true multiples in the data. The last step appears
@@ -475,34 +482,24 @@
 	of predicted multiples to fit the input data is avoided. An initial
 	field data example shows a considerable improvement in multiple suppression.
 	{\copyright}2004 Society of Exploration Geophysicists},
-  author = {Felix J. Herrmann and D. J. Verschuur},
-  booktitle = {SEG Technical Program Expanded Abstracts},
-  doi = {10.1190/1.1851110},
-  keywords = {SLIM},
-  number = {1},
-  organization = {SEG},
-  pages = {1333-1336},
-  presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/seg/seg04/herrmann04cdm.pdf
-	},
-  publisher = {SEG},
-  title = {Curvelet-domain multiple elimination with sparseness constraints},
-  url = {http://slim.eos.ubc.ca/~felix/public/SEGM2004.pdf},
-  volume = {23},
-  year = {2004}
+  doi          = {10.1190/1.1851110},
+  keywords     = {SLIM},
+  presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/seg/seg04/herrmann04cdm.pdf},
+  url          = {http://slim.eos.ubc.ca/~felix/public/SEGM2004.pdf}
 }
 
 
 
 
 @CONFERENCE{herrmann04cia,
-  author = {Felix J. Herrmann},
-  title = {Curvelet imaging and processing: an overview},
-  booktitle = {CSEG Technical Program Expanded Abstracts},
-  year = {2004},
-  month = {May},
+  author       = {Felix J. Herrmann},
+  title        = {Curvelet imaging and processing: an overview},
+  booktitle    = {CSEG Technical Program Expanded Abstracts},
+  year         = {2004},
+  month        = {May},
   organization = {CSEG},
-  publisher = {CSEG},
-  abstract = {In this paper an overview is given on the application of directional
+  publisher    = {CSEG},
+  abstract     = {In this paper an overview is given on the application of directional
 	basis functions, known under the name Curvelets/Contourlets, to various
 	aspects of seismic processing and imaging. Key conceps in the approach
 	are the use of (i) directional basis functions that localize in both
@@ -512,22 +509,22 @@
 	under the imaging operators. We will discuss applications that include
 	multiple and ground roll removal; sparseness-constrained least-squares
 	migration and the computation of 4-D difference cubes.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/~felix/public/Herrmann_F_Curvelet_overview.doc}
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/~felix/public/Herrmann_F_Curvelet_overview.doc}
 }
 
 
 
 
 @CONFERENCE{herrmann04cia1,
-  author = {Felix J. Herrmann and D. J. Verschuur},
-  title = {Curvelet imaging and processing: adaptive multiple elimination},
-  booktitle = {CSEG Technical Program Expanded Abstracts},
-  year = {2004},
-  month = {May},
+  author       = {Felix J. Herrmann and D. J. Verschuur},
+  title        = {Curvelet imaging and processing: adaptive multiple elimination},
+  booktitle    = {CSEG Technical Program Expanded Abstracts},
+  year         = {2004},
+  month        = {May},
   organization = {CSEG},
-  publisher = {CSEG},
-  abstract = {Predictive multiple suppression methods consist of two main steps:
+  publisher    = {CSEG},
+  abstract     = {Predictive multiple suppression methods consist of two main steps:
 	a prediction step, in which multiples are predicted from the seismic
 	data, and a subtraction step, in which the predicted multiples are
 	matched with the true multiples in the data. The last step appears
@@ -541,23 +538,23 @@
 	have large amplitudes. In this way the more traditional filtering
 	of predicted multiples to fit the input data is avoided. An initial
 	field data example shows a considerable improvement in multiple suppression.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/~felix/public/Herrmann_F_Curvelet_multiple.doc}
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/~felix/public/Herrmann_F_Curvelet_multiple.doc}
 }
 
 
 
 
 @CONFERENCE{herrmann04cia2,
-  author = {Felix J. Herrmann and Peyman P. Moghaddam},
-  title = {Curvelet imaging and processing: sparseness-constrained least-squares
+  author       = {Felix J. Herrmann and Peyman P. Moghaddam},
+  title        = {Curvelet imaging and processing: sparseness-constrained least-squares
 	migration},
-  booktitle = {CSEG Technical Program Expanded Abstracts},
-  year = {2004},
-  month = {May},
+  booktitle    = {CSEG Technical Program Expanded Abstracts},
+  year         = {2004},
+  month        = {May},
   organization = {CSEG},
-  publisher = {CSEG},
-  abstract = {A non-linear edge-preserving solution to the least-squares migration
+  publisher    = {CSEG},
+  abstract     = {A non-linear edge-preserving solution to the least-squares migration
 	problem with sparseness constraints is introduced. The applied formalism
 	explores Curvelets as basis functions that, by virtue of their sparseness
 	and locality, not only allow for a reduction of the dimensionality
@@ -568,23 +565,23 @@
 	This optimization is designed to also restore the amplitudes by (approximately)
 	inverting the normal operator, which is, like-wise to the (de)-migration
 	operators, almost diagonalized by the Curvelet transform.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/~felix/public/Herrmann_F_Curvelet_multiple.doc}
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/~felix/public/Herrmann_F_Curvelet_imaging.doc}
 }
 
 
 
 
 @CONFERENCE{herrmann04sop,
-  author = {Felix J. Herrmann and D. J. Verschuur},
-  title = {Separation of primaries and multiples by non-linear estimation in
+  author       = {Felix J. Herrmann and D. J. Verschuur},
+  title        = {Separation of primaries and multiples by non-linear estimation in
 	the curvelet domain},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
-  year = {2004},
-  month = {June},
+  booktitle    = {EAGE Technical Program Expanded Abstracts},
+  year         = {2004},
+  month        = {June},
   organization = {EAGE},
-  publisher = {EAGE},
-  abstract = {Predictive multiple suppression methods consist of two main steps:
+  publisher    = {EAGE},
+  abstract     = {Predictive multiple suppression methods consist of two main steps:
 	a prediction step, in which multiples are predicted from the seismic
 	data, and a subtraction step, in which the predicted multiples are
 	matched with the true multiples in the data. The last step appears
@@ -598,24 +595,24 @@
 	have large amplitudes. In this way the more traditional filtering
 	of predicted multiples to fit the input data is avoided. An initial
 	field data example shows a considerable improvement in multiple suppression.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/~felix/public/EAGEM2004.pdf}
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/~felix/public/EAGEM2004.pdf}
 }
 
 
 
 
 @CONFERENCE{moghaddam04mpw,
-  author = {Peyman P. Moghaddam and Felix J. Herrmann},
-  title = {Migration preconditioning with curvelets},
-  booktitle = {SEG Technical Program Expanded Abstracts},
-  year = {2004},
-  volume = {23},
-  number = {1},
-  pages = {2204-2207},
+  author       = {Peyman P. Moghaddam and Felix J. Herrmann},
+  title        = {Migration preconditioning with curvelets},
+  booktitle    = {SEG Technical Program Expanded Abstracts},
+  year         = {2004},
+  volume       = {23},
+  number       = {1},
+  pages        = {2204-2207},
   organization = {SEG},
-  publisher = {SEG},
-  abstract = {In this paper, the property of Curvelet transforms for preconditioning
+  publisher    = {SEG},
+  abstract     = {In this paper, the property of Curvelet transforms for preconditioning
 	the migration and normal operators is investigated. These operators
 	belong to the class of Fourier integral operators and pseudo-differential
 	operator, respectively. The effect of this pre-conditioner is shown
@@ -624,23 +621,23 @@
 	values. The migration operator, which we employed in this work is
 	the common-offset Kirchoff-Born migration. {\copyright}2004 Society
 	of Exploration Geophysicists},
-  doi = {10.1190/1.1845213},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/~felix/public/SEGLAN2004.pdf}
+  doi          = {10.1190/1.1845213},
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/~felix/public/SEGLAN2004.pdf}
 }
 
 
 
 
 @CONFERENCE{yarham04cpa,
-  author = {Carson Yarham and D. Trad and Felix J. Herrmann},
-  title = {Curvelet processing and imaging: adaptive ground roll removal},
-  booktitle = {CSEG Technical Program Expanded Abstracts},
-  year = {2004},
-  month = {May},
+  author       = {Carson Yarham and Daniel Trad and Felix J. Herrmann},
+  title        = {Curvelet processing and imaging: adaptive ground roll removal},
+  booktitle    = {CSEG Technical Program Expanded Abstracts},
+  year         = {2004},
+  month        = {May},
   organization = {CSEG},
-  publisher = {CSEG},
-  abstract = {In this paper we present examples of ground roll attenuation for synthetic
+  publisher    = {CSEG},
+  abstract     = {In this paper we present examples of ground roll attenuation for synthetic
 	and real data gathers by using Contourlet and Curvelet transforms.
 	These non-separable wavelet transforms are locoalized both (x,t)-
 	and (k,f)-domains and allow for adaptive seperation of signal and
@@ -653,37 +650,19 @@
 	procedure. We show real and synthetic examples and the results suggest
 	that these directional-selective basis functions provide a usefull
 	tool for the removal of coherent noise such as ground roll.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/~felix/public/Yarham_C_Curvelet_Ground_roll.doc}
-}
-
-
-
-
-@CONFERENCE{Herrmann03msa,
-  author = {Felix J. Herrmann},
-  title = {Multifractional splines: application to seismic imaging},
-  booktitle = {SPIE},
-  year = {2003},
-  editor = {M. Unser and A. Aldroubi},
-  volume = {5207},
-  pages = {240-258},
-  organization = {SPIE},
-  publisher = {SPIE},
-  keywords = {SLIM},
-  presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/herrmann03msa.pdf},
-  url = {http://www.eos.ubc.ca/~felix/Preprint/SPIE03DEF.pdf}
+  keywords     = {SLIM},
+  url          = {http://slim.eos.ubc.ca/~felix/public/Yarham_C_Curvelet_Ground_roll.doc}
 }
 
 
 
 
 @CONFERENCE{herrmann03oiw,
-  author = {Felix J. Herrmann},
-  title = {Optimal Imaging Curvelets},
-  booktitle = {2003 SEG},
-  year = {2003},
-  keywords = {Presentation, SEG, SLIM},
+  author       = {Felix J. Herrmann},
+  title        = {"Optimal" imaging with curvelets},
+  booktitle    = {2003 SEG},
+  year         = {2003},
+  keywords     = {Presentation, SEG, SLIM},
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/seg/seg03/herrmann03oiw.pdf}
 }
 
@@ -691,17 +670,17 @@
 
 
 @CONFERENCE{Herrmann2003SPIE,
-  author = {Felix J. Herrmann},
-  title = {Multifractional splines: application to seismic imaging},
-  booktitle = {Proceedings of SPIE Technical Conference on Wavelets: Applications
+  author       = {Felix J. Herrmann},
+  title        = {Multifractional splines: application to seismic imaging},
+  booktitle    = {Proceedings of SPIE Technical Conference on Wavelets: Applications
 	in Signal and Image Processing X},
-  year = {2003},
-  editor = {M. Unser and A. Aldroubi},
-  volume = {5207},
-  pages = {240-258},
+  year         = {2003},
+  editor       = {Michael A. Unser and Akram Aldroubi and Andrew F. Laine},
+  volume       = {5207},
+  pages        = {240-258},
   organization = {SPIE},
-  publisher = {SPIE},
-  abstract = {Seismic imaging commits itself to locating singularities in the elastic
+  publisher    = {SPIE},
+  abstract     = {Seismic imaging commits itself to locating singularities in the elastic
 	properties of the Earth{\textquoteright}s subsurface. Using the high-frequency
 	ray-Born approximation for scattering from non-intersecting smooth
 	interfaces, seismic data can be represented by a generalized Radon
@@ -720,22 +699,24 @@
 	hence facilitate estimation; (ii) the normal operator itself. Results
 	of applying these techniques to seismic imaging are encouraging although
 	many open fundamental questions remain.},
-  keywords = {SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Presentations/herrmann03msa.pdf}
+  keywords     = {SLIM},
+  presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/herrmann03msa.pdf},
+  url          = {http://www.eos.ubc.ca/~felix/Preprint/SPIE03DEF.pdf}
+  
 }
 
 
 
 
 @CONFERENCE{herrmann01sas,
-  author = {Felix J. Herrmann},
-  title = {Scaling and seismic reflectivity: implications of scaling on {AVO}},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
-  year = {2001},
-  month = {June},
+  author       = {Felix J. Herrmann},
+  title        = {Scaling and seismic reflectivity: implications of scaling on {AVO}},
+  booktitle    = {EAGE Technical Program Expanded Abstracts},
+  year         = {2001},
+  month        = {June},
   organization = {EAGE},
-  publisher = {EAGE},
-  abstract = {AVO analysis of seismic data is based on the assumption that transitions
+  publisher    = {EAGE},
+  abstract     = {AVO analysis of seismic data is based on the assumption that transitions
 	in the earth consist of jump discontinuities only. Generalization
 	of these transitions to more realistic transitions shows a drastic
 	change in observed AVO behavior, especially for the large angles
@@ -747,17 +728,6 @@
 	as isolated jump discontinuities. After renormalization, the inverted
 	fluctuations regain their relative magnitudes which, due to the scaling,
 	may have been significantly distorted.},
-  keywords = {SLIM}
+  keywords     = {SLIM},
+%  url          = {NOT FOUND}
 }
-
-
-
-
-
-
-
-
-
-
-
-

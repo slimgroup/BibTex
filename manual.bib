@@ -2,177 +2,8 @@
 % Encoding: MacRoman
 
 
-@MANUAL{hennenfent2010nct,
-  title = {Nonequispaced curvelet transform for seismic data reconstruction:
-	a sparsity-promoting approach},
-  author = {Gilles Hennenfent and Lloyd Fenelon and Felix J. Herrmann},
-  year = {2010},
-  abstract = {Seismic data are typically irregularly sampled along spatial axes.
-	This irregular sampling may adversely affect some key steps, e.g.,
-	multiple prediction/attenuation or imaging, in the processing workflow.
-	To overcome this problem almost every large dataset is regularized
-	and/or interpolated. Our contribution is twofold. Firstly, we extend
-	our earlier work on the nonequispaced fast discrete curvelet transform
-	(NFDCT) and introduce a second generation of the transform. This
-	new generation differs from the previous one by the approach taken
-	to compute accurate curvelet coefficients from irregularly sampled
-	data. The first generation relies on accurate Fourier coefficients
-	obtained by an $\ell_2$-regularized inversion of the nonequispaced
-	fast Fourier transform, while the second is based on a direct, $\ell_1$
-	-regularized inversion of the operator that links curvelet coefficients
-	to irregular data. Also, by construction, the NFDCT second generation
-	is lossless, unlike the NFDCT first generation. This property is
-	particularly attractive for processing irregularly sampled seismic
-	data in the curvelet domain and bringing them back to their irregular
-	recording locations with high fidelity. Secondly, we combine the
-	NFDCT second generation with the standard fast discrete curvelet
-	transform (FDCT) to form a new curvelet-based method, coined nonequispaced
-	curvelet reconstruction with sparsity-promoting inversion (NCRSI),
-	for the regularization and interpolation of irregularly sampled data.
-	We demonstrate that, for a pure regularization problem, the reconstruction
-	is very accurate. The signal-to-reconstruction error ratio is, in
-	our example, above 40 dB. We also conduct combined interpolation
-	and regularization experiments. The reconstructions for synthetic
-	data are accurate, particularly when the recording locations are
-	optimally jittered. The reconstruction in our real data example shows
-	amplitudes along the main wavefronts smoothly varying with no obvious
-	acquisition imprint; a result very competitive with results from
-	other reconstruction methods overall.},
-  number = {TR-2010-2},
-  publisher = {UBC Earth and Ocean Sciences Department},
-  url = {http://slim.eos.ubc.ca/Publications/Private/Journals/hennenfent2010nct}
-}
-
-@MANUAL{herrmann10erc,
-  title = {Emperical recovery conditions for seismic sampling},
-  author = {Felix J. Herrmann},
-  year = {2010},
-  abstract = {In this paper, we offer an alternative sampling method leveraging
-	recent insights from compressive sensing towards seismic acquisition
-	and processing for data that are traditionally considered to be undersampled.
-	The main outcome of this approach is a new technology where acquisition
-	and processing related costs are no longer determined by overly stringent
-	sampling criteria, such as Nyquist. At the heart of our approach
-	lies randomized incoherent sampling that breaks subsampling related
-	interferences by turning them into harmless noise, which we subsequently
-	remove by promoting transform-domain sparsity. Now, costs no longer
-	grow with resolution and dimensionality of the survey area, but instead
-	depend on transform-domain sparsity only. Our contribution is twofold.
-	First, we demonstrate by means of carefully designed numerical experiments
-	that compressive sensing can successfully be adapted to seismic acquisition.
-	Second, we show that accurate recovery can be accomplished for compressively
-	sampled data volumes sizes that exceed the size of conventional transform-domain
-	data volumes by only a small factor. Because compressive sensing
-	combines transformation and encoding by a single linear encoding
-	step, this technology is directly applicable to acquisition and to
-	dimensionality reduction during processing. In either case, sampling,
-	storage, and processing costs scale with transform-domain sparsity.
-	We illustrate this principle by means of number of case studies.},
-  keywords = {SEG},
-  publisher = {SEG},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/herrmann10erc.pdf}
-}
-
-@MANUAL{herrmann2010rsa,
-  title = {Randomized sampling and sparsity: getting more information from fewer
-	samples},
-  author = {Felix J. Herrmann},
-  year = {2010},
-  abstract = {Many seismic exploration techniques rely on the collection of massive
-	data volumes that are subsequently mined for information during processing.
-	While this approach has been extremely successful in the past, current
-	efforts toward higher- resolution images in increasingly complicated
-	regions of the Earth continue to reveal fundamental shortcomings
-	in our workflows. Chiefly amongst these is the so-called {\textquoteleft}{\textquoteleft}curse
-	of dimensionality{\textquoteright}{\textquoteright} exemplified by
-	Nyquist{\textquoteright}s sampling criterion, which disproportionately
-	strains current acquisition and processing systems as the size and
-	desired resolution of our survey areas continues to increase. In
-	this paper, we offer an alternative sampling method leveraging recent
-	insights from compressive sensing towards seismic acquisition and
-	processing for data that are traditionally considered to be undersampled.
-	The main outcome of this approach is a new technology where acquisition
-	and processing related costs are no longer determined by overly stringent
-	sampling criteria, such as Nyquist. At the heart of our approach
-	lies randomized incoherent sampling that breaks subsampling related
-	interferences by turning them into harmless noise, which we subsequently
-	remove by promoting transform-domain sparsity. Now, costs no longer
-	grow significantly with resolution and dimensionality of the survey
-	area, but instead depend on transform-domain sparsity only. Our contribution
-	is twofold. First, we demonstrate by means of carefully designed
-	numerical experiments that compressive sensing can successfully be
-	adapted to seismic exploration. Second, we show that accurate recovery
-	can be accomplished for compressively sampled data volumes sizes
-	that exceed the size of conventional transform-domain data volumes
-	by only a small factor. Because compressive sensing combines transformation
-	and encoding by a single linear encoding step, this technology is
-	directly applicable to acquisition and to dimensionality reduction
-	during processing. In either case, sampling, storage, and processing
-	costs scale with transform-domain sparsity. We illustrate this principle
-	by means of number of case studies.},
-  number = {TR-2010-1},
-  publisher = {UBC Earth and Ocean Sciences Department},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann2010rsa.pdf}
-}
-
-@MANUAL{tang09dtr,
-  title = {Design of two-dimensional randomized sampling schemes for curvelet-based
-	sparsity-promoting seismic data recovery},
-  author = {Gang Tang and Reza Shahidi and Jianwei Ma},
-  year = {2009},
-  abstract = {The tasks of sampling, compression and reconstruction are very common
-	and often necessary in seismic data processing due to the large size
-	of seismic data. Curvelet-based Recovery by Sparsity-promoting Inversion,
-	motivated by the newly developed theory of compressive sensing, is
-	among the best recovery strategies for seismic data. The incomplete
-	data input to this curvelet-based recovery is determined by randomized
-	sampling of the original complete data. Unlike usual regular undersampling,
-	randomized sampling can convert aliases to easy-to-eliminate noise,
-	thus facilitating the process of reconstruction of the complete data
-	from the incomplete data. Randomized sampling methods such as jittered
-	sampling have been developed in the past that are suitable for curvelet-based
-	recovery, however most have only been applied to sampling in one
-	dimension. Considering that seismic datasets are usually higher dimensional
-	and extremely large, in the present paper, we extend the 1D version
-	of jittered sampling to two dimensions, both with underlying Cartesian
-	and hexagonal grids. We also study separable and non-separable two
-	dimensional jittered sampling, the former referring to the Kronecker
-	product of two one-dimensional jittered samplings. These different
-	categories of jittered sampling are compared against one another
-	in terms of signal-to-noise ratio and visual quality, from which
-	we find that jittered hexagonal sampling is better than jittered
-	Cartesian sampling, while fully non-separable jittered sampling is
-	better than separable sampling. Because in the image processing and
-	computer graphics literature, sampling patterns with blue-noise spectra
-	are found to be ideal to avoid aliasing, we also introduce two other
-	randomized sampling methods, possessing sampling spectra with beneficial
-	blue noise characteristics, Poisson Disk sampling and Farthest Point
-	sampling. We compare these methods, and apply the introduced sampling
-	methodologies to higher dimensional curvelet-based reconstruction.
-	These sampling schemes are shown to lead to better results from CRSI
-	compared to the other more traditional sampling protocols, e.g. regular
-	subsampling.},
-  number = {TR-2009-03},
-  publisher = {UBC Earth and Ocean Sciences Department},
-  url = {http://slim.eos.ubc.ca/Publications/Private/Journals/tang09dtr.pdf}
-}
-
-@MANUAL{Erlangga08oam,
-  title = {On a multilevel projection Krylov method for the Helmholtz equation
-	preconditioned by shifted Laplacian},
-  author = {Yogi A. Erlangga and R. Nabben},
-  year = {2008},
-  file = {:http\\\://slim.eos.ubc.ca/Publications/Public/Journals/Yogi/erlangga-nabben-helmholtz.pdf:PDF},
-  journal = {Elec. Trans. Numer. Anal.},
-  keywords = {SLIM},
-  number = {TR-2008-2},
-  publisher = {UBC Earth and Ocean Sciences Department},
-  url = {http\://slim.eos.ubc.ca/Publications/Public/Journals/Yogi/erlangga-nabben-helmholtz.pdf},
-  volume = {submitted}
-}
-
-@MANUAL{hennenfent08rap,
-  title = {TR2008-7 Repro: a Python package for automating reproducible research
+@MANUAL{hennenfent08MNrap,
+  title = {Repro: a Python package for automating reproducible research
 	in scientific computing},
   author = {Gilles Hennenfent and Sean Ross-Ross},
   month = {August},
@@ -186,7 +17,7 @@
 	a reference guide ). In this user{\textquoteright}s guide, we present
 	a few pedagogical examples that uses Matlab, Python, Seismic Unix
 	(SU), and Madagascar. We also include demo pa pers. These papers
-	are written in {\L}aTeX\ and compiled using repro. The figures they
+	are written in LaTeX and compiled using repro. The figures they
 	contain are automatically generated from the source codes prov ided.
 	In that sense, the demo papers are a model of self-contained documents
 	that are fully reproducible. The repro package is largely inspired
@@ -194,13 +25,10 @@
 	research. However, the repro package is intended for a broad audience
 	co ming from a wide spectrum of interest areas.},
   keywords = {SLIM},
-  publisher = {The University of British Columbia},
-  type = {software package}
+  url = {http://repro.sourceforge.net/Site/Home.html}
 }
 
-
-
-@MANUAL{slimpy08,
+@MANUAL{rossross08MNsai,
   title = {{SLIMPY}: a python interface for unix-pipe based coordinate-free
 	scientific computing},
   author = {Sean Ross-Ross and Henryk Modzelewski and Felix J. Herrmann},
@@ -224,33 +52,7 @@
   url = {http://slim.eos.ubc.ca/SLIMpy/}
 }
 
-@MANUAL{wang08bss,
-  title = {Bayesian-signal separation by sparsity promotion: application to
-	primary-multiple separation},
-  author = {Deli Wang and Rayan Saab and Ozgur Yilmaz and Felix J. Herrmann},
-  month = {January},
-  year = {2008},
-  abstract = {Successful removal of coherent noise sources greatly determines the
-	quality of seismic imaging. Major advances were made in this direction,
-	e.g., Surface-Related Multiple Elimination (SRME) and interferometric
-	ground-roll removal. Still, moderate phase, timing, amplitude errors
-	and clutter in the predicted signal components can be detrimental.
-	Adopting a Bayesian approach along with the assumption of approximate
-	curvelet-domain independence of the to-be-separated signal components,
-	we construct an iterative algorithm that takes the predictions produced
-	by for example SRME as input and separates these components in a
-	robust fashion. In addition, the proposed algorithm controls the
-	energy mismatch between the separated and predicted components. Such
-	a control, which was lacking in earlier curvelet-domain formulations,
-	produces improved results for primary-multiple separation on both
-	synthetic and real data.},
-  keywords = {signal separation, SLIM},
-  number = {TR-2008-1},
-  publisher = {UBC Earth and Ocean Sciences Department},
-  url = {http://slim.eos.ubc.ca/Publications/Private/Journals/wang08bayes/paper_html/paper.html}
-}
-
-@MANUAL{rossross07sda,
+@MANUAL{rossross07MNsda,
   title = {{SLIMpy} development and programming interface for seismic processing},
   author = {Sean Ross-Ross and Henryk Modzelewski and Cody R. Brown and Felix
 	J. Herrmann},
@@ -290,9 +92,9 @@
   url = {http://slim.eos.ubc.ca/SLIMpy}
 }
 
-@MANUAL{sparco07,
+@MANUAL{vandenberg07MNsat,
   title = {SPARCO: A toolbox for testing sparse reconstruction algorithms},
-  author = {E. van den Berg and Michael P. Friedlander},
+  author = {Ewout van den Berg and Michael P. Friedlander},
   month = {October},
   year = {2007},
   abstract = {Sparco is a suite of problems for testing and benchmarking algorithms

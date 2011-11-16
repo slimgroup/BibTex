@@ -20,7 +20,6 @@
 	methods that exhibit the benefits of both approaches. Rate of convergence
 	analysis and numerical experiments illustrate the potential for the
 	approach.},
-  file = {FriedlanderSchmidt2011.pdf:http\://www.cs.ubc.ca/~mpf/papers/FriedlanderSchmidt2011.pdf:PDF},
   publisher = {Department of Computer Science},
   url = {http://www.cs.ubc.ca/~mpf/papers/FriedlanderSchmidt2011.pdf}
 }
@@ -29,28 +28,27 @@
   author = {Michael P. Friedlander and Hassan Mansour and Rayan Saab and Ozgur
 	Yilmaz},
   title = {Recovering compressively sampled signals using partial support information},
-  institution = {To appear in IEEE Transactions on Information Theory},
+  institution = {Department of Computer Science},
   year = {2011},
   type = {Tech. Rep.},
   address = {University of British Columbia, Vancouver},
   month = {July},
-  abstract = {We study recovery conditions of weighted ?1 minimization for signal
+  abstract = {We study recovery conditions of weighted $\ell_1$ minimization for signal
 	reconstruction from compressed sensing measurements when partial
-	support information is available. We show that if at least 50% of
-	the (partial) support information is accurate, then weighted ?1 minimization
+	support information is available. We show that if at least 50\% of
+	the (partial) support information is accurate, then weighted $\ell_1$ minimization
 	is stable and robust under weaker sufficient conditions than the
-	analogous conditions for standard ?1 minimization. Moreover, weighted
-	?1 minimization provides better upper bounds on the reconstruction
+	analogous conditions for standard $\ell_1$ minimization. Moreover, weighted
+	$\ell_1$ minimization provides better upper bounds on the reconstruction
 	error in terms of the measurement noise and the compressibility of
 	the signal to be recovered. We illustrate our results with extensive
 	numerical experiments on synthetic data and real audio and video
 	signals.},
-  file = {:http\://slim/Publications/Public/Journals/mansour2011.pdf:PDF},
   url = {http://slim/Publications/Public/Journals/mansour2011.pdf}
 }
 
 @TECHREPORT{BergFriedlander:2010,
-  author = {E. van den Berg and Michael P. Friedlander},
+  author = {Ewout {van den Berg} and Michael P. Friedlander},
   title = {Sparse optimization with least-squares constraints},
   institution = {Department of Computer Science},
   year = {2010},
@@ -68,8 +66,28 @@
 	on how to apply the algorithm, a nd experimental results.}
 }
 
+@ TECHREPORT{Haber2010emp,
+  title = {An effective method for parameter estimation with PDE constraints
+	with multiple right hand sides},
+  author = {Eldad Haber and Matthias Chung and Felix J. Herrmann},
+  year = {2010},
+  abstract = {Many parameter estimation problems involve with a parameter-dependent
+	PDEs with multiple right hand sides. The computational cost and memory
+	requirements of such problems increases linearly with the number
+	of right hand sides. For many applications this is the main bottleneck
+	of the computation. In this paper we show that problems with multiple
+	right hand sides can be reformulated as stochastic optimization problems
+	that are much cheaper to solve. We discuss the solution methodology
+	and use the direct current resistivity and seismic tomography as
+	model problems to show the effectiveness of our approach.},
+  keywords = {SLIM},
+  number = {TR-2010-4},
+  publisher = {UBC-Earth and Ocean Sciences Department},
+  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/Haber2010emp.pdf}
+}
+
 @TECHREPORT{BergFriedlander:2009,
-  author = {E. van den Berg and Michael P. Friedlander},
+  author = {Ewout {van den Berg} and Michael P. Friedlander},
   title = {Theoretical and empirical results for recovery from multiple measurements},
   institution = {Department of Computer Science},
   year = {2009},
@@ -96,7 +114,8 @@
 
 @TECHREPORT{hennenfent08,
   author = {Gilles Hennenfent and Felix J. Herrmann},
-  title = {One-norm regularized inversion: learning from the Pareto curve. TR-2008-5},
+  title = {One-norm regularized inversion: learning from the Pareto curve},
+  number = {TR-2008-5},
   year = {2008},
   abstract = {Geophysical inverse problems typically involve a trade off between
 	data misfit and some prior. Pareto curves trace the optimal trade
@@ -112,15 +131,16 @@
 	Third, we illustrate the correlation between the one-norm compressibility
 	and the performance of Fourier and curvelet reconstructions with
 	sparsity promoting inversion.},
-  owner = {shruti},
-  timestamp = {2011.08.05},
+  keywords = {SLIM},
+  number = {TR-2008-5},
+  publisher = {UBC Earth and Ocean Sciences Department},
   url = {http://slim.eos.ubc.ca/Publications/Public/TechReports/hennenfent08seg.pdf}
 }
 
 @TECHREPORT{lebed08,
   author = {Evgeniy Lebed and Felix J. Herrmann},
-  title = {A hitchhiker’s guide to the galaxy of transform-domain sparsification.
-	TR-2008-4},
+  title = {A hitchhiker's guide to the galaxy of transform-domain sparsification},
+  number = {TR-2008-4},
   year = {2008},
   abstract = {The ability to efficiently and sparsely represent seismic data is
 	becoming an increasingly important problem in geophysics. Over the
@@ -131,14 +151,16 @@
 	the shift-invariant wavelets, complex wavelets, curvelets and surfacelets.
 	We also briefly explore the performance of these transforms for the
 	problem of recovering seismic wavefields from incomplete measurements.},
-  owner = {shruti},
-  timestamp = {2011.08.05},
+  keywords = {SLIM},
+  number = {TR-2008-4},
+  publisher = {UBC Earth and Ocean Sciences Department},
   url = {http://slim.eos.ubc.ca/Publications/Public/TechReports/lebed08seg.pdf}
 }
 
 @TECHREPORT{wang08,
   author = {Felix J. Herrmann and Peyman P. Moghaddam and Deli Wang},
-  title = {Curvelet-domain matched filtering. TR-2008-6.},
+  title = {Curvelet-domain matched filtering}
+  number = {TR-2008-6.},
   year = {2008},
   abstract = {Matching seismic wavefields and images lies at the heart of many pre-/post-processing
 	steps part of seismic imaging--- whether one is matching predicted
@@ -156,7 +178,36 @@
 	to handle conflicting dips, and by leveraging their ability to represent
 	seismic data and images sparsely. This latter property renders curvelet-domain
 	sparsity promotion an effective prior.},
-  owner = {shruti},
-  timestamp = {2011.08.05},
   url = {http://slim.eos.ubc.ca/Publications/Public/TechReports/herrmann08segmat.pdf}
+}
+
+ @ TECHREPORT{BergFrie:2007,
+  Address = {University of British Columbia, Vancouver},
+  Author = {Ewout {van den} Berg and Michael P. Friedlander},
+  Institution = {Department of Computer Science},
+  Month = {June},
+  Number = {TR-2007-19},
+  Title = {In pursuit of a root},
+  Type = {Tech. Rep.},
+  Url = {http://www.optimization-online.org/DB_HTML/2007/06/1708.html},
+  Year = 2007
+ }
+ 
+ @ TECHREPORT{vandenberg07sat,
+  title = {Sparco: a testing framework for sparse reconstruction},
+  author = {E. van den Berg and Michael P. Friedlander and Gilles Hennenfent
+	and Felix J. Herrmann and Rayan Saab and Ozgur Yilmaz},
+  year = {2007},
+  abstract = {Sparco is a framework for testing and benchmarking algorithms for
+	sparse reconstruction. It includes a large collection of sparse reconstruction
+	problems drawn from the imaging, compressed sensing, and geophysics
+	literature. Sparco is also a framework for implementing new test
+	problems and can be used as a tool for reproducible research. Sparco
+	is implemented entirely in Matlab, and is released as open-source
+	software under the GNU Public License.},
+  keywords = {SLIM, Sparco},
+  number = {TR-2007-20},
+  publisher = {UBC Computer Science Department},
+  url ={http://www.cs.ubc.ca/labs/scl/sparco/downloads.php?filename=sparco.pdf},
+  presentation = {http://slim.eos.ubc.ca/SINBAD2008/Program_files/SINBAD2008_Ewout_Spar.pdf}
 }

@@ -63,7 +63,6 @@ else:
 						quit()
 					int_keys.add(key)						
 		setlist.append(int_keys)
-		print len(int_keys)
 #----------Checking for duplicate keys between files----------
 	length=len(setlist)
 	j=0

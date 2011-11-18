@@ -92,8 +92,9 @@
   title = {On multilevel projection Krylov method for the Helmholtz equation
 	preconditioned by shifted Laplacian},
   journal = {Elec. Trans. Numer. Anal.},
-  year = {2007},
-  volume = {submitted},
+  year = {2008},
+  volume = {31},
+  pages ={203-234},
   abstract = {In [Erlangga and Nabben, SIAM J. Sci. Comput. (2007), to appear],
 	a multilevel Krylov method is proposed to solve linear systems with
 	symmetric and nonsymmetric matrix of coefficients. This multilevel
@@ -685,39 +686,6 @@
   keywords = {curvelet transform, imaging, SLIM}
 }
 
-@ARTICLE{HerrmannACHA07,
-  author = {Felix J. Herrmann and Peyman P. Moghaddam and C. C. Stolk},
-  title = {Sparsity- and continuity-promoting seismic image recovery with curvelet
-	frames},
-  year = {2007},
-  note = {Accepted for publication in the Journal of Applied and Computational
-	Harmonic Analysis},
-  abstract = {A nonlinear singularity-preserving solution to seismic image recovery
-	with sparseness and continuity constraints is proposed. We observe
-	that curvelets, as a directional frame expansion, lead to sparsity
-	of seismic images and exhibit invariance under the normal operator
-	of the linearized imaging problem. Based on this observation we derive
-	a method for stable recovery of the migration amplitudes from noisy
-	data. The method corrects the amplitudes during a post-processing
-	step after migration, such that the main additional cost is one application
-	of the normal operator, i.e. a modeling followed by a migration.
-	Asymptotically this normal operator corresponds to a pseudodifferential
-	operator, for which a convenient diagonal approximation in the curvelet
-	domain is derived, including a bound for its error and a method for
-	the estimation of the diagonal from a compound operator consisting
-	of discrete implementations for the scattering operator and its adjoint
-	the migration operator. The solution is formulated as a nonlinear
-	optimization problem where sparsity in the curvelet domain as well
-	as continuity along the imaged reflectors are jointly promoted. To
-	enhance sparsity, the $\ell_1$-norm on the curvelet coefficients
-	is minimized, while continuity is promoted by minimizing an anisotropic
-	diffusion norm on the image. The performance of the recovery scheme
-	is evaluated with a time-reversed {\textquoteright}wave-equation{\textquoteright}
-	migration code on synthetic datasets, including the complex SEG/EAGE
-	AA$^\prime$ salt model.},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/HerrmannACHA07.pdf}
-}
-
 @ARTICLE{herrmann08cbs,
   author = {Felix J. Herrmann and Deli Wang and Gilles Hennenfent and Peyman
 	P. Moghaddam},
@@ -748,30 +716,6 @@
   publisher = {SEG}
 }
 
-@ARTICLE{Herrmann2007Let,
-  author = {Felix J. Herrmann and Deli Wang and Gilles Hennenfent and Peyman
-	P. Moghaddam},
-  title = {Curvelet-based seismic data processing: a multiscale and nonlinear
-	approach},
-  journal = {Geophysics},
-  year = {2007},
-  volume = {73},
-  pages = {A1-A5},
-  number = {1},
-  abstract = {I In this letter, the solutions to three seismic processing problems
-	are presented that exploit the multiscale and multi-angular properties
-	of the curvelet transform. Data regularization, multiple removal,
-	and restoration of migration amplitudes are all formulated in terms
-	of a sparsity promoting program that employs the high degree of sparsity
-	attained by curvelets on seismic data and images. For each problem
-	the same nonlinear program is solved, simultaneously minimizing the
-	data misfit and the one norm ($\ell_1$) on the desired curvelet-domain
-	solution. Parsimony of curvelets on seismic wavefields and images
-	of the sedimentary crust with wavefront-like features underlies the
-	successful solution of these problems and is a clear indication of
-	the broad applicability of this transform in exploration seismology.},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann08cbs.pdf}
-}
 
 @ARTICLE{herrmann08acd,
   author = {Felix J. Herrmann and Deli Wang and D. J. Verschuur},
@@ -806,31 +750,13 @@
 }
 
 @ARTICLE{VanLeeuwen2010,
-  author = {Tristan van Leeuwen and Felix J. Herrmann},
+  author = {Tristan van Leeuwen and Aleksandr Y. Aravkin and  Felix J. Herrmann},
   title = {Seismic waveform inversion by stochastic optimization},
   journal = {International Journal of Geophysics},
   year = {2011},
-  volume = {2011},
-  abstract = {We explore the use of stochastic optimization methods for seismic
-	waveform inversion. The basic principle of such methods is to randomly
-	draw a batch of realizations of a given misfit function and goes
-	back to the 1950s. A batch in the current setting represents a single
-	random superposition of sources. The ultimate goal of such an approach
-	is to dramatically reduce the number of shots that need to be modeled.
-	Assuming that the computational costs grow linearly with the number
-	of shots, this promises a significant speed-up. We introduce the
-	stochasticity in the waveform inversion problem in a rigorous way
-	via a technique called \emph{randomized trace estimation} and review
-	some theoretical results that underlie recent developments in the
-	use of stochastic methods for waveform inversion. We present some
-	numerical experiments to illustrate the behavior of different types
-	of stochastic optimization methods and investigate the sensitivity
-	to the batch-size and the noise level in the data. We find that it
-	is possible to reproduce results that are qualitatively similar to
-	the solution of the full problem with modest batch-sizes, even on
-	noisy data. This leads to an order of magnitude speed up for waveform
-	inversion.},
-  url = {http://www.hindawi.com/journals/ijgp/2011/689041/cta/}
+  volume = {doi:10.1155/2011/689041},
+  abstract = {We explore the use of stochastic optimization methods for seismic waveform inversion. The basic principle of such methods is to randomly draw a batch of realizations of a given misfit function and goes back to the 1950s. The ultimate goal of such an approach is to dramatically reduce the computational cost involved in evaluating the misfit. Following earlier work, we introduce the stochasticity in waveform inversion problem in a rigorous way via a technique called randomized trace estimation. We then review theoretical results that underlie recent developments in the use of stochastic methods for waveform inversion. We present numerical experiments to illustrate the behavior of different types of stochastic optimization methods and investigate the sensitivity to the batch size and the noise level in the data. We find that it is possible to reproduce results that are qualitatively similar to the solution of the full problem with modest batch sizes, even on noisy data. Each iteration of the corresponding stochastic methods requires an order of magnitude fewer PDE solves than a comparable deterministic method applied to the full problem, which may lead to an order of magnitude speedup for waveform inversion in practice.},
+  note = {http://www.hindawi.com/journals/ijgp/2011/689041/cta/}
 }
 
 @ARTICLE{lin07cwe,
@@ -878,7 +804,10 @@
   author = {Rayan Saab and Ozgur Yilmaz},
   title = {Sparse Recovery by Non-Convex Optimization - Instance Optimality},
   journal = {Applied and Computational Harmonic Analysis},
-  year = {2009},
+  year = {2010},
+  volume = {29},
+  number = {1},
+  pages = {30-48},
   abstract = {In this note, we address the theoretical properties of $Δ_p$, a class
 	of compressed sensing decoders that rely on $l^p$ minimization with
 	$p {\i}n (0, 1)$ to recover estimates of sparse and compressible
@@ -912,7 +841,8 @@
   year = {2008},
   volume = {73},
   number = {5},
-  month = {September-Octobe},
+  pages = {1-6},
+  month = {July},
   abstract = {Successful removal of coherent noise sources greatly determines the
 	quality of seismic imag- ing. Ma jor advances were made in this direction,
 	e.g., Surface-Related Multiple Elimination (SRME) and interferometric

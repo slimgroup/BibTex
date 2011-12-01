@@ -1,6 +1,192 @@
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 
+@unpublished{mansour11TRrcs,
+  author = {Michael P. Friedlander and Hassan Mansour and Rayan Saab and Ozgur Yilmaz},
+  title = {Recovering compressively sampled signals using partial support information},
+  institution = {Department of Computer Science},
+  year = {2011},
+  address = {University of British Columbia, Vancouver},
+  month = {July},
+  abstract = {We study recovery conditions of weighted $\ell_1$ minimization for
+        signal reconstruction from compressed sensing measurements when partial
+        support information is available. We show that if at least 50\% of
+        the (partial) support information is accurate, then weighted $\ell_1$
+        minimization is stable and robust under weaker sufficient conditions
+        than the analogous conditions for standard $\ell_1$ minimization.
+        Moreover, weighted $\ell_1$ minimization provides better upper bounds
+        on the reconstruction error in terms of the measurement noise and
+        the compressibility of the signal to be recovered. We illustrate
+        our results with extensive numerical experiments on synthetic data
+        and real audio and video signals.},
+  url = {http://slim/Publications/Public/Journals/mansour2011.pdf},
+notes= {tech report }
+}
+
+@unpublished{Mansour11TRwmmw,
+  author = {Hassan Mansour and Ozgur Yilmaz.},
+  title = {Weighted -$\ell_1$ minimization with multiple weighting sets.},
+  year = {2011},
+  type = {Tech. Rep.},
+  address = {University of British Columbia, Vancouver},
+  month = {September},
+  abstract = {In this paper, we study the support In this paper, we study the support
+        recovery conditions of weighted -$\ell_1$ minimization for signal
+        reconstruction from compressed sensing measurements when multiple
+        support estimate sets with different accuracy are available. We identify
+        a class of signals for which the recovered vector from -$\ell_1$
+        minimization provides an accurate support estimate. We then derive
+        stability and robustness guarantees for the weighted -$\ell_1$ minimization
+        problem with more than one support estimate. We show that applying
+        a smaller weight to support estimate that enjoy higher accuracy improves
+        the recovery conditions compared with the case of a single support
+        estimate and the case with standard, i.e., non-weighted,-$\ell_1$
+        minimization. Our theoretical results are supported by numerical
+        simulations on synthetic signals and real audio signals.},
+  url = {http://slim.eos.ubc.ca/Publications/private/Journals/MansourYilmaz2011.pdf }
+}
+
+
+
+@unpublished{Herrmann11SPIEmspgn,
+author = {Felix J. Herrmann and Xiang Li and Aleksandr Aravkin and Tristan van Leeuwen},
+title = {A modified, sparsity promoting, {G}auss-{N}ewton algorithm for seismic waveform inversion.},
+year = {2011},
+journal = {Proc. SPIE},
+volume = {2011},
+number = {81380V},
+pages = {},
+issn = {1},
+url={http://slim.eos.ubc.ca/Publications/public/Journals/SPIEreport.pdf},
+url2 ={http://dx.doi.org/10.1117/12.893861},
+doi = {doi:10.1117/12.893861},
+abstract={ Images obtained from seismic data are used by the oil and gas industry for geophysical exploration. Cutting-edge methods for transforming the data into interpretable images are moving away from linear approximations and high-frequency asymptotics towards Full Waveform Inversion (FWI), a nonlinear data-fitting procedure based on full data modeling using the wave-equation. The size of the problem, the nonlinearity of the for- ward model, and ill-posedness of the formulation all contribute to a pressing need for fast algorithms and novel regularization techniques to speed up and improve inversion results. In this paper, we design a modified Gauss-Newton algorithm to solve the PDE- constrained optimization problem using ideas from stochastic optimization and com- pressive sensing. More specifically, we replace the Gauss-Newton subproblems by ran- domly subsampled, -$\ell_1$ regularized subproblems. This allows us us significantly reduce the computational cost of calculating the updates and exploit the compressibility of wavefields in Curvelets. We explain the relationships and connections between the new method and stochastic optimization and compressive sensing (CS), and demonstrate the efficacy of the new method on a large-scale synthetic seismic example. }
+}
+
+
+@unpublished{Mansour11TRssma,
+  author = {Hassan Mansour, Haneet Wason, Tim T.Y. Lin, and Felix J. Herrmann.},
+  title = {Simultaneous-source marine acquisition with compressive sampling
+        matrices.},
+  year = {2011},
+  type = {Tech. Rep.},
+  address = {University of British Columbia, Vancouver},
+  month = {August},
+  abstract = {Seismic data acquisition in marine environments is a costly process
+        that compels the adoption of simultaneous-source acquisition - an
+        emerging technology that is stimu- lating both geophysical research
+        and commercial efforts. In this paper, we discuss the properties
+        of randomized simultaneous acquisition matrices and demonstrate that
+        sparsity-promoting recovery improves the quality of the reconstructed
+        seismic data volumes. Leveraging established findings from the field
+        of compressive sensing, we demonstrate that the choice of the sparsifying
+        transform that is incoherent with the compressive sampling matrix
+        can significantly impact the reconstruction quality. Si- multaneous
+        marine acquisition calls for the development of a new set of design
+        principles and post-processing tools. We propose to use random time
+        dithering where sequential acquisition with a single airgun is replaced
+        by continuous acquisition with multiple airguns firing at random
+        times and at random locations. We then demonstrate that the resulting
+        compressive sampling matrix is incoherent with the curvelet transform
+        and the combined measurement matrix exhibits better isometry properties
+        than other transform bases such as a non-localized multidimensional
+        Fourier transform. We il- lustrate our results with simulations of
+        simultaneous-source marine acquisition using periodic and randomized
+        time dithering.},
+  url = {http://slim.eos.ubc.ca/Publications/Private/Journals/simmarineacq.pdf}
+}
+
+
+
+@unpublished{VanLeeuwen11TRfwiwse,
+  author = {Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Fast waveform inversion without source encoding.},
+  year = {2011},
+  type = {Tech. Rep.},
+  address = {University of British Columbia, Vancouver},
+  month = {September},
+  abstract = {Randomized source encoding has recently been proposed as a way to
+        dramatically reduce the costs of full waveform inversion. The main
+        idea is to replace all sequential sources by a small number of simultaneous
+        sources. This introduces random crosstalk in the model updates and
+        special stochastic optimization strategies are required to deal with
+        this. Two problems arise with this approach: i) source encoding can
+        only be applied to fixed-spread acquisition setups, and ii) stochastic
+        optimization methods tend to converge very slowly, relying on averaging
+        to get rid of the cross-talk. Although the slow convergence is partly
+        offset by the low iteration cost, we show that conventional optimization
+        strategies are bound to outperform stochastic methods in the long
+        run. In this paper we argue that we don¿t need randomized source
+        encoding to reap the benefits of stochastic optimization and we review
+        an optimization strategy that combines the benefits of both conventional
+        and stochastic optimization. The method uses a gradually increasing
+        batch of sources. Thus, iterations are very cheap initially and this
+        allows the method to make fast progress in the beginning. As the
+        batch size grows, the method behaves like conventional optimization,
+        allowing for fast convergence. Numerical examples suggest that the
+        stochastic and hybrid method perform equally well with and without
+        source encoding and that the hybrid method outperforms both conventional
+        and stochastic optimization. The method does not rely on source encoding
+        techniques and can thus be applied to non fixed-spread data.},
+  url = {http://slim.eos.ubc.ca/Publications/private/Journals/TR201106.pdf }
+}
+
+@unpublished{Li11TRfrfwi,
+  author = {Xiang Li and Aleksandr Aravkin and Tristan van Leeuwen and Felix
+        J. Herrmann.},
+  title = {Fast randomized full-waveform inversion with compressive sensing.},
+  year = {2011},
+  type = {Tech. Rep.},
+  address = {University of British Columbia, Vancouver},
+  month = {September},
+  abstract = { Wave-equation based seismic inversion can be formulated as a nonlinear
+        inverse problem where the medium properties are obtained via minimization
+        of a least- squares misfit functional. The demand for higher resolution
+        models in more geologically complex areas drives the need to develop
+        techniques that explore the special structure of full-waveform inversion
+        to reduce the computational burden and to regularize the inverse
+        problem. We meet these goals by using ideas from compressive sensing
+        and stochastic optimization to design a novel Gauss-Newton method,
+        where the updates are computed from random subsets of the data via
+        curvelet-domain sparsity promotion. Application of this idea to a
+        realistic synthetic shows improved results compared to quasi-Newton
+        methods, which require passes through all data. Two different subset
+        sampling strategies are considered: randomized source encoding, and
+        drawing sequential shots firing at random source locations from marine
+        data with missing near and far offsets. In both cases, we obtain
+        excellent inversion results compared to conventional methods at reduced
+        computational costs. },
+  url = {http://slim.eos.ubc.ca/Publications/private/Journals/LiAravkinLeeuwenHerrmann.pdf }
+}
+
+
+
+
+
+@unpublished{Aravkin11TRridr,
+  author = {Aleksandr Aravkin, Michael P. Friedlander, Felix Herrman, and Tristan
+        van Leeuwen.},
+  title = {Robust inversion, dimensionality reduction, and randomized sampling},
+  year = {2011},
+  type = {Tech. Rep.},
+  address = {University of British Columbia, Vancouver},
+  month = {September},
+  abstract = {We consider a class of inverse problems in which the forward model
+        is the solution operator to linear ODEs or PDEs. This class admits
+        several dimensionality-reduction techniques based on data averaging
+        or sampling, which are especially useful for large-scale problems.
+        We survey these approaches and their connection to stochastic optimization.
+        The data-averaging approach is only viable, however, for a least-squares
+        misfit, which is sensitive to outliers in the data and artifacts
+        unexplained by the forward model. This motivates us to propose a
+        robust formulation based on the Student's t-distribution of the error.
+        We demonstrate how the corresponding penalty function, together with
+        the sampling approach, can obtain good results for a large-scale
+        seismic inverse problem with 50% corrupted data.},
+  url = {http://www.optimization-online.org/DB_FILE/2011/11/3243.pdf}
+}
+
+
 
 @unpublished{aravkin12ICASSProbustb,
 author={Aleksandr Aravkin and Michael P. Friedlander and Tristan van Leeuwen },

@@ -2,20 +2,23 @@
 % Encoding: MacRoman
 
 
-@article{Herrmann11SPIEmspgn,
-author = {Felix J. Herrmann and Xiang Li and Aleksandr Aravkin and Tristan van Leeuwen},
-title = {A modified, sparsity promoting, {G}auss-{N}ewton algorithm for seismic waveform inversion.},
-year = {2011},
-journal = {Proc. SPIE},
-volume = {2011},
-number = {81380V},
-pages = {},
-issn = {1},
-url={http://slim.eos.ubc.ca/Publications/public/Journals/SPIEreport.pdf},
-url2 ={http://dx.doi.org/10.1117/12.893861},
-doi = {doi:10.1117/12.893861},
-abstract={ Images obtained from seismic data are used by the oil and gas industry for geophysical exploration. Cutting-edge methods for transforming the data into interpretable images are moving away from linear approximations and high-frequency asymptotics towards Full Waveform Inversion (FWI), a nonlinear data-fitting procedure based on full data modeling using the wave-equation. The size of the problem, the nonlinearity of the for- ward model, and ill-posedness of the formulation all contribute to a pressing need for fast algorithms and novel regularization techniques to speed up and improve inversion results. In this paper, we design a modified Gauss-Newton algorithm to solve the PDE- constrained optimization problem using ideas from stochastic optimization and com- pressive sensing. More specifically, we replace the Gauss-Newton subproblems by ran- domly subsampled, -$\ell_1$ regularized subproblems. This allows us us significantly reduce the computational cost of calculating the updates and exploit the compressibility of wavefields in Curvelets. We explain the relationships and connections between the new method and stochastic optimization and compressive sensing (CS), and demonstrate the efficacy of the new method on a large-scale synthetic seismic example. }
+@ARTICLE{hennenfent06CiSEsdn,
+  author = {Gilles Hennenfent and Felix J. Herrmann},
+  title = {Seismic Denoising with Nonuniformly Sampled Curvelets},
+  journal = {Computing in Science \& Engineering},
+  year = {2006},
+  volume = {8 Issue:3},
+  pages = {16 - 25},
+  month = {May-June 2006},
+  abstract = {The authors present an extension of the fast discrete curvelet transform
+	(FDCT) to nonuniformly sampled data. This extension not only restores
+	curvelet compression rates for nonuniformly sampled data but also
+	removes noise and maps the data to a regular grid.},
+  doi = {10.1109/MCSE.2006.49},
+  keywords = {CiSE},
+url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CiSE/2006/hennenfent06CiSEsdn/hennenfent06CiSEsdn.pdf } 
 }
+
 
 
 
@@ -64,11 +67,10 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
 	on large data sets suggest that the proposed method is substantially
 	more efficient and scalable than existing methods.},
   keywords = {SLIM},
-  pdf = {http://www.optimization-online.org/DB_FILE/2008/07/2056.pdf},
   url = {http://www.optimization-online.org/DB_FILE/2008/07/2056.pdf}
 }
 
-@ARTICLE{bernabe04pas,
+@ARTICLE{bernabe04JGRpas,
   author = {Y. Bernab{\'e} and U. Mok and B. Evans and Felix J. Herrmann},
   title = {Permeability and storativity of binary mixtures of high-and low-porosity
 	materials},
@@ -102,10 +104,10 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
 	aggregates.},
   doi = {10.1029/2004JB00311},
   keywords = {permeability, porosity, SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/bernabe04pas.pdf}
+url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Journal of Geophysical Research/bernabe04JGRpas/bernabe04JGRpas.pdf }
 }
 
-@ARTICLE{Erlangga07oam,
+@ARTICLE{Erlangga07ETNAoam,
   author = {Yogi A. Erlangga and R. Nabben},
   title = {On multilevel projection Krylov method for the Helmholtz equation
 	preconditioned by shifted Laplacian},
@@ -144,7 +146,8 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
 	for solving Helmholtz problems. Not only can the convergence be made
 	almost independent of grid size h, but also only mildly independent
 	of wavenumber k},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/erlangga08oam.pdf}
+url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/ETNA/2007/Erlangga07ETNAoam/Erlangga07ETNAoam.pdf }
+
 }
 
 @ARTICLE{fomel07rce,
@@ -222,7 +225,7 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
   url = {http://www.cs.ubc.ca/~mpf/index.php?q=cpreg.pdf}
 }
 
-@ARTICLE{hennenfent08nii,
+@ARTICLE{hennenfent08GEOnii,
   author = {Gilles Hennenfent and E. van den Berg and Michael P. Friedlander
 	and Felix J. Herrmann},
   title = {New insights into one-norm solvers from the {P}areto curve},
@@ -244,8 +247,8 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
 	for a large-scale problem. Third, we show how Pareto curves provide
 	an objective criterion to gauge how different one-norm solvers advance
 	towards the solution.},
-  keywords = {Pareto, SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/hennenfent07pareto/paper_html}
+  keywords = {Pareto, SLIM, Geophysics},
+url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/hennenfent08GEOnii/hennenfent08GEOnii.pdf }
 }
 
 @ARTICLE{hennenfent10nct,
@@ -333,7 +336,7 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
   url = {http://link.aip.org/link/?GPY/75/WB203/1}
 }
 
-@ARTICLE{hennenfent08sdw,
+@ARTICLE{hennenfent08GEOsdw,
   author = {Gilles Hennenfent and Felix J. Herrmann},
   title = {Simply denoise: wavefield reconstruction via jittered undersampling},
   journal = {Geophysics},
@@ -365,9 +368,9 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
 	of several decibels over recovery from regularly-undersampled data
 	for the same amount of data collected.},
   doi = {10.1190/1.2841038},
-  keywords = {sampling, SLIM},
+  keywords = {sampling, Geophysics, SLIM},
   publisher = {SEG},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/hennenfent07jitter/paper_html}
+url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/hennenfent08GEOsdw/hennenfent08GEOsdw.pdf }
 }
 
 @ARTICLE{hennenfent06sdw,
@@ -507,6 +510,29 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
   url = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann04ssa.pdf}
 }
 
+@ARTICLE{friedlander11hybrid,
+  author = {MICHAEL P. FRIEDLANDER AND MARK SCHMIDT},
+  title = {HYBRID DETERMINISTIC-STOCHASTIC METHODS FOR DATA FITTING},
+  year = {April 2011},
+  abstract = {Many structured data-fitting applications require the solution of
+	an optimization problem involving a sum over a potentially large
+	number of measurements. Incremental gradient algorithms (both deterministic
+	and randomized) offer inexpensive iterations by sampling only subsets
+	of the terms in the sum. These methods can make great progress initially,
+	but often slow as they approach a solution. In contrast, full gradient
+	methods achieve steady convergence at the expense of evaluating the
+	full objective and gradient on each iteration. We explore hybrid
+	methods that exhibit the benefits of both approaches. Rate of convergence
+	analysis and numerical experiments illustrate the potential for the
+	approach.},
+journal= {CoRR }
+url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedlander11hybrid  }
+
+}
+
+
+
+
 @ARTICLE{herrmann07nlp,
   author = {Felix J. Herrmann and U. Boeniger and D. J. Verschuur},
   title = {Non-linear primary-multiple separation with directional curvelet
@@ -561,7 +587,8 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
 	stack.},
   doi = {10.1111/j.1365-246X.2007.03360.x},
   keywords = {signal separation, SLIM},
-  url = {http://onlinelibrary.wiley.com/doi/10.1111/j.1365-246X.2007.03360.x/abstract;jsessionid=956C674A489BB3A13D2D9D7F87D68FE7.d02t03}
+url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysical Journal International/2007/herrmann07nlp/herrmann07nlp.pdf  } ,
+  url2 = {http://onlinelibrary.wiley.com/doi/10.1111/j.1365-246X.2007.03360.x/abstract;jsessionid=956C674A489BB3A13D2D9D7F87D68FE7.d02t03}
 }
 
 @ARTICLE{herrmann09cbm,
@@ -664,7 +691,7 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
 	such as global seismology.},
   doi = {10.1111/j.1365-246X.2007.03698.x},
   keywords = {curvelet transform, reconstruction, SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann07nps.pdf}
+url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysical Journal International/2008/herrmann08nps/herrmann08nps.pdf }
 }
 
 @ARTICLE{herrmann08sac,
@@ -704,7 +731,7 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
   keywords = {curvelet transform, imaging, SLIM}
 }
 
-@ARTICLE{herrmann08cbs,
+@ARTICLE{herrmann08GEOcbs,
   author = {Felix J. Herrmann and Deli Wang and Gilles Hennenfent and Peyman
 	P. Moghaddam},
   title = {Curvelet-based seismic data processing: a multiscale and nonlinear
@@ -732,10 +759,11 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
   doi = {10.1190/1.2799517},
   keywords = {curvelet transform, SLIM},
   publisher = {SEG}
+url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/herrmann08GEOcbs/herrmann08GEOcbs.pdf } 
 }
 
 
-@ARTICLE{herrmann08acd,
+@ARTICLE{herrmann08GEOacd,
   author = {Felix J. Herrmann and Deli Wang and D. J. Verschuur},
   title = {Adaptive curvelet-domain primary-multiple separation},
   journal = {Geophysics},
@@ -762,9 +790,9 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
 	clutter and better recovery of estimated primaries. {\copyright}2008
 	Society of Exploration Geophysicists},
   doi = {10.1190/1.2904986},
-  keywords = {SLIM},
+  keywords = {Geophysics, SLIM},
   publisher = {SEG},
-  url = {http://slim.eos.ubc.ca/Publications/Private/Journals/herrmann08match/paper_html/paper.html}
+url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/herrmann08GEOacd/herrmann08GEOacd.pdf }
 }
 
 @ARTICLE{VanLeeuwen2010,
@@ -815,7 +843,7 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
   doi = {10.1190/1.2750716},
   keywords = {SLIM, wave propagation},
   publisher = {SEG},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/lin07ce.pdf}
+url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2007/lin07cwe/lin07cwe.pdf }
 }
 
 @ARTICLE{saab08srb,
@@ -852,7 +880,7 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
   url = {http://dx.doi.org/10.1016/j.acha.2009.08.002}
 }
 
-@ARTICLE{wang08bws,
+@ARTICLE{wang08GEObws,
   author = {Deli Wang and Rayan Saab and Ozgur Yilmaz and Felix J. Herrmann},
   title = {Bayesian wavefield separation by transform-domain sparsity promotion},
   journal = {Geophysics},
@@ -876,7 +904,7 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
 	produces improved results for primary-multiple separation on both
 	synthetic and real data.},
   doi = {10.1190/1.2952571},
-  keywords = {curvelet transform, SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Private/Journals/wang08bayes/paper_html/paper.html}
+  keywords = {curvelet transform, SLIM, Geophysics},
+url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/wang08GEObws/wang08GEObws.pdf }
 }
 

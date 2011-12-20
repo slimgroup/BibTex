@@ -4776,6 +4776,43 @@ ities. After renormalization, the inverted
   keywords     = {SLIM},
 }
 
+% NOTE: keep the type @mastersthesis
+@MASTERSTHESIS{lin08THccl,
+  author = {Tim T.Y. Lin},
+  title = {Compressed computation of large-scale wavefield extrapolation in
+	inhomogeneous medium},
+  year = {2008},
+  type = {masters},
+  month = {April},
+  abstract = {In this work an explicit algorithm for the extrapolation of one-way
+	wavefields is proposed which combines recent developments in information
+	theory and theoretical signal processing with the physics of wave
+	propagation. Because of excessive memory requirements, explicit formulations
+	for wave propagation have proven to be a challenge in 3-D. By using
+	ideas from {\textquoteleft}{\textquoteleft}compressed sensing{\textquoteright}{\textquoteright},
+	we are able to formulate the (inverse) wavefield extrapolation problem
+	on small subsets of the data volume, thereby reducing the size of
+	the operators. Compressed sensing entails a new paradigm for signal
+	recovery that provides conditions under which signals can be recovered
+	from incomplete samplings by \emph{nonlinear} recovery methods that
+	promote sparsity of the to-be-recovered signal. According to this
+	theory, signals can successfully be recovered when the measurement
+	basis is \emph{incoherent} with the representation in which the wavefield
+	is sparse. In this new approach, the eigenfunctions of the Helmholtz
+	operator are recognized as a basis that is incoherent with sparsity
+	transforms that are known to compress seismic wavefields. By casting
+	the wavefield extrapolation problem in this framework, wavefields
+	can successfully be extrapolated in the modal domain, despite evanescent
+	wave modes. The degree to which the wavefield can be recovered depends
+	on the number of missing (evanescent) wave modes and on the complexity
+	of the wavefield. A proof of principle for the {\textquoteleft}{\textquoteleft}compressed
+	sensing{\textquoteright}{\textquoteright} method is given for inverse
+	wavefield extrapolation in 2-D. The results show that our method
+	is stable, has reduced dip limitations and handles evanescent waves
+	in inverse extrapolation.},
+  keywords = {BSc, SLIM},
+  url = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/timlin08bsch.pdf}
+}
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 @MASTERSTHESIS{almatar10THesd,
@@ -4897,43 +4934,6 @@ ities. After renormalization, the inverted
 	seismic wavefields from incomplete measurements.},
   keywords = {MSc},
   url = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/lebed08msc.pdf}
-}
-
-@MASTERSTHESIS{lin08THccl,
-  author = {Tim T.Y. Lin},
-  title = {Compressed computation of large-scale wavefield extrapolation in
-	inhomogeneous medium},
-  year = {2008},
-  type = {masters},
-  month = {April},
-  abstract = {In this work an explicit algorithm for the extrapolation of one-way
-	wavefields is proposed which combines recent developments in information
-	theory and theoretical signal processing with the physics of wave
-	propagation. Because of excessive memory requirements, explicit formulations
-	for wave propagation have proven to be a challenge in 3-D. By using
-	ideas from {\textquoteleft}{\textquoteleft}compressed sensing{\textquoteright}{\textquoteright},
-	we are able to formulate the (inverse) wavefield extrapolation problem
-	on small subsets of the data volume, thereby reducing the size of
-	the operators. Compressed sensing entails a new paradigm for signal
-	recovery that provides conditions under which signals can be recovered
-	from incomplete samplings by \emph{nonlinear} recovery methods that
-	promote sparsity of the to-be-recovered signal. According to this
-	theory, signals can successfully be recovered when the measurement
-	basis is \emph{incoherent} with the representation in which the wavefield
-	is sparse. In this new approach, the eigenfunctions of the Helmholtz
-	operator are recognized as a basis that is incoherent with sparsity
-	transforms that are known to compress seismic wavefields. By casting
-	the wavefield extrapolation problem in this framework, wavefields
-	can successfully be extrapolated in the modal domain, despite evanescent
-	wave modes. The degree to which the wavefield can be recovered depends
-	on the number of missing (evanescent) wave modes and on the complexity
-	of the wavefield. A proof of principle for the {\textquoteleft}{\textquoteleft}compressed
-	sensing{\textquoteright}{\textquoteright} method is given for inverse
-	wavefield extrapolation in 2-D. The results show that our method
-	is stable, has reduced dip limitations and handles evanescent waves
-	in inverse extrapolation.},
-  keywords = {BSc, SLIM},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Theses/2008/timlin08bsch.pdf}
 }
 
 @MASTERSTHESIS{maysami08THlcs,
@@ -5168,28 +5168,6 @@ ities. After renormalization, the inverted
 
 
 
-@TECHREPORT{Friedlander11TRhdm,
-  author = {Michael P. Friedlander and Mark Schmidt},
-  title = {Hybrid deterministic-stochastic methods for data fitting},
-  institution = {Department of Computer Science},
-  year = {2011},
-  type = {Tech. Rep.},
-  address = {University of British Columbia, Vancouver},
-  month = {April},
-  abstract = {Many structured data-fitting applications require the solution of
-	an optimization problem involving a sum over a potentially large
-	number of measurements. Incremental gradient algorithms (both deterministic
-	and randomized) offer inexpensive iterations by sampling only subsets
-	of the terms in the sum. These methods can make great progress initially,
-	but often slow as they approach a solution. In contrast, full gradient
-	methods achieve steady convergence at the expense of evaluating the
-	full objective and gradient on each iteration. We explore hybrid
-	methods that exhibit the benefits of both approaches. Rate of convergence
-	analysis and numerical experiments illustrate the potential for the
-	approach.},
-  publisher = {Department of Computer Science},
-  url = {http://www.cs.ubc.ca/~mpf/papers/FriedlanderSchmidt2011.pdf}
-}
 
 @TECHREPORT{haber10TRemp,
   author = {Eldad Haber and Matthias Chung and Felix J. Herrmann},
@@ -5319,40 +5297,6 @@ ities. After renormalization, the inverted
   url = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann2010rsa.pdf}
 }
 
-@TECHREPORT{Herrmann11TRLlsqIm,
-  author = {Felix J. Herrmann and Xiang Li},
-  title = {Efficient least-squares imaging with sparsity promotion and compressive
-	sensing},
-  year = {2011},
-  type = {Tech. Rep.},
-  address = {University of British Columbia, Vancouver},
-  month = {August},
-  abstract = {Seismic imaging is a linearized inversion problem relying on the minimization
-	of a least-squares misfit functional as a function of the medium
-	perturbation. The success of this procedure hinges on our ability
-	to handle large systems of equations—whose size grows exponentially
-	with the demand for higher reso- lution images in more and more complicated
-	areas—and our ability to invert these systems given a limited amount
-	of computational resources. To overcome this “curse of dimensionality”
-	in problem size and computational complexity, we propose a combination
-	of randomized dimensionality-reduction and divide-and- conquer techniques.
-	This approach allows us to take advantage of sophisticated sparsity-promoting
-	solvers that work on a series of smaller subproblems each in- volving
-	a small randomized subset of data. These subsets correspond to artificial
-	simultaneous-source experiments made of random superpositions of
-	sequential- source experiments. By changing these subsets after each
-	subproblem is solved, we are able to attain an inversion quality
-	that is competitive while requiring fewer computational, and possibly,
-	fewer acquisition resources. Application of this con- cept to a controlled
-	series of experiments showed the validity of our approach and the
-	relationship between its efficiency—by reducing the number of sources
-	and hence the number of wave-equation solves—and the image quality.
-	Application of our dimensionality-reduction methodology with sparsity
-	promotion to a com- plicated synthetic with well-constrained structure
-	also yields excellent results underlining the importance of sparsity
-	promotion.},
-  url = {http://slim.eos.ubc.ca/Publications/private/Journals/leastsquaresimag.pdf}
-}
 
 @TECHREPORT{herrmann08TRcmf,
   author = {Felix J. Herrmann and Peyman P. Moghaddam and Deli Wang},
@@ -5379,36 +5323,6 @@ ities. After renormalization, the inverted
   url = {http://slim.eos.ubc.ca/Publications/Public/TechReports/herrmann08segmat.pdf}
 }
 
-@TECHREPORT{Herrmann11TRfcd,
-  author = {Felix J. Herrmann and Michael P. Friedlander and Ozgur Yilmaz},
-  title = {Fighting the curse of dimensionality: compressive sensing in exploration
-	seismology},
-  year = {2011},
-  type = {Tech. Rep.},
-  address = {University of British Columbia, Vancouver},
-  month = {August},
-  abstract = {Many seismic exploration techniques rely on the collection of massive
-	data volumes that are mined for infor- mation during processing.
-	This approach has been extremely successful, but current efforts
-	toward higher-resolution images in increasingly complicated regions
-	of the Earth continue to reveal fundamental shortcomings in our typical
-	workflows. The “curse of dimensionality” is the main roadblock, and
-	is exemplified by Nyquist’s sampling criterion, which disproportionately
-	strains current acquisition and processing systems as the size and
-	desired resolution of our survey areas continues to increase. We
-	offer an alternative sampling strategy that leverages recent insights
-	from compressive sensing towards seismic acquisition and processing
-	for data that are traditionally considered to be undersampled. The
-	main outcome of this approach is a new technology where acquisition
-	and processing related costs are no longer determined by overly stringent
-	sampling criteria. Compressive sensing is a novel nonlinear sampling
-	paradigm, effective for acquiring signals that have a sparse representation
-	in some transform domain. We review basic facts about this new sampling
-	paradigm that revolutionized various areas of signal processing,
-	and illustrate how it can be successfully exploited in various problems
-	in seismic exploration to effectively fight the curse of dimensionality.},
-  url = {http://slim.eos.ubc.ca/Publications/Private/Journals/sigprocmag.pdf}
-}
 
 @TECHREPORT{lebed08TRhgg,
   author = {Evgeniy Lebed and Felix J. Herrmann},
@@ -5499,6 +5413,95 @@ ities. After renormalization, the inverted
 
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
+
+@unpublished{Friedlander11TRhdm,
+  author = {Michael P. Friedlander and Mark Schmidt},
+  title = {Hybrid deterministic-stochastic methods for data fitting},
+  institution = {Department of Computer Science},
+  year = {2011},
+  address = {University of British Columbia, Vancouver},
+  month = {April},
+  abstract = {Many structured data-fitting applications require the solution of
+        an optimization problem involving a sum over a potentially large
+        number of measurements. Incremental gradient algorithms (both deterministic
+        and randomized) offer inexpensive iterations by sampling only subsets
+        of the terms in the sum. These methods can make great progress initially,
+        but often slow as they approach a solution. In contrast, full gradient
+        methods achieve steady convergence at the expense of evaluating the
+        full objective and gradient on each iteration. We explore hybrid
+        methods that exhibit the benefits of both approaches. Rate of convergence
+        analysis and numerical experiments illustrate the potential for the
+        approach.},
+  publisher = {Department of Computer Science},
+  url = {http://www.cs.ubc.ca/~mpf/papers/FriedlanderSchmidt2011.pdf}
+}
+
+
+@unpublished{Herrmann11TRLlsqIm,
+  author = {Felix J. Herrmann and Xiang Li},
+  title = {Efficient least-squares imaging with sparsity promotion and compressive
+        sensing},
+  year = {2011},
+  type = {Tech. Rep.},
+  address = {University of British Columbia, Vancouver},
+  month = {August},
+  abstract = {Seismic imaging is a linearized inversion problem relying on the minimization
+        of a least-squares misfit functional as a function of the medium
+        perturbation. The success of this procedure hinges on our ability
+        to handle large systems of equations√ëwhose size grows exponentially
+        with the demand for higher reso- lution images in more and more complicated
+        areas√ëand our ability to invert these systems given a limited amount
+        of computational resources. To overcome this √ícurse of dimensionality√ì
+        in problem size and computational complexity, we propose a combination
+        of randomized dimensionality-reduction and divide-and- conquer techniques.
+        This approach allows us to take advantage of sophisticated sparsity-promoting
+        solvers that work on a series of smaller subproblems each in- volving
+        a small randomized subset of data. These subsets correspond to artificial
+        simultaneous-source experiments made of random superpositions of
+        sequential- source experiments. By changing these subsets after each
+        subproblem is solved, we are able to attain an inversion quality
+        that is competitive while requiring fewer computational, and possibly,
+        fewer acquisition resources. Application of this con- cept to a controlled
+        series of experiments showed the validity of our approach and the
+        relationship between its efficiency√ëby reducing the number of sources
+        and hence the number of wave-equation solves√ëand the image quality.
+        Application of our dimensionality-reduction methodology with sparsity
+        promotion to a com- plicated synthetic with well-constrained structure
+        also yields excellent results underlining the importance of sparsity
+        promotion.},
+  url = {http://slim.eos.ubc.ca/Publications/private/Journals/leastsquaresimag.pdf}
+}
+
+
+@unpublished{Herrmann11TRfcd,
+  author = {Felix J. Herrmann and Michael P. Friedlander and Ozgur Yilmaz},
+  title = {Fighting the curse of dimensionality: compressive sensing in exploration
+        seismology},
+  year = {2011},
+  address = {University of British Columbia, Vancouver},
+  month = {August},
+  abstract = {Many seismic exploration techniques rely on the collection of massive
+        data volumes that are mined for infor- mation during processing.
+        This approach has been extremely successful, but current efforts
+        toward higher-resolution images in increasingly complicated regions
+        of the Earth continue to reveal fundamental shortcomings in our typical
+        workflows. The √ícurse of dimensionality√ì is the main roadblock, and
+        is exemplified by Nyquist√ïs sampling criterion, which disproportionately
+        strains current acquisition and processing systems as the size and
+        desired resolution of our survey areas continues to increase. We
+        offer an alternative sampling strategy that leverages recent insights
+        from compressive sensing towards seismic acquisition and processing
+        for data that are traditionally considered to be undersampled. The
+        main outcome of this approach is a new technology where acquisition
+        and processing related costs are no longer determined by overly stringent
+        sampling criteria. Compressive sensing is a novel nonlinear sampling
+        paradigm, effective for acquiring signals that have a sparse representation
+        in some transform domain. We review basic facts about this new sampling
+        paradigm that revolutionized various areas of signal processing,
+        and illustrate how it can be successfully exploited in various problems
+        in seismic exploration to effectively fight the curse of dimensionality.},
+  url = {http://slim.eos.ubc.ca/Publications/Private/Journals/sigprocmag.pdf}
+}
 
 @unpublished{mansour11TRrcs,
   author = {Michael P. Friedlander and Hassan Mansour and Rayan Saab and Ozgur Yilmaz},
@@ -5678,6 +5681,7 @@ Keywords={ICASSP},
 Organization={ICASSP},
 Title={ Robust inversion via semistochastic dimensionality reduction},
 Year={2011},
+Month={September},
 Abstract={In this paper, we offer an alternative sampling method leveraging recent insights from compressive sensing towards seismic acquisition and processing for data that are traditionally considered to be undersampled. The main outcome of this approach is a new technology where acquisition and processing related costs are no longer determined by overly stringent sampling criteria, such as Nyquist. At the heart of our approach lies randomized incoherent sampling that breaks subsampling related interferences by turning them into harmless noise, which we subsequently remove by promoting transform-domain sparsity. Now, costs no longer grow with resolution and dimensionality of the survey area, but instead depend on transform-domain sparsity only. Our contribution is twofold. First, we demonstrate by means of carefully designed numerical experiments that compressive sensing can successfully be adapted to seismic acquisition. Second, we show that accurate recovery can be accomplished for compressively sampled data volumes sizes that exceed the size of conventional transform-domain data volumes by only a small factor. Because compressive sensing combines transformation and encoding by a single linear encoding step, this technology is directly applicable to acquisition and to dimensionality reduction during processing. In either case, sampling, storage, and processing costs scale with transform-domain sparsity. We illustrate this principle by means of number of case studies. },
 URL= {http://slim.eos.ubc.ca/Publications/Private/Journals/ICASSP/AravkinFriedlanderLeeuwen.pdf }
 }
@@ -5691,6 +5695,7 @@ Publisher = {},
 Title = {Fast seismic imaging for marine data},
 Date-Added = {2011-09-27 15:00:00 -0700},
 Year = {2011},
+Month={September},
 url={http://slim.eos.ubc.ca/Publications/Private/Journals/ICASSP/AravkinLiHerrmann.pdf }
 }
 
@@ -5704,6 +5709,7 @@ Publisher = {},
 Title = {Adaptive compressed sensing for video acquisition.},
 Date-Added = {2011-09-27 15:00:00 -0700},
 Year = {2011},
+Month={September},
 url={http://slim.eos.ubc.ca/Publications/Private/Journals/ICASSP/MansourYilmazICASSPaCS.pdf }
 
 }
@@ -5718,6 +5724,7 @@ Publisher = {},
 Title = {Support driven reweighted $\ell_1$ minimization.},
 Date-Added = {2011-09-27 15:00:00 -0700},
 Year = {2011},
+Month={September},
 url={http://slim.eos.ubc.ca/Publications/Private/Journals/ICASSP/MansourYilmazICASSPwL1.pdf }
 }
 
@@ -6768,7 +6775,7 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/w
 
 
 
-@MASTERSTHESIS{moghaddam10phd,
+@PHDTHESIS{moghaddam10phd,
   author = {Peyman P. Moghaddam},
   title = {Curvelet-Based Migration Amplitude Recovery},
   school = {The University of British Columbia},
@@ -6797,7 +6804,7 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/w
 }
 
 
-@MASTERSTHESIS{hennenfent08phd,
+@PHDTHESIS{hennenfent08phd,
   author = {Gilles Hennenfent},
   title = {Sampling and reconstruction of seismic wavefields in the curvelet
 	domain},

@@ -1,6 +1,65 @@
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 
+@unpublished{Friedlander11TRhdm,
+  author = {Michael P. Friedlander and Mark Schmidt},
+  title = {Hybrid deterministic-stochastic methods for data fitting},
+  institution = {Department of Computer Science},
+  year = {2011},
+  address = {University of British Columbia, Vancouver},
+  month = {April},
+  abstract = {Many structured data-fitting applications require the solution of
+        an optimization problem involving a sum over a potentially large
+        number of measurements. Incremental gradient algorithms (both deterministic
+        and randomized) offer inexpensive iterations by sampling only subsets
+        of the terms in the sum. These methods can make great progress initially,
+        but often slow as they approach a solution. In contrast, full gradient
+        methods achieve steady convergence at the expense of evaluating the
+        full objective and gradient on each iteration. We explore hybrid
+        methods that exhibit the benefits of both approaches. Rate of convergence
+        analysis and numerical experiments illustrate the potential for the
+        approach.},
+  publisher = {Department of Computer Science},
+  url = {http://www.cs.ubc.ca/~mpf/papers/FriedlanderSchmidt2011.pdf}
+}
+
+
+@unpublished{Herrmann11TRLlsqIm,
+  author = {Felix J. Herrmann and Xiang Li},
+  title = {Efficient least-squares imaging with sparsity promotion and compressive
+        sensing},
+  year = {2011},
+  type = {Tech. Rep.},
+  address = {University of British Columbia, Vancouver},
+  month = {August},
+  abstract = {Seismic imaging is a linearized inversion problem relying on the minimization
+        of a least-squares misfit functional as a function of the medium
+        perturbation. The success of this procedure hinges on our ability
+        to handle large systems of equationsÑwhose size grows exponentially
+        with the demand for higher reso- lution images in more and more complicated
+        areasÑand our ability to invert these systems given a limited amount
+        of computational resources. To overcome this Òcurse of dimensionalityÓ
+        in problem size and computational complexity, we propose a combination
+        of randomized dimensionality-reduction and divide-and- conquer techniques.
+        This approach allows us to take advantage of sophisticated sparsity-promoting
+        solvers that work on a series of smaller subproblems each in- volving
+        a small randomized subset of data. These subsets correspond to artificial
+        simultaneous-source experiments made of random superpositions of
+        sequential- source experiments. By changing these subsets after each
+        subproblem is solved, we are able to attain an inversion quality
+        that is competitive while requiring fewer computational, and possibly,
+        fewer acquisition resources. Application of this con- cept to a controlled
+        series of experiments showed the validity of our approach and the
+        relationship between its efficiencyÑby reducing the number of sources
+        and hence the number of wave-equation solvesÑand the image quality.
+        Application of our dimensionality-reduction methodology with sparsity
+        promotion to a com- plicated synthetic with well-constrained structure
+        also yields excellent results underlining the importance of sparsity
+        promotion.},
+  url = {http://slim.eos.ubc.ca/Publications/private/Journals/leastsquaresimag.pdf}
+}
+
+
 @unpublished{Herrmann11TRfcd,
   author = {Felix J. Herrmann and Michael P. Friedlander and Ozgur Yilmaz},
   title = {Fighting the curse of dimensionality: compressive sensing in exploration

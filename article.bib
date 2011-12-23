@@ -1,6 +1,50 @@
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 
+
+
+@article{erlangga08TRoam,
+  author = {Yogi A. Erlangga and Reinhard Nabben},
+  title = {On a multilevel projection Krylov method for the Helmholtz equation
+        preconditioned by shifted Laplacian},
+  institution = {UBC Earth and Ocean Sciences Department},
+  year = {2008},
+  number = {TR-2008-2},
+  abstract = {In [Erlangga and Nabben, SIAM J. Sci. Comput. (2007), to appear],
+        a multilevel Krylov method is proposed to solve linear systems with
+        symmetric and nonsymmetric matrix of coefficients. This multilevel
+        method is developed based on shifting (or projecting) some small
+        eigen- values to the largest eigenvalue, leading to a more favorable
+        spectrum for convergence acceleration of a Krylov subspace method.
+        Such a projection is insensitive with respect to the approximation
+        of the small eigenvalues to be projected, which for a particular
+        choice of deflation subspaces is equivalent to solving a coarse-grid
+        problem analogue to multigrid. Different from multigrid, in the multilevel
+        Krylov method, however, the coarse-grid problem is solved by a Krylov
+        method, whose convergence rate is further accelerated by applying
+        projection to the coarse-grid system. A recursive application of
+        projection and coarse-grid solve by a Krylov iterative method then
+        leads to the multilevel Krylov method. The method has been successfully
+        applied to 2D convection-diffusion problems for which a standard
+        multigrid method fails to converge. In this paper, we extend this
+        multilevel Krylov method to indefinite linear systems arising from
+        a discretization of the Helmholtz equation, preconditioned by shifted
+        Laplacian as introduced by [Erlangga, Oosterlee and Vuik, SIAM J.
+        Sci. Comput. 27(2006), pp. 1471Ð1492]. Since in this case projection
+        must be applied to the preconditioned system AM?1, the coarse-grid
+        matrices are approximated by a product of some low dimension matrices
+        associated with A and M. Within the Krylov iteration and projection
+        step in each coarse-grid solve, a multigrid iteration is used to
+        approximately invert the preconditioner. Hence, a multigrid-multilevel
+        Krylov method results. Numerical results are given for high wavenumbers
+        and show the effectiveness of the method for solving Helmholtz problems.
+        Not only can the convergence be made almost independent of grid size
+        h, but also only mildly independent of wavenumber k.},
+  journal = {Elec. Trans. Numer. Anal.},
+  keywords = {SLIM},
+  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/Yogi/erlangga-nabben-helmholtz.pdf}
+}
+
 @article{mansour11TRrcs,
   author = {Michael P. Friedlander and Hassan Mansour and Rayan Saab and Ozgur Yilmaz},
   title = {Recovering compressively sampled signals using partial support information},

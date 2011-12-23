@@ -5,7 +5,7 @@ slimbib.bib	- internal and external combined using SConstruct
 
 
 USAGE------------------------
-1. Add internal citations in the file internal.bib
+1. Add internal citations in the corresponding bibtex type file, for eg: Add a journal paper entry in file "article.bib", etc... 
 2. Add external citations in the file external.bib
 3. Run scons to merge the above two files simply by typing 'scons' in command line
 4. In order to compare two or more .bib files, edit SConstruct in the following format:

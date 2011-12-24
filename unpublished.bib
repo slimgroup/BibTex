@@ -8,22 +8,27 @@
   year = {2011},
   address = {University of British Columbia, Vancouver},
   month = {04/2011},
-  abstract = {Many structured data-fitting applications require the solution of
-        an optimization problem involving a sum over a potentially large
-        number of measurements. Incremental gradient algorithms (both deterministic
-        and randomized) offer inexpensive iterations by sampling only subsets
-        of the terms in the sum. These methods can make great progress initially,
-        but often slow as they approach a solution. In contrast, full gradient
-        methods achieve steady convergence at the expense of evaluating the
-        full objective and gradient on each iteration. We explore hybrid
-        methods that exhibit the benefits of both approaches. Rate of convergence
-        analysis and numerical experiments illustrate the potential for the
-        approach.},
+  abstract = {Many structured data-fitting applications require the
+                  solution of an optimization problem involving a sum
+                  over a potentially large number of
+                  measurements. Incremental gradient algorithms (both
+                  deterministic and randomized) offer inexpensive
+                  iterations by sampling only subsets of the terms in
+                  the sum. These methods can make great progress
+                  initially, but often slow as they approach a
+                  solution. In contrast, full gradient methods achieve
+                  steady convergence at the expense of evaluating the
+                  full objective and gradient on each iteration. We
+                  explore hybrid methods that exhibit the benefits of
+                  both approaches. Rate of convergence analysis and
+                  numerical experiments illustrate the potential for
+                  the approach.},
   publisher = {Department of Computer Science},
+  keywords ={Optimization},
   url = {http://www.cs.ubc.ca/~mpf/papers/FriedlanderSchmidt2011.pdf}
 }
 
-
+% This paper is accepted for publication and will appear in Geophysical Prospecing
 @unpublished{Herrmann11TRLlsqIm,
   author = {Felix J. Herrmann and Xiang Li},
   title = {Efficient least-squares imaging with sparsity promotion and compressive
@@ -32,33 +37,45 @@
   notes = { TR-2011-03},
   address = {University of British Columbia, Vancouver},
   month = {08/2011},
-  abstract = {Seismic imaging is a linearized inversion problem relying on the minimization
-        of a least-squares misfit functional as a function of the medium
-        perturbation. The success of this procedure hinges on our ability
-        to handle large systems of equationsÑwhose size grows exponentially
-        with the demand for higher reso- lution images in more and more complicated
-        areasÑand our ability to invert these systems given a limited amount
-        of computational resources. To overcome this Òcurse of dimensionalityÓ
-        in problem size and computational complexity, we propose a combination
-        of randomized dimensionality-reduction and divide-and- conquer techniques.
-        This approach allows us to take advantage of sophisticated sparsity-promoting
-        solvers that work on a series of smaller subproblems each in- volving
-        a small randomized subset of data. These subsets correspond to artificial
-        simultaneous-source experiments made of random superpositions of
-        sequential- source experiments. By changing these subsets after each
-        subproblem is solved, we are able to attain an inversion quality
-        that is competitive while requiring fewer computational, and possibly,
-        fewer acquisition resources. Application of this con- cept to a controlled
-        series of experiments showed the validity of our approach and the
-        relationship between its efficiencyÑby reducing the number of sources
-        and hence the number of wave-equation solvesÑand the image quality.
-        Application of our dimensionality-reduction methodology with sparsity
-        promotion to a com- plicated synthetic with well-constrained structure
-        also yields excellent results underlining the importance of sparsity
-        promotion.},
+  abstract = {Seismic imaging is a linearized inversion problem
+                  relying on the minimization of a least-squares
+                  misfit functional as a function of the medium
+                  perturbation. The success of this procedure hinges
+                  on our ability to handle large systems of
+                  equationsÑwhose size grows exponentially with the
+                  demand for higher reso- lution images in more and
+                  more complicated areasÑand our ability to invert
+                  these systems given a limited amount of
+                  computational resources. To overcome this Òcurse of
+                  dimensionalityÓ in problem size and computational
+                  complexity, we propose a combination of randomized
+                  dimensionality-reduction and divide-and- conquer
+                  techniques.  This approach allows us to take
+                  advantage of sophisticated sparsity-promoting
+                  solvers that work on a series of smaller subproblems
+                  each in- volving a small randomized subset of
+                  data. These subsets correspond to artificial
+                  simultaneous-source experiments made of random
+                  superpositions of sequential- source experiments. By
+                  changing these subsets after each subproblem is
+                  solved, we are able to attain an inversion quality
+                  that is competitive while requiring fewer
+                  computational, and possibly, fewer acquisition
+                  resources. Application of this con- cept to a
+                  controlled series of experiments showed the validity
+                  of our approach and the relationship between its
+                  efficiencyÑby reducing the number of sources and
+                  hence the number of wave-equation solvesÑand the
+                  image quality.  Application of our
+                  dimensionality-reduction methodology with sparsity
+                  promotion to a com- plicated synthetic with
+                  well-constrained structure also yields excellent
+                  results underlining the importance of sparsity
+                  promotion.},
+  notes = {To appear in Geophysical Prospecting},
+  keywords ={SLIM,Imaging,Optimization,Compressive Sensing},
   url = {http://slim.eos.ubc.ca/Publications/private/Journals/leastsquaresimag.pdf}
 }
-
 
 @unpublished{Herrmann11TRfcd,
   author = {Felix J. Herrmann and Michael P. Friedlander and Ozgur Yilmaz},
@@ -67,29 +84,37 @@
   year = {2011},
   address = {University of British Columbia, Vancouver},
   month = {08/2011},
-  abstract = {Many seismic exploration techniques rely on the collection of massive
-        data volumes that are mined for infor- mation during processing.
-        This approach has been extremely successful, but current efforts
-        toward higher-resolution images in increasingly complicated regions
-        of the Earth continue to reveal fundamental shortcomings in our typical
-        workflows. The Òcurse of dimensionalityÓ is the main roadblock, and
-        is exemplified by NyquistÕs sampling criterion, which disproportionately
-        strains current acquisition and processing systems as the size and
-        desired resolution of our survey areas continues to increase. We
-        offer an alternative sampling strategy that leverages recent insights
-        from compressive sensing towards seismic acquisition and processing
-        for data that are traditionally considered to be undersampled. The
-        main outcome of this approach is a new technology where acquisition
-        and processing related costs are no longer determined by overly stringent
-        sampling criteria. Compressive sensing is a novel nonlinear sampling
-        paradigm, effective for acquiring signals that have a sparse representation
-        in some transform domain. We review basic facts about this new sampling
-        paradigm that revolutionized various areas of signal processing,
-        and illustrate how it can be successfully exploited in various problems
-        in seismic exploration to effectively fight the curse of dimensionality.},
+  abstract = {Many seismic exploration techniques rely on the
+                  collection of massive data volumes that are mined
+                  for infor- mation during processing.  This approach
+                  has been extremely successful, but current efforts
+                  toward higher-resolution images in increasingly
+                  complicated regions of the Earth continue to reveal
+                  fundamental shortcomings in our typical
+                  workflows. The Òcurse of dimensionalityÓ is the main
+                  roadblock, and is exemplified by NyquistÕs sampling
+                  criterion, which disproportionately strains current
+                  acquisition and processing systems as the size and
+                  desired resolution of our survey areas continues to
+                  increase. We offer an alternative sampling strategy
+                  that leverages recent insights from compressive
+                  sensing towards seismic acquisition and processing
+                  for data that are traditionally considered to be
+                  undersampled. The main outcome of this approach is a
+                  new technology where acquisition and processing
+                  related costs are no longer determined by overly
+                  stringent sampling criteria. Compressive sensing is
+                  a novel nonlinear sampling paradigm, effective for
+                  acquiring signals that have a sparse representation
+                  in some transform domain. We review basic facts
+                  about this new sampling paradigm that revolutionized
+                  various areas of signal processing, and illustrate
+                  how it can be successfully exploited in various
+                  problems in seismic exploration to effectively fight
+                  the curse of dimensionality.},
+  keywords ={SLIM,Acquisition,Processing,Imaging,Full-waveform inversion,Optimization,Compressive Sensing},
   url = {http://slim.eos.ubc.ca/Publications/Private/Journals/sigprocmag.pdf}
 }
-
 
 @unpublished{Mansour11TRwmmw,
   author = {Hassan Mansour and Ozgur Yilmaz.},
@@ -99,24 +124,27 @@
   address = {University of British Columbia, Vancouver},
   month = {09/2011},
 notes= {TR-2011-07 },
-  abstract = {In this paper, we study the support In this paper, we study the support
-        recovery conditions of weighted -$\ell_1$ minimization for signal
-        reconstruction from compressed sensing measurements when multiple
-        support estimate sets with different accuracy are available. We identify
-        a class of signals for which the recovered vector from -$\ell_1$
-        minimization provides an accurate support estimate. We then derive
-        stability and robustness guarantees for the weighted -$\ell_1$ minimization
-        problem with more than one support estimate. We show that applying
-        a smaller weight to support estimate that enjoy higher accuracy improves
-        the recovery conditions compared with the case of a single support
-        estimate and the case with standard, i.e., non-weighted,-$\ell_1$
-        minimization. Our theoretical results are supported by numerical
-        simulations on synthetic signals and real audio signals.},
+  abstract = {In this paper, we study the support In this paper, we
+                  study the support recovery conditions of weighted
+                  -$\ell_1$ minimization for signal reconstruction
+                  from compressed sensing measurements when multiple
+                  support estimate sets with different accuracy are
+                  available. We identify a class of signals for which
+                  the recovered vector from -$\ell_1$ minimization
+                  provides an accurate support estimate. We then
+                  derive stability and robustness guarantees for the
+                  weighted -$\ell_1$ minimization problem with more
+                  than one support estimate. We show that applying a
+                  smaller weight to support estimate that enjoy higher
+                  accuracy improves the recovery conditions compared
+                  with the case of a single support estimate and the
+                  case with standard, i.e., non-weighted,-$\ell_1$
+                  minimization. Our theoretical results are supported
+                  by numerical simulations on synthetic signals and
+                  real audio signals.},
+keywords={Compressive Sensing,Optimization},
   url = {http://slim.eos.ubc.ca/Publications/private/Journals/MansourYilmaz2011.pdf }
 }
-
-
-
 
 @unpublished{Mansour11TRssma,
   author = {Hassan Mansour and Haneet Wason and Tim T.Y. Lin and Felix J. Herrmann},
@@ -127,31 +155,39 @@ notes= { TR-2011-04 },
   type = {Tech. Rep.},
   address = {University of British Columbia, Vancouver},
   month = {08/2011},
-  abstract = {Seismic data acquisition in marine environments is a costly process
-        that compels the adoption of simultaneous-source acquisition - an
-        emerging technology that is stimu- lating both geophysical research
-        and commercial efforts. In this paper, we discuss the properties
-        of randomized simultaneous acquisition matrices and demonstrate that
-        sparsity-promoting recovery improves the quality of the reconstructed
-        seismic data volumes. Leveraging established findings from the field
-        of compressive sensing, we demonstrate that the choice of the sparsifying
-        transform that is incoherent with the compressive sampling matrix
-        can significantly impact the reconstruction quality. Si- multaneous
-        marine acquisition calls for the development of a new set of design
-        principles and post-processing tools. We propose to use random time
-        dithering where sequential acquisition with a single airgun is replaced
-        by continuous acquisition with multiple airguns firing at random
-        times and at random locations. We then demonstrate that the resulting
-        compressive sampling matrix is incoherent with the curvelet transform
-        and the combined measurement matrix exhibits better isometry properties
-        than other transform bases such as a non-localized multidimensional
-        Fourier transform. We il- lustrate our results with simulations of
-        simultaneous-source marine acquisition using periodic and randomized
-        time dithering.},
+  abstract = {Seismic data acquisition in marine environments is a
+                  costly process that compels the adoption of
+                  simultaneous-source acquisition - an emerging
+                  technology that is stimu- lating both geophysical
+                  research and commercial efforts. In this paper, we
+                  discuss the properties of randomized simultaneous
+                  acquisition matrices and demonstrate that
+                  sparsity-promoting recovery improves the quality of
+                  the reconstructed seismic data volumes. Leveraging
+                  established findings from the field of compressive
+                  sensing, we demonstrate that the choice of the
+                  sparsifying transform that is incoherent with the
+                  compressive sampling matrix can significantly impact
+                  the reconstruction quality. Si- multaneous marine
+                  acquisition calls for the development of a new set
+                  of design principles and post-processing tools. We
+                  propose to use random time dithering where
+                  sequential acquisition with a single airgun is
+                  replaced by continuous acquisition with multiple
+                  airguns firing at random times and at random
+                  locations. We then demonstrate that the resulting
+                  compressive sampling matrix is incoherent with the
+                  curvelet transform and the combined measurement
+                  matrix exhibits better isometry properties than
+                  other transform bases such as a non-localized
+                  multidimensional Fourier transform. We il- lustrate
+                  our results with simulations of simultaneous-source
+                  marine acquisition using periodic and randomized
+                  time dithering.},
+  keywords ={SLIM,Acquisition,Processing,Compressive Sensing},
+  notes ={In revision},
   url = {http://slim.eos.ubc.ca/Publications/Private/Journals/simmarineacq.pdf}
 }
-
-
 
 @unpublished{VanLeeuwen11TRfwiwse,
   author = {Tristan van Leeuwen and Felix J. Herrmann},
@@ -161,29 +197,39 @@ notes= { TR-2011-04 },
 notes = {TR-2011-06 },
   address = {University of British Columbia, Vancouver},
   month = {09/2011},
-  abstract = {Randomized source encoding has recently been proposed as a way to
-        dramatically reduce the costs of full waveform inversion. The main
-        idea is to replace all sequential sources by a small number of simultaneous
-        sources. This introduces random crosstalk in the model updates and
-        special stochastic optimization strategies are required to deal with
-        this. Two problems arise with this approach: i) source encoding can
-        only be applied to fixed-spread acquisition setups, and ii) stochastic
-        optimization methods tend to converge very slowly, relying on averaging
-        to get rid of the cross-talk. Although the slow convergence is partly
-        offset by the low iteration cost, we show that conventional optimization
-        strategies are bound to outperform stochastic methods in the long
-        run. In this paper we argue that we don¿t need randomized source
-        encoding to reap the benefits of stochastic optimization and we review
-        an optimization strategy that combines the benefits of both conventional
-        and stochastic optimization. The method uses a gradually increasing
-        batch of sources. Thus, iterations are very cheap initially and this
-        allows the method to make fast progress in the beginning. As the
-        batch size grows, the method behaves like conventional optimization,
-        allowing for fast convergence. Numerical examples suggest that the
-        stochastic and hybrid method perform equally well with and without
-        source encoding and that the hybrid method outperforms both conventional
-        and stochastic optimization. The method does not rely on source encoding
-        techniques and can thus be applied to non fixed-spread data.},
+  abstract = {Randomized source encoding has recently been proposed as
+                  a way to dramatically reduce the costs of full
+                  waveform inversion. The main idea is to replace all
+                  sequential sources by a small number of simultaneous
+                  sources. This introduces random crosstalk in the
+                  model updates and special stochastic optimization
+                  strategies are required to deal with this. Two
+                  problems arise with this approach: i) source
+                  encoding can only be applied to fixed-spread
+                  acquisition setups, and ii) stochastic optimization
+                  methods tend to converge very slowly, relying on
+                  averaging to get rid of the cross-talk. Although the
+                  slow convergence is partly offset by the low
+                  iteration cost, we show that conventional
+                  optimization strategies are bound to outperform
+                  stochastic methods in the long run. In this paper we
+                  argue that we don¿t need randomized source encoding
+                  to reap the benefits of stochastic optimization and
+                  we review an optimization strategy that combines the
+                  benefits of both conventional and stochastic
+                  optimization. The method uses a gradually increasing
+                  batch of sources. Thus, iterations are very cheap
+                  initially and this allows the method to make fast
+                  progress in the beginning. As the batch size grows,
+                  the method behaves like conventional optimization,
+                  allowing for fast convergence. Numerical examples
+                  suggest that the stochastic and hybrid method
+                  perform equally well with and without source
+                  encoding and that the hybrid method outperforms both
+                  conventional and stochastic optimization. The method
+                  does not rely on source encoding techniques and can
+                  thus be applied to non fixed-spread data.},
+  keywords = {SLIM,Full waveform inversion,Optimization}
   url = {http://slim.eos.ubc.ca/Publications/private/Journals/TR201106.pdf }
 }
 
@@ -195,29 +241,32 @@ notes = {TR-2011-06 },
 notes = {TR-2011-12 },
   address = {University of British Columbia, Vancouver},
   month = {10/2011},
-  abstract = { Wave-equation based seismic inversion can be formulated as a nonlinear
-        inverse problem where the medium properties are obtained via minimization
-        of a least- squares misfit functional. The demand for higher resolution
-        models in more geologically complex areas drives the need to develop
-        techniques that explore the special structure of full-waveform inversion
-        to reduce the computational burden and to regularize the inverse
-        problem. We meet these goals by using ideas from compressive sensing
-        and stochastic optimization to design a novel Gauss-Newton method,
-        where the updates are computed from random subsets of the data via
-        curvelet-domain sparsity promotion. Application of this idea to a
-        realistic synthetic shows improved results compared to quasi-Newton
-        methods, which require passes through all data. Two different subset
-        sampling strategies are considered: randomized source encoding, and
-        drawing sequential shots firing at random source locations from marine
-        data with missing near and far offsets. In both cases, we obtain
-        excellent inversion results compared to conventional methods at reduced
-        computational costs. },
+  abstract = { Wave-equation based seismic inversion can be formulated
+                  as a nonlinear inverse problem where the medium
+                  properties are obtained via minimization of a least-
+                  squares misfit functional. The demand for higher
+                  resolution models in more geologically complex areas
+                  drives the need to develop techniques that explore
+                  the special structure of full-waveform inversion to
+                  reduce the computational burden and to regularize
+                  the inverse problem. We meet these goals by using
+                  ideas from compressive sensing and stochastic
+                  optimization to design a novel Gauss-Newton method,
+                  where the updates are computed from random subsets
+                  of the data via curvelet-domain sparsity
+                  promotion. Application of this idea to a realistic
+                  synthetic shows improved results compared to
+                  quasi-Newton methods, which require passes through
+                  all data. Two different subset sampling strategies
+                  are considered: randomized source encoding, and
+                  drawing sequential shots firing at random source
+                  locations from marine data with missing near and far
+                  offsets. In both cases, we obtain excellent
+                  inversion results compared to conventional methods
+                  at reduced computational costs. },
+  keywords ={SLIM,Full waveform inversion,Compressive Sensing,Optimization},
   url = {http://slim.eos.ubc.ca/Publications/private/Journals/LiAravkinLeeuwenHerrmann.pdf }
 }
-
-
-
-
 
 @unpublished{Aravkin11TRridr,
   author = {Aleksandr Y. Aravkin and Michael P. Friedlander and Felix J. Herrmann and Tristan
@@ -227,23 +276,28 @@ notes = {TR-2011-12 },
 notes = {TR-2011-13},  
 address = {University of British Columbia, Vancouver},
   month = {11/2011},
-  abstract = {We consider a class of inverse problems in which the forward model
-        is the solution operator to linear ODEs or PDEs. This class admits
-        several dimensionality-reduction techniques based on data averaging
-        or sampling, which are especially useful for large-scale problems.
-        We survey these approaches and their connection to stochastic optimization.
-        The data-averaging approach is only viable, however, for a least-squares
-        misfit, which is sensitive to outliers in the data and artifacts
-        unexplained by the forward model. This motivates us to propose a
-        robust formulation based on the Student's t-distribution of the error.
-        We demonstrate how the corresponding penalty function, together with
-        the sampling approach, can obtain good results for a large-scale
-        seismic inverse problem with 50% corrupted data.},
+  abstract = {We consider a class of inverse problems in which the
+                  forward model is the solution operator to linear
+                  ODEs or PDEs. This class admits several
+                  dimensionality-reduction techniques based on data
+                  averaging or sampling, which are especially useful
+                  for large-scale problems.  We survey these
+                  approaches and their connection to stochastic
+                  optimization.  The data-averaging approach is only
+                  viable, however, for a least-squares misfit, which
+                  is sensitive to outliers in the data and artifacts
+                  unexplained by the forward model. This motivates us
+                  to propose a robust formulation based on the
+                  Student's t-distribution of the error.  We
+                  demonstrate how the corresponding penalty function,
+                  together with the sampling approach, can obtain good
+                  results for a large-scale seismic inverse problem
+                  with 50% corrupted data.},
+  keywords = {SLIM,Optimization,Full-waveform inversion},
   url = {http://www.optimization-online.org/DB_FILE/2011/11/3243.pdf}
 }
 
-
-
+% This abstract has been accepted. Move to published abstracts
 @unpublished{aravkin12ICASSProbustb,
 author={Aleksandr Y. Aravkin and Michael P. Friedlander and Tristan van Leeuwen },
 Keywords={ICASSP},
@@ -252,12 +306,66 @@ Title={ Robust inversion via semistochastic dimensionality reduction},
 Year={2011},
 Month={10/2011},
 notes = {Submitted to ICASSP 2012, 9/27/2011 },
-Abstract={In this paper, we offer an alternative sampling method leveraging recent insights from compressive sensing towards seismic acquisition and processing for data that are traditionally considered to be undersampled. The main outcome of this approach is a new technology where acquisition and processing related costs are no longer determined by overly stringent sampling criteria, such as Nyquist. At the heart of our approach lies randomized incoherent sampling that breaks subsampling related interferences by turning them into harmless noise, which we subsequently remove by promoting transform-domain sparsity. Now, costs no longer grow with resolution and dimensionality of the survey area, but instead depend on transform-domain sparsity only. Our contribution is twofold. First, we demonstrate by means of carefully designed numerical experiments that compressive sensing can successfully be adapted to seismic acquisition. Second, we show that accurate recovery can be accomplished for compressively sampled data volumes sizes that exceed the size of conventional transform-domain data volumes by only a small factor. Because compressive sensing combines transformation and encoding by a single linear encoding step, this technology is directly applicable to acquisition and to dimensionality reduction during processing. In either case, sampling, storage, and processing costs scale with transform-domain sparsity. We illustrate this principle by means of number of case studies. },
+Abstract={In this paper, we offer an alternative sampling method
+                  leveraging recent insights from compressive sensing
+                  towards seismic acquisition and processing for data
+                  that are traditionally considered to be
+                  undersampled. The main outcome of this approach is a
+                  new technology where acquisition and processing
+                  related costs are no longer determined by overly
+                  stringent sampling criteria, such as Nyquist. At the
+                  heart of our approach lies randomized incoherent
+                  sampling that breaks subsampling related
+                  interferences by turning them into harmless noise,
+                  which we subsequently remove by promoting
+                  transform-domain sparsity. Now, costs no longer grow
+                  with resolution and dimensionality of the survey
+                  area, but instead depend on transform-domain
+                  sparsity only. Our contribution is twofold. First,
+                  we demonstrate by means of carefully designed
+                  numerical experiments that compressive sensing can
+                  successfully be adapted to seismic
+                  acquisition. Second, we show that accurate recovery
+                  can be accomplished for compressively sampled data
+                  volumes sizes that exceed the size of conventional
+                  transform-domain data volumes by only a small
+                  factor. Because compressive sensing combines
+                  transformation and encoding by a single linear
+                  encoding step, this technology is directly
+                  applicable to acquisition and to dimensionality
+                  reduction during processing. In either case,
+                  sampling, storage, and processing costs scale with
+                  transform-domain sparsity. We illustrate this
+                  principle by means of number of case studies. },
+keywords ={SLIM,Optimization,Full-waveform inversion},
 URL= {http://slim.eos.ubc.ca/Publications/Private/Journals/ICASSP/AravkinFriedlanderLeeuwen.pdf }
 }
 
+% This abstract has been accepted. Move to published abstracts
 @unpublished{Aravkin12ICASSPfastseis,
-Abstract = {Seismic imaging can be formulated as a linear inverse problem where a medium perturbation is obtained via minimization of a least-squares misfit functional. The demand for higher resolution images in more geophysically complex areas drives the need to develop techniques that handle problems of tremendous size with limited computational resources. While seismic imaging is amenable to dimensionality reduction techniques that collapse the data volume into a smaller set of “super-shots”, these techniques break down for complex acquisition geometries such as marine acquisition, where sources and receivers move during acquisition. To meet these challenges, we propose a novel method that combines sparsity-promoting (SP) solvers with random sub- set selection of sequential shots, yielding a SP algorithm that only ever sees a small portion of the full data, enabling its application to very large-scale problems. Application of this technique yields excellent results for a complicated synthetic, which underscores the robustness of sparsity promotion and its suitability for seismic imaging.},
+Abstract = {Seismic imaging can be formulated as a linear inverse
+                  problem where a medium perturbation is obtained via
+                  minimization of a least-squares misfit
+                  functional. The demand for higher resolution images
+                  in more geophysically complex areas drives the need
+                  to develop techniques that handle problems of
+                  tremendous size with limited computational
+                  resources. While seismic imaging is amenable to
+                  dimensionality reduction techniques that collapse
+                  the data volume into a smaller set of “super-shots”,
+                  these techniques break down for complex acquisition
+                  geometries such as marine acquisition, where sources
+                  and receivers move during acquisition. To meet these
+                  challenges, we propose a novel method that combines
+                  sparsity-promoting (SP) solvers with random sub- set
+                  selection of sequential shots, yielding a SP
+                  algorithm that only ever sees a small portion of the
+                  full data, enabling its application to very
+                  large-scale problems. Application of this technique
+                  yields excellent results for a complicated
+                  synthetic, which underscores the robustness of
+                  sparsity promotion and its suitability for seismic
+                  imaging.},
 Author = {Aleksandr Y. Aravkin and Xiang Li and Felix J. Herrmann },
 Keywords = {ICASSP},
 Organization = {ICASSP},
@@ -266,12 +374,26 @@ Title = {Fast seismic imaging for marine data},
 Date-Added = {2011-09-27 15:00:00 -0700},
 Year = {2011},
 Month={09/2011},
+keywords={SLIM,Imaging,Optimization,Compressive Sensing},
 url={http://slim.eos.ubc.ca/Publications/Private/Journals/ICASSP/AravkinLiHerrmann.pdf }
 }
 
-
+% This abstract has been accepted. Move to published abstracts
 @unpublished{Mansour12ICASSadapt,
-Abstract = {In this paper, we propose an adaptive compressed sensing scheme that utilizes a support estimate to focus the measurements on the large valued coefficients of a compressible signal. We embed a “sparse-filtering” stage into the measure- ment matrix by weighting down the contribution of signal coefficients that are outside the support estimate. We present an application which can benefit from the proposed sampling scheme, namely, video compressive acquisition. We demonstrate that our proposed adaptive CS scheme results in a significant improvement in reconstruction quality compared with standard CS as well as adaptive recovery using weighted $\ell$1 minimization.},
+Abstract = {In this paper, we propose an adaptive compressed sensing
+                  scheme that utilizes a support estimate to focus the
+                  measurements on the large valued coefficients of a
+                  compressible signal. We embed a “sparse-filtering”
+                  stage into the measure- ment matrix by weighting
+                  down the contribution of signal coefficients that
+                  are outside the support estimate. We present an
+                  application which can benefit from the proposed
+                  sampling scheme, namely, video compressive
+                  acquisition. We demonstrate that our proposed
+                  adaptive CS scheme results in a significant
+                  improvement in reconstruction quality compared with
+                  standard CS as well as adaptive recovery using
+                  weighted $\ell$1 minimization.},
 Author = {Hassan Mansour and Ozgur Yilmaz},
 Keywords = {ICASSP},
 Organization = {ICASSP},
@@ -280,13 +402,33 @@ Title = {Adaptive compressed sensing for video acquisition},
 Date-Added = {2011-09-27 15:00:00 -0700},
 Year = {2011},
 Month={09/2011},
+keywords ={Compressive Sensing},
 url={http://slim.eos.ubc.ca/Publications/Private/Journals/ICASSP/MansourYilmazICASSPaCS.pdf }
-
 }
 
-
+% This abstract has been accepted. Move to published abstracts
 @unpublished{Mansour12ICASSsupport,
-Abstract = {In this paper, we propose a support driven reweighted $\ell$_￿1 minimization algorithm (SDRL1) that solves a sequence of weighted $\ell$_￿1 problems and relies on the support estimate accu- racy. Our SDRL1 algorithm is related to the IRL1 algorithm proposed by Cande`s, Wakin, and Boyd. We demonstrate that it is sufficient to find support estimates with good accuracy and apply constant weights instead of using the inverse coefficient magnitudes to achieve gains similar to those of IRL1. We then prove that given a support estimate with sufficient accuracy, if the signal decays according to a specific rate, the solution to the weighted ￿1 minimization problem results in a support estimate with higher accuracy than the initial estimate. We also show that under certain conditions, it is possible to achieve higher estimate accuracy when the inter- section of support estimates is considered. We demonstrate the performance of SDRL1 through numerical simulations and compare it with that of IRL1 and standard ￿$\ell$_￿1 minimization.},
+Abstract = {In this paper, we propose a support driven reweighted
+                  $\ell$_￿1 minimization algorithm (SDRL1) that solves
+                  a sequence of weighted $\ell$_￿1 problems and relies
+                  on the support estimate accu- racy. Our SDRL1
+                  algorithm is related to the IRL1 algorithm proposed
+                  by Cande`s, Wakin, and Boyd. We demonstrate that it
+                  is sufficient to find support estimates with good
+                  accuracy and apply constant weights instead of using
+                  the inverse coefficient magnitudes to achieve gains
+                  similar to those of IRL1. We then prove that given a
+                  support estimate with sufficient accuracy, if the
+                  signal decays according to a specific rate, the
+                  solution to the weighted ￿1 minimization problem
+                  results in a support estimate with higher accuracy
+                  than the initial estimate. We also show that under
+                  certain conditions, it is possible to achieve higher
+                  estimate accuracy when the inter- section of support
+                  estimates is considered. We demonstrate the
+                  performance of SDRL1 through numerical simulations
+                  and compare it with that of IRL1 and standard
+                  ￿$\ell$_￿1 minimization.},
 Author = {Hassan Mansour and Ozgur Yilmaz},
 Keywords = {ICASSP},
 Organization = {ICASSP},
@@ -295,9 +437,9 @@ Title = {Support driven reweighted $\ell_1$ minimization},
 Date-Added = {2011-09-27 15:00:00 -0700},
 Year = {2011},
 Month={09/2011},
+keywords ={Compressive Sensing},
 url={http://slim.eos.ubc.ca/Publications/Private/Journals/ICASSP/MansourYilmazICASSPwL1.pdf }
 }
-
 
 @unpublished{haber10TRemp,
   author = {Eldad Haber and Matthias Chung and Felix J. Herrmann},
@@ -306,17 +448,19 @@ url={http://slim.eos.ubc.ca/Publications/Private/Journals/ICASSP/MansourYilmazIC
   institution = {UBC-Earth and Ocean Sciences Department},
   year = {2010},
   number = {TR-2010-4},
-  abstract = {Many parameter estimation problems involve with a parameter-dependent
-        PDEs with multiple right hand sides. The computational cost and memory
-        requirements of such problems increases linearly with the number
-        of right hand sides. For many applications this is the main bottleneck
-        of the computation. In this paper we show that problems with multiple
-        right hand sides can be reformulated as stochastic optimization problems
-        that are much cheaper to solve. We discuss the solution methodology
-        and use the direct current resistivity and seismic tomography as
-        model problems to show the effectiveness of our approach.},
-  keywords = {SLIM},
+  abstract = {Many parameter estimation problems involve with a
+                  parameter-dependent PDEs with multiple right hand
+                  sides. The computational cost and memory
+                  requirements of such problems increases linearly
+                  with the number of right hand sides. For many
+                  applications this is the main bottleneck of the
+                  computation. In this paper we show that problems
+                  with multiple right hand sides can be reformulated
+                  as stochastic optimization problems that are much
+                  cheaper to solve. We discuss the solution
+                  methodology and use the direct current resistivity
+                  and seismic tomography as model problems to show the
+                  effectiveness of our approach.},
+  keywords = {SLIM,Full-waveform inversion,Optimization},
   url = {http://slim.eos.ubc.ca/Publications/Public/Journals/Haber2010emp.pdf}
 }
-
-

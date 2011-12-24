@@ -9,7 +9,7 @@
 	and Xiang Li},
   title = {Fast full-waveform inversion with compressive sensing},
   year = {2011},
-  keywords = {SEG},
+  keywords = {SEG,SLIM,Full-waveform inversion},
 presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/HerrmannSEG2011fws/HerrmannSEG2011fws.pdf }
 }
 
@@ -26,10 +26,35 @@ issn = {1},
 url={http://slim.eos.ubc.ca/Publications/public/Journals/SPIEreport.pdf},
 url2 ={http://dx.doi.org/10.1117/12.893861},
 doi = {doi:10.1117/12.893861},
-abstract={ Images obtained from seismic data are used by the oil and gas industry for geophysical exploration. Cutting-edge methods for transforming the data into interpretable images are moving away from linear approximations and high-frequency asymptotics towards Full Waveform Inversion (FWI), a nonlinear data-fitting procedure based on full data modeling using the wave-equation. The size of the problem, the nonlinearity of the for- ward model, and ill-posedness of the formulation all contribute to a pressing need for fast algorithms and novel regularization techniques to speed up and improve inversion results. In this paper, we design a modified Gauss-Newton algorithm to solve the PDE- constrained optimization problem using ideas from stochastic optimization and com- pressive sensing. More specifically, we replace the Gauss-Newton subproblems by ran- domly subsampled, -$\ell_1$ regularized subproblems. This allows us us significantly reduce the computational cost of calculating the updates and exploit the compressibility of wavefields in Curvelets. We explain the relationships and connections between the new method and stochastic optimization and compressive sensing (CS), and demonstrate the efficacy of the new method on a large-scale synthetic seismic example. }
+keywords={SLIM,Compressive Sensing,Optimization,Full-waveform inversion},
+abstract={ Images obtained from seismic data are used by the oil and
+                  gas industry for geophysical
+                  exploration. Cutting-edge methods for transforming
+                  the data into interpretable images are moving away
+                  from linear approximations and high-frequency
+                  asymptotics towards Full Waveform Inversion (FWI), a
+                  nonlinear data-fitting procedure based on full data
+                  modeling using the wave-equation. The size of the
+                  problem, the nonlinearity of the for- ward model,
+                  and ill-posedness of the formulation all contribute
+                  to a pressing need for fast algorithms and novel
+                  regularization techniques to speed up and improve
+                  inversion results. In this paper, we design a
+                  modified Gauss-Newton algorithm to solve the PDE-
+                  constrained optimization problem using ideas from
+                  stochastic optimization and com- pressive
+                  sensing. More specifically, we replace the
+                  Gauss-Newton subproblems by ran- domly subsampled,
+                  -$\ell_1$ regularized subproblems. This allows us us
+                  significantly reduce the computational cost of
+                  calculating the updates and exploit the
+                  compressibility of wavefields in Curvelets. We
+                  explain the relationships and connections between
+                  the new method and stochastic optimization and
+                  compressive sensing (CS), and demonstrate the
+                  efficacy of the new method on a large-scale
+                  synthetic seismic example. }
 }
-
-
 
 @CONFERENCE{aravkin11SIAMfwi,
   author = {Aleksandr Y. Aravkin and Felix J. Herrmann and Tristan van Leeuwen
@@ -38,15 +63,20 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
   year = {2011},
   organization = {SIAM CS\&E 2011},
   publisher = {SIAM CS\&E 2011},
-  abstract = {Full-waveform inversion relies on large multi-experiment data volumes.
-	While improvements in acquisition and inversion have been extremely
-	successful, the current push for higher quality models reveals fundamental
-	shortcomings handling increasing problem sizes numerically. To address
-	this fundamental issue, we propose a randomized dimensionality-reduction
-	strategy motivated by recent developments in stochastic optimization
-	and compressive sensing. In this formulation conventional Gauss-Newton
-	iterations are replaced by dimensionality-reduced sparse recovery
-	problems with source encodings.},
+  abstract = {Full-waveform inversion relies on large multi-experiment
+                  data volumes.  While improvements in acquisition and
+                  inversion have been extremely successful, the
+                  current push for higher quality models reveals
+                  fundamental shortcomings handling increasing problem
+                  sizes numerically. To address this fundamental
+                  issue, we propose a randomized
+                  dimensionality-reduction strategy motivated by
+                  recent developments in stochastic optimization and
+                  compressive sensing. In this formulation
+                  conventional Gauss-Newton iterations are replaced by
+                  dimensionality-reduced sparse recovery problems with
+                  source encodings.},
+  keywords={SLIM,Full-waveform inversion}, 
   presentation = {http://slim/Publications/Public/Presentations/2011/Aravkin2.28.2011.pdf}
 }
 
@@ -56,26 +86,31 @@ abstract={ Images obtained from seismic data are used by the oil and gas industr
   title = {Sparsity promoting formulations and algorithms for FWI. Presented
 	at AMP Medical and Seismic Imaging, 2011, Vancouver BC.},
   year = {2011},
-  organization = {ICIAM 2011},
-  abstract = {Full Waveform Inversion (FWI) is a computational procedure to extract
-	medium parameters from seismic data. FWI is typically formulated
-	as a nonlinear least squares optimization problem, and various regularization
-	techniques are used to guide the optimization because the problem
-	is ill-posed. We propose a novel sparse regularization which exploits
-	the ability of curvelets to efficiently represent geophysical images.
-	We then formulate a corresponding sparsity promoting constrained
-	optimization problem, which we solve using an open source algorithm.
-	The techniques are applicable to any inverse problem where sparsity
-	modeling is appropriate.
-	
-	We demonstrate the efficacy of the formulation on a toy example (stylized
-	cross-well experiment) and on a realistic Seismic example (partial
-	Marmoussi model). We also discuss the tradeoff between model fit
-	and sparsity promotion, with a view to extend existing techniques
-	for linear inverse problems to the case where the forward model is
-	nonlinear. },
-month={07/2011},
+  optorganization = {ICIAM 2011},
+  abstract = {Full Waveform Inversion (FWI) is a computational
+                  procedure to extract medium parameters from seismic
+                  data. FWI is typically formulated as a nonlinear
+                  least squares optimization problem, and various
+                  regularization techniques are used to guide the
+                  optimization because the problem is ill-posed. We
+                  propose a novel sparse regularization which exploits
+                  the ability of curvelets to efficiently represent
+                  geophysical images.  We then formulate a
+                  corresponding sparsity promoting constrained
+                  optimization problem, which we solve using an open
+                  source algorithm.  The techniques are applicable to
+                  any inverse problem where sparsity modeling is
+                  appropriate.  We demonstrate the efficacy of the
+                  formulation on a toy example (stylized cross-well
+                  experiment) and on a realistic Seismic example
+                  (partial Marmoussi model). We also discuss the
+                  tradeoff between model fit and sparsity promotion,
+                  with a view to extend existing techniques for linear
+                  inverse problems to the case where the forward model
+                  is nonlinear. },
+  month={07/2011},
   date-added = {2011-07-15},
+  keywords={SLIM,Full-waveform inversion,Optimization}, 
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2011/aravkin2011AMP.pdf},
   url = {http://slim/Publications/Public/Presentations/2011/aravkin2011AMP.pdf}
 }
@@ -86,30 +121,35 @@ month={07/2011},
 	Vancouver BC.Presented at Waves 2011, Vancouver BC.},
   year = {2011},
   organization = {ICIAM 2011},
-  abstract = {Iterative inversion algorithms require repeated simulation of 3D time-dependent
-	acoustic, elastic, or electromagnetic wave fields, extending hundreds
-	of wavelengths and hundreds of periods. Also, seismic data is rich
-	in information at every representable scale. Thus simulation-driven
-	optimization approaches to inversion impose great demands on simulator
-	efficiency and accuracy. While computer hardware advances have been
-	of critical importance in bringing inversion closer to practical
-	application, algorithmic advances in simulator methodology have been
-	equally important. Speakers in this two-part session will address
-	a variety of numerical issues arising in the wave simulation, and
-	in its application to inversion. },
+  abstract = {Iterative inversion algorithms require repeated
+                  simulation of 3D time-dependent acoustic, elastic,
+                  or electromagnetic wave fields, extending hundreds
+                  of wavelengths and hundreds of periods. Also,
+                  seismic data is rich in information at every
+                  representable scale. Thus simulation-driven
+                  optimization approaches to inversion impose great
+                  demands on simulator efficiency and accuracy. While
+                  computer hardware advances have been of critical
+                  importance in bringing inversion closer to practical
+                  application, algorithmic advances in simulator
+                  methodology have been equally important. Speakers in
+                  this two-part session will address a variety of
+                  numerical issues arising in the wave simulation, and
+                  in its application to inversion. },
   date-added = {2011-07-20},
-month={07/2011},
+  month={07/2011},
+  keywords={SLIM,ICIAM,Full-waveform inversion,Optimization}, 
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2011/aravkin2011WAVES.pdf},
   url = {http://slim/Publications/Public/Presentations/2011/aravkin2011WAVES.pdf}
-
 }
+
 @CONFERENCE{Aravkin2011EAGEspfwi,
   author = {Aleksandr Y. Aravkin and Tristan van Leeuwen and James Burke and
 	Felix Herrmann},
   title = {Sparsity Promoting Formulations and Algorithms for FWI},
   year = {2011},
 presentation= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/Aravkin2011EAGEspfwi/Aravkin2011EAGEspfwi.pdf },
-  keywords = {EAGE}
+  keywords = {EAGE,Full-waveform inversion}
 }
 
 @CONFERENCE{aravkin11EAGEnspf,
@@ -120,23 +160,29 @@ presentation= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/
   year = {2011},
   organization = {EAGE},
   publisher = {EAGE},
-  abstract = {Full Waveform Inversion (FWI) is a computational procedure to extract
-	medium parameters from seismic data. FWI is typically formulated
-	as a nonlinear least squares optimization problem, and various regularization
-	techniques are used to guide the optimization because the problem
-	is illposed. In this paper, we propose a novel sparse regularization
-	which exploits the ability of curvelets to efficiently represent
-	geophysical images. We then formulate a corresponding sparsity promoting
-	constrained optimization problem, which we call Nonlinear Basis Pursuit
-	Denoise (NBPDN) and present an algorithm to solve this problem to
-	recover medium parameters. The utility of the NBPDN formulation and
-	efficacy of the algorithm are demonstrated on a stylized cross-well
-	exper- iment, where a sparse velocity perturbation is recovered with
-	higher quality than the standard FWI formulation (solved with LBFGS).
-	The NBPDN formulation and algorithm can recover the sparse perturbation
-	even when the data volume is compressed to 5 percent of the original
-	size using random superposition.},
-  keywords = {EAGE},
+  abstract = {Full Waveform Inversion (FWI) is a computational
+                  procedure to extract medium parameters from seismic
+                  data. FWI is typically formulated as a nonlinear
+                  least squares optimization problem, and various
+                  regularization techniques are used to guide the
+                  optimization because the problem is illposed. In
+                  this paper, we propose a novel sparse regularization
+                  which exploits the ability of curvelets to
+                  efficiently represent geophysical images. We then
+                  formulate a corresponding sparsity promoting
+                  constrained optimization problem, which we call
+                  Nonlinear Basis Pursuit Denoise (NBPDN) and present
+                  an algorithm to solve this problem to recover medium
+                  parameters. The utility of the NBPDN formulation and
+                  efficacy of the algorithm are demonstrated on a
+                  stylized cross-well exper- iment, where a sparse
+                  velocity perturbation is recovered with higher
+                  quality than the standard FWI formulation (solved
+                  with LBFGS).  The NBPDN formulation and algorithm
+                  can recover the sparse perturbation even when the
+                  data volume is compressed to 5 percent of the
+                  original size using random superposition.},
+  keywords = {EAGE,Full-waveform inversion,Optimization},
 month= {01/2011},
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/eage/eage11/aravkin2011eage.pdf},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/aravkin11EAGEnspf/aravkin11EAGEnspf.pdf }
@@ -148,29 +194,35 @@ month= {01/2011},
   year = {2011},
   organization = {SEG},
   publisher = {SEG},
-  abstract = {Full-waveform inversion (FWI) is a computational procedure to extract
-	medium parameters from seismic data. Robust meth- ods for FWI are
-	needed to overcome sensitivity to noise and in cases where modeling
-	is particularly poor or far from the real data generating process.
-	We survey previous robust methods from a statistical perspective,
-	and use this perspective to derive a new robust method by assuming
-	the random errors in our model arise from the Student's t-distribution.
-	We show that in contrast to previous robust methods, the new method
-	progres- sively down-weighs large outliers, effectively ignoring
-	them once they are large enough. This suggests that the new method
-	is more robust and suitable for situations with very poor data quality
-	or modeling. Experiments show that the new method recovers as well
-	or better than previous robust methods, and can recover models with
-	quality comparable to standard meth- ods on noise-free data when
-	some of the data is completely corrupted, and even when a marine
-	acquisition mask is entirely ignored in the modeling. The ability
-	to ignore a marine acqui- sition mask via robust FWI methods offers
-	an opportunity for stochastic optimization methods in marine acquisition.},
-  keywords = {SEG},
-month={04/2011},
+  abstract = {Full-waveform inversion (FWI) is a computational
+                  procedure to extract medium parameters from seismic
+                  data. Robust meth- ods for FWI are needed to
+                  overcome sensitivity to noise and in cases where
+                  modeling is particularly poor or far from the real
+                  data generating process.  We survey previous robust
+                  methods from a statistical perspective, and use this
+                  perspective to derive a new robust method by
+                  assuming the random errors in our model arise from
+                  the Student's t-distribution.  We show that in
+                  contrast to previous robust methods, the new method
+                  progres- sively down-weighs large outliers,
+                  effectively ignoring them once they are large
+                  enough. This suggests that the new method is more
+                  robust and suitable for situations with very poor
+                  data quality or modeling. Experiments show that the
+                  new method recovers as well or better than previous
+                  robust methods, and can recover models with quality
+                  comparable to standard meth- ods on noise-free data
+                  when some of the data is completely corrupted, and
+                  even when a marine acquisition mask is entirely
+                  ignored in the modeling. The ability to ignore a
+                  marine acqui- sition mask via robust FWI methods
+                  offers an opportunity for stochastic optimization
+                  methods in marine acquisition.},
+  keywords = {SEG,Full-waveform inversion,Optimization},
+  month={04/2011},
   timestamp = {2011-04-06 15:00:00 -0700},
 url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/aravkin11SEGrobust/aravkin11SEGrobust.pdf }
-
 }
 
 @CONFERENCE{herrmann11ICIAMconvexcompfwi,
@@ -179,19 +231,24 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/aravk
   title = {FWI with sparse recovery: a convex-composite approach},
   year = {2011},
   organization = {ICIAM 2011},
-  abstract = {Iterative inversion algorithms require repeated simulation of 3D time-dependent
-	acoustic, elastic, or electromagnetic wave fields, extending hundreds
-	of wavelengths and hundreds of periods. Also, seismic data is rich
-	in information at every representable scale. Thus simulation-driven
-	optimization approaches to inversion impose great demands on simulator
-	efficiency and accuracy. While computer hardware advances have been
-	of critical importance in bringing inversion closer to practical
-	application, algorithmic advances in simulator methodology have been
-	equally important. Speakers in this two-part session will address
-	a variety of numerical issues arising in the wave simulation, and
-	in its application to inversion. },
+  abstract = {Iterative inversion algorithms require repeated
+                  simulation of 3D time-dependent acoustic, elastic,
+                  or electromagnetic wave fields, extending hundreds
+                  of wavelengths and hundreds of periods. Also,
+                  seismic data is rich in information at every
+                  representable scale. Thus simulation-driven
+                  optimization approaches to inversion impose great
+                  demands on simulator efficiency and accuracy. While
+                  computer hardware advances have been of critical
+                  importance in bringing inversion closer to practical
+                  application, algorithmic advances in simulator
+                  methodology have been equally important. Speakers in
+                  this two-part session will address a variety of
+                  numerical issues arising in the wave simulation, and
+                  in its application to inversion. },
   date-added = {2011-07-20},
-month={07/2011},
+  month={07/2011},
+  keywords={ICIAM,Full-waveform inversion,Optimization},
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2011/herrmann2011ICIAM.pdf},
   url = {http://slim/Publications/Public/Presentations/2011/herrmann2011ICIAM.pdf}
 }
@@ -203,18 +260,20 @@ month={07/2011},
   year = {2011},
   organization = {Sparse and Low Rank Approximation 2011},
   publisher = {Sparse and Low Rank Approximation 2011},
-  abstract = {Full-waveform inversion relies on large multi-experiment data volumes.
-	While improvements in acquisition and inversion have been extremely
-	successful, the current push for higher quality models reveals fundamental
-	shortcomings handling increasing problem sizes numerically. To address
-	this fundamental issue, we propose a randomized dimensionality-reduction
-	strategy motivated by recent developments in stochastic optimization
-	and compressive sensing. In this formulation conventional Gauss-Newton
-	iterations are replaced by dimensionality-reduced sparse recovery
-	problems with source encodings.},
-
+  abstract = {Full-waveform inversion relies on large multi-experiment
+                  data volumes.  While improvements in acquisition and
+                  inversion have been extremely successful, the
+                  current push for higher quality models reveals
+                  fundamental shortcomings handling increasing problem
+                  sizes numerically. To address this fundamental
+                  issue, we propose a randomized
+                  dimensionality-reduction strategy motivated by
+                  recent developments in stochastic optimization and
+                  compressive sensing. In this formulation
+                  conventional Gauss-Newton iterations are replaced by
+                  dimensionality-reduced sparse recovery problems with
+                  source encodings.},
   presentation = {http://slim/Publications/Public/Presentations/2011/Herrmann2011css.pdf}
-
 }
 
 @CONFERENCE{herrmann11EAGEefmsp,
@@ -223,31 +282,37 @@ month={07/2011},
   year = {2011},
   organization = {EAGE},
   publisher = {EAGE Technical Program Expanded Abstracts},
-  abstract = {Seismic imaging relies on the collection of multi-experimental data
-	volumes in combination with a sophisticated back-end to create high-fidelity
-	inversion results. While significant improve- ments have been made
-	in linearized inversion, the current trend of incessantly pushing
-	for higher quality models in increasingly complicated regions reveals
-	fundamental shortcomings in handling increasing problem sizes numerically.
-	The so-called “curse of dimensionality” is the main culprit because
-	it leads to an exponential growth in the number of sources and the
-	corresponding number of wavefield simulations required by ‘wave-equation’
-	migration. We address this issue by reducing the number of sources
-	by a randomized dimensionality reduction technique that combines
-	recent developments in stochastic optimization and compressive sensing.
-	As a result, we replace the cur- rent formulations of imaging that
-	rely on all data by a sequence of smaller imaging problems that use
-	the output of the previous inversion as input for the next. Empirically,
-	we find speedups of at least one order-of-magnitude when each reduced
-	experiment is considered theoretically as a separate compressive-sensing
-	experiment.},
-  keywords = {EAGE},
+  abstract = {Seismic imaging relies on the collection of
+                  multi-experimental data volumes in combination with
+                  a sophisticated back-end to create high-fidelity
+                  inversion results. While significant improve- ments
+                  have been made in linearized inversion, the current
+                  trend of incessantly pushing for higher quality
+                  models in increasingly complicated regions reveals
+                  fundamental shortcomings in handling increasing
+                  problem sizes numerically.  The so-called “curse of
+                  dimensionality” is the main culprit because it leads
+                  to an exponential growth in the number of sources
+                  and the corresponding number of wavefield
+                  simulations required by ‘wave-equation’
+                  migration. We address this issue by reducing the
+                  number of sources by a randomized dimensionality
+                  reduction technique that combines recent
+                  developments in stochastic optimization and
+                  compressive sensing.  As a result, we replace the
+                  cur- rent formulations of imaging that rely on all
+                  data by a sequence of smaller imaging problems that
+                  use the output of the previous inversion as input
+                  for the next. Empirically, we find speedups of at
+                  least one order-of-magnitude when each reduced
+                  experiment is considered theoretically as a separate
+                  compressive-sensing experiment.},
+  keywords = {EAGE,Imaging},
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/eage/eage11/herrmann2011eage.pdf},
 month= {01/2011},
   timestamp = {2011-01-14},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/herrmann11EAGEefmsp/herrmann11EAGEefmsp.pdf }
 }
-
 
 @CONFERENCE{herrmann11SLIMsummer1,
   author = {Felix J. Herrmann},
@@ -267,34 +332,36 @@ month={08/2011}
 month= {08/2011}
 }
 
-
 @CONFERENCE{Jumah11SEGdrepsi,
   author = {Bander Jumah and Felix J. Herrmann},
   title = {Dimensionality-reduced estimation of primaries by sparse inversion},
   year = {2011},
   organization = {SEG},
   publisher = {SEG Technical Program Expanded Abstracts},
-  abstract = {Data-driven methods—such as the estimation of primaries by sparse
-	inversion—suffer from the ’curse of dimensionality’, which leads
-	to disproportional growth in computational and storage demands when
-	moving to realistic 3-D field data. To re- move this fundamental
-	impediment, we propose a dimensional- ity reduction technique where
-	the ’data matrix’ is approximated adaptively by a randomized low-rank
-	approximation. Com- pared to conventional methods, our approach has
-	the advantage that the cost of the low-rank approximation is reduced
-	signif- icantly, which may lead to considerable reductions in storage
-	and computational costs of the sparse inversion. Application of the
-	proposed formalism to synthetic data shows that significant improvements
-	are achievable at low computational overhead required to compute
-	the low-rank approximations.},
+  abstract = {Data-driven methods—such as the estimation of primaries
+                  by sparse inversion—suffer from the "curse of
+                  dimensionality", which leads to disproportional
+                  growth in computational and storage demands when
+                  moving to realistic 3-D field data. To re- move this
+                  fundamental impediment, we propose a dimensional-
+                  ity reduction technique where the "data matrix" is
+                  approximated adaptively by a randomized low-rank
+                  approximation. Com- pared to conventional methods,
+                  our approach has the advantage that the cost of the
+                  low-rank approximation is reduced significantly,
+                  which may lead to considerable reductions in storage
+                  and computational costs of the sparse
+                  inversion. Application of the proposed formalism to
+                  synthetic data shows that significant improvements
+                  are achievable at low computational overhead
+                  required to compute the low-rank approximations.},
   date-added = {2011-04-06 15:00:00 -0700},
 month= {04/2011},
-  keywords = {SEG},
+  keywords = {SEG,Processing},
 presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/Jumah11SEGdrepsi/Jumah11SEGdrepsi_pres.pdf },
 url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/Jumah11SEGdrepsi/Jumah11SEGdrepsi.pdf }
 
 }
-
 
 @CONFERENCE{li11EAGEfwirr,
   author = {Xiang Li and Aleksandr Y. Aravkin and Tristan van Leeuwen and Felix
@@ -304,31 +371,38 @@ url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/Juma
   year = {2011},
   organization = {EAGE},
   publisher = {EAGE},
-  abstract = {Full-waveform inversion (FWI) is a data fitting procedure that relies
-	on the collection of seis- mic data volumes and sophisticated computing
-	to create high-resolution results. With the advent of FWI, the improvements
-	in acquisition and inversion have been substantial, but these improvements
-	come at a high cost because FWI involves extremely large multi-experiment
-	data volumes. The main obstacle is the ‘curse of dimensionality’
-	exemplified by Nyquist’s sampling criterion, which puts a disproportionate
-	strain on current acquisition and processing systems as the size
-	and desired resolution increases. In this paper, we address the ‘curse
-	of dimensionality’ by randomized dimen- sionality reduction of the
-	FWI problem adapted from the field of CS. We invert for model updates
-	by replacing the Gauss-Newton linearized subproblem for subsampled
-	FWI with a sparsity promoting formulation, and solve this formulation
-	using the SPGl1 algorithm. We speed up the algorithm and avoid overfitting
-	the data by solving for the linearized updates only approximately.
-	Our approach is successful because it reduces the size of seismic
-	data volumes without loss of information. With this reduction, we
-	can compute a Newton-like update with the reduced data volume at
-	the cost of roughly one gradient update for the fully sampled wavefield.},
-  keywords = {EAGE},
+  abstract = {Full-waveform inversion (FWI) is a data fitting
+                  procedure that relies on the collection of seis- mic
+                  data volumes and sophisticated computing to create
+                  high-resolution results. With the advent of FWI, the
+                  improvements in acquisition and inversion have been
+                  substantial, but these improvements come at a high
+                  cost because FWI involves extremely large
+                  multi-experiment data volumes. The main obstacle is
+                  the ‘curse of dimensionality’ exemplified by
+                  Nyquist’s sampling criterion, which puts a
+                  disproportionate strain on current acquisition and
+                  processing systems as the size and desired
+                  resolution increases. In this paper, we address the
+                  ‘curse of dimensionality’ by randomized dimen-
+                  sionality reduction of the FWI problem adapted from
+                  the field of CS. We invert for model updates by
+                  replacing the Gauss-Newton linearized subproblem for
+                  subsampled FWI with a sparsity promoting
+                  formulation, and solve this formulation using the
+                  SPGl1 algorithm. We speed up the algorithm and avoid
+                  overfitting the data by solving for the linearized
+                  updates only approximately.  Our approach is
+                  successful because it reduces the size of seismic
+                  data volumes without loss of information. With this
+                  reduction, we can compute a Newton-like update with
+                  the reduced data volume at the cost of roughly one
+                  gradient update for the fully sampled wavefield.},
+  keywords = {EAGE,Full-waveform inversion},
 month= {01/2011},
 presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/li11EAGEfwirr/li11EAGEfwirr_pres.pdf },
 url={https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/li11EAGEfwirr/li11EAGEfwirr.pdf }
 }
-
 
 @CONFERENCE{li11SBGFmgnsu,
   author = {Xiang Li and Felix J. Herrmann and Tristan van Leeuwen and Aleksandr
@@ -336,29 +410,36 @@ url={https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/li11E
   title = {Modified Gauss-Newton with Sparse Updates},
   year = {2011},
   organization = {SBGF},
-  publisher = {Submitted to SBGF},
-  abstract = {Full-waveform inversion (FWI) is a data fitting procedure that relies
-	on the collection of seismic data volumes and sophisticated computing
-	to create high-resolution models.With the advent of FWI, the improvements
-	in acquisition and inversion have been substantial, but these improvements
-	come at a high cost because FWI involves extremely large multi-experiment
-	data volumes. The main obstacle is the {\textquoteleft}curse of dimensionality{\textquoteright}
-	exemplified by Nyquist{\textquoteright}s sampling criterion, which
-	puts a disproportionate strain on current acquisition and processing
-	systems as the size and desired resolution increases. In this paper,
-	we address the {\textquoteleft}curse of dimensionality{\textquoteright}
-	by using randomized dimensionality reduction of the FWI problem,
-	coupled with a modified Gauss-Newton (GN) method designed to promote
-	curvelet-domain sparsity of model updates. We solve for these updates
-	using the spectral projected gradient method, implemented in the
-	SPGÔøø1 software package. Our approach is successful because it reduces
-	the size of seismic data volumes without loss of information. With
-	this reduction, we can compute Gauss-Newton updates with the reduced
-	data volume at the cost of roughly one gradient update for the fully
-	sampled wavefield},
-  keywords = {SBGF},
+  publisher = {SBGF},
+  abstract = {Full-waveform inversion (FWI) is a data fitting
+                  procedure that relies on the collection of seismic
+                  data volumes and sophisticated computing to create
+                  high-resolution models.With the advent of FWI, the
+                  improvements in acquisition and inversion have been
+                  substantial, but these improvements come at a high
+                  cost because FWI involves extremely large
+                  multi-experiment data volumes. The main obstacle is
+                  the {\textquoteleft}curse of
+                  dimensionality{\textquoteright} exemplified by
+                  Nyquist{\textquoteright}s sampling criterion, which
+                  puts a disproportionate strain on current
+                  acquisition and processing systems as the size and
+                  desired resolution increases. In this paper, we
+                  address the {\textquoteleft}curse of
+                  dimensionality{\textquoteright} by using randomized
+                  dimensionality reduction of the FWI problem, coupled
+                  with a modified Gauss-Newton (GN) method designed to
+                  promote curvelet-domain sparsity of model
+                  updates. We solve for these updates using the
+                  spectral projected gradient method, implemented in
+                  the SPGÔøø1 software package. Our approach is
+                  successful because it reduces the size of seismic
+                  data volumes without loss of information. With this
+                  reduction, we can compute Gauss-Newton updates with
+                  the reduced data volume at the cost of roughly one
+                  gradient update for the fully sampled wavefield},
+  keywords = {SBGF,Full-waveform inversion},
 url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/li11SBGFmgnsu/li11SBGFmgnsu.pdf }
-
 }
 
 @CONFERENCE{lin11EAGEepsic,
@@ -368,27 +449,35 @@ url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/li11
   year = {2011},
   organization = {EAGE},
   publisher = {EAGE},
-  abstract = {We present an uplift in the fidelity and wavefront continuity of results
-	obtained from the Estimation of Primaries by Sparse Inversion (EPSI)
-	program by reconstructing the primary events in a hybrid wavelet-curvelet
-	representation domain. EPSI is a multiple removal technique that
-	belongs to the class of wavefield inversion methods, as an alternative
-	to the traditional adaptive-subtraction process. The main assumption
-	is that the correct primary events should be as sparsely-populated
-	in time as possible. A convex reformulation of the original EPSI
-	algorithm allows its convergence property to be preserved even when
-	the solution wavefield is not formed in the physical domain. Since
-	wavefronts and edge-type singularities are sparsely represented in
-	the curvelet domain, sparse solutions formed in this domain will
-	exhibit vastly improved continuity when compared to those formed
-	in the physical domain, especially for the low-energy events at later
-	arrival times. Further- more, a wavelet-type representation domain
-	will preserve sparsity in the reflected events even if they originate
-	from non-zero-order discontinuities in the subsurface, providing
-	an additional level of robustness. This method does not require any
-	changes in the underlying computational algorithm and does not explicitly
-	impose continuity constraints on each update.},
-  keywords = {EAGE},
+  abstract = {We present an uplift in the fidelity and wavefront
+                  continuity of results obtained from the Estimation
+                  of Primaries by Sparse Inversion (EPSI) program by
+                  reconstructing the primary events in a hybrid
+                  wavelet-curvelet representation domain. EPSI is a
+                  multiple removal technique that belongs to the class
+                  of wavefield inversion methods, as an alternative to
+                  the traditional adaptive-subtraction process. The
+                  main assumption is that the correct primary events
+                  should be as sparsely-populated in time as
+                  possible. A convex reformulation of the original
+                  EPSI algorithm allows its convergence property to be
+                  preserved even when the solution wavefield is not
+                  formed in the physical domain. Since wavefronts and
+                  edge-type singularities are sparsely represented in
+                  the curvelet domain, sparse solutions formed in this
+                  domain will exhibit vastly improved continuity when
+                  compared to those formed in the physical domain,
+                  especially for the low-energy events at later
+                  arrival times. Further- more, a wavelet-type
+                  representation domain will preserve sparsity in the
+                  reflected events even if they originate from
+                  non-zero-order discontinuities in the subsurface,
+                  providing an additional level of robustness. This
+                  method does not require any changes in the
+                  underlying computational algorithm and does not
+                  explicitly impose continuity constraints on each
+                  update.},
+  keywords = {EAGE,Processing},
 month= {01/2011},
 presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/lin11EAGEepsic/lin11EAGEepsic_pres.pdf },
 url={https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/lin11EAGEepsic/lin11EAGEepsic.pdf }
@@ -400,17 +489,35 @@ url={https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/lin11
 	by sparse inversion},
   booktitle = {SEG},
   year = {2011},
-abstract= {The past few years had seen some concentrated interest on a particular wavefield-inversion approach to the popular SRME multiple removal technique called Estimation of Primaries by Sparse Inversion (EPSI). EPSI promises greatly improved tol- erance to noise, missing data, edge effect, and other physi- cal phenomenon generally not described by the SRME relation (van Groenestijn and Verschuur, 2009a,b). It is based on the premise that it is possible to stably invert for both the primary impulse response and the source signature despite beforehand having no (or very limited) explicit knowledge of latter. The key to successful applications of EPSI, as shown in very recent works (Savels et al., 2010), is a robust way to reconstruct very sparse primary impulse response events as part of the inver- sion process. Based on the various successful demonstrations in literature, there is a very strong sense that EPSI will also play an important role in future developments of source sig- nature deconvolution and the general recovering of wavefield spectrum. },
+abstract= {The past few years had seen some concentrated interest on a
+                  particular wavefield-inversion approach to the
+                  popular SRME multiple removal technique called
+                  Estimation of Primaries by Sparse Inversion
+                  (EPSI). EPSI promises greatly improved tol- erance
+                  to noise, missing data, edge effect, and other
+                  physi- cal phenomenon generally not described by the
+                  SRME relation (van Groenestijn and Verschuur,
+                  2009a,b). It is based on the premise that it is
+                  possible to stably invert for both the primary
+                  impulse response and the source signature despite
+                  beforehand having no (or very limited) explicit
+                  knowledge of latter. The key to successful
+                  applications of EPSI, as shown in very recent works
+                  (Savels et al., 2010), is a robust way to
+                  reconstruct very sparse primary impulse response
+                  events as part of the inver- sion process. Based on
+                  the various successful demonstrations in literature,
+                  there is a very strong sense that EPSI will also
+                  play an important role in future developments of
+                  source sig- nature deconvolution and the general
+                  recovering of wavefield spectrum. },
   organization = {Dept. of Earth and Ocean Sciences, University of British Columbia},
   publisher = {Dept. of Earth and Ocean Sciences, University of British Columbia},
-  keywords = {deconvolution, SEG, sparse inversion},
+  keywords = {deconvolution, SEG, sparse inversion,Processing},
 presentation= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/lin11SEGrssde/lin11SEGrssde_pres.pdf },
 url={ https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/lin11SEGrssde/lin11SEGrssde.pdf },
 month= {04/2011}
 }
-
-
-
 
 @CONFERENCE{Mansour11SBGFcspsma,
   author = {Hassan Mansour and Haneet Wason and Tim T.Y. Lin and Felix J. Herrmann},
@@ -418,28 +525,32 @@ month= {04/2011}
   year = {2011},
   organization = {SBGF},
   publisher = {SBGF},
-  abstract = {The high cost of acquiring seismic data in Marine environments compels
-	the adoption of simultaneous- source acquisition - an emerging technology
-	that is stimulating both geophysical research and commercial efforts.
-	In this paper, we discuss the properties of randomized simultaneous
-	acquisition matrices and demonstrate that sparsity-promoting recovery
-	improves the quality of the reconstructed seismic data volumes. Simultaneous
-	Marine acquisition calls for the development of a new set of design
-	principles and post-processing tools. Leveraging established findings
-	from the field of compressed sensing, the recovery from simultaneous
-	sources depends on a sparsifying transform that compresses seismic
-	data, is fast, and reasonably incoherent with the compressive sampling
-	matrix. To achieve this incoherence, we use random time dithering
-	where sequential acquisition with a single airgun is replaced by
-	continuous acquisition with multiple airguns firing at random times
-	and at random locations. We demonstrate our results with simulations
-	of simultaneous Marine acquisition using periodic and randomized
-	time dithering.},
-  keywords = {SBGF},
-
+  abstract = {The high cost of acquiring seismic data in Marine
+                  environments compels the adoption of simultaneous-
+                  source acquisition - an emerging technology that is
+                  stimulating both geophysical research and commercial
+                  efforts.  In this paper, we discuss the properties
+                  of randomized simultaneous acquisition matrices and
+                  demonstrate that sparsity-promoting recovery
+                  improves the quality of the reconstructed seismic
+                  data volumes. Simultaneous Marine acquisition calls
+                  for the development of a new set of design
+                  principles and post-processing tools. Leveraging
+                  established findings from the field of compressed
+                  sensing, the recovery from simultaneous sources
+                  depends on a sparsifying transform that compresses
+                  seismic data, is fast, and reasonably incoherent
+                  with the compressive sampling matrix. To achieve
+                  this incoherence, we use random time dithering where
+                  sequential acquisition with a single airgun is
+                  replaced by continuous acquisition with multiple
+                  airguns firing at random times and at random
+                  locations. We demonstrate our results with
+                  simulations of simultaneous Marine acquisition using
+                  periodic and randomized time dithering.},
+  keywords = {SBGF,Acquisition,Compressive Sensing},
 url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/Mansour11SBGFcspsma/Mansour11SBGFcspsma.pdf  }
 }
-
 
 @CONFERENCE{vanleeuwen11SIAMGEOmawt,
   author = {Tristan van Leeuwen and Wim Mulder},
@@ -447,17 +558,20 @@ url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/Mans
   year = {2011},
   organization = {SIAM GeoSciences 2011},
   publisher = {SIAM GeoSciences 2011},
-  abstract = {We consider the inference of medium velocity from transmitted acoustic
-	waves. Typically, the measurements are done in a narrow frequency
-	band. As a result the sensitivity of the data with respect to velocity
-	perturbations varies dramatically with the scale of the perturbation.
-	{\textquoteleft}Smooth{\textquoteright} perturbations will cause
-	a phase shift, whereas perturbations that vary on the wavelength-scale
-	cause amplitude variations. We investigate how to incorporate this
-	scale dependent behavior in the formulation of the inverse problem.},
+  abstract = {We consider the inference of medium velocity from
+                  transmitted acoustic waves. Typically, the
+                  measurements are done in a narrow frequency band. As
+                  a result the sensitivity of the data with respect to
+                  velocity perturbations varies dramatically with the
+                  scale of the perturbation.
+                  {\textquoteleft}Smooth{\textquoteright}
+                  perturbations will cause a phase shift, whereas
+                  perturbations that vary on the wavelength-scale
+                  cause amplitude variations. We investigate how to
+                  incorporate this scale dependent behavior in the
+                  formulation of the inverse problem.},
   presentation = {http://slim/Publications/Public/Presentations/2011/SIAMGS11_MS61_Leeuwen.pdf}
 }
-
 
 @CONFERENCE{tu11SEGmult,
   author = {Ning Tu and Tim T.Y. Lin and Felix J. Herrmann},
@@ -466,27 +580,32 @@ url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/Mans
   year = {2011},
   organization = {SEG},
   publisher = {SEG},
-  abstract = {Seismic acquisition is confined by limited aperture that leads to
-	finite illumination, which, together with other factors, hin- ders
-	imaging of subsurface objects in complex geological set- tings such
-	as salt structures. Conventional processing, includ- ing surface-related
-	multiple elimination, further reduces the amount of information we
-	can get from seismic data. With the growing consensus that multiples
-	carry valuable informa- tion that is missing from primaries, we are
-	motivated to exploit the extra illumination provided by multiples
-	to image the sub- surface. In earlier research, we proposed such
-	a method by combining primary estimation and sparsity-promoting migra-
-	tion to invert for model perturbations directly from the total up-going
-	wavefield. In this abstract, we focus on a particular case. By exploiting
-	the extra illumination from surface-related multiples, we mitigate
-	the effects caused by migrating from in- complete data with missing
-	sources and missing near-offsets.},
-  keywords = {SEG},
+  abstract = {Seismic acquisition is confined by limited aperture that
+                  leads to finite illumination, which, together with
+                  other factors, hin- ders imaging of subsurface
+                  objects in complex geological set- tings such as
+                  salt structures. Conventional processing, includ-
+                  ing surface-related multiple elimination, further
+                  reduces the amount of information we can get from
+                  seismic data. With the growing consensus that
+                  multiples carry valuable informa- tion that is
+                  missing from primaries, we are motivated to exploit
+                  the extra illumination provided by multiples to
+                  image the sub- surface. In earlier research, we
+                  proposed such a method by combining primary
+                  estimation and sparsity-promoting migra- tion to
+                  invert for model perturbations directly from the
+                  total up-going wavefield. In this abstract, we focus
+                  on a particular case. By exploiting the extra
+                  illumination from surface-related multiples, we
+                  mitigate the effects caused by migrating from in-
+                  complete data with missing sources and missing
+                  near-offsets.},
+  keywords = {SEG,Imaging,Processing},
 month= {04/2011},
 presentation= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/tu11SEGmult/tu11SEGmult_pres.pdf },
 url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/tu11SEGmult/tu11SEGmult.pdf  }
 }
-
 
 @CONFERENCE{tu11EAGEspmsrm,
   author = {Ning Tu and Tim T.Y. Lin and Felix J. Herrmann},
@@ -494,26 +613,30 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/tu11S
   year = {2011},
   organization = {EAGE},
   publisher = {EAGE},
-  abstract = {Multiples, especially the surface-related multiples, form a significant
-	part of the total up-going wave- field. If not properly dealt with,
-	they can lead to false reflectors in the final image. So conventionally
-	practitioners remove them prior to migration. Recently research has
-	revealed that multiples can actually provide extra illumination so
-	different methods are proposed to address the issue that how to use
-	multiples in seismic imaging, but with various kinds of limitations.
-	In this abstract, we combine primary estimation and sparsity-promoting
-	migration into one convex-optimization process to include information
-	from multiples. Synthetic examples show that multiples do make active
-	contributions to seismic migration. Also by this combination, we
-	can benefit from better recoveries of the Green’s function by using
-	sparsity-promoting algorithms since reflectivity is sparser than
-	the Green’s function.},
-  keywords = {EAGE},
+  abstract = {Multiples, especially the surface-related multiples,
+                  form a significant part of the total up-going wave-
+                  field. If not properly dealt with, they can lead to
+                  false reflectors in the final image. So
+                  conventionally practitioners remove them prior to
+                  migration. Recently research has revealed that
+                  multiples can actually provide extra illumination so
+                  different methods are proposed to address the issue
+                  that how to use multiples in seismic imaging, but
+                  with various kinds of limitations.  In this
+                  abstract, we combine primary estimation and
+                  sparsity-promoting migration into one
+                  convex-optimization process to include information
+                  from multiples. Synthetic examples show that
+                  multiples do make active contributions to seismic
+                  migration. Also by this combination, we can benefit
+                  from better recoveries of the Green’s function by
+                  using sparsity-promoting algorithms since
+                  reflectivity is sparser than the Green’s function.},
+  keywords = {EAGE,Imaging,Processing},
 month= {01/2011},
 presentation= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/tu11EAGEspmsrm/tu11EAGEspmsrm_pres.pdf },
 url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/tu11EAGEspmsrm/tu11EAGEspmsrm.pdf }
 }
-
 
 @CONFERENCE{vanleeuwen11AMPhsdmwi,
   author = {Tristan van Leeuwen and Mark Schmidt and Michael P. Friedlander and
@@ -522,26 +645,28 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/tu11
 	at AMP Medical and Seismic Imaging, 2011, Vancouver BC.},
   year = {2011},
   organization = {WAVES 2011},
-  abstract = {A lot of seismic and medical imaging problems can be written as a
-	least-squares data- fitting problem. In particular, we consider the
-	case of multi-experiment data, where the data consists of a large
-	number of ‘independent’ measurements. Solving the inverse prob- lem
-	then involves repeatedly forward modeling the data for each of these
-	experiments. In case the number of experiments is large and the modeling
-	kernel expensive to apply, such an approach may be prohibitively
-	expensive. We review techniques from stochastic opti- mization which
-	aim at dramatically reducing the number of experiments that need
-	to be modeled at each iteration. This reduction is typically achieved
-	by randomly subsampling the data. Special care needs to be taken
-	in the optimization to deal with the stochasticity that is introduced
-	in this way. },
+  abstract = {A lot of seismic and medical imaging problems can be
+                  written as a least-squares data- fitting problem. In
+                  particular, we consider the case of multi-experiment
+                  data, where the data consists of a large number of
+                  ‘independent’ measurements. Solving the inverse
+                  prob- lem then involves repeatedly forward modeling
+                  the data for each of these experiments. In case the
+                  number of experiments is large and the modeling
+                  kernel expensive to apply, such an approach may be
+                  prohibitively expensive. We review techniques from
+                  stochastic opti- mization which aim at dramatically
+                  reducing the number of experiments that need to be
+                  modeled at each iteration. This reduction is
+                  typically achieved by randomly subsampling the
+                  data. Special care needs to be taken in the
+                  optimization to deal with the stochasticity that is
+                  introduced in this way. },
   date-added = {2011-07-15},
 month={07/2011},
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2011/AMPleeuwen2011b.pdf},
   url = {http://slim/Publications/Public/Presentations/2011/AMPleeuwen2011b.pdf}
 }
-
-
 
 @CONFERENCE{vanleeuwen11EAGEhsdomwi,
   author = {Tristan van Leeuwen and Felix J. Herrmann and Mark Schmidt and Michael
@@ -551,32 +676,42 @@ month={07/2011},
   year = {2011},
   organization = {EAGE},
   publisher = {EAGE Technical Program Expanded Abstracts},
-  abstract = {Present-day high quality 3D acquisition can give us lower frequencies
-	and longer offsets with which to invert. However, the computational
-	costs involved in handling this data explosion are tremendous. Therefore,
-	recent developments in full-waveform inversion have been geared towards
-	reducing the computational costs involved. A key aspect of several
-	approaches that have been proposed is a dramatic reduction in the
-	number of sources used in each iteration. A reduction in the number
-	of sources directly translates to less PDE-solves and hence a lower
-	computational cost. Re- cent attention has been drawn towards reducing
-	the sources by randomly combining the sources in to a few supershots,
-	but other strategies are also possible. In all cases, the full data
-	misfit, which involves all the sequential sources, is replaced by
-	a reduced misfit that is much cheaper to evaluate because it involves
-	only a small number of sources (batchsize). The batchsize controls
-	the accuracy with which the reduced misfit approximates the full
-	misfit. The optimization of such an inaccurate, or noisy, misfit
-	is the topic of stochastic optimization. In this paper, we propose
-	an optimization strategy that borrows ideas from the field of stochastic
-	optimization. The main idea is that in the early stage of the optimization,
-	far from the true model, we do not need a very accurate misfit. The
-	strategy consists of gradually increasing the batchsize as the iterations
-	proceed. We test the proposed strategy on a synthetic dataset. We
-	achieve a very reasonable inversion result at the cost of roughly
-	13 evaluations of the full misfit. We observe a speed-up of roughly
-	a factor 20.},
-  keywords = {EAGE},
+  abstract = {Present-day high quality 3D acquisition can give us
+                  lower frequencies and longer offsets with which to
+                  invert. However, the computational costs involved in
+                  handling this data explosion are
+                  tremendous. Therefore, recent developments in
+                  full-waveform inversion have been geared towards
+                  reducing the computational costs involved. A key
+                  aspect of several approaches that have been proposed
+                  is a dramatic reduction in the number of sources
+                  used in each iteration. A reduction in the number of
+                  sources directly translates to less PDE-solves and
+                  hence a lower computational cost. Re- cent attention
+                  has been drawn towards reducing the sources by
+                  randomly combining the sources in to a few
+                  supershots, but other strategies are also
+                  possible. In all cases, the full data misfit, which
+                  involves all the sequential sources, is replaced by
+                  a reduced misfit that is much cheaper to evaluate
+                  because it involves only a small number of sources
+                  (batchsize). The batchsize controls the accuracy
+                  with which the reduced misfit approximates the full
+                  misfit. The optimization of such an inaccurate, or
+                  noisy, misfit is the topic of stochastic
+                  optimization. In this paper, we propose an
+                  optimization strategy that borrows ideas from the
+                  field of stochastic optimization. The main idea is
+                  that in the early stage of the optimization, far
+                  from the true model, we do not need a very accurate
+                  misfit. The strategy consists of gradually
+                  increasing the batchsize as the iterations
+                  proceed. We test the proposed strategy on a
+                  synthetic dataset. We achieve a very reasonable
+                  inversion result at the cost of roughly 13
+                  evaluations of the full misfit. We observe a
+                  speed-up of roughly a factor 20.},
+  keywords = {EAGE,Full-waveform inversion,Optimization},
 presentation= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/vanleeuwen11EAGEhsdomwi/vanleeuwen11EAGEhsdomwi_pres.pdf },
 month= {01/2011},
 url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/vanleeuwen11EAGEhsdomwi/vanleeuwen11EAGEhsdomwi.pdf}
@@ -587,27 +722,34 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/vanl
   title = {Probing the extended image volume for seismic velocity inversion},
   year = {2011},
   organization = {Waves 2011},
-  abstract = {In seismic velocity inversion one aims to reconstruct a kinematically
-	correct subsurface velocity model that can be used as input for further
-	processing and inversion of the data. An important tool in velocity
-	inversion is the prestack image volume. This image volume can be
-	defined as a cross- correlation of the source and receivers wavefields
-	for non-zero space and time lags. If the background velocity is kinematically
-	acceptable, this image volume will have its main contributions at
-	zero lag, even for complex models. Thus, it is an ideal tool for
-	wave-equation migration velocity analysis in the presence of strong
-	lateral heterogeneity. In particular, it allows us to pose migration
-	velocity analysis as a PDE- constrained optimization problem, where
-	the goal is to minimize the energy in the image volume at non-zero
-	lag subject to fitting the data approximately. However, it is computationally
-	infeasible to explicitly form the whole image volume. In this paper,
-	we discuss several ways to reduce the computational costs involved
-	in computing the image volume and evaluating the focusing criterion.
-	We reduce the costs for calculating the data by randomized source
-	synthesis. We also present an efficient way to subsample the image
-	volume. Finally, we propose an alternative optimization criterion
-	and suggest a multiscale inversion strategy for wave-equation MVA.
-	},
+  abstract = {In seismic velocity inversion one aims to reconstruct a
+                  kinematically correct subsurface velocity model that
+                  can be used as input for further processing and
+                  inversion of the data. An important tool in velocity
+                  inversion is the prestack image volume. This image
+                  volume can be defined as a cross- correlation of the
+                  source and receivers wavefields for non-zero space
+                  and time lags. If the background velocity is
+                  kinematically acceptable, this image volume will
+                  have its main contributions at zero lag, even for
+                  complex models. Thus, it is an ideal tool for
+                  wave-equation migration velocity analysis in the
+                  presence of strong lateral heterogeneity. In
+                  particular, it allows us to pose migration velocity
+                  analysis as a PDE- constrained optimization problem,
+                  where the goal is to minimize the energy in the
+                  image volume at non-zero lag subject to fitting the
+                  data approximately. However, it is computationally
+                  infeasible to explicitly form the whole image
+                  volume. In this paper, we discuss several ways to
+                  reduce the computational costs involved in computing
+                  the image volume and evaluating the focusing
+                  criterion.  We reduce the costs for calculating the
+                  data by randomized source synthesis. We also present
+                  an efficient way to subsample the image
+                  volume. Finally, we propose an alternative
+                  optimization criterion and suggest a multiscale
+                  inversion strategy for wave-equation MVA.  },
   date-added = {2011-07-29},
 month={07/2011},
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2011/waves11leeuwen.pdf},
@@ -619,27 +761,33 @@ month={07/2011},
   year = {2011},
   organization = {SEG},
   publisher = {SEG},
-  abstract = {The prestack image volume can be defined as a cross- correlation of
-	the source and receivers wavefields for non-zero space and time lags.
-	If the background velocity is kinemati- cally acceptable, this image
-	volume will have its main contri- butions at zero lag, even for complex
-	models. Thus, it is an ideal tool for wave-equation migration velocity
-	analysis in the presence of strong lateral heterogeneity. In particular,
-	it allows us to pose migration velocity analysis as a PDE-constrained
-	optimization problem, where the goal is to minimize the en- ergy
-	in the image volume at non-zero lag subject to fitting the data approximately.
-	However, it is computationally infeasi- ble to explicitly form the
-	whole image volume. In this paper, we discuss several ways to reduce
-	the computational costs in- volved in computing the image volume
-	and evaluating the fo- cusing criterion. We reduce the costs for
-	calculating the data by randomized source synthesis. We also present
-	an efficient way to subsample the image volume. Finally, we propose
-	an alternative optimization criterion and suggest a multiscale in-
-	version strategy for wave-equation MVA.},
-  keywords = {SEG},
+  abstract = {The prestack image volume can be defined as a cross-
+                  correlation of the source and receivers wavefields
+                  for non-zero space and time lags.  If the background
+                  velocity is kinemati- cally acceptable, this image
+                  volume will have its main contri- butions at zero
+                  lag, even for complex models. Thus, it is an ideal
+                  tool for wave-equation migration velocity analysis
+                  in the presence of strong lateral heterogeneity. In
+                  particular, it allows us to pose migration velocity
+                  analysis as a PDE-constrained optimization problem,
+                  where the goal is to minimize the en- ergy in the
+                  image volume at non-zero lag subject to fitting the
+                  data approximately.  However, it is computationally
+                  infeasi- ble to explicitly form the whole image
+                  volume. In this paper, we discuss several ways to
+                  reduce the computational costs in- volved in
+                  computing the image volume and evaluating the fo-
+                  cusing criterion. We reduce the costs for
+                  calculating the data by randomized source
+                  synthesis. We also present an efficient way to
+                  subsample the image volume. Finally, we propose an
+                  alternative optimization criterion and suggest a
+                  multiscale in- version strategy for wave-equation
+                  MVA.},
+  keywords = {SEG,Imaging},
 month={04/2011},
 url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/vanleeuwen11SEGext/vanleeuwen11SEGext.pdf }
-
 }
 
 @CONFERENCE{vanleeuwen11ICIAMcbmcwe,
@@ -648,25 +796,30 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/vanle
 	tomography.Presented at ICIAM 2011, Vancouver BC.},
   year = {2011},
   organization = {ICIAM 2011},
-  abstract = {The inference of subsurface medium parameters from seismic data can
-	be posed as a PDE-constrained data-fitting procedure. This approach
-	is successful in reconstructing medium perturbations that are in
-	the order of the wavelength. In practice, the data lack low frequency
-	content and this means that one needs a good initial guess of the
-	slowly varying component of the medium. For a wrong starting model
-	an iterative reconstruction procedure is likely to end up in a local
-	minimum. We propose to use a different measure of the misfit that
-	makes the optimization problem well-posed in terms of the slowly
-	varying velocity structures. This procedure can be seen as a generalization
-	of ray-based traveltime tomography. We discuss the theoretical underpinnings
-	of the method and give some numerical examples. },
+  abstract = {The inference of subsurface medium parameters from
+                  seismic data can be posed as a PDE-constrained
+                  data-fitting procedure. This approach is successful
+                  in reconstructing medium perturbations that are in
+                  the order of the wavelength. In practice, the data
+                  lack low frequency content and this means that one
+                  needs a good initial guess of the slowly varying
+                  component of the medium. For a wrong starting model
+                  an iterative reconstruction procedure is likely to
+                  end up in a local minimum. We propose to use a
+                  different measure of the misfit that makes the
+                  optimization problem well-posed in terms of the
+                  slowly varying velocity structures. This procedure
+                  can be seen as a generalization of ray-based
+                  traveltime tomography. We discuss the theoretical
+                  underpinnings of the method and give some numerical
+                  examples. },
   date-added = {2011-07-19},
 month={07/2011},
+keywords = {ICIAM,Imaging},
   file = {:http\://slim/Publications/Public/Presentations/2011/ICIAM11leeuwen.pdf:PDF},
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2011/ICIAM11leeuwen.pdf},
   url = {http://slim/Publications/Public/Presentations/2011/ICIAM11leeuwen.pdf}
 }
-
 
 @CONFERENCE{wason11SEGsprsd,
   author = {Haneet Wason and Felix J. Herrmann and Tim T.Y. Lin},
@@ -675,30 +828,39 @@ month={07/2011},
   year = {2011},
   organization = {SEG},
   publisher = {SEG},
-  abstract = {Seismic data acquisition forms one of the main bottlenecks in seismic
-	imaging and inversion. The high cost of acquisition work and collection
-	of massive data volumes compel the adoption of simultaneous-source
-	seismic data acquisition - an emerging technology that is developing
-	rapidly, stimulating both geophysical research and commercial efforts.
-	Aimed at improving the performance of marine- and land-acquisition
-	crews, simultaneous acquisition calls for development of a new set
-	of design principles and post-processing tools. Leveraging developments
-	from the field of compressive sensing the focus here is on simultaneous-acquisition
-	design and sequential-source data recovery. Apart from proper compressive
-	sensing sampling schemes, the recovery from simultaneous simulations
-	depends on a sparsifying transform that compresses seismic data,
-	is fast, and reasonably incoherent with the compressive-sampling
-	matrix. Using the curvelet transform, in which seismic data can be
-	represented parsimoniously, the recovery of the sequential-source
-	data volumes is achieved using the sparsity-promoting program {\textemdash}
-	SPGL1, a solver based on projected spectral gradients. The main outcome
-	of this approach is a new technology where acquisition related costs
-	are no longer determined by the stringent Nyquist sampling criteria.},
-  keywords = {SEG},
+  abstract = {Seismic data acquisition forms one of the main
+                  bottlenecks in seismic imaging and inversion. The
+                  high cost of acquisition work and collection of
+                  massive data volumes compel the adoption of
+                  simultaneous-source seismic data acquisition - an
+                  emerging technology that is developing rapidly,
+                  stimulating both geophysical research and commercial
+                  efforts.  Aimed at improving the performance of
+                  marine- and land-acquisition crews, simultaneous
+                  acquisition calls for development of a new set of
+                  design principles and post-processing
+                  tools. Leveraging developments from the field of
+                  compressive sensing the focus here is on
+                  simultaneous-acquisition design and
+                  sequential-source data recovery. Apart from proper
+                  compressive sensing sampling schemes, the recovery
+                  from simultaneous simulations depends on a
+                  sparsifying transform that compresses seismic data,
+                  is fast, and reasonably incoherent with the
+                  compressive-sampling matrix. Using the curvelet
+                  transform, in which seismic data can be represented
+                  parsimoniously, the recovery of the
+                  sequential-source data volumes is achieved using the
+                  sparsity-promoting program {\textemdash} SPGL1, a
+                  solver based on projected spectral gradients. The
+                  main outcome of this approach is a new technology
+                  where acquisition related costs are no longer
+                  determined by the stringent Nyquist sampling
+                  criteria.},
+  keywords = {SEG,Acquisition,Compressive Sensing},
 month= {04/2011},
 presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/wason11SEGsprsd/wason11SEGsprsd_pres.pdf },
 url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2011/wason11SEGsprsd/wason11SEGsprsd.pdf }
-
 }
 %-------------------------------------------2010------------------------------------------
 @conference{herrmann10UPerc,
@@ -915,39 +1077,48 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2010/her
   presentation = {http://slim.eos.ubc.ca/Publications/Public/Presentations/2010/herrmann2010iris.pdf}
 }
 
-
-
 @CONFERENCE{johnson10EAGEeop,
   author = {James Johnson and Tim T.Y. Lin and Felix J. Herrmann},
   title = {Estimation of primaries via sparse inversion with reciprocity},
   year = {2010},
   organization = {EAGE},
   publisher = {EAGE},
-  abstract = {Accurate removal of surface related multiples is a key step in seismic
-	data processing. The industry standard for removing multiples is
-	SRME, which involves convolving the data with itself to predict the
-	multiples, followed by an adaptive subtraction procedure to recover
-	the primaries (Verschuur and Berkhout, 1997). Other methods involve
-	multidimensional division of the up-going and down-going wavefields
-	(Amundsen, 2001). However, this approach may suffer from stability
-	problems. With the introduction of the {\textquoteleft}{\textquoteleft}estimation
-	of primaries by sparse inversion{\textquoteright}{\textquoteright}(EPSI),
-	van Groenestijn and Verschuur (2009) recentely reformulated SRME
-	to jointly estimate the surface-free impulse response and the source
-	signature directly from the data. The advantage of EPSI is that it
-	recovers the primary response directly, and does not require a second
-	processing step for the subtraction of estimated multiples from the
-	original data. However, because it estimates both the primary impulse
-	response and source signature from the data EPSI must be regularized.
-	Motivated by recent successful application of the curvelet transform
-	in seismic data processing (Herrmann et al., 2007), we formulate
-	EPSI as a bi-convex optimization problem that seeks sparsity on the
-	surface-free Green{\textquoteright}s function and Fourier-domain
-	smoothness on the source wavelet. Our main contribution compared
-	to previous work (Lin and Herrmann, 2009), and the contribution of
-	that author to the proceedings of this meeting(Lin and Herrmann,
-	2010), is that we employ the physical principle of as source-receiver
-	reciprocity to improve the inversion.},
+  abstract = {Accurate removal of surface related multiples is a key
+                  step in seismic data processing. The industry
+                  standard for removing multiples is SRME, which
+                  involves convolving the data with itself to predict
+                  the multiples, followed by an adaptive subtraction
+                  procedure to recover the primaries (Verschuur and
+                  Berkhout, 1997). Other methods involve
+                  multidimensional division of the up-going and
+                  down-going wavefields (Amundsen, 2001). However,
+                  this approach may suffer from stability
+                  problems. With the introduction of the
+                  {\textquoteleft}{\textquoteleft}estimation of
+                  primaries by sparse
+                  inversion{\textquoteright}{\textquoteright}(EPSI),
+                  van Groenestijn and Verschuur (2009) recentely
+                  reformulated SRME to jointly estimate the
+                  surface-free impulse response and the source
+                  signature directly from the data. The advantage of
+                  EPSI is that it recovers the primary response
+                  directly, and does not require a second processing
+                  step for the subtraction of estimated multiples from
+                  the original data. However, because it estimates
+                  both the primary impulse response and source
+                  signature from the data EPSI must be regularized.
+                  Motivated by recent successful application of the
+                  curvelet transform in seismic data processing
+                  (Herrmann et al., 2007), we formulate EPSI as a
+                  bi-convex optimization problem that seeks sparsity
+                  on the surface-free Green{\textquoteright}s function
+                  and Fourier-domain smoothness on the source
+                  wavelet. Our main contribution compared to previous
+                  work (Lin and Herrmann, 2009), and the contribution
+                  of that author to the proceedings of this
+                  meeting(Lin and Herrmann, 2010), is that we employ
+                  the physical principle of as source-receiver
+                  reciprocity to improve the inversion.},
   keywords = {EAGE},
   url = { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2010/johnson10EAGEeop/johnson10EAGEeop.pdf }
 }
@@ -958,33 +1129,43 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2010/her
   year = {2010},
   organization = {SEG},
   publisher = {SEG},
-  abstract = {Full-waveform inversion relies on the collection of large multi-experiment
-	data volumes in combination with a sophisticated back-end to create
-	high-fidelity inversion results. While improvements in acquisition
-	and inversion have been extremely successful, the current trend of
-	incessantly pushing for higher quality models in increasingly complicated
-	regions of the Earth reveals fundamental shortcomings in our ability
-	to handle increasing problem size numerically. Two main culprits
-	can be identified. First, there is the so-called {\textquoteleft}{\textquoteleft}curse
-	of dimensionality{\textquoteright}{\textquoteright} exemplified by
-	Nyquist{\textquoteright}s sampling criterion, which puts disproportionate
-	strain on current acquisition and processing systems as the size
-	and desired resolution increases. Secondly, there is the recent {\textquoteleft}{\textquoteleft}departure
-	from Moore{\textquoteright}s law{\textquoteright}{\textquoteright}
-	that forces us to lower our expectations to compute ourselves out
-	of this. In this paper, we address this situation by randomized dimensionality
-	reduction, which we adapt from the field of compressive sensing.
-	In this approach, we combine deliberate randomized subsampling with
-	structure-exploiting transform-domain sparsity promotion. Our approach
-	is successful because it reduces the size of seismic data volumes
-	without loss of information. With this reduction, we compute Newton-like
-	updates at the cost of roughly one gradient update for the fully-sampled
-	wavefield.},
-  keywords = {SEG},
+  abstract = {Full-waveform inversion relies on the collection of
+                  large multi-experiment data volumes in combination
+                  with a sophisticated back-end to create
+                  high-fidelity inversion results. While improvements
+                  in acquisition and inversion have been extremely
+                  successful, the current trend of incessantly pushing
+                  for higher quality models in increasingly
+                  complicated regions of the Earth reveals fundamental
+                  shortcomings in our ability to handle increasing
+                  problem size numerically. Two main culprits can be
+                  identified. First, there is the so-called
+                  {\textquoteleft}{\textquoteleft}curse of
+                  dimensionality{\textquoteright}{\textquoteright}
+                  exemplified by Nyquist{\textquoteright}s sampling
+                  criterion, which puts disproportionate strain on
+                  current acquisition and processing systems as the
+                  size and desired resolution increases. Secondly,
+                  there is the recent
+                  {\textquoteleft}{\textquoteleft}departure from
+                  Moore{\textquoteright}s
+                  law{\textquoteright}{\textquoteright} that forces us
+                  to lower our expectations to compute ourselves out
+                  of this. In this paper, we address this situation by
+                  randomized dimensionality reduction, which we adapt
+                  from the field of compressive sensing.  In this
+                  approach, we combine deliberate randomized
+                  subsampling with structure-exploiting
+                  transform-domain sparsity promotion. Our approach is
+                  successful because it reduces the size of seismic
+                  data volumes without loss of information. With this
+                  reduction, we compute Newton-like updates at the
+                  cost of roughly one gradient update for the
+                  fully-sampled wavefield.},
+  keywords = {SEG,Full-waveform inversion},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/li10SEGfwi/li10SEGfwi_pres.pdf },
 url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/li10SEGfwi/li10SEGfwi.pdf }
 }
-
 
 @CONFERENCE{lin10EAGEseo,
   author = {Tim T.Y. Lin and Felix J. Herrmann},
@@ -992,35 +1173,45 @@ url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/li10
   year = {2010},
   organization = {EAGE},
   publisher = {EAGE},
-  abstract = {Recent works on surface-related multiple removal include a direct
-	estimation method proposed by van Groenestijn and Verschuur (2009),
-	where under a sparsity assumption the primary impulse response is
-	determined directly from a data-driven wavefield inversion process
-	called Estimation of Primaries by Sparse Inversion (EPSI). The authors
-	have shown that this approach is superior to traditional estimation
-	subtraction processes such as SRME on shallow bottom marine data,
-	where by expanding the model to simultaneously invert for the near-offset
-	traces, which are not directly available in most situation but are
-	observable in the data multiples, a large improvement over Radon
-	interpolation is demonstrated. One of the major roadblocks to the
-	widespread adoption of EPSI is that one must have precise knowledge
-	of a time-window that contains multiple-free primaries during each
-	update. There is some anecdotal evidence that the inversion result
-	is unstable under errors in the time-window length, a behavior that
-	runs contrary to the strengths of EPSI and diminishes its effectiveness
-	for shallow-bottom marine data where multiples are closely spaced.
-	Moreover, due to the nuances involved in regularizing the model impulse
-	response in the inverse problem, the EPSI approach has an additional
-	number of inversion parameters to choose and often also does not
-	often lead to a stable solution under perturbations to these parameters.
-	We show that the specific sparsity constraint on the EPSI updates
-	lead to an inherently intractable problem, and that the time-window
-	and other inversion variables arise as additional regularizations
-	on the unknown towards a meaningful solution. We furthermore suggest
-	a way to remove almost all of these parameters via a L0 to L1 convexification,
-	which stabilizes the inversion while preserving the crucial sparsity
-	assumption in the primary impulse response model.},
-  keywords = {EAGE},
+  abstract = {Recent works on surface-related multiple removal include
+                  a direct estimation method proposed by van
+                  Groenestijn and Verschuur (2009), where under a
+                  sparsity assumption the primary impulse response is
+                  determined directly from a data-driven wavefield
+                  inversion process called Estimation of Primaries by
+                  Sparse Inversion (EPSI). The authors have shown that
+                  this approach is superior to traditional estimation
+                  subtraction processes such as SRME on shallow bottom
+                  marine data, where by expanding the model to
+                  simultaneously invert for the near-offset traces,
+                  which are not directly available in most situation
+                  but are observable in the data multiples, a large
+                  improvement over Radon interpolation is
+                  demonstrated. One of the major roadblocks to the
+                  widespread adoption of EPSI is that one must have
+                  precise knowledge of a time-window that contains
+                  multiple-free primaries during each update. There is
+                  some anecdotal evidence that the inversion result is
+                  unstable under errors in the time-window length, a
+                  behavior that runs contrary to the strengths of EPSI
+                  and diminishes its effectiveness for shallow-bottom
+                  marine data where multiples are closely spaced.
+                  Moreover, due to the nuances involved in
+                  regularizing the model impulse response in the
+                  inverse problem, the EPSI approach has an additional
+                  number of inversion parameters to choose and often
+                  also does not often lead to a stable solution under
+                  perturbations to these parameters.  We show that the
+                  specific sparsity constraint on the EPSI updates
+                  lead to an inherently intractable problem, and that
+                  the time-window and other inversion variables arise
+                  as additional regularizations on the unknown towards
+                  a meaningful solution. We furthermore suggest a way
+                  to remove almost all of these parameters via a L0 to
+                  L1 convexification, which stabilizes the inversion
+                  while preserving the crucial sparsity assumption in
+                  the primary impulse response model.},
+  keywords = {EAGE,Processing},
 presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2010/lin10EAGEseo/lin10EAGEseo_pres.pdf },  
 url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2010/lin10EAGEseo/lin10EAGEseo.pdf }
 }
@@ -1031,20 +1222,26 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2010/lin
   year = {2010},
   organization = {SEG},
   publisher = {SEG},
-  abstract = {Seismic imaging typically begins with the removal of multiple energy
-	in the data, out of fear that it may introduce erroneous structure.
-	However, seismic multiples have effectively seen more of the earth{\textquoteright}s
-	structure, and if treated correctly can potential supply more information
-	to a seismic image compared to primaries. Past approaches to accomplish
-	this leave ample room for improvement; they either require extensive
-	modification to standard migration techniques, rely too much on prior
-	information, require extensive pre-processing, or resort to full-waveform
-	inversion. We take some valuable lessons from these efforts and present
-	a new approach balanced in terms of ease of implementation, robustness,
-	efficiency and well-posedness, involving a sparsity-promoting inversion
-	procedure using standard Born migration and a data-driven multiple
-	modeling approach based on the focal transform.},
-  keywords = {SEG},
+  abstract = {Seismic imaging typically begins with the removal of
+                  multiple energy in the data, out of fear that it may
+                  introduce erroneous structure.  However, seismic
+                  multiples have effectively seen more of the
+                  earth{\textquoteright}s structure, and if treated
+                  correctly can potential supply more information to a
+                  seismic image compared to primaries. Past approaches
+                  to accomplish this leave ample room for improvement;
+                  they either require extensive modification to
+                  standard migration techniques, rely too much on
+                  prior information, require extensive pre-processing,
+                  or resort to full-waveform inversion. We take some
+                  valuable lessons from these efforts and present a
+                  new approach balanced in terms of ease of
+                  implementation, robustness, efficiency and
+                  well-posedness, involving a sparsity-promoting
+                  inversion procedure using standard Born migration
+                  and a data-driven multiple modeling approach based
+                  on the focal transform.},
+  keywords = {SEG,Processing},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/lin10SEGspm/lin10SEGspm_pres.pdf },
 url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/lin10SEGspm/lin10SEGspm.pdf }
 }
@@ -1055,23 +1252,32 @@ url= { https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/lin1
   year = {2010},
   organization = {SEG},
   publisher = {SEG},
-  abstract = {Full-waveform inversion relies on the collection of large multi-experiment
-	data volumes in combination with a sophisticated back-end to create
-	high-fidelity inversion results. While improvements in acquisition
-	and inversion have been extremely successful, the current trend of
-	incessantly pushing for higher quality models in increasingly complicated
-	regions of the Earth reveals fundamental shortcomings in our ability
-	to handle increasing problem sizes numerically. Two main culprits
-	can be identified. First, there is the so-called {\textquoteleft}{\textquoteleft}curse
-	of dimensionality{\textquoteright}{\textquoteright} exemplified by
-	Nyquist{\textquoteright}s sampling criterion, which puts disproportionate
-	strain on current acquisition and processing systems as the size
-	and desired resolution increases. Secondly, there is the recent {\textquoteleft}{\textquoteleft}departure
-	from Moore{\textquoteright}s law{\textquoteright}{\textquoteright}
-	that forces us to develop algorithms that are amenable to parallelization.
-	In this paper, we discuss different strategies that address these
-	issues via randomized dimensionality reduction.},
-  keywords = {SEG},
+  abstract = {Full-waveform inversion relies on the collection of
+                  large multi-experiment data volumes in combination
+                  with a sophisticated back-end to create
+                  high-fidelity inversion results. While improvements
+                  in acquisition and inversion have been extremely
+                  successful, the current trend of incessantly pushing
+                  for higher quality models in increasingly
+                  complicated regions of the Earth reveals fundamental
+                  shortcomings in our ability to handle increasing
+                  problem sizes numerically. Two main culprits can be
+                  identified. First, there is the so-called
+                  {\textquoteleft}{\textquoteleft}curse of
+                  dimensionality{\textquoteright}{\textquoteright}
+                  exemplified by Nyquist{\textquoteright}s sampling
+                  criterion, which puts disproportionate strain on
+                  current acquisition and processing systems as the
+                  size and desired resolution increases. Secondly,
+                  there is the recent
+                  {\textquoteleft}{\textquoteleft}departure from
+                  Moore{\textquoteright}s
+                  law{\textquoteright}{\textquoteright} that forces us
+                  to develop algorithms that are amenable to
+                  parallelization.  In this paper, we discuss
+                  different strategies that address these issues via
+                  randomized dimensionality reduction.},
+  keywords = {SEG,Full-waveform inversion,Optimization},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/moghaddam10SEGrfw/moghaddam10SEGrfw_pres.pdf },
 url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/moghaddam10SEGrfw/moghaddam10SEGrfw.pdf  }
 }

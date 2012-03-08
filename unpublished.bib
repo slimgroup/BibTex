@@ -1,5 +1,48 @@
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
+@unpublished{mansour2012SSPwspgl1,
+author = {Hassan Mansour},
+year = {2012},
+optmonth = {03/2012},
+title = {Beyond ?1 norm minimization for sparse signal recovery},
+abstract = {Sparse signal recovery has been dominated by the basis 
+pursuit denoise (BPDN) problem formulation for over a decade. In this 
+paper, we propose an algorithm that outperforms BPDN in finding 
+sparse solutions to underdetermined linear systems of equations at no 
+additional computational cost. Our algorithm, called WSPGL1, is a 
+modification of the spectral projected gradient for ?1 minimization 
+(SPGL1) algorithm in which the sequence of LASSO subproblems are 
+replaced by a sequence of weighted LASSO subproblems with constant 
+weights applied to a support estimate. The support estimate is derived 
+from the data and is updated at every iteration. The algorithm also 
+modifies the Pareto curve at every iteration to reflect the new weighted 
+?1 minimization problem that is being solved. We demonstrate through 
+extensive simulations that the sparse recovery performance of our 
+algorithm is superior to that of ?1 minimization and approaches the 
+recovery performance of iterative re-weighted ?1 (IRWL1) minimization 
+of Cand{\`e}s, Wakin, and Boyd. Moreover, our algorithm has the 
+computational cost of a single BPDN problem.},
+keywords = {Sparse recovery, compressed sensing, iterative algorithms, weighted ?1 minimization, partial support recovery},
+url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SSP/2012/mansour2012SSPwspgl1/mansour2012SSPwspgl1.pdf}
+}
+
+@unpublished{herrmann2012SSPamp,
+author = {Felix J. Herrmann},
+year = {2012},
+optmonth = {03/2012},
+title = {Approximate message passing meets exploration seismology},
+abstract = {Data collection, data processing, and imaging in exploration 
+seismology increasingly hinge on large-scale sparsity promot- ing solvers 
+to remove artifacts caused by efforts to reduce costs. We show how the 
+inclusion of a �message term� in the calculation of the residuals improves 
+the convergence of these iterative solvers by breaking correlations that 
+develop between the model iterate and the linear system that needs to 
+be inverted. We compare this message-passing scheme to state-of-the-art 
+solvers for problems in missing-trace interpo- lation and in 
+dimensionality-reduced imaging with phase en- coding.},
+keywords = {Exploration seismology, compressive sensing, transform-domain sparsity promotion, seismic imaging},
+url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SSP/2012/herrmann2012SSPamp/herrmann2012SSPamp.pdf}
+}
 
 @unpublished{bander2012dre,
 author = {Bander Jumah and Felix J. Herrmann},
@@ -25,6 +68,34 @@ low computational up-fron cost required by the low-rank
 factorization.},
 keywords = {multiples,Processing,Optimization},
 url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/Journal/bander2012dre/bander2012dre.pdf}
+}
+
+@unpublished{min2012CSEGrgfe,
+author = {Ju-Won Oh and Dong-Joo Min and Felix J. Herrmann},
+year = {2012},
+optmonth = {02/2012},
+title = {Re-establishment of gradient in frequency-domain elastic waveform inversion},
+abstract = {To obtain solutions close to global minimum in waveform 
+inversion, the gradients computed at each frequency need to be 
+weighted to appropriately describe the residuals between modeled and 
+field data. While the low-frequency components of the gradients should 
+be weighted to recover the long- wavelength structures, the high-frequency 
+components of the gradients need to be weighted when the short-wavelength 
+structures are restored. However, the conventional elastic waveform inversion 
+algorithms cannot properly weight the gradients computed at each frequency. 
+When gradients are scaled using the pseudo-Hessian matrix inside the 
+frequency loop, gradients obtained at high frequencies are over-emphasized. 
+When the gradients are scaled outside the frequency loop, gradients are 
+weighted by the source spectra. In this study, we propose applying weighting 
+factors to the gradients obtained at each frequency so that gradients can 
+properly reflect the differences between the true and assumed models satisfying 
+the general inverse theory. The weighting factors are composed by the 
+backpropagated residuals. Numerical examples for the simple rectangular-shaped 
+model and the modified version of the Marmousi-2 model show that the 
+weighting method enhances gradient images and inversion results compared 
+to the conventional inversion algorithms.},
+keywords = {elastic, waveform inversion, frequency-domain, weighting factors},
+url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/CSEG/2012/min2012CSEGrgfe/min2012CSEGrgfe.pdf}
 }
 
 @unpublished{wason2012CSEGode,
@@ -55,7 +126,7 @@ results by dithering with only one source vessel (SNR = 8.06dB) in the latter
 scheme, which improve at the cost of having an additional source vessel 
 (SNR = 9.85dB).},
 keywords = {CSEG, acquisition, marine, simultaneous},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/CSEG/wason2012CSEGode/wason2012CSEGode.pdf}
+url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/CSEG/2012/wason2012CSEGode/wason2012CSEGode.pdf}
 }
 
 @unpublished{li2011CSEGefimag,
@@ -79,7 +150,7 @@ With this approach, we dramatically reduce the size and hence the
 computational costs of the problem, whilst we control information loss by 
 redrawing a different set of sequential shots for each subproblem.},
 keywords = {CSEG},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/CSEG/li2011CSEGefimag/li2011CSEGefimag.pdf}
+url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/CSEG/2012/li2011CSEGefimag/li2011CSEGefimag.pdf}
 }
 
 
@@ -108,55 +179,6 @@ url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/CSEG/li2011CSE
   publisher = {Department of Computer Science},
   keywords ={Optimization},
   url = {http://www.cs.ubc.ca/~mpf/papers/FriedlanderSchmidt2011.pdf}
-}
-
-% This paper is accepted for publication and will appear in Geophysical Prospecting
-@unpublished{Herrmann11TRLlsqIm,
-  author = {Felix J. Herrmann and Xiang Li},
-  title = {Efficient least-squares imaging with sparsity promotion and compressive
-        sensing},
-  year = {2011},
-  notes = { TR-2011-03},
-  address = {University of British Columbia, Vancouver},
-  optmonth = {08/2011},
-  abstract = {Seismic imaging is a linearized inversion problem
-                  relying on the minimization of a least-squares
-                  misfit functional as a function of the medium
-                  perturbation. The success of this procedure hinges
-                  on our ability to handle large systems of
-                  equations√ëwhose size grows exponentially with the
-                  demand for higher reso- lution images in more and
-                  more complicated areas√ëand our ability to invert
-                  these systems given a limited amount of
-                  computational resources. To overcome this √ícurse of
-                  dimensionality√ì in problem size and computational
-                  complexity, we propose a combination of randomized
-                  dimensionality-reduction and divide-and- conquer
-                  techniques.  This approach allows us to take
-                  advantage of sophisticated sparsity-promoting
-                  solvers that work on a series of smaller subproblems
-                  each in- volving a small randomized subset of
-                  data. These subsets correspond to artificial
-                  simultaneous-source experiments made of random
-                  superpositions of sequential- source experiments. By
-                  changing these subsets after each subproblem is
-                  solved, we are able to attain an inversion quality
-                  that is competitive while requiring fewer
-                  computational, and possibly, fewer acquisition
-                  resources. Application of this con- cept to a
-                  controlled series of experiments showed the validity
-                  of our approach and the relationship between its
-                  efficiency√ëby reducing the number of sources and
-                  hence the number of wave-equation solves√ëand the
-                  image quality.  Application of our
-                  dimensionality-reduction methodology with sparsity
-                  promotion to a com- plicated synthetic with
-                  well-constrained structure also yields excellent
-                  results underlining the importance of sparsity
-                  promotion.},
-  notes = {To appear in Geophysical Prospecting},
-  keywords ={SLIM,Imaging,Optimization,Compressive Sensing},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Submitted/GeophysicalProspecting/2012/Herrmann11TRLlsqIm/Herrmann11TRLlsqIm.pdf}
 }
 
 @unpublished{Herrmann11TRfcd,

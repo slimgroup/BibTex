@@ -38,7 +38,7 @@ these bottlenecks, we follow recent trends in machine learning and
 compressive sensing by proposing a sparsity-promoting inversion 
 technique that works on small randomized subsets of data only. We 
 boost the performance of this algorithm significantly by modifying a 
-state-of-the-art ?1-norm solver to benefit from message 
+state-of-the-art l1-norm solver to benefit from message 
 passing, which breaks the build up of correlations between model 
 iterates and the randomized linear forward model. We demonstrate the 
 performance of this algorithm on a toy sparse-recovery problem and 
@@ -125,19 +125,19 @@ url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SEG/2012/rajiv
 }
 
 @unpublished{aravkin2012SEGST,
-author = {Aleksandr Y. Aravkin and Tristan van Leeuwen and Kenneth Bube and Felix J. Herrmann},
+author = {Aleksandr Y. Aravkin and Tristan {van Leeuwen} and Kenneth Bube and Felix J. Herrmann},
 year = {2012},
 optmonth = {04/2012},
-title = {On Non-Uniqueness of the Student’s t-formulation for Linear Inverse Problems},
+title = {On Non-Uniqueness of the Student's t-formulation for Linear Inverse Problems},
 abstract = {We review the statistical interpretation of inverse problem 
 formulations, and the motivations for selecting non-convex penalties 
 for robust behaviour with respect to measurement outliers or artifacts 
-in the data. An important downside of using non- convex formulations 
+in the data. An important downside of using non-convex formulations 
 such as the Student’s t is the potential for non-uniqueness, and we 
-present a simple example where the Student’s t penalty can be made 
+present a simple example where the Student's t penalty can be made 
 to have many local minima by appropriately selecting the degrees of 
 freedom parameter. 
-On the other hand, the non-convexity of the Student’s t is precisely 
+On the other hand, the non-convexity of the Student's t is precisely 
 what gives it the ability to ignore artifacts in the data. We explain this 
 idea, and present a stylized imaging experiment, where the Student’s t 
 is able to recover a velocity perturbation from data contaminated by 
@@ -160,7 +160,7 @@ to using them. For instance, primary estimation by sparse inversion
 has demonstrated its superiority over surface-related multiple removal 
 in many aspects. Inspired by this shift, we propose a method to 
 image directly from the total up-going wavefield, including surface-related 
-multiples, by sparse in- version. To address the high computational cost 
+multiples, by sparse inversion. To address the high computational cost 
 associated with this method, we propose to speed up the inversion by 
 having the wave-equation solver carry out the multi-dimensional 
 convolutions implicitly and cheaply by randomized subsampling. We 

@@ -1,4 +1,51 @@
 %-------------------------------------------------2012-------------------------------------------------
+@conference{mansour2012SSPwspgl1,
+author = {Hassan Mansour},
+year = {2012},
+optmonth = {03/2012},
+title = {Beyond $\ell_1$ norm minimization for sparse signal recovery},
+booktitle={2012 IEEE Statistical Signal Processing Workshop (SSP) (SSP'12)},
+address={Ann Arbor, Michigan, USA},
+abstract = {Sparse signal recovery has been dominated by the basis 
+pursuit denoise (BPDN) problem formulation for over a decade. In this 
+paper, we propose an algorithm that outperforms BPDN in finding 
+sparse solutions to underdetermined linear systems of equations at no 
+additional computational cost. Our algorithm, called WSPGL1, is a 
+modification of the spectral projected gradient for $\ell_1$ minimization 
+(SPGL1) algorithm in which the sequence of LASSO subproblems are 
+replaced by a sequence of weighted LASSO subproblems with constant 
+weights applied to a support estimate. The support estimate is derived 
+from the data and is updated at every iteration. The algorithm also 
+modifies the Pareto curve at every iteration to reflect the new weighted 
+$\ell_1$ minimization problem that is being solved. We demonstrate through 
+extensive simulations that the sparse recovery performance of our 
+algorithm is superior to that of $\ell_1$ minimization and approaches the 
+recovery performance of iterative re-weighted $\ell_1$ (IRWL1) minimization 
+of Cand{\`e}s, Wakin, and Boyd. Moreover, our algorithm has the 
+computational cost of a single BPDN problem.},
+keywords = {Sparse recovery, compressed sensing, iterative algorithms, weighted $\ell_1$ minimization, partial support recovery},
+url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/mansour2012SSPwspgl1/mansour2012SSPwspgl1.pdf}
+}
+
+@conference{herrmann2012SSPamp,
+author = {Felix J. Herrmann},
+year = {2012},
+optmonth = {03/2012},
+title = {Approximate message passing meets exploration seismology},
+booktitle={2012 IEEE Statistical Signal Processing Workshop (SSP) (SSP'12)},
+address={Ann Arbor, Michigan, USA},
+abstract = {Data collection, data processing, and imaging in exploration 
+seismology increasingly hinge on large-scale sparsity promoting solvers 
+to remove artifacts caused by efforts to reduce costs. We show how the 
+inclusion of a 'message term' in the calculation of the residuals improves 
+the convergence of these iterative solvers by breaking correlations that 
+develop between the model iterate and the linear system that needs to 
+be inverted. We compare this message-passing scheme to state-of-the-art 
+solvers for problems in missing-trace interpo- lation and in 
+dimensionality-reduced imaging with phase en- coding.},
+keywords = {Exploration seismology, compressive sensing, transform-domain sparsity promotion, seismic imaging},
+url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herrmann2012SSPamp/herrmann2012SSPamp.pdf}
+}
 
 @CONFERENCE{herrmann2012EAGEcsm,
   author       = {Felix J. Herrmann and Haneet Wason},
@@ -7112,50 +7159,6 @@ notes = {submitted to Geophysics, March 12, 2012},
 url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/Journal/lin2012robustepsi/lin2012robustepsi.pdf}
 }
 
-@unpublished{mansour2012SSPwspgl1,
-author = {Hassan Mansour},
-year = {2012},
-optmonth = {03/2012},
-title = {Beyond $\ell_1$ norm minimization for sparse signal recovery},
-abstract = {Sparse signal recovery has been dominated by the basis 
-pursuit denoise (BPDN) problem formulation for over a decade. In this 
-paper, we propose an algorithm that outperforms BPDN in finding 
-sparse solutions to underdetermined linear systems of equations at no 
-additional computational cost. Our algorithm, called WSPGL1, is a 
-modification of the spectral projected gradient for $\ell_1$ minimization 
-(SPGL1) algorithm in which the sequence of LASSO subproblems are 
-replaced by a sequence of weighted LASSO subproblems with constant 
-weights applied to a support estimate. The support estimate is derived 
-from the data and is updated at every iteration. The algorithm also 
-modifies the Pareto curve at every iteration to reflect the new weighted 
-$\ell_1$ minimization problem that is being solved. We demonstrate through 
-extensive simulations that the sparse recovery performance of our 
-algorithm is superior to that of $\ell_1$ minimization and approaches the 
-recovery performance of iterative re-weighted $\ell_1$ (IRWL1) minimization 
-of Cand{\`e}s, Wakin, and Boyd. Moreover, our algorithm has the 
-computational cost of a single BPDN problem.},
-keywords = {Sparse recovery, compressed sensing, iterative algorithms, weighted $\ell_1$ minimization, partial support recovery},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SSP/2012/mansour2012SSPwspgl1/mansour2012SSPwspgl1.pdf}
-}
-
-@unpublished{herrmann2012SSPamp,
-author = {Felix J. Herrmann},
-year = {2012},
-optmonth = {03/2012},
-title = {Approximate message passing meets exploration seismology},
-abstract = {Data collection, data processing, and imaging in exploration 
-seismology increasingly hinge on large-scale sparsity promoting solvers 
-to remove artifacts caused by efforts to reduce costs. We show how the 
-inclusion of a 'message term' in the calculation of the residuals improves 
-the convergence of these iterative solvers by breaking correlations that 
-develop between the model iterate and the linear system that needs to 
-be inverted. We compare this message-passing scheme to state-of-the-art 
-solvers for problems in missing-trace interpo- lation and in 
-dimensionality-reduced imaging with phase en- coding.},
-keywords = {Exploration seismology, compressive sensing, transform-domain sparsity promotion, seismic imaging},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SSP/2012/herrmann2012SSPamp/herrmann2012SSPamp.pdf}
-}
-
 @unpublished{bander2012dre,
 author = {Bander Jumah and Felix J. Herrmann},
 year = {2012},
@@ -7291,46 +7294,6 @@ url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/CSEG/2012/li20
   publisher = {Department of Computer Science},
   keywords ={Optimization},
   url = {http://www.cs.ubc.ca/~mpf/papers/FriedlanderSchmidt2011.pdf}
-}
-
-@unpublished{Herrmann11TRfcd,
-  author = {Felix J. Herrmann and Michael P. Friedlander and Ozgur Yilmaz},
-  title = {Fighting the curse of dimensionality: compressive sensing in exploration
-        seismology},
-  year = {2011},
-  address = {University of British Columbia, Vancouver},
-  optmonth = {08/2011},
-  abstract = {Many seismic exploration techniques rely on the
-                  collection of massive data volumes that are mined
-                  for infor- mation during processing.  This approach
-                  has been extremely successful, but current efforts
-                  toward higher-resolution images in increasingly
-                  complicated regions of the Earth continue to reveal
-                  fundamental shortcomings in our typical
-                  workflows. The √ícurse of dimensionality√ì is the main
-                  roadblock, and is exemplified by Nyquist√ïs sampling
-                  criterion, which disproportionately strains current
-                  acquisition and processing systems as the size and
-                  desired resolution of our survey areas continues to
-                  increase. We offer an alternative sampling strategy
-                  that leverages recent insights from compressive
-                  sensing towards seismic acquisition and processing
-                  for data that are traditionally considered to be
-                  undersampled. The main outcome of this approach is a
-                  new technology where acquisition and processing
-                  related costs are no longer determined by overly
-                  stringent sampling criteria. Compressive sensing is
-                  a novel nonlinear sampling paradigm, effective for
-                  acquiring signals that have a sparse representation
-                  in some transform domain. We review basic facts
-                  about this new sampling paradigm that revolutionized
-                  various areas of signal processing, and illustrate
-                  how it can be successfully exploited in various
-                  problems in seismic exploration to effectively fight
-                  the curse of dimensionality.},
-  notes = {To appear in IEEE Signal Processing Magazine},
-  keywords ={SLIM,Acquisition,Processing,Imaging,Full-waveform inversion,Optimization,Compressive Sensing},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Submitted/IEEESignalProcessingMagazine/2012/Herrmann11TRfcd/Herrmann11TRfcd.pdf}
 }
 
 @unpublished{Mansour11TRwmmw,
@@ -7561,6 +7524,65 @@ institution = {UBC-Computer Science Department},
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 
+@article{Herrmann11TRfcd, 
+author={Felix J. Herrmann and Michael P. Friedlander and Ozgur Yilmaz}, 
+journal={Signal Processing Magazine, IEEE}, 
+title={Fighting the Curse of Dimensionality: Compressive Sensing in Exploration Seismology}, 
+year={2012}, 
+optmonth={05/12}, 
+volume={29}, 
+number={3}, 
+pages={88-100}, 
+abstract={Many seismic exploration techniques rely on the collection 
+of massive data volumes that are mined for information during processing. 
+This approach has been extremely successful, but current efforts 
+toward higher resolution images in increasingly complicated regions 
+of Earth continue to reveal fundamental shortcomings in our typical 
+workflows. The "curse" of dimensionality is the main 
+roadblock and is exemplified by Nyquist's sampling criterion, which 
+disproportionately strains current acquisition and processing systems 
+as the size and desired resolution of our survey areas continues to increase.}, 
+keywords={Earth, Nyquist sampling criterion;dimensionality curse,
+higher-resolution images, massive data volumes,seismic exploration techniques,
+strains current acquisition system,strains current processing system,
+geographic information systems,seismology}, 
+doi={10.1109/MSP.2012.2185859}, 
+url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/IEEESignalProcessingMagazine/2012/Herrmann11TRfcd/Herrmann11TRfcd.pdf},
+ISSN={1053-5888}}
+
+@article{herrmann2011RECORDERcsse1,
+author = {Felix J. Herrmann and Haneet Wason and Tim T.Y. Lin},
+title = {Compressive sensing in seismic exploration: an outlook on a new paradigm},
+year = {2011},
+journal = {CSEG Recorder},
+optmonth = {04/2011},
+abstract = {Many seismic exploration techniques rely on the collection of 
+massive data volumes that are subsequently mined for information during 
+processing. While this approach has been extremely successful in the past, 
+current efforts toward higher resolution images in increasingly complicated 
+regions of the Earth continue to reveal fundamental shortcomings in our 
+workflows. Chiefly amongst these is the so-called “curse of dimensionality” 
+exemplified by Nyquist's sampling criterion, which disproportionately 
+strains current acquisition and processing systems as the size and desired 
+resolution of our survey areas continues to increase. We offer an alternative 
+sampling method leveraging recent insights from compressive sensing towards 
+seismic acquisition and processing for data that, from a traditional point 
+of view, are considered to be undersampled. The main outcome of this approach 
+is a new technology where acquisition and processing related costs are 
+decoupled the stringent Nyquist sampling criterion. At the heart of our 
+approach lies randomized incoherent sampling that breaks subsampling-related 
+interferences by turning them into harmless noise, which we subsequently 
+remove by promoting sparsity in a transform-domain. Acquisition schemes 
+designed to fit into this regime no longer grow significantly in cost with 
+increasing resolution and dimensionality of the survey area, but instead 
+its cost ideally only depends on transform-domain sparsity of the expected 
+data. Our contribution is split into two part.},
+url = {http://www.cseg.ca/publications/recorder/2011/04apr/Apr2011-Compressive-sensing-in-seismic-expl.pdf},
+volume = {36},
+number = {4},
+pages = {19-33}
+}
+
 @article{herrmann11GPelsqIm,
   author = {Felix J. Herrmann and Xiang Li},
   title = {Efficient least-squares imaging with sparsity promotion and compressive
@@ -7645,7 +7667,7 @@ institution = {UBC-Computer Science Department},
 	approach.},
 journal= {CoRR },
 keywords={Optimization},
-url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedlander11hybrid  }
+url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedlander11hybrid.pdf}
 }
 
 @ARTICLE{hennenfent2010GEOPnct,

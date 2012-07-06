@@ -1,6 +1,30 @@
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 
+@unpublished{vanleeuwen2012smii,
+author = {Tristan {van Leeuwen}},
+year = {2012},
+optmonth = {07/2012},
+title = {A parallel matrix-free framework for frequency-domain seismic modelling, imaging and inversion in Matlab},
+abstract = {I present a parallel matrix-free framework for
+                  frequency-domain seismic modeling, imaging and
+                  inversion. The framework provides basic building
+                  blocks for designing and testing optimization-based
+                  formulations of both linear and non-linear seismic
+                  in- verse problems. By overloading standard
+                  linear-algebra operations, such as matrix- vector
+                  multiplications, standard optimization packages can
+                  be used to work with the code without any
+                  modification. This leads to a scalable testbed on
+                  which new methods can be rapidly prototyped and
+                  tested on medium-sized 2D problems. I present some
+                  numerical examples on both linear and non-linear
+                  seismic inverse problems.},
+keywords = {Seismic imaging,optimization,Matlab,object-oriented programming},
+url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/Journal/vanleeuwen2012smii/vanleeuwen2012smii.pdf}
+}
+
+
 @unpublished{aravkin2012IPNuisance,
 author = {Aleksandr Y. Aravkin and Tristan {van Leeuwen}},
 year = {2012},
@@ -35,178 +59,6 @@ abstract = {Many inverse problems include nuisance parameters which,
                   existing algorithms.},
 keywords = {full waveform inversion, students t, variance},
 url = {http://arxiv.org/abs/1206.6532}
-}
-
-@unpublished{vanleeuwen2012SEGparallel,
-author = {Tristan {van Leeuwen} and Felix J. Herrmann},
-year = {2012},
-optmonth = {04/2012},
-title = {A parallel, object-oriented framework for frequency-domain wavefield 
-imaging and inversion.},
-abstract = {We present a parallel object-oriented matrix-free framework for frequency-domain 
-seismic modeling, imaging and inversion. 
-The key aspects of the framework are its modularity and level of abstraction, 
-which allows us to write code that reflects the underlying mathematical 
-structure and develop unit-tests that guarantee the fidelity of the code. 
-By overloading standard linear-algebra operations, such as matrix-vector 
-multiplications, we can use standard optimization packages to work with our code 
-without any modification. This leads to a scalable testbed on 
-which new methods can be rapidly prototyped and tested on medium-sized 2D problems. 
-Although our current implementation uses (parallel) Matlab, all of 
-these design principles can also be met by using lower-level languages 
-which is important when we want to scale to realistic 3D problems. 
-We present some numerical examples on synthetic data.},
-keywords = {modeling, imaging, inversion, SEG},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SEG/2012/vanleeuwen2012SEGparallel/vanleeuwen2012SEGparallel.pdf}
-}
-
-@unpublished{herrmann2012SEGals,
-author = {Felix J. Herrmann},
-year = {2012},
-optmonth = {04/2012},
-title = {Accelerated large-scale inversion with message passing},
-abstract = {To meet current-day challenges, exploration seismology increasingly 
-relies on more and more sophisticated algorithms that require 
-multiple paths through all data. This requirement leads to problems 
-because the size of seismic data volumes is increasing exponentially, 
-exposing bottlenecks in IO and computational capability. To overcome 
-these bottlenecks, we follow recent trends in machine learning and 
-compressive sensing by proposing a sparsity-promoting inversion 
-technique that works on small randomized subsets of data only. We 
-boost the performance of this algorithm significantly by modifying a 
-state-of-the-art l1-norm solver to benefit from message 
-passing, which breaks the build up of correlations between model 
-iterates and the randomized linear forward model. We demonstrate the 
-performance of this algorithm on a toy sparse-recovery problem and 
-on a realistic reverse-time-migration example with random source 
-encoding. The improvements in speed, memory use, and output quality 
-are truly remarkable.},
-keywords = {Imaging, Optimization, Compressive Sensing},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SEG/2012/herrmann2012SEGals/herrmann2012SEGals.pdf}
-}
-
-@unpublished{vanderneut2012SEGirs,
-author = {Joost {van der Neut} and Felix Herrmann and Kees Wapenaar},
-year = {2012},
-optmonth = {04/2012},
-title = {Interferometric redatuming with simultaneous and missing 
-sources using sparsity promotion in the curvelet domain},
-abstract = {Interferometric redatuming is a velocity-independent 
-method to turn downhole receivers into virtual sources. Accurate 
-redatuming involves solving an inverse problem, which can be 
-highly ill-posed, especially in the presence of noise, incomplete 
-data and limited aperture. We address these issues by combining 
-interferometric redatuming with transform-domain sparsity 
-promotion, leading to a formulation that deals with data imperfections. 
-We show that sparsity promotion improves the retrieval of virtual 
-shot records under a salt flank. To reduce acquisition costs, it can 
-be beneficial to reduce the number of sources or shoot them 
-simultaneously. It is shown that sparse inversion can still provide 
-a stable solution in such cases.},
-keywords = {Processing,Imaging,Optimization,Interferometry},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SEG/2012/vanderneut2012SEGirs/vanderneut2012SEGirs.pdf}
-}
-
-@unpublished{li2012SEGspmamp,
-author = {Xiang Li and Felix J.Herrmann},
-year = {2012},
-optmonth = {04/2012},
-title = {Sparsity-promoting migration accelerated by message passing},
-abstract = {Seismic imaging via linearized inversion requires multiple 
-iterations to minimize the least-squares misfit as a function of the 
-medium perturbation. Unfortunately, the cost for these iterations 
-are prohibitive because each iteration requires many wave-equation 
-simulations, which without direct solvers require an expensive 
-separate solve for each source. To overcome this problem, we use 
-dimensionality-reduction to decrease the size of seismic imaging 
-problem by turning the large number of sequential shots into a much 
-small number of simultaneous shots. In our approach, we take 
-advantage of sparsifying transforms to remove source crosstalk 
-resulting from randomly weighting and stacking sequential shots into 
-a few super shots. We also take advantage of the fact that the 
-convergence of large-scale sparsity-promoting solvers can be 
-improved significantly by borrowing ideas from message passing, 
-which are designed to break correlation built up between the linear 
-system and the model iterate. In this way, we arrive at a 
-formulation where we run the sparsity-promoting solver for a 
-relatively large number of very iterations. Aside from leading to a 
-significant speed up, our approach had the advantage of greatly 
-reducing the memory imprint and IO requirements. We demonstrate this 
-feature by solving a sparsity-promoting imaging problem with 
-operators of reverse-time migration, which is computationally 
-infeasible without the dimensionality reduction.},
-keywords = {SEG},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SEG/2012/li2012SEGspmamp/li2012SEGspmamp.pdf}
-}
-
-@unpublished{rajiv2012SEGFRM,
-author = {Rajiv Kumar and Aleksandr Y. Aravkin and Felix J. Herrmann},
-year = {2012},
-optmonth = {04/2012},
-title = {Fast Methods for Rank Minimization with Applications to Seismic-Data Interpolation},
-abstract = {Rank penalizing techniques are an important direction 
-in seismic inverse problems, since they allow improved recovery by 
-exploiting low-rank structure. A major downside of current state of 
-the art techniques is their reliance on the SVD of seismic data 
-structures, which can be prohibitively expensive. Fortunately, recent 
-work allows us to circumvent this problem by working with matrix 
-factorizations. We review a novel approach to rank penalization, and 
-successfully apply it to the seismic interpolation problem by exploiting 
-the low-rank structure of seismic data in the midpoint-offset domain. 
-Experiments for the recovery of 2D monochromatic data matrices and 
-seismic lines represented as 3D volumes support the feasibility and 
-potential of the new approach.},
-keywords = {Rank, optimization, Seismic data Interpolation},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SEG/2012/rajiv2012SEGFRM/rajiv2012SEGFRM.pdf}
-}
-
-@unpublished{aravkin2012SEGST,
-author = {Aleksandr Y. Aravkin and Tristan {van Leeuwen} and Kenneth Bube and Felix J. Herrmann},
-year = {2012},
-optmonth = {04/2012},
-title = {On Non-Uniqueness of the Student's t-formulation for Linear Inverse Problems},
-abstract = {We review the statistical interpretation of inverse problem 
-formulations, and the motivations for selecting non-convex penalties 
-for robust behaviour with respect to measurement outliers or artifacts 
-in the data. An important downside of using non-convex formulations 
-such as the Student's t is the potential for non-uniqueness, and we 
-present a simple example where the Student's t penalty can be made 
-to have many local minima by appropriately selecting the degrees of 
-freedom parameter. 
-On the other hand, the non-convexity of the Student's t is precisely 
-what gives it the ability to ignore artifacts in the data. We explain this 
-idea, and present a stylized imaging experiment, where the Student's t 
-is able to recover a velocity perturbation from data contaminated by 
-a very peculiar artifact --- data from a different velocity perturbation. 
-The performance of Student's t inversion is investigated empirically 
-for different values of the degrees of freedom parameter, and 
-different initial conditions.},
-keywords = {student's t, robust, non-convex, uniqueness},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SEG/2012/aravkin2012SEGST/aravkin2012SEGST.pdf}
-}
-
-@unpublished{tu2012SEGima,
-author = {Ning Tu and Felix J. Herrmann},
-year = {2012},
-optmonth = {04/2012},
-title = {Imaging with multiples accelerated by message passing},
-abstract = {With the growing realization that multiples can provide 
-valuable information, there is a paradigm shift from removing them 
-to using them. For instance, primary estimation by sparse inversion 
-has demonstrated its superiority over surface-related multiple removal 
-in many aspects. Inspired by this shift, we propose a method to 
-image directly from the total up-going wavefield, including surface-related 
-multiples, by sparse inversion. To address the high computational cost 
-associated with this method, we propose to speed up the inversion by 
-having the wave-equation solver carry out the multi-dimensional 
-convolutions implicitly and cheaply by randomized subsampling. We 
-improve the overall performance of this algorithm by selecting new 
-independent copies of the randomized modeling operator, which 
-leads to a cancellation of correlations that hamper the speed of 
-convergence of the solver. We show the merits of our approach on 
-a number of examples.},
-keywords = {SEG, Imaging, Multiples},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/SEG/2012/tu2012SEGima/tu2012SEGima.pdf}
 }
 
 @unpublished{lin2012robustepsi,

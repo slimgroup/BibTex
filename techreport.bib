@@ -1,29 +1,54 @@
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 
-@techreport{vanleeuwen2012smii,
-author = {Tristan {van Leeuwen}},
+@techreport{vanleeuwen2012SEGparallel,
+author = {Tristan {van Leeuwen} and Felix J. Herrmann},
 year = {2012},
-optmonth = {07/2012},
+optmonth = {04/2012},
+organization = {SEG},
 address = {University of British Columbia, Vancouver},
-title = {A parallel matrix-free framework for frequency-domain seismic modelling, imaging and inversion in Matlab},
-abstract = {I present a parallel matrix-free framework for
-                  frequency-domain seismic modeling, imaging and
-                  inversion. The framework provides basic building
-                  blocks for designing and testing optimization-based
-                  formulations of both linear and non-linear seismic
-                  in- verse problems. By overloading standard
-                  linear-algebra operations, such as matrix- vector
-                  multiplications, standard optimization packages can
-                  be used to work with the code without any
-                  modification. This leads to a scalable testbed on
-                  which new methods can be rapidly prototyped and
-                  tested on medium-sized 2D problems. I present some
-                  numerical examples on both linear and non-linear
-                  seismic inverse problems.},
-keywords = {Seismic imaging,optimization,Matlab,object-oriented programming},
-url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2012/vanleeuwen2012smii/vanleeuwen2012smii.pdf}
+title = {A parallel, object-oriented framework for frequency-domain wavefield 
+imaging and inversion.},
+abstract = {We present a parallel object-oriented matrix-free framework for frequency-domain 
+seismic modeling, imaging and inversion. 
+The key aspects of the framework are its modularity and level of abstraction, 
+which allows us to write code that reflects the underlying mathematical 
+structure and develop unit-tests that guarantee the fidelity of the code. 
+By overloading standard linear-algebra operations, such as matrix-vector 
+multiplications, we can use standard optimization packages to work with our code 
+without any modification. This leads to a scalable testbed on 
+which new methods can be rapidly prototyped and tested on medium-sized 2D problems. 
+Although our current implementation uses (parallel) Matlab, all of 
+these design principles can also be met by using lower-level languages 
+which is important when we want to scale to realistic 3D problems. 
+We present some numerical examples on synthetic data.},
+keywords = {modeling, imaging, inversion, SEG},
+url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2012/vanleeuwen2012SEGparallel/vanleeuwen2012SEGparallel.pdf}
 }
+
+@techreport{rajiv2012SEGFRM,
+author = {Rajiv Kumar and Aleksandr Y. Aravkin and Felix J. Herrmann},
+year = {2012},
+optmonth = {04/2012},
+organization = {SEG},
+address = {University of British Columbia, Vancouver},
+title = {Fast Methods for Rank Minimization with Applications to Seismic-Data Interpolation},
+abstract = {Rank penalizing techniques are an important direction 
+in seismic inverse problems, since they allow improved recovery by 
+exploiting low-rank structure. A major downside of current state of 
+the art techniques is their reliance on the SVD of seismic data 
+structures, which can be prohibitively expensive. Fortunately, recent 
+work allows us to circumvent this problem by working with matrix 
+factorizations. We review a novel approach to rank penalization, and 
+successfully apply it to the seismic interpolation problem by exploiting 
+the low-rank structure of seismic data in the midpoint-offset domain. 
+Experiments for the recovery of 2D monochromatic data matrices and 
+seismic lines represented as 3D volumes support the feasibility and 
+potential of the new approach.},
+keywords = {Rank, optimization, Seismic data Interpolation},
+url = {https://www.slim.eos.ubc.ca/Publications//Public/TechReport/2012/rajiv2012SEGFRM/rajiv2012SEGFRM.pdf}
+}
+
 
 @techreport{herrmann10SEGerc,
   author = {Felix J. Herrmann},

@@ -1,6 +1,197 @@
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 
+@article{VanLeeuwen11TRfwiwse,
+  author = {Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Fast waveform inversion without source encoding},
+  journal = {Geophysical Prospecting},
+  optvolume = {Online publication},
+  year = {2012},
+  optmonth = {07/2012},
+  abstract = {Randomized source encoding has recently been proposed as
+                  a way to dramatically reduce the costs of full
+                  waveform inversion. The main idea is to replace all
+                  sequential sources by a small number of simultaneous
+                  sources. This introduces random crosstalk in the
+                  model updates and special stochastic optimization
+                  strategies are required to deal with this. Two
+                  problems arise with this approach: i) source
+                  encoding can only be applied to fixed-spread
+                  acquisition setups, and ii) stochastic optimization
+                  methods tend to converge very slowly, relying on
+                  averaging to get rid of the cross-talk. Although the
+                  slow convergence is partly offset by the low
+                  iteration cost, we show that conventional
+                  optimization strategies are bound to outperform
+                  stochastic methods in the long run. In this paper we
+                  argue that we don¬øt need randomized source encoding
+                  to reap the benefits of stochastic optimization and
+                  we review an optimization strategy that combines the
+                  benefits of both conventional and stochastic
+                  optimization. The method uses a gradually increasing
+                  batch of sources. Thus, iterations are very cheap
+                  initially and this allows the method to make fast
+                  progress in the beginning. As the batch size grows,
+                  the method behaves like conventional optimization,
+                  allowing for fast convergence. Numerical examples
+                  suggest that the stochastic and hybrid method
+                  perform equally well with and without source
+                  encoding and that the hybrid method outperforms both
+                  conventional and stochastic optimization. The method
+                  does not rely on source encoding techniques and can
+                  thus be applied to non fixed-spread data.},
+keywords = {SLIM,Full-waveform inversion,Optimization},
+optdoi = {10.1111/j.1365-2478.2012.01096.x},
+url = {http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2478.2012.01096.x/abstract}
+}
+
+@article{haber10TRemp,
+author = {Eldad Haber and Matthias Chung and Felix J. Herrmann},
+title = {An effective method for parameter estimation with PDE constraints
+        with multiple right hand sides},
+journal = {SIAM Journal on Optimization},
+volume = {22},
+number = {3},
+year = {2012},
+optmonth = {07/2012},
+abstract = {Often, parameter estimation problems of
+                  parameter-dependent PDEs involve multiple right-hand
+                  sides. The computational cost and memory
+                  requirements of such problems increase linearly with
+                  the number of right-hand sides. For many
+                  applications this is the main bottleneck of the
+                  computation. In this paper we show that problems
+                  with multiple right-hand sides can be reformulated
+                  as stochastic programming problems by combining the
+                  right-hand sides into a few „simultaneous”
+                  sources. This effectively reduces the cost of the
+                  forward problem and results in problems that are
+                  much cheaper to solve. We discuss two solution
+                  methodologies: namely sample average approximation
+                  and stochastic approximation. To illustrate the
+                  effectiveness of our approach we present two model
+                  problems, direct current resistivity and seismic
+                  tomography.},
+  keywords = {SLIM,Full-waveform inversion,Optimization},
+  url = {http://dx.doi.org/10.1137/11081126X}
+}
+
+@article{Li11TRfrfwi,
+author = {Xiang Li and Aleksandr Y. Aravkin and Tristan van Leeuwen and Felix J. Herrmann},
+title = {Fast randomized full-waveform inversion with compressive sensing},
+year = {2012},
+journal = {Geophysics},
+volume = {77},
+number = {3},
+pages = {A13-A17},
+optmonth = {05/2012},
+abstract = { Wave-equation based seismic inversion can be formulated
+                  as a nonlinear inverse problem where the medium
+                  properties are obtained via minimization of a least-
+                  squares misfit functional. The demand for higher
+                  resolution models in more geologically complex areas
+                  drives the need to develop techniques that explore
+                  the special structure of full-waveform inversion to
+                  reduce the computational burden and to regularize
+                  the inverse problem. We meet these goals by using
+                  ideas from compressive sensing and stochastic
+                  optimization to design a novel Gauss-Newton method,
+                  where the updates are computed from random subsets
+                  of the data via curvelet-domain sparsity
+                  promotion. Application of this idea to a realistic
+                  synthetic shows improved results compared to
+                  quasi-Newton methods, which require passes through
+                  all data. Two different subset sampling strategies
+                  are considered: randomized source encoding, and
+                  drawing sequential shots firing at random source
+                  locations from marine data with missing near and far
+                  offsets. In both cases, we obtain excellent
+                  inversion results compared to conventional methods
+                  at reduced computational costs. },
+keywords ={SLIM,Full-waveform inversion,Compressive Sensing,Optimization},
+optdoi = {10.1190/geo2011-0410.1},
+url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2012/Li11TRfrfwi/Li11TRfrfwi.pdf}
+}
+
+@article{Mansour11TRssma,
+author = {Hassan Mansour and Haneet Wason and Tim T.Y. Lin and Felix J. Herrmann},
+title = {Randomized marine acquisition with compressive sampling matrices},
+journal = {Geophysical Prospecting},
+volume = {60},
+number = {4},
+pages = {648-662},
+year = {2012},
+optmonth = {07/2012},
+abstract = {Seismic data acquisition in marine environments is a
+                  costly process that calls for the adoption of
+                  simultaneous-source or randomized acquisition - an
+                  emerging technology that is stimulating both
+                  geophysical research and commercial
+                  efforts. Simultaneous marine acquisition calls for
+                  the development of a new set of design principles
+                  and post-processing tools. In this paper, we discuss
+                  the properties of a specific class of randomized
+                  simultaneous acquisition matrices and demonstrate
+                  that sparsity-promoting recovery improves the
+                  quality of reconstructed seismic data volumes. We
+                  propose a practical randomized marine acquisition
+                  scheme where the sequential sources fire airguns at
+                  only randomly time-dithered instances. We
+                  demonstrate that the recovery using sparse
+                  approximation from random time-dithering with a
+                  single source approaches the recovery from
+                  simultaneous-source acquisition with multiple
+                  sources. Established findings from the field of
+                  compressive sensing indicate that the choice of the
+                  sparsifying transform that is incoherent with the
+                  compressive sampling matrix can significantly impact
+                  the reconstruction quality. Leveraging these
+                  findings, we then demonstrate that the compressive
+                  sampling matrix resulting from our proposed sampling
+                  scheme is incoherent with the curvelet
+                  transform. The combined measurement matrix exhibits
+                  better isometry properties than other transform
+                  bases such as a non-localized multidimensional
+                  Fourier transform. We illustrate our results with
+                  simulations of ‘ideal’ simultaneous-source marine
+                  acquisition, which dithers both in time and space,
+                  compared with periodic and randomized time-dithering.},
+keywords ={Curvelet transform,Fourier,Marine acquisition},
+optdoi = {10.1111/j.1365-2478.2012.01075.x},
+url = {http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2478.2012.01075.x/abstract}
+}
+
+@article{Aravkin11TRridr,
+author = {Aleksandr Y. Aravkin and Michael P. Friedlander and Felix J. Herrmann and Tristan {van Leeuwen}},
+title = {Robust inversion, dimensionality reduction, and randomized sampling},
+journal = {Mathematical Programming},
+volume = {134},
+number = {1},
+pages = {101-125},
+year = {2012},
+optmonth = {07/2012},
+abstract = {We consider a class of inverse problems in which the
+                  forward model is the solution operator to linear
+                  ODEs or PDEs. This class admits several
+                  dimensionality-reduction techniques based on data
+                  averaging or sampling, which are especially useful
+                  for large-scale problems. We survey these approaches
+                  and their connection to stochastic optimization. The
+                  data-averaging approach is only viable, however, for
+                  a least-squares misfit, which is sensitive to
+                  outliers in the data and artifacts unexplained by
+                  the forward model. This motivates us to propose a
+                  robust formulation based on the Student’s
+                  t-distribution of the error. We demonstrate how the
+                  corresponding penalty function, together with the
+                  sampling approach, can obtain good results for a
+                  large-scale seismic inverse problem with 50 %
+                  corrupted data.},
+keywords = {Inverse problems, Seismic inversion, Stochastic optimization, Robust estimation, Optimization, FWI},
+optdoi = {10.1007/s10107-012-0571-6},
+url = {http://www.springerlink.com/content/35rwr101h5736340/}
+}
+
 @article{Herrmann11TRfcd, 
 author={Felix J. Herrmann and Michael P. Friedlander and Ozgur Yilmaz}, 
 journal={Signal Processing Magazine, IEEE}, 
@@ -23,7 +214,7 @@ keywords={Earth, Nyquist sampling criterion;dimensionality curse,
 higher-resolution images, massive data volumes,seismic exploration techniques,
 strains current acquisition system,strains current processing system,
 geographic information systems,seismology}, 
-doi={10.1109/MSP.2012.2185859}, 
+optdoi={10.1109/MSP.2012.2185859}, 
 url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/IEEESignalProcessingMagazine/2012/Herrmann11TRfcd/Herrmann11TRfcd.pdf},
 ISSN={1053-5888}}
 
@@ -64,13 +255,13 @@ pages = {19-33}
   author = {Felix J. Herrmann and Xiang Li},
   title = {Efficient least-squares imaging with sparsity promotion and compressive
         sensing},
-  year = {2011},
+  year = {2012},
   journal = {Geophysical Prospecting},
-  optvolume = {NA},
-  optnumber = {NA},
-  optpages = {NA},
+  volume = {60},
+  number = {4},
+  pages = {696-712},
   address = {University of British Columbia, Vancouver},
-  optmonth = {1/2012},
+  optmonth = {07/2012},
   abstract = {Seismic imaging is a linearized inversion problem relying on the 
   minimization of a least-squares misfit functional as a function of the medium 
   perturbation. The success of this procedure hinges on our ability to handle 
@@ -238,11 +429,59 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedla
 @article{kumar2010TNPecr,
   author = {Vishal Kumar and Jounada Oueity and Ron Clowes and Felix J. Herrmann},
   title = {Enhancing Crustal Reflection Data through Curvelet Denoising},
-  year = {2010},
-  optmonth = {07/2010},
+  year = {2011},
+  optmonth = {07/2011},
   journal = {Technophysics},
+  volume = {508},
+  number = {1-4},
+  pages = {106-116},
+  abstract = {Suppression of incoherent noise, which is present in the
+                  seismic signal and may often lead to ambiguous
+                  interpretation, is a key step in processing
+                  associated with crustal reflection data. In this
+                  paper, we make use of the parsimonious
+                  representation of seismic data in the curvelet
+                  domain to perform the noise attenuation while
+                  preserving the coherent energy and its amplitude
+                  information. Curvelets are a recently developed
+                  mathematical transform that has as one of its
+                  properties minimal overlap between seismic signal
+                  and noise in the transform domain, thereby
+                  facilitating signal-noise separation. The problem is
+                  cast as an inverse problem and the results are
+                  obtained by updating the solution at each
+                  iteration. We demonstrate the effectiveness of this
+                  procedure at removing noise on both synthetic shot
+                  gathers and a synthetic stacked seismic section. We
+                  then apply curvelet denoising to deep crustal
+                  seismic reflection data where the signal-to-noise
+                  ratio is low. The reflection data were recorded
+                  along Lithoprobe's SNORCLE Line 1 across
+                  Paleoproterozoic-Archean domains in Canada's
+                  Northwest Territories. After initial processing, we
+                  apply the iterative curvelet denoising to both
+                  pre-stack shot gathers and post-stack data. Ground
+                  roll, random noise and much of the anomalous
+                  vertical energy is removed from the pre-stack shot
+                  gathers, to the extent that crustal reflections,
+                  including those from the Moho, are clearly seen on
+                  individual gathers. Denoised stacked data show a
+                  series of dipping reflections in the lower crust
+                  that extend into the Moho. The Moho itself is
+                  relatively flat and characterized by a sharp, narrow
+                  band of reflections. Comparing the results for the
+                  stacked data with those from F-X deconvolution,
+                  curvelet denoising outperforms the latter by
+                  attenuating incoherent noise with minimal harm to
+                  the signal. Because curvelet denoising retains
+                  amplitude information, it provides opportunities for
+                  further studies of seismic sections through
+                  attribute analyses. Curvelet denoising provides an
+                  important new tool in the processing toolbox for
+                  crustal seismic reflection data.},
   optdoi = {10.1016/j.tecto.2010.07.01},
   keywords = {SLIM,Processing}
+  url = {http://www.sciencedirect.com/science/article/pii/S0040195110003227},
 }
 
 
@@ -250,6 +489,8 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedla
   author = {Tristan van Leeuwen and Aleksandr Y. Aravkin and  Felix J. Herrmann},
   title = {Seismic waveform inversion by stochastic optimization},
   journal = {International Journal of Geophysics},
+  volume = {2011},
+  notes = {Article ID: 689041, 18pages},
   year = {2011},
   optmonth = {12/2011},
   volume = {2011},
@@ -346,7 +587,7 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedla
 }
 
 @ARTICLE{berg2008SJSCpareto,
-  author = {E. van den Berg and Michael P. Friedlander},
+  author = {Ewout {van den Berg} and Michael P. Friedlander},
   title = {Probing the Pareto frontier for basis pursuit solutions},
   journal = {SIAM Journal on Scientific Computing},
   year = {2008},
@@ -381,7 +622,7 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedla
 
 
 @ARTICLE{hennenfent2008GEOPnii,
-  author = {Gilles Hennenfent and Ewout van den Berg and Michael P. Friedlander
+  author = {Gilles Hennenfent and Ewout {van den Berg} and Michael P. Friedlander
 	and Felix J. Herrmann},
   title = {New insights into one-norm solvers from the {P}areto curve},
   journal = {Geophysics},
@@ -490,7 +731,7 @@ url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysical Jour
 }
 
 @ARTICLE{herrmann2008ACHAsac,
-  author = {Felix J. Herrmann and Peyman P. Moghaddam and Chris C. Stolk},
+  author = {Felix J. Herrmann and Peyman P. Moghaddam and Chris Stolk},
   title = {Sparsity- and continuity-promoting seismic image recovery with curvelet
 	frames},
   journal = {Applied and Computational Harmonic Analysis},

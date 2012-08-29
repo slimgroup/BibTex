@@ -1,4 +1,90 @@
 %-------------------------------------------------2012-------------------------------------------------
+@conference{min2012CSEGrgfe,
+author = {Ju-Won Oh and Dong-Joo Min and Felix J. Herrmann},
+year = {2012},
+optmonth = {02/2012},
+booktitle = {CSEG technical program},
+title = {Re-establishment of gradient in frequency-domain elastic waveform inversion},
+abstract = {To obtain solutions close to global minimum in waveform 
+inversion, the gradients computed at each frequency need to be 
+weighted to appropriately describe the residuals between modeled and 
+field data. While the low-frequency components of the gradients should 
+be weighted to recover the long- wavelength structures, the high-frequency 
+components of the gradients need to be weighted when the short-wavelength 
+structures are restored. However, the conventional elastic waveform inversion 
+algorithms cannot properly weight the gradients computed at each frequency. 
+When gradients are scaled using the pseudo-Hessian matrix inside the 
+frequency loop, gradients obtained at high frequencies are over-emphasized. 
+When the gradients are scaled outside the frequency loop, gradients are 
+weighted by the source spectra. In this study, we propose applying weighting 
+factors to the gradients obtained at each frequency so that gradients can 
+properly reflect the differences between the true and assumed models satisfying 
+the general inverse theory. The weighting factors are composed by the 
+backpropagated residuals. Numerical examples for the simple rectangular-shaped 
+model and the modified version of the Marmousi-2 model show that the 
+weighting method enhances gradient images and inversion results compared 
+to the conventional inversion algorithms.},
+keywords = {elastic, waveform inversion, frequency-domain, weighting factors},
+url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/2012/min2012CSEGrgfe/min2012CSEGrgfe.pdf}
+}
+
+@conference{wason2012CSEGode,
+author = {Haneet Wason and Felix J. Herrmann},
+year = {2012},
+optmonth = {02/2012},
+booktitle = {CSEG technical program},
+title = {Only dither: efficient simultaneous marine acquisition},
+abstract = {Simultaneous-source acquisition is an emerging technology
+that is stimulating both geophysical research and commercial efforts. 
+Simultaneous marine acquisition calls for the development of a new set
+of design principles and post-processing tools. The focus here is on 
+simultaneous-source marine acquisition design and sparsity-promoting 
+sequential-source data recovery. We propose a pragmatic simultaneous-source, 
+randomized marine acquisition scheme where multiple vessels sail across 
+an ocean-bottom array firing airguns at — sequential locations and randomly 
+time-dithered instances. By leveraging established findings from the field of 
+compressive sensing, where the choice of the sparsifying transform needs 
+to be incoherent with the compressive sampling matrix, we can significantly 
+impact the reconstruction quality, and demonstrate that the compressive 
+sampling matrix resulting from the proposed sampling scheme is sufficiently 
+incoherent with the curvelet transform to yield successful recovery by sparsity 
+promotion. Results are illustrated with simulations of “purely” random marine 
+acquisition, which requires an airgun to be located at each source location, 
+and random time-dithering marine acquisition with one and two source vessels. 
+Size of the collected data volumes in all cases is the same. Compared to the 
+recovery from the former acquisition scheme (SNR = 10.5dB), we get good 
+results by dithering with only one source vessel (SNR = 8.06dB) in the latter 
+scheme, which improve at the cost of having an additional source vessel 
+(SNR = 9.85dB).},
+keywords = {CSEG, acquisition, marine, simultaneous},
+url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/2012/wason2012CSEGode/wason2012CSEGode.pdf}
+}
+
+@conference{li2011CSEGefimag,
+author = {Xiang Li and Felix J. Herrmann},
+year = {2012},
+optmonth = {02/2012},
+booktitle = {CSEG technical program},
+title = {Efficient full-waveform inversion with marine acquisition geometry},
+abstract = {Full-waveform inversion (FWI) is a nonlinear data fitting procedure 
+based on seismic data to derive a accurate velocity model. With the increasing 
+demand for high resolution images in complex geological settings, the 
+importance of improvements in acquisition and inversion become more and 
+more critical. However, these improvements will be obtained at high 
+computational cost, as a typical marine survey contains thousands of shot 
+and receiver positions, and FWI needs several passes through massive seismic 
+data. Computational cost of FWI will grow exponentially as the size of seismic 
+data and desired resolution increase. In this paper we present a modified 
+Gauss-Newton (GN) method that borrows ideas from compressive sensing, 
+where we compute the GN updates from a few randomly selected sequential 
+shots. Each subproblem is solved by using a sparsity promoting algorithm. 
+With this approach, we dramatically reduce the size and hence the 
+computational costs of the problem, whilst we control information loss by 
+redrawing a different set of sequential shots for each subproblem.},
+keywords = {CSEG},
+url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/2012/li2011CSEGefimag/li2011CSEGefimag.pdf}
+}
+
 @conference{herrmann2012SEGals,
 author = {Felix J. Herrmann},
 year = {2012},
@@ -669,13 +755,11 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
   title        = {A modified, sparsity promoting, {G}auss-{N}ewton algorithm for seismic waveform inversion},
   booktitle    = {Proc. SPIE},
   year         = {2011},
-  volume       = {2011},
   number       = {81380V},
   notes        = {TR-2011-05},
   optmonth     = {08/2011},
   issn         = {1},
   url          = {http://slim.eos.ubc.ca/Publications/public/Journals/SPIEreport.pdf},
-  url2         = {http://dx.doi.org/10.1117/12.893861},
   optdoi       = {doi:10.1117/12.893861},
   keywords     = {SLIM,Compressive Sensing,Optimization,Full-waveform inversion},
   abstract     = {Images obtained from seismic data are used by the
@@ -2496,7 +2580,7 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
   title        = {Compressed sensing and sparse recovery in
                   exploration seismology. Lecture I presented at the
                   PIMS Summer School on Seismic Imaging. Seattle.},
-  booktiltle   = {PIMS},
+  booktitle    = {PIMS},
   year         = {2009},
   abstract     = {In this course, I will present how recent results
                   from compressed sensing and sparse recovery apply to
@@ -2698,6 +2782,7 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
   author       = {Rayan Saab and Ozgur Yilmaz},
   title        = {A short note on non-convex compressed sensing},
   year         = {2009},
+  booktitle    = {SAMPTA technical program},
   organization = {SAMPTA},
   abstract     = {In this note, we summarize the results we recently
                   proved in\cite{SY08} on the theoretical performance
@@ -6478,6 +6563,7 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
 	inhomogeneous medium},
   year = {2008},
   type = {masters},
+  school = {University of British Columbia},
   optmonth = {04/2008},
   abstract = {In this work an explicit algorithm for the extrapolation of one-way
 	wavefields is proposed which combines recent developments in information
@@ -6734,6 +6820,7 @@ year = {2012},
 optmonth = {04/2012},
 organization = {SEG},
 number = {TR-2012-03},
+institution = {Department of Earth and Ocean Sciences},
 address = {University of British Columbia, Vancouver},
 title = {A parallel, object-oriented framework for frequency-domain wavefield 
 imaging and inversion.},
@@ -6760,6 +6847,7 @@ year = {2012},
 optmonth = {04/2012},
 organization = {SEG},
 number = {TR-2012-04},
+institution = {Department of Earth and Ocean Sciences},
 address = {University of British Columbia, Vancouver},
 title = {Fast Methods for Rank Minimization with Applications to Seismic-Data Interpolation},
 abstract = {Rank penalizing techniques are an important direction 
@@ -6784,6 +6872,8 @@ url = {https://www.slim.eos.ubc.ca/Publications//Public/TechReport/2012/rajiv201
   title = {Empirical recovery conditions for seismic sampling},
   year = {2010},
   organization = {SEG},
+  institution = {Department of Earth and Ocean Sciences},
+  address = {University of British Columbia, Vancouver},
   abstract = {In this paper, we offer an alternative sampling method leveraging
         recent insights from compressive sensing towards seismic acquisition
         and processing for data that are traditionally considered to be undersampled.
@@ -6814,10 +6904,12 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/Publications/P
 @techreport{almatar10SEGesfd,
   author = {Mufeed H. AlMatar and Tim T.Y. Lin and Felix J. Herrmann},
   title = {Estimation of surface-free data by curvelet-domain matched filtering and sparse inversion},
-year = {2010},
-organization = {SEG},
+  year = {2010},
+  organization = {SEG},
+  institution = {Department of Earth and Ocean Sciences},
+  address = {University of British Columbia, Vancouver},
   abstract = {Matching seismic wavefields and images lies at the heart of many 
-pre-post-processing steps part of seismic imaging- whether one is matching predicted
+        pre-post-processing steps part of seismic imaging- whether one is matching predicted
         wavefield components, such as multiples, to the actual to-be-separated
         wavefield compo- nents present in the data or whether one is aiming
         to restore migration amplitudes by scaling, using an image-to-remigrated-
@@ -7275,90 +7367,6 @@ factorization.},
 keywords = {multiples,Processing,Optimization},
 url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/Journal/bander2012dre/bander2012dre.pdf}
 }
-
-@unpublished{min2012CSEGrgfe,
-author = {Ju-Won Oh and Dong-Joo Min and Felix J. Herrmann},
-year = {2012},
-optmonth = {02/2012},
-title = {Re-establishment of gradient in frequency-domain elastic waveform inversion},
-abstract = {To obtain solutions close to global minimum in waveform 
-inversion, the gradients computed at each frequency need to be 
-weighted to appropriately describe the residuals between modeled and 
-field data. While the low-frequency components of the gradients should 
-be weighted to recover the long- wavelength structures, the high-frequency 
-components of the gradients need to be weighted when the short-wavelength 
-structures are restored. However, the conventional elastic waveform inversion 
-algorithms cannot properly weight the gradients computed at each frequency. 
-When gradients are scaled using the pseudo-Hessian matrix inside the 
-frequency loop, gradients obtained at high frequencies are over-emphasized. 
-When the gradients are scaled outside the frequency loop, gradients are 
-weighted by the source spectra. In this study, we propose applying weighting 
-factors to the gradients obtained at each frequency so that gradients can 
-properly reflect the differences between the true and assumed models satisfying 
-the general inverse theory. The weighting factors are composed by the 
-backpropagated residuals. Numerical examples for the simple rectangular-shaped 
-model and the modified version of the Marmousi-2 model show that the 
-weighting method enhances gradient images and inversion results compared 
-to the conventional inversion algorithms.},
-keywords = {elastic, waveform inversion, frequency-domain, weighting factors},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/CSEG/2012/min2012CSEGrgfe/min2012CSEGrgfe.pdf}
-}
-
-@unpublished{wason2012CSEGode,
-author = {Haneet Wason and Felix J. Herrmann},
-year = {2012},
-optmonth = {02/2012},
-title = {Only dither: efficient simultaneous marine acquisition},
-abstract = {Simultaneous-source acquisition is an emerging technology
-that is stimulating both geophysical research and commercial efforts. 
-Simultaneous marine acquisition calls for the development of a new set
-of design principles and post-processing tools. The focus here is on 
-simultaneous-source marine acquisition design and sparsity-promoting 
-sequential-source data recovery. We propose a pragmatic simultaneous-source, 
-randomized marine acquisition scheme where multiple vessels sail across 
-an ocean-bottom array firing airguns at — sequential locations and randomly 
-time-dithered instances. By leveraging established findings from the field of 
-compressive sensing, where the choice of the sparsifying transform needs 
-to be incoherent with the compressive sampling matrix, we can significantly 
-impact the reconstruction quality, and demonstrate that the compressive 
-sampling matrix resulting from the proposed sampling scheme is sufficiently 
-incoherent with the curvelet transform to yield successful recovery by sparsity 
-promotion. Results are illustrated with simulations of “purely” random marine 
-acquisition, which requires an airgun to be located at each source location, 
-and random time-dithering marine acquisition with one and two source vessels. 
-Size of the collected data volumes in all cases is the same. Compared to the 
-recovery from the former acquisition scheme (SNR = 10.5dB), we get good 
-results by dithering with only one source vessel (SNR = 8.06dB) in the latter 
-scheme, which improve at the cost of having an additional source vessel 
-(SNR = 9.85dB).},
-keywords = {CSEG, acquisition, marine, simultaneous},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/CSEG/2012/wason2012CSEGode/wason2012CSEGode.pdf}
-}
-
-@unpublished{li2011CSEGefimag,
-author = {Xiang Li and Felix J. Herrmann},
-year = {2012},
-optmonth = {02/2012},
-title = {Efficient full-waveform inversion with marine acquisition geometry},
-abstract = {Full-waveform inversion (FWI) is a nonlinear data fitting procedure 
-based on seismic data to derive a accurate velocity model. With the increasing 
-demand for high resolution images in complex geological settings, the 
-importance of improvements in acquisition and inversion become more and 
-more critical. However, these improvements will be obtained at high 
-computational cost, as a typical marine survey contains thousands of shot 
-and receiver positions, and FWI needs several passes through massive seismic 
-data. Computational cost of FWI will grow exponentially as the size of seismic 
-data and desired resolution increase. In this paper we present a modified 
-Gauss-Newton (GN) method that borrows ideas from compressive sensing, 
-where we compute the GN updates from a few randomly selected sequential 
-shots. Each subproblem is solved by using a sparsity promoting algorithm. 
-With this approach, we dramatically reduce the size and hence the 
-computational costs of the problem, whilst we control information loss by 
-redrawing a different set of sequential shots for each subproblem.},
-keywords = {CSEG},
-url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/CSEG/2012/li2011CSEGefimag/li2011CSEGefimag.pdf}
-}
-
 
 @unpublished{Friedlander11TRhdm,
   author = {Michael P. Friedlander and Mark Schmidt},
@@ -7920,8 +7928,8 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedla
                   important new tool in the processing toolbox for
                   crustal seismic reflection data.},
   optdoi = {10.1016/j.tecto.2010.07.01},
-  keywords = {SLIM,Processing}
-  url = {http://www.sciencedirect.com/science/article/pii/S0040195110003227},
+  keywords = {SLIM,Processing},
+  url = {http://www.sciencedirect.com/science/article/pii/S0040195110003227}
 }
 
 
@@ -7933,7 +7941,6 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedla
   notes = {Article ID: 689041, 18pages},
   year = {2011},
   optmonth = {12/2011},
-  volume = {2011},
   optdoi = {10.1155/2011/689041},
   abstract = {We explore the use of stochastic optimization methods
                   for seismic waveform inversion. The basic principle

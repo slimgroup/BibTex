@@ -1,4 +1,13 @@
 %-------------------------------------------------2012-------------------------------------------------
+
+@conference{herrmann2012UW,
+author = {Felix J. Herrmann},
+year = {2012},
+booktitle = {Talk at University of Wisconsin},
+title = {Compressive sensing and sparse recovery in exploration seismology},
+presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Seminar/2012/herrmann2012UW/herrmann2012UW_pres.pdf}
+}
+
 @conference{min2012CSEGrgfe,
 author = {Ju-Won Oh and Dong-Joo Min and Felix J. Herrmann},
 year = {2012},
@@ -250,6 +259,7 @@ recovery performance of iterative re-weighted $\ell_1$ (IRWL1) minimization
 of Cand{\`e}s, Wakin, and Boyd. Moreover, our algorithm has the 
 computational cost of a single BPDN problem.},
 keywords = {Sparse recovery, compressed sensing, iterative algorithms, weighted $\ell_1$ minimization, partial support recovery},
+presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/mansour2012SSPwspgl1/mansour2012SSPwspgl1_pres.pdf},
 url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/mansour2012SSPwspgl1/mansour2012SSPwspgl1.pdf}
 }
 
@@ -271,6 +281,7 @@ be inverted. We compare this message-passing scheme to state-of-the-art
 solvers for problems in missing-trace interpo- lation and in 
 dimensionality-reduced imaging with phase en- coding.},
 keywords = {Exploration seismology, compressive sensing, transform-domain sparsity promotion, seismic imaging},
+presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herrmann2012SSPamp/herrmann2012SSPamp_pres.pdf},
 url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herrmann2012SSPamp/herrmann2012SSPamp.pdf}
 }
 
@@ -594,40 +605,30 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
   Keywords     = {ICASSP},
   Organization = {ICASSP},
   Title        = {Robust inversion via semistochastic dimensionality reduction},
-  Year         = {2011},
-  optmonth     = {09/2011},
-  notes        = {To appear for the ICASSP 2012},
-  Abstract     = {In this paper, we offer an alternative sampling
-                  method leveraging recent insights from compressive
-                  sensing towards seismic acquisition and processing
-                  for data that are traditionally considered to be
-                  undersampled. The main outcome of this approach is a
-                  new technology where acquisition and processing
-                  related costs are no longer determined by overly
-                  stringent sampling criteria, such as Nyquist. At the
-                  heart of our approach lies randomized incoherent
-                  sampling that breaks subsampling related
-                  interferences by turning them into harmless noise,
-                  which we subsequently remove by promoting
-                  transform-domain sparsity. Now, costs no longer grow
-                  with resolution and dimensionality of the survey
-                  area, but instead depend on transform-domain
-                  sparsity only. Our contribution is twofold. First,
-                  we demonstrate by means of carefully designed
-                  numerical experiments that compressive sensing can
-                  successfully be adapted to seismic
-                  acquisition. Second, we show that accurate recovery
-                  can be accomplished for compressively sampled data
-                  volumes sizes that exceed the size of conventional
-                  transform-domain data volumes by only a small
-                  factor. Because compressive sensing combines
-                  transformation and encoding by a single linear
-                  encoding step, this technology is directly
-                  applicable to acquisition and to dimensionality
-                  reduction during processing. In either case,
-                  sampling, storage, and processing costs scale with
-                  transform-domain sparsity. We illustrate this
-                  principle by means of number of case studies. },
+  Year         = {2012},
+  pages        = {5245-5248},
+  optdoi       = {10.1109/ICASSP.2012.6289103},
+  Abstract     = {We consider a class of inverse problems where it is
+                  possible to aggregate the results of multiple
+                  experiments. This class includes problems where the
+                  forward model is the solution operator to linear
+                  ODEs or PDEs. The tremendous size of such problems
+                  motivates the use dimensionality reduction (DR)
+                  techniques based on randomly mixing
+                  experiments. These techniques break down, however,
+                  when robust data-fitting formulations are used,
+                  which are essential in cases of missing data,
+                  unusually large errors, and systematic features in
+                  the data unexplained by the forward model. We survey
+                  robust methods within a statistical framework, and
+                  propose a sampling optimization approach that allows
+                  DR. The efficacy of the methods are demonstrated for
+                  a large-scale seismic inverse problem using the
+                  robust Student's t-distribution, where a useful
+                  synthetic velocity model is recovered in the extreme
+                  scenario of 60% corrupted data. The sampling
+                  approach achieves this recovery using 20% of the
+                  effort required by a direct robust approach.},
   keywords     = {SLIM,Optimization,Full-waveform inversion},
   URL          = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/AravkinFriedlanderLeeuwen/AravkinFriedlanderLeeuwen.pdf }
 }
@@ -660,12 +661,9 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
                   synthetic, which underscores the robustness of
                   sparsity promotion and its suitability for seismic
                   imaging.},
-  notes        = {To appear for the ICASSP 2012},
   Keywords     = {ICASSP},
   Organization = {ICASSP},
-  Date-Added   = {2011-09-27 15:00:00 -0700},
-  Year         = {2011},
-  optmonth     = {09/2011},
+  Year         = {2012},
   keywords     = {SLIM,Imaging,Optimization,Compressive Sensing},
   url          = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/AravkinLiHerrmann/AravkinLiHerrmann.pdf}
 }
@@ -689,12 +687,9 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
                   significant improvement in reconstruction quality
                   compared with standard CS as well as adaptive
                   recovery using weighted $\ell$1 minimization.},
-  notes        = {To appear for the ICASSP 2012},  
   Keywords     = {ICASSP},
   Organization = {ICASSP},
-  Date-Added   = {2011-09-27 15:00:00 -0700},
-  Year         = {2011},
-  optmonth     = {09/2011},
+  Year         = {2012},
   keywords     = {Compressive Sensing},
   url          = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/MansourYilmazICASSPaCS/MansourYilmazICASSPaCS.pdf}
 }
@@ -705,8 +700,8 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
   Title        = {Support driven reweighted $\ell_1$ minimization},
   booktitle    = {ICASSP},
   Abstract     = {In this paper, we propose a support driven
-                  reweighted $\ell$_￿1 minimization algorithm (SDRL1)
-                  that solves a sequence of weighted $\ell$_￿1
+                  reweighted $\ell$_1 minimization algorithm (SDRL1)
+                  that solves a sequence of weighted $\ell$_1
                   problems and relies on the support estimate accu-
                   racy. Our SDRL1 algorithm is related to the IRL1
                   algorithm proposed by Cande`s, Wakin, and Boyd. We
@@ -717,7 +712,7 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
                   IRL1. We then prove that given a support estimate
                   with sufficient accuracy, if the signal decays
                   according to a specific rate, the solution to the
-                  weighted ￿1 minimization problem results in a
+                  weighted $\ell$_1 minimization problem results in a
                   support estimate with higher accuracy than the
                   initial estimate. We also show that under certain
                   conditions, it is possible to achieve higher
@@ -725,13 +720,10 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
                   estimates is considered. We demonstrate the
                   performance of SDRL1 through numerical simulations
                   and compare it with that of IRL1 and standard
-                  ￿$\ell$_￿1 minimization.},
-  notes        = {To appear for the ICASSP 2012},
+                  $\ell$_1 minimization.},
   Keywords     = {ICASSP},
   Organization = {ICASSP},
-  Date-Added   = {2011-09-27 15:00:00 -0700},
-  Year         = {2011},
-  optmonth     = {09/2011},
+  Year         = {2012},
   keywords     = {Compressive Sensing},
   url          = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/MansourYilmazICASSPwL1/MansourYilmazICASSPwL1.pdf}
 }
@@ -7244,6 +7236,79 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/alma
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 
+@unpublished{vanderneut12irs,
+author = {Joost {van der Neut} and Felix J. Herrmann},
+year = {2012},
+optmonth = {10/2012},
+title = {Interferometric redatuming by sparse inversion},
+abstract = {Assuming that exact transmission responses are known
+                  between the surface and a particular depth level in
+                  the subsurface, seismic sources can be eﬀectively
+                  mapped to that level by a process called
+                  interferometric redatuming. After redatuming, the
+                  obtained waveﬁelds can be used for imaging below
+                  this particular depth level. Interferometric
+                  redatuming consists of two steps, namely (i) the
+                  decomposition of the observed waveﬁelds into up- and
+                  down-going constituents and (ii) a multidimensional
+                  deconvolution of the up- and downgoing
+                  waveﬁelds. While this method works in theory,
+                  sensitivity to noise and artifacts due to incomplete
+                  acquisition call for a diﬀerent formulation. In this
+                  letter, we demonstrate the beneﬁts of formulating
+                  the two steps that undergird interferometric
+                  redatuming in terms of a transform-domain
+                  sparsity-promoting program. By exploiting
+                  compressibility of seismic waveﬁelds in the curvelet
+                  domain, we not only become robust with respect to
+                  noise but we are also able to remove certain
+                  artifacts while preserving the frequency
+                  content. These improvements lead to a better image
+                  of the target from the redatumed data.},
+keywords = {Controlled source seismology, Interferometry, Inverse theory},
+url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/Journal/vanderneut12irs/vanderneut12irs.pdf}
+}
+
+@unpublished{mansour12iwr,
+author = {Hassan Mansour and Felix J. Herrmann and Ozgur Yilmaz},
+year = {2012},
+optmonth = {10/2012},
+title = {Improved wavefield reconstruction from randomized sampling via weighted one-norm minimization},
+abstract = {Missing-trace interpolation aims to reconstruct regularly
+                  sampled wavefields from periodically sampled data
+                  with gaps caused by physical constraints. While
+                  transform-domain sparsity promotion has proven to be
+                  an effective tool to solve this recovery problem,
+                  recent developments in randomized acquisition in
+                  marine, via randomized coil sampling or randomized
+                  streamers with deliberate feathering, and on land,
+                  via randomization of the source and/or receiver
+                  positions, expose vulnerabilities in the current
+                  recovery techniques that aside from the selection of
+                  the proper transform domain make no use of a priori
+                  information on the transform-domain coefficients. To
+                  overcome these vulnerabilities in solving the
+                  recovery problem for large-scale problems, we
+                  propose recovery by weighted one-norm minimization,
+                  which exploits correlations between locations of
+                  significant coefficients of different partitions,
+                  e.g., shot records, common-offset gathers, or
+                  frequency slices, of the acquired data. We use these
+                  correlations to define a sequence of 2D
+                  curvelet-based recovery problems that exploit 3D
+                  continuity exhibited by seismic wavefields without
+                  relying on the highly redundant 3D curvelet
+                  transform. To illustrate the performance of our
+                  weighted algorithm, we compare recoveries from
+                  different scenarios of partitioning for a seismic
+                  line from the Gulf of Suez. These examples
+                  demonstrate that our method is superior to standard
+                  ℓ1 minimization in terms of reconstruction quality
+                  and computational memory requirements.},
+keywords = {Trace interpolation, weighted one-norm minimization, compressed sensing, randomized sampling},
+url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/Journal/mansour12iwr/mansour12iwr.pdf}
+}
+
 @unpublished{vanleeuwen2012smii,
 author = {Tristan {van Leeuwen}},
 year = {2012},
@@ -7267,42 +7332,6 @@ keywords = {Seismic imaging,optimization,Matlab,object-oriented programming},
 url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/Journal/vanleeuwen2012smii/vanleeuwen2012smii.pdf}
 }
 
-
-@unpublished{aravkin2012IPNuisance,
-author = {Aleksandr Y. Aravkin and Tristan {van Leeuwen}},
-year = {2012},
-optmonth = {06/2012},
-title = {Estimating Nuisance Parameters in Inverse Problems},
-abstract = {Many inverse problems include nuisance parameters which,
-                  while not of direct interest, are required to
-                  recover primary parameters. Structure present in
-                  these problems allows efficient optimization
-                  strategies - a well known example is variable
-                  projection, where nonlinear least squares problems
-                  which are linear in some parameters can be very
-                  efficiently optimized. In this paper, we extend the
-                  idea of projecting out a subset over the variables
-                  to a broad class of maximum likelihood (ML) and
-                  maximum a posteriori likelihood (MAP) problems with
-                  nuisance parameters, such as variance or degrees of
-                  freedom. As a result, we are able to incorporate
-                  nuisance parameter estimation into large-scale
-                  constrained and unconstrained inverse problem
-                  formulations. We apply the approach to a variety of
-                  problems, including estimation of unknown variance
-                  parameters in the Gaussian model, degree of freedom
-                  (d.o.f.) parameter estimation in the context of
-                  robust inverse problems, automatic calibration, and
-                  optimal experimental design. Using numerical
-                  examples, we demonstrate improvement in recovery of
-                  primary parameters for several large- scale inverse
-                  problems. The proposed approach is compatible with a
-                  wide variety of algorithms and formulations, and its
-                  implementation requires only minor modifications to
-                  existing algorithms.},
-keywords = {full waveform inversion, students t, variance},
-url = {http://arxiv.org/abs/1206.6532}
-}
 
 @unpublished{lin2012robustepsi,
 author = {Tim T.Y. Lin and Felix J. Herrmann},
@@ -7448,6 +7477,44 @@ institution = {UBC-Computer Science Department},
 
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
+@unpublished{aravkin2012IPNuisance,
+author = {Aleksandr Y. Aravkin and Tristan {van Leeuwen}},
+year = {2012},
+optmonth = {10/2012},
+title = {Estimating Nuisance Parameters in Inverse Problems},
+notes = {To appear in Inverse Problems},
+abstract = {Many inverse problems include nuisance parameters which,
+                  while not of direct interest, are required to
+                  recover primary parameters. Structure present in
+                  these problems allows efficient optimization
+                  strategies - a well known example is variable
+                  projection, where nonlinear least squares problems
+                  which are linear in some parameters can be very
+                  efficiently optimized. In this paper, we extend the
+                  idea of projecting out a subset over the variables
+                  to a broad class of maximum likelihood (ML) and
+                  maximum a posteriori likelihood (MAP) problems with
+                  nuisance parameters, such as variance or degrees of
+                  freedom. As a result, we are able to incorporate
+                  nuisance parameter estimation into large-scale
+                  constrained and unconstrained inverse problem
+                  formulations. We apply the approach to a variety of
+                  problems, including estimation of unknown variance
+                  parameters in the Gaussian model, degree of freedom
+                  (d.o.f.) parameter estimation in the context of
+                  robust inverse problems, automatic calibration, and
+                  optimal experimental design. Using numerical
+                  examples, we demonstrate improvement in recovery of
+                  primary parameters for several large- scale inverse
+                  problems. The proposed approach is compatible with a
+                  wide variety of algorithms and formulations, and its
+                  implementation requires only minor modifications to
+                  existing algorithms.},
+keywords = {full waveform inversion, students t, variance},
+url1 = {http://arxiv.org/abs/1206.6532},
+url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InverseProblems/2012/aravkin2012IPNuisance/aravkin2012IPNuisance.pdf}
+}
+
 
 @article{VanLeeuwen11TRfwiwse,
   author = {Tristan van Leeuwen and Felix J. Herrmann},

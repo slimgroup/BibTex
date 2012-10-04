@@ -1,4 +1,13 @@
 %-------------------------------------------------2012-------------------------------------------------
+
+@conference{herrmann2012UW,
+author = {Felix J. Herrmann},
+year = {2012},
+booktitle = {Talk at University of Wisconsin},
+title = {Compressive sensing and sparse recovery in exploration seismology},
+presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Seminar/2012/herrmann2012UW/herrmann2012UW_pres.pdf}
+}
+
 @conference{min2012CSEGrgfe,
 author = {Ju-Won Oh and Dong-Joo Min and Felix J. Herrmann},
 year = {2012},
@@ -250,6 +259,7 @@ recovery performance of iterative re-weighted $\ell_1$ (IRWL1) minimization
 of Cand{\`e}s, Wakin, and Boyd. Moreover, our algorithm has the 
 computational cost of a single BPDN problem.},
 keywords = {Sparse recovery, compressed sensing, iterative algorithms, weighted $\ell_1$ minimization, partial support recovery},
+presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/mansour2012SSPwspgl1/mansour2012SSPwspgl1_pres.pdf},
 url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/mansour2012SSPwspgl1/mansour2012SSPwspgl1.pdf}
 }
 
@@ -271,6 +281,7 @@ be inverted. We compare this message-passing scheme to state-of-the-art
 solvers for problems in missing-trace interpo- lation and in 
 dimensionality-reduced imaging with phase en- coding.},
 keywords = {Exploration seismology, compressive sensing, transform-domain sparsity promotion, seismic imaging},
+presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herrmann2012SSPamp/herrmann2012SSPamp_pres.pdf},
 url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herrmann2012SSPamp/herrmann2012SSPamp.pdf}
 }
 
@@ -594,40 +605,30 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
   Keywords     = {ICASSP},
   Organization = {ICASSP},
   Title        = {Robust inversion via semistochastic dimensionality reduction},
-  Year         = {2011},
-  optmonth     = {09/2011},
-  notes        = {To appear for the ICASSP 2012},
-  Abstract     = {In this paper, we offer an alternative sampling
-                  method leveraging recent insights from compressive
-                  sensing towards seismic acquisition and processing
-                  for data that are traditionally considered to be
-                  undersampled. The main outcome of this approach is a
-                  new technology where acquisition and processing
-                  related costs are no longer determined by overly
-                  stringent sampling criteria, such as Nyquist. At the
-                  heart of our approach lies randomized incoherent
-                  sampling that breaks subsampling related
-                  interferences by turning them into harmless noise,
-                  which we subsequently remove by promoting
-                  transform-domain sparsity. Now, costs no longer grow
-                  with resolution and dimensionality of the survey
-                  area, but instead depend on transform-domain
-                  sparsity only. Our contribution is twofold. First,
-                  we demonstrate by means of carefully designed
-                  numerical experiments that compressive sensing can
-                  successfully be adapted to seismic
-                  acquisition. Second, we show that accurate recovery
-                  can be accomplished for compressively sampled data
-                  volumes sizes that exceed the size of conventional
-                  transform-domain data volumes by only a small
-                  factor. Because compressive sensing combines
-                  transformation and encoding by a single linear
-                  encoding step, this technology is directly
-                  applicable to acquisition and to dimensionality
-                  reduction during processing. In either case,
-                  sampling, storage, and processing costs scale with
-                  transform-domain sparsity. We illustrate this
-                  principle by means of number of case studies. },
+  Year         = {2012},
+  pages        = {5245-5248},
+  optdoi       = {10.1109/ICASSP.2012.6289103},
+  Abstract     = {We consider a class of inverse problems where it is
+                  possible to aggregate the results of multiple
+                  experiments. This class includes problems where the
+                  forward model is the solution operator to linear
+                  ODEs or PDEs. The tremendous size of such problems
+                  motivates the use dimensionality reduction (DR)
+                  techniques based on randomly mixing
+                  experiments. These techniques break down, however,
+                  when robust data-fitting formulations are used,
+                  which are essential in cases of missing data,
+                  unusually large errors, and systematic features in
+                  the data unexplained by the forward model. We survey
+                  robust methods within a statistical framework, and
+                  propose a sampling optimization approach that allows
+                  DR. The efficacy of the methods are demonstrated for
+                  a large-scale seismic inverse problem using the
+                  robust Student's t-distribution, where a useful
+                  synthetic velocity model is recovered in the extreme
+                  scenario of 60% corrupted data. The sampling
+                  approach achieves this recovery using 20% of the
+                  effort required by a direct robust approach.},
   keywords     = {SLIM,Optimization,Full-waveform inversion},
   URL          = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/AravkinFriedlanderLeeuwen/AravkinFriedlanderLeeuwen.pdf }
 }
@@ -660,12 +661,9 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
                   synthetic, which underscores the robustness of
                   sparsity promotion and its suitability for seismic
                   imaging.},
-  notes        = {To appear for the ICASSP 2012},
   Keywords     = {ICASSP},
   Organization = {ICASSP},
-  Date-Added   = {2011-09-27 15:00:00 -0700},
-  Year         = {2011},
-  optmonth     = {09/2011},
+  Year         = {2012},
   keywords     = {SLIM,Imaging,Optimization,Compressive Sensing},
   url          = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/AravkinLiHerrmann/AravkinLiHerrmann.pdf}
 }
@@ -689,12 +687,9 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
                   significant improvement in reconstruction quality
                   compared with standard CS as well as adaptive
                   recovery using weighted $\ell$1 minimization.},
-  notes        = {To appear for the ICASSP 2012},  
   Keywords     = {ICASSP},
   Organization = {ICASSP},
-  Date-Added   = {2011-09-27 15:00:00 -0700},
-  Year         = {2011},
-  optmonth     = {09/2011},
+  Year         = {2012},
   keywords     = {Compressive Sensing},
   url          = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/MansourYilmazICASSPaCS/MansourYilmazICASSPaCS.pdf}
 }
@@ -705,8 +700,8 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
   Title        = {Support driven reweighted $\ell_1$ minimization},
   booktitle    = {ICASSP},
   Abstract     = {In this paper, we propose a support driven
-                  reweighted $\ell$_￿1 minimization algorithm (SDRL1)
-                  that solves a sequence of weighted $\ell$_￿1
+                  reweighted $\ell$_1 minimization algorithm (SDRL1)
+                  that solves a sequence of weighted $\ell$_1
                   problems and relies on the support estimate accu-
                   racy. Our SDRL1 algorithm is related to the IRL1
                   algorithm proposed by Cande`s, Wakin, and Boyd. We
@@ -717,7 +712,7 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
                   IRL1. We then prove that given a support estimate
                   with sufficient accuracy, if the signal decays
                   according to a specific rate, the solution to the
-                  weighted ￿1 minimization problem results in a
+                  weighted $\ell$_1 minimization problem results in a
                   support estimate with higher accuracy than the
                   initial estimate. We also show that under certain
                   conditions, it is possible to achieve higher
@@ -725,13 +720,10 @@ url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SSP/2012/herr
                   estimates is considered. We demonstrate the
                   performance of SDRL1 through numerical simulations
                   and compare it with that of IRL1 and standard
-                  ￿$\ell$_￿1 minimization.},
-  notes        = {To appear for the ICASSP 2012},
+                  $\ell$_1 minimization.},
   Keywords     = {ICASSP},
   Organization = {ICASSP},
-  Date-Added   = {2011-09-27 15:00:00 -0700},
-  Year         = {2011},
-  optmonth     = {09/2011},
+  Year         = {2012},
   keywords     = {Compressive Sensing},
   url          = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/MansourYilmazICASSPwL1/MansourYilmazICASSPwL1.pdf}
 }

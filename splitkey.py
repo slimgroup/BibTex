@@ -9,6 +9,7 @@ import sys
 #---------------STANDARD DEFINITIONS----------
 entrytypes=["@article{",
 		"@conference{",
+                "@presentation{",
 		"@techreport{",
 		"@manual{",
 		"@book{",

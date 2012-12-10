@@ -1,0 +1,351 @@
+%-------------------------------------------------2012-------------------------------------------------                        
+
+@presentation{Akalin2012SINBADlss,
+        title = {Large scale seismic data interpolation with matrix completion},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Seismic surveys amass large and incomplete data sets, and designing algorithms to interpolate the missing data at very large scales poses a daunting and critical challenge.  We study how to apply scalable matrix completion methods to such interpolation problems.  Recent studies in matrix completion have shown that a matrix that has low rank can be exactly completed when only a small number of observations are available. However, there are two challenges to applying matrix completion to seismic data. Matrix completion is typically applied to two dimensional or dyadic data whereas seismic data is often tensorial. Also successful matrix completion requires a low-rank matrix structure. We address these problems by organizing the seismic data on a matrix grid which exhibits a low-rank structure. This encoding allows us to apply the Jellyfish algorithm, developed at the University of Wisconsin, which achieves state-of-the-art performance for large-scale matrix completion. The proposed framework makes it possible to complete high-SNR interpolations of gigabytes of 4-D seismic data in minutes on standard multicore workstations. Our preliminary experimental results suggest that matrix completion provides a promising new approach to the seismic data interpolation problem.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+	presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/Akalin2012SINBADlss/Akalin2012SINBADlss_pres.pdf},
+        author = {Okan Akalin}
+}
+
+
+@presentation{aravkin2012SINBADenp,
+        title = {Estimating Nuisance Parameters in Inverse Problems},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Many inverse problems include nuisance parameters which, while not of direct interest, are required to recover primary parameters. In this talk, we present the idea of "projecting out" these variables, and how this idea allows us to design methods for solving a broad class of problems with nuisance parameters, such as variance or degrees of freedom. We then discuss several geophysical applications, including including estimation of unknown variance parameters in the Gaussian model for full waveform inversion, degree of freedom (d.o.f.) parameter estimation in the context of robust imaging problems, and robust source estimation.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/aravkin2012SINBADenp/aravkin2012SINBADenp_pres.pdf},
+        author = {Aleksandr Y. Aravkin}
+}
+
+
+@presentation{aravkin2012SINBADgsf,
+	title = {Generalized SPGL1: from theory to applications},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {The SPGL1 solver has been effectively used for many geophysical applications, including curvelet data interpolation, imaging, and as a subroutine in full waveform inversion. In this talk, we present an overview of the theoretical foundation of the solver, along with a broad generalization of this foundation. We then introduce several applications, including robust & sparse imaging, sparse deconvolution, and data interpolation by matrix completion.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/aravkin2012SINBADgsf/aravkin2012SINBADgsf_pres.pdf},
+        author = {Aleksandr Y. Aravkin}
+}
+
+
+@presentation{au-yeung2012SINBADcs,
+        title = {Compressed sensing, random Fourier matrix and Jitter sampling},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = { Compressed sensing is an emerging signal processing technique that allows signals to be sampled well below the Nyquist rate, when the signal has a sparse representation in an orthonormal basis. By using a random Fourier matrix or a Gaussian matrix as our measurement matrix, we can reconstruct a signal from far fewer measurements than required by Shannon sampling theorem. In this talk, we will discuss the role of uniform versus jitter sampling, both in a theoretical and practical viewpoint.
+},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/au-yeung2012SINBADcs/au-yeung2012SINBADcs_pres.pdf},
+        author = {Enrico Au-Yeung and Hassan Mansour and Ozgur Yilmaz}
+}
+
+
+@presentation{dasilva2012SINBADhtt,
+        title = {Hierarchical Tucker Tensor Optimization - Applications to 4D Seismic Data Interpolation},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {There has been a swell of research in the scientific computing community in the last couple of years which tries to extend notions of linear algebra (rank, the SVD, linear systems, etc.) to higher dimensional arrays, or tensors. Much work has been proposed to try to overcome the so called "curse of dimensionality", the O(N^d) storage required for a d-dimensional array, where N is the size of each dimension. The hierarchical Tucker format is one such tensor representation which manages to decompose a hierarchy of dimensions into parameter matrices of very manageable size, requiring at most dNK + (d - 2)K^3 + K^2 parameters, where K is an internal rank parameter. In this work, we extend ideas of matrix completion to the tensor case, where we only know a small number of randomly distributed entries from various 4D frequency slices, and try to recover the fully sampled tensor based on the knowledge that it has low hierarchical tucker rank in a particular arrangement of dimensions. Using this approach, we exploit the multi-dimensional dependencies within the full data in order to achieve very promising interpolation results even from heavily subsampled data.
+},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/dasilva2012SINBADhtt/dasilva2012SINBADhtt_pres.pdf},
+        author = {Curt Da Silva}
+}
+
+
+@presentation{friedlander2012SINBADrsh,
+        title = {Randomized sampling: How confident are you?},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {At last year's consortium meeting, I described an inexact gradient method and sampling scheme for data fitting. The randomization method has good convergence properties, at least as measured by the distance to the solution----in expectation. But as one insightful critic rightly pointed out, we don't usually observe the expectation, at least not in a single run. In this talk I will characterize the convergence of the method in terms of bounds on the probability of being too far away from the solution.},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/friedlander2012SINBADrsh/friedlander2012SINBADrsh_pres.pdf},
+        author = {Michael P. Friedlander}
+}
+
+
+@presentation{ghadermarzy2012SINBADncc,
+        title = {Non-convex compressed sensing using partial support information},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {In this talk, we will address the recovery conditions of weighted $\ell_p$ minimization for signal reconstruction from compressed sensing measurements when (possibly inaccurate) partial support information is available. First we will motivate the use of (weighted) $\ell_p$ minimization with $p<1$ and point out its advantages over weighted $\ell_1$ minimization when there is prior information on the support of the signal that is possibly partial and inaccurate. Then we will provide theoretical guarantees of sufficient recovery conditions for weighted $\ell_p$ minimization, which are better than those for (unweighted) $\ell_p$ minimization as well as those for weighted $\ell_1$. In the last part of the talk, we will illustrate our results with some numerical experiments stylized applications.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/ghadermarzy2012SINBADncc/ghadermarzy2012SINBADncc_pres.pdf},
+        author = {Navid Ghadermarzy}
+}
+
+
+@presentation{hargreaves2012SINBADavs,
+        title = {Analysis versus synthesis in weighted sparse recovery},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {The synthesis model for compressive sensing has been the model of choice for many years and various weighting schemes have been shown to improve it's performance (see Yilmaz, Mansour, and Ghadermarzy talks). However, there is a counterpart model to synthesis, namely the analysis model, which has been less popular but recently attracted more attention (see Lin's talk). In this talk, weighting in the analysis model is discussed and applied to the seismic trace interpolation problem.},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/hargreaves2012SINBADavs/hargreaves2012SINBADavs_pres.pdf},
+        author = {Brock Hargreaves}
+}
+
+
+@presentation{herrmann2012SINBADals,
+        title = {Fast sparsity-promoting imaging with message passing},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {To meet current-day challenges, exploration seismology increasingly relies on more and more sophisticated algorithms that require multiple paths through all data. This requirement leads to problems because the size of seismic data volumes is increasing exponentially, exposing bottlenecks in IO and computational capability. To overcome these bottlenecks, we follow recent trends in machine learning and compressive sensing by proposing a sparsity-promoting inversion technique that works on small randomized subsets of data only. We boost the performance of this algorithm significantly by modifying a state-of-the-art l1-norm solver to benefit from message passing, which breaks the build up of correlations between model iterates and the randomized linear forward model. We demonstrate the performance of this algorithm on a toy sparse-recovery problem and on a realistic reverse-time-migration example with random source encoding. The improvements in speed, memory use, and output quality are truly remarkable.},
+       keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+       presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/herrmann2012SINBADals/herrmann2012SINBADals_pres.pdf},
+       author = {Felix J. Herrmann}
+}
+
+
+@presentation{herrmann2012SINBADfwi,
+        title = {Our findings on the Chevron benchmark dataset},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {During this presentation, we will review our findings working with the synthetic GOM data released as part of the post SEG workshop:"Gulf of Mexico Imaging Challenges: What Can Full Waveform Inversion Achieve?". This is joint work with Andrew J. Calvert, Ian Hanlon, Mostafa Javanmehri, Rajiv Kumar, Tristan van Leeuwen, Xiang Li, Brendan Smithyman, Eric Takam Takougang, and Haneet Wason.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/herrmann2012SINBADfwi/herrmann2012SINBADfwi_pres.pdf},
+        author = {Andrew J. Calvert and Ian Hanlon and Mostafa Javanmehri and Rajiv Kumar and Tristan van Leeuwen and Xiang Li and Brendan Smithyman and Eric Takam Takougang and Haneet Wason and Felix J. Herrmann}
+}
+
+
+@presentation{herrmann2012SINBADhpc,
+        title = {SLIM's perspective on HPC & big data},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/herrmann2012SINBADhpc/herrmann2012SINBADhpc_pres.pdf},
+        author = {Tim T.Y. Lin and Tristan van Leeuwen and Felix J. Herrmann}
+}
+
+
+@presentation{krislock2012SINBADwsn,
+        title = {Wireless Sensor Network Localization},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Locating the position of sensors connected together in a wireless network given only the position of a small number of the sensors and estimates of some of the distances between the sensors is a difficult problem with many modern applications. Within the last few years research in wireless sensor network localization has greatly increased due to the many new applications using wireless sensors, from lightweight sensors used to monitor the environment to ocean-bottom sensors used in geophysical applications. A second reason for this increased interest is our recent ability to efficiently solve these problems using modern semidefinite optimization solvers. We will discuss how semidefinite optimization can be used to solve such problems and possible directions for future work.},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/krislock2012SINBADwsn/krislock2012SINBADwsn_pres.pdf},
+        author = {Nathan Krislock}
+}
+
+
+@presentation{kumar2012SINBADsdi,
+        title = {Seismic data interpolation using SVD Free Pareto Curve based Low Rank Optimization},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Seismic data acquisition is cursed by missing data caused by physical and/or budget constraints. Aim of interpolation technique is to spatially transform irregularly acquired data to regularly sampled data while maintaining the events coherency. While transform-domain sparsity promotion has proven to be an effective tool to solve this recovery problem, recent developments in Rank penalizing techniques opens new horizon to improved recovery by exploiting low-rank structure. A major downside of current state of the art techniques is their reliance on the SVD of seismic data structures, which can be prohibitively expensive. Fortunately, recent work allows us to circumvent this problem by working with matrix factorizations. We review a novel approach to rank penalization, and successfully apply it to the seismic interpolation problem by exploiting the low-rank structure of seismic data. Experiments for the recovery of 2D and 3D acquisition support the feasibility and potential of the new approach.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/kumar2012SINBADsdi/kumar2012SINBADsdi_pres.pdf},
+        author = {Rajiv Kumar}
+}
+
+
+@presentation{vanleeuwen2012SINBAD3dfd,
+        title = {3D Frequency-domain waveform inversion using a row-projected Helmholtz solver},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {3D frequency-domain full waveform inversion relies on being able to efficiently solve the 3D Helmholtz equation.  Iterative methods require sophisticated preconditioners because the Helmholtz matrix is typically indefinite. In the first part of the talk I review a preconditioning technique that is based on row-projections. Notable advantages of this preconditioner over existing ones are that it has low algorithmic complexity, is easily parallelizable and extendable to time-harmonic vector equations. In the second part of the talk I discuss how the row-projected solver can be used in the context of waveform inversion. Key aspects are: the use of block-iterative methods for multiple sources and adapting the accuracy of the solver.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/vanleeuwen2012SINBAD3dfd/vanleeuwen2012SINBAD3dfd_pres.pdf},
+        author = {Tristan van Leeuwen}
+}
+
+
+@presentation{vanleeuwen2012SINBADyap,
+        title = {Yet another perspective on image volumes},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {An extended image is defined as the multi-dimensional cross-correlation of the source and receiver wavefields used for imaging.  This extended image will reveal velocity errors by de-focusing and can thus be used for velocity analysis. However, for optimal sensitivity to velocity errors, the subsurface offset has to be aligned with the local dip. As this dip is not known a priori, we consider forming the extended image for subsurface offsets in all directions. However, computing and storing such a large image volume is not computationally feasible.  We organize the image volume in a matrix and use matrix-probing techniques to glean information form the matrix without explicitly forming it.  A matrix-vector multiply with the image-volume matrix can be performed at the cost of two wave-equation solves and does not require any explicit cross-correlations of the wavefields.  Such techniques can also be used to evaluate focusing penalties without forming the whole image volume.  Finally, the matrix-viewpoint allows us to derive a 2-way equivalent of the DSR equation in a straightforward manner and provides a possible avenue for developing new velocity-continuation techniques.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/vanleeuwen2012SINBADyap/vanleeuwen2012SINBADyap_pres.pdf},
+        author = {Tristan van Leeuwen}
+}
+
+
+@presentation{lin2012SINBADics,
+        title = {An introduction to cosparse signal reconstruction},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Undersampling techniques in exploration seismology usually relies on the assumption that seismic records and images permit sparse approximations under certain representations, such as Curvelet coefficients. Recent findings have suggested that for redundant representations (of which Curvelet is an example), the analysis operator that maps the physical signal to coefficients may also play a crucial role in recovering data from incomplete observations. In particular, the number of zero-valued coefficients given by the analysis operator acting on the signal, referred to as its "cosparsity", have an analogous role to the sparsity of the signal in terms of the coefficients. The cosparsity of the signal permits recovery guarantees that are completely separate from sparsity-based models, and gives rise to distinct sets of reconstruction algorithms and performances compared to sparsity-based approaches. We present in this talk some initial findings on the viability of cosparse reconstruction for a variety of seismic applications that previously relied on sparse signal reconstruction, such as data interpolation and source separation.},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/lin2012SINBADics/lin2012SINBADics_pres.pdf},
+   	author = {Tim T.Y. Lin}
+}
+
+
+@presentation{Lin2012SINBADrdr,
+        title = {Recent developments on the robust estimation of primaries by sparse inversion},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Robust estimation of primaries by sparse inversion is a next-generation surface multiple removal technique with an objective to truly invert an operator that models the free-surface. Key to the success of this approach is the imposition of a sparsity constraint on the primary impulse response in the time domain. This is accomplished by carefully applying large-scale convex optimization techniques on an extended L1 minimization problem. One of the benefits of our approach is that many extensions to the algorithm can be devised under this optimization framework to improve the quality of the solution given fixed computational costs and mitigating various shortcomings in field data. This talk will first review the basic technique of Robust EPSI and follow with some highlights on recent further developments of the algorithm, including a discussion on the role of regularization by reciprocity and the interpolation of near-offset data, as well as investigations into optimality and robustness to data outliers.},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/Lin2012SINBADrdr/Lin2012SINBADrdr_pres.pdf},
+        author = {Tim T.Y. Lin}
+}
+
+
+@presentation{mansour2012SINBADsti,
+        title = {Seismic trace interpolation via sparsity promoting reweighted algorithms},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Missing-trace interpolation aims to reconstruct regularly sampled wavefields from periodically sampled data with gaps caused by physical constraints. While transform-domain sparsity promotion has proven to be an effective tool to solve this recovery problem, current recovery techniques make no use of a priori information on the transform-domain coefficients. To overcome these vulnerabilities in solving the recovery problem for large-scale problems, we propose recovery by weighted one-norm minimization, which exploits correlations between locations of significant coefficients of different partitions, e.g., shot records, common-offset gathers, or frequency slices, of the acquired data. Moreover, in situations where no prior support estimate is available, we propose the WSPGL1 algorithm that outperforms standard $\ell_1$ minimization in finding sparse solutions to underdetermined linear systems of equations. Our algorithm is a modification of the SPGL1 algorithm and enjoys better sparse recovery performance at no additional computational cost. We illustrate the improved recovery using WSPGL1 for randomly subsampled seismic traces.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/mansour2012SINBADsti/mansour2012SINBADsti_pres.pdf},
+        author = {Hassan Mansour}
+}
+
+
+@presentation{miao2012SINBADasp,
+        title = {Accelerating on sparse promoting recovery and its benefits in seismic application},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Sparse promoting recovery problem arises more and more frequently with the broad application of compressed sensing tool in exploration seismology. Because of the curse of dimensionality, the prohibitive computation burden on iteratively evaluating objective functions is one of the key issues that constrain high performance l1 solver. In this paper, we try to further improve the convergence performance of SPGl1, one of the state-of-the-art large scale sparse recovery solver, and as a result limit the number of objective function evaluations by introducing a projected quasi Newton method. Examples showing acceleration on seismic data collection, data processing as well as inversion are included.},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/miao2012SINBADasp/miao2012SINBADasp_pres.pdf},
+        author = {Lina Miao}
+}
+
+
+@presentation{ning2012SINBADfim,
+        title = {Fast imaging with multiples},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {If correctly used, multiple energy can be mapped to the correct subsurface locations. However, simply applying the cross-correlation imaging condition will introduce non-causal artifacts into the final image. Here we propose an inversion approach to image primaries and multiples simultaneously that yields an artifact-free image. To address the high computational cost associated with inversion, we propose to: i) have the wave-equation solver carry out the multi-dimensional convolutions implicitly, and ii) reduce the number of PDE solves by randomized subsampling. We then propose to improve the overall performance of this algorithm by a process called rerandomization, which helps to cancel the correlation built between model iterate and the subsampling operator. We show the merits of our approach on a number of examples.},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/ning2012SINBADfim/ning2012SINBADfim_pres.pdf},
+        author = {Ning Tu}
+}
+
+
+@presentation{oghenekohwo2012SINBADcs,
+        title = {Compressed sensing:  a tool for eliminating repeatability in acquisition of 4D (time-lapse) seismic data},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {In 4D (time-lapse) seismic data acquisition, a very significant step is the repeatability of the acquisition process. In other words, the geophones must be placed at the exact location as they were, during baseline survey and acquisition. This condition is required to be able to produce an image of the same location over time and this enhances a proper reservoir characterization. The cost of repeating the seismic acquisition is very expensive, as geophones (receivers) have to be left at the same location over the period for which the data will be acquired. In this talk, we attempt to highlight the effort of Compressed Sensing, to eliminate this condition of repeatability of the acquisition . We show that a random sampling of the shots or random placement of the geophones is able to reproduce the same image over time, hence eliminating any acquisition imprints on the final seismic image.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/oghenekohwo2012SINBADcs/oghenekohwo2012SINBADcs_pres.pdf},
+        author = {Felix Oghenekohwo}
+}
+
+
+@presentation{peters2012SINBADfde,
+        title = {Frequency domain 3D elastic wave propagation in general anisotropic media},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Elastic wave propagation in 3 spatial dimensions is modeled using a wave equation containing the full stiffness tensor consisting of 21 independent components. This allows modeling in general anisotropic media. The wave equation is discretized on several Cartesian and rotated Cartesian staggered finite-difference grids (using a 2nd order approximation). The grids are linearly combined and, in combination with a antilumped mass strategy, minimize numerical dispersion while requiring a low number of grid points per wavelength. In case not all 21 components need to be modeled, an approximation of the stiffness tensor can be used (e.g., orthorhombic anisotropy, TTI, ...). This results in a linear system of equations, which is solved using an iterative method. The modeling of all 21 components of the stiffness tensor (or an approximation) enables the development of new waveform inversion functionalities.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/peters2012SINBADfde/peters2012SINBADfde_pres.pdf},
+        author = {Bas Peters}
+}
+
+
+@presentation{petrenko2012SINBADcarp,
+        title = {CARP-CG: A computational study},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Forward modelling of the wave equation is a key ingredient in seismic full waveform inversion (FWI). Simulation in the time domain and solution of the wave equation in the frequency domain are two competing approaches to modelling. Frequency domain approaches can further be categorized as using either direct or iterative solvers. For 3D FWI, iterative solvers in the frequency domain are attractive, partly because they require less memory than the other methods. This is due to the fact that there is no need to store the wavefield at each time step, or compute a factorization of the Helmholtz operator that will not be as sparse as the original matrix. One iterative solver that has been applied to the Helmholtz equation is CARP-CG. CARP-CG uses Kaczmarz row projections for each block of a domain decomposition scheme to precondition the Helmholtz system into being symmetric and positive semidefinite. The method of conjugate gradients is then used to solve the preconditioned system. We present a comparison of the performance of CARP-CG implemented in several languages (MATLAB, C, FORTRAN, julia) and in two different hardware environments: the LIMA HPC cluster hosted at UBC, and the Checkers cluster which is part of the Westgrid consortium. Parallelization of the algorithm via domain decomposition implemented with MPI (distributed memory) and OMP (shared memory) is also examined.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/petrenko2012SINBADcarp/petrenko2012SINBADcarp_pres.pdf},
+        author = {Art Petrenko}
+}
+
+
+@presentation{tamalet2012SINBADvpe,
+        title = {Variance parameters estimation - Application to Full Waveform Inversion},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Many inverse problems include nuisance parameters. While not of direct interest, these parameters are required to recover primary parameters. In order to estimate these nuisance parameters as well as the primary parameters in large-scale inverse problems, a method based on variable projection, which consists in projecting out a subset over the variables, has been developed. We present here the application of this method to the problem of variance parameters estimation in multiple datasets, which is an important problem in many areas including geophysics. More precisely, we apply the method to Full Waveform Inversion and demonstrate the improvement in recovery of the model parameters in the case where the variance of the noise increases with the frequency.},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/tamalet2012SINBADvpe/tamalet2012SINBADvpe_pres.pdf},
+        author = {Anais Tamalet}
+}
+
+
+@presentation{warner2012SINBADafw,
+        title = {Anisotropic 3D full-waveform inversion of the Tommeliten Alpha field},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {We have implemented a robust and practical scheme for anisotropic 3D acoustic full-waveform inversion. We demonstrate this scheme on a field data set, applying it to a four-component ocean-bottom survey over the Tommeliten Alpha field in the North Sea. This shallow-water data set provides good azimuthal coverage to offsets of 7 km, with reduced coverage to a maximum offset of about 11 km. The reservoir lies at the crest of a high-velocity antiformal chalk section, overlain by about 3000 m of clastics within which a low-velocity gas cloud produces a seismic obscured area. We inverted only the hydrophone data, and we retained free-surface multiples and ghosts within the field data. We invert in six narrow frequency bands, in the range 3 to 6.5 Hz.  At each iteration, we selected only a subset of sources, using a different subset at each iteration; this strategy is more efficient than inverting all the data every iteration. Our starting velocity model was obtained using standard PSDM model building including anisotropic reflection tomography, and contained epsilon values as high as 20%.  We have also attempted full-elastic inversion of these data to recover a shallow isotropic model of both p and s-wave velocities. The final FWI velocity model shows a network of shallow high-velocity channels that match similar features in the reflection data. Deeper in the section, the FWI velocity model reveals a sharper and more-intense low-velocity region associated with the gas cloud in which low-velocity fingers match the location of gas-filled faults visible in the reflection data. The resulting velocity model provides a better match to well logs, and better flattens common image gathers, than does the starting model. Reverse-time migration, using the FWI velocity model, provides significant uplift to the migrated image, simplifying the planform of the reservoir section at depth. The workflows, inversion strategy, and algorithms that we have used have broad application to invert a wide-range of analogous field data sets.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/warner2012SINBADafw/warner2012SINBADafw_pres.pdf},
+        author = {Mike Warner}
+}
+
+
+@presentation{wason2012SINBADobs,
+        title = {Ocean bottom seismic acquisition via jittered sampling},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {We present a pragmatic marine acquisition scheme where a single (or multiple) vessel sails across an ocean-bottom array firing airguns at ? optimally jittered source locations and instances in time. Following the principles of compressive sensing, we can significantly impact the reconstruction quality of conventional seismic data (from jittered data) and demonstrate successful recovery by sparsity promotion. In contrast to random (under)sampling, acquisition via jittered (under)sampling helps in controlling the maximum gap size, which is a practical requirement of wavefield reconstruction with localized sparsifying transforms. Results are illustrated with simulations of optimally jittered marine acquisition, and periodic time-dithering marine acquisition.},
+        keywords = {Presentation, SINBAD, SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/wason2012SINBADobs/wason2012SINBADobs_pres.pdf},
+        author = {Haneet Wason}
+}
+
+
+@presentation{xiang2012SINBADfgn,
+        title = {Fast Gauss-Newton full-waveform inversion with sparsity regularization},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {Full-waveform inversion (FWI) can be considered as a controlled data fitting process, in which we approximately fit observed data by iteratively updating the initial velocity model, we expect the final model can reveal subsurface structure till the wavefield misfit can converge to designed tolerance.  The conventional FWI approach is expensive since it requires the inversion of a linear system, which involves extremely large multi-experiment data volumes. To overcome this issue we percent a curvetlet based sparsity-promoting Gauss-Newton inversion method. In this presentation we invert for the model updates by replacing the normal Gauss-Newton linearized subproblem for subsampled FWI with a sparsity promoting FWI formulation. We speed up the algorithm and avoid over fitting the data by solving the problem approximately. Aside from this, we control wavefield dispersion by gradually increasing grid size as we move to higher frequencies. Our approach is successful because it reduces the size of seismic data volumes without loss of information. With this reduction, we can compute a Newton-like update with the reduced data volume at the cost of roughly one gradient update for the fully sampled wavefield.},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/xiang2012SINBADfgn/xiang2012SINBADfgn_pres.pdf},
+	author = {Xiang Li}
+}
+
+
+@presentation{xiang2012SINBADweb,
+        title = {Wave-equation based inversion with joint sparsity promotion},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/xiang2012SINBADweb/xiang2012SINBADweb_pres.pdf},
+	author = {Xiang Li}
+}
+
+
+@presentation{yilmaz2012SINBADwms,
+        title = {Weighted methods in sparse recovery},
+        booktitle = {SINBAD consortium talks},
+        year = {2012},
+        organization = {SINBAD},
+        abstract = {In the recent years we have successfully employed "weighted" algorithms to recover sparse signals from few linear, non-adaptive measurements. The general principle here is to use prior knowledge about the signal to be recovered, e.g., approximate locations of large-in-magnitude transform coefficients, if such information is available. An example for this is the use of weighted 1-norm minimization to improve wavefield reconstruction from randomized (sub)sampling. We will review these results and outline some new directions we have explored during the last year, such as weighted non-convex sparse recovery (see Ghadermarzy's talk), weighted analysis-based recovery (see Hargreaves's talk), and a weighted randomized Kaczmarz algorithm for solving large overdetermined systems of equations that are known to admit a (nearly) sparse solution. Various examples in seismic will be shown.},
+        keywords = {Presentation, SINBAD,  SINBADFALL2012, SLIM},
+        presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/yilmaz2012SINBADwms/yilmaz2012SINBADwms_pres.pdf},
+        author = {Ozgur Yilmaz}
+}
+
+
+

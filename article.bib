@@ -1,392 +1,154 @@
-% This file was created with JabRef 2.6.
+% This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
-@article{herrmann2012IIsi,
-  author = {Felix J. Herrmann},
+@ARTICLE{Aravkin11TRridr,
+  author = {Aleksandr Y. Aravkin and Michael P. Friedlander and Felix J. Herrmann
+	and Tristan {van Leeuwen}},
+  title = {Robust inversion, dimensionality reduction, and randomized sampling},
+  journal = {Mathematical Programming},
   year = {2012},
-  optmonth = {12/2012}, 
-  title = {Seismic advances},
-  journal = {International Innovation},
-  volume = {},
-  number = {},
-  pages = {46-49},
-  abstract = {Current seismic exploration techniques are hampered by
-                  bottlenecks in data sampling and processing due to
-                  challenges in data collection, demand for more data
-                  and the increasing need to study highly complex
-                  geological settings. Professor Felix J. Herrmann's
-                  group is developing novel techniques to overcome
-                  these barriers which could greatly benefit the
-                  hydrocarbon industry.},
-  keywords = {Seismic exploration techniques, compressive sensing, wave-equation-based data mining, dynamic nonlinear optimization},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InternationalInnovation/2012/herrmann2012IIsi/herrmann2012IIsi.pdf}
-}
-
-
-@article{aravkin2012IPNuisance,
-author = {Aleksandr Y. Aravkin and Tristan {van Leeuwen}},
-year = {2012},
-optmonth = {10/2012},
-title = {Estimating Nuisance Parameters in Inverse Problems},
-journal = {Inverse Problems},
-volume = {28},
-number = {11},
-abstract = {Many inverse problems include nuisance parameters which,
-                  while not of direct interest, are required to
-                  recover primary parameters. Structure present in
-                  these problems allows efficient optimization
-                  strategies - a well known example is variable
-                  projection, where nonlinear least squares problems
-                  which are linear in some parameters can be very
-                  efficiently optimized. In this paper, we extend the
-                  idea of projecting out a subset over the variables
-                  to a broad class of maximum likelihood (ML) and
-                  maximum a posteriori likelihood (MAP) problems with
-                  nuisance parameters, such as variance or degrees of
-                  freedom. As a result, we are able to incorporate
-                  nuisance parameter estimation into large-scale
-                  constrained and unconstrained inverse problem
-                  formulations. We apply the approach to a variety of
-                  problems, including estimation of unknown variance
-                  parameters in the Gaussian model, degree of freedom
-                  (d.o.f.) parameter estimation in the context of
-                  robust inverse problems, automatic calibration, and
-                  optimal experimental design. Using numerical
-                  examples, we demonstrate improvement in recovery of
-                  primary parameters for several large- scale inverse
-                  problems. The proposed approach is compatible with a
-                  wide variety of algorithms and formulations, and its
-                  implementation requires only minor modifications to
-                  existing algorithms.},
-keywords = {full waveform inversion, students t, variance},
-optdoi = {10.1088/0266-5611/28/11/115016},
-url1 = {http://arxiv.org/abs/1206.6532},
-url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InverseProblems/2012/aravkin2012IPNuisance/aravkin2012IPNuisance.pdf},
-url3 = {http://iopscience.iop.org/0266-5611/28/11/115016/}
-}
-
-
-@article{VanLeeuwen11TRfwiwse,
-  author = {Tristan van Leeuwen and Felix J. Herrmann},
-  title = {Fast waveform inversion without source encoding},
-  journal = {Geophysical Prospecting},
-  optvolume = {Online publication},
-  year = {2012},
+  volume = {134},
+  pages = {101-125},
+  number = {1},
+  abstract = {We consider a class of inverse problems in which the forward model
+	is the solution operator to linear ODEs or PDEs. This class admits
+	several dimensionality-reduction techniques based on data averaging
+	or sampling, which are especially useful for large-scale problems.
+	We survey these approaches and their connection to stochastic optimization.
+	The data-averaging approach is only viable, however, for a least-squares
+	misfit, which is sensitive to outliers in the data and artifacts
+	unexplained by the forward model. This motivates us to propose a
+	robust formulation based on the Student’s t-distribution of the
+	error. We demonstrate how the corresponding penalty function, together
+	with the sampling approach, can obtain good results for a large-scale
+	seismic inverse problem with 50 % corrupted data.},
+  keywords = {Inverse problems, Seismic inversion, Stochastic optimization, Robust
+	estimation, Optimization, FWI},
+  optdoi = {10.1007/s10107-012-0571-6},
   optmonth = {07/2012},
-  abstract = {Randomized source encoding has recently been proposed as
-                  a way to dramatically reduce the costs of full
-                  waveform inversion. The main idea is to replace all
-                  sequential sources by a small number of simultaneous
-                  sources. This introduces random crosstalk in the
-                  model updates and special stochastic optimization
-                  strategies are required to deal with this. Two
-                  problems arise with this approach: i) source
-                  encoding can only be applied to fixed-spread
-                  acquisition setups, and ii) stochastic optimization
-                  methods tend to converge very slowly, relying on
-                  averaging to get rid of the cross-talk. Although the
-                  slow convergence is partly offset by the low
-                  iteration cost, we show that conventional
-                  optimization strategies are bound to outperform
-                  stochastic methods in the long run. In this paper we
-                  argue that we don¬øt need randomized source encoding
-                  to reap the benefits of stochastic optimization and
-                  we review an optimization strategy that combines the
-                  benefits of both conventional and stochastic
-                  optimization. The method uses a gradually increasing
-                  batch of sources. Thus, iterations are very cheap
-                  initially and this allows the method to make fast
-                  progress in the beginning. As the batch size grows,
-                  the method behaves like conventional optimization,
-                  allowing for fast convergence. Numerical examples
-                  suggest that the stochastic and hybrid method
-                  perform equally well with and without source
-                  encoding and that the hybrid method outperforms both
-                  conventional and stochastic optimization. The method
-                  does not rely on source encoding techniques and can
-                  thus be applied to non fixed-spread data.},
-keywords = {SLIM,Full-waveform inversion,Optimization},
-optdoi = {10.1111/j.1365-2478.2012.01096.x},
-url = {http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2478.2012.01096.x/abstract}
+  url = {http://www.springerlink.com/content/35rwr101h5736340/}
 }
 
-@article{haber10TRemp,
-author = {Eldad Haber and Matthias Chung and Felix J. Herrmann},
-title = {An effective method for parameter estimation with PDE constraints
-        with multiple right hand sides},
-journal = {SIAM Journal on Optimization},
-volume = {22},
-number = {3},
-year = {2012},
-optmonth = {07/2012},
-abstract = {Often, parameter estimation problems of
-                  parameter-dependent PDEs involve multiple right-hand
-                  sides. The computational cost and memory
-                  requirements of such problems increase linearly with
-                  the number of right-hand sides. For many
-                  applications this is the main bottleneck of the
-                  computation. In this paper we show that problems
-                  with multiple right-hand sides can be reformulated
-                  as stochastic programming problems by combining the
-                  right-hand sides into a few „simultaneous”
-                  sources. This effectively reduces the cost of the
-                  forward problem and results in problems that are
-                  much cheaper to solve. We discuss two solution
-                  methodologies: namely sample average approximation
-                  and stochastic approximation. To illustrate the
-                  effectiveness of our approach we present two model
-                  problems, direct current resistivity and seismic
-                  tomography.},
-  keywords = {SLIM,Full-waveform inversion,Optimization},
-  url = {http://dx.doi.org/10.1137/11081126X}
-}
-
-@article{Li11TRfrfwi,
-author = {Xiang Li and Aleksandr Y. Aravkin and Tristan van Leeuwen and Felix J. Herrmann},
-title = {Fast randomized full-waveform inversion with compressive sensing},
-year = {2012},
-journal = {Geophysics},
-volume = {77},
-number = {3},
-pages = {A13-A17},
-optmonth = {05/2012},
-abstract = { Wave-equation based seismic inversion can be formulated
-                  as a nonlinear inverse problem where the medium
-                  properties are obtained via minimization of a least-
-                  squares misfit functional. The demand for higher
-                  resolution models in more geologically complex areas
-                  drives the need to develop techniques that explore
-                  the special structure of full-waveform inversion to
-                  reduce the computational burden and to regularize
-                  the inverse problem. We meet these goals by using
-                  ideas from compressive sensing and stochastic
-                  optimization to design a novel Gauss-Newton method,
-                  where the updates are computed from random subsets
-                  of the data via curvelet-domain sparsity
-                  promotion. Application of this idea to a realistic
-                  synthetic shows improved results compared to
-                  quasi-Newton methods, which require passes through
-                  all data. Two different subset sampling strategies
-                  are considered: randomized source encoding, and
-                  drawing sequential shots firing at random source
-                  locations from marine data with missing near and far
-                  offsets. In both cases, we obtain excellent
-                  inversion results compared to conventional methods
-                  at reduced computational costs. },
-keywords ={SLIM,Full-waveform inversion,Compressive Sensing,Optimization},
-optdoi = {10.1190/geo2011-0410.1},
-url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2012/Li11TRfrfwi/Li11TRfrfwi.pdf}
-}
-
-@article{Mansour11TRssma,
-author = {Hassan Mansour and Haneet Wason and Tim T.Y. Lin and Felix J. Herrmann},
-title = {Randomized marine acquisition with compressive sampling matrices},
-journal = {Geophysical Prospecting},
-volume = {60},
-number = {4},
-pages = {648-662},
-year = {2012},
-optmonth = {07/2012},
-abstract = {Seismic data acquisition in marine environments is a
-                  costly process that calls for the adoption of
-                  simultaneous-source or randomized acquisition - an
-                  emerging technology that is stimulating both
-                  geophysical research and commercial
-                  efforts. Simultaneous marine acquisition calls for
-                  the development of a new set of design principles
-                  and post-processing tools. In this paper, we discuss
-                  the properties of a specific class of randomized
-                  simultaneous acquisition matrices and demonstrate
-                  that sparsity-promoting recovery improves the
-                  quality of reconstructed seismic data volumes. We
-                  propose a practical randomized marine acquisition
-                  scheme where the sequential sources fire airguns at
-                  only randomly time-dithered instances. We
-                  demonstrate that the recovery using sparse
-                  approximation from random time-dithering with a
-                  single source approaches the recovery from
-                  simultaneous-source acquisition with multiple
-                  sources. Established findings from the field of
-                  compressive sensing indicate that the choice of the
-                  sparsifying transform that is incoherent with the
-                  compressive sampling matrix can significantly impact
-                  the reconstruction quality. Leveraging these
-                  findings, we then demonstrate that the compressive
-                  sampling matrix resulting from our proposed sampling
-                  scheme is incoherent with the curvelet
-                  transform. The combined measurement matrix exhibits
-                  better isometry properties than other transform
-                  bases such as a non-localized multidimensional
-                  Fourier transform. We illustrate our results with
-                  simulations of ‘ideal’ simultaneous-source marine
-                  acquisition, which dithers both in time and space,
-                  compared with periodic and randomized time-dithering.},
-keywords ={Curvelet transform,Fourier,Marine acquisition},
-optdoi = {10.1111/j.1365-2478.2012.01075.x},
-url = {http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2478.2012.01075.x/abstract}
-}
-
-@article{Aravkin11TRridr,
-author = {Aleksandr Y. Aravkin and Michael P. Friedlander and Felix J. Herrmann and Tristan {van Leeuwen}},
-title = {Robust inversion, dimensionality reduction, and randomized sampling},
-journal = {Mathematical Programming},
-volume = {134},
-number = {1},
-pages = {101-125},
-year = {2012},
-optmonth = {07/2012},
-abstract = {We consider a class of inverse problems in which the
-                  forward model is the solution operator to linear
-                  ODEs or PDEs. This class admits several
-                  dimensionality-reduction techniques based on data
-                  averaging or sampling, which are especially useful
-                  for large-scale problems. We survey these approaches
-                  and their connection to stochastic optimization. The
-                  data-averaging approach is only viable, however, for
-                  a least-squares misfit, which is sensitive to
-                  outliers in the data and artifacts unexplained by
-                  the forward model. This motivates us to propose a
-                  robust formulation based on the Student’s
-                  t-distribution of the error. We demonstrate how the
-                  corresponding penalty function, together with the
-                  sampling approach, can obtain good results for a
-                  large-scale seismic inverse problem with 50 %
-                  corrupted data.},
-keywords = {Inverse problems, Seismic inversion, Stochastic optimization, Robust estimation, Optimization, FWI},
-optdoi = {10.1007/s10107-012-0571-6},
-url = {http://www.springerlink.com/content/35rwr101h5736340/}
-}
-
-@article{Herrmann11TRfcd, 
-author={Felix J. Herrmann and Michael P. Friedlander and Ozgur Yilmaz}, 
-journal={Signal Processing Magazine, IEEE}, 
-title={Fighting the Curse of Dimensionality: Compressive Sensing in Exploration Seismology}, 
-year={2012}, 
-optmonth={05/12}, 
-volume={29}, 
-number={3}, 
-pages={88-100}, 
-abstract={Many seismic exploration techniques rely on the collection 
-of massive data volumes that are mined for information during processing. 
-This approach has been extremely successful, but current efforts 
-toward higher resolution images in increasingly complicated regions 
-of Earth continue to reveal fundamental shortcomings in our typical 
-workflows. The "curse" of dimensionality is the main 
-roadblock and is exemplified by Nyquist's sampling criterion, which 
-disproportionately strains current acquisition and processing systems 
-as the size and desired resolution of our survey areas continues to increase.}, 
-keywords={Earth, Nyquist sampling criterion;dimensionality curse,
-higher-resolution images, massive data volumes,seismic exploration techniques,
-strains current acquisition system,strains current processing system,
-geographic information systems,seismology}, 
-optdoi={10.1109/MSP.2012.2185859}, 
-url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/IEEESignalProcessingMagazine/2012/Herrmann11TRfcd/Herrmann11TRfcd.pdf},
-ISSN={1053-5888}}
-
-@article{herrmann2011RECORDERcsse1,
-author = {Felix J. Herrmann and Haneet Wason and Tim T.Y. Lin},
-title = {Compressive sensing in seismic exploration: an outlook on a new paradigm},
-year = {2011},
-journal = {CSEG Recorder},
-optmonth = {04/2011},
-abstract = {Many seismic exploration techniques rely on the collection of 
-massive data volumes that are subsequently mined for information during 
-processing. While this approach has been extremely successful in the past, 
-current efforts toward higher resolution images in increasingly complicated 
-regions of the Earth continue to reveal fundamental shortcomings in our 
-workflows. Chiefly amongst these is the so-called “curse of dimensionality” 
-exemplified by Nyquist's sampling criterion, which disproportionately 
-strains current acquisition and processing systems as the size and desired 
-resolution of our survey areas continues to increase. We offer an alternative 
-sampling method leveraging recent insights from compressive sensing towards 
-seismic acquisition and processing for data that, from a traditional point 
-of view, are considered to be undersampled. The main outcome of this approach 
-is a new technology where acquisition and processing related costs are 
-decoupled the stringent Nyquist sampling criterion. At the heart of our 
-approach lies randomized incoherent sampling that breaks subsampling-related 
-interferences by turning them into harmless noise, which we subsequently 
-remove by promoting sparsity in a transform-domain. Acquisition schemes 
-designed to fit into this regime no longer grow significantly in cost with 
-increasing resolution and dimensionality of the survey area, but instead 
-its cost ideally only depends on transform-domain sparsity of the expected 
-data. Our contribution is split into two part.},
-url = {http://www.cseg.ca/publications/recorder/2011/04apr/Apr2011-Compressive-sensing-in-seismic-expl.pdf},
-volume = {36},
-number = {4},
-pages = {19-33}
-}
-
-@article{herrmann11GPelsqIm,
-  author = {Felix J. Herrmann and Xiang Li},
-  title = {Efficient least-squares imaging with sparsity promotion and compressive
-        sensing},
+@ARTICLE{aravkin2012IPNuisance,
+  author = {Aleksandr Y. Aravkin and Tristan {van Leeuwen}},
+  title = {Estimating Nuisance Parameters in Inverse Problems},
+  journal = {Inverse Problems},
   year = {2012},
-  journal = {Geophysical Prospecting},
-  volume = {60},
-  number = {4},
-  pages = {696-712},
-  address = {University of British Columbia, Vancouver},
-  optmonth = {07/2012},
-  abstract = {Seismic imaging is a linearized inversion problem relying on the 
-  minimization of a least-squares misfit functional as a function of the medium 
-  perturbation. The success of this procedure hinges on our ability to handle 
-  large systems of equations---whose size grows exponentially with the demand 
-  for higher resolution images in more and more complicated areas---and our 
-  ability to invert these systems given a limited amount of computational 
-  resources. To overcome this ``curse of dimensionality'' in problem size and 
-  computational complexity, we propose a combination of randomized 
-  dimensionality-reduction and divide-and-conquer techniques. This approach 
-  allows us to take advantage of sophisticated sparsity-promoting solvers that 
-  work on a series of smaller subproblems each involving a small randomized 
-  subset of data. These subsets correspond to artificial simultaneous-source 
-  experiments made of random superpositions of sequential-source experiments. 
-  By changing these subsets after each subproblem is solved, we are able to 
-  attain an inversion quality that is competitive while requiring fewer 
-  computational, and possibly, fewer acquisition resources. Application of this 
-  concept to a controlled series of experiments showed the validity of our 
-  approach and the relationship between its efficiency---by reducing the number 
-  of sources and hence the number of wave-equation solves---and the image 
-  quality. Application of our dimensionality-reduction methodology with sparsity 
-  promotion to a complicated synthetic with well-log constrained structure also 
-  yields excellent results underlining the importance of sparsity promotion.},
-  keywords ={SLIM,Imaging,Optimization,Compressive Sensing},
-  optdoi = {10.1111/j.1365-2478.2011.01041.x},
-  url1 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GeophysicalProspecting/2012/herrmann11GPelsqIm/herrmann11GPelsqIm.pdf},
-  url2 = {http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2478.2011.01041.x/full}
+  volume = {28},
+  number = {11},
+  abstract = {Many inverse problems include nuisance parameters which, while not
+	of direct interest, are required to recover primary parameters. Structure
+	present in these problems allows efficient optimization strategies
+	- a well known example is variable projection, where nonlinear least
+	squares problems which are linear in some parameters can be very
+	efficiently optimized. In this paper, we extend the idea of projecting
+	out a subset over the variables to a broad class of maximum likelihood
+	(ML) and maximum a posteriori likelihood (MAP) problems with nuisance
+	parameters, such as variance or degrees of freedom. As a result,
+	we are able to incorporate nuisance parameter estimation into large-scale
+	constrained and unconstrained inverse problem formulations. We apply
+	the approach to a variety of problems, including estimation of unknown
+	variance parameters in the Gaussian model, degree of freedom (d.o.f.)
+	parameter estimation in the context of robust inverse problems, automatic
+	calibration, and optimal experimental design. Using numerical examples,
+	we demonstrate improvement in recovery of primary parameters for
+	several large- scale inverse problems. The proposed approach is compatible
+	with a wide variety of algorithms and formulations, and its implementation
+	requires only minor modifications to existing algorithms.},
+  keywords = {full waveform inversion, students t, variance},
+  optdoi = {10.1088/0266-5611/28/11/115016},
+  optmonth = {10/2012},
+  url1 = {http://arxiv.org/abs/1206.6532},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InverseProblems/2012/aravkin2012IPNuisance/aravkin2012IPNuisance.pdf},
+  url3 = {http://iopscience.iop.org/0266-5611/28/11/115016/}
 }
 
-@article{mansour2012IEEETITrcs,
-  author = {Michael P. Friedlander and Hassan Mansour and Rayan Saab and Ozgur Yilmaz},
+@ARTICLE{bernabe2004JGRpas,
+  author = {Y. Bernab{\'e} and U. Mok and B. Evans and Felix J. Herrmann},
+  title = {Permeability and storativity of binary mixtures of high-and low-porosity
+	materials},
+  journal = {Journal of Geophysical Research},
+  year = {2004},
+  volume = {109},
+  pages = {B12207},
+  abstract = {As a first step toward determining the mixing laws for the transport
+	properties of rocks, we prepared binary mixtures of high- and low-permeability
+	materials by isostatically hot-pressing mixtures of fine powders
+	of calcite and quartz. The resulting rocks were marbles containing
+	varying concentrations of dispersed quartz grains. Pores were present
+	throughout the rock, but the largest ones were preferentially associated
+	with the quartz particles, leading us to characterize the material
+	as being composed of two phases, one with high permeability and the
+	second with low permeability. We measured the permeability and storativity
+	of these materials using the oscillating flow technique, while systematically
+	varying the effective pressure and the period and amplitude of the
+	input fluid oscillation. Control measurements performed using the
+	steady state flow and pulse decay techniques agreed well with the
+	oscillating flow tests. The hydraulic properties of the marbles were
+	highly sensitive to the volume fraction of the high-permeability
+	phase (directly related to the quartz content). Below a critical
+	quartz content, slightly less than 20 wt \%, the high-permeability
+	volume elements were disconnected, and the overall permeability was
+	low. Above the critical quartz content the high-permeability volume
+	elements formed throughgoing paths, and permeability increased sharply.
+	We numerically simulated fluid flow through binary materials and
+	found that permeability approximately obeys a percolation-based mixing
+	law, consistent with the measured permeability of the calcite-quartz
+	aggregates.},
+  keywords = {permeability, porosity, SLIM, Modeling},
+  optdoi = {10.1029/2004JB00311},
+  optmonth = {10/2004},
+  url = { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Journal of Geophysical Research/bernabe04JGRpas/bernabe04JGRpas.pdf}
+}
+
+@ARTICLE{mansour2012IEEETITrcs,
+  author = {Michael P. Friedlander and Hassan Mansour and Rayan Saab and Ozgur
+	Yilmaz},
   title = {Recovering compressively sampled signals using partial support information},
-  institution = {Department of Computer Science},
-  year = 2012,
-  volume = {58},
-  number = {2},
-  pages = {1122-1134},
-  address = {University of British Columbia, Vancouver},
-  optmonth = {02/2012},
-  abstract = {We study recovery conditions of weighted $\ell_1$ minimization for
-        signal reconstruction from compressed sensing measurements when partial
-        support information is available. We show that if at least 50\% of
-        the (partial) support information is accurate, then weighted $\ell_1$
-        minimization is stable and robust under weaker sufficient conditions
-        than the analogous conditions for standard $\ell_1$ minimization.
-        Moreover, weighted $\ell_1$ minimization provides better upper bounds
-        on the reconstruction error in terms of the measurement noise and
-        the compressibility of the signal to be recovered. We illustrate
-        our results with extensive numerical experiments on synthetic data
-        and real audio and video signals.},
   journal = {IEEE Trans. on Information Theory},
+  year = {2012},
+  volume = {58},
+  pages = {1122-1134},
+  number = {2},
+  abstract = {We study recovery conditions of weighted $\ell_1$ minimization for
+	signal reconstruction from compressed sensing measurements when partial
+	support information is available. We show that if at least 50\% of
+	the (partial) support information is accurate, then weighted $\ell_1$
+	minimization is stable and robust under weaker sufficient conditions
+	than the analogous conditions for standard $\ell_1$ minimization.
+	Moreover, weighted $\ell_1$ minimization provides better upper bounds
+	on the reconstruction error in terms of the measurement noise and
+	the compressibility of the signal to be recovered. We illustrate
+	our results with extensive numerical experiments on synthetic data
+	and real audio and video signals.},
+  address = {University of British Columbia, Vancouver},
+  institution = {Department of Computer Science},
   keywords = {Compressive Sensing},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/mansour2011.pdf},
-  optdoi={10.1109/TIT.2011.2167214}
+  optdoi = {10.1109/TIT.2011.2167214},
+  optmonth = {02/2012},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/mansour2012IEEETITrcs.pdf}
+}
+
+@ARTICLE{friedlander2007TASdtd,
+  author = {Michael P. Friedlander and M. A. Saunders},
+  title = {Discussion: The Dantzig Selector: Statistical estimation when p is
+	much larger then n},
+  journal = {The Annals of Statistics},
+  year = {2007},
+  volume = {35},
+  pages = {2385-2391},
+  number = {6},
+  keywords = {dantzig, SLIM, statistics},
+  optdoi = {10.1214/009053607000000479},
+  optmonth = {03/2007},
+  url = {http://www.cs.ubc.ca/~mpf/downloads/FriedlanderSaunders08.pdf}
 }
 
 @ARTICLE{friedlander2011CoRRhybrid,
   author = {Michael P. Friedlander and Mark Schmidt},
   title = {Hybrid Deterministic-Stochastic Methods for Data Fitting},
+  journal = {CoRR },
   year = {2011},
-  optmonth = {04/2011},
   abstract = {Many structured data-fitting applications require the solution of
 	an optimization problem involving a sum over a potentially large
 	number of measurements. Incremental gradient algorithms (both deterministic
@@ -398,9 +160,71 @@ pages = {19-33}
 	methods that exhibit the benefits of both approaches. Rate of convergence
 	analysis and numerical experiments illustrate the potential for the
 	approach.},
-journal= {CoRR },
-keywords={Optimization},
-url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedlander11hybrid.pdf}
+  keywords = {Optimization},
+  optmonth = {04/2011},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedlander11hybrid.pdf}
+}
+
+@ARTICLE{friedlander2007SJOero,
+  author = {Michael P. Friedlander and P. Tseng},
+  title = {Exact Regularization of Convex Programs},
+  journal = {SIAM J. Optim},
+  year = {2007},
+  volume = {18},
+  pages = {1326-1350},
+  number = {4},
+  abstract = {The regularization of a convex program is exact if all solutions of
+	the regularized problem are also solutions of the original problem
+	for all values of the regularization parameter below some positive
+	threshold. For a general convex program, we show that the regularization
+	is exact if and only if a certain selection problem has a Lagrange
+	multiplier. Moreover, the regularization parameter threshold is inversely
+	related to the Lagrange multiplier. We use this result to generalize
+	an exact regularization result of Ferris and Mangasarian [Appl. Math.
+	Optim., 23(1991), pp. 266{\textendash}273] involving a linearized
+	selection problem. We also use it to derive necessary and sufficient
+	conditions for exact penalization, similar to those obtained by Bertsekas
+	[Math. Programming, 9(1975), pp. 87{\textendash}99] and by Bertsekas,
+	Nedi , Ozdaglar [Convex Analysis and Optimization, Athena Scientific,
+	Belmont, MA, 2003]. When the regularization is not exact, we derive
+	error bounds on the distance from the regularized solution to the
+	original solution set. We also show that existence of a {\textquoteleft}{\textquoteleft}weak
+	sharp minimum{\textquoteright}{\textquoteright} is in some sense
+	close to being necessary for exact regularization. We illustrate
+	the main result with numerical experiments on the l1 regularization
+	of benchmark (degenerate) linear programs and semidefinite/second-order
+	cone programs. The experiments demonstrate the usefulness of l1 regularization
+	in finding sparse solutions.},
+  keywords = {SLIM,Optimization},
+  optdoi = {10.1137/060675320},
+  optmonth = {05/2007},
+  url = {http://www.cs.ubc.ca/~mpf/index.php?q=cpreg.pdf}
+}
+
+@ARTICLE{haber10TRemp,
+  author = {Eldad Haber and Matthias Chung and Felix J. Herrmann},
+  title = {An effective method for parameter estimation with PDE constraints
+	with multiple right hand sides},
+  journal = {SIAM Journal on Optimization},
+  year = {2012},
+  volume = {22},
+  number = {3},
+  abstract = {Often, parameter estimation problems of parameter-dependent PDEs involve
+	multiple right-hand sides. The computational cost and memory requirements
+	of such problems increase linearly with the number of right-hand
+	sides. For many applications this is the main bottleneck of the computation.
+	In this paper we show that problems with multiple right-hand sides
+	can be reformulated as stochastic programming problems by combining
+	the right-hand sides into a few „simultaneous” sources. This
+	effectively reduces the cost of the forward problem and results in
+	problems that are much cheaper to solve. We discuss two solution
+	methodologies: namely sample average approximation and stochastic
+	approximation. To illustrate the effectiveness of our approach we
+	present two model problems, direct current resistivity and seismic
+	tomography.},
+  keywords = {SLIM,Full-waveform inversion,Optimization},
+  optmonth = {07/2012},
+  url = {http://dx.doi.org/10.1137/11081126X}
 }
 
 @ARTICLE{hennenfent2010GEOPnct,
@@ -410,7 +234,6 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedla
   journal = {Geophysics},
   year = {2010},
   volume = {75},
-  optmonth = {12/2010},
   pages = {WB203-WB210},
   number = {6},
   abstract = {We extend our earlier work on the nonequispaced fast discrete curvelet
@@ -437,10 +260,112 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedla
 	particularly when the recording locations are optimally jittered.
 	The reconstruction in our real data example shows amplitudes along
 	the main wavefronts smoothly varying with limited acquisition imprint.},
-  optdoi = {10.1190/1.3494032},
   keywords = {curvelet transforms, data acquisition, geophysical techniques, seismology,SLIM,Processing},
+  optdoi = {10.1190/1.3494032},
+  optmonth = {12/2010},
   publisher = {SEG},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/hennenfent2010nct.pdf}
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/hennenfent2010nct.pdf}
+}
+
+@ARTICLE{hennenfent2008GEOPsdw,
+  author = {Gilles Hennenfent and Felix J. Herrmann},
+  title = {Simply denoise: wavefield reconstruction via jittered undersampling},
+  journal = {Geophysics},
+  year = {2008},
+  volume = {73},
+  pages = {V19-V28},
+  number = {3},
+  abstract = {In this paper, we present a new discrete undersampling scheme designed
+	to favor wavefield reconstruction by sparsity-promoting inversion
+	with transform elements that are localized in the Fourier domain.
+	Our work is motivated by empirical observations in the seismic community,
+	corroborated by recent results from compressive sampling, which indicate
+	favorable (wavefield) reconstructions from random as opposed to regular
+	undersampling. As predicted by theory, random undersampling renders
+	coherent aliases into harmless incoherent random noise, effectively
+	turning the interpolation problem into a much simpler denoising problem.
+	A practical requirement of wavefield reconstruction with localized
+	sparsifying transforms is the control on the maximum gap size. Unfortunately,
+	random undersampling does not provide such a control and the main
+	purpose of this paper is to introduce a sampling scheme, coined jittered
+	undersampling, that shares the benefits of random sampling, while
+	offering control on the maximum gap size. Our contribution of jittered
+	sub-Nyquist sampling proves to be key in the formulation of a versatile
+	wavefield sparsity-promoting recovery scheme that follows the principles
+	of compressive sampling. After studying the behavior of the jittered
+	undersampling scheme in the Fourier domain, its performance is studied
+	for curvelet recovery by sparsity-promoting inversion (CRSI). Our
+	findings on synthetic and real seismic data indicate an improvement
+	of several decibels over recovery from regularly-undersampled data
+	for the same amount of data collected.},
+  keywords = {sampling, Geophysics,SLIM,Acquisition,Processing,Optimization,Compressive
+	Sensing},
+  optdoi = {10.1190/1.2841038},
+  optmonth = {05/2008},
+  publisher = {SEG},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/hennenfent08GEOsdw/hennenfent08GEOsdw.pdf}
+}
+
+@ARTICLE{hennenfent2006CiSEsdn,
+  author = {Gilles Hennenfent and Felix J. Herrmann},
+  title = {Seismic Denoising with Nonuniformly Sampled Curvelets},
+  journal = {Computing in Science \& Engineering},
+  year = {2006},
+  volume = {8 Issue:3},
+  pages = {16 - 25},
+  month = {May-June 2006},
+  abstract = {The authors present an extension of the fast discrete curvelet transform
+	(FDCT) to nonuniformly sampled data. This extension not only restores
+	curvelet compression rates for nonuniformly sampled data but also
+	removes noise and maps the data to a regular grid.},
+  keywords = {CiSE,Processing},
+  optdoi = {10.1109/MCSE.2006.49},
+  optmonth = {05/2006},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CiSE/2006/hennenfent06CiSEsdn/hennenfent06CiSEsdn.pdf }
+}
+
+@ARTICLE{hennenfent2008GEOPnii,
+  author = {Gilles Hennenfent and Ewout {van den Berg} and Michael P. Friedlander
+	and Felix J. Herrmann},
+  title = {New insights into one-norm solvers from the {P}areto curve},
+  journal = {Geophysics},
+  year = {2008},
+  volume = {73},
+  number = {4},
+  abstract = {Geophysical inverse problems typically involve a trade off between
+	data misfit and some prior. Pareto curves trace the optimal trade
+	off between these two competing aims. These curves are commonly used
+	in problems with two-norm priors where they are plotted on a log-log
+	scale and are known as L-curves. For other priors, such as the sparsity-promoting
+	one norm, Pareto curves remain relatively unexplored. We show how
+	these curves lead to new insights in one-norm regularization. First,
+	we confirm the theoretical properties of smoothness and convexity
+	of these curves from a stylized and a geophysical example. Second,
+	we exploit these crucial properties to approximate the Pareto curve
+	for a large-scale problem. Third, we show how Pareto curves provide
+	an objective criterion to gauge how different one-norm solvers advance
+	towards the solution.},
+  keywords = {Pareto, SLIM, Geophysics,Optimization,Acquisition,Processing},
+  optmonth = {07/2008},
+  url = { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/hennenfent08GEOnii/hennenfent08GEOnii.pdf }
+}
+
+@ARTICLE{herrmann2012IIsi,
+  author = {Felix J. Herrmann},
+  title = {Seismic advances},
+  journal = {International Innovation},
+  year = {2012},
+  pages = {46-49},
+  abstract = {Current seismic exploration techniques are hampered by bottlenecks
+	in data sampling and processing due to challenges in data collection,
+	demand for more data and the increasing need to study highly complex
+	geological settings. Professor Felix J. Herrmann's group is developing
+	novel techniques to overcome these barriers which could greatly benefit
+	the hydrocarbon industry.},
+  keywords = {Seismic exploration techniques, compressive sensing, wave-equation-based
+	data mining, dynamic nonlinear optimization},
+  optmonth = {12/2012},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InternationalInnovation/2012/herrmann2012IIsi/herrmann2012IIsi.pdf}
 }
 
 @ARTICLE{herrmann2010GEOPrsg,
@@ -450,7 +375,6 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedla
   journal = {Geophysics},
   year = {2010},
   volume = {75},
-  optmonth = {12/2010},
   pages = {WB173-WB187},
   number = {6},
   abstract = {Many seismic exploration techniques rely on the collection of massive
@@ -484,533 +408,83 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedla
 	dimensionality reduction during processing. In either case, sampling,
 	storage, and processing costs scale with transform-domain sparsity.
 	We illustrate this principle by means of number of case studies.},
-  optdoi = {10.1190/1.3506147},
   keywords = {data acquisition, geophysical techniques, Nyquist criterion, sampling
 	methods, seismology,SLIM,Acquisition,Compressive Sensing,Optimization},
+  optdoi = {10.1190/1.3506147},
+  optmonth = {12/2010},
   publisher = {SEG},
   url = {http://link.aip.org/link/?GPY/75/WB173/1}
 }
 
-@article{kumar2010TNPecr,
-  author = {Vishal Kumar and Jounada Oueity and Ron Clowes and Felix J. Herrmann},
-  title = {Enhancing Crustal Reflection Data through Curvelet Denoising},
-  year = {2011},
-  optmonth = {07/2011},
-  journal = {Technophysics},
-  volume = {508},
-  number = {1-4},
-  pages = {106-116},
-  abstract = {Suppression of incoherent noise, which is present in the
-                  seismic signal and may often lead to ambiguous
-                  interpretation, is a key step in processing
-                  associated with crustal reflection data. In this
-                  paper, we make use of the parsimonious
-                  representation of seismic data in the curvelet
-                  domain to perform the noise attenuation while
-                  preserving the coherent energy and its amplitude
-                  information. Curvelets are a recently developed
-                  mathematical transform that has as one of its
-                  properties minimal overlap between seismic signal
-                  and noise in the transform domain, thereby
-                  facilitating signal-noise separation. The problem is
-                  cast as an inverse problem and the results are
-                  obtained by updating the solution at each
-                  iteration. We demonstrate the effectiveness of this
-                  procedure at removing noise on both synthetic shot
-                  gathers and a synthetic stacked seismic section. We
-                  then apply curvelet denoising to deep crustal
-                  seismic reflection data where the signal-to-noise
-                  ratio is low. The reflection data were recorded
-                  along Lithoprobe's SNORCLE Line 1 across
-                  Paleoproterozoic-Archean domains in Canada's
-                  Northwest Territories. After initial processing, we
-                  apply the iterative curvelet denoising to both
-                  pre-stack shot gathers and post-stack data. Ground
-                  roll, random noise and much of the anomalous
-                  vertical energy is removed from the pre-stack shot
-                  gathers, to the extent that crustal reflections,
-                  including those from the Moho, are clearly seen on
-                  individual gathers. Denoised stacked data show a
-                  series of dipping reflections in the lower crust
-                  that extend into the Moho. The Moho itself is
-                  relatively flat and characterized by a sharp, narrow
-                  band of reflections. Comparing the results for the
-                  stacked data with those from F-X deconvolution,
-                  curvelet denoising outperforms the latter by
-                  attenuating incoherent noise with minimal harm to
-                  the signal. Because curvelet denoising retains
-                  amplitude information, it provides opportunities for
-                  further studies of seismic sections through
-                  attribute analyses. Curvelet denoising provides an
-                  important new tool in the processing toolbox for
-                  crustal seismic reflection data.},
-  optdoi = {10.1016/j.tecto.2010.07.01},
-  keywords = {SLIM,Processing},
-  url = {http://www.sciencedirect.com/science/article/pii/S0040195110003227}
+@ARTICLE{herrmann2005ICAEsdb,
+  author = {Felix J. Herrmann},
+  title = {Seismic deconvolution by atomic decomposition: a parametric approach
+	with sparseness constraints},
+  journal = {Integrated Computer-Aided Engineering},
+  year = {2005},
+  volume = {12},
+  pages = {69-90},
+  number = {1},
+  abstract = {In this paper an alternative approach to the blind seismic deconvolution
+	problem is presented that aims for two goals namely recovering the
+	location and relative strength of seismic reflectors, possibly with
+	super-localization, as well as obtaining detailed parametric characterizations
+	for the reflectors. We hope to accomplish these goals by decomposing
+	seismic data into a redundant dictionary of parameterized waveforms
+	designed to closely match the properties of reflection events associated
+	with sedimentary records. In particular, our method allows for highly
+	intermittent non-Gaussian records yielding a reflectivity that can
+	no longer be described by a stationary random process or by a spike
+	train. Instead, we propose a reflector parameterization that not
+	only recovers the reflector{\textquoteright}s location and relative
+	strength but which also captures reflector attributes such as its
+	local scaling, sharpness and instantaneous phase-delay. The first
+	set of parameters delineates the stratigraphy whereas the second
+	provides information on the lithology. As a consequence of the redundant
+	parameterization, finding the matching waveforms from the dictionary
+	involves the solution of an ill-posed problem. Two complementary
+	sparseness-imposing methods Matching and Basis Pursuit are compared
+	for our dictionary and applied to seismic data.},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  issn = {1069-2509},
+  keywords = {deconvolution, SLIM,Processing,Modelling},
+  optmonth = {01/2005},
+  publisher = {IOS Press},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/IntegratedComputerAided%20Engineering/2005/herrmann2005ICAEsdb/herrmann2005ICAEsdb.pdf}
 }
 
-
-@ARTICLE{vanLeeuwen2010IJGswi,
-  author = {Tristan van Leeuwen and Aleksandr Y. Aravkin and  Felix J. Herrmann},
-  title = {Seismic waveform inversion by stochastic optimization},
-  journal = {International Journal of Geophysics},
-  volume = {2011},
-  notes = {Article ID: 689041, 18pages},
-  year = {2011},
-  optmonth = {12/2011},
-  optdoi = {10.1155/2011/689041},
-  abstract = {We explore the use of stochastic optimization methods
-                  for seismic waveform inversion. The basic principle
-                  of such methods is to randomly draw a batch of
-                  realizations of a given misfit function and goes
-                  back to the 1950s. The ultimate goal of such an
-                  approach is to dramatically reduce the computational
-                  cost involved in evaluating the misfit. Following
-                  earlier work, we introduce the stochasticity in
-                  waveform inversion problem in a rigorous way via a
-                  technique called randomized trace estimation. We
-                  then review theoretical results that underlie recent
-                  developments in the use of stochastic methods for
-                  waveform inversion. We present numerical experiments
-                  to illustrate the behavior of different types of
-                  stochastic optimization methods and investigate the
-                  sensitivity to the batch size and the noise level in
-                  the data. We find that it is possible to reproduce
-                  results that are qualitatively similar to the
-                  solution of the full problem with modest batch
-                  sizes, even on noisy data. Each iteration of the
-                  corresponding stochastic methods requires an order
-                  of magnitude fewer PDE solves than a comparable
-                  deterministic method applied to the full problem,
-                  which may lead to an order of magnitude speedup for
-                  waveform inversion in practice.},
-  keywords = {SLIM,Full-waveform inversion,Optimization},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InternationJournalOfGeophysics/2011/vanLeeuwen10IJGswi/vanLeeuwen10IJGswi.pdf}
-}
-
-@ARTICLE{herrmann2009GEOPcbm,
-  author = {Felix J. Herrmann and Cody R. Brown and Yogi A. Erlangga and Peyman
-	P. Moghaddam},
-  title = {Curvelet-based migration preconditioning and scaling},
-  journal = {Geophysics},
-  year = {2009},
-  optmonth = {09/2009},
-  volume = {74},
-  pages = {A41},
-  abstract = {The extremely large size of typical seismic imaging problems has been
-	one of the major stumbling blocks for iterative techniques to attain
-	accurate migration amplitudes. These iterative methods are important
-	because they complement theoretical approaches that are hampered
-	by difficulties to control problems such as finite-acquisition aperture,
-	source-receiver frequency response, and directivity. To solve these
-	problems, we apply preconditioning, which significantly improves
-	convergence of least-squares migration. We discuss different levels
-	of preconditioning that range from corrections for the order of the
-	migration operator to corrections for spherical spreading, and position
-	and reflector-dip dependent amplitude errors. While the first two
-	corrections correspond to simple scalings in the Fourier and physical
-	domain, the third correction requires phase-space (space spanned
-	by location and dip) scaling, which we carry out with curvelets.
-	We show that our combined preconditioner leads to a significant improvement
-	of the convergence of least-squares {\textquoteleft}wave-equation{\textquoteright}
-	migration on a line from the SEG AA{\textquoteright} salt model.},
-  keywords = {migration,SLIM,Imaging},
-  url = {http://slim.eos.ubc.ca/Publications/Public/TechReports/herrmann08cmp-r.pdf}
-}
-
-
-@ARTICLE{herrmann2009GEOPcsf,
-  author = {Felix J. Herrmann and Yogi A. Erlangga and Tim T.Y. Lin},
-  title = {Compressive simultaneous full-waveform simulation},
-  journal = {Geophysics},
-  year = {2009},
-  volume = {74},
-  optmonth = {08/2008},
-  pages = {A35},
-  abstract = {The fact that computational complexity of wavefield simulation is
-	proportional to the size of the discretized model and acquisition
-	geometry, and not to the complexity of the simulated wavefield, is
-	a major impediment within seismic imaging. By turning simulation
-	into a compressive sensing problem{\textendash}-where simulated data
-	is recovered from a relatively small number of independent simultaneous
-	sources{\textendash}-we remove this impediment by showing that compressively
-	sampling a simulation is equivalent to compressively sampling the
-	sources, followed by solving a reduced system. As in compressive
-	sensing, this allows for a reduction in sampling rate and hence in
-	simulation costs. We demonstrate this principle for the time-harmonic
-	Helmholtz solver. The solution is computed by inverting the reduced
-	system, followed by a recovery of the full wavefield with a sparsity
-	promoting program. Depending on the wavefield{\textquoteright}s sparsity,
-	this approach can lead to significant cost reductions, in particular
-	when combined with the implicit preconditioned Helmholtz solver,
-	which is known to converge even for decreasing mesh sizes and increasing
-	angular frequencies. These properties make our scheme a viable alternative
-	to explicit time-domain finite-differences.},
-  keywords = {full-waveform,SLIM,Modelling,Compressive Sensing},
-  url = {http://slim.eos.ubc.ca/Publications/Public/TechReports/herrmann08csf-r.pdf}
-}
-
-@ARTICLE{berg2008SJSCpareto,
-  author = {Ewout {van den Berg} and Michael P. Friedlander},
-  title = {Probing the Pareto frontier for basis pursuit solutions},
-  journal = {SIAM Journal on Scientific Computing},
-  year = {2008},
-  volume = {31},
-  pages = {890-912},
-  optmonth = {01/2008},
-  number = {2},
-  abstract = {The basis pursuit problem seeks a minimum one-norm solution of an
-	underdetermined least-squares problem. Basis pursuit denoise (BPDN)
-	fits the least-squares problem only approximately, and a single parameter
-	determines a curve that traces the optimal trade-off between the
-	least-squares fit and the one-norm of the solution. We prove that
-	this curve is convex and continuously differentiable over all points
-	of interest, and show that it gives an explicit relationship to two
-	other optimization problems closely related to BPDN. We describe
-	a root-finding algorithm for finding arbitrary points on this curve;
-	the algorithm is suitable for problems that are large scale and for
-	those that are in the complex domain. At each iteration, a spectral
-	gradient-projection method approximately minimizes a least-squares
-	problem with an explicit one-norm constraint. Only matrix-vector
-	operations are required. The primal-dual solution of this problem
-	gives function and derivative information needed for the root-finding
-	method. Numerical experiments on a comprehensive set of test problems
-	demonstrate that the method scales well to large problems.},
-  optdoi = {10.1137/080714488},
-  keywords = {basis pursuit, convex program, duality, Newton{\textquoteright}s method,
-	one-norm regularization, projected gradient, root-finding, sparse
-	solutions,Optimization},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/vanderberg08ptp.pdf},
-  publisher = {SIAM}
-}
-
-
-@ARTICLE{hennenfent2008GEOPnii,
-  author = {Gilles Hennenfent and Ewout {van den Berg} and Michael P. Friedlander
-	and Felix J. Herrmann},
-  title = {New insights into one-norm solvers from the {P}areto curve},
-  journal = {Geophysics},
-  year = {2008},
-  volume = {73},
-  number = {4},
-  optmonth = {07/2008},
-  abstract = {Geophysical inverse problems typically involve a trade off between
-	data misfit and some prior. Pareto curves trace the optimal trade
-	off between these two competing aims. These curves are commonly used
-	in problems with two-norm priors where they are plotted on a log-log
-	scale and are known as L-curves. For other priors, such as the sparsity-promoting
-	one norm, Pareto curves remain relatively unexplored. We show how
-	these curves lead to new insights in one-norm regularization. First,
-	we confirm the theoretical properties of smoothness and convexity
-	of these curves from a stylized and a geophysical example. Second,
-	we exploit these crucial properties to approximate the Pareto curve
-	for a large-scale problem. Third, we show how Pareto curves provide
-	an objective criterion to gauge how different one-norm solvers advance
-	towards the solution.},
-  keywords = {Pareto, SLIM, Geophysics,Optimization,Acquisition,Processing},
-url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/hennenfent08GEOnii/hennenfent08GEOnii.pdf }
-}
-
-@ARTICLE{hennenfent2008GEOPsdw,
-  author = {Gilles Hennenfent and Felix J. Herrmann},
-  title = {Simply denoise: wavefield reconstruction via jittered undersampling},
-  journal = {Geophysics},
-  year = {2008},
-  pages = {V19-V28},
-  volume = {73},
-  number = {3},
-  optmonth = {05/2008},
-  abstract = {In this paper, we present a new discrete undersampling scheme designed
-	to favor wavefield reconstruction by sparsity-promoting inversion
-	with transform elements that are localized in the Fourier domain.
-	Our work is motivated by empirical observations in the seismic community,
-	corroborated by recent results from compressive sampling, which indicate
-	favorable (wavefield) reconstructions from random as opposed to regular
-	undersampling. As predicted by theory, random undersampling renders
-	coherent aliases into harmless incoherent random noise, effectively
-	turning the interpolation problem into a much simpler denoising problem.
-	A practical requirement of wavefield reconstruction with localized
-	sparsifying transforms is the control on the maximum gap size. Unfortunately,
-	random undersampling does not provide such a control and the main
-	purpose of this paper is to introduce a sampling scheme, coined jittered
-	undersampling, that shares the benefits of random sampling, while
-	offering control on the maximum gap size. Our contribution of jittered
-	sub-Nyquist sampling proves to be key in the formulation of a versatile
-	wavefield sparsity-promoting recovery scheme that follows the principles
-	of compressive sampling. After studying the behavior of the jittered
-	undersampling scheme in the Fourier domain, its performance is studied
-	for curvelet recovery by sparsity-promoting inversion (CRSI). Our
-	findings on synthetic and real seismic data indicate an improvement
-	of several decibels over recovery from regularly-undersampled data
-	for the same amount of data collected.},
-  optdoi = {10.1190/1.2841038},
-  keywords = {sampling, Geophysics,SLIM,Acquisition,Processing,Optimization,Compressive Sensing},
-  publisher = {SEG},
-url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/hennenfent08GEOsdw/hennenfent08GEOsdw.pdf}
-}
-
-
-@ARTICLE{herrmann2008GJInps,
-  author = {Felix J. Herrmann and Gilles Hennenfent},
-  title = {Non-parametric seismic data recovery with curvelet frames},
+@ARTICLE{herrmann2004GJIssa,
+  author = {Felix J. Herrmann and Y. Bernab\'e },
+  title = {Seismic singularities at upper-mantle phase transitions: a site percolation
+	model},
   journal = {Geophysical Journal International},
-  year = {2008},
-  volume = {173},
-  pages = {233-248},
-  optmonth = {04/2011},
-  abstract = {Seismic data recovery from data with missing traces on otherwise regular
-	acquisition grids forms a crucial step in the seismic processing
-	flow. For instance, unsuccessful recovery leads to imaging artifacts
-	and to erroneous predictions for the multiples, adversely affecting
-	the performance of multiple elimination. A non-parametric transform-based
-	recovery method is presented that exploits the compression of seismic
-	data volumes by recently developed curvelet frames. The elements
-	of this transform are multidimensional and directional and locally
-	resem- ble wavefronts present in the data, which leads to a compressible
-	representation for seismic data. This compression enables us to formulate
-	a new curvelet-based seismic data recovery algorithm through sparsity-promoting
-	inversion. The concept of sparsity-promoting inversion is in itself
-	not new to geophysics. However, the recent insights from the field
-	of {\textquoteleft}compressed sensing{\textquoteright} are new since
-	they clearly identify the three main ingredients that go into a successful
-	formulation of a re- covery problem, namely a sparsifying transform,
-	a sampling strategy that subdues coherent aliases and a sparsity-promoting
-	program that recovers the largest entries of the curvelet-domain
-	vector while explaining the measurements. These concepts are illustrated
-	with a stylized experiment that stresses the importance of the degree
-	of compression by the sparsifying transform. With these findings,
-	a curvelet-based recovery algorithms is developed, which recovers
-	seismic wavefields from seismic data volumes with large percentages
-	of traces missing. During this construction, we benefit from the
-	main three ingredients of compressive sampling, namely the curvelet
-	compression of seismic data, the existence of a favorable sam- pling
-	scheme and the formulation of a large-scale sparsity-promoting solver
-	based on a cooling method. The recovery performs well on synthetic
-	as well as real data and performs better by virtue of the sparsifying
-	property of curvelets. Our results are applicable to other areas
-	such as global seismology.},
-  optdoi = {10.1111/j.1365-246X.2007.03698.x},
-  keywords = {curvelet transform, reconstruction, SLIM,Acquisition},
-url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysical Journal International/2008/herrmann08nps/herrmann08nps.pdf }
-}
-
-@ARTICLE{herrmann2008ACHAsac,
-  author = {Felix J. Herrmann and Peyman P. Moghaddam and Chris Stolk},
-  title = {Sparsity- and continuity-promoting seismic image recovery with curvelet
-	frames},
-  journal = {Applied and Computational Harmonic Analysis},
-  year = {2008},
-  volume = {24},
-  pages = {150-173},
-  number = {2},
-  optmonth = {03/2011},
-  abstract = {A nonlinear singularity-preserving solution to seismic image recovery
-	with sparseness and continuity constraints is proposed. We observe
-	that curvelets, as a directional frame expan- sion, lead to sparsity
-	of seismic images and exhibit invariance under the normal operator
-	of the linearized imaging problem. Based on this observation we derive
-	a method for stable recovery of the migration amplitudes from noisy
-	data. The method corrects the amplitudes during a post-processing
-	step after migration, such that the main additional cost is one ap-
-	plication of the normal operator, i.e. a modeling followed by a migration.
-	Asymptotically this normal operator corresponds to a pseudodifferential
-	operator, for which a convenient diagonal approximation in the curvelet
-	domain is derived, including a bound for its error and a method for
-	the estimation of the diagonal from a compound operator consisting
-	of discrete implementations for the scattering operator and its adjoint
-	the migration opera- tor. The solution is formulated as a nonlinear
-	optimization problem where sparsity in the curvelet domain as well
-	as continuity along the imaged reflectors are jointly promoted. To
-	enhance sparsity, the l1 -norm on the curvelet coefficients is minimized,
-	while continuity is promoted by minimizing an anisotropic diffusion
-	norm on the image. The performance of the recovery scheme is evaluated
-	with a time-reversed {\textquoteright}wave-equation{\textquoteright}
-	migration code on synthetic datasets, including the complex SEG/EAGE
-	AA salt model.},
-  optdoi = {10.1016/j.acha.2007.06.007},
-  keywords = {curvelet transform, imaging, SLIM,Imaging,Processing},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/Herrmann08sac.pdf}
-}
-
-@ARTICLE{herrmann2008GEOPcbs,
-  author = {Felix J. Herrmann and Deli Wang and Gilles Hennenfent and Peyman
-	P. Moghaddam},
-  title = {Curvelet-based seismic data processing: a multiscale and nonlinear
-	approach},
-  journal = {Geophysics},
-  year = {2008},
-  optmonth = {03/2008},
-  volume = {73},
-  pages = {A1-A5},
-  number = {1},
-  abstract = {Mitigating missing data, multiples, and erroneous migration amplitudes
-	are key factors that determine image quality. Curvelets, little {\textquoteleft}{\textquoteleft}plane
-	waves,{\textquoteright}{\textquoteright} complete with oscillations
-	in one direction and smoothness in the other directions, sparsify
-	a property we leverage explicitly with sparsity promotion. With this
-	principle, we recover seismic data with high fidelity from a small
-	subset (20\%) of randomly selected traces. Similarly, sparsity leads
-	to a natural decorrelation and hence to a robust curvelet-domain
-	primary-multiple separation for North Sea data. Finally, sparsity
-	helps to recover migration amplitudes from noisy data. With these
-	examples, we show that exploiting the curvelet{\textquoteright}s
-	ability to sparsify wavefrontlike features is powerful, and our results
-	are a clear indication of the broad applicability of this transform
-	to exploration seismology. {\copyright}2008 Society of Exploration
-	Geophysicists},
-  optdoi = {10.1190/1.2799517},
-  keywords = {curvelet transform, SLIM,Acquisition,Processing},
-  publisher = {SEG},
-url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/herrmann08GEOcbs/herrmann08GEOcbs.pdf } 
-}
-
-
-@ARTICLE{herrmann2008GEOPacd,
-  author = {Felix J. Herrmann and Deli Wang and D. J. Verschuur},
-  title = {Adaptive curvelet-domain primary-multiple separation},
-  journal = {Geophysics},
-  year = {2008},
-  optmonth = {08/2008},
-  volume = {73},
-  pages = {A17-A21},
+  year = {2004},
+  volume = {159},
+  pages = {949-960},
   number = {3},
-  abstract = {In many exploration areas, successful separation of primaries and
-	multiples greatly determines the quality of seismic imaging. Despite
-	major advances made by surface-related multiple elimination (SRME),
-	amplitude errors in the predicted multiples remain a problem. When
-	these errors vary for each type of multiple in different ways (as
-	a function of offset, time, and dip), they pose a serious challenge
-	for conventional least-squares matching and for the recently introduced
-	separation by curvelet-domain thresholding. We propose a data-adaptive
-	method that corrects amplitude errors, which vary smoothly as a function
-	of location, scale (frequency band), and angle. With this method,
-	the amplitudes can be corrected by an elementwise curvelet-domain
-	scaling of the predicted multiples. We show that this scaling leads
-	to successful estimation of primaries, despite amplitude, sign, timing,
-	and phase errors in the predicted multiples. Our results on synthetic
-	and real data show distinct improvements over conventional least-squares
-	matching in terms of better suppression of multiple energy and high-frequency
-	clutter and better recovery of estimated primaries. {\copyright}2008
-	Society of Exploration Geophysicists},
-  optdoi = {10.1190/1.2904986},
-  keywords = {Geophysics, SLIM,Processing},
-  publisher = {SEG},
-url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/herrmann08GEOacd/herrmann08GEOacd.pdf }
-}
-
-
-@ARTICLE{saab2008ACHAsrb,
-  author = {Rayan Saab and Ozgur Yilmaz},
-  title = {Sparse Recovery by Non-Convex Optimization - Instance Optimality},
-  journal = {Applied and Computational Harmonic Analysis},
-  year = {2010},
-  optmonth = {07/2010},
-  volume = {29},
-  number = {1},
-  pages = {30-48},
-  abstract = {In this note, we address the theoretical properties of $Œî_p$, a class
-	of compressed sensing decoders that rely on $l^p$ minimization with
-	$p {\i}n (0, 1)$ to recover estimates of sparse and compressible
-	signals from incomplete and inaccurate measurements. In particular,
-	we extend the results of Cand{\textquoteleft}es, Romberg and Tao
-	[3] and Wojtaszczyk [30] regarding the decoder $Œî_1$, based on $\ell^1$
-	minimization, to $Œî p$ with $p {\i}n (0, 1)$. Our results are two-fold.
-	First, we show that under certain sufficient conditions that are
-	weaker than the analogous sufficient conditions for $Œî_1$ the decoders
-	$Œî_p$ are robust to noise and stable in the sense that they are
-	$(2, p)$ instance optimal. Second, we extend the results of Wojtaszczyk
-	to show that, like $Œî_1$, the decoders $Œî_p$ are (2, 2) instance
-	optimal in probability provided the measurement matrix is drawn from
-	an appropriate distribution. While the extension of the results of
-	[3] to the setting where $p {\i}n (0, 1)$ is straightforward, the
-	extension of the instance optimality in probability result of [30]
-	is non-trivial. In particular, we need to prove that the $LQ_1$ property,
-	introduced in [30], and shown to hold for Gaussian matrices and matrices
-	whose columns are drawn uniformly from the sphere, generalizes to
-	an $LQ_p$ property for the same classes of matrices. Our proof is
-	based on a result by Gordon and Kalton [18] about the Banach-Mazur
-	distances of p-convex bodies to their convex hulls.},
-  keywords = {non-convex,Compressive Sensing},
-  url = {http://dx.doi.org/10.1016/j.acha.2009.08.002}
-}
-
-@ARTICLE{wang2008GEOPbws,
-  author = {Deli Wang and Rayan Saab and Ozgur Yilmaz and Felix J. Herrmann},
-  title = {Bayesian wavefield separation by transform-domain sparsity promotion},
-  journal = {Geophysics},
-  year = {2008},
-  volume = {73},
-  number = {5},
-  pages = {1-6},
-  optmonth = {07/2008},
-  abstract = {Successful removal of coherent noise sources greatly determines the
-	quality of seismic imag- ing. Ma jor advances were made in this direction,
-	e.g., Surface-Related Multiple Elimination (SRME) and interferometric
-	ground-roll removal. Still, moderate phase, timing, amplitude errors
-	and clutter in the predicted signal components can be detrimental.
-	Adopting a Bayesian approach along with the assumption of approximate
-	curvelet-domain independence of the to-be-separated signal components,
-	we construct an iterative algorithm that takes the predictions produced
-	by for example SRME as input and separates these components in a
-	robust fashion. In addition, the proposed algorithm controls the
-	energy mismatch between the separated and predicted components. Such
-	a control, which was lacking in earlier curvelet-domain formulations,
-	produces improved results for primary-multiple separation on both
-	synthetic and real data.},
-  optdoi = {10.1190/1.2952571},
-  keywords = {curvelet transform, SLIM, Geophysics,Processing,Optimization},
-url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/wang08GEObws/wang08GEObws.pdf }
-}
-
-@ARTICLE{friedlander2007TASdtd,
-  author = {Michael P. Friedlander and M. A. Saunders},
-  title = {Discussion: The Dantzig Selector: Statistical estimation when p is
-	much larger then n},
-  journal = {The Annals of Statistics},
-  year = {2007},
-  volume = {35},
-  optmonth = {03/2007},
-  pages = {2385-2391},
-  number = {6},
-  optdoi = {10.1214/009053607000000479},
-  keywords = {dantzig, SLIM, statistics},
-  url = {http://www.cs.ubc.ca/~mpf/downloads/FriedlanderSaunders08.pdf}
-}
-
-@ARTICLE{friedlander2007SJOero,
-  author = {Michael P. Friedlander and P. Tseng},
-  title = {Exact Regularization of Convex Programs},
-  journal = {SIAM J. Optim},
-  year = {2007},
-  optmonth = {05/2007},
-  volume = {18},
-  pages = {1326-1350},
-  number = {4},
-  abstract = {The regularization of a convex program is exact if all solutions of
-	the regularized problem are also solutions of the original problem
-	for all values of the regularization parameter below some positive
-	threshold. For a general convex program, we show that the regularization
-	is exact if and only if a certain selection problem has a Lagrange
-	multiplier. Moreover, the regularization parameter threshold is inversely
-	related to the Lagrange multiplier. We use this result to generalize
-	an exact regularization result of Ferris and Mangasarian [Appl. Math.
-	Optim., 23(1991), pp. 266{\textendash}273] involving a linearized
-	selection problem. We also use it to derive necessary and sufficient
-	conditions for exact penalization, similar to those obtained by Bertsekas
-	[Math. Programming, 9(1975), pp. 87{\textendash}99] and by Bertsekas,
-	Nedi , Ozdaglar [Convex Analysis and Optimization, Athena Scientific,
-	Belmont, MA, 2003]. When the regularization is not exact, we derive
-	error bounds on the distance from the regularized solution to the
-	original solution set. We also show that existence of a {\textquoteleft}{\textquoteleft}weak
-	sharp minimum{\textquoteright}{\textquoteright} is in some sense
-	close to being necessary for exact regularization. We illustrate
-	the main result with numerical experiments on the l1 regularization
-	of benchmark (degenerate) linear programs and semidefinite/second-order
-	cone programs. The experiments demonstrate the usefulness of l1 regularization
-	in finding sparse solutions.},
-  optdoi = {10.1137/060675320},
-  keywords = {SLIM,Optimization},
-  url = {http://www.cs.ubc.ca/~mpf/index.php?q=cpreg.pdf}
+  abstract = {Mineralogical phase transitions are usually invoked to account for
+	the sharpness of globally observed upper-mantle seismic discontinuities.
+	We propose a percolation-based model for the elastic properties of
+	the phase mixture in the coexistence regions associated with these
+	transitions. The major consequence of the model is that the elastic
+	moduli (but not the density) display a singularity at the percolation
+	threshold of the high-pressure phase. This model not only explains
+	the sharp but continuous change in seismic velocities across the
+	phase transition, but also predicts its abruptness and scale invariance,
+	which are characterized by a non-integral scale exponent. Using the
+	receiver-function approach and new, powerful signal-processing techniques,
+	we quantitatively determine the singularity exponent from recordings
+	of converted seismic waves at two Australian stations (CAN and WRAB).
+	Using the estimated values, we construct velocity{\textendash}depth
+	profiles across the singularities and verify that the calculated
+	converted waveforms match the observations under CAN. Finally, we
+	point out a series of additional predictions that may provide new
+	insights into the physics and fine structure of the upper-mantle
+	transition zone.},
+  keywords = {percolation, SLIM,Modelling},
+  optdoi = {10.1111/j.1365-246X.2004.02464.x},
+  optmonth = {12/2004},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysical%20Journal%20International/2004/herrmann2004GJIssa/herrmann2004GJIssa.pdf}
 }
 
 @ARTICLE{herrmann2007GJInlp,
@@ -1019,7 +493,6 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/w
 	frames},
   journal = {Geophysical Journal International},
   year = {2007},
-  optmonth = {08/2007},
   volume = {170},
   pages = {781-799},
   number = {2},
@@ -1066,11 +539,467 @@ url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/w
 	in multiple suppression compared to the conventional method of adaptive
 	matched filtering. This improved separation translates into an improved
 	stack.},
-  optdoi = {10.1111/j.1365-246X.2007.03360.x},
   keywords = {signal separation, SLIM,Processing},
-url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysical Journal International/2007/herrmann07nlp/herrmann07nlp.pdf  }
+  optdoi = {10.1111/j.1365-246X.2007.03360.x},
+  optmonth = {08/2007},
+  url = { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysical Journal International/2007/herrmann07nlp/herrmann07nlp.pdf }
 }
 
+@ARTICLE{herrmann2009GEOPcbm,
+  author = {Felix J. Herrmann and Cody R. Brown and Yogi A. Erlangga and Peyman
+	P. Moghaddam},
+  title = {Curvelet-based migration preconditioning and scaling},
+  journal = {Geophysics},
+  year = {2009},
+  volume = {74},
+  pages = {A41},
+  abstract = {The extremely large size of typical seismic imaging problems has been
+	one of the major stumbling blocks for iterative techniques to attain
+	accurate migration amplitudes. These iterative methods are important
+	because they complement theoretical approaches that are hampered
+	by difficulties to control problems such as finite-acquisition aperture,
+	source-receiver frequency response, and directivity. To solve these
+	problems, we apply preconditioning, which significantly improves
+	convergence of least-squares migration. We discuss different levels
+	of preconditioning that range from corrections for the order of the
+	migration operator to corrections for spherical spreading, and position
+	and reflector-dip dependent amplitude errors. While the first two
+	corrections correspond to simple scalings in the Fourier and physical
+	domain, the third correction requires phase-space (space spanned
+	by location and dip) scaling, which we carry out with curvelets.
+	We show that our combined preconditioner leads to a significant improvement
+	of the convergence of least-squares {\textquoteleft}wave-equation{\textquoteright}
+	migration on a line from the SEG AA{\textquoteright} salt model.},
+  keywords = {migration,SLIM,Imaging},
+  optmonth = {09/2009},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/herrmann08cmp-r.pdf}
+}
+
+@ARTICLE{herrmann2009GEOPcsf,
+  author = {Felix J. Herrmann and Yogi A. Erlangga and Tim T.Y. Lin},
+  title = {Compressive simultaneous full-waveform simulation},
+  journal = {Geophysics},
+  year = {2009},
+  volume = {74},
+  pages = {A35},
+  abstract = {The fact that computational complexity of wavefield simulation is
+	proportional to the size of the discretized model and acquisition
+	geometry, and not to the complexity of the simulated wavefield, is
+	a major impediment within seismic imaging. By turning simulation
+	into a compressive sensing problem{\textendash}-where simulated data
+	is recovered from a relatively small number of independent simultaneous
+	sources{\textendash}-we remove this impediment by showing that compressively
+	sampling a simulation is equivalent to compressively sampling the
+	sources, followed by solving a reduced system. As in compressive
+	sensing, this allows for a reduction in sampling rate and hence in
+	simulation costs. We demonstrate this principle for the time-harmonic
+	Helmholtz solver. The solution is computed by inverting the reduced
+	system, followed by a recovery of the full wavefield with a sparsity
+	promoting program. Depending on the wavefield{\textquoteright}s sparsity,
+	this approach can lead to significant cost reductions, in particular
+	when combined with the implicit preconditioned Helmholtz solver,
+	which is known to converge even for decreasing mesh sizes and increasing
+	angular frequencies. These properties make our scheme a viable alternative
+	to explicit time-domain finite-differences.},
+  keywords = {full-waveform,SLIM,Modelling,Compressive Sensing},
+  optmonth = {08/2008},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2009/herrmann2009GEOPcsf/herrmann2009GEOPcsf.pdf}
+}
+
+@ARTICLE{Herrmann11TRfcd,
+  author = {Felix J. Herrmann and Michael P. Friedlander and Ozgur Yilmaz},
+  title = {Fighting the Curse of Dimensionality: Compressive Sensing in Exploration
+	Seismology},
+  journal = {Signal Processing Magazine, IEEE},
+  year = {2012},
+  volume = {29},
+  pages = {88-100},
+  number = {3},
+  abstract = {Many seismic exploration techniques rely on the collection of massive
+	data volumes that are mined for information during processing. This
+	approach has been extremely successful, but current efforts toward
+	higher resolution images in increasingly complicated regions of Earth
+	continue to reveal fundamental shortcomings in our typical workflows.
+	The "curse" of dimensionality is the main roadblock and is exemplified
+	by Nyquist's sampling criterion, which disproportionately strains
+	current acquisition and processing systems as the size and desired
+	resolution of our survey areas continues to increase.},
+  issn = {1053-5888},
+  keywords = {Earth, Nyquist sampling criterion;dimensionality curse, higher-resolution
+	images, massive data volumes,seismic exploration techniques, strains
+	current acquisition system,strains current processing system, geographic
+	information systems,seismology},
+  optdoi = {10.1109/MSP.2012.2185859},
+  optmonth = {05/12},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/IEEESignalProcessingMagazine/2012/Herrmann11TRfcd/Herrmann11TRfcd.pdf}
+}
+
+@ARTICLE{herrmann2008GJInps,
+  author = {Felix J. Herrmann and Gilles Hennenfent},
+  title = {Non-parametric seismic data recovery with curvelet frames},
+  journal = {Geophysical Journal International},
+  year = {2008},
+  volume = {173},
+  pages = {233-248},
+  abstract = {Seismic data recovery from data with missing traces on otherwise regular
+	acquisition grids forms a crucial step in the seismic processing
+	flow. For instance, unsuccessful recovery leads to imaging artifacts
+	and to erroneous predictions for the multiples, adversely affecting
+	the performance of multiple elimination. A non-parametric transform-based
+	recovery method is presented that exploits the compression of seismic
+	data volumes by recently developed curvelet frames. The elements
+	of this transform are multidimensional and directional and locally
+	resem- ble wavefronts present in the data, which leads to a compressible
+	representation for seismic data. This compression enables us to formulate
+	a new curvelet-based seismic data recovery algorithm through sparsity-promoting
+	inversion. The concept of sparsity-promoting inversion is in itself
+	not new to geophysics. However, the recent insights from the field
+	of {\textquoteleft}compressed sensing{\textquoteright} are new since
+	they clearly identify the three main ingredients that go into a successful
+	formulation of a re- covery problem, namely a sparsifying transform,
+	a sampling strategy that subdues coherent aliases and a sparsity-promoting
+	program that recovers the largest entries of the curvelet-domain
+	vector while explaining the measurements. These concepts are illustrated
+	with a stylized experiment that stresses the importance of the degree
+	of compression by the sparsifying transform. With these findings,
+	a curvelet-based recovery algorithms is developed, which recovers
+	seismic wavefields from seismic data volumes with large percentages
+	of traces missing. During this construction, we benefit from the
+	main three ingredients of compressive sampling, namely the curvelet
+	compression of seismic data, the existence of a favorable sam- pling
+	scheme and the formulation of a large-scale sparsity-promoting solver
+	based on a cooling method. The recovery performs well on synthetic
+	as well as real data and performs better by virtue of the sparsifying
+	property of curvelets. Our results are applicable to other areas
+	such as global seismology.},
+  keywords = {curvelet transform, reconstruction, SLIM,Acquisition},
+  optdoi = {10.1111/j.1365-246X.2007.03698.x},
+  optmonth = {04/2011},
+  url = { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysical Journal International/2008/herrmann08nps/herrmann08nps.pdf }
+}
+
+@ARTICLE{herrmann11GPelsqIm,
+  author = {Felix J. Herrmann and Xiang Li},
+  title = {Efficient least-squares imaging with sparsity promotion and compressive
+	sensing},
+  journal = {Geophysical Prospecting},
+  year = {2012},
+  volume = {60},
+  pages = {696-712},
+  number = {4},
+  abstract = {Seismic imaging is a linearized inversion problem relying on the minimization
+	of a least-squares misfit functional as a function of the medium
+	perturbation. The success of this procedure hinges on our ability
+	to handle large systems of equations---whose size grows exponentially
+	with the demand for higher resolution images in more and more complicated
+	areas---and our ability to invert these systems given a limited amount
+	of computational resources. To overcome this ``curse of dimensionality''
+	in problem size and computational complexity, we propose a combination
+	of randomized dimensionality-reduction and divide-and-conquer techniques.
+	This approach allows us to take advantage of sophisticated sparsity-promoting
+	solvers that work on a series of smaller subproblems each involving
+	a small randomized subset of data. These subsets correspond to artificial
+	simultaneous-source experiments made of random superpositions of
+	sequential-source experiments. By changing these subsets after each
+	subproblem is solved, we are able to attain an inversion quality
+	that is competitive while requiring fewer computational, and possibly,
+	fewer acquisition resources. Application of this concept to a controlled
+	series of experiments showed the validity of our approach and the
+	relationship between its efficiency---by reducing the number of sources
+	and hence the number of wave-equation solves---and the image quality.
+	Application of our dimensionality-reduction methodology with sparsity
+	promotion to a complicated synthetic with well-log constrained structure
+	also yields excellent results underlining the importance of sparsity
+	promotion.},
+  address = {University of British Columbia, Vancouver},
+  keywords = {SLIM,Imaging,Optimization,Compressive Sensing},
+  optdoi = {10.1111/j.1365-2478.2011.01041.x},
+  optmonth = {07/2012},
+  url1 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GeophysicalProspecting/2012/herrmann11GPelsqIm/herrmann11GPelsqIm.pdf},
+  url2 = {http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2478.2011.01041.x/full}
+}
+
+@ARTICLE{herrmann2008ACHAsac,
+  author = {Felix J. Herrmann and Peyman P. Moghaddam and Chris Stolk},
+  title = {Sparsity- and continuity-promoting seismic image recovery with curvelet
+	frames},
+  journal = {Applied and Computational Harmonic Analysis},
+  year = {2008},
+  volume = {24},
+  pages = {150-173},
+  number = {2},
+  abstract = {A nonlinear singularity-preserving solution to seismic image recovery
+	with sparseness and continuity constraints is proposed. We observe
+	that curvelets, as a directional frame expan- sion, lead to sparsity
+	of seismic images and exhibit invariance under the normal operator
+	of the linearized imaging problem. Based on this observation we derive
+	a method for stable recovery of the migration amplitudes from noisy
+	data. The method corrects the amplitudes during a post-processing
+	step after migration, such that the main additional cost is one ap-
+	plication of the normal operator, i.e. a modeling followed by a migration.
+	Asymptotically this normal operator corresponds to a pseudodifferential
+	operator, for which a convenient diagonal approximation in the curvelet
+	domain is derived, including a bound for its error and a method for
+	the estimation of the diagonal from a compound operator consisting
+	of discrete implementations for the scattering operator and its adjoint
+	the migration opera- tor. The solution is formulated as a nonlinear
+	optimization problem where sparsity in the curvelet domain as well
+	as continuity along the imaged reflectors are jointly promoted. To
+	enhance sparsity, the l1 -norm on the curvelet coefficients is minimized,
+	while continuity is promoted by minimizing an anisotropic diffusion
+	norm on the image. The performance of the recovery scheme is evaluated
+	with a time-reversed {\textquoteright}wave-equation{\textquoteright}
+	migration code on synthetic datasets, including the complex SEG/EAGE
+	AA salt model.},
+  keywords = {curvelet transform, imaging, SLIM,Imaging,Processing},
+  optdoi = {10.1016/j.acha.2007.06.007},
+  optmonth = {03/2011},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/ACHA/2008/herrmann2008ACHAsac/herrmann2008ACHAsac.pdf}
+}
+
+@ARTICLE{herrmann2008GEOPcbs,
+  author = {Felix J. Herrmann and Deli Wang and Gilles Hennenfent and Peyman
+	P. Moghaddam},
+  title = {Curvelet-based seismic data processing: a multiscale and nonlinear
+	approach},
+  journal = {Geophysics},
+  year = {2008},
+  volume = {73},
+  pages = {A1-A5},
+  number = {1},
+  abstract = {Mitigating missing data, multiples, and erroneous migration amplitudes
+	are key factors that determine image quality. Curvelets, little {\textquoteleft}{\textquoteleft}plane
+	waves,{\textquoteright}{\textquoteright} complete with oscillations
+	in one direction and smoothness in the other directions, sparsify
+	a property we leverage explicitly with sparsity promotion. With this
+	principle, we recover seismic data with high fidelity from a small
+	subset (20\%) of randomly selected traces. Similarly, sparsity leads
+	to a natural decorrelation and hence to a robust curvelet-domain
+	primary-multiple separation for North Sea data. Finally, sparsity
+	helps to recover migration amplitudes from noisy data. With these
+	examples, we show that exploiting the curvelet{\textquoteright}s
+	ability to sparsify wavefrontlike features is powerful, and our results
+	are a clear indication of the broad applicability of this transform
+	to exploration seismology. {\copyright}2008 Society of Exploration
+	Geophysicists},
+  keywords = {curvelet transform, SLIM,Acquisition,Processing},
+  optdoi = {10.1190/1.2799517},
+  optmonth = {03/2008},
+  publisher = {SEG},
+  url = { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/herrmann08GEOcbs/herrmann08GEOcbs.pdf }
+}
+
+@ARTICLE{herrmann2008GEOPacd,
+  author = {Felix J. Herrmann and Deli Wang and D. J. Verschuur},
+  title = {Adaptive curvelet-domain primary-multiple separation},
+  journal = {Geophysics},
+  year = {2008},
+  volume = {73},
+  pages = {A17-A21},
+  number = {3},
+  abstract = {In many exploration areas, successful separation of primaries and
+	multiples greatly determines the quality of seismic imaging. Despite
+	major advances made by surface-related multiple elimination (SRME),
+	amplitude errors in the predicted multiples remain a problem. When
+	these errors vary for each type of multiple in different ways (as
+	a function of offset, time, and dip), they pose a serious challenge
+	for conventional least-squares matching and for the recently introduced
+	separation by curvelet-domain thresholding. We propose a data-adaptive
+	method that corrects amplitude errors, which vary smoothly as a function
+	of location, scale (frequency band), and angle. With this method,
+	the amplitudes can be corrected by an elementwise curvelet-domain
+	scaling of the predicted multiples. We show that this scaling leads
+	to successful estimation of primaries, despite amplitude, sign, timing,
+	and phase errors in the predicted multiples. Our results on synthetic
+	and real data show distinct improvements over conventional least-squares
+	matching in terms of better suppression of multiple energy and high-frequency
+	clutter and better recovery of estimated primaries. {\copyright}2008
+	Society of Exploration Geophysicists},
+  keywords = {Geophysics, SLIM,Processing},
+  optdoi = {10.1190/1.2904986},
+  optmonth = {08/2008},
+  publisher = {SEG},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/herrmann08GEOacd/herrmann08GEOacd.pdf }
+}
+
+@ARTICLE{herrmann2011RECORDERcsse1,
+  author = {Felix J. Herrmann and Haneet Wason and Tim T.Y. Lin},
+  title = {Compressive sensing in seismic exploration: an outlook on a new paradigm},
+  journal = {CSEG Recorder},
+  year = {2011},
+  volume = {36},
+  pages = {19-33},
+  number = {4},
+  abstract = {Many seismic exploration techniques rely on the collection of massive
+	data volumes that are subsequently mined for information during processing.
+	While this approach has been extremely successful in the past, current
+	efforts toward higher resolution images in increasingly complicated
+	regions of the Earth continue to reveal fundamental shortcomings
+	in our workflows. Chiefly amongst these is the so-called “curse
+	of dimensionality” exemplified by Nyquist's sampling criterion,
+	which disproportionately strains current acquisition and processing
+	systems as the size and desired resolution of our survey areas continues
+	to increase. We offer an alternative sampling method leveraging recent
+	insights from compressive sensing towards seismic acquisition and
+	processing for data that, from a traditional point of view, are considered
+	to be undersampled. The main outcome of this approach is a new technology
+	where acquisition and processing related costs are decoupled the
+	stringent Nyquist sampling criterion. At the heart of our approach
+	lies randomized incoherent sampling that breaks subsampling-related
+	interferences by turning them into harmless noise, which we subsequently
+	remove by promoting sparsity in a transform-domain. Acquisition schemes
+	designed to fit into this regime no longer grow significantly in
+	cost with increasing resolution and dimensionality of the survey
+	area, but instead its cost ideally only depends on transform-domain
+	sparsity of the expected data. Our contribution is split into two
+	part.},
+  optmonth = {04/2011},
+  url = {http://www.cseg.ca/publications/recorder/2011/04apr/Apr2011-Compressive-sensing-in-seismic-expl.pdf}
+}
+
+@ARTICLE{kumar2010TNPecr,
+  author = {Vishal Kumar and Jounada Oueity and Ron Clowes and Felix J. Herrmann},
+  title = {Enhancing Crustal Reflection Data through Curvelet Denoising},
+  journal = {Technophysics},
+  year = {2011},
+  volume = {508},
+  pages = {106-116},
+  number = {1-4},
+  abstract = {Suppression of incoherent noise, which is present in the seismic signal
+	and may often lead to ambiguous interpretation, is a key step in
+	processing associated with crustal reflection data. In this paper,
+	we make use of the parsimonious representation of seismic data in
+	the curvelet domain to perform the noise attenuation while preserving
+	the coherent energy and its amplitude information. Curvelets are
+	a recently developed mathematical transform that has as one of its
+	properties minimal overlap between seismic signal and noise in the
+	transform domain, thereby facilitating signal-noise separation. The
+	problem is cast as an inverse problem and the results are obtained
+	by updating the solution at each iteration. We demonstrate the effectiveness
+	of this procedure at removing noise on both synthetic shot gathers
+	and a synthetic stacked seismic section. We then apply curvelet denoising
+	to deep crustal seismic reflection data where the signal-to-noise
+	ratio is low. The reflection data were recorded along Lithoprobe's
+	SNORCLE Line 1 across Paleoproterozoic-Archean domains in Canada's
+	Northwest Territories. After initial processing, we apply the iterative
+	curvelet denoising to both pre-stack shot gathers and post-stack
+	data. Ground roll, random noise and much of the anomalous vertical
+	energy is removed from the pre-stack shot gathers, to the extent
+	that crustal reflections, including those from the Moho, are clearly
+	seen on individual gathers. Denoised stacked data show a series of
+	dipping reflections in the lower crust that extend into the Moho.
+	The Moho itself is relatively flat and characterized by a sharp,
+	narrow band of reflections. Comparing the results for the stacked
+	data with those from F-X deconvolution, curvelet denoising outperforms
+	the latter by attenuating incoherent noise with minimal harm to the
+	signal. Because curvelet denoising retains amplitude information,
+	it provides opportunities for further studies of seismic sections
+	through attribute analyses. Curvelet denoising provides an important
+	new tool in the processing toolbox for crustal seismic reflection
+	data.},
+  keywords = {SLIM,Processing},
+  optdoi = {10.1016/j.tecto.2010.07.01},
+  optmonth = {07/2011},
+  url = {http://www.sciencedirect.com/science/article/pii/S0040195110003227}
+}
+
+@ARTICLE{vanLeeuwen2010IJGswi,
+  author = {Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  title = {Seismic waveform inversion by stochastic optimization},
+  journal = {International Journal of Geophysics},
+  year = {2011},
+  volume = {2011},
+  abstract = {We explore the use of stochastic optimization methods for seismic
+	waveform inversion. The basic principle of such methods is to randomly
+	draw a batch of realizations of a given misfit function and goes
+	back to the 1950s. The ultimate goal of such an approach is to dramatically
+	reduce the computational cost involved in evaluating the misfit.
+	Following earlier work, we introduce the stochasticity in waveform
+	inversion problem in a rigorous way via a technique called randomized
+	trace estimation. We then review theoretical results that underlie
+	recent developments in the use of stochastic methods for waveform
+	inversion. We present numerical experiments to illustrate the behavior
+	of different types of stochastic optimization methods and investigate
+	the sensitivity to the batch size and the noise level in the data.
+	We find that it is possible to reproduce results that are qualitatively
+	similar to the solution of the full problem with modest batch sizes,
+	even on noisy data. Each iteration of the corresponding stochastic
+	methods requires an order of magnitude fewer PDE solves than a comparable
+	deterministic method applied to the full problem, which may lead
+	to an order of magnitude speedup for waveform inversion in practice.},
+  keywords = {SLIM,Full-waveform inversion,Optimization},
+  notes = {Article ID: 689041, 18pages},
+  optdoi = {10.1155/2011/689041},
+  optmonth = {12/2011},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InternationJournalOfGeophysics/2011/vanLeeuwen10IJGswi/vanLeeuwen10IJGswi.pdf}
+}
+
+@ARTICLE{VanLeeuwen11TRfwiwse,
+  author = {Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Fast waveform inversion without source encoding},
+  journal = {Geophysical Prospecting},
+  year = {2012},
+  abstract = {Randomized source encoding has recently been proposed as a way to
+	dramatically reduce the costs of full waveform inversion. The main
+	idea is to replace all sequential sources by a small number of simultaneous
+	sources. This introduces random crosstalk in the model updates and
+	special stochastic optimization strategies are required to deal with
+	this. Two problems arise with this approach: i) source encoding can
+	only be applied to fixed-spread acquisition setups, and ii) stochastic
+	optimization methods tend to converge very slowly, relying on averaging
+	to get rid of the cross-talk. Although the slow convergence is partly
+	offset by the low iteration cost, we show that conventional optimization
+	strategies are bound to outperform stochastic methods in the long
+	run. In this paper we argue that we don¬øt need randomized source
+	encoding to reap the benefits of stochastic optimization and we review
+	an optimization strategy that combines the benefits of both conventional
+	and stochastic optimization. The method uses a gradually increasing
+	batch of sources. Thus, iterations are very cheap initially and this
+	allows the method to make fast progress in the beginning. As the
+	batch size grows, the method behaves like conventional optimization,
+	allowing for fast convergence. Numerical examples suggest that the
+	stochastic and hybrid method perform equally well with and without
+	source encoding and that the hybrid method outperforms both conventional
+	and stochastic optimization. The method does not rely on source encoding
+	techniques and can thus be applied to non fixed-spread data.},
+  keywords = {SLIM,Full-waveform inversion,Optimization},
+  optdoi = {10.1111/j.1365-2478.2012.01096.x},
+  optmonth = {07/2012},
+  optvolume = {Online publication},
+  url = {http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2478.2012.01096.x/abstract}
+}
+
+@ARTICLE{Li11TRfrfwi,
+  author = {Xiang Li and Aleksandr Y. Aravkin and Tristan van Leeuwen and Felix
+	J. Herrmann},
+  title = {Fast randomized full-waveform inversion with compressive sensing},
+  journal = {Geophysics},
+  year = {2012},
+  volume = {77},
+  pages = {A13-A17},
+  number = {3},
+  abstract = { Wave-equation based seismic inversion can be formulated as a nonlinear
+	inverse problem where the medium properties are obtained via minimization
+	of a least- squares misfit functional. The demand for higher resolution
+	models in more geologically complex areas drives the need to develop
+	techniques that explore the special structure of full-waveform inversion
+	to reduce the computational burden and to regularize the inverse
+	problem. We meet these goals by using ideas from compressive sensing
+	and stochastic optimization to design a novel Gauss-Newton method,
+	where the updates are computed from random subsets of the data via
+	curvelet-domain sparsity promotion. Application of this idea to a
+	realistic synthetic shows improved results compared to quasi-Newton
+	methods, which require passes through all data. Two different subset
+	sampling strategies are considered: randomized source encoding, and
+	drawing sequential shots firing at random source locations from marine
+	data with missing near and far offsets. In both cases, we obtain
+	excellent inversion results compared to conventional methods at reduced
+	computational costs. },
+  keywords = {SLIM,Full-waveform inversion,Compressive Sensing,Optimization},
+  optdoi = {10.1190/geo2011-0410.1},
+  optmonth = {05/2012},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2012/Li11TRfrfwi/Li11TRfrfwi.pdf}
+}
 
 @ARTICLE{lin2007GEOPcwe,
   author = {Tim T.Y. Lin and Felix J. Herrmann},
@@ -1078,7 +1007,6 @@ url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysical Jour
   journal = {Geophysics},
   year = {2007},
   volume = {72},
-  optmonth = {08/2007},
   pages = {SM77-SM93},
   number = {5},
   abstract = {An explicit algorithm for the extrapolation of one-way wavefields
@@ -1108,135 +1036,145 @@ url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysical Jour
 	The results show that our method is stable, has reduced dip limitations,
 	and handles evanescent waves in inverse extrapolation. {\copyright}2007
 	Society of Exploration Geophysicists},
-  optdoi = {10.1190/1.2750716},
   keywords = {SLIM, wave propagation,Modelling},
+  optdoi = {10.1190/1.2750716},
+  optmonth = {08/2007},
   publisher = {SEG},
-url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2007/lin07cwe/lin07cwe.pdf }
+  url = { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2007/lin07cwe/lin07cwe.pdf }
 }
 
-@ARTICLE{hennenfent2006CiSEsdn,
-  author = {Gilles Hennenfent and Felix J. Herrmann},
-  title = {Seismic Denoising with Nonuniformly Sampled Curvelets},
-  journal = {Computing in Science \& Engineering},
-  year = {2006},
-  volume = {8 Issue:3},
-  optmonth = {05/2006},
-  pages = {16 - 25},
-  month = {May-June 2006},
-  abstract = {The authors present an extension of the fast discrete curvelet transform
-	(FDCT) to nonuniformly sampled data. This extension not only restores
-	curvelet compression rates for nonuniformly sampled data but also
-	removes noise and maps the data to a regular grid.},
-  optdoi = {10.1109/MCSE.2006.49},
-  keywords = {CiSE,Processing},
-  url= {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CiSE/2006/hennenfent06CiSEsdn/hennenfent06CiSEsdn.pdf } 
+@ARTICLE{Mansour11TRssma,
+  author = {Hassan Mansour and Haneet Wason and Tim T.Y. Lin and Felix J. Herrmann},
+  title = {Randomized marine acquisition with compressive sampling matrices},
+  journal = {Geophysical Prospecting},
+  year = {2012},
+  volume = {60},
+  pages = {648-662},
+  number = {4},
+  abstract = {Seismic data acquisition in marine environments is a costly process
+	that calls for the adoption of simultaneous-source or randomized
+	acquisition - an emerging technology that is stimulating both geophysical
+	research and commercial efforts. Simultaneous marine acquisition
+	calls for the development of a new set of design principles and post-processing
+	tools. In this paper, we discuss the properties of a specific class
+	of randomized simultaneous acquisition matrices and demonstrate that
+	sparsity-promoting recovery improves the quality of reconstructed
+	seismic data volumes. We propose a practical randomized marine acquisition
+	scheme where the sequential sources fire airguns at only randomly
+	time-dithered instances. We demonstrate that the recovery using sparse
+	approximation from random time-dithering with a single source approaches
+	the recovery from simultaneous-source acquisition with multiple sources.
+	Established findings from the field of compressive sensing indicate
+	that the choice of the sparsifying transform that is incoherent with
+	the compressive sampling matrix can significantly impact the reconstruction
+	quality. Leveraging these findings, we then demonstrate that the
+	compressive sampling matrix resulting from our proposed sampling
+	scheme is incoherent with the curvelet transform. The combined measurement
+	matrix exhibits better isometry properties than other transform bases
+	such as a non-localized multidimensional Fourier transform. We illustrate
+	our results with simulations of ‘ideal’ simultaneous-source marine
+	acquisition, which dithers both in time and space, compared with
+	periodic and randomized time-dithering.},
+  keywords = {Curvelet transform,Fourier,Marine acquisition},
+  optdoi = {10.1111/j.1365-2478.2012.01075.x},
+  optmonth = {07/2012},
+  url = {http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2478.2012.01075.x/abstract}
 }
 
-@ARTICLE{herrmann2005ICAEsdb,
-  author = {Felix J. Herrmann},
-  title = {Seismic deconvolution by atomic decomposition: a parametric approach
-	with sparseness constraints},
-  journal = {Integrated Computer-Aided Engineering},
-  year = {2005},
-  volume = {12},
-  pages = {69-90},
+@ARTICLE{saab2008ACHAsrb,
+  author = {Rayan Saab and Ozgur Yilmaz},
+  title = {Sparse Recovery by Non-Convex Optimization - Instance Optimality},
+  journal = {Applied and Computational Harmonic Analysis},
+  year = {2010},
+  volume = {29},
+  pages = {30-48},
   number = {1},
-  optmonth = {01/2005},
-  abstract = {In this paper an alternative approach to the blind seismic deconvolution
-	problem is presented that aims for two goals namely recovering the
-	location and relative strength of seismic reflectors, possibly with
-	super-localization, as well as obtaining detailed parametric characterizations
-	for the reflectors. We hope to accomplish these goals by decomposing
-	seismic data into a redundant dictionary of parameterized waveforms
-	designed to closely match the properties of reflection events associated
-	with sedimentary records. In particular, our method allows for highly
-	intermittent non-Gaussian records yielding a reflectivity that can
-	no longer be described by a stationary random process or by a spike
-	train. Instead, we propose a reflector parameterization that not
-	only recovers the reflector{\textquoteright}s location and relative
-	strength but which also captures reflector attributes such as its
-	local scaling, sharpness and instantaneous phase-delay. The first
-	set of parameters delineates the stratigraphy whereas the second
-	provides information on the lithology. As a consequence of the redundant
-	parameterization, finding the matching waveforms from the dictionary
-	involves the solution of an ill-posed problem. Two complementary
-	sparseness-imposing methods Matching and Basis Pursuit are compared
-	for our dictionary and applied to seismic data.},
-  address = {Amsterdam, The Netherlands, The Netherlands},
-  issn = {1069-2509},
-  keywords = {deconvolution, SLIM,Processing,Modelling},
-  publisher = {IOS Press},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann05sdb.pdf}
+  abstract = {In this note, we address the theoretical properties of $Œî_p$, a
+	class of compressed sensing decoders that rely on $l^p$ minimization
+	with $p {\i}n (0, 1)$ to recover estimates of sparse and compressible
+	signals from incomplete and inaccurate measurements. In particular,
+	we extend the results of Cand{\textquoteleft}es, Romberg and Tao
+	[3] and Wojtaszczyk [30] regarding the decoder $Œî_1$, based on
+	$\ell^1$ minimization, to $Œî p$ with $p {\i}n (0, 1)$. Our results
+	are two-fold. First, we show that under certain sufficient conditions
+	that are weaker than the analogous sufficient conditions for $Œî_1$
+	the decoders $Œî_p$ are robust to noise and stable in the sense
+	that they are $(2, p)$ instance optimal. Second, we extend the results
+	of Wojtaszczyk to show that, like $Œî_1$, the decoders $Œî_p$
+	are (2, 2) instance optimal in probability provided the measurement
+	matrix is drawn from an appropriate distribution. While the extension
+	of the results of [3] to the setting where $p {\i}n (0, 1)$ is straightforward,
+	the extension of the instance optimality in probability result of
+	[30] is non-trivial. In particular, we need to prove that the $LQ_1$
+	property, introduced in [30], and shown to hold for Gaussian matrices
+	and matrices whose columns are drawn uniformly from the sphere, generalizes
+	to an $LQ_p$ property for the same classes of matrices. Our proof
+	is based on a result by Gordon and Kalton [18] about the Banach-Mazur
+	distances of p-convex bodies to their convex hulls.},
+  keywords = {non-convex,Compressive Sensing},
+  optmonth = {07/2010},
+  url = {http://dx.doi.org/10.1016/j.acha.2009.08.002}
 }
 
-@ARTICLE{bernabe2004JGRpas,
-  author = {Y. Bernab{\'e} and U. Mok and B. Evans and Felix J. Herrmann},
-  title = {Permeability and storativity of binary mixtures of high-and low-porosity
-	materials},
-  journal = {Journal of Geophysical Research},
-  year = {2004},
-  optmonth = {10/2004},
-  volume = {109},
-  pages = {B12207},
-  abstract = {As a first step toward determining the mixing laws for the transport
-	properties of rocks, we prepared binary mixtures of high- and low-permeability
-	materials by isostatically hot-pressing mixtures of fine powders
-	of calcite and quartz. The resulting rocks were marbles containing
-	varying concentrations of dispersed quartz grains. Pores were present
-	throughout the rock, but the largest ones were preferentially associated
-	with the quartz particles, leading us to characterize the material
-	as being composed of two phases, one with high permeability and the
-	second with low permeability. We measured the permeability and storativity
-	of these materials using the oscillating flow technique, while systematically
-	varying the effective pressure and the period and amplitude of the
-	input fluid oscillation. Control measurements performed using the
-	steady state flow and pulse decay techniques agreed well with the
-	oscillating flow tests. The hydraulic properties of the marbles were
-	highly sensitive to the volume fraction of the high-permeability
-	phase (directly related to the quartz content). Below a critical
-	quartz content, slightly less than 20 wt \%, the high-permeability
-	volume elements were disconnected, and the overall permeability was
-	low. Above the critical quartz content the high-permeability volume
-	elements formed throughgoing paths, and permeability increased sharply.
-	We numerically simulated fluid flow through binary materials and
-	found that permeability approximately obeys a percolation-based mixing
-	law, consistent with the measured permeability of the calcite-quartz
-	aggregates.},
-  optdoi = {10.1029/2004JB00311},
-  keywords = {permeability, porosity, SLIM, Modeling},
-  url= { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Journal of Geophysical Research/bernabe04JGRpas/bernabe04JGRpas.pdf}
+@ARTICLE{berg2008SJSCpareto,
+  author = {Ewout {van den Berg} and Michael P. Friedlander},
+  title = {Probing the Pareto frontier for basis pursuit solutions},
+  journal = {SIAM Journal on Scientific Computing},
+  year = {2008},
+  volume = {31},
+  pages = {890-912},
+  number = {2},
+  abstract = {The basis pursuit problem seeks a minimum one-norm solution of an
+	underdetermined least-squares problem. Basis pursuit denoise (BPDN)
+	fits the least-squares problem only approximately, and a single parameter
+	determines a curve that traces the optimal trade-off between the
+	least-squares fit and the one-norm of the solution. We prove that
+	this curve is convex and continuously differentiable over all points
+	of interest, and show that it gives an explicit relationship to two
+	other optimization problems closely related to BPDN. We describe
+	a root-finding algorithm for finding arbitrary points on this curve;
+	the algorithm is suitable for problems that are large scale and for
+	those that are in the complex domain. At each iteration, a spectral
+	gradient-projection method approximately minimizes a least-squares
+	problem with an explicit one-norm constraint. Only matrix-vector
+	operations are required. The primal-dual solution of this problem
+	gives function and derivative information needed for the root-finding
+	method. Numerical experiments on a comprehensive set of test problems
+	demonstrate that the method scales well to large problems.},
+  keywords = {basis pursuit, convex program, duality, Newton{\textquoteright}s method,
+	one-norm regularization, projected gradient, root-finding, sparse
+	solutions,Optimization},
+  optdoi = {10.1137/080714488},
+  optmonth = {01/2008},
+  publisher = {SIAM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/vanderberg08ptp.pdf}
 }
 
-@ARTICLE{herrmann2004GJIssa,
-  author = {Felix J. Herrmann and Y. Bernab\'e },
-  title = {Seismic singularities at upper-mantle phase transitions: a site percolation
-	model},
-  journal = {Geophysical Journal International},
-  year = {2004},
-  optmonth = {12/2004},
-  volume = {159},
-  pages = {949-960},
-  number = {3},
-  abstract = {Mineralogical phase transitions are usually invoked to account for
-	the sharpness of globally observed upper-mantle seismic discontinuities.
-	We propose a percolation-based model for the elastic properties of
-	the phase mixture in the coexistence regions associated with these
-	transitions. The major consequence of the model is that the elastic
-	moduli (but not the density) display a singularity at the percolation
-	threshold of the high-pressure phase. This model not only explains
-	the sharp but continuous change in seismic velocities across the
-	phase transition, but also predicts its abruptness and scale invariance,
-	which are characterized by a non-integral scale exponent. Using the
-	receiver-function approach and new, powerful signal-processing techniques,
-	we quantitatively determine the singularity exponent from recordings
-	of converted seismic waves at two Australian stations (CAN and WRAB).
-	Using the estimated values, we construct velocity{\textendash}depth
-	profiles across the singularities and verify that the calculated
-	converted waveforms match the observations under CAN. Finally, we
-	point out a series of additional predictions that may provide new
-	insights into the physics and fine structure of the upper-mantle
-	transition zone.},
-  optdoi = {10.1111/j.1365-246X.2004.02464.x},
-  keywords = {percolation, SLIM,Modelling},
-  url = {http://slim.eos.ubc.ca/Publications/Public/Journals/herrmann04ssa.pdf}
+@ARTICLE{wang2008GEOPbws,
+  author = {Deli Wang and Rayan Saab and Ozgur Yilmaz and Felix J. Herrmann},
+  title = {Bayesian wavefield separation by transform-domain sparsity promotion},
+  journal = {Geophysics},
+  year = {2008},
+  volume = {73},
+  pages = {1-6},
+  number = {5},
+  abstract = {Successful removal of coherent noise sources greatly determines the
+	quality of seismic imag- ing. Ma jor advances were made in this direction,
+	e.g., Surface-Related Multiple Elimination (SRME) and interferometric
+	ground-roll removal. Still, moderate phase, timing, amplitude errors
+	and clutter in the predicted signal components can be detrimental.
+	Adopting a Bayesian approach along with the assumption of approximate
+	curvelet-domain independence of the to-be-separated signal components,
+	we construct an iterative algorithm that takes the predictions produced
+	by for example SRME as input and separates these components in a
+	robust fashion. In addition, the proposed algorithm controls the
+	energy mismatch between the separated and predicted components. Such
+	a control, which was lacking in earlier curvelet-domain formulations,
+	produces improved results for primary-multiple separation on both
+	synthetic and real data.},
+  keywords = {curvelet transform, SLIM, Geophysics,Processing,Optimization},
+  optdoi = {10.1190/1.2952571},
+  optmonth = {07/2008},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/wang08GEObws/wang08GEObws.pdf }
 }
+

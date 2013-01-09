@@ -119,28 +119,31 @@
   title = {Improved wavefield reconstruction from randomized sampling via weighted
 	one-norm minimization},
   year = {2012},
-  abstract = {Missing-trace interpolation aims to reconstruct regularly sampled
-	wavefields from periodically sampled data with gaps caused by physical
-	constraints. While transform-domain sparsity promotion has proven
-	to be an effective tool to solve this recovery problem, recent developments
-	in randomized acquisition in marine, via randomized coil sampling
-	or randomized streamers with deliberate feathering, and on land,
-	via randomization of the source and/or receiver positions, expose
-	vulnerabilities in the current recovery techniques that aside from
-	the selection of the proper transform domain make no use of a priori
-	information on the transform-domain coefficients. To overcome these
-	vulnerabilities in solving the recovery problem for large-scale problems,
-	we propose recovery by weighted one-norm minimization, which exploits
-	correlations between locations of significant coefficients of different
-	partitions, e.g., shot records, common-offset gathers, or frequency
-	slices, of the acquired data. We use these correlations to define
-	a sequence of 2D curvelet-based recovery problems that exploit 3D
-	continuity exhibited by seismic wavefields without relying on the
-	highly redundant 3D curvelet transform. To illustrate the performance
-	of our weighted algorithm, we compare recoveries from different scenarios
-	of partitioning for a seismic line from the Gulf of Suez. These examples
-	demonstrate that our method is superior to standard ℓ1 minimization
-	in terms of reconstruction quality and computational memory requirements.},
+  abstract = {Missing-trace interpolation aims to recover the gaps
+                  caused by physical obstacles or deliberate
+                  subsampling to control acquisition costs in
+                  otherwise regularly-sampled seismic
+                  wavefields. While transform-domain sparsity
+                  promotion has proven to be an effective tool to
+                  solve this recovery problem, current recovery
+                  techniques make no use of a priori information on
+                  the locations of transform-domain coefficients. In
+                  this paper, we propose recovery by weighted one-norm
+                  minimization, which exploits correlations between
+                  the locations of significant coefficients of
+                  different partitions, e.g., shot records,
+                  common-offset gathers, or frequency slices of the
+                  acquired data. We use these correlations to define a
+                  sequence of 2D curvelet-based recovery problems that
+                  exploit 3D continuity exhibited by seismic
+                  wavefields without relying on the highly redundant
+                  3D curvelet transform. To illustrate the performance
+                  of our weighted algorithm, we compare recoveries
+                  from different scenarios of partitioning for a
+                  seismic line from the Gulf of Suez. These examples
+                  demonstrate that our method is superior to standard
+                  $\ell_1$ minimization in terms of reconstruction
+                  quality and computational memory requirements.},
   keywords = {Trace interpolation, weighted one-norm minimization, compressed sensing,
 	randomized sampling},
   optmonth = {10/2012},

@@ -270,6 +270,16 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2012/aravkin2012EAGErobust/aravkin2012EAGErobust.pdf}
 }
 
+@CONFERENCE{vandenberg07VONipo,
+  author = {Ewout van den Berg and Michael P. Friedlander},
+  title = {In Pursuit of a Root},
+  year = {2007},
+  month = {July},
+  organization = {Von Neumann Symposium},
+  quality = {1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/vonNeuman/2007/vandenberg07VONipo.pdf}
+}
+
 @CONFERENCE{beyreuther2005SEGcot,
   author = {Moritz Beyreuther and Jamin Cristall and Felix J. Herrmann},
   title = {Computation of time-lapse differences with {3-D} directional frames},
@@ -690,6 +700,19 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2008/hennenfent2008SINBADsdw2/hennenfent2008SINBADsdw2.pdf}
 }
 
+@CONFERENCE{hennenfent07gradsem,
+  author = {Gilles Hennenfent},
+  title = {Reproducible research in computational (geo)sciences},
+  booktitle = {Graduate seminar series},
+  year = {2007},
+  month = {January},
+  organization = {Graduate Seminar Series},
+  owner = {shruti},
+  quality = {1},
+  timestamp = {2013.01.16},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/Misc/hennenfent07gradsem.pdf}
+}
+
 @CONFERENCE{hennenfent2007SINBADjdn,
   author = {Gilles Hennenfent},
   title = {Just denoise. Nonlinear recovery from randomly sampled data},
@@ -703,6 +726,26 @@
 	better wavefield reconstruction than equivalent regularly sampled
 	data.},
   keywords = {Presentation, SINBAD, SLIM}
+}
+
+@CONFERENCE{hennenfent06SINBADscons,
+  author = {Gilles Hennenfent},
+  title = {Basic Processing flows with SCons},
+  booktitle = {SINBAD},
+  year = {2006},
+  organization = {SINBAD},
+  quality = {1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2006/hennenfent06SINBADscons/hennenfent06SINBADscons.pdf}
+}
+
+@CONFERENCE{hennenfent06SINBADssr,
+  author = {Gilles Hennenfent},
+  title = {A primer on stable signal recovery},
+  booktitle = {SINBAD},
+  year = {2006},
+  organization = {SINBAD},
+  quality = {1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2006/hennenfent06SINBADssr/hennenfent06SINBADssr.pdf}
 }
 
 @CONFERENCE{hennenfent2006SINBADapo,
@@ -2413,6 +2456,17 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2007/herrmann07EAGEsia/herrmann07EAGEsia.pdf }
 }
 
+@CONFERENCE{Herrmann2011BG,
+  author = {Felix J. Herrmann and Tristan van Leeuwen},
+  title = {SINBAD's research program},
+  year = {2011},
+  month = {November},
+  owner = {shruti},
+  quality = {1},
+  timestamp = {2013.01.16},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/Misc/Herrmann2011BG.pdf}
+}
+
 @CONFERENCE{herrmann2011EAGEefmsp,
   author = {Felix J. Herrmann and Xiang Li},
   title = {Efficient least-squares migration with sparsity promotion},
@@ -3910,6 +3964,8 @@
 	of simultaneous Marine acquisition using periodic and randomized
 	time dithering.},
   keywords = {Presentation,SBGF,Acquisition,Compressive Sensing},
+  presenation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SBGF/2011/Mansour11SBGFcspsma/Mansour11SBGFcspsma.pdf
+	},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SBGF/2011/Mansour11SBGFcspsma/Mansour11SBGFcspsma.pdf}
 }
 
@@ -6613,48 +6669,6 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/Publications/Public/Conferences/SEG/2010/herrmann10SEGerc/herrmann10SEGerc.pdf }
 }
 
-@TECHREPORT{herrmann10TRrsa,
-  author = {Felix J. Herrmann},
-  title = {Randomized sampling and sparsity: getting more information from fewer
-	samples},
-  institution = {UBC Earth and Ocean Sciences Department},
-  year = {2010},
-  number = {TR-2010-1},
-  abstract = {Many seismic exploration techniques rely on the collection of massive
-	data volumes that are subsequently mined for information during processing.
-	While this approach has been extremely successful in the past, current
-	efforts toward higher- resolution images in increasingly complicated
-	regions of the Earth continue to reveal fundamental shortcomings
-	in our workflows. Chiefly amongst these is the so-called {\textquoteleft}{\textquoteleft}curse
-	of dimensionality{\textquoteright}{\textquoteright} exemplified by
-	Nyquist{\textquoteright}s sampling criterion, which disproportionately
-	strains current acquisition and processing systems as the size and
-	desired resolution of our survey areas continues to increase. In
-	this paper, we offer an alternative sampling method leveraging recent
-	insights from compressive sensing towards seismic acquisition and
-	processing for data that are traditionally considered to be undersampled.
-	The main outcome of this approach is a new technology where acquisition
-	and processing related costs are no longer determined by overly stringent
-	sampling criteria, such as Nyquist. At the heart of our approach
-	lies randomized incoherent sampling that breaks subsampling related
-	interferences by turning them into harmless noise, which we subsequently
-	remove by promoting transform-domain sparsity. Now, costs no longer
-	grow significantly with resolution and dimensionality of the survey
-	area, but instead depend on transform-domain sparsity only. Our contribution
-	is twofold. First, we demonstrate by means of carefully designed
-	numerical experiments that compressive sensing can successfully be
-	adapted to seismic exploration. Second, we show that accurate recovery
-	can be accomplished for compressively sampled data volumes sizes
-	that exceed the size of conventional transform-domain data volumes
-	by only a small factor. Because compressive sensing combines transformation
-	and encoding by a single linear encoding step, this technology is
-	directly applicable to acquisition and to dimensionality reduction
-	during processing. In either case, sampling, storage, and processing
-	costs scale with transform-domain sparsity. We illustrate this principle
-	by means of number of case studies.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/herrmann2010rsa.pdf}
-}
-
 @TECHREPORT{rajiv2012SEGFRM,
   author = {Rajiv Kumar and Aleksandr Y. Aravkin and Felix J. Herrmann},
   title = {Fast Methods for Rank Minimization with Applications to Seismic-Data
@@ -7255,7 +7269,7 @@
   keywords = {Compressive Sensing},
   optdoi = {10.1109/TIT.2011.2167214},
   optmonth = {02/2012},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/mansour2012IEEETITrcs.pdf}
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/IEEETransInformationTheory/2012/mansour2012IEEETITrcs/mansour2012IEEETITrcs.pdf}
 }
 
 @ARTICLE{friedlander2007TASdtd,
@@ -7542,7 +7556,7 @@
   optdoi = {10.1190/1.3506147},
   optmonth = {12/2010},
   publisher = {SEG},
-  url = {http://link.aip.org/link/?GPY/75/WB173/1}
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2010/herrmann2010GEOPrsg/herrmann2010GEOPrsg.pdf}
 }
 
 @ARTICLE{herrmann2005ICAEsdb,
@@ -8242,7 +8256,7 @@
 	distances of p-convex bodies to their convex hulls.},
   keywords = {non-convex,Compressive Sensing},
   optmonth = {07/2010},
-  url = {http://dx.doi.org/10.1016/j.acha.2009.08.002}
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/ACHA/2010/saab2008ACHAsrb/saab2008ACHAsrb.pdf}
 }
 
 @ARTICLE{berg2008SJSCpareto,

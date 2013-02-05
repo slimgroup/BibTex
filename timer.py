@@ -10,20 +10,18 @@ from email.mime.text import MIMEText
 
 #---------------SEARCH THE FILE FOR FOLLOWING STRINGS----------
 datefield="date_submitted"
-admin_email="shruti.kapoor08@gmail.com"
-sender= "slim.eos.ubc@gmail.com"
+admin_email="hwason@eos.ubc.ca"
+sender= "webadmin@slimweb.eos.ubc.ca"
 #dateformat = '%m/%d/%Y'  # Date should be in the format: month/date/year eg: 12/22/2012
 timer_days=45
 typename="@unpublished"
 #--------------------DECLARATIONS------------
-#TODAY=date.today()
-
 num_files=len(sys.argv)
 int_keys=[]
 setlist=[]
 error_list=[]
 key=[]
-#---------------------------------------
+#---------------BEGIN PROCESSING------------------------
 fileIN=open(sys.argv[1],"r")
 
 def sendmail(error_list):

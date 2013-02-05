@@ -33,6 +33,7 @@ def sendmail(error_list):
 			errors = errors + " " + each
 		text="Please update the following entries in unpublished.bib -" + errors  
 		msg = MIMEText(text)
+	
 		msg['Subject'] = 'Update unpublished.bib in SVN repository'
 		msg['From'] = sender
 		msg['To'] = admin_email

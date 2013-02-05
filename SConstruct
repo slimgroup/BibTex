@@ -9,5 +9,6 @@ Command('internal.bib', ['conference.bib', 'presentation.bib', 'bscthesis.bib','
 
 Command('slimbib.bib',['internal.bib','external.bib'],'python splitkey.py slimbib.bib internal.bib external.bib')
 
+Command(' ','unpublished.bib','python timer.py unpublished.bib')
 pdfOutput = PDF(target='referencecheck.pdf',source='referencecheck.tex')
 Depends(pdfOutput,Split('referencecheck.tex slimbib.bib'))

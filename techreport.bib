@@ -1,6 +1,45 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+@TECHREPORT{vanLeeuwen20133DFWI,
+  author   = {Tristan van Leeuwen and Felix J. Herrmann},
+  title    = {3D frequency-domain seismic inversion using a row-projected helmholtz solver},
+  year     = {2013},
+  institution = {UBC},
+  abstract = {Seismic waveform inversion aims at obtaining detailed
+                  estimates of subsurface medium parameters, such as
+                  soundspeed, from seismic data. A formulation in the
+                  frequency- domain leads to an optimization problem
+                  constrained by a Helmholtz equation with many
+                  right-hand- sides. Application of this technique in
+                  3D precludes the use of factorization techniques to
+                  solve the Helmholtz equation. While many
+                  sophisticated preconditioned iterative techniques
+                  have been devel- oped for the Helmholtz equation,
+                  they often include model-specific tuning parameters
+                  and are thus not very attractive for inversion since
+                  the medium parameters change from one iteration to
+                  the next. In this paper we study the use of a simple
+                  generic preconditioned iterative method (CARP-CG)
+                  that is well-suited for inversion because of its
+                  robustness. We extend thismethod to a
+                  block-iterative method that can efficiently handle
+                  multiple right-hand sides. To reduce the
+                  computational cost of of the overall optimization
+                  procedure, we use recently proposed techniques from
+                  stochastic optimization that allow us to work with
+                  approximate gradient information. These
+                  approximations are obtained by evaluating only a
+                  small portion of the right-hand sides and/or by
+                  solving the PDE approximately. Some numerical
+                  examples on synthetic benchmark models are
+                  included.},
+  keywords = {waveform inversion, optimization, private},
+  month    = {04/2013},
+  url      = {https://www.slim.eos.ubc.ca/Publications/Private/Tech Report/2013/vanLeeuwen20133DFWI/vanLeeuwen20133DFWI.pdf}
+}
+
+
 @TECHREPORT{kumar2013ICMLlr,
   author   = {Aleksandr Y. Aravkin and Rajiv Kumar and Hassan Mansour and Ben Recht and Felix J. Herrmann},
   title    = {An SVD-free Pareto curve approach to rank minimization},
@@ -123,46 +162,6 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/almatar10SEGesfd/almatar10SEGesfd.pdf}
 }
 
-@TECHREPORT{hennenfent10TRnct,
-  author = {Gilles Hennenfent and Lloyd Fenelon and Felix J. Herrmann},
-  title = {Nonequispaced curvelet transform for seismic data reconstruction:
-	a sparsity-promoting approach},
-  institution = {UBC Earth and Ocean Sciences Department},
-  year = {2010},
-  number = {TR-2010-2},
-  abstract = {Seismic data are typically irregularly sampled along spatial axes.
-	This irregular sampling may adversely affect some key steps, e.g.,
-	multiple prediction/attenuation or imaging, in the processing workflow.
-	To overcome this problem almost every large dataset is regularized
-	and/or interpolated. Our contribution is twofold. Firstly, we extend
-	our earlier work on the nonequispaced fast discrete curvelet transform
-	(NFDCT) and introduce a second generation of the transform. This
-	new generation differs from the previous one by the approach taken
-	to compute accurate curvelet coefficients from irregularly sampled
-	data. The first generation relies on accurate Fourier coefficients
-	obtained by an $\ell_2$-regularized inversion of the nonequispaced
-	fast Fourier transform, while the second is based on a direct, $\ell_1$
-	-regularized inversion of the operator that links curvelet coefficients
-	to irregular data. Also, by construction, the NFDCT second generation
-	is lossless, unlike the NFDCT first generation. This property is
-	particularly attractive for processing irregularly sampled seismic
-	data in the curvelet domain and bringing them back to their irregular
-	recording locations with high fidelity. Secondly, we combine the
-	NFDCT second generation with the standard fast discrete curvelet
-	transform (FDCT) to form a new curvelet-based method, coined nonequispaced
-	curvelet reconstruction with sparsity-promoting inversion (NCRSI),
-	for the regularization and interpolation of irregularly sampled data.
-	We demonstrate that, for a pure regularization problem, the reconstruction
-	is very accurate. The signal-to-reconstruction error ratio is, in
-	our example, above 40 dB. We also conduct combined interpolation
-	and regularization experiments. The reconstructions for synthetic
-	data are accurate, particularly when the recording locations are
-	optimally jittered. The reconstruction in our real data example shows
-	amplitudes along the main wavefronts smoothly varying with no obvious
-	acquisition imprint; a result very competitive with results from
-	other reconstruction methods overall.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Journals/2010/hennenfent10TRnct.pdf}
-}
 
 @TECHREPORT{hennenfent08TRori,
   author = {Gilles Hennenfent and Felix J. Herrmann},

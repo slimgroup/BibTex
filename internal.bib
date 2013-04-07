@@ -6567,6 +6567,45 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+@TECHREPORT{vanLeeuwen20133DFWI,
+  author   = {Tristan van Leeuwen and Felix J. Herrmann},
+  title    = {3D frequency-domain seismic inversion using a row-projected helmholtz solver},
+  year     = {2013},
+  institution = {UBC},
+  abstract = {Seismic waveform inversion aims at obtaining detailed
+                  estimates of subsurface medium parameters, such as
+                  soundspeed, from seismic data. A formulation in the
+                  frequency- domain leads to an optimization problem
+                  constrained by a Helmholtz equation with many
+                  right-hand- sides. Application of this technique in
+                  3D precludes the use of factorization techniques to
+                  solve the Helmholtz equation. While many
+                  sophisticated preconditioned iterative techniques
+                  have been devel- oped for the Helmholtz equation,
+                  they often include model-specific tuning parameters
+                  and are thus not very attractive for inversion since
+                  the medium parameters change from one iteration to
+                  the next. In this paper we study the use of a simple
+                  generic preconditioned iterative method (CARP-CG)
+                  that is well-suited for inversion because of its
+                  robustness. We extend thismethod to a
+                  block-iterative method that can efficiently handle
+                  multiple right-hand sides. To reduce the
+                  computational cost of of the overall optimization
+                  procedure, we use recently proposed techniques from
+                  stochastic optimization that allow us to work with
+                  approximate gradient information. These
+                  approximations are obtained by evaluating only a
+                  small portion of the right-hand sides and/or by
+                  solving the PDE approximately. Some numerical
+                  examples on synthetic benchmark models are
+                  included.},
+  keywords = {waveform inversion, optimization, private},
+  month    = {04/2013},
+  url      = {https://www.slim.eos.ubc.ca/Publications/Private/Tech Report/2013/vanLeeuwen20133DFWI/vanLeeuwen20133DFWI.pdf}
+}
+
+
 @TECHREPORT{kumar2013ICMLlr,
   author   = {Aleksandr Y. Aravkin and Rajiv Kumar and Hassan Mansour and Ben Recht and Felix J. Herrmann},
   title    = {An SVD-free Pareto curve approach to rank minimization},
@@ -6689,46 +6728,6 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/almatar10SEGesfd/almatar10SEGesfd.pdf}
 }
 
-@TECHREPORT{hennenfent10TRnct,
-  author = {Gilles Hennenfent and Lloyd Fenelon and Felix J. Herrmann},
-  title = {Nonequispaced curvelet transform for seismic data reconstruction:
-	a sparsity-promoting approach},
-  institution = {UBC Earth and Ocean Sciences Department},
-  year = {2010},
-  number = {TR-2010-2},
-  abstract = {Seismic data are typically irregularly sampled along spatial axes.
-	This irregular sampling may adversely affect some key steps, e.g.,
-	multiple prediction/attenuation or imaging, in the processing workflow.
-	To overcome this problem almost every large dataset is regularized
-	and/or interpolated. Our contribution is twofold. Firstly, we extend
-	our earlier work on the nonequispaced fast discrete curvelet transform
-	(NFDCT) and introduce a second generation of the transform. This
-	new generation differs from the previous one by the approach taken
-	to compute accurate curvelet coefficients from irregularly sampled
-	data. The first generation relies on accurate Fourier coefficients
-	obtained by an $\ell_2$-regularized inversion of the nonequispaced
-	fast Fourier transform, while the second is based on a direct, $\ell_1$
-	-regularized inversion of the operator that links curvelet coefficients
-	to irregular data. Also, by construction, the NFDCT second generation
-	is lossless, unlike the NFDCT first generation. This property is
-	particularly attractive for processing irregularly sampled seismic
-	data in the curvelet domain and bringing them back to their irregular
-	recording locations with high fidelity. Secondly, we combine the
-	NFDCT second generation with the standard fast discrete curvelet
-	transform (FDCT) to form a new curvelet-based method, coined nonequispaced
-	curvelet reconstruction with sparsity-promoting inversion (NCRSI),
-	for the regularization and interpolation of irregularly sampled data.
-	We demonstrate that, for a pure regularization problem, the reconstruction
-	is very accurate. The signal-to-reconstruction error ratio is, in
-	our example, above 40 dB. We also conduct combined interpolation
-	and regularization experiments. The reconstructions for synthetic
-	data are accurate, particularly when the recording locations are
-	optimally jittered. The reconstruction in our real data example shows
-	amplitudes along the main wavefronts smoothly varying with no obvious
-	acquisition imprint; a result very competitive with results from
-	other reconstruction methods overall.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Journals/2010/hennenfent10TRnct.pdf}
-}
 
 @TECHREPORT{hennenfent08TRori,
   author = {Gilles Hennenfent and Felix J. Herrmann},
@@ -7017,6 +7016,341 @@
 
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
+
+@UNPUBLISHED{miao2013CSEGaospsa,
+  author = {Lina Miao and Felix J. Herrmann},
+  title = {Acceleration on Sparse Promoting Seismic Applications},
+  booktitle = {CSEG},
+  year = {2013},
+  abstract = {Sparse promoting oriented problems are never new in
+                  seismic applications. Back in 1970s, geophysicists
+                  had well exploited the robustness of sparse
+                  solutions. Moreover, with the emerging usage of
+                  compressed sensing in recent years, sparse recovery
+                  have been favored in dealing with 'curse of
+                  dimensionality' in various seismic field
+                  acquisition, data processing, and imaging
+                  applications. Although sparsity has provided a
+                  promising approach, solving for it presents a big
+                  challenge. How to work efficiently with the
+                  extremely large-scale seismic problem, and how to
+                  improve the convergence rate reducing computation
+                  time are most frequently asked questions in this
+                  content. In this abstract, the author proposed a new
+                  algorithm -- PQN$\ell_1$, trying to address those
+                  questions. One example on seismic data processing is
+                  included.},
+  keywords = {CSEG,sparsity-promotion,SPG$\ell_1$,Projected Quasi Newton,private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/CSEG/2013/miao2013CSEGaospsa/miao2013CSEGaospsa.pdf}
+}
+
+
+@UNPUBLISHED{petrenko2013HPCSsaoc,
+  date_submitted = {04/03/2013},
+  author = {Art Petrenko and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Software acceleration of CARP, an iterative linear solver
+                  and preconditioner},
+  booktitle = {HPCS},
+  year = {2013},
+  abstract = {We present the results of software optimization of a
+                  row-wise preconditioner (Component Averaged Row
+                  Projections) for the method of conjugate gradients,
+                  which is used to solve the diagonally banded
+                  Helmholtz system representing frequency domain,
+                  isotropic acoustic seismic wave simulation. We
+                  demonstrate that in our application, a
+                  preconditioner bound to one processor core and
+                  accessing memory contiguously reduces execution time
+                  by 7% for matrices having on the order of 108
+                  non-zeros. For reference we note that our C
+                  implementation is over 80 times faster than the
+                  corresponding code written for a high-level
+                  numerical analysis language.},
+  keywords = {HPCS,Helmholtz equation, Kaczmarz, software, wave
+                  propagation, frequency-domain, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/HPCS/2013/petrenko2013HPCSsaoc/petrenko2013HPCSsaoc.pdf}
+}
+
+
+@UNPUBLISHED{petrenko2013SEGsaoc,
+  date_submitted = {04/03/2013},
+  author = {Art Petrenko and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Software acceleration of CARP, an iterative linear solver
+                  and preconditioner},
+  booktitle = {SEG},
+  year = {2013},
+  abstract = {We present the results of software optimization of a
+                  row-wise preconditioner (Component Averaged Row
+                  Projections) for the method of conjugate gradients,
+                  which is used to solve the diagonally banded
+                  Helmholtz system representing frequency domain,
+                  isotropic acoustic seismic wave simulation. We
+                  demonstrate that in our application, a
+                  preconditioner bound to one processor core and
+                  accessing memory contiguously reduces execution time
+                  by 7% for matrices having on the order of 108
+                  non-zeros. For reference we note that our C
+                  implementation is over 80 times faster than the
+                  corresponding code written for a high-level
+                  numerical analysis language.},
+  keywords = {SEG,Helmholtz equation, Kaczmarz, software, wave
+                  propagation, frequency-domain, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/petrenko2013SEGsaoc/petrenko2013SEGsaoc.pdf}
+}
+
+
+@UNPUBLISHED{dasilva2013SEGhtuck,
+  date_submitted = {04/03/2013},
+  author = {Curt Da Silva and Felix J. Herrmann},
+  title = {Structured tensor missing-trace interpolation in the Hierarchical Tucker format},
+  booktitle = {SEG},
+  year = {2013},
+  abstract = {Owing to the large scale and dimensionality of a 3D
+                  seismic experiment, acquiring fully-sampled data
+                  according to the Nyquist criterion is an exceedingly
+                  arduous and cost-prohibitive task. In this paper, we
+                  develop tools to interpolate 5D seismic volumes with
+                  randomly missing sources or receivers using a
+                  relatively novel tensor format known as the
+                  Hierarchical Tucker (HT) format. By exploiting the
+                  underlying smooth structure of HT tensors,
+                  specifically its smooth manifold structure, we
+                  develop solvers which are fast, immediately
+                  parallelizable, and SVD-free, making these solvers
+                  amenable to large-scale problems where SVD-based
+                  projection methods are far too costly. We also build
+                  on intuition of multidimen- sional sampling from the
+                  perspective of matrix-completion and demonstrate the
+                  ability of our algorithms to recover frequency
+                  slices even amidst very high levels of source
+                  subsampling on a synthetic large-scale 3D North Sea
+                  dataset.},
+  keywords = {SEG, hierarchical tucker, structured tensor, tensor
+                  interpolation, differential geometry, riemannian
+                  optimization, gauss newton, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/dasilva2013SEGhtuck/dasilva2013SEGhtuck.pdf}
+}
+
+
+@UNPUBLISHED{kumar2013SEGHSS,
+  date_submitted = {04/03/2013},
+  author = {Rajiv Kumar and Hassan Mansour and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  title = {Reconstruction of seismic wavefields via low-rank matrix
+                  factorization in the hierarchical-separable matrix
+                  representation},
+  booktitle = {SEG},
+  year = {2013},
+  abstract = {Recent developments in matrix rank optimization have
+                  allowed for new computational approaches in the
+                  field of seismic data interpolation. In this paper,
+                  we propose an approach for seismic data
+                  interpolation which incorporates the Hierarchical
+                  Semi-Separable Structure (HSS) inside
+                  rank-regularized least-squares formulations for the
+                  missing-trace interpolation problem. The proposed
+                  approach is suitable for large scale problems, since
+                  it avoids SVD computations and uses a low-rank
+                  factorized formulation instead. We illustrate the
+                  advantages of the new HSS approach by interpolating
+                  a seismic line from the Gulf of Suez and compare the
+                  reconstruction with conventional rank minimization.},
+  keywords = {SEG,interpolation,HSS, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/kumar2013SEGHSS/kumar2013SEGHSS.pdf} 
+}
+
+
+@UNPUBLISHED{kumar2013SEGAVA,
+  date_submitted = {04/03/2013},
+  author = {Rajiv Kumar and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {AVA analysis and geological dip estimation via two-way
+                  wave-equation based extended images},
+  booktitle = {SEG},
+  year = {2013},
+  abstract = {In this paper, we present an efficient way to compute
+                  extended images for \emph{all} subsurface offsets
+                  without explicitly calculating the source and
+                  receiver wavefields for \emph{all} the
+                  sources. Because the extended images contain
+                  \emph{all} possible subsurface offsets, we compute
+                  the angle-domain image gathers by selecting the
+                  subsurface offset that is aligned with the local
+                  dip. We also propose a method to compute the local
+                  dip information directly from common-image-point
+                  gathers. To assess the quality of the angle-domain
+                  common-image-points gathers we compute the
+                  angle-dependent reflectivity coefficients and
+                  compare them with theoretical reflectivity
+                  coefficients yielded by the (linearized) Zoeppritz
+                  equations for a few synthetic models.},
+  keywords = {SEG,AVA,dip,wave-equation,extended images, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/kumar2013SEGAVA/kumar2013SEGAVA.pdf} 
+}
+
+
+@UNPUBLISHED{li2013SEGodmvdaiedwawe,
+  date_submitted = {04/03/2013},
+  author = {Xiang Li and Anais Tamalet and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Optimization driven model-space versus data-space
+                  approaches to invert elastic data with the acoustic
+                  wave equation},
+  booktitle = {SEG},
+  year = {2013},
+  abstract = {Inverting data with elastic phases using an acoustic
+                  wave equation can lead to erroneous results,
+                  especially when the number of iterations is too
+                  high, which may lead to over fitting the
+                  data. Several approaches have been proposed to
+                  address this issue. Most commonly, people apply
+                  "data-independent" filtering operations that are
+                  aimed to deemphasize the elastic phases in the data
+                  in favor of the acoustic phases. Examples of this
+                  approach are nested loops over offset range and
+                  Laplace parameters. In this paper, we discuss two
+                  complementary optimization-driven methods where the
+                  minimization process decides adaptively which of the
+                  data or model components are consistent with the
+                  objective. Specifically, we compare the Student's t
+                  misfit function as the data-space alternative and
+                  curvelet-domain sparsity promotion as the
+                  model-space alternative. Application of these two
+                  methods to a realistic synthetic lead to comparable
+                  results that we believe can be improved by combining
+                  these two methods.},
+  keywords = {SEG,full-waveform inversion,elastic,least-squares,private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/li2013SEGodmvdaiedwawe/li2013SEGodmvdaiedwawe.pdf} 
+}
+
+
+@UNPUBLISHED{oghenekohwo2013SEGtlswrs,
+  date_submitted = {04/03/2013},
+  author = {Felix Oghenekohwo and Felix J. Herrmann},
+  title = {Time-lapse seismics with randomized sampling},
+  booktitle = {SEG},
+  year = {2013},
+  abstract = {In time-lapse or 4D seismics, repeatability of the
+                  acquisition is a very crucial step, as we do not
+                  want spurious events that are not there. In this
+                  paper, we propose an approach which avoids any
+                  requirement to repeat the surveys, by using
+                  randomized sampling technique which allows us to be
+                  more efficient in the acquisition. Our method
+                  applies to sampling data using ocean bottom nodes
+                  (OBN) as receivers. We test the efficacy of our
+                  proposed randomized acquisition geometry for
+                  time-lapse survey on two different models. In the
+                  first example, model properties does not change with
+                  time, while in the second example, model exhibit a
+                  time-lapse effect which may be caused by the
+                  migration of fluid within the reservoir. We perform
+                  two types of randomized sampling - uniform
+                  randomized sampling and jittered sampling to
+                  visualize the effects of non-repeatability in
+                  time-lapse survey. We observe that jittered
+                  randomized sampling is a more efficient method
+                  compared to randomized sampling, due to it's
+                  requirement to control the maximum spacing between
+                  the receivers. The results are presented, in the
+                  image space, as a least-squares migration of the
+                  model perturbation and they are shown for a subset
+                  of a synthetic model - the Marmousi model},
+  keywords = {SEG,acquisition,time-lapse,migration,private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/oghenekohwo2013SEGtlswrs/oghenekohwo2013SEGtlswrs.pdf} 
+}
+
+
+@UNPUBLISHED{tu2013SEGldi,
+  date_submitted = {04/03/2013},
+  author = {Ning Tu and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Limitations of the deconvolutional imaging condition for
+                  two-way propagators},
+  booktitle = {SEG},
+  year = {2013},
+  abstract = {The deconvolutional imaging condition has gained wide
+                  attention in recent years, as it is often used to
+                  image surface-related multiples. However, we noticed
+                  on close inspection that this condition was derived
+                  from one-way propagation principles. Now that
+                  two-way wave-equation based simulations have become
+                  more affordable , we revisit the deconvolutional
+                  imaging condition and reveal its limitations for
+                  two-way propagators. First, it can distort the image
+                  due to receiver-side propagation effects. Second,
+                  when used to image surface-related multiples, it is
+                  not capable of removing all interfering phantom
+                  reflectors.},
+  keywords = {SEG,migration,inversion,multiples,private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/tu2013SEGldi/tu2013SEGldi.pdf}
+}
+
+
+@UNPUBLISHED{tu2013SEGcle,
+  date_submitted = {04/03/2013},
+  author = {Ning Tu and Xiang Li and Felix J. Herrmann},
+  title = {Controlling linearization errors in $\ell_1$ regularized
+                  inversion by rerandomization},
+  booktitle = {SEG},
+  year = {2013},
+  abstract = {Linearized inversion is a data fitting procedure that
+                  tries to match the observed seismic data with data
+                  predicted by linearized modelling. In practice, the
+                  observed data is not necessarily in the column space
+                  of the linearized modelling operator. This can be
+                  caused by lack of an accurate background velocity
+                  model or by coherent noises not explained by
+                  linearized modelling. Through carefully designed
+                  experiments, we ob- serve that a moderate data
+                  mismatch does not pose an issue if we can use all
+                  the data in the inversion. However, artifacts do
+                  arise from the mismatch when randomized
+                  dimensionality reduction techniques are adopted to
+                  speed up the inversion. To stabilize the inversion
+                  for dimensionality reduction with randomized source
+                  aggregates, we propose to rerandomize by drawing
+                  independent simultaneous sources occasionally during
+                  the inversion. The effect of this rerandomization is
+                  remarkable because it results in virtually
+                  artifact-free images at a cost comparable to a
+                  single reverse-time migration. Implications of our
+                  method are profound because we are now able to
+                  resolve fine-scale steep subsalt features in a
+                  computationally feasible manner.},
+  keywords = {SEG,sparsity,inversion,rerandomization,message passing,private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/tu2013SEGcle/tu2013SEGcle.pdf}
+}
+
+
+@UNPUBLISHED{wason2013SEGtjo,
+  date_submitted = {04/03/2013},
+  author = {Haneet Wason and Felix J. Herrmann},
+  title = {Time-jittered ocean bottom seismic acquisition},
+  booktitle = {SEG},
+  year = {2013},
+  abstract = {Leveraging ideas from the field of compressed sensing,
+                  we show how simultaneous or blended acquisition can
+                  be setup as a -- compressed sensing problem. This
+                  helps us to design a pragmatic \emph{time-jittered}
+                  marine acquisition scheme where multiple source
+                  vessels sail across an ocean-bottom array firing
+                  airguns at -- jittered source locations and
+                  instances in time, resulting in better spatial
+                  sampling, and speedup acquisition. Furthermore, we
+                  can significantly impact the reconstruction quality
+                  of conventional seismic data (from jittered data)
+                  and demonstrate successful recovery by sparsity
+                  promotion. In contrast to random (under)sampling,
+                  acquisition via jittered (under)sampling helps in
+                  controlling the maximum gap size, which is a
+                  practical requirement of wavefield reconstruction
+                  with localized sparsifying transforms. Results are
+                  illustrated with simulations of \emph{time-jittered}
+                  marine acquisition, which translates to jittered
+                  source locations for a given speed of the source
+                  vessel, for two source vessels.}, 
+  keywords = {SEG,acquisition, marine, OBC, jittered sampling,
+                  blending, deblending, interpolation, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/wason2013SEGtjo/wason2013SEGtjo.pdf} 
+}
+
 
 @UNPUBLISHED{dasilva2013SAMPTAhtuck,
   author = {Curt Da Silva and Felix J. Herrmann},
@@ -7699,7 +8033,7 @@
   keywords = {curvelet transforms, data acquisition, geophysical techniques, seismology,SLIM,Processing},
   optdoi = {10.1190/1.3494032},
   publisher = {SEG},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/hennenfent2010nct.pdf}
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2010/hennenfent2010GEOPnct/hennenfent2010GEOPnct.pdf}
 }
 
 @ARTICLE{hennenfent2008GEOPsdw,

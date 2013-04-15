@@ -1,32 +1,56 @@
-% This file was created with JabRef 2.9.
+% This file was created with JabRef 2.8.1.
 % Encoding: MacRoman
 
-@ARTICLE{Aravkin11TRridr,
-  author = {Aleksandr Y. Aravkin and Michael P. Friedlander and Felix J. Herrmann
-	and Tristan {van Leeuwen}},
-  title = {Robust inversion, dimensionality reduction, and randomized sampling},
-  journal = {Mathematical Programming},
-  year = {2012},
-  volume = {134},
-  pages = {101-125},
-  number = {1},
-  month = {07/2012},
-  abstract = {We consider a class of inverse problems in which the forward model
-	is the solution operator to linear ODEs or PDEs. This class admits
-	several dimensionality-reduction techniques based on data averaging
-	or sampling, which are especially useful for large-scale problems.
-	We survey these approaches and their connection to stochastic optimization.
-	The data-averaging approach is only viable, however, for a least-squares
-	misfit, which is sensitive to outliers in the data and artifacts
-	unexplained by the forward model. This motivates us to propose a
-	robust formulation based on the Student’s t-distribution of the
-	error. We demonstrate how the corresponding penalty function, together
-	with the sampling approach, can obtain good results for a large-scale
-	seismic inverse problem with 50 % corrupted data.},
-  keywords = {Inverse problems, Seismic inversion, Stochastic optimization, Robust
-	estimation, Optimization, FWI},
-  optdoi = {10.1007/s10107-012-0571-6},
-  url = {http://www.springerlink.com/content/35rwr101h5736340/}
+@ARTICLE{berg2008SJSCpareto,
+  author = {Ewout {van den Berg} and Michael P. Friedlander},
+  title = {Probing the Pareto frontier for basis pursuit solutions},
+  journal = {SIAM Journal on Scientific Computing},
+  year = {2008},
+  volume = {31},
+  pages = {890-912},
+  number = {2},
+  month = {01/2008},
+  abstract = {The basis pursuit problem seeks a minimum one-norm solution of an
+	underdetermined least-squares problem. Basis pursuit denoise (BPDN)
+	fits the least-squares problem only approximately, and a single parameter
+	determines a curve that traces the optimal trade-off between the
+	least-squares fit and the one-norm of the solution. We prove that
+	this curve is convex and continuously differentiable over all points
+	of interest, and show that it gives an explicit relationship to two
+	other optimization problems closely related to BPDN. We describe
+	a root-finding algorithm for finding arbitrary points on this curve;
+	the algorithm is suitable for problems that are large scale and for
+	those that are in the complex domain. At each iteration, a spectral
+	gradient-projection method approximately minimizes a least-squares
+	problem with an explicit one-norm constraint. Only matrix-vector
+	operations are required. The primal-dual solution of this problem
+	gives function and derivative information needed for the root-finding
+	method. Numerical experiments on a comprehensive set of test problems
+	demonstrate that the method scales well to large problems.},
+  keywords = {basis pursuit, convex program, duality, Newton{\textquoteright}s method,
+	one-norm regularization, projected gradient, root-finding, sparse
+	solutions,Optimization},
+  optdoi = {10.1137/080714488},
+  publisher = {SIAM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/vanderberg08ptp.pdf}
+}
+
+@ARTICLE{vandenberg08gsv,
+  author = {Ewout {van den Berg} and Mark Schmidt and Michael P. Friedlander
+	and K. Murphy},
+  title = {Group sparsity via linear-time projection},
+  year = {2008},
+  number = {TR-2008-09},
+  month = {06/2008},
+  abstract = {We present an efficient spectral projected-gradient algorithm for
+	optimization subject to a group one-norm constraint. Our approach
+	is based on a novel linear-time algorithm for Euclidean projection
+	onto the one- and group one-norm constraints. Numerical experiments
+	on large data sets suggest that the proposed method is substantially
+	more efficient and scalable than existing methods.},
+  institution = {UBC - Department of Computer Science},
+  keywords = {SLIM,Optimization},
+  url = {http://www.optimization-online.org/DB_FILE/2008/07/2056.pdf}
 }
 
 @ARTICLE{aravkin2012IPNuisance,
@@ -61,6 +85,34 @@
   url1 = {http://arxiv.org/abs/1206.6532},
   url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InverseProblems/2012/aravkin2012IPNuisance/aravkin2012IPNuisance.pdf},
   url3 = {http://iopscience.iop.org/0266-5611/28/11/115016/}
+}
+
+@ARTICLE{Aravkin11TRridr,
+  author = {Aleksandr Y. Aravkin and Michael P. Friedlander and Felix J. Herrmann
+	and Tristan {van Leeuwen}},
+  title = {Robust inversion, dimensionality reduction, and randomized sampling},
+  journal = {Mathematical Programming},
+  year = {2012},
+  volume = {134},
+  pages = {101-125},
+  number = {1},
+  month = {07/2012},
+  abstract = {We consider a class of inverse problems in which the forward model
+	is the solution operator to linear ODEs or PDEs. This class admits
+	several dimensionality-reduction techniques based on data averaging
+	or sampling, which are especially useful for large-scale problems.
+	We survey these approaches and their connection to stochastic optimization.
+	The data-averaging approach is only viable, however, for a least-squares
+	misfit, which is sensitive to outliers in the data and artifacts
+	unexplained by the forward model. This motivates us to propose a
+	robust formulation based on the Student’s t-distribution of the
+	error. We demonstrate how the corresponding penalty function, together
+	with the sampling approach, can obtain good results for a large-scale
+	seismic inverse problem with 50 % corrupted data.},
+  keywords = {Inverse problems, Seismic inversion, Stochastic optimization, Robust
+	estimation, Optimization, FWI},
+  optdoi = {10.1007/s10107-012-0571-6},
+  url = {http://www.springerlink.com/content/35rwr101h5736340/}
 }
 
 @ARTICLE{bernabe2004JGRpas,
@@ -253,6 +305,32 @@
   url = {http://dx.doi.org/10.1137/11081126X}
 }
 
+@ARTICLE{hennenfent2008GEOPnii,
+  author = {Gilles Hennenfent and Ewout {van den Berg} and Michael P. Friedlander
+	and Felix J. Herrmann},
+  title = {New insights into one-norm solvers from the {P}areto curve},
+  journal = {Geophysics},
+  year = {2008},
+  volume = {73},
+  number = {4},
+  month = {07/2008},
+  abstract = {Geophysical inverse problems typically involve a trade off between
+	data misfit and some prior. Pareto curves trace the optimal trade
+	off between these two competing aims. These curves are commonly used
+	in problems with two-norm priors where they are plotted on a log-log
+	scale and are known as L-curves. For other priors, such as the sparsity-promoting
+	one norm, Pareto curves remain relatively unexplored. We show how
+	these curves lead to new insights in one-norm regularization. First,
+	we confirm the theoretical properties of smoothness and convexity
+	of these curves from a stylized and a geophysical example. Second,
+	we exploit these crucial properties to approximate the Pareto curve
+	for a large-scale problem. Third, we show how Pareto curves provide
+	an objective criterion to gauge how different one-norm solvers advance
+	towards the solution.},
+  keywords = {Pareto, SLIM, Geophysics,Optimization,Acquisition,Processing},
+  url = { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/hennenfent08GEOnii/hennenfent08GEOnii.pdf }
+}
+
 @ARTICLE{hennenfent2010GEOPnct,
   author = {Gilles Hennenfent and Lloyd Fenelon and Felix J. Herrmann},
   title = {Nonequispaced curvelet transform for seismic data reconstruction:
@@ -325,6 +403,8 @@
 	findings on synthetic and real seismic data indicate an improvement
 	of several decibels over recovery from regularly-undersampled data
 	for the same amount of data collected.},
+  html_version = { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/hennenfent08GEOsdw/paper_html/paper.html
+	},
   keywords = {sampling, Geophysics,SLIM,Acquisition,Processing,Optimization,Compressive
 	Sensing},
   optdoi = {10.1190/1.2841038},
@@ -347,32 +427,6 @@
   keywords = {CiSE,Processing},
   optdoi = {10.1109/MCSE.2006.49},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CiSE/2006/hennenfent06CiSEsdn/hennenfent06CiSEsdn.pdf }
-}
-
-@ARTICLE{hennenfent2008GEOPnii,
-  author = {Gilles Hennenfent and Ewout {van den Berg} and Michael P. Friedlander
-	and Felix J. Herrmann},
-  title = {New insights into one-norm solvers from the {P}areto curve},
-  journal = {Geophysics},
-  year = {2008},
-  volume = {73},
-  number = {4},
-  month = {07/2008},
-  abstract = {Geophysical inverse problems typically involve a trade off between
-	data misfit and some prior. Pareto curves trace the optimal trade
-	off between these two competing aims. These curves are commonly used
-	in problems with two-norm priors where they are plotted on a log-log
-	scale and are known as L-curves. For other priors, such as the sparsity-promoting
-	one norm, Pareto curves remain relatively unexplored. We show how
-	these curves lead to new insights in one-norm regularization. First,
-	we confirm the theoretical properties of smoothness and convexity
-	of these curves from a stylized and a geophysical example. Second,
-	we exploit these crucial properties to approximate the Pareto curve
-	for a large-scale problem. Third, we show how Pareto curves provide
-	an objective criterion to gauge how different one-norm solvers advance
-	towards the solution.},
-  keywords = {Pareto, SLIM, Geophysics,Optimization,Acquisition,Processing},
-  url = { https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/hennenfent08GEOnii/hennenfent08GEOnii.pdf }
 }
 
 @ARTICLE{herrmann2012IIsi,
@@ -1139,58 +1193,6 @@
 	distances of p-convex bodies to their convex hulls.},
   keywords = {non-convex,Compressive Sensing},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/ACHA/2010/saab2008ACHAsrb/saab2008ACHAsrb.pdf}
-}
-
-@ARTICLE{berg2008SJSCpareto,
-  author = {Ewout {van den Berg} and Michael P. Friedlander},
-  title = {Probing the Pareto frontier for basis pursuit solutions},
-  journal = {SIAM Journal on Scientific Computing},
-  year = {2008},
-  volume = {31},
-  pages = {890-912},
-  number = {2},
-  month = {01/2008},
-  abstract = {The basis pursuit problem seeks a minimum one-norm solution of an
-	underdetermined least-squares problem. Basis pursuit denoise (BPDN)
-	fits the least-squares problem only approximately, and a single parameter
-	determines a curve that traces the optimal trade-off between the
-	least-squares fit and the one-norm of the solution. We prove that
-	this curve is convex and continuously differentiable over all points
-	of interest, and show that it gives an explicit relationship to two
-	other optimization problems closely related to BPDN. We describe
-	a root-finding algorithm for finding arbitrary points on this curve;
-	the algorithm is suitable for problems that are large scale and for
-	those that are in the complex domain. At each iteration, a spectral
-	gradient-projection method approximately minimizes a least-squares
-	problem with an explicit one-norm constraint. Only matrix-vector
-	operations are required. The primal-dual solution of this problem
-	gives function and derivative information needed for the root-finding
-	method. Numerical experiments on a comprehensive set of test problems
-	demonstrate that the method scales well to large problems.},
-  keywords = {basis pursuit, convex program, duality, Newton{\textquoteright}s method,
-	one-norm regularization, projected gradient, root-finding, sparse
-	solutions,Optimization},
-  optdoi = {10.1137/080714488},
-  publisher = {SIAM},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/vanderberg08ptp.pdf}
-}
-
-@ARTICLE{vandenberg08gsv,
-  author = {Ewout {van den Berg} and Mark Schmidt and Michael P. Friedlander
-	and K. Murphy},
-  title = {Group sparsity via linear-time projection},
-  year = {2008},
-  number = {TR-2008-09},
-  month = {06/2008},
-  abstract = {We present an efficient spectral projected-gradient algorithm for
-	optimization subject to a group one-norm constraint. Our approach
-	is based on a novel linear-time algorithm for Euclidean projection
-	onto the one- and group one-norm constraints. Numerical experiments
-	on large data sets suggest that the proposed method is substantially
-	more efficient and scalable than existing methods.},
-  institution = {UBC - Department of Computer Science},
-  keywords = {SLIM,Optimization},
-  url = {http://www.optimization-online.org/DB_FILE/2008/07/2056.pdf}
 }
 
 @ARTICLE{wang2008GEOPbws,

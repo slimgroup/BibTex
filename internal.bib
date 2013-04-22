@@ -5512,7 +5512,138 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2008/lin08THccl.pdf}
 }
 
-%-------------------------------------------------2012-------------------------------------------------                        
+%-------------------------------------------------2013------------------------------------------------%
+
+@presentation{dasilva2013SINBADSPRhtuck,
+  title = {Hierarchical Tucker Tensor Optimization - Applications to 4D Seismic Data},
+  booktitle    = {SINBAD consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {In this work, we develop optimization algorithms on the
+                  manifold of Hierarchical Tucker (HT) tensors, an
+                  extremely efficient format for representing
+                  high-dimensional tensors exhibiting particular
+                  low-rank structure. With some minor alterations to
+                  existing theoretical developments, we develop an
+                  optimization framework based on the geometric
+                  understanding of HT tensors as a smooth manifold, a
+                  generalization of smooth curves/surfaces. Building
+                  on the existing research of solving optimization
+                  problems on smooth manifolds, we develop Steepest
+                  Descent and Conjugate Gradient methods for HT
+                  tensors. The resulting algorithms converge quickly,
+                  are immediately parallelizable, and do not require
+                  the computation of SVDs. We also derive efficient
+                  Gauss-Newton based algorithms which converge much
+                  faster than standard, first-order methods. We also
+                  extend ideas about favourable sampling conditions
+                  for missing-data recovery from the field of Matrix
+                  Completion to Tensor Completion and demonstrate how
+                  the organization of data can affect the success of
+                  recovery. As a result, if one has data with randomly
+                  missing source pairs, using these ideas, coupled
+                  with an efficient solver, one can interpolate
+                  large-scale seismic data volumes with missing
+                  sources and/or receivers by exploiting the
+                  multidimensional dependencies in the data. We are
+                  able to recover data volumes amidst extremely high
+                  subsampling ratios (in some cases, > 75%) using this
+                  approach and we demonstrate our recovery on a
+                  synthetic 5D data set provided to us by BG.},
+  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM,
+                  Hierarchical Tucker, Structured Tensor, 3D Data
+                  interpolation, structured tensor},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
+  author = {Curt Da Silva and Felix J. Herrmann}
+}
+
+
+@presentation{tu2013SINBADrerand,
+  title = {Rerandomization: two birds one stone for fast least-squares imaging},
+  booktitle    = {SINBAD consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Least squares migration aims to fit the observed seismic
+                  data with data predicted by linearized modelling, by
+                  solving an PDE-constrained optimization
+                  problem. This problem is challenging mostly because
+                  of its prohibitive computational cost. To address
+                  the issue, dimensionality reduction techniques were
+                  proposed in the literature. However, the solution of
+                  the reduced problem can deviate from that of the
+                  full problem when: i. aggressive subsampling ratio
+                  is used to achieve substantial speed-up, ii. there
+                  are components in the observed data that cannot be
+                  explained by linearized modelling. We find that by
+                  rerandomizing our $\ell_1$ regularized inversion, we
+                  can solve both issues at the same time. In this
+                  presentation, I will explain the method and
+                  demonstrate what we can achieve with
+                  rerandomization, especially for resolving sub-salt
+                  structures.},
+  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
+  author = {Ning Tu}
+}
+
+
+@presentation{tu2013SINBADvp,
+  title = {Fast least-squares imaging with source estimation and multiples},
+  booktitle    = {SINBAD consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Least-squares migration is a data fitting procedure that
+                  tries to match the observed seismic data with data
+                  predicted by linearized modelling. With the advent
+                  of modern computing facilities, it is no longer
+                  considered to be computationally
+                  unaffordable. However, its successful application
+                  still hinges on the solution of several important
+                  issues, namely the tremendous problem size, the
+                  unknown source wavelet, and interferences from
+                  coherent events such as surface-related
+                  multiples. In this presentation, I will demonstrate
+                  the SLIM approach to deal with these issues: we use
+                  dimensionality reduction techniques to reduce the
+                  problem size, we estimate the source wavelet on the
+                  fly by variable projection, and we make use of
+                  surface-related multiples to improve image quality
+                  and to retrieve the true-amplitude subsurface medium
+                  perturbation.},
+  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
+  author = {Ning Tu}
+}
+
+
+@presentation{tu2013SINBADdecon,
+  title = {Limitations of the deconvolutional imaging condition for two-way propagators},
+  booktitle    = {SINBAD consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {The deconvolutional imaging condition has gained wide
+                  attention in recent years, as it is often used to
+                  image surface-related multiples. However, we noticed
+                  on close inspection that this condition was derived
+                  from one-way propagation principles. Now that
+                  two-way wave-equation based simulations have become
+                  more affordable, we revisit the deconvolutional
+                  imaging condition and reveal its limitations for
+                  two-way propagators. First, it can distort the image
+                  due to receiver-side propagation effects. Second,
+                  when used to image surface-related multiples, it is
+                  not capable of removing all interfering phantom
+                  reflectors. In this presentation, I will provide a
+                  theoretical analysis and two sets of examples to
+                  verify the theoretical analysis.},
+  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
+  author = {Ning Tu}
+}
+
+
+
+%-------------------------------------------------2012------------------------------------------------%                       
 
 @presentation{Akalin2012SINBADlss,
   title        = {Large scale seismic data interpolation with matrix completion},
@@ -6345,7 +6476,6 @@
 }
 
 
-
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
@@ -7017,88 +7147,6 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
-@UNPUBLISHED{miao2013CSEGaospsa,
-  author = {Lina Miao and Felix J. Herrmann},
-  title = {Acceleration on Sparse Promoting Seismic Applications},
-  booktitle = {CSEG},
-  year = {2013},
-  abstract = {Sparse promoting oriented problems are never new in
-                  seismic applications. Back in 1970s, geophysicists
-                  had well exploited the robustness of sparse
-                  solutions. Moreover, with the emerging usage of
-                  compressed sensing in recent years, sparse recovery
-                  have been favored in dealing with 'curse of
-                  dimensionality' in various seismic field
-                  acquisition, data processing, and imaging
-                  applications. Although sparsity has provided a
-                  promising approach, solving for it presents a big
-                  challenge. How to work efficiently with the
-                  extremely large-scale seismic problem, and how to
-                  improve the convergence rate reducing computation
-                  time are most frequently asked questions in this
-                  content. In this abstract, the author proposed a new
-                  algorithm -- PQN$\ell_1$, trying to address those
-                  questions. One example on seismic data processing is
-                  included.},
-  keywords = {CSEG,sparsity-promotion,SPG$\ell_1$,Projected Quasi Newton,private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/CSEG/2013/miao2013CSEGaospsa/miao2013CSEGaospsa.pdf}
-}
-
-
-@UNPUBLISHED{petrenko2013HPCSsaoc,
-  date_submitted = {04/03/2013},
-  author = {Art Petrenko and Tristan van Leeuwen and Felix J. Herrmann},
-  title = {Software acceleration of CARP, an iterative linear solver
-                  and preconditioner},
-  booktitle = {HPCS},
-  year = {2013},
-  abstract = {We present the results of software optimization of a
-                  row-wise preconditioner (Component Averaged Row
-                  Projections) for the method of conjugate gradients,
-                  which is used to solve the diagonally banded
-                  Helmholtz system representing frequency domain,
-                  isotropic acoustic seismic wave simulation. We
-                  demonstrate that in our application, a
-                  preconditioner bound to one processor core and
-                  accessing memory contiguously reduces execution time
-                  by 7% for matrices having on the order of 108
-                  non-zeros. For reference we note that our C
-                  implementation is over 80 times faster than the
-                  corresponding code written for a high-level
-                  numerical analysis language.},
-  keywords = {HPCS,Helmholtz equation, Kaczmarz, software, wave
-                  propagation, frequency-domain, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/HPCS/2013/petrenko2013HPCSsaoc/petrenko2013HPCSsaoc.pdf}
-}
-
-
-@UNPUBLISHED{petrenko2013SEGsaoc,
-  date_submitted = {04/03/2013},
-  author = {Art Petrenko and Tristan van Leeuwen and Felix J. Herrmann},
-  title = {Software acceleration of CARP, an iterative linear solver
-                  and preconditioner},
-  booktitle = {SEG},
-  year = {2013},
-  abstract = {We present the results of software optimization of a
-                  row-wise preconditioner (Component Averaged Row
-                  Projections) for the method of conjugate gradients,
-                  which is used to solve the diagonally banded
-                  Helmholtz system representing frequency domain,
-                  isotropic acoustic seismic wave simulation. We
-                  demonstrate that in our application, a
-                  preconditioner bound to one processor core and
-                  accessing memory contiguously reduces execution time
-                  by 7% for matrices having on the order of 108
-                  non-zeros. For reference we note that our C
-                  implementation is over 80 times faster than the
-                  corresponding code written for a high-level
-                  numerical analysis language.},
-  keywords = {SEG,Helmholtz equation, Kaczmarz, software, wave
-                  propagation, frequency-domain, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/petrenko2013SEGsaoc/petrenko2013SEGsaoc.pdf}
-}
-
-
 @UNPUBLISHED{dasilva2013SEGhtuck,
   date_submitted = {04/03/2013},
   author = {Curt Da Silva and Felix J. Herrmann},
@@ -7129,6 +7177,31 @@
                   interpolation, differential geometry, riemannian
                   optimization, gauss newton, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/dasilva2013SEGhtuck/dasilva2013SEGhtuck.pdf}
+}
+
+
+@UNPUBLISHED{dasilva2013SAMPTAhtuck,
+  author = {Curt Da Silva and Felix J. Herrmann},
+  title = {Hierarchical Tucker Tensor Optimization - Applications to Tensor Completion},
+  organization = {SAMPTA},
+  year = {2013},
+  abstract = {In this work, we develop an optimization framework for
+                  problems whose solutions are well-approximated by
+                  Hierarchical Tucker tensors, an efficient structured
+                  tensor format based on recursive subspace
+                  factorizations. Using the differential geometric
+                  tools presented here, we construct standard
+                  optimization algorithms such as Steepest Descent and
+                  Conjugate Gradient, for interpolating tensors in HT
+                  format. We also empirically examine the importance
+                  of one's choice of data organization in the success
+                  of tensor recovery by drawing upon insights from the
+                  Matrix Completion literature. Using these
+                  algorithms, we recover various seismic data sets
+                  with randomly missing source pairs.},
+  keywords = {SAMPTA, hierarchical tucker, structured tensor, tensor interpolation, differential geometry, riemannian optimization},
+  month = {02/2013},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SAMPTA/2013/dasilva2013SAMPTAhtuck/dasilva2013SAMPTAhtuck.pdf}
 }
 
 
@@ -7220,6 +7293,70 @@
 }
 
 
+@UNPUBLISHED{miao2013CSEGaospsa,
+  author = {Lina Miao and Felix J. Herrmann},
+  title = {Acceleration on Sparse Promoting Seismic Applications},
+  booktitle = {CSEG},
+  year = {2013},
+  abstract = {Sparse promoting oriented problems are never new in
+                  seismic applications. Back in 1970s, geophysicists
+                  had well exploited the robustness of sparse
+                  solutions. Moreover, with the emerging usage of
+                  compressed sensing in recent years, sparse recovery
+                  have been favored in dealing with 'curse of
+                  dimensionality' in various seismic field
+                  acquisition, data processing, and imaging
+                  applications. Although sparsity has provided a
+                  promising approach, solving for it presents a big
+                  challenge. How to work efficiently with the
+                  extremely large-scale seismic problem, and how to
+                  improve the convergence rate reducing computation
+                  time are most frequently asked questions in this
+                  content. In this abstract, the author proposed a new
+                  algorithm -- PQN$\ell_1$, trying to address those
+                  questions. One example on seismic data processing is
+                  included.},
+  keywords = {CSEG,sparsity-promotion,SPG$\ell_1$,Projected Quasi Newton},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/2013/miao2013CSEGaospsa/miao2013CSEGaospsa.pdf}
+}
+
+
+@UNPUBLISHED{oghenekohwo2013CSEGnratld,
+  author = {Felix Oghenekohwo and Felix J. Herrmann},
+  title = {Assessing the need for repeatability in acquisition of time-lapse data},
+  booktitle = {CSEG},
+  year = {2013},
+  abstract = {There are several factors that affect the repeatability
+                  of 4D(time-lapse) seismic data. One of the most
+                  significant factors is the repeatability of the
+                  acquisition, particularly the locations of the
+                  sources and receivers. It is important to repeat the
+                  source-receiver locations, used during the baseline
+                  survey, in the monitor or repeat survey. Also, it is
+                  essential that the stacked data volumes used for
+                  time-lapse analysis are created using the same
+                  offset ranges for each survey. This condition is
+                  crucial in order to be able to produce an image of
+                  the same location over a period of time and enhances
+                  proper reservoir characterization. The cost of
+                  repeating the seismic acquisition is very expensive,
+                  as often times, the receiver array has to be left at
+                  the same location over the period for which the data
+                  will be acquired. In other words, it is important to
+                  repeat the acquisition geometry as much as
+                  possible. In this talk, we investigate the results
+                  of changing the acquisition geometry, by a random
+                  placement of the receivers for both the baseline
+                  surveys and newer (monitor) surveys. Results show
+                  that we are still able to observe any time-lapse
+                  effects from the proposed acquisition geometry. Our
+                  experiments have been performed on a synthetic
+                  model.},
+  keywords = {acquisition,CSEG, time-lapse, migration},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/2013/oghenekohwo2013CSEGnratld/oghenekohwo2013CSEGnratld.pdf}
+}
+
+
 @UNPUBLISHED{oghenekohwo2013SEGtlswrs,
   date_submitted = {04/03/2013},
   author = {Felix Oghenekohwo and Felix J. Herrmann},
@@ -7254,6 +7391,60 @@
                   of a synthetic model - the Marmousi model},
   keywords = {SEG,acquisition,time-lapse,migration,private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/oghenekohwo2013SEGtlswrs/oghenekohwo2013SEGtlswrs.pdf} 
+}
+
+
+@UNPUBLISHED{petrenko2013HPCSsaoc,
+  date_submitted = {04/03/2013},
+  author = {Art Petrenko and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Software acceleration of CARP, an iterative linear solver
+                  and preconditioner},
+  booktitle = {HPCS},
+  year = {2013},
+  abstract = {We present the results of software optimization of a
+                  row-wise preconditioner (Component Averaged Row
+                  Projections) for the method of conjugate gradients,
+                  which is used to solve the diagonally banded
+                  Helmholtz system representing frequency domain,
+                  isotropic acoustic seismic wave simulation. We
+                  demonstrate that in our application, a
+                  preconditioner bound to one processor core and
+                  accessing memory contiguously reduces execution time
+                  by 7% for matrices having on the order of 108
+                  non-zeros. For reference we note that our C
+                  implementation is over 80 times faster than the
+                  corresponding code written for a high-level
+                  numerical analysis language.},
+  keywords = {HPCS,Helmholtz equation, Kaczmarz, software, wave
+                  propagation, frequency-domain, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/HPCS/2013/petrenko2013HPCSsaoc/petrenko2013HPCSsaoc.pdf}
+}
+
+
+@UNPUBLISHED{petrenko2013SEGsaoc,
+  date_submitted = {04/03/2013},
+  author = {Art Petrenko and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Software acceleration of CARP, an iterative linear solver
+                  and preconditioner},
+  booktitle = {SEG},
+  year = {2013},
+  abstract = {We present the results of software optimization of a
+                  row-wise preconditioner (Component Averaged Row
+                  Projections) for the method of conjugate gradients,
+                  which is used to solve the diagonally banded
+                  Helmholtz system representing frequency domain,
+                  isotropic acoustic seismic wave simulation. We
+                  demonstrate that in our application, a
+                  preconditioner bound to one processor core and
+                  accessing memory contiguously reduces execution time
+                  by 7% for matrices having on the order of 108
+                  non-zeros. For reference we note that our C
+                  implementation is over 80 times faster than the
+                  corresponding code written for a high-level
+                  numerical analysis language.},
+  keywords = {SEG,Helmholtz equation, Kaczmarz, software, wave
+                  propagation, frequency-domain, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/petrenko2013SEGsaoc/petrenko2013SEGsaoc.pdf}
 }
 
 
@@ -7351,29 +7542,6 @@
 }
 
 
-@UNPUBLISHED{dasilva2013SAMPTAhtuck,
-  author = {Curt Da Silva and Felix J. Herrmann},
-  title = {Hierarchical Tucker Tensor Optimization - Applications to Tensor Completion},
-  organization = {SAMPTA},
-  year = {2013},
-  abstract = {In this work, we develop an optimization framework for
-                  problems whose solutions are well-approximated by
-                  Hierarchical Tucker tensors, an efficient structured
-                  tensor format based on recursive subspace
-                  factorizations. Using the differential geometric
-                  tools presented here, we construct standard
-                  optimization algorithms such as Steepest Descent and
-                  Conjugate Gradient, for interpolating tensors in HT
-                  format. We also empirically examine the importance
-                  of one's choice of data organization in the success
-                  of tensor recovery by drawing upon insights from the
-                  Matrix Completion literature. Using these
-                  algorithms, we recover various seismic data sets
-                  with randomly missing source pairs.},
-  keywords = {SAMPTA, hierarchical tucker, structured tensor, tensor interpolation, differential geometry, riemannian optimization},
-  month = {02/2013},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SAMPTA/2013/dasilva2013SAMPTAhtuck/dasilva2013SAMPTAhtuck.pdf}
-}
 
 
 @UNPUBLISHED{dasilva2013EAGEhtucktensor,

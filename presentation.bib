@@ -1,4 +1,135 @@
-%-------------------------------------------------2012-------------------------------------------------                        
+%-------------------------------------------------2013------------------------------------------------%
+
+@presentation{dasilva2013SINBADSPRhtuck,
+  title = {Hierarchical Tucker Tensor Optimization - Applications to 4D Seismic Data},
+  booktitle    = {SINBAD consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {In this work, we develop optimization algorithms on the
+                  manifold of Hierarchical Tucker (HT) tensors, an
+                  extremely efficient format for representing
+                  high-dimensional tensors exhibiting particular
+                  low-rank structure. With some minor alterations to
+                  existing theoretical developments, we develop an
+                  optimization framework based on the geometric
+                  understanding of HT tensors as a smooth manifold, a
+                  generalization of smooth curves/surfaces. Building
+                  on the existing research of solving optimization
+                  problems on smooth manifolds, we develop Steepest
+                  Descent and Conjugate Gradient methods for HT
+                  tensors. The resulting algorithms converge quickly,
+                  are immediately parallelizable, and do not require
+                  the computation of SVDs. We also derive efficient
+                  Gauss-Newton based algorithms which converge much
+                  faster than standard, first-order methods. We also
+                  extend ideas about favourable sampling conditions
+                  for missing-data recovery from the field of Matrix
+                  Completion to Tensor Completion and demonstrate how
+                  the organization of data can affect the success of
+                  recovery. As a result, if one has data with randomly
+                  missing source pairs, using these ideas, coupled
+                  with an efficient solver, one can interpolate
+                  large-scale seismic data volumes with missing
+                  sources and/or receivers by exploiting the
+                  multidimensional dependencies in the data. We are
+                  able to recover data volumes amidst extremely high
+                  subsampling ratios (in some cases, > 75%) using this
+                  approach and we demonstrate our recovery on a
+                  synthetic 5D data set provided to us by BG.},
+  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM,
+                  Hierarchical Tucker, Structured Tensor, 3D Data
+                  interpolation, structured tensor},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
+  author = {Curt Da Silva and Felix J. Herrmann}
+}
+
+
+@presentation{tu2013SINBADrerand,
+  title = {Rerandomization: two birds one stone for fast least-squares imaging},
+  booktitle    = {SINBAD consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Least squares migration aims to fit the observed seismic
+                  data with data predicted by linearized modelling, by
+                  solving an PDE-constrained optimization
+                  problem. This problem is challenging mostly because
+                  of its prohibitive computational cost. To address
+                  the issue, dimensionality reduction techniques were
+                  proposed in the literature. However, the solution of
+                  the reduced problem can deviate from that of the
+                  full problem when: i. aggressive subsampling ratio
+                  is used to achieve substantial speed-up, ii. there
+                  are components in the observed data that cannot be
+                  explained by linearized modelling. We find that by
+                  rerandomizing our $\ell_1$ regularized inversion, we
+                  can solve both issues at the same time. In this
+                  presentation, I will explain the method and
+                  demonstrate what we can achieve with
+                  rerandomization, especially for resolving sub-salt
+                  structures.},
+  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
+  author = {Ning Tu}
+}
+
+
+@presentation{tu2013SINBADvp,
+  title = {Fast least-squares imaging with source estimation and multiples},
+  booktitle    = {SINBAD consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Least-squares migration is a data fitting procedure that
+                  tries to match the observed seismic data with data
+                  predicted by linearized modelling. With the advent
+                  of modern computing facilities, it is no longer
+                  considered to be computationally
+                  unaffordable. However, its successful application
+                  still hinges on the solution of several important
+                  issues, namely the tremendous problem size, the
+                  unknown source wavelet, and interferences from
+                  coherent events such as surface-related
+                  multiples. In this presentation, I will demonstrate
+                  the SLIM approach to deal with these issues: we use
+                  dimensionality reduction techniques to reduce the
+                  problem size, we estimate the source wavelet on the
+                  fly by variable projection, and we make use of
+                  surface-related multiples to improve image quality
+                  and to retrieve the true-amplitude subsurface medium
+                  perturbation.},
+  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
+  author = {Ning Tu}
+}
+
+
+@presentation{tu2013SINBADdecon,
+  title = {Limitations of the deconvolutional imaging condition for two-way propagators},
+  booktitle    = {SINBAD consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {The deconvolutional imaging condition has gained wide
+                  attention in recent years, as it is often used to
+                  image surface-related multiples. However, we noticed
+                  on close inspection that this condition was derived
+                  from one-way propagation principles. Now that
+                  two-way wave-equation based simulations have become
+                  more affordable, we revisit the deconvolutional
+                  imaging condition and reveal its limitations for
+                  two-way propagators. First, it can distort the image
+                  due to receiver-side propagation effects. Second,
+                  when used to image surface-related multiples, it is
+                  not capable of removing all interfering phantom
+                  reflectors. In this presentation, I will provide a
+                  theoretical analysis and two sets of examples to
+                  verify the theoretical analysis.},
+  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
+  author = {Ning Tu}
+}
+
+
+
+%-------------------------------------------------2012------------------------------------------------%                       
 
 @presentation{Akalin2012SINBADlss,
   title        = {Large scale seismic data interpolation with matrix completion},
@@ -829,6 +960,5 @@
   presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2012/yilmaz2012SINBADwms/yilmaz2012SINBADwms_pres.pdf},
   author       = {Ozgur Yilmaz}
 }
-
 
 

@@ -44,39 +44,146 @@
 }
 
 
-@presentation{kumar2013SINBADlrank,
-  title = {Seismic data interpolation and denoising using SVD-free low-rank matrix factorization},
+@presentation{herrmann2013SINBADmlm,
+  title = {Mitigating local minima in full-waveform inversion by expanding the search space with the penalty method},
   booktitle    = {SINBAD consortium talks},  
   organization = {SINBAD},
   year = {2013},
-  abstract = {Recent developments in rank optimization have allowed
-                  new approaches for seismic data interpolation and
-                  denoising. We propose an approach for simultaneous
-                  seismic data interpolation and denoising using
-                  robust rank-regularized formulations. The proposed
-                  approach is suitable for large scale problems, since
-                  it avoids SVD computations by using factorized
-                  formulations. We illustrate the advantages of the
-                  new approach using a seismic line from Gulf of Suez
-                  and 5D synthetic seismic data to obtain high quality
-                  results for interpolation and denoising, a key
-                  application in exploration geophysics.},
+  abstract = {Wave-equation based inversions, such as full-waveform
+                  inversion, are challenging because of their
+                  computational costs, memory requirements, and
+                  reliance on accurate initial models. To confront
+                  these issues, we propose a novel formulation of
+                  full-waveform inversion based on a penalty
+                  method. In this formulation, the objective function
+                  consists of a data-misfit term and a penalty term
+                  which measures how accurately the wavefields satisfy
+                  the wave-equation. Because we carry out the
+                  inversion over a larger search space, including both
+                  the model and synthetic wavefields, our approach
+                  suffers less from local minima. Our main
+                  contribution is the development of an efficient
+                  optimization scheme that avoids having to store and
+                  update the wavefields by explicit
+                  elimination. Compared to existing optimization
+                  strategies for full-waveform inversion, our method
+                  differers in two main aspects; i. The wavefields are
+                  solved from an augmented wave-equation, where the
+                  solution is forced to solve the wave-equation and
+                  fit the observed data, ii. no adjoint wavefields are
+                  required to update the model, which leads to
+                  significant computational savings. We demonstrate
+                  the validity of our approach by carefully selected
+                  examples and discuss possible extensions and future
+                  research. This is joint work with Tristan van
+                  Leeuwen.},
   keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
-  author = {Rajiv Kumar and Aleksandr Y. Aravkin and Hassan Mansour and Ben Recht and Felix J. Herrmann}
-} 
+  author = {Felix J. Herrmann}  
+}
 
 
-@presentation{kumar2013SINBADAVA,
-  title = {AVA analysis and geological dip estimation via two-way wave-equation based extended images},
+@presentation{herrmann2013SINBADfwi,
+  title = {Frugal FWI},
   booktitle    = {SINBAD consortium talks},  
   organization = {SINBAD},
   year = {2013},
-  abstract = {We present an efficient way to compute extended images
-                  for all subsurface offsets without explicitly
-                  calculating the source and receiver wavefields for
-                  all the sources. Because the extended images contain
-                  all possible subsurface offsets, we compute the
+  abstract = {Seismic waveform inversion aims at obtaining detailed
+                  estimates of subsurface medium parameters, such as
+                  soundspeed, from seismic data. A formulation in the
+                  frequency-domain leads to an optimization problem
+                  constrained by a Helmholtz equation with many
+                  right-hand- sides. Application of this technique in
+                  3D precludes the use of factorization techniques to
+                  solve the Helmholtz equation due the large number of
+                  gridpoints and the bandwidth of the matrix. While
+                  many sophisticated pre-conditioned iterative
+                  techniques have been developed for the Helmholtz
+                  equation, they often include model-specific tuning
+                  parameters and are thus not very attractive for
+                  inversion since the medium parameters change from
+                  one iteration to the next. In this paper, we propose
+                  a method for 3D seismic waveform inversion that
+                  addresses both the need to efficiently solve the
+                  Helmholtz equation as well as the computational cost
+                  induced by the many right-hand-sides. To solve the
+                  Helmholtz equation, we consider a simple generic
+                  preconditioned iterative method (CARP-CG) that is
+                  well-suited for inversion because of its
+                  robustness. We extend this method to a
+                  block-iterative method that can efficiently handle
+                  multiple right-hand sides. To reduce the
+                  computational cost of of the overall optimization
+                  procedure, we use recently proposed techniques from
+                  stochastic optimization that allow us to work with
+                  approximate gradient information. These
+                  approximations are obtained by evaluating only a
+                  small portion of the right-hand sides and/or by
+                  solving the PDE approximately. We propose heuristics
+                  to adaptively determine the required accuracy of the
+                  PDE solves and the sample-size and illustrate the
+                  algorithms on synthetic benchmark models. This is
+                  joint work with Tristan van Leeuwen.},
+  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
+  author = {Felix J. Herrmann}  
+}
+
+
+@presentation{kumar2013SINBADhss,
+  title = {Seismic data interpolation via low-rank matrix factorization in the hierarchical semi-separable representation},
+  booktitle    = {SINBAD consortium talks},  
+  organization = {SINBAD},
+  year = {2013},  
+  abstract = {Recent developments in matrix rank optimization have
+                  allowed for new computational approaches in the
+                  field of seismic data interpolation.  One of the
+                  main requirements of exploiting rank-minimization
+                  approaches is that the target data set should
+                  exhibit a low-rank structure. Seismic frequency
+                  slices exhibit low-rank structure at the
+                  low-frequencies, but not at the high
+                  frequencies. This behavior is due to the increase in
+                  oscillations as we move from low to high-frequency
+                  slices, even though the energy remains focused
+                  around the diagonal. Therefore, interpolation via
+                  rank minimization in the high-frequency range
+                  requires extended formulations that incorporate
+                  low-rank structure. We propose an approach for
+                  seismic data interpolation which incorporates the
+                  Hierarchical Semi-Separable Structure (HSS) inside
+                  rank-regularized least-squares formulations for the
+                  missing-trace interpolation problem. The proposed
+                  approach is suitable for large scale problems, since
+                  it avoids SVD computations and uses a low-rank
+                  factorized formulation instead. We illustrate the
+                  advantages of the new HSS approach by interpolating
+                  a seismic line from the Gulf of Suez and compare the
+                  reconstruction with conventional rank minimization.},
+  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
+  author = {Rajiv Kumar and Hassan Mansour and Aleksandr Y. Aravkin and Felix J. Herrmann}  
+}
+
+
+@presentation{kumar2013SINBADadg,
+  title = {Angle-domain image gathers via two-way wave-equation based extended images},
+  booktitle    = {SINBAD consortium talks},  
+  organization = {SINBAD},
+  year = {2013},  
+  abstract = {An extended image is defined as the multi-dimensional
+                  cross-correlation of the source and receiver
+                  wavefields. Extended imaging can be used to generate
+                  the angle-domain common-image gathers (ADCIGs). The
+                  potential benefits of ADCIGs are to study the rock
+                  properties and fluid indicators by knowing the
+                  amplitudes of reflected waves as a function of
+                  incident angle at the interface. We present an
+                  efficient way to compute extended images for all
+                  subsurface offsets without explicitly calculating
+                  the source and receiver wavefields for all the
+                  sources. Because the extended images contain all
+                  possible subsurface offsets, we compute the
                   angle-domain image gathers by selecting the
                   subsurface offset that is aligned with the local
                   dip. We also propose a method to compute the local
@@ -90,87 +197,29 @@
   keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
   author = {Rajiv Kumar and Tristan van Leeuwen and Felix J. Herrmann}
-}
-
-
-@presentation{tu2013SINBADrerand,
-  title = {Rerandomization: two birds one stone for fast least-squares imaging},
-  booktitle    = {SINBAD consortium talks},  
-  organization = {SINBAD},
-  year = {2013},
-  abstract = {Least squares migration aims to fit the observed seismic
-                  data with data predicted by linearized modelling, by
-                  solving an PDE-constrained optimization
-                  problem. This problem is challenging mostly because
-                  of its prohibitive computational cost. To address
-                  the issue, dimensionality reduction techniques were
-                  proposed in the literature. However, the solution of
-                  the reduced problem can deviate from that of the
-                  full problem when: i. aggressive subsampling ratio
-                  is used to achieve substantial speed-up, ii. there
-                  are components in the observed data that cannot be
-                  explained by linearized modelling. We find that by
-                  rerandomizing our $\ell_1$ regularized inversion, we
-                  can solve both issues at the same time. In this
-                  presentation, I will explain the method and
-                  demonstrate what we can achieve with
-                  rerandomization, especially for resolving sub-salt
-                  structures.},
-  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
-  author = {Ning Tu}
-}
+}  
 
 
 @presentation{tu2013SINBADvp,
-  title = {Fast least-squares imaging with source estimation and multiples},
-  booktitle    = {SINBAD consortium talks},  
+  title = {Fast imaging with multiples and source estimation},
+  booktitle = {SINBAD consortium talks},
   organization = {SINBAD},
   year = {2013},
-  abstract = {Least-squares migration is a data fitting procedure that
-                  tries to match the observed seismic data with data
-                  predicted by linearized modelling. With the advent
-                  of modern computing facilities, it is no longer
-                  considered to be computationally
-                  unaffordable. However, its successful application
-                  still hinges on the solution of several important
-                  issues, namely the tremendous problem size, the
-                  unknown source wavelet, and interferences from
-                  coherent events such as surface-related
-                  multiples. In this presentation, I will demonstrate
-                  the SLIM approach to deal with these issues: we use
-                  dimensionality reduction techniques to reduce the
-                  problem size, we estimate the source wavelet on the
-                  fly by variable projection, and we make use of
-                  surface-related multiples to improve image quality
-                  and to retrieve the true-amplitude subsurface medium
-                  perturbation.},
-  keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
-  author = {Ning Tu}
-}
-
-
-@presentation{tu2013SINBADdecon,
-  title = {Limitations of the deconvolutional imaging condition for two-way propagators},
-  booktitle    = {SINBAD consortium talks},  
-  organization = {SINBAD},
-  year = {2013},
-  abstract = {The deconvolutional imaging condition has gained wide
-                  attention in recent years, as it is often used to
-                  image surface-related multiples. However, we noticed
-                  on close inspection that this condition was derived
-                  from one-way propagation principles. Now that
-                  two-way wave-equation based simulations have become
-                  more affordable, we revisit the deconvolutional
-                  imaging condition and reveal its limitations for
-                  two-way propagators. First, it can distort the image
-                  due to receiver-side propagation effects. Second,
-                  when used to image surface-related multiples, it is
-                  not capable of removing all interfering phantom
-                  reflectors. In this presentation, I will provide a
-                  theoretical analysis and two sets of examples to
-                  verify the theoretical analysis.},
+  abstract = {Multiples are usually treated as unwanted components in
+                  seismic data. However, if correctly used, they can
+                  provide valuable information about the
+                  subsurface. In this presentation, I will talk about
+                  how to make use of multiples in $\ell_1$ regularized
+                  least-squares imaging, and how to estimate the
+                  source wavelet on the fly using multiples. Synthetic
+                  examples show that using multiples not only helps to
+                  retrieve the true-amplitude seismic image and the
+                  source wavelet, it also increases the wavenumber
+                  contents in the seismic image. By using
+                  dimensionality reduction techniques with
+                  rerandomization, we also greatly decrease the
+                  simulation cost without compromising the image
+                  quality.},
   keywords = {Presentation, SINBAD, SINBADSPRING2013, SLIM},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring},
   author = {Ning Tu}

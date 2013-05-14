@@ -6951,20 +6951,29 @@
   abstract = {Seismic waveform inversion aims at obtaining detailed
                   estimates of subsurface medium parameters, such as
                   soundspeed, from seismic data. A formulation in the
-                  frequency- domain leads to an optimization problem
+                  frequency-domain leads to an optimization problem
                   constrained by a Helmholtz equation with many
-                  right-hand- sides. Application of this technique in
+                  right-hand-sides. Application of this technique in
                   3D precludes the use of factorization techniques to
-                  solve the Helmholtz equation. While many
+                  solve the Helmholtz equation due the large number of
+                  gridpoints and the bandwidth of the matrix. While
+                  more attractive from the perspective of memory use,
+                  the computations costs of iterative methods scale
+                  linearly with the number of right-hand-sides. Many
                   sophisticated preconditioned iterative techniques
-                  have been devel- oped for the Helmholtz equation,
-                  they often include model-specific tuning parameters
-                  and are thus not very attractive for inversion since
-                  the medium parameters change from one iteration to
-                  the next. In this paper we study the use of a simple
-                  generic preconditioned iterative method (CARP-CG)
-                  that is well-suited for inversion because of its
-                  robustness. We extend thismethod to a
+                  have been developed for the Helmholtz equation,
+                  however, they often include model-specific tuning
+                  parameters and are thus not very attractive for
+                  inversion since the medium parameters change from
+                  one iteration to the next. In this paper, we propose
+                  a method for 3D seismic waveform inversion that
+                  addresses both the need to efficiently solve the
+                  Helmholtz equation as well as the computational cost
+                  induced by the many right-hand-sides. To solve the
+                  Helmholtz equation, we consider a simple generic
+                  preconditioned iterative method (CARP-CG) that is
+                  well-suited for inversion because of its
+                  robustness. We extend this method to a
                   block-iterative method that can efficiently handle
                   multiple right-hand sides. To reduce the
                   computational cost of of the overall optimization
@@ -6973,9 +6982,10 @@
                   approximate gradient information. These
                   approximations are obtained by evaluating only a
                   small portion of the right-hand sides and/or by
-                  solving the PDE approximately. Some numerical
-                  examples on synthetic benchmark models are
-                  included.},
+                  solving the PDE approximately. We propose heuristics
+                  to adaptively determine the required accuracy of the
+                  PDE solves and the sample-size and illustrate the
+                  algorithms on synthetic benchmark models.},
   keywords = {waveform inversion, optimization, private},
   month    = {04/2013},
   url      = {https://www.slim.eos.ubc.ca/Publications/Private/Tech Report/2013/vanLeeuwen20133DFWI/vanLeeuwen20133DFWI.pdf}

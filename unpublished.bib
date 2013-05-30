@@ -1,6 +1,67 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+@UNPUBLISHED{herrmann2013ffwi,
+  author   = {Felix J. Herrmann and Andrew J. Calvert and Ian Hanlon
+                  and Mostafa Javanmehri and Rajiv Kumar and Tristan
+                  van Leeuwen and Xiang Li and Brendan Smithyman and
+                  Eric Takam Takougang and Haneet Wason},
+  title    = {Frugal full-waveform inversion: from theory to a practical algorithm},
+  year     = {2013},
+  institution = {UBC},
+  abstract = {As conventional oil and gas fields are maturing, our
+                  profession is challenged to come up with the
+                  next-generation of more and more sophisticated
+                  exploration tools. In exploration seismology this
+                  trend has led to the emergence of wave-equation
+                  based inversion technologies such as reverse-time
+                  migration and full-waveform inversion. While
+                  significant progress has been made in wave-equation
+                  based inversion, major challenges remain in the
+                  development of robust and computationally feasible
+                  workflows that give reliable results in
+                  geophysically challenging areas that may include
+                  ultra-low shear velocity zones or high-velocity
+                  salt. Moreover, sub-salt production carries risks
+                  that needs mitigation, which raises the bar from
+                  creating sub-salt images to inverting for sub-salt
+                  overpressure. Amongst the many challenges that
+                  wave-equation based inversion faces, we focus in
+                  this contribution on reducing the excessive
+                  computational costs of full-waveform inversion
+                  (FWI). We accomplish these cost reductions by using
+                  modern techniques from machine learning and
+                  compressive sensing. Contrary to many
+                  implementations of wave-equation based inversion, we
+                  propose a methodology where we do not insist on
+                  using all data—i.e., looping over all sources, to
+                  calculate the velocity model updates. Instead, we
+                  rely on a formulation that only calls for more data
+                  and more accuracy in the wave simulations as needed
+                  by the inversion. This leads to major savings in
+                  particular in the beginning when we are far from the
+                  solution. Since this approach reduces the
+                  computational costs significantly, we open the way
+                  to test different scenarios or to include more
+                  sophisticated regularization. Without this cost
+                  reduction, these would both be computationally
+                  infeasible. The paper is organized as
+                  follows. First, we introduce the basics of
+                  full-waveform inversion, followed by stochastic
+                  sampling techniques to reduce the computational
+                  costs. Next, we propose an adaptive scheme that
+                  selects the required sample size–i.e, the number of
+                  source experiments that partake in the inversion,
+                  and forward modeling accuracy. Recent results on the
+                  Chevron Gulf of Mexico dataset are discussed next
+                  followed by a discussion on challenges of FWI and
+                  possible roads ahead.},
+  keywords = {waveform inversion, optimization, private},
+  month    = {05/2013},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2013/herrmann2013ffwi/herrmann2013ffwi.html}
+}
+
+
 @UNPUBLISHED{vanLeeuwen2013Penalty1,
   author   = {Tristan van Leeuwen and Felix J. Herrmann},
   title    = {Mitigating local minima in full-waveform inversion by expanding the search space},

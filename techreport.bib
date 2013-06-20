@@ -71,6 +71,31 @@
 }
 
 
+@TECHREPORT{petrenko2013SEGsaoc,
+  author = {Art Petrenko and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Software acceleration of CARP, an iterative linear solver
+                  and preconditioner},
+  year = {2013},
+  abstract = {We present the results of software optimization of a
+                  row-wise preconditioner (Component Averaged Row
+                  Projections) for the method of conjugate gradients,
+                  which is used to solve the diagonally banded
+                  Helmholtz system representing frequency domain,
+                  isotropic acoustic seismic wave simulation. We
+                  demonstrate that in our application, a
+                  preconditioner bound to one processor core and
+                  accessing memory contiguously reduces execution time
+                  by 7% for matrices having on the order of 108
+                  non-zeros. For reference we note that our C
+                  implementation is over 80 times faster than the
+                  corresponding code written for a high-level
+                  numerical analysis language.},
+  keywords = {SEG,Helmholtz equation, Kaczmarz, software, wave
+                  propagation, frequency-domain, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/petrenko2013SEGsaoc/petrenko2013SEGsaoc.pdf}
+}
+
+
 @TECHREPORT{kumar2013ICMLlr,
   author   = {Aleksandr Y. Aravkin and Rajiv Kumar and Hassan Mansour and Ben Recht and Felix J. Herrmann},
   title    = {An SVD-free Pareto curve approach to rank minimization},

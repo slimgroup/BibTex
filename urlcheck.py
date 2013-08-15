@@ -44,6 +44,8 @@ setlist=[]
 #--------------------------------------------
 
 #CHECKING NUMBER OF FILES
+print sys.argv
+
 if (num_files <= 3):
     print "Enter command in following format: python splitkey.py outputfile inputfile1.bib inputfile2.bib etc"
     quit()
@@ -57,7 +59,7 @@ else:
         i=i+1
 
 #--------------Working on input files---------
-    urlerrors = open("urlerror.txt","w")
+    urlerrors = open("urlerror.txt","w") # record any errors on a text file
     for input_file in input_files:
         int_keys = set()
         for line in open(input_file):
@@ -71,14 +73,14 @@ else:
                     try:
                         response = urlopen(urltest)
                     except URLError, e:
-                        urlerrors.write('From {}: '.format(input_file))
-                        urlerrors.write(url_in_container)
+                        urlerrors.write('From {}: \n'.format(input_file))
+                        urlerrors.write('{}\n'.format(url_in_container))
                         if hasattr(e, 'reason'):
-                            urlerrors.write('\nFailed to reach server. Reason: {}\n'.format(e.reason))
+                            urlerrors.write('Failed to reach server. Reason: {}\n'.format(e.reason))
                         elif hasattr(e, 'code'):
-                            urlerrors.write('\nServer couldn\'t fulfil request. Error code: {}\n'.format(e.code))
+                            urlerrors.write('Server couldn\'t fulfil request. Error code: {}\n'.format(e.code))
                         else:
-                            urlerrors.write('\nURL seems to have passed.')
+                            urlerrors.write('URL seems to have passed.\n')
 
             if not(was_url):
                 for entrytype in entrytypes:

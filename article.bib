@@ -1,6 +1,45 @@
 % This file was created with JabRef 2.8.1.
 % Encoding: MacRoman
 
+@ARTICLE{van Leeuwen30072013,
+  author = {van Leeuwen, Tristan and Herrmann, Felix J.}, 
+  title = {Mitigating local minima in full-waveform inversion by expanding the search space},
+  year = {2013}, 
+  doi = {10.1093/gji/ggt258}, 
+  abstract ={Wave equation based inversions, such as full-waveform
+                  inversion and reverse-time migration, are challenging because of
+                  their computational costs, memory requirements and reliance on
+                  accurate initial models. To confront these issues, we propose a
+                  novel formulation of wave equation based inversion based on a
+                  penalty method. In this formulation, the objective function consists
+                  of a data-misfit term and a penalty term, which measures how
+                  accurately the wavefields satisfy the wave equation. This new
+                  approach is a major departure from current formulations where
+                  forward and adjoint wavefields, which both satisfy the wave
+                  equation, are correlated to compute updates for the unknown model
+                  parameters. Instead, we carry out the inversions over two
+                  alternating steps during which we first estimate the wavefield
+                  everywhere, given the current model parameters, source and observed
+                  data, followed by a second step during which we update the model
+                  parameters, given the estimate for the wavefield everywhere and the
+                  source. Because the inversion involves both the synthetic wavefields
+                  and the medium parameters, its search space is enlarged so that it
+                  suffers less from local minima. Compared to other formulations that
+                  extend the search space of wave equation based inversion, our method
+                  differs in several aspects, namely (i) it avoids storage and updates
+                  of the synthetic wavefields because we calculate these explicitly by
+                  finding solutions that obey the wave equation and fit the observed
+                  data and (ii) no adjoint wavefields are required to update the
+                  model, instead our updates are calculated from these solutions
+                  directly, which leads to significant computational savings. We
+                  demonstrate the validity of our approach by carefully selected
+                  examples and discuss possible extensions and future research.}, 
+  URL = {http://gji.oxfordjournals.org/content/early/2013/07/30/gji.ggt258.abstract}, 
+  eprint = {http://gji.oxfordjournals.org/content/early/2013/07/30/gji.ggt258.full.pdf+html}, 
+  journal = {Geophysical Journal International} 
+}
+
+
 @ARTICLE{lin2013GEOPrepsi,
   author = {Tim T.Y. Lin and Felix J. Herrmann},
   title = {Robust estimation of primaries by sparse inversion via one-norm minimization},

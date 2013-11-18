@@ -30,48 +30,60 @@
                   that needs mitigation, which raises the bar from
                   creating sub-salt images to inverting for sub-salt
                   overpressure.},
-  keywords = {waveform inversion, optimization, private},
+  keywords = {waveform inversion, optimization},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/The_Leading_Edge/2013/herrmann2013ffwi/herrmann2013ffwi.html},
   doi = {http://dx.doi.org/10.1190/tle32091082.1}
 }
 
 
-@ARTICLE{vanLeeuwen30072013,
-  author = {van Leeuwen, Tristan and Herrmann, Felix J.}, 
+@ARTICLE{vanLeeuwen2013GJImlm,
+  author = {Tristan van Leeuwen and Felix J. Herrmann}, 
   title = {Mitigating local minima in full-waveform inversion by expanding the search space},
   year = {2013}, 
+  month = {Oct},
+  volume = {195}, 
+  pages = {661-667},
+  journal = {Geophysical Journal International}, 
+  abstract = {Wave equation based inversions, such as full-waveform
+                  inversion and reverse-time migration, are
+                  challenging because of their computational costs,
+                  memory requirements and reliance on accurate initial
+                  models. To confront these issues, we propose a novel
+                  formulation of wave equation based inversion based
+                  on a penalty method. In this formulation, the
+                  objective function consists of a data-misfit term
+                  and a penalty term, which measures how accurately
+                  the wavefields satisfy the wave equation. This new
+                  approach is a major departure from current
+                  formulations where forward and adjoint wavefields,
+                  which both satisfy the wave equation, are correlated
+                  to compute updates for the unknown model
+                  parameters. Instead, we carry out the inversions
+                  over two alternating steps during which we first
+                  estimate the wavefield everywhere, given the current
+                  model parameters, source and observed data, followed
+                  by a second step during which we update the model
+                  parameters, given the estimate for the wavefield
+                  everywhere and the source. Because the inversion
+                  involves both the synthetic wavefields and the
+                  medium parameters, its search space is enlarged so
+                  that it suffers less from local minima. Compared to
+                  other formulations that extend the search space of
+                  wave equation based inversion, our method differs in
+                  several aspects, namely (i) it avoids storage and
+                  updates of the synthetic wavefields because we
+                  calculate these explicitly by finding solutions that
+                  obey the wave equation and fit the observed data and
+                  (ii) no adjoint wavefields are required to update
+                  the model, instead our updates are calculated from
+                  these solutions directly, which leads to significant
+                  computational savings. We demonstrate the validity
+                  of our approach by carefully selected examples and
+                  discuss possible extensions and future research.}, 
+  url1 = {http://gji.oxfordjournals.org/content/195/1/661}, 
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GeophysicalJournalInternational/2013/vanLeeuwen2013GJImlm/vanLeeuwen2013mlm.pdf},
   doi = {10.1093/gji/ggt258}, 
-  abstract ={Wave equation based inversions, such as full-waveform
-                  inversion and reverse-time migration, are challenging because of
-                  their computational costs, memory requirements and reliance on
-                  accurate initial models. To confront these issues, we propose a
-                  novel formulation of wave equation based inversion based on a
-                  penalty method. In this formulation, the objective function consists
-                  of a data-misfit term and a penalty term, which measures how
-                  accurately the wavefields satisfy the wave equation. This new
-                  approach is a major departure from current formulations where
-                  forward and adjoint wavefields, which both satisfy the wave
-                  equation, are correlated to compute updates for the unknown model
-                  parameters. Instead, we carry out the inversions over two
-                  alternating steps during which we first estimate the wavefield
-                  everywhere, given the current model parameters, source and observed
-                  data, followed by a second step during which we update the model
-                  parameters, given the estimate for the wavefield everywhere and the
-                  source. Because the inversion involves both the synthetic wavefields
-                  and the medium parameters, its search space is enlarged so that it
-                  suffers less from local minima. Compared to other formulations that
-                  extend the search space of wave equation based inversion, our method
-                  differs in several aspects, namely (i) it avoids storage and updates
-                  of the synthetic wavefields because we calculate these explicitly by
-                  finding solutions that obey the wave equation and fit the observed
-                  data and (ii) no adjoint wavefields are required to update the
-                  model, instead our updates are calculated from these solutions
-                  directly, which leads to significant computational savings. We
-                  demonstrate the validity of our approach by carefully selected
-                  examples and discuss possible extensions and future research.}, 
-  URL = {http://gji.oxfordjournals.org/content/early/2013/07/30/gji.ggt258.abstract}, 
-  eprint = {http://gji.oxfordjournals.org/content/early/2013/07/30/gji.ggt258.full.pdf+html}, 
-  journal = {Geophysical Journal International} 
+  eprint = {http://gji.oxfordjournals.org/content/early/2013/07/30/gji.ggt258.full.pdf+html} 
 }
 
 
@@ -133,7 +145,7 @@
   number = {5},
   pages = {973-997},
   year = {2013},
-  month = {September},
+  month = {Sept},
   abstract = {Reconstruction of seismic data is routinely used to
                   improve the quality and resolution of seismic data
                   from incomplete acquired seismic
@@ -216,11 +228,12 @@
 }
 
 
-@ARTICLE{vanderneut12irs,
+@ARTICLE{vanderneut2013GJIirs,
   author = {Joost {van der Neut} and Felix J. Herrmann},
   title = {Interferometric redatuming by sparse inversion},
-  year = {2012},
   journal = {Geophysical Journal International},
+  year = {2013},
+  month = {Feb},
   volume = {192},
   pages = {666-670},
   abstract = {Assuming that exact transmission responses are known between the surface
@@ -241,8 +254,7 @@
         the frequency content. These improvements lead to a better image
         of the target from the redatumed data.},
   keywords = {Controlled source seismology, Interferometry, Inverse theory},
-  month = {February},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GeophysicalJournalInternational/2013/vanderneut12irs/vanderneut12irs.pdf}
+  url = {http://gji.oxfordjournals.org/content/192/2/666}  
 }
 
 
@@ -254,7 +266,7 @@
   volume = {31},
   pages = {890-912},
   number = {2},
-  month = {January},
+  month = {Jan},
   abstract = {The basis pursuit problem seeks a minimum one-norm solution of an
 	underdetermined least-squares problem. Basis pursuit denoise (BPDN)
 	fits the least-squares problem only approximately, and a single parameter
@@ -305,7 +317,7 @@
   year = {2012},
   volume = {28},
   number = {11},
-  month = {October},
+  month = {Oct},
   abstract = {Many inverse problems include nuisance parameters which, while not
 	of direct interest, are required to recover primary parameters. Structure
 	present in these problems allows efficient optimization strategies
@@ -341,7 +353,7 @@
   volume = {134},
   pages = {101-125},
   number = {1},
-  month = {August},
+  month = {Aug},
   abstract = {We consider a class of inverse problems in which the forward model
 	is the solution operator to linear ODEs or PDEs. This class admits
 	several dimensionality-reduction techniques based on data averaging

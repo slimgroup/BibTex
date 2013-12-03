@@ -1,3 +1,420 @@
+%-------------------------------------------------2013(FALL)--------------------------------------------------%
+
+@presentation{kumar2013SINBADava,
+  title = {Extended images in action: efficient AVA via probing},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Common image gathers (CIG) are an important tool to
+                  perform AVA analysis in areas of complex
+                  geology. Unfortunately, it is prohibitively very
+                  expensive to compute these CIG for all the
+                  subsurface points. In this work, we present an
+                  efficient way to compute CIG for all subsurface
+                  offsets without explicitly calculating the source
+                  and receiver wavefields for all the sources. Because
+                  the CIG contain all possible subsurface offsets, we
+                  compute the angle-domain image gathers by selecting
+                  the subsurface offset that is aligned with the local
+                  geologic dip. We propose a method to compute the
+                  local dip information directly from
+                  common-image-point gathers. To assess the quality of
+                  the angle-domain common-image-points gathers we
+                  compute the angle-dependent reflectivity
+                  coefficients and compare them with theoretical
+                  reflectivity coefficients yielded by the
+                  (linearized) Zoeppritz equations for a few synthetic
+                  models.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/kumar2013SINBADava_pres.pdf},
+  author = {Rajiv Kumar}
+}  
+
+
+@presentation{miao2013SINBADfid,
+  title = {Fast imaging via depth stepping with the two-way wave equation},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {In this presentation we propose a fast imaging algorithm
+                  via depth stepping with the two-way wave
+                  equation. Within the framework of survey sinking, a
+                  stabilized depth extrapolation operator is computed
+                  using a spectral projector which can efficiently
+                  split evanescent wave components. The computation of
+                  the spectral projector features with an
+                  Hierarchically Semi-Seperable (HSS) matrix
+                  representation speeded up polynomial recursion,
+                  resulting in an accleration from cubic numerical
+                  complexity to linear numerical complexity.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/miao2013SINBADfid_pres.pdf},
+  author = {Lina Miao}
+}  
+
+
+@presentation{zheglova2013SINBADihss,
+  title = {Imaging with hierarchical semi separable matrices},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Hierarchically Semi Separable (HSS) matrices are (in
+                  general) dense matrices that have low rank
+                  off-diagonal blocks that can be represented
+                  economically. Exploiting a specific structure of HSS
+                  representation, fast algorithms have been devised
+                  for matrix matrix multiplication, addition and
+                  computing a matrix inverse. We are interested in
+                  developing fast algorithms for seismic imaging using
+                  ideas from this approach. An overview of HSS
+                  representation and some methods using HSS
+                  representations of operators will be shown in this
+                  talk.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/zheglova2013SINBADihss_pres.pdf},
+  author = {Polina Zheglova}
+}  
+
+
+@presentation{tu2013SINBADfim,
+  title = {Fast imaging with multiples and source estimation},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {During this talk, we present a computationally efficient
+                  (cost of 1-2 RTMs with all data) iterative
+                  sparsity-promoting inversion framework where
+                  surface-related multiples are jointly imaged with
+                  primaries and where the source signature is
+                  estimated on the fly. Our imaging algorithm is
+                  computationally efficient because it works during
+                  each iteration with small independent randomized
+                  subsets of data. The multiples are handled by
+                  introducing an areal source term that includes the
+                  upgoing wavefield. We update the source signature
+                  for each iteration using a variable projection
+                  method. The resulting algorithm removes imaging
+                  artifacts from surface-related multiples, estimates
+                  and removes the imprint of the source, recovers true
+                  amplitudes, is fast, and robust to linearization
+                  errors by virtue of the statistical independence of
+                  the subsets of data we are working with at each
+                  iteration.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/tu2013SINBADfim_pres.pdf},
+  author = {Ning Tu}
+}  
+
+
+@presentation{fang2013SINBADuafwi,
+  title = {Uncertainty analysis for FWI},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Uncertainty analysis is important for seismic
+                  interpretation. Based on the framework of Bayesian,
+                  we can analyse different statistic parameters of our
+                  FWI result. However, directly sampling the posterior
+                  probability density function (pdf) is
+                  computationally intractable. In order to make this
+                  problem computationally tractable, in this work, we
+                  use Gaussian distribution approximation and low rank
+                  approximation to generate the posterior
+                  pdf. Simultaneous shots are also used to reduce the
+                  computational costs.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/fang2013SINBADuafwi_pres.pdf},
+  author = {Zhilong Fang}
+}  
+
+
+@presentation{li2013SINBADmsd,
+  title = {Model-space versus data-space FWI with the acoustic wave equation},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Inverting data with elastic phases using an acoustic
+                  wave equation can lead to erroneous results,
+                  especially when the number of iterations is too
+                  high, which may lead to over fitting the
+                  data. Several approaches have been proposed to
+                  address this issue. Most commonly, people data-
+                  filtering operations that are aimed to deemphasize
+                  the elastic phases in the data in favor of the
+                  acoustic phases. Examples of this approach are
+                  nested loops over offset range and Laplace
+                  parameters. In this presentation, we discuss two
+                  complementary optimization-driven methods where the
+                  minimization process decides adaptively which of the
+                  data or model components are consistent with the
+                  objective. Specifically, we compare the s t misfit
+                  function as the data-space alternative and
+                  curvelet-domain sparsity promotion as the
+                  model-space alternative. Application of these two
+                  methods to a realistic synthetic lead to comparable
+                  results that we believe can be improved by combining
+                  these two methods.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/li2013SINBADmsd_pres.pdf},
+  author = {Xiang Li}
+}  
+
+
+@presentation{tu2013SINBADmachar,
+  title = {Recent results on the BP Machar data set},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {By courtesy of BP, we are able to get some hands-on
+                  experience imaging seismic data from the Machar
+                  field in North Sea. We performed reverse-time
+                  migration and sparsity-promoting migration with
+                  source-estimation to this dataset (or a cropped
+                  section of the dataset in many cases due to
+                  computational constraints), and had some interesting
+                  findings. In this presentation, we will show some
+                  conclusive results we have got, and explain the key
+                  techniques in imaging this dataset.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/tu2013SINBADmachar_pres.pdf},
+  author = {Ning Tu}
+}  
+
+
+@presentation{li2013SINBADgom,
+  title = {Lessons learned from Chevron Gulf of Mexico data set},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Chevron Gulf of Mexico data set is very challenging for
+                  FWI because of elastic phases, limited offset, lack
+                  of low frequencies and salt structure. To overcome
+                  these issue, we first use ray-based tomography on
+                  the hand-picked first breaks to generate initial
+                  model for FWI, and then we apply curvelet-denosing
+                  techniques to improve the poor signal-to-noise ratio
+                  of the observed data at low frequencies. Finally,
+                  Curvelet domain sparsity promoting Gauss-Newton FWI
+                  helps to suppress model space artifacts caused by
+                  elastic phases. This is joint work with Andrew
+                  J. Calvert, Ian Hanlon, Mostafa Javanmehri, Rajiv
+                  Kumar, Tristan van Leeuwen, Brendan Smithyman,
+                  Haneet Wason and Felix J. Herrmann},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/li2013SINBADgom_pres.pdf},
+  author = {Xiang Li}
+}  
+
+
+@presentation{warner2013SINBADrfwi,
+  title = {Reflection FWI with a poor starting model},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/warner2013SINBADrfwi_pres.pdf},
+  author = {Mike Warner}
+}  
+
+
+@presentation{smithyman2013SINBADprb,
+  title = {Phase-residual based quality-control methods and techniques for mitigating cycle skips},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Most full-waveform inversion algorithms use local
+                  optimization methods to iteratively improve the
+                  numerical earth model. All of these make the
+                  implicit assumption that the the model close to the
+                  true earth to avoid cycle. In practice this may not
+                  be true. We explore two questions: 1. How do we
+                  understand and visualize the cycle skip phenomenon
+                  in order to recognize it if it exists? 2. How do we
+                  automate this quality control step and use the rich
+                  information from multiple data to mitigate cycle
+                  skips and avoid local minima?},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/smithyman2013SINBADprb_pres.pdf},
+  author = {Brendan Smithyman}
+}  
+
+
+@presentation{fang2013SINBADp3dfwi,
+  title = {Parallel 3D FWI with simultaneous shots},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {In this work, we manage to build the workflow for the
+                  parallel 3D full-waveform inversion. In the forward
+                  simulation part, we generate the Helmholtz matrix in
+                  parallel and use parallel CARPCG to solve the
+                  Helmholtz equation. In the inversion process,
+                  simultaneous shots are used to reduce the
+                  computational costs. Additionally, we propose a
+                  method to select the number of simultaneous shots
+                  and tolerance of CARPCG dynamically, to reach a
+                  compromise between the computational costs and
+                  accuracy.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/fang2013SINBADp3dfwi_pres.pdf},
+  author = {Zhilong Fang}
+}  
+
+
+@presentation{kumar2013SINBADeia,
+  title = {Extended images in action: efficient WEMVA via randomized probing},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Extended images as a function of the full subsurface
+                  offset are an important tool to perform
+                  wave-equation based migration velocity analysis
+                  (WEMVA) in areas of complex geology. Unfortunately,
+                  computation & storage of these extended images is
+                  prohibitively expensive. In this work, we present an
+                  efficient way to compute extended images for all
+                  subsurface offsets without explicitly calculating
+                  the source and receiver wavefields for all the
+                  sources. Instead, we calculate actions of extended
+                  image volumes on probing vectors that live in the
+                  image space. The probing can either be defined as
+                  vectors from the Dirac basis, which allows us to
+                  form the extended image at the location of the point
+                  diffractor, or they can be defined in terms of
+                  Gaussian noise. The latter corresponds to sources
+                  with random weights firing simultaneously at every
+                  grid point. We demonstrate that this probing leads
+                  to a computationally efficient implementation of
+                  WEMVA. This is joint work with Tristan van Leeuwen.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/kumar2013SINBADeia_pres.pdf},
+  author = {Rajiv Kumar}
+}  
+
+
+@presentation{peters2013SINBADepm,
+  title = {Examples from the Penalty-method},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {A novel penalty method for PDE-constrained optimization
+                  was recently proposed by van Leeuwen and Herrmann
+                  (2013). The conventional PDE-constrained
+                  optimization formulation used in seismic waveform
+                  inversion is based on calculating the gradient of
+                  the data misfit objective functional via the
+                  adjoint-state method, at the cost of two PDE
+                  solves. The penalty method requires only one
+                  solution of an overdetermined linear system, in the
+                  least-squares sense. In this talk some numerical
+                  properties of this linear system will be
+                  exposed. The penalty method for PDE-constrained
+                  optimization involves a parameter, balancing the
+                  data misfit and PDE-misfit parts of the objective
+                  functional. This talk will address how to select
+                  this very important parameter. Some examples will be
+                  shown in which the penalty method outperforms the
+                  conventional method in non-linear waveform
+                  inversion, as well as linearized seismic imaging by
+                  migration.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/peters2013SINBADepm_pres.pdf},
+  author = {Bas Peters}
+}  
+
+
+@presentation{herrmann2013SINBADffwi,
+  title = {Frugal FWI},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Seismic waveform inversion aims at obtaining detailed
+                  estimates of subsurface medium parameters, such as
+                  soundspeed, from seismic data. A formulation in the
+                  frequency-domain leads to an optimization problem
+                  constrained by a Helmholtz equation with many
+                  right-hand sides. Application of this technique in
+                  3D precludes the use of factorization techniques to
+                  solve the Helmholtz equation due the large number of
+                  gridpoints and the bandwidth of the matrix. While
+                  many sophisticated pre-conditioned iterative
+                  techniques have been developed for the Helmholtz
+                  equation, they often include model-specific tuning
+                  parameters and are thus not very attractive for
+                  inversion since the medium parameters change from
+                  one iteration to the next. In this paper, we propose
+                  a method for 3D seismic waveform inversion that
+                  addresses both the need to efficiently solve the
+                  Helmholtz equation as well as the computational cost
+                  induced by the many right-hand sides. To solve the
+                  Helmholtz equation, we consider a simple generic
+                  preconditioned iterative method (CARP-CG) that is
+                  well-suited for inversion because of its
+                  robustness. We extend this method to a
+                  block-iterative method that can efficiently handle
+                  multiple right-hand sides. To reduce the
+                  computational cost of of the overall optimization
+                  procedure, we use recently proposed techniques from
+                  stochastic optimization that allow us to work with
+                  approximate gradient information. These
+                  approximations are obtained by evaluating only a
+                  small portion of the right-hand sides and/or by
+                  solving the PDE approximately. We propose heuristics
+                  to adaptively determine the required accuracy of the
+                  PDE solves and the sample-size and illustrate the
+                  algorithms on synthetic benchmark models. This is
+                  joint work with Tristan van Leeuwen.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/herrmann2013SINBADffwi_pres.pdf},
+  author = {Felix J. Herrmann}
+}  
+
+
+@presentation{vanleeuwen2013SINBADrpp,
+  title = {Relaxing the physics: a penalty method for full-waveform inversion},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Computationally efficient method of solving partial
+                  differential equation (PDE)-constrained optimization
+                  problems that occur in (geophysical) inversion
+                  problems. The method takes measured data from a
+                  physical system as input and minimizes an objective
+                  function that depends on an unknown model for the
+                  physical parameters, fields, and additional nuisance
+                  parameters such as the source function. The
+                  invention consists of a minimization procedure
+                  involving a cost functional comprising of a
+                  data-misfit term and a penalty term that measures
+                  how accurately the fields satisfy the PDE. The
+                  method is composed of two alternating steps, namely
+                  the solution of a system of equations forming the
+                  discretization of the data-augmented PDE, and the
+                  solution of physical model parameters from the PDE
+                  itself given the field that solves the
+                  data-augmented system and an estimate for the
+                  sources. Compared to all-at-once approaches to
+                  PDE-constrained optimization, there is no need to
+                  update and store the fields for all sources leading
+                  to significant memory savings. As in the all-at-once
+                  approach, the proposed method explores a larger
+                  search space and is therefore less sensitive to
+                  initial estimates for the physical model
+                  parameters. Contrary to the reduced formulation, the
+                  proposed method does not require the solution of an
+                  adjoint PDE, effectively halving the number of PDE
+                  solves and memory requirement. As in the reduced
+                  formulation, fields can be computed independently
+                  and aggregated, possibly in parallel.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/vanleeuwen2013SINBADrpp_pres.pdf},
+  author = {Tristan van Leeuwen}
+}  
+
+
+
+
+
 %-------------------------------------------------2013(SPRING)------------------------------------------------%
 
 @presentation{dasilva2013SINBADSPRhtuck,

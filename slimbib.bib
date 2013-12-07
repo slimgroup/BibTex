@@ -6106,6 +6106,127 @@
 
 %-------------------------------------------------2013(FALL)--------------------------------------------------%
 
+@presentation{fang2013SINBADsfwi,
+  title = {Swift FWI},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {In 3D case, there is much more data and modeling is much
+                  more expensive. As a result, parallel computing is
+                  very important for 3D full-waveform inversion. Both
+                  domain decomposition and data decomposition need a
+                  large number of parallel computing
+                  resources. However, programs based on parallel
+                  MATLAB suffer from the limitation of licenses. In
+                  order to obtain a MATLAB licenses free solution, we
+                  use SWIFT, which is a fast and easy parallel
+                  scripting language. Once the original Mat file is
+                  complied to an executable file, SWIFT can run the
+                  code inside the executable file in parallel without
+                  using parallel MATLAB. We use the SWIFT to compute
+                  the object functions and gradients of different
+                  shots in parallel, and test the parallel 3D FWI code
+                  with overthrust data. This is joint work with Thomas
+                  Lai, Harsh Juneja, Bas Peters, Zhilong Fang.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/fang2013SINBADsfwi_pres.pdf},
+  author = {Zhilong Fang}
+}
+
+
+@presentation{vanleeuwen2013SINBADsda,
+  title = {Solving the data-augmented wave equation},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {The recently proposed penalty method promises to
+                  mitigate some of the non-linearity inherent in
+                  full-waveform inversion by relaxing the requirement
+                  that the wave-equation needs to be solved
+                  exactly. The basic workflow of this new method is as
+                  follows; i) solve an overdetermined wave-equation
+                  (the data-augmented wave-equation), where the data
+                  serves as additional constraints for the wavefields,
+                  ii) compute the wavefield-residual by substituting
+                  this wavefield in the wave-equation, and iii)
+                  correlate the wavefield with the wavefield-residual
+                  to obtain a model-update. As opposed to the
+                  conventional workflow, no explicit adjoint solve is
+                  needed to compute the model-update. However, instead
+                  of solving a wave-equation, we need to solve a
+                  data-augmented wave-equation. In this talk we
+                  explore some of the challenges of solving this
+                  data-augmented wave-equation and review some
+                  possible solution strategies for both time and
+                  frequency-domain applications.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/vanleeuwen2013SINBADsda_pres.pdf},
+  author = {Tristan van Leeuwen}
+}
+
+
+@presentation{petrenko2013SINBADaih,
+  title = {Accelerating an iterative Helmholtz solver with FPGAs},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {Solution of the Helmholtz equation is the main
+                  computational burden of full-waveform inversion in
+                  the frequency domain. For this task we employ the
+                  CARP-CG algorithm (Gordon & Gordon 2010), an
+                  iterative solver that preconditions the original
+                  Helmholtz system into an equivalent symmetric
+                  positive definite system and then applies the method
+                  of conjugate gradients. Forming the matrix for the
+                  new system is not necessary as its multiplicative
+                  action on a vector is implemented using a series of
+                  projections onto the rows of the original
+                  system. Our contribution is implementing CARP-CG for
+                  a host + accelerator (FPGA) computing
+                  environment. The computational paradigm is one of
+                  dataflow: vector and matrix elements are streamed
+                  from memory through the accelerator which applies
+                  the row projections. The advantage of an FPGA to
+                  process streams of data is that unless the algorithm
+                  is memory bandwidth limited, computation time is
+                  directly proportional to the amount of data. The
+                  complexity of the algorithm implemented on the FPGA
+                  is irrelevant since all the operations programmed
+                  onto the FPGA happen in the same clock tick. In
+                  contrast, on a CPU, more complex algorithms require
+                  more clock ticks as the instructions are executed
+                  sequentially, or with only a small amount of
+                  parallelism. Ongoing work porting the CARP-CG
+                  algorithm to the accelerator is presented.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/petrenko2013SINBADaih_pres.pdf},
+  author = {Art Petrenko}
+}
+
+
+@presentation{lago2013SINBADksf,
+  title = {Krylov solvers in frequency domain FWI},
+  booktitle    = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2013},
+  abstract = {We briefly discuss here several aspects rising from the
+                  use of Krylov solvers for frequency domain
+                  FWI. Although several powerful preconditioners are
+                  in constant development by the linear algebra
+                  community targeting this application, some issues as
+                  the multishot and multifrequency scenarios as well
+                  as advanced Krylov method techniques in combination
+                  with these powerful preconditioners are rarely
+                  addressed. We provide an overview of some of the
+                  recent research on this regard and discuss
+                  possibility of use of some of these techniques in
+                  the context of an inversion.},
+  keywords = {Presentation, SINBAD, SINBADFALL2013, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/lago2013SINBADksf_pres.pdf},
+  author = {Rafael Lago}
+}
+
+
 @presentation{yeung2013SINBADncr,
   title = {A new class of random matrices with applications to seismic data},
   booktitle    = {SINBAD Fall consortium talks},  
@@ -6158,7 +6279,7 @@
 
 
 @presentation{esser2013SINBADasr,
-  title = {Algorithms for phase retrieval},
+  title = {Applications of phase retrieval methods to blind seismic deconvolution},
   booktitle    = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2013},
@@ -6675,7 +6796,7 @@
 
 
 @presentation{tu2013SINBADmachar,
-  title = {Recent results on the BP Machar data set},
+  title = {SLIM's findings on the Machar dataset},
   booktitle    = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2013},

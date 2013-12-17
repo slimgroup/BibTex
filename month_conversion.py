@@ -47,27 +47,27 @@ for line in fileinput.input(inplace=1):
                         line,re.I).group(1)
                 # This basically fetches anything in between the braces.
             full_string = False
-            int_string = False
+            three_string = False
             for key, month in enumerate(month_full_string):
                 if month == month_in_container:
                     count_full += 1
                     full_string = True
-                    line = "  month = {{{month}}},\n".format(month=month_three_string[key])
+                    line = "  month = {{{month}}},\n".format(month=month_int_string[key])
                     month_key_debug.append((fileinput.lineno(),line,month_in_container))
             if not(full_string):
-                for key, month in enumerate(month_int_string):
+                for key, month in enumerate(month_three_string):
                     if month == month_in_container:
                         count_int_string += 1
                         int_string = True
                         line = \
-                            "  month = {{{month}}},\n".format(month=month_three_string[key])
+                            "  month = {{{month}}},\n".format(month=month_int_string[key])
                         month_key_debug.append((fileinput.lineno(),line,month_in_container))
-            if (not(int_string) and not(full_string)):
+            if (not(three_string) and not(full_string)):
                 for key, month in enumerate(month_int_string_alt):
                     if month == month_in_container:
                         count_int_string_alt += 1
                         line = \
-                            "  month = {{{month}}},\n".format(month=month_three_string[key])
+                            "  month = {{{month}}},\n".format(month=month_int_string[key])
                         month_key_debug.append((fileinput.lineno(), line,month_in_container))
     print line,
 fileinput.close()

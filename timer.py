@@ -42,10 +42,14 @@ def sendmail(error_list):
 		s.close()
 	else:	
 		print "All entries updated"
+        
+        
 print "Reading..."
 for line in fileIN:	
 	line=line.strip()
 	if typename.lower() in line.lower():
+        ''' Arnold: can do a regex extraction here and cut two/three
+        lines something like [@]+([a-zA-Z]).[{].*? '''
 		entries=line.split('@')
 		entry=entries[1].strip()
 		split_entry=entry.split("{")[1]
@@ -62,7 +66,9 @@ for line in fileIN:
 			error_list.append(key)
 		if diff < 0:
 			print "Error:Invalid Date"
-			quit() 
+			quit()
+            
+            
 sendmail(error_list)
 fileIN.close()		
 

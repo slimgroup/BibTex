@@ -9,9 +9,29 @@ hope this helps you get an understanding of what the code does (there's a
 chance you'll read the code again anyway).
 
 
-Because, clearly, a local version is better.
+**Why was this written?** Because, clearly, a local version is better.
+There will likely be a post with all this information on iSLIM. Please first
+make changes here first, then export to HTML and 
 
-## What is?
+## What each file is (Shruti's README)
+
+- `internal.bib`  - internal SLIM's publications
+- `external.bib`  - external publications cited by SLIM
+- `slimbib.bib`   - internal and external combined using SConstruct
+		  run scons in this directory to recreate it
+
+
+USAGE------------------------
+1. Add internal citations in the corresponding bibtex type file, for eg: Add a journal paper entry in file "article.bib", etc... 
+2. Add external citations in the file external.bib
+3. Run scons to merge the above two files simply by typing 'scons' in command line
+4. In order to compare two or more .bib files, edit SConstruct in the following format:
+   `Command('$TARGET',['$SOURCEFILE1','$SOURCEFILE2'],'python splitkey.py output input1 input2' )`
+5. If duplicate keys are found, edit them and repeat step 3
+
+
+
+## What is BibTeX?
 
 BibTeX is a citation format employed in LaTeX, to simplify the process for
 writers (from what I can glean). Basically, the reason we're using BibTeX is
@@ -43,3 +63,15 @@ Basically, the SCons script calls a couple of python scripts to run:
    error list and emailed to the admin for bibtex.
 1. The last part is that it runs the PDF command and converts the files
    to LaTeX and PDF. This process checks for errors in the BibTeX.
+   
+### What can be changed in the scripts?
+
+In SConstruct file, it'd probably be beneficial to try and make it
+more usable by making the input in the `command()` functions more
+understandable. You can do this by using a variable to specify the input
+parameters (right now it's like repeating yourself and having to change both
+variables).
+
+I put down some notes in the scripts. We can sorta reduce the lines and use
+regex to extract the content, but realistically the code there's probably (?)
+more readable. Though, I suppose that's arguable.

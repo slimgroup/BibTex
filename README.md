@@ -4,10 +4,13 @@
 
 Original Author: Arnold Ip
 Some of the code analysis was done entirely by scanning through the code. I did
-not find any documentation relating to the code from previous work terms. I
+not find any documentation relating to the _code_ from previous work terms. I
 hope this helps you get an understanding of what the code does (there's a
 chance you'll read the code again anyway).
 
+If you have any questions, or find things unclear, feel free to email Arnold to
+clarify. Ask for his email as he doesn't want to get spammed. Henryk should
+know it ;)
 
 **Why was this written?** Because, clearly, a local version is better.
 There will likely be a post with all this information on iSLIM. Please first
@@ -75,3 +78,30 @@ variables).
 I put down some notes in the scripts. We can sorta reduce the lines and use
 regex to extract the content, but realistically the code there's probably (?)
 more readable. Though, I suppose that's arguable.
+
+### Some other scripts that are here
+
+- Two scripts that are separate from the scons script.
+- Used mainly as maintenance scripts:
+
+2. urlcheck.py: uses a regular expression to look for URLs in entries in order
+   to make sure they work. Assumes that the URLs are stored in specific values
+   within each entry. running this script takes a while so probably only need
+   to run it once in a while. Output is printed to urlerror.txt.
+   Code was originally based off of `splitkey.py` but definitely can be
+   refactored.
+   
+   Usage: `python urlcheck.py $outputfile $bibfile1 $inputfile2 etc`
+
+   The output file is a successful merged \\(\BiBTeX{}\\) file of the input
+2. month_conversion.py: runs through the input files to convert all month types
+   to double-digit months. This is for use in sorting SLIM's web page (which,
+   for some reason, still doesn't sort properly). That's fine though. At least
+   the \\(\BiBTeX{}\\) is consistent.
+
+   Usage: `python month_conversion.py $input1 $input2 etc`
+2. multicheck.py: It was originally created to do _everything_ but when it was
+   realized that it was a stupid idea it was scrapped. Forgot to delete.
+
+   Usage: don't use it.
+

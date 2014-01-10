@@ -47,7 +47,7 @@ setlist=[]
 print sys.argv
 
 if (num_files <= 3):
-    print "Enter command in following format: python splitkey.py outputfile inputfile1.bib inputfile2.bib etc"
+    print "Enter command in following format: python urlcheck.py outputfile inputfile1.bib inputfile2.bib etc"
     quit()
 
 else:

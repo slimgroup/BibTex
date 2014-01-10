@@ -77,7 +77,7 @@ for line in fileinput.input(inplace=1):
                     line = \
                         "  month = {{{month}}},\n".format(month=month_int_string[key])
                     month_key_debug.append((fileinput.lineno(), line,month_in_container))
-    print line,
+    print line, # comma is there to prevent double linebreak
 fileinput.close()
 # print ("Found {} month instances".format(countMonth))
 # print count_full, count_int_string, count_int_string_alt

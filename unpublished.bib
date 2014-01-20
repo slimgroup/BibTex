@@ -1,6 +1,310 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+%-----2014-----%
+
+@UNPUBLISHED{lago2014EAGEims,
+  author   = {Rafael Lago and Art Petrenko and Zhilong Fang and Felix J. Herrmann},
+  title    = {Improving Methods for Solving PDEs in Full-Waveform Inversion},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {For many full-waveform inversion techniques, the most
+                  computationally intensive step is the computation of
+                  a numerical solution for the wave equation on every
+                  iteration. In the frequency domain approach, this
+                  requires the solution of very large, complex,
+                  sparse, ill-conditioned linear systems. In this
+                  extended abstract we bring out attention
+                  specifically to CGMN method for solving PDEs, known
+                  for being flexible (i.e. it is able to treat equally
+                  acoustic data as well as visco-elastic or more
+                  complex scenarios) efficient with respect both to
+                  memory and computation time, and controllable
+                  accuracy of the final approximation. We propose an
+                  improvement for the known CGMN method by imposing a
+                  minimal residual condition, which incurs in one
+                  extra model vector storage.  The resulting algorithm
+                  called CRMN enjoys several interesting properties as
+                  monotonically nonincreasing behaviour of the norm of
+                  the residual and minimal residual, guaranteeing
+                  optimal convergence for the relative residual
+                  criterion.  We discuss numerical experiments both in
+                  an isolated PDE solve and also within the inversion
+                  procedure, showing that in a realistic scenario we
+                  can expect a speedup around 25\% when using CRMN
+                  rather than CGMN.},
+  keywords = {CRMN, CGMN, FWI, Time-Harmonic Wave Equation, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/lago2014EAGEims.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
+@UNPUBLISHED{oghenekohwo2014EAGEtls,
+  author   = {Felix Oghenekohwo and Ernie Esser and Felix J. Herrmann},
+  title    = {Time-lapse seismic without repetition: reaping the benefits from randomized sampling and joint recovery},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {In the current paradigm of 4-D seismic, guaranteeing
+                  repeatability in acquisition and processing of the
+                  baseline and monitor surveys ranks highest amongst
+                  the technical challenges one faces in detecting
+                  time-lapse signals. By using recent insights from
+                  the field of compressive sensing, we show that the
+                  condition of survey repeatability can be relaxed as
+                  long as we carry out a sparsitypromoting program
+                  that exploits shared information between the
+                  baseline and monitor surveys. By inverting for the
+                  baseline and monitor survey as the common
+                  "background", we are able to compute high-fidelity
+                  4-D differences from carefully selected synthetic
+                  surveys that have different sets of source/receivers
+                  missing. This synthetic example is proof of concept
+                  of an exciting new approach to randomized 4-D
+                  acquisition where time-lapse signal can be computed
+                  as long as the survey details, such as
+                  source/receiver locations are known afterwards.},
+  keywords = {4-D seismic, time-lapse, joint recovery, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/oghenekohwo2014EAGEtls.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
+@UNPUBLISHED{dasilva2014EAGEhtucknoisy,
+  author   = {Curt Da Silva and Felix J. Herrmann},
+  title    = {Low-rank Promoting Transformations and Tensor Interpolation - Applications to Seismic Data Denoising},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {In this abstract, we extend our previous work in
+                  Hierarchical Tucker (HT) tensor completion, which
+                  uses an extremely efficient representation for
+                  representing high-dimensional tensors exhibit- ing
+                  low-rank structure, to handle subsampled tensors
+                  with noisy entries. We consider a ’low-noise’ case,
+                  so that the energies of the noise and the signal are
+                  nearly indistinguishable, and a ’high-noise’ case,
+                  in which the noise energy is now scaled to the
+                  amplitude of the entire data volume. We exam- ine
+                  the effect of the noise in terms of the singular
+                  values along different matricizations of the data,
+                  i.e.  reshaping of the tensor along different
+                  modes. By interpreting this effect in the context of
+                  tensor completion, we demonstrate the inefficacy of
+                  denoising by this method in the source-receiver do-
+                  main. In light of this observation, we transform the
+                  decimated, noisy data in to the midpoint-offset
+                  domain, which promotes low-rank behaviour in the
+                  signal and high-rank behaviour in the noise.  This
+                  distinction between signal and noise allows low-rank
+                  interpolation to effectively denoise the signal with
+                  only a marginal increase in computational cost. We
+                  demonstrate the effectiveness of this approach on a
+                  4D frequency slice.},
+  keywords = {hierarchical tucker, structured tensor, tensor
+                  interpolation,riemannian optimization, low-rank
+                  transform, seismic denoising, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/dasilva2014EAGEhtucknoisy.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
+@UNPUBLISHED{esser2014EAGEacp,
+  author   = {Ernie Esser and Felix J. Herrmann},
+  title    = {Application of a convex phase retrieval method to blind seismic deconvolution},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {A classical strategy for blind seismic deconvolution is
+                  to first estimate the autocorrelation of the unknown
+                  source wavelet from the data and then recover the
+                  wavelet by assuming it has minimum phase. However,
+                  computing the minimum phase wavelet directly from
+                  the amplitude spectrum can be sensitive to even
+                  extremely small errors, especially in the
+                  coefficients close to zero. Since the minimum phase
+                  requirement follows from an assumption that the
+                  wavelet should be as impulsive as possible, we
+                  propose to directly estimate an impulsive wavelet by
+                  minimizing a weighted l2 penalty subject to a
+                  constraint on its amplitude spectrum. This nonconvex
+                  model has the form of a phase retrieval problem, in
+                  this case recovering a signal given only estimates
+                  of the magnitudes of its Fourier
+                  coefficients. Following recent work on convex
+                  relaxations of phase retrieval problems, we propose
+                  a convex semidefinite program for computing an
+                  impulsive minimum phase wavelet whose amplitude
+                  spectrum is close to a given estimate, and we show
+                  that this can be robustly solved by a Douglas
+                  Rachford splitting method for convex optimization.},
+  keywords = {source wavelet estimation, blind deconvolution, convex phase retrieval, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/esser2014EAGEacp.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
+@UNPUBLISHED{lin2014EAGEmas,
+  author   = {Tim T.Y. Lin and Felix J. Herrmann},
+  title    = {Multilevel acceleration strategy for the robust estimation of primaries by sparse inversion},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {We propose a method to substantially reduce the
+                  computational costs of the Robust Estimation of
+                  Primaries by Sparse Inversion algorithm, based on a
+                  multilevel inversion strategy that shifts early
+                  iterations of the method to successively coarser
+                  spatial sampling grids. This method requires no
+                  change in the core implementation of the original
+                  algorithm, and additionally only relies on trace
+                  decimation, low-pass filtering, and rudimentary
+                  interpolation techniques. We furthermore demonstrate
+                  with a synthetic seismic line significant
+                  computational speedups using this approach.},
+  keywords = {multiples, EPSI, REPSI, multigrid, multilevel, multiscale, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/lin2014EAGEmas.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
+@UNPUBLISHED{zheglova2014EAGEams,
+  author   = {Polina Zheglova and Felix J. Herrmann},
+  title    = {Application of matrix square root and its inverse to downward wavefield extrapolation},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {In this paper we propose a method for computation of the
+                  square root of the Helmholtz operator and its
+                  inverse that arise in downward extrapolation methods
+                  based on one-way wave equation. Our approach
+                  involves factorization of the discretized Helmholtz
+                  operator at each depth by extracting the matrix
+                  square root after performing the spectral projector
+                  in order to eliminate the evanescent modes. The
+                  computation of the square root of the discrete
+                  Helmholtz operator and its inverse is done using
+                  polynomial recursions and can be combined with low
+                  rank matrix approximations to reduce the
+                  computational cost for large problems. The resulting
+                  square root operator is able to model the
+                  propagating modes kinematically correctly at the
+                  angles of up to 90 degree. Preliminary results on
+                  convergence of iterations are presented in this
+                  abstract. Potential applications include seismic
+                  modeling, imaging and inversion.},
+  keywords = {square root, modelling, one-way wave equation, extrapolation, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/zheglova2014EAGEams.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
+@UNPUBLISHED{fang2014EAGEfuq,
+  author   = {Zhilong Fang and Curt Da Silva and Felix J. Herrmann},
+  title    = {Fast uncertainty quantification for 2D full-waveform inversion with randomized source subsampling},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {Uncertainties arise in every area of seismic
+                  exploration, especially in full-waveform inversion,
+                  which is highly non-linear. In the framework of
+                  Bayesian inference, uncertainties can be analyzed by
+                  sampling the posterior probability density
+                  distribution with a Markov chain Monte-Carlo (McMC)
+                  method. We reduce the cost of computing the
+                  posterior distribution by working with randomized
+                  subsets of sources. These approximations, together
+                  with the Gaussian assumption and approximation of
+                  the Hessian, leads to a computational tractable
+                  uncertainty quantification. Application of this
+                  approach to a synthetic leads to standard deviations
+                  and confidence intervals that are qualitatively
+                  consistent with our expectations.},
+  keywords = {Uncertainty quantification, FWI, Markov chain Monte Carlo, randomized sources subsampling, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/fang2014EAGEfuq.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
+@UNPUBLISHED{petrenko2014EAGEaih,
+  author   = {Art Petrenko and Tristan van Leeuwen and Diego Oriato and Simon Tilbury and Felix J. Herrmann},
+  title    = {Accelerating an iterative Helmholtz solver with FPGAs},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {We implement the Kaczmarz row-projection algorithm
+                  (Kaczmarz (1937)) on a CPU host + FPGA accelerator
+                  platform using techniques of dataflow
+                  programming. This algorithm is then used as the
+                  preconditioning step in CGMN, a modified version of
+                  the conjugate gradients method (Björck and Elfving
+                  (1979)) that we use to solve the time-harmonic
+                  acoustic isotropic constant density wave
+                  equation. Using one accelerator we achieve a
+                  speed-up of over 2× compared with one Intel core.},
+  keywords = {CGMN, FPGA, Helmholtz equation, Kaczmarz, reconfigurable computing, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/petrenko2014EAGEaih.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
+@UNPUBLISHED{kumar2014EAGErank,
+  author   = {Rajiv Kumar and Aleksandr Y. Aravkin  and Ernie Esser and Hassan Mansour and Felix J. Herrmann},
+  title    = {SVD-free low-rank matrix factorization : wavefield reconstruction via jittered subsampling and reciprocity},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {Recently computationally efficient rank optimization
+                  techniques have been studied extensively to develop
+                  a new mathematical tool for the seismic data
+                  interpolation. So far, matrix completion problems
+                  have been discussed where sources are subsample
+                  according to a discrete uniform distribution. In
+                  this paper, we studied the effect of two different
+                  subsampling techniques on seismic data interpolation
+                  using rank-regularized formulations, namely jittered
+                  subsampling over uniform random subsampling. The
+                  other objective of this paper is to combine the fact
+                  of source-receiver reciprocity with the
+                  rank-minimization techniques to enhance the accuracy
+                  of missing-trace interpolation. We illustrate the
+                  advantages of jittered subsampling and reciprocity
+                  using a seismic line from Gulf of Suez to obtain
+                  high quality results for interpolation, a key
+                  application in exploration geophysics.},
+  keywords = {low-rank, interpolation, reciprocity, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/kumar2014EAGErank.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
+@UNPUBLISHED{kumar2014EAGEeia,
+  author   = {Rajiv Kumar and  Tristan van Leeuwen  and Felix J. Herrmann},
+  title    = {Extended images in action: efficient WEMVA via randomized probing},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {Image gathers as a function of subsurface offset are an
+                  important tool for velocity analysis in areas of
+                  complex geology. In this paper, we offer a new
+                  perspective on image gathers by organizing the
+                  extended image as a function of all subsurface
+                  offsets and all subsurface points into a matrix
+                  whose (i,j)^{th} entry captures the interaction
+                  between gridpoints i and j. For even small problems,
+                  it is infeasible to form and store this
+                  matrix. Instead, we propose an efficient algorithm
+                  to glean information from the image volume via
+                  efficient matrix-vector products. We illustrate how
+                  this can be used to construct objective functions
+                  for automatic MVA.},
+  keywords = {extended imaging, MVA, probing, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/kumar2014EAGEeia.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
 @UNPUBLISHED{petrenko2014OGHPCaih,
   author   = {Art Petrenko and Felix J. Herrmann and Diego Oriato and Simon Tilbury and Tristan van Leeuwen},
   title    = {Accelerating an iterative Helmholtz solver with FPGAs},
@@ -20,6 +324,8 @@
   date_submitted = {12/06/2013}
 }
 
+
+%-----2013-----%
 
 @UNPUBLISHED{ghadermarzy2013ncs,
   author   = {Navid Ghadermarzy and Hassan Mansour and Ozgur Yilmaz},
@@ -201,6 +507,8 @@
   url = {http://arxiv.org/abs/1302.4886} 
 }
 
+
+%-----2012-----%
 
 @UNPUBLISHED{bander2012dre,
   author = {Bander Jumah and Felix J. Herrmann},

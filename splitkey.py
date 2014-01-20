@@ -53,7 +53,7 @@ else:
 		for line in open(each):
 			line=line.strip()
 			for list in entrytypes:
-	            ''' Arnold note: This could probably be done as a regex '''
+#	            ''' Arnold note: This could probably be done as a regex '''
 				if re.search(list.lower(),line.lower(),re.I):
 					entries= line.split('@')
 					entry=entries[1].strip()

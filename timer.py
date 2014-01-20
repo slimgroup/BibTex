@@ -48,8 +48,7 @@ print "Reading..."
 for line in fileIN:	
 	line=line.strip()
 	if typename.lower() in line.lower():
-        ''' Arnold: can do a regex extraction here and cut two/three
-        lines something like [@]+([a-zA-Z]).[{].*? '''
+        # Arnold: can do a regex extraction here and cut two/three lines something like [@]+([a-zA-Z]).[{].*?
 		entries=line.split('@')
 		entry=entries[1].strip()
 		split_entry=entry.split("{")[1]

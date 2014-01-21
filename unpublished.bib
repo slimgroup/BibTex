@@ -3,6 +3,72 @@
 
 %-----2014-----%
 
+@UNPUBLISHED{peters2014EAGEweb,
+  author   = {Bas Peters and Felix J. Herrmann and Tristan van Leeuwen},
+  title    = {Wave-equation based inversion with the penalty method:
+                  adjoint-state versus wavefield-reconstruction inversion},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {In this paper we make a comparison between wave-equation
+                  based inversions based on the adjoint-state and
+                  penalty methods. While the adjoint-state method
+                  involves the minimization of a data-misfit and exact
+                  solutions of the wave-equation for the current
+                  velocity model, the penalty- method aims to first
+                  find a wavefield that jointly fits the data and
+                  honours the physics, in a least-squares sense. Given
+                  this reconstructed wavefield, which is a proxy for
+                  the true wavefield in the true model, we calculate
+                  updates for the velocity model. Aside from being
+                  less nonlinear–the acoustic wave equation is linear
+                  in the wavefield and model parameters but not in
+                  both–the inversion is carried out over a solution
+                  space that includes both the model and the
+                  wavefield. This larger search space allows the
+                  algortihm to circumnavigate local minima, very much
+                  in the same way as recently proposed model
+                  extentions try to acomplish. We include examples for
+                  low frequencies, where we compare full-waveform
+                  inversion results for both methods, for good and bad
+                  starting models, and for high frequencies where we
+                  compare reverse-time migration with linearized
+                  imaging based on wavefield-reconstruction
+                  inversion. The examples confirm the expected
+                  benefits of the proposed method.},
+  keywords = {full-waveform inversion, optimization, imaging, penalty method, EAGE, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/peters2014EAGEweb.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
+@UNPUBLISHED{leeuwen2014EAGEntf,
+  author   = {Tristan van Leeuwen and Felix J. Herrmann and Bas Peters},
+  title    = {A new take on FWI: Wavefield Reconstruction Inversion},
+  year     = {2014},
+  institution = {UBC},
+  abstract = {We discuss a recently proposed novel method for waveform
+                  inversion: Wavefield Reconstruction Inversion
+                  (WRI). As opposed to conventional FWI – which
+                  attempts to minimize the error between observed and
+                  predicted data obtained by solving a wave equation –
+                  WRI reconstructs a wave-field from the data and
+                  extracts a model-update from this wavefield by
+                  minimizing the wave-equation residual. The method
+                  does not require explicit computation of an adjoint
+                  wavefield as all the necessary information is
+                  contained in the reconstructed wavefield. We show
+                  how the corresponding model updates can be
+                  interpreted physically analogously to the
+                  conventional imaging-condition-based approach.},
+  keywords = {Wavefield Reconstruction Inversion, penalty method,
+                  optimization, full-waveform inversion, EAGE, private},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/leeuwen2014EAGEntf.pdf},
+  date_submitted = {01/17/2014}
+}
+
+
 @UNPUBLISHED{lago2014EAGEfst,
   author   = {Rafael Lago and Art Petrenko and Zhilong Fang and Felix J. Herrmann},
   title    = {Fast solution of time-harmonic wave-equation for Full-Waveform Inversion},
@@ -33,7 +99,7 @@
                   procedure, showing that in a realistic scenario we
                   can expect a speedup around 25\% when using CRMN
                   rather than CGMN.},
-  keywords = {CRMN, CGMN, FWI, Time-Harmonic Wave Equation, private},
+  keywords = {CRMN, CGMN, FWI, Time-Harmonic Wave Equation, EAGE, private},
   month = {01},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/lago2014EAGEfst.pdf},
   date_submitted = {01/17/2014}
@@ -64,7 +130,7 @@
                   acquisition where time-lapse signal can be computed
                   as long as the survey details, such as
                   source/receiver locations are known afterwards.},
-  keywords = {4-D seismic, time-lapse, joint recovery, private},
+  keywords = {4-D seismic, time-lapse, joint recovery, EAGE, private},
   month = {01},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/oghenekohwo2014EAGEtls.pdf},
   date_submitted = {01/17/2014}
@@ -103,7 +169,7 @@
                   4D frequency slice.},
   keywords = {hierarchical tucker, structured tensor, tensor
                   interpolation,riemannian optimization, low-rank
-                  transform, seismic denoising, private},
+                  transform, seismic denoising, EAGE, private},
   month = {01},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/dasilva2014EAGEhtucknoisy.pdf},
   date_submitted = {01/17/2014}
@@ -138,7 +204,7 @@
                   spectrum is close to a given estimate, and we show
                   that this can be robustly solved by a Douglas
                   Rachford splitting method for convex optimization.},
-  keywords = {source wavelet estimation, blind deconvolution, convex phase retrieval, private},
+  keywords = {source wavelet estimation, blind deconvolution, convex phase retrieval, EAGE, private},
   month = {01},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/esser2014EAGEacp.pdf},
   date_submitted = {01/17/2014}
@@ -162,7 +228,7 @@
                   interpolation techniques. We furthermore demonstrate
                   with a synthetic seismic line significant
                   computational speedups using this approach.},
-  keywords = {multiples, EPSI, REPSI, multigrid, multilevel, multiscale, private},
+  keywords = {multiples, EPSI, REPSI, multigrid, multilevel, multiscale, EAGE, private},
   month = {01},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/lin2014EAGEmas.pdf},
   date_submitted = {01/17/2014}
@@ -193,7 +259,7 @@
                   convergence of iterations are presented in this
                   abstract. Potential applications include seismic
                   modeling, imaging and inversion.},
-  keywords = {square root, modelling, one-way wave equation, extrapolation, private},
+  keywords = {square root, modelling, one-way wave equation, extrapolation, EAGE, private},
   month = {01},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/zheglova2014EAGEams.pdf},
   date_submitted = {01/17/2014}
@@ -220,7 +286,7 @@
                   approach to a synthetic leads to standard deviations
                   and confidence intervals that are qualitatively
                   consistent with our expectations.},
-  keywords = {Uncertainty quantification, FWI, Markov chain Monte Carlo, randomized sources subsampling, private},
+  keywords = {Uncertainty quantification, FWI, Markov chain Monte Carlo, randomized sources subsampling, EAGE, private},
   month = {01},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/fang2014EAGEfuq.pdf},
   date_submitted = {01/17/2014}
@@ -242,7 +308,7 @@
                   acoustic isotropic constant density wave
                   equation. Using one accelerator we achieve a
                   speed-up of over 2× compared with one Intel core.},
-  keywords = {CGMN, FPGA, Helmholtz equation, Kaczmarz, reconfigurable computing, private},
+  keywords = {CGMN, FPGA, Helmholtz equation, Kaczmarz, reconfigurable computing, EAGE, private},
   month = {01},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/petrenko2014EAGEaih.pdf},
   date_submitted = {01/17/2014}
@@ -272,7 +338,7 @@
                   using a seismic line from Gulf of Suez to obtain
                   high quality results for interpolation, a key
                   application in exploration geophysics.},
-  keywords = {low-rank, interpolation, reciprocity, private},
+  keywords = {low-rank, interpolation, reciprocity, EAGE, private},
   month = {01},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/kumar2014EAGErank.pdf},
   date_submitted = {01/17/2014}
@@ -298,7 +364,7 @@
                   efficient matrix-vector products. We illustrate how
                   this can be used to construct objective functions
                   for automatic MVA.},
-  keywords = {extended imaging, MVA, probing, private},
+  keywords = {extended imaging, MVA, probing, EAGE, private},
   month = {01},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/EAGE/kumar2014EAGEeia.pdf},
   date_submitted = {01/17/2014}
@@ -308,7 +374,7 @@
 @UNPUBLISHED{petrenko2014OGHPCaih,
   author   = {Art Petrenko and Felix J. Herrmann and Diego Oriato and Simon Tilbury and Tristan van Leeuwen},
   title    = {Accelerating an iterative Helmholtz solver with FPGAs},
-  year     = {2013},
+  year     = {2014},
   institution = {UBC},
   abstract = {We implement the Kaczmarz row-projection algorithm
                   [Kaczmarz, 1937] on a CPU host + FPGA accelerator
@@ -318,10 +384,9 @@
                   gradients method [Björck and Elfving, 1979] that we
                   use to solve the time-harmonic acoustic isotropic
                   constant density wave equation.},
-  keywords = {OGHPC,Kaczmarz,CGMN,FPGA,reconfigurable computing,Helmholtz equation,private},
-  month = {12},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/OGHPC/petrenko2014OGHPCaih.pdf},
-  date_submitted = {12/06/2013}
+  keywords = {OGHPC,Kaczmarz,CGMN,FPGA,reconfigurable computing,Helmholtz equation},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/OGHPC/petrenko2014OGHPCaih.pdf},
 }
 
 

@@ -1,13 +1,49 @@
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+@CONFERENCE{lago2014EAGEfst,
+  author   = {Rafael Lago and Art Petrenko and Zhilong Fang and Felix J. Herrmann},
+  title    = {Fast solution of time-harmonic wave-equation for Full-Waveform Inversion},
+  year     = {2014},
+  month = {01},
+  booktitle = {EAGE},
+  abstract = {For many full-waveform inversion techniques, the most
+                  computationally intensive step is the computation of
+                  a numerical solution for the wave equation on every
+                  iteration. In the frequency domain approach, this
+                  requires the solution of very large, complex,
+                  sparse, ill-conditioned linear systems. In this
+                  extended abstract we bring out attention
+                  specifically to CGMN method for solving PDEs, known
+                  for being flexible (i.e. it is able to treat equally
+                  acoustic data as well as visco-elastic or more
+                  complex scenarios) efficient with respect both to
+                  memory and computation time, and controllable
+                  accuracy of the final approximation. We propose an
+                  improvement for the known CGMN method by imposing a
+                  minimal residual condition, which incurs in one
+                  extra model vector storage.  The resulting algorithm
+                  called CRMN enjoys several interesting properties as
+                  monotonically nonincreasing behaviour of the norm of
+                  the residual and minimal residual, guaranteeing
+                  optimal convergence for the relative residual
+                  criterion.  We discuss numerical experiments both in
+                  an isolated PDE solve and also within the inversion
+                  procedure, showing that in a realistic scenario we
+                  can expect a speedup around 25\% when using CRMN
+                  rather than CGMN.},
+  keywords = {CRMN, CGMN, FWI, Time-Harmonic Wave Equation, EAGE},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2014/lago2014EAGEfst.pdf}
+}
+
+
 @CONFERENCE{peters2014EAGEweb,
   author = {Bas Peters and Felix J. Herrmann and Tristan van Leeuwen},
   title = {Wave-equation based inversion with the penalty method:
                   adjoint-state versus wavefield-reconstruction inversion},
   year = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {In this paper we make a comparison between wave-equation
                   based inversions based on the adjoint-state and
                   penalty methods. While the adjoint-state method
@@ -44,7 +80,7 @@
   title    = {A new take on FWI: Wavefield Reconstruction Inversion},
   year     = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {We discuss a recently proposed novel method for waveform
                   inversion: Wavefield Reconstruction Inversion
                   (WRI). As opposed to conventional FWI – which
@@ -70,7 +106,7 @@
   title    = {Time-lapse seismic without repetition: reaping the benefits from randomized sampling and joint recovery},
   year     = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {In the current paradigm of 4-D seismic, guaranteeing
                   repeatability in acquisition and processing of the
                   baseline and monitor surveys ranks highest amongst
@@ -100,7 +136,7 @@
   title    = {Low-rank Promoting Transformations and Tensor Interpolation - Applications to Seismic Data Denoising},
   year     = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {In this abstract, we extend our previous work in
                   Hierarchical Tucker (HT) tensor completion, which
                   uses an extremely efficient representation for
@@ -138,7 +174,7 @@
   title    = {Application of a convex phase retrieval method to blind seismic deconvolution},
   year     = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {A classical strategy for blind seismic deconvolution is
                   to first estimate the autocorrelation of the unknown
                   source wavelet from the data and then recover the
@@ -172,7 +208,7 @@
   title    = {Multilevel acceleration strategy for the robust estimation of primaries by sparse inversion},
   year     = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {We propose a method to substantially reduce the
                   computational costs of the Robust Estimation of
                   Primaries by Sparse Inversion algorithm, based on a
@@ -195,7 +231,7 @@
   title    = {Application of matrix square root and its inverse to downward wavefield extrapolation},
   year     = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {In this paper we propose a method for computation of the
                   square root of the Helmholtz operator and its
                   inverse that arise in downward extrapolation methods
@@ -225,7 +261,7 @@
   title    = {Fast uncertainty quantification for 2D full-waveform inversion with randomized source subsampling},
   year     = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {Uncertainties arise in every area of seismic
                   exploration, especially in full-waveform inversion,
                   which is highly non-linear. In the framework of
@@ -251,7 +287,7 @@
   title    = {Accelerating an iterative Helmholtz solver with FPGAs},
   year     = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {We implement the Kaczmarz row-projection algorithm
                   (Kaczmarz (1937)) on a CPU host + FPGA accelerator
                   platform using techniques of dataflow
@@ -272,7 +308,7 @@
   title    = {SVD-free low-rank matrix factorization : wavefield reconstruction via jittered subsampling and reciprocity},
   year     = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {Recently computationally efficient rank optimization
                   techniques have been studied extensively to develop
                   a new mathematical tool for the seismic data
@@ -301,7 +337,7 @@
   title    = {Extended images in action: efficient WEMVA via randomized probing},
   year     = {2014},
   month = {01},
-  institution = {UBC},
+  booktitle = {EAGE},
   abstract = {Image gathers as a function of subsurface offset are an
                   important tool for velocity analysis in areas of
                   complex geology. In this paper, we offer a new
@@ -407,6 +443,17 @@
   month = {08},
   keywords = {SPIE, randomized sampling, exploration seismology},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SPIE/2013/herrmann2013SPIErse/herrmann2013SPIErse_pres.pdf}
+}
+
+
+@CONFERENCE{herrmann2013SEGpmc,
+  author = {Tristan van Leeuwen and Felix J. Herrmann},
+  title = {A penalty method for PDE-constrained optimization with applications to wave-equation based seismic inversion},
+  booktitle = {SEG Computational Mathematics for Geophysics Workshop, Houston},
+  year = {2013},
+  month = {09},
+  keywords = {SEG, Houston, penalty method, optimization},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2013/herrmann2013SEGpmc/herrmann2013SEGpmc_pres.pdf}
 }
 
 
@@ -656,6 +703,17 @@
 }
 
 
+@CONFERENCE{lin2013SEGdss,
+  author = {Tim T.Y. Lin and Haneet Wason and Felix J. Herrmann},
+  title = {Dense shot-sampling via time-jittered marine sources},
+  booktitle = {SEG Simultaneous Sources Workshop, Houston},
+  year = {2013},
+  month = {09},
+  keywords = {SEG, Houston, acquisition, simultaneous sources},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2013/lin2013SEGdss/lin2013SEGdss_pres.pdf}
+}
+
+
 @CONFERENCE{dasilva2013SAMPTAhtuck,
   author = {Curt Da Silva and Felix J. Herrmann},
   title = {Hierarchical Tucker Tensor Optimization - Applications to Tensor Completion},
@@ -750,7 +808,7 @@
 
 
 @CONFERENCE{lin2013EAGEcsd,
-  author = {Tim T. Y. Lin and Felix J. Herrmann},
+  author = {Tim T.Y. Lin and Felix J. Herrmann},
   title = {Cosparse seismic data interpolation},
   booktitle = {EAGE},
   year = {2013},

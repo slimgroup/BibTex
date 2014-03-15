@@ -9320,24 +9320,23 @@
   title = {Efficient seismic imaging with spectral projector and joint sparsity},
   school = {University of British Columbia},
   year = {2014},
-  type = {Masters},
   abstract = {In this thesis, we investigate the potential of
-                  improving the eciency of seis- mic imaging with two
+                  improving the eciency of seismic imaging with two
                   advanced techniques: the spectral projector and the
-                  “joint sparsity”. The spectral projector o↵ers an
+                  'joint sparsity'. The spectral projector offers an
                   eigenvalue decomposition free computation routine
                   that can filter out unstable evanescent wave com-
                   ponents during wave equation based depth
-                  extrapolation. “Joint sparsity” aims to improve on
+                  extrapolation. 'Joint sparsity' aims to improve on
                   the pure sparsity promoting recovery by making use
                   of additional structure information of the
                   signal. Besides, a new sparsity optimization
-                  algorithm — PQNL1 — is proposed to improve both
-                  theoreti- cal convergence rate and practical
+                  algorithm - PQNL1 - is proposed to improve both
+                  theoretical convergence rate and practical
                   performance for extremely large seismic imaging
                   problems.},
-  keywords = {MSc,private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Thesis/2014/miao2014THesi/miao2014THesi.pdf}
+  keywords = {MSc, thesis},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2014/miao2014THesi.pdf}
 }
 
 
@@ -9346,7 +9345,6 @@
   title = {Seismic wavefield reconstruction using reciprocity},
   school = {University of British Columbia},
   year = {2013},
-  type = {Masters},
   abstract = {The primary focus of most reflection seismic surveys is
                   to help locate hydro-carbon recourses. Due to an
                   ever increasing scarcity of these recourses, we must
@@ -9380,8 +9378,8 @@
                   50% of its traces decimated. This is a 13.44 dB
                   improvement over using the same method run without
                   taking reciprocity into account.},
-  keywords = {MSc,private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Thesis/2013/johnson2013THswr/johnson2013THswr.pdf}
+  keywords = {MSc, thesis},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2013/johnson2013THswr.pdf}
 }
 
 
@@ -9391,46 +9389,60 @@
   school = {University of British Columbia},
   year = {2009},
   type = {masters},
-  abstract = {The process of obtaining high quality seismic images is very challenging
-	when exploring new areas that have high complexities. The to be processed
-	seismic data comes from the field noisy and commonly incomplete.
-	Recently, major advances were accomplished in the area of coherent
-	noise removal, for example, Surface Related Multiple Elimination
-	(SRME). Predictive multiple elimination methods, such as SRME, consist
-	of two steps: The first step is the prediction step, in this step
-	multiples are predicted from the seismic data. The second step is
-	the separation step in which primary reflection and surface related
-	multiples are separated, this involves predicted multiples from the
-	first step to be matched with the true multiples in the data and
-	eventually removed . A recent robust Bayesian wavefield separation
-	method have been recently introduced to improve on the separation
-	by matching methods. This method utilizes the effectiveness of using
-	the multi scale and multi angular curvelet transform in processing
-	seismic images. The method produced excellent results and improved
-	multiple removal. A considerable problem in the seismic processing
-	field is the fact that seismic data are large and require a correspondingly
-	large memory size and processing time. The fact that curvelets are
-	redundant also increases the need for large memory to process seismic
-	data. In this thesis we propose a parallel approach based windowing
-	operator that divides large seismic data into smaller more managable
-	datasets that can fit in memory so that it is possible to apply the
-	Bayesian separation pro- cess in parallel with minimal harm to the
-	image quality and data integrity. However, by dividing the data,
-	we introduce discontinuities. We take these discontinuities into
-	account and compare two ways that different windows may communicate.
-	The first method is to communicate edge information at only two steps,
-	namely, data scattering and gathering processes while applying the
-	multiple separation on each window separately. The second method
-	is to define our windowing operator as a global operator, which exchanges
-	window edge information at each forward and inverse curvelet transform.
-	We discuss the trade off between the two methods trying to minimize
-	complexity and I/O time spent in the process. We test our windowing
-	operator on a seismic denoising problem and then apply the windowing
-	operator on our sparse-domain Bayesian primary- multiple separation.},
+  abstract = {The process of obtaining high quality seismic images is
+                  very challenging when exploring new areas that have
+                  high complexities. The to be processed seismic data
+                  comes from the field noisy and commonly incomplete.
+                  Recently, major advances were accomplished in the
+                  area of coherent noise removal, for example, Surface
+                  Related Multiple Elimination (SRME). Predictive
+                  multiple elimination methods, such as SRME, consist
+                  of two steps: The first step is the prediction step,
+                  in this step multiples are predicted from the
+                  seismic data. The second step is the separation step
+                  in which primary reflection and surface related
+                  multiples are separated, this involves predicted
+                  multiples from the first step to be matched with the
+                  true multiples in the data and eventually removed. A
+                  recent robust Bayesian wavefield separation method
+                  have been recently introduced to improve on the
+                  separation by matching methods. This method utilizes
+                  the effectiveness of using the multi scale and multi
+                  angular curvelet transform in processing seismic
+                  images. The method produced excellent results and
+                  improved multiple removal. A considerable problem in
+                  the seismic processing field is the fact that
+                  seismic data are large and require a correspondingly
+                  large memory size and processing time. The fact that
+                  curvelets are redundant also increases the need for
+                  large memory to process seismic data. In this thesis
+                  we propose a parallel approach based windowing
+                  operator that divides large seismic data into
+                  smaller more managable datasets that can fit in
+                  memory so that it is possible to apply the Bayesian
+                  separation pro- cess in parallel with minimal harm
+                  to the image quality and data integrity. However, by
+                  dividing the data, we introduce discontinuities. We
+                  take these discontinuities into account and compare
+                  two ways that different windows may communicate.
+                  The first method is to communicate edge information
+                  at only two steps, namely, data scattering and
+                  gathering processes while applying the multiple
+                  separation on each window separately. The second
+                  method is to define our windowing operator as a
+                  global operator, which exchanges window edge
+                  information at each forward and inverse curvelet
+                  transform.  We discuss the trade off between the two
+                  methods trying to minimize complexity and I/O time
+                  spent in the process. We test our windowing operator
+                  on a seismic denoising problem and then apply the
+                  windowing operator on our sparse-domain Bayesian
+                  primary- multiple separation.},
   keywords = {MSc},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2009/alhashim09THsdp_pres.pdf},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2009/alhashim09THsdp.pdf}
 }
+
 
 @MASTERSTHESIS{almatar10THesd,
   author = {Mufeed H. AlMatar},
@@ -9438,7 +9450,6 @@
 	and Sparse Inversion},
   school = {University of British Columbia},
   year = {2010},
-  type = {masters},
   abstract = {A recent robust multiple-elimination technique, based on the underlying
 	principle that relates primary impulse response to total upgoing
 	wavefield, tries to change the paradigm that sees surface-related

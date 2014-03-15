@@ -9315,6 +9315,32 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+@MASTERSTHESIS{miao2014THesi,
+  author = {Lina Miao},
+  title = {Efficient seismic imaging with spectral projector and joint sparsity},
+  school = {University of British Columbia},
+  year = {2014},
+  type = {Masters},
+  abstract = {In this thesis, we investigate the potential of
+                  improving the eciency of seis- mic imaging with two
+                  advanced techniques: the spectral projector and the
+                  “joint sparsity”. The spectral projector o↵ers an
+                  eigenvalue decomposition free computation routine
+                  that can filter out unstable evanescent wave com-
+                  ponents during wave equation based depth
+                  extrapolation. “Joint sparsity” aims to improve on
+                  the pure sparsity promoting recovery by making use
+                  of additional structure information of the
+                  signal. Besides, a new sparsity optimization
+                  algorithm — PQNL1 — is proposed to improve both
+                  theoreti- cal convergence rate and practical
+                  performance for extremely large seismic imaging
+                  problems.},
+  keywords = {MSc,private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Thesis/2014/miao2014THesi/miao2014THesi.pdf}
+}
+
+
 @MASTERSTHESIS{johnson2013THswr,
   author = {James Johnson},
   title = {Seismic wavefield reconstruction using reciprocity},
@@ -10209,6 +10235,56 @@
 
 %-----2014-----%
 
+@UNPUBLISHED{vanLeeuwen20143Dfds,
+  author   = {Tristan van Leeuwen and Felix J. Herrmann},
+  title    = {3D frequency-domain seismic inversion with controlled sloppiness},
+  year     = {2014},
+  month    = {03},
+  abstract = {Seismic waveform inversion aims at obtaining detailed
+                  estimates of subsurface medium parameters, such as
+                  the spatial distribution of soundspeed, from
+                  multi-experiment seismic data. A formulation of this
+                  inverse problem in the frequency-domain leads to an
+                  optimization problem constrained by a Helmholtz
+                  equation with many right-hand-sides. Application of
+                  this technique to industry-scale problem faces
+                  several challenges: Firstly, we need to solve the
+                  Helmholtz equation for high wavenumbers over large
+                  computational domains. Secondly, the data consists
+                  of many independent experiments, leading to a large
+                  number of PDE-solves. This results in high
+                  computational complexity both in terms of memory and
+                  CPU time as well as i/o costs. Finally, the inverse
+                  problem is highly non-linear and a lot of art goes
+                  into preprocessing and regularization. Ideally, an
+                  inversion needs to be run several times with
+                  different initial guesses and/or tuning
+                  parameters. In this paper, we discuss the
+                  requirements of the various components (PDE-solver,
+                  optimization method, ...) when applied to
+                  large-scale 3D seismic waveform inversion and
+                  combine several existing approaches into a flexible
+                  inversion scheme for seismic waveform inversion. The
+                  scheme is based on the idea that in the early stages
+                  of the inversion we do not need all the data or very
+                  accurate PDE-solves. We base our method on an
+                  existing preconditioned Krylov solver (CARP-CG) and
+                  use ideas from stochastic optimization to formulate
+                  a gradient-based (Quasi-Newton) optimization
+                  algorithm that works with small subsets of the
+                  right-hand-sides and uses inexact PDE solves for the
+                  gradient calculations. We proposed novel heuristics
+                  to adaptively control both the accuracy and the
+                  number of right-hand-sides. We illustrate the
+                  algorithms on synthetic benchmark models for which
+                  significant computational gains can be made without
+                  being sensitive to noise and without loosing
+                  accuracy of the inverted model.},
+  keywords = {waveform inversion, optimization},
+  note = {To appear in the SIAM Journal on Scientific Computing (SISC)}, 
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/SIAM_Journal_on_Scientific_Computing/2014/vanLeeuwen20143Dfds/vanLeeuwen20143Dfds.pdf}
+}
+
 
 %-----2013-----%
 
@@ -10296,55 +10372,6 @@
   keywords = {waveform inversion, optimization, private},
   month = {04},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2013/vanLeeuwen2013Penalty2/vanLeeuwen2013Penalty2.pdf}
-}
-
-
-@UNPUBLISHED{vanLeeuwen20133DFWI,
-  author   = {Tristan van Leeuwen and Felix J. Herrmann},
-  title    = {3D frequency-domain seismic inversion using a row-projected helmholtz solver},
-  year     = {2013},
-  institution = {UBC},
-  abstract = {Seismic waveform inversion aims at obtaining detailed
-                  estimates of subsurface medium parameters, such as
-                  soundspeed, from seismic data. A formulation in the
-                  frequency-domain leads to an optimization problem
-                  constrained by a Helmholtz equation with many
-                  right-hand-sides. Application of this technique in
-                  3D precludes the use of factorization techniques to
-                  solve the Helmholtz equation due the large number of
-                  gridpoints and the bandwidth of the matrix. While
-                  more attractive from the perspective of memory use,
-                  the computations costs of iterative methods scale
-                  linearly with the number of right-hand-sides. Many
-                  sophisticated preconditioned iterative techniques
-                  have been developed for the Helmholtz equation,
-                  however, they often include model-specific tuning
-                  parameters and are thus not very attractive for
-                  inversion since the medium parameters change from
-                  one iteration to the next. In this paper, we propose
-                  a method for 3D seismic waveform inversion that
-                  addresses both the need to efficiently solve the
-                  Helmholtz equation as well as the computational cost
-                  induced by the many right-hand-sides. To solve the
-                  Helmholtz equation, we consider a simple generic
-                  preconditioned iterative method (CARP-CG) that is
-                  well-suited for inversion because of its
-                  robustness. We extend this method to a
-                  block-iterative method that can efficiently handle
-                  multiple right-hand sides. To reduce the
-                  computational cost of of the overall optimization
-                  procedure, we use recently proposed techniques from
-                  stochastic optimization that allow us to work with
-                  approximate gradient information. These
-                  approximations are obtained by evaluating only a
-                  small portion of the right-hand sides and/or by
-                  solving the PDE approximately. We propose heuristics
-                  to adaptively determine the required accuracy of the
-                  PDE solves and the sample-size and illustrate the
-                  algorithms on synthetic benchmark models.},
-  keywords = {waveform inversion, optimization, private},
-  month = {04},
-  url      = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2013/vanLeeuwen20133DFWI/vanLeeuwen20133DFWI.pdf}
 }
 
 
@@ -10762,7 +10789,7 @@
 	solutions,Optimization},
   optdoi = {10.1137/080714488},
   publisher = {SIAM},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/SIAM%20Journal%20on%20Scientific%20Computing/2008/vanderberg08SIAMptp/vanderberg08SIAMptp.pdf}
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/SIAM_Journal_on_Scientific_Computing/2008/vanderberg08SIAMptp/vanderberg08SIAMptp.pdf}
 }
 
 @ARTICLE{vandenberg08gsv,

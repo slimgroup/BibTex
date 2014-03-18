@@ -7,7 +7,8 @@ import sys
 
 
 #---------------STANDARD DEFINITIONS----------
-entrytypes=["@article{",
+entrytypes=["@accepted{",
+		"@article{",
 		"@conference{",
                 "@presentation{",
 		"@techreport{",

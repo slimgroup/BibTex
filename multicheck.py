@@ -7,9 +7,10 @@ import sys
 from urllib2 import Request, urlopen, URLError
 
 #---------------STANDARD DEFINITIONS----------
-entrytypes=["@article{",
+entrytypes=["@accepted{",
+		"@article{",
 		"@conference{",
-        "@presentation{",
+        	"@presentation{",
 		"@techreport{",
 		"@manual{",
 		"@book{",

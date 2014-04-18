@@ -1,10 +1,40 @@
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+@CONFERENCE{lago2014CMCCRMN,
+  author = {Rafael Lago and Art Petrenko and Zhilong Fang and Felix J. Herrmann},
+  title = {CRMN method for solving Time-Harmonic Wave Equation},
+  year = {2014},
+  month = {04},
+  booktitle = {Copper Mountain Conference},
+  abstract = {We address the solution of PDEs associated with the wave
+                  propagation phenomena in heterogeneous media using
+                  CGMN method. It consists of a conjugate gradients
+                  method using Kaczmarz double sweeps as
+                  preconditioner. This preconditioner has the property
+                  of "symmetrizing" the problem allowing short
+                  recursion and Lanczos type of Krylov methods to be
+                  employed. In this talk we propose the use of CR, a
+                  minimal residual Krylov method closely related to
+                  CG. We study the proposed method which we call CRMN
+                  and discuss crucial aspects as the behaviour of the
+                  norm of the residual and the norm of the true
+                  error. We also discuss the result of an inversion of
+                  a small subsample of the 3D velocity model SEG/EAGE
+                  Overthrust using frugal full-waveform inversion
+                  method with CRMN and CGMN for solving the associated
+                  PDE, showing a strong interest in studying the
+                  behaviour of CRMN for larger realistic cases.},
+  keywords = {CRMN, CGMN, Forward Modelling, Helmholtz equation},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CMC/2014/lago2014CMCCRMN.pdf},
+  note = {Copper Mountain}
+}
+
+
 @CONFERENCE{lago2014EAGEfst,
-  author   = {Rafael Lago and Art Petrenko and Zhilong Fang and Felix J. Herrmann},
-  title    = {Fast solution of time-harmonic wave-equation for Full-Waveform Inversion},
-  year     = {2014},
+  author = {Rafael Lago and Art Petrenko and Zhilong Fang and Felix J. Herrmann},
+  title = {Fast solution of time-harmonic wave-equation for Full-Waveform Inversion},
+  year = {2014},
   month = {01},
   booktitle = {EAGE},
   abstract = {For many full-waveform inversion techniques, the most
@@ -22,7 +52,7 @@
                   accuracy of the final approximation. We propose an
                   improvement for the known CGMN method by imposing a
                   minimal residual condition, which incurs in one
-                  extra model vector storage.  The resulting algorithm
+                  extra model vector storage. The resulting algorithm
                   called CRMN enjoys several interesting properties as
                   monotonically nonincreasing behaviour of the norm of
                   the residual and minimal residual, guaranteeing
@@ -449,7 +479,7 @@
 @CONFERENCE{herrmann2013SEGpmc,
   author = {Tristan van Leeuwen and Felix J. Herrmann},
   title = {A penalty method for PDE-constrained optimization with applications to wave-equation based seismic inversion},
-  booktitle = {SEG Computational Mathematics for Geophysics Workshop, Houston},
+  booktitle = {SEG Workshop on Computational Mathematics for Geophysics, Houston},
   year = {2013},
   month = {09},
   keywords = {SEG, Houston, penalty method, optimization},
@@ -464,7 +494,7 @@
   year = {2013},
   month = {09},
   pages = {3623-3627},
-  organization = {SEG},
+  publisher = {SEG},
   abstract = {Owing to the large scale and dimensionality of a 3D
                   seismic experiment, acquiring fully-sampled data
                   according to the Nyquist criterion is an exceedingly
@@ -503,7 +533,6 @@
   year = {2013},
   month = {09},
   pages = {3628-3633},
-  organization = {SEG},
   abstract = {Recent developments in matrix rank optimization have
                   allowed for new computational approaches in the
                   field of seismic data interpolation. In this paper,
@@ -533,7 +562,6 @@
   year = {2013},
   month = {09},
   pages = {423-427},
-  organization = {SEG},
   abstract = {In this paper, we present an efficient way to compute
                   extended images for all subsurface offsets without
                   explicitly calculating the source and receiver
@@ -561,7 +589,7 @@
   title = {Efficient WEMVA using extended images},
   year = {2013},
   month = {09},
-  organization = {SEG},
+  booktitle = {SEG Workshop on Advances in Model Building, Imaging, and FWI, Houston},
   abstract = {Image gathers as a function of subsurface offset are an
                   important tool for velocity analysis in areas of
                   complex geology. Here, we offer a new perspective on
@@ -575,7 +603,7 @@
                   image volume via efficient matrix-vector
                   products. We illustrate how this can be used to
                   construct objective functions for automated MVA.},
-  keywords = {SEG,workshop,MVA,inversion},
+  keywords = {SEG,workshop,MVA,inversion,poster},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2013/kumar2013SEGMVA/kumar2013SEGMVA_poster.pdf}
 }
 
@@ -589,7 +617,6 @@
   year = {2013},
   month = {09},
   pages = {986-990},
-  organization = {SEG},
   abstract = {Inverting data with elastic phases using an acoustic
                   wave equation can lead to erroneous results,
                   especially when the number of iterations is too
@@ -626,7 +653,6 @@
   year = {2013},
   month = {09},
   pages = {3916-3920},
-  organization = {SEG},
   abstract = {The deconvolutional imaging condition has gained wide
                   attention in recent years, as it is often used to
                   image surface-related multiples. However, we noticed
@@ -655,7 +681,6 @@
   year = {2013},
   month = {09},
   pages = {4640-4644},
-  organization = {SEG},
   abstract = {Linearized inversion is a data fitting procedure that
                   tries to match the observed seismic data with data
                   predicted by linearized modelling. In practice, the
@@ -694,7 +719,6 @@
   year = {2013},
   month = {09},
   pages = {1-6},
-  organization = {SEG},
   abstract = {Leveraging ideas from the field of compressed sensing,
                   we show how simultaneous or blended acquisition can
                   be setup as a -- compressed sensing problem. This
@@ -727,7 +751,7 @@
 @CONFERENCE{lin2013SEGdss,
   author = {Tim T.Y. Lin and Haneet Wason and Felix J. Herrmann},
   title = {Dense shot-sampling via time-jittered marine sources},
-  booktitle = {SEG Simultaneous Sources Workshop, Houston},
+  booktitle = {SEG Workshop on Simultaneous Sources, Houston},
   year = {2013},
   month = {09},
   keywords = {SEG, Houston, acquisition, simultaneous sources},
@@ -738,7 +762,6 @@
 @CONFERENCE{dasilva2013SAMPTAhtuck,
   author = {Curt Da Silva and Felix J. Herrmann},
   title = {Hierarchical Tucker Tensor Optimization - Applications to Tensor Completion},
-  organization = {SAMPTA},
   year = {2013},
   month = {07},
   abstract = {In this work, we develop an optimization framework for
@@ -1028,10 +1051,10 @@
 @CONFERENCE{herrmann2013SEGOMANrdw,
   author = {Felix J. Herrmann},
   title = {Recent developments in wave-equation based inversion technology},
-  booktitle = {SEG FWI Workshop, Oman},
+  booktitle = {SEG Workshop on FWI, Oman},
   year = {2013},
   month = {04},
-  keywords = {SEG, Oman, randomized sampling, exploration seismology, 3D, FWI},
+  keywords = {SEG, workshop, Oman, randomized sampling, exploration seismology, 3D, FWI},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2013/herrmann2013SEGOMANrdw/herrmann2013SEGOMANrdw_pres.pdf}
 }
 
@@ -1487,7 +1510,7 @@
 	and Eric Takam Takougang and Haneet Wason and Felix J. Herrmann},
   title = {FWI from the West Coasts: lessons learned from "Gulf of Mexico Imaging
 	Challenges: What Can Full Waveform Inversion Achieve?"},
-  booktitle = {SEG Technical Program Expanded Abstracts},
+  booktitle = {SEG Workshop on FWI, Las Vegas},
   year = {2012},
   organization = {SEG},
   keywords = {workshop, fwi, SEG},

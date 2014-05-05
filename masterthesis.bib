@@ -3,7 +3,7 @@
 
 @MASTERSTHESIS{petrenko2014THaih,
   author = {Art Petrenko},
-  title = {{Accelerating} an {Iterative} {Helmholtz} {Solver} {Using} {Reconfigurable} {Hardware}},
+  title = {Accelerating an iterative {H}elmholtz solver using reconfigurable hardware},
   school = {University of British Columbia},
   year = {2014},
   abstract = {An implementation of seismic wave simulation on a
@@ -36,7 +36,7 @@
                   algorithm. The main contribution is an
                   implementation of the well-known Kaczmarz row
                   projection algorithm on the FPGA, using techniques
-                  of dataflow programming.  This kernel is used as the
+                  of dataflow programming. This kernel is used as the
                   preconditioning step of CGMN, a modified version of
                   the conjugate gradients method that is used to solve
                   the time-harmonic acoustic isotropic constant
@@ -58,7 +58,7 @@
 
 @MASTERSTHESIS{miao2014THesi,
   author = {Lina Miao},
-  title = {{Efficient} seismic imaging with spectral projector and joint sparsity},
+  title = {Efficient seismic imaging with spectral projector and joint sparsity},
   school = {University of British Columbia},
   year = {2014},
   abstract = {In this thesis, we investigate the potential of
@@ -84,12 +84,12 @@
 
 @MASTERSTHESIS{johnson2013THswr,
   author = {James Johnson},
-  title = {{Seismic} wavefield reconstruction using reciprocity},
+  title = {Seismic wavefield reconstruction using reciprocity},
   school = {University of British Columbia},
   year = {2013},
   abstract = {The primary focus of most reflection seismic surveys is
-                  to help locate hydro-carbon recourses. Due to an
-                  ever increasing scarcity of these recourses, we must
+                  to help locate hydrocarbon recourses. Due to an ever
+                  increasing scarcity of these recourses, we must
                   increase the size and quality of our seismic
                   surveys. However, processing such large seismic data
                   volumes to accurately recover earth properties is a
@@ -127,7 +127,7 @@
 
 @MASTERSTHESIS{alhashim09THsdp,
   author = {Fadhel Abbas Alhashim},
-  title = {{Seismic} {Data} {Processing} with the {Parallel} {Windowed} {Curvelet} {Transform}},
+  title = {Seismic data processing with the parallel windowed curvelet transform},
   school = {University of British Columbia},
   year = {2009},
   type = {masters},
@@ -162,8 +162,8 @@
                   operator that divides large seismic data into
                   smaller more managable datasets that can fit in
                   memory so that it is possible to apply the Bayesian
-                  separation pro- cess in parallel with minimal harm
-                  to the image quality and data integrity. However, by
+                  separation process in parallel with minimal harm to
+                  the image quality and data integrity. However, by
                   dividing the data, we introduce discontinuities. We
                   take these discontinuities into account and compare
                   two ways that different windows may communicate.
@@ -179,7 +179,7 @@
                   spent in the process. We test our windowing operator
                   on a seismic denoising problem and then apply the
                   windowing operator on our sparse-domain Bayesian
-                  primary- multiple separation.},
+                  primary-multiple separation.},
   keywords = {MSc},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2009/alhashim09THsdp_pres.pdf},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2009/alhashim09THsdp.pdf}
@@ -188,166 +188,209 @@
 
 @MASTERSTHESIS{almatar10THesd,
   author = {Mufeed H. AlMatar},
-  title = {{Estimation} of {Surface}-free {Data} by {Curvelet}-domain {Matched} {Filtering}
-	and {Sparse} {Inversion}},
+  title = {Estimation of surface-free data by curvelet-domain matched filtering and sparse inversion},
   school = {University of British Columbia},
   year = {2010},
-  abstract = {A recent robust multiple-elimination technique, based on the underlying
-	principle that relates primary impulse response to total upgoing
-	wavefield, tries to change the paradigm that sees surface-related
-	multiples as noise that needs to be removed from the data prior to
-	imaging. This technique, estimation of primaries by sparse inversion
-	(EPSI), (van Groenestijn and Verschuur, 2009; Lin and Herrmann, 2009),
-	proposes an inversion procedure during which the source function
-	and surface- free impulse response are directly calculated from the
-	upgoing wavefield using an alternating optimization procedure. EPSI
-	hinges on a delicate interplay between surface-related multiples
-	and pri- maries. Finite aperture and other imperfections may violate
-	this relationship. In this thesis, we investigate how to make EPSI
-	more robust by incorporating curvelet- domain matching in its formulation.
-	Compared to surface-related multiple removal (SRME), where curvelet-domain
-	matching was used successfully, incorporating this step has the additional
-	advantage that matches multiples to multiples rather than predicated
-	multiples to total data as in SRME.},
+  abstract = {A recent robust multiple-elimination technique, based on
+                  the underlying principle that relates primary
+                  impulse response to total upgoing wavefield, tries
+                  to change the paradigm that sees surface-related
+                  multiples as noise that needs to be removed from the
+                  data prior to imaging. This technique, estimation of
+                  primaries by sparse inversion (EPSI), (van
+                  Groenestijn and Verschuur, 2009; Lin and Herrmann,
+                  2009), proposes an inversion procedure during which
+                  the source function and surface- free impulse
+                  response are directly calculated from the upgoing
+                  wavefield using an alternating optimization
+                  procedure. EPSI hinges on a delicate interplay
+                  between surface-related multiples and pri-
+                  maries. Finite aperture and other imperfections may
+                  violate this relationship. In this thesis, we
+                  investigate how to make EPSI more robust by
+                  incorporating curvelet-domain matching in its
+                  formulation. Compared to surface-related multiple
+                  removal (SRME), where curvelet-domain matching was
+                  used successfully, incorporating this step has the
+                  additional advantage that matches multiples to
+                  multiples rather than predicated multiples to total
+                  data as in SRME.},
   keywords = {MSc},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2010/almatar10THesd.pdf}
 }
 
+
 @MASTERSTHESIS{dupuis05THssc,
   author = {Catherine Dupuis},
-  title = {{Seismic} singularity characterization with redundant dictionaries},
+  title = {Seismic singularity characterization with redundant dictionaries},
   school = {The University of British Columbia},
   year = {2005},
   type = {masters},
   address = {Vancouver, BC Canada},
-  abstract = {We consider seismic signals as a superposition of waveforms parameterized
-	by their fractional- orders. Each waveform models the reflection
-	of a seismic wave at a particular transition between two lithological
-	layers in the subsurface. The location of the waveforms in the seismic
-	signal corresponds to the depth of the transitions in the subsurface,
-	whereas their fractional-order constitutes a measure of the sharpness
-	of the transitions. By considering fractional-order tran- sitions,
-	we generalize the zero-order transition model of the conventional
-	deconvolution problem, and aim at capturing the different types of
-	transitions. The goal is to delineate and characterize transitions
-	from seismic signals by recovering the locations and fractional-orders
-	of its corre- sponding waveforms. This problem has received increasing
-	interest, and several methods have been proposed, including multi-
-	and monoscale analysis based on Mallat{\textquoteright}s wavelet
-	transform modulus maxima, and seismic atomic decomposition. We propose
-	a new method based on a two-step approach, which divides the initial
-	problem of delineating and characterizing transitions over the whole
-	seismic signal, into two easier sub- problems. The algorithm first
-	partitions the seismic signal into its ma jor components, and then
-	estimates the fractional-orders and locations of each component.
-	Both steps are based on the sparse decomposition of seismic signals
-	in overcomplete dictionaries of waveforms parameter- ized by their
-	fractional-orders, and involve  1 minimizations solved by an iterative
-	thresholding algorithm. We present the method and show numerical
-	results on both synthetic and real data.},
+  abstract = {We consider seismic signals as a superposition of
+                  waveforms parameterized by their fractional-
+                  orders. Each waveform models the reflection of a
+                  seismic wave at a particular transition between two
+                  lithological layers in the subsurface. The location
+                  of the waveforms in the seismic signal corresponds
+                  to the depth of the transitions in the subsurface,
+                  whereas their fractional-order constitutes a measure
+                  of the sharpness of the transitions. By considering
+                  fractional-order transitions, we generalize the
+                  zero-order transition model of the conventional
+                  deconvolution problem, and aim at capturing the
+                  different types of transitions. The goal is to
+                  delineate and characterize transitions from seismic
+                  signals by recovering the locations and
+                  fractional-orders of its corresponding
+                  waveforms. This problem has received increasing
+                  interest, and several methods have been proposed,
+                  including multi- and monoscale analysis based on
+                  Mallat{\textquoteright}s wavelet transform modulus
+                  maxima, and seismic atomic decomposition. We propose
+                  a new method based on a two-step approach, which
+                  divides the initial problem of delineating and
+                  characterizing transitions over the whole seismic
+                  signal, into two easier sub-problems. The algorithm
+                  first partitions the seismic signal into its major
+                  components, and then estimates the fractional-orders
+                  and locations of each component. Both steps are
+                  based on the sparse decomposition of seismic signals
+                  in overcomplete dictionaries of waveforms parameter-
+                  ized by their fractional-orders, and involve
+                  $\ell_1$ minimizations solved by an iterative
+                  thresholding algorithm. We present the method and
+                  show numerical results on both synthetic and real
+                  data.},
   keywords = {MSc},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2005/dupuis05THssc.pdf}
 }
 
+
 @MASTERSTHESIS{kumar09THins,
   author = {Vishal Kumar},
-  title = {{Incoherent} noise suppression and deconvolution using curvelet-domain
-	sparsity},
+  title = {Incoherent noise suppression and deconvolution using curvelet-domain sparsity},
   school = {University of British Columbia},
   year = {2009},
   type = {masters},
-  abstract = {Curvelets are a recently introduced transform domain that belongs
-	to a family of multiscale and also multidirectional data expansions.
-	As such, curvelets can be applied to resolution of the issues of
-	complicated seismic wavefronts. We make use of this multiscale, multidirectional
-	and hence sparsifying ability of the curvelet transform to suppress
-	incoherent noise from crustal data where the signal-to-noise ratio
-	is low and to develop an improved deconvolution procedure. Incoherent
-	noise present in seismic reflection data corrupts the quality of
-	the signal and can often lead to misinterpretation. The curvelet
-	domain lends itself particularly well for denoising because coherent
-	seismic energy maps to a relatively small number of significant curvelet
-	coefficents.},
+  abstract = {Curvelets are a recently introduced transform domain
+                  that belongs to a family of multiscale and also
+                  multidirectional data expansions. As such, curvelets
+                  can be applied to resolution of the issues of
+                  complicated seismic wavefronts. We make use of this
+                  multiscale, multidirectional and hence sparsifying
+                  ability of the curvelet transform to suppress
+                  incoherent noise from crustal data where the
+                  signal-to-noise ratio is low and to develop an
+                  improved deconvolution procedure. Incoherent noise
+                  present in seismic reflection data corrupts the
+                  quality of the signal and can often lead to
+                  misinterpretation. The curvelet domain lends itself
+                  particularly well for denoising because coherent
+                  seismic energy maps to a relatively small number of
+                  significant curvelet coefficents.},
   keywords = {MSc},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2009/kumar09THins.pdf}
 }
 
+
 @MASTERSTHESIS{lebed08THssr,
   author = {Evgeniy Lebed},
-  title = {{Sparse} {Signal} {Recovery} in a {Transform} {Domain}},
+  title = {Sparse signal recovery in a transform domain},
   school = {The University of British Columbia},
   year = {2008},
   type = {masters},
-  abstract = {The ability to efficiently and sparsely represent seismic data is
-	becoming an increasingly important problem in geophysics. Over the
-	last thirty years many transforms such as wavelets, curvelets, contourlets,
-	surfacelets, shear- lets, and many other types of x-lets have been
-	developed. Such transform were leveraged to resolve this issue of
-	sparse representations. In this work we compare the properties of
-	four of these commonly used transforms, namely the shift-invariant
-	wavelets, complex wavelets, curvelets and surfacelets. We also explore
-	the performance of these transforms for the problem of recov- ering
-	seismic wavefields from incomplete measurements.},
+  abstract = {The ability to efficiently and sparsely represent
+                  seismic data is becoming an increasingly important
+                  problem in geophysics. Over the last thirty years
+                  many transforms such as wavelets, curvelets,
+                  contourlets, surfacelets, shearlets, and many other
+                  types of x-lets have been developed. Such transform
+                  were leveraged to resolve this issue of sparse
+                  representations. In this work we compare the
+                  properties of four of these commonly used
+                  transforms, namely the shift-invariant wavelets,
+                  complex wavelets, curvelets and surfacelets. We also
+                  explore the performance of these transforms for the
+                  problem of recovering seismic wavefields from
+                  incomplete measurements.},
   keywords = {MSc},
   month = {08},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2008/lebed08THssr.pdf}
 }
 
+
 @MASTERSTHESIS{maysami08THlcs,
   author = {Mohammad Maysami},
-  title = {{Lithology} constraints from seismic waveforms: application to opal-{A}
-	to opal-{C}{T} transition},
+  title = {Lithology constraints from seismic waveforms: application to opal-{A} to opal-{CT} transition},
   school = {The University of British Columbia},
   year = {2008},
   type = {masters},
   address = {Vancouver, BC Canada},
-  abstract = {In this work, we present a new method for seismic waveform characterization,
-	which is aimed at extracting detailed litho-stratigraphical information
-	from seismic data. We attempt to estimate the lithological attributes
-	from seismic data according to our parametric representation of stratigraphical
-	horizons, where the parameter values provide us with a direct link
-	to nature of lithological transitions. We test our method on a seismic
-	dataset with a strong diagenetic transition (opal-A to opal-CT transition).
-	Given some information from cutting samples of well, we use a percolation-based
-	model to construct the elastic profile of lithological transitions.
-	Our goal is to match parametric representation for the diagenetic
-	transition in both real data and synthetic data given by these elastic
-	profiles. This match may be interpreted as a well-seismic tie, which
-	reveals lithological information about stratigraphical horizons.},
+  abstract = {In this work, we present a new method for seismic
+                  waveform characterization, which is aimed at
+                  extracting detailed litho-stratigraphical
+                  information from seismic data. We attempt to
+                  estimate the lithological attributes from seismic
+                  data according to our parametric representation of
+                  stratigraphical horizons, where the parameter values
+                  provide us with a direct link to nature of
+                  lithological transitions. We test our method on a
+                  seismic dataset with a strong diagenetic transition
+                  (opal-A to opal-CT transition).  Given some
+                  information from cutting samples of well, we use a
+                  percolation-based model to construct the elastic
+                  profile of lithological transitions.  Our goal is to
+                  match parametric representation for the diagenetic
+                  transition in both real data and synthetic data
+                  given by these elastic profiles. This match may be
+                  interpreted as a well-seismic tie, which reveals
+                  lithological information about stratigraphical
+                  horizons.},
   keywords = {MSc},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2008/maysami08THlcs.pdf}
 }
 
+
 @MASTERSTHESIS{yarham08THsgs,
   author = {Carson Yarham},
-  title = {{Seismic} ground-roll separation using sparsity promoting l1 minimization},
+  title = {Seismic ground-roll separation using sparsity promoting l1 minimization},
   school = {The University of British Columbia},
   year = {2008},
   address = {Vancouver, BC Canada},
-  abstract = {The removal of coherent noise generated by surface waves in land based
-	seismic is a prerequisite to imaging the subsurface. These surface
-	waves, termed as ground roll, overlay important reflector information
-	in both the t-x and f-k domains. Standard techniques of ground roll
-	removal commonly alter reflector information as a consequence of
-	the ground roll removal. We propose the combined use of the curvelet
-	domain as a sparsifying basis in which to perform signal separation
-	techniques that can preserve reflector informa- tion while increasing
-	ground roll removal. We examine two signal separation techniques,
-	a block-coordinate relaxation method and a Bayesian separation method.
-	The derivations and background for both methods are presented and
-	the parameter sensitivity is examined. Both methods are shown to
-	be effective in certain situations regarding synthetic data and erroneous
-	surface wave predictions. The block-coordinate relaxation method
-	is shown to have ma jor weaknesses when dealing with seismic signal
-	separation in the pres- ence of noise and with the production of
-	artifacts and reflector degradation. The Bayesian separation method
-	is shown to improve overall separation for both seismic and real
-	data. The Bayesian separation scheme is used on a real data set with
-	a surface wave prediction containing reflector information. It is
-	shown to improve the signal separation by recovering reflector information
-	while improving the surface wave removal. The abstract contains a
-	separate real data example where both the block-coordinate relaxation
-	method and the Bayesian separation method are compared. },
+  abstract = {The removal of coherent noise generated by surface waves
+                  in land based seismic is a prerequisite to imaging
+                  the subsurface. These surface waves, termed as
+                  ground roll, overlay important reflector information
+                  in both the t-x and f-k domains. Standard techniques
+                  of ground roll removal commonly alter reflector
+                  information as a consequence of the ground roll
+                  removal. We propose the combined use of the curvelet
+                  domain as a sparsifying basis in which to perform
+                  signal separation techniques that can preserve
+                  reflector information while increasing ground roll
+                  removal. We examine two signal separation
+                  techniques, a block-coordinate relaxation method and
+                  a Bayesian separation method. The derivations and
+                  background for both methods are presented and the
+                  parameter sensitivity is examined. Both methods are
+                  shown to be effective in certain situations
+                  regarding synthetic data and erroneous surface wave
+                  predictions. The block-coordinate relaxation method
+                  is shown to have ma jor weaknesses when dealing with
+                  seismic signal separation in the presence of noise
+                  and with the production of artifacts and reflector
+                  degradation. The Bayesian separation method is shown
+                  to improve overall separation for both seismic and
+                  real data. The Bayesian separation scheme is used on
+                  a real data set with a surface wave prediction
+                  containing reflector information. It is shown to
+                  improve the signal separation by recovering
+                  reflector information while improving the surface
+                  wave removal. The abstract contains a separate real
+                  data example where both the block-coordinate
+                  relaxation method and the Bayesian separation method
+                  are compared.},
   keywords = {MSc},
   month = {05},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2008/yarham08THsgs.pdf}

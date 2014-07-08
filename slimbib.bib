@@ -11506,6 +11506,137 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+@TECHREPORT{esser2014SEGsgp,
+  author = {Ernie Esser and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  title = {A scaled gradient projection method for total variation regularized full waveform inversion},
+  year = {2014},
+  month = {04},
+  institution = {UBC},
+  abstract = {We propose an extended full waveform inversion
+                  formulation that includes convex constraints on the
+                  model. In particular, we show how to simultaneously
+                  constrain the total variation of the slowness
+                  squared while enforcing bound constraints to keep it
+                  within a physically realistic range. Synthetic
+                  experiments show that including total variation
+                  regularization can improve the recovery of a high
+                  velocity perturbation to a smooth background model.},
+  keywords = {full waveform inversion, convex constraints, total variation regularization},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2014/esser2014SEGsgp/esser2014SEGsgp.html}
+}
+
+@TECHREPORT{zfang2014SEGsqn,
+  author = {Zhilong Fang and Felix J. Herrmann},
+  title = {A stochastic quasi-Newton {McMC} method for uncertainty quantification of full-waveform inversion},
+  year = {2014},
+  month = {04},
+  institution = {UBC},
+  abstract = {In this work we propose a stochastic quasi-Newton Markov
+                  chain Monte Carlo (McMC) method to quantify the
+                  uncertainty of full-waveform inversion (FWI). We
+                  formulate the uncertainty quantification problem in
+                  the framework of the Bayesian inference, which
+                  formulates the posterior probability as the
+                  conditional probability of the model given the
+                  observed data. The Metropolis-Hasting algorithm is
+                  used to generate samples satisfying the posterior
+                  probability density function (pdf) to quantify the
+                  uncertainty. However it suffers from the challenge
+                  to construct a proposal distribution that
+                  simultaneously provides a good representation of the
+                  true posterior pdf and is easy to manipulate. To
+                  address this challenge, we propose a stochastic
+                  quasi-Newton McMC method, which relies on the fact
+                  that the Hessian of the deterministic problem is
+                  equivalent to the inverse of the covariance matrix
+                  of the posterior pdf. The l-BFGS (limited-memory
+                  Broyden–Fletcher–Goldfarb–Shanno) Hessian is used to
+                  approximate the inverse of the covariance matrix
+                  efficiently, and the randomized source sub-sampling
+                  strategy is used to reduce the computational cost of
+                  evaluating the posterior pdf and constructing the
+                  l-BFGS Hessian. Numerical experiments show the
+                  capability of this stochastic quasi-Newton McMC
+                  method to quantify the uncertainty of FWI with a
+                  considerable low cost.},
+  keywords = {FWI, uncertainty quantification, quasi-Newton, McMC},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2014/zfang2014SEGsqn/zfang2014SEGsqn.html}
+}
+
+@TECHREPORT{wang2014SEGfwi,
+  author = {Rongrong Wang and Ozgur Yilmaz and Felix J. Herrmann},
+  title = {Full waveform inversion with interferometric measurements},
+  year = {2014},
+  month = {04},
+  institution = {UBC},
+  abstract = {In this note, we design new misfit functions for
+                  full-waveform inversion by using interferometric
+                  measurements to reduce sensitivity to phase
+                  errors. Though established within a completely
+                  different setting from the linear case, we obtain a
+                  similar observation: the interferometry can improve
+                  robustness under certain modeling errors. Moreover,
+                  in order to deal with errors on both source and
+                  receiver sides, we propose a higher order
+                  interferometry, which, as a generalization of the
+                  usual definition, involves the cross correlation of
+                  four traces. A proof of principle simulations is
+                  included on a stylized example.},
+  keywords = {FWI},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2014/wang2014SEGfwi/wang2014SEGfwi.html}
+}
+
+@TECHREPORT{kumar2014SEGmcu,
+  author = {Rajiv Kumar and Oscar Lopez and Ernie Esser and Felix J. Herrmann},
+  title = {Matrix completion on unstructured grids : 2-D seismic data regularization and interpolation},
+  year = {2014},
+  month = {04},
+  institution = {UBC},
+  abstract = {Seismic data interpolation via rank-minimization
+                  techniques has been recently introduced in the
+                  seismic community. All the existing
+                  rank-minimization techniques assume the recording
+                  locations to be on a regular grid, e.g. sampled
+                  periodically, but seismic data are typically
+                  irregularly sampled along spatial axes. Other than
+                  the irregularity of the sampled grid, we often have
+                  missing data. In this paper, we study the effect of
+                  grid irregularity to conduct matrix completion on a
+                  regular grid for unstructured data. We propose an
+                  improvement of existing rank-minimization techniques
+                  to do regularization. We also demonstrate that we
+                  can perform seismic data regularization and
+                  interpolation simultaneously. We illustrate the
+                  advantages of the modification using a real seismic
+                  line from the Gulf of Suez to obtain high quality
+                  results for regularization and interpolation, a key
+                  application in exploration geophysics.},
+  keywords = {regularization, interpolation, matrix completion, NFFT},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2014/kumar2014SEGmcu/kumar2014SEGmcu.html}
+}
+
+
+@TECHREPORT{smithyman2014SEGjfw,
+  author = {Brendan R. Smithyman and Bas Peters and Bryan DeVault and Felix J. Herrmann},
+  title = {Joint full-waveform inversion of on-land surface and {VSP} data from the {Permian} {Basin}},
+  year = {2014},
+  month = {04},
+  institution = {UBC},
+  abstract = {Full-waveform Inversion is applied to generate a
+                  high-resolution model of P-wave velocity for a site
+                  in the Permian Basin, Texas, USA. This investigation
+                  jointly inverts seismic waveforms from a surface 3-D
+                  vibroseis surface seismic survey and a co-located
+                  3-D Vertical Seismic Profiling (VSP) survey, which
+                  shared common source Vibration Points (VPs). The
+                  resulting velocity model captures features that were
+                  not resolvable by conventional migration velocity
+                  analysis.},
+  keywords = {full-waveform inversion, seismic, land, vibroseis, downhole receivers},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2014/smithyman2014SEGjfw/smithyman2014SEGjfw.html}
+}
+
+
 @TECHREPORT{slim2014NSERCpr,
   author = {Felix J. Herrmann},
   title = {{NSERC} 2014 {DNOISE} progress report},
@@ -12440,8 +12571,8 @@
                   auto-convolution terms are enough to satisfactorily
                   mitigate the effects of data gaps during the
                   inversion process.},
-  keywords = {EPSI, REPSI, multiples, inversion, algorithm, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/lin2014SEGmdg/lin2014SEGmdg.html}
+  keywords = {EPSI, REPSI, multiples, inversion, algorithm},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/lin2014SEGmdg/lin2014SEGmdg.html}
 }
 
 
@@ -12462,29 +12593,11 @@
                   and recovery performance by using AMP in Fourier
                   domain as a preprocessor for the L1 recovery in
                   Curvelet domain.},
-  keywords = {interpolation, AMP, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/ghadermarzy2014SEGsti/ghadermarzy2014SEGsti.html}
+  keywords = {interpolation, AMP},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/ghadermarzy2014SEGsti/ghadermarzy2014SEGsti.html}
 }
 
 
-@UNPUBLISHED{esser2014SEGsgp,
-  author = {Ernie Esser and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
-  title = {A scaled gradient projection method for total variation regularized full waveform inversion},
-  year = {2014},
-  month = {04},
-  institution = {UBC},
-  abstract = {We propose an extended full waveform inversion
-                  formulation that includes convex constraints on the
-                  model. In particular, we show how to simultaneously
-                  constrain the total variation of the slowness
-                  squared while enforcing bound constraints to keep it
-                  within a physically realistic range. Synthetic
-                  experiments show that including total variation
-                  regularization can improve the recovery of a high
-                  velocity perturbation to a smooth background model.},
-  keywords = {full waveform inversion, convex constraints, total variation regularization, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/esser2014SEGsgp/esser2014SEGsgp.html}
-}
 
 
 @UNPUBLISHED{miao2014SEGrhss,
@@ -12498,72 +12611,14 @@
                   (Chandrasekaran et al., 2006) to achieve a stable
                   and affordable two-way wave equation depth stepping
                   migration algorithm.},
-  keywords = {acoustic, randomized SVD, spectral projector, full wave equation migration, depth extrapolation, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/miao2014SEGrhss/miao2014SEGrhss.html}
+  keywords = {acoustic, randomized SVD, spectral projector, full wave equation migration, depth extrapolation},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/miao2014SEGrhss/miao2014SEGrhss.html}
 }
 
 
-@UNPUBLISHED{zfang2014SEGsqn,
-  author = {Zhilong Fang and Felix J. Herrmann},
-  title = {A stochastic quasi-Newton {McMC} method for uncertainty quantification of full-waveform inversion},
-  year = {2014},
-  month = {04},
-  institution = {UBC},
-  abstract = {In this work we propose a stochastic quasi-Newton Markov
-                  chain Monte Carlo (McMC) method to quantify the
-                  uncertainty of full-waveform inversion (FWI). We
-                  formulate the uncertainty quantification problem in
-                  the framework of the Bayesian inference, which
-                  formulates the posterior probability as the
-                  conditional probability of the model given the
-                  observed data. The Metropolis-Hasting algorithm is
-                  used to generate samples satisfying the posterior
-                  probability density function (pdf) to quantify the
-                  uncertainty. However it suffers from the challenge
-                  to construct a proposal distribution that
-                  simultaneously provides a good representation of the
-                  true posterior pdf and is easy to manipulate. To
-                  address this challenge, we propose a stochastic
-                  quasi-Newton McMC method, which relies on the fact
-                  that the Hessian of the deterministic problem is
-                  equivalent to the inverse of the covariance matrix
-                  of the posterior pdf. The l-BFGS (limited-memory
-                  Broyden–Fletcher–Goldfarb–Shanno) Hessian is used to
-                  approximate the inverse of the covariance matrix
-                  efficiently, and the randomized source sub-sampling
-                  strategy is used to reduce the computational cost of
-                  evaluating the posterior pdf and constructing the
-                  l-BFGS Hessian. Numerical experiments show the
-                  capability of this stochastic quasi-Newton McMC
-                  method to quantify the uncertainty of FWI with a
-                  considerable low cost.},
-  keywords = {FWI, uncertainty quantification, quasi-Newton, McMC, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/zfang2014SEGsqn/zfang2014SEGsqn.html}
-}
 
 
-@UNPUBLISHED{wang2014SEGfwi,
-  author = {Rongrong Wang and Ozgur Yilmaz and Felix J. Herrmann},
-  title = {Full waveform inversion with interferometric measurements},
-  year = {2014},
-  month = {04},
-  institution = {UBC},
-  abstract = {In this note, we design new misfit functions for
-                  full-waveform inversion by using interferometric
-                  measurements to reduce sensitivity to phase
-                  errors. Though established within a completely
-                  different setting from the linear case, we obtain a
-                  similar observation: the interferometry can improve
-                  robustness under certain modeling errors. Moreover,
-                  in order to deal with errors on both source and
-                  receiver sides, we propose a higher order
-                  interferometry, which, as a generalization of the
-                  usual definition, involves the cross correlation of
-                  four traces. A proof of principle simulations is
-                  included on a stylized example.},
-  keywords = {FWI, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/wang2014SEGfwi/wang2014SEGfwi.html}
-}
+
 
 
 @UNPUBLISHED{oghenekohwo2014SEGrsw,
@@ -12600,8 +12655,8 @@
                   data acquired with initially poor repeatability
                   levels, provided the survey geometry details are
                   known afterwards.},
-  keywords = {acquisition, repetition, 4D, time-lapse, random, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/oghenekohwo2014SEGrsw/oghenekohwo2014SEGrsw.html}
+  keywords = {acquisition, repetition, 4D, time-lapse, random},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/oghenekohwo2014SEGrsw/oghenekohwo2014SEGrsw.html}
 }
 
 
@@ -12628,60 +12683,11 @@
                   at very low cost. This results in decent
                   reconstruction of the multiple parameters at very
                   low additional memory and computational expense.},
-  keywords = {full-waveform inversion, optimization, Hessian, penalty method, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/peters2014SEGsrh/peters2014SEGsrh.html}
+  keywords = {full-waveform inversion, optimization, Hessian, penalty method},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/peters2014SEGsrh/peters2014SEGsrh.html}
 }
 
 
-@UNPUBLISHED{kumar2014SEGmcu,
-  author = {Rajiv Kumar and Oscar Lopez and Ernie Esser and Felix J. Herrmann},
-  title = {Matrix completion on unstructured grids : 2-D seismic data regularization and interpolation},
-  year = {2014},
-  month = {04},
-  institution = {UBC},
-  abstract = {Seismic data interpolation via rank-minimization
-                  techniques has been recently introduced in the
-                  seismic community. All the existing
-                  rank-minimization techniques assume the recording
-                  locations to be on a regular grid, e.g. sampled
-                  periodically, but seismic data are typically
-                  irregularly sampled along spatial axes. Other than
-                  the irregularity of the sampled grid, we often have
-                  missing data. In this paper, we study the effect of
-                  grid irregularity to conduct matrix completion on a
-                  regular grid for unstructured data. We propose an
-                  improvement of existing rank-minimization techniques
-                  to do regularization. We also demonstrate that we
-                  can perform seismic data regularization and
-                  interpolation simultaneously. We illustrate the
-                  advantages of the modification using a real seismic
-                  line from the Gulf of Suez to obtain high quality
-                  results for regularization and interpolation, a key
-                  application in exploration geophysics.},
-  keywords = {regularization, interpolation, matrix completion, NFFT, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/kumar2014SEGmcu/kumar2014SEGmcu.html}
-}
-
-
-@UNPUBLISHED{smithyman2014SEGjfw,
-  author = {Brendan R. Smithyman and Bas Peters and Bryan DeVault and Felix J. Herrmann},
-  title = {Joint full-waveform inversion of on-land surface and {VSP} data from the {Permian} {Basin}},
-  year = {2014},
-  month = {04},
-  institution = {UBC},
-  abstract = {Full-waveform Inversion is applied to generate a
-                  high-resolution model of P-wave velocity for a site
-                  in the Permian Basin, Texas, USA. This investigation
-                  jointly inverts seismic waveforms from a surface 3-D
-                  vibroseis surface seismic survey and a co-located
-                  3-D Vertical Seismic Profiling (VSP) survey, which
-                  shared common source Vibration Points (VPs). The
-                  resulting velocity model captures features that were
-                  not resolvable by conventional migration velocity
-                  analysis.},
-  keywords = {full-waveform inversion, seismic, land, vibroseis, downhole receivers, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/smithyman2014SEGjfw/smithyman2014SEGjfw.html}
-}
 
 
 @UNPUBLISHED{wason2014SEGrrt,
@@ -12698,8 +12704,8 @@
                   does not require repetition, gives 4-D signals
                   comparable to conventional methods where
                   repeatability is key to their success.},
-  keywords = {marine, acquisition, time-laspe, deblending, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/wason2014SEGrrt/wason2014SEGrrt.html}
+  keywords = {marine, acquisition, time-laspe, deblending},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/wason2014SEGrrt/wason2014SEGrrt.html}
 }
 
 
@@ -12726,8 +12732,8 @@
                   blended acquisition, wherein uniformly random time
                   delays (of < 1 second) are applied to one of the
                   sources.},
-  keywords = {source separation, deblending, marine, acquisition, rank, HSS, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2014/wason2014SEGsss/wason2014SEGsss.html}
+  keywords = {source separation, deblending, marine, acquisition, rank, HSS},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/wason2014SEGsss/wason2014SEGsss.html}
 }
 
 

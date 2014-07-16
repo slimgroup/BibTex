@@ -535,6 +535,37 @@
 }
 
 
+@TECHREPORT{vanLeeuwen2013Penalty2,
+  author = {Tristan van Leeuwen and Felix J. Herrmann},
+  title = {A penalty method for {PDE}-constrained optimization},
+  year = {2013},
+  institution = {UBC},
+  abstract = {We present a method for solving PDE constrained
+                  optimization problems based on a penalty
+                  formulation. This method aims to combine advantages
+                  of both full-space and reduced methods by exploiting
+                  a large search-space (consisting of both control and
+                  state variables) while allowing for an efficient
+                  implementation that avoids storing and updating the
+                  state-variables. This leads to a method that has
+                  roughly the same per-iteration complexity as
+                  conventional reduced approaches while dening an
+                  objective that is less non-linear in the control
+                  variable by implicitly relaxing the constraint. We
+                  apply the method to a seismic inverse problem where
+                  it leads to a particularly ecient implementation
+                  when compared to a conventional reduced approach as
+                  it avoids the use of adjoint
+                  state-variables. Numerical examples illustrate the
+                  approach and suggest that the proposed formulation
+                  can indeed mitigate some of the well-known problems
+                  with local minima in the seismic inverse problem.},
+  keywords = {waveform inversion, optimization},
+  month = {04},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2013/vanLeeuwen2013Penalty2/vanLeeuwen2013Penalty2.pdf}
+}
+
+
 @TECHREPORT{vanleeuwen2012CGMN,
   author = {Tristan van Leeuwen},
   title = {Fourier analysis of the {CGMN} method for solving the {Helmholtz} equation},
@@ -919,7 +950,7 @@
 
 
 @TECHREPORT{vanleeuwen2012SEGparallel,
-  author = {Tristan {van Leeuwen} and Felix J. Herrmann},
+  author = {Tristan van Leeuwen and Felix J. Herrmann},
   title = {A parallel, object-oriented framework for frequency-domain wavefield imaging and inversion.},
   institution = {Department of Earth and Ocean Sciences},
   year = {2012},
@@ -948,6 +979,30 @@
   month = {04},
   organization = {SEG},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2012/vanleeuwen2012SEGparallel/vanleeuwen2012SEGparallel.pdf}
+}
+
+
+@TECHREPORT{vanleeuwen2012smii,
+  author = {Tristan van Leeuwen},
+  title = {A parallel matrix-free framework for frequency-domain seismic modelling, imaging and inversion in Matlab},
+  year = {2012},
+  abstract = {I present a parallel matrix-free framework for
+                  frequency-domain seismic modeling, imaging and
+                  inversion. The framework provides basic building
+                  blocks for designing and testing optimization-based
+                  formulations of both linear and non-linear seismic
+                  in- verse problems. By overloading standard
+                  linear-algebra operations, such as matrix-vector
+                  multiplications, standard optimization packages can
+                  be used to work with the code without any
+                  modification. This leads to a scalable testbed on
+                  which new methods can be rapidly prototyped and
+                  tested on medium-sized 2D problems. I present some
+                  numerical examples on both linear and non-linear
+                  seismic inverse problems.},
+  keywords = {seismic imaging, optimization, Matlab, object-oriented programming},
+  month = {07},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2012/vanleeuwen2012smii/vanleeuwen2012smii.pdf}
 }
 
 

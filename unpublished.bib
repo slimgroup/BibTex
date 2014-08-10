@@ -3,6 +3,62 @@
 
 %-----2014-----%
 
+@UNPUBLISHED{kumar2014GEOPemc,
+  author = {Rajiv Kumar and Curt Da Silva and Okan Akalin and Aleksandr Y. Aravkin and Hassan Mansour and Ben Recht and Felix J. Herrmann},
+  title = {Efficient matrix completion for seismic data reconstruction},
+  year = {2014},
+  month = {08},
+  institution = {UBC},
+  abstract = {Despite recent developments in improved acquisition,
+                  seismic data often remains undersampled along source
+                  and/or receiver coordinates, resulting in incomplete
+                  data for key applications such as migration and
+                  multiple prediction requiring densely sampled,
+                  alias-free wide azimuth data. When seismic data is
+                  organized in monochromatic frequency slices,
+                  missing-trace interpolation can be cast into a
+                  matrix completion problem, where the low-rank
+                  structure of seismic data in the appropriate domain
+                  can be exploited to recover densely sampled data
+                  volumes from data with missing entries. Current
+                  approaches that exploit low-rank structure are based
+                  on repeated singular value decompositions, which
+                  become prohibitively expensive for large-scale
+                  problems unless the data is partitioned and
+                  processed in small windows. While computationally
+                  manageable, our theory and experiments show degraded
+                  results when the windows sizes become too small. To
+                  overcome this problem, we carry out our
+                  interpolations for each frequency independently
+                  while working with the complete data in the
+                  midpoint-offset domain instead of windowing. For
+                  lateral varying geologies that are not too complex,
+                  working in the midpoint-offset domain leads to
+                  favorable rank minimization recovery because the
+                  singular values decay faster while sampling-related
+                  artifacts remain full rank. This combination of fast
+                  decay and full-rank artifacts agrees with the
+                  principles of the compressive sensing paradigm,
+                  which is based on exploiting (low-rank) structure, a
+                  sampling process that breaks this structure, and a
+                  rank-minimizing optimization that restores the
+                  signal's structure and interpolates the subsampled
+                  data. To make our proposed method computationally
+                  viable and practical, we introduce a
+                  factorization-based approach that avoids computing
+                  the singular values, and that therefore scales to
+                  large seismic data problems as long as the factors
+                  can be stored in memory. Tests on realistic two- and
+                  three-dimensional seismic data show that our method
+                  compares favorably, both in terms of computational
+                  speed and recovery quality, to existing
+                  curvelet-based and tensor-based techniques.},
+  keywords = {interpolation, low-rank, private},
+  note = {Submitted to Geophysics on August 8, 2014.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/kumar2014GEOPemc/kumar2014GEOPemc.pdf}
+}
+
+
 @UNPUBLISHED{oghenekohwo2014GEOPfrt,
   author = {Felix Oghenekohwo and Haneet Wason and Ernie Esser and Felix J. Herrmann},
   title = {Foregoing repetition in time-lapse seismic --- reaping benefits of randomized sampling and joint recovery},

@@ -404,9 +404,43 @@
 }
 
 
+@ARTICLE{vandenberg2010IEEEter,
+  author = {Ewout {van den Berg} and Michael P. Friedlander},
+  title = {Theoretical and empirical results for recovery from multiple measurements},
+  journal = {IEEE Transactions on Information Theory},
+  year = {2010},
+  month = {05},
+  volume = {56},
+  number = {5},
+  pages = {2516-2527},
+  abstract = {The joint-sparse recovery problem aims to recover, from
+                  sets of compressed measurements, unknown sparse
+                  matrices with nonzero entries restricted to a subset
+                  of rows. This is an extension of the
+                  single-measurement-vector (SMV) problem widely
+                  studied in compressed sensing. We analyze the
+                  recovery properties for two types of recovery
+                  algorithms. First, we show that recovery using
+                  sum-of-norm minimization cannot exceed the uniform
+                  recovery rate of sequential SMV using L1
+                  minimization, and that there are problems that can
+                  be solved with one approach but not with the
+                  other. Second, we analyze the performance of the
+                  ReMBo algorithm [M. Mishali and Y. Eldar, IEEE
+                  Trans. Sig. Proc., 56 (2008)] in combination with L1
+                  minimization, and show how recovery improves as more
+                  measurements are taken. From this analysis it
+                  follows that having more measurements than number of
+                  nonzero rows does not improve the potential
+                  theoretical recovery rate.},
+  keywords = {convex optimization, joint sparsity, multiple channels, sparse recovery},
+  doi = {10.1109/TIT.2010.2043876},
+  url = {http://www.math.ucdavis.edu/%7Empf/2010-joint-sparsity.html}
+}
+
+
 @ARTICLE{vandenberg08gsv,
-  author = {Ewout {van den Berg} and Mark Schmidt and Michael P. Friedlander
-	and K. Murphy},
+  author = {Ewout {van den Berg} and Mark Schmidt and Michael P. Friedlander and K. Murphy},
   title = {Group sparsity via linear-time projection},
   year = {2008},
   number = {TR-2008-09},
@@ -423,6 +457,29 @@
   institution = {UBC - Department of Computer Science},
   keywords = {SLIM, optimization},
   url = {http://www.cs.ubc.ca/~ewout78/papers/TR-2008-09.pdf}
+}
+
+
+@ARTICLE{vandenberg2009ACMstf,
+  author = {Ewout {van den Berg} and Michael P. Friedlander and Gilles Hennenfent and Felix J. Herrmann and Rayan Saab and Ozgur Yilmaz},
+  title = {Sparco: a testing framework for sparse reconstruction},
+  year = {2009},
+  month = {02},
+  journal = {{ACM} Transactions on Mathematical Software},
+  volume = {35},
+  number = {4},
+  pages = {1-16},
+  abstract = {Sparco is a framework for testing and benchmarking
+                  algorithms for sparse reconstruction. It includes a
+                  large collection of sparse reconstruction problems
+                  drawn from the imaging, compressed sensing, and
+                  geophysics literature. Sparco is also a framework
+                  for implementing new test problems and can be used
+                  as a tool for reproducible research. Sparco is
+                  implemented entirely in Matlab, and is released as
+                  open-source software under the GNU Public License.},
+  keywords = {compressed sensing, sparse recovery, linear operators},
+  url = {http://doi.acm.org/10.1145/1462173.1462178}
 }
 
 
@@ -582,18 +639,31 @@
 }
 
 
-@ARTICLE{friedlander2007TASdtd,
-  author = {Michael P. Friedlander and M. A. Saunders},
-  title = {Discussion: the {Dantzig} selector: statistical estimation when p is much larger then n},
-  journal = {The Annals of Statistics},
-  year = {2007},
-  volume = {35},
-  pages = {2385-2391},
-  number = {6},
-  month = {03},
-  keywords = {dantzig, SLIM, statistics},
-  doi = {10.1214/009053607000000479},
-  url = {http://www.cs.ubc.ca/~mpf/2007-discussion-of-the-dantzig-selector.html}
+@ARTICLE{vandenberg2011SIAMsol,
+  author = {Ewout {van den Berg} and Michael P. Friedlander},
+  title = {Sparse optimization with least-squares constraints},
+  journal = {SIAM Journal on Optimization},
+  year = {2011},
+  month = {11},
+  volume = {21},
+  number = {4},
+  pages = {1201–1229},
+  abstract = {The use of convex optimization for the recovery of
+                  sparse signals from incomplete or compressed data is
+                  now common practice. Motivated by the success of
+                  basis pursuit in recovering sparse vectors, new
+                  formulations have been proposed that take advantage
+                  of different types of sparsity. In this paper we
+                  propose an efficient algorithm for solving a general
+                  class of sparsifying formulations. For several
+                  common types of sparsity we provide applications,
+                  along with details on how to apply the algorithm,
+                  and experimental results.},
+  keywords = {basis pursuit, compressed sensing, convex program,
+                  duality, group sparsity, matrix completion, Newton’s
+                  method, root-finding, sparse solutions},
+  doi = {10.1137/100785028},
+  url = {http://www.math.ucdavis.edu/%7Empf/2010-sparse-optimization-with-least-squares.html}
 }
 
 
@@ -624,7 +694,7 @@
   keywords = {optimization},
   doi = {10.1137/110830629},
   publisher = {Department of Computer Science},
-  url = {http://www.cs.ubc.ca/~mpf/2011-hybrid-for-data-fitting.html}
+  url = {http://www.cs.ubc.ca/%7Empf/2011-hybrid-for-data-fitting.html}
 }
 
 
@@ -657,7 +727,7 @@
 @ARTICLE{friedlander2007SJOero,
   author = {Michael P. Friedlander and P. Tseng},
   title = {Exact regularization of convex programs},
-  journal = {SIAM J. Optim},
+  journal = {SIAM Journal on Optimization},
   year = {2007},
   volume = {18},
   pages = {1326-1350},
@@ -698,6 +768,21 @@
   keywords = {SLIM,Optimization},
   doi = {10.1137/060675320},
   url = {http://www.cs.ubc.ca/~mpf/2007-exact-regularization.html}
+}
+
+
+@ARTICLE{friedlander2007TASdtd,
+  author = {Michael P. Friedlander and M. A. Saunders},
+  title = {Discussion: the {Dantzig} selector: statistical estimation when p is much larger then n},
+  journal = {The Annals of Statistics},
+  year = {2007},
+  volume = {35},
+  pages = {2385-2391},
+  number = {6},
+  month = {03},
+  keywords = {dantzig, SLIM, statistics},
+  doi = {10.1214/009053607000000479},
+  url = {http://www.cs.ubc.ca/~mpf/2007-discussion-of-the-dantzig-selector.html}
 }
 
 

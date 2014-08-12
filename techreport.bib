@@ -809,72 +809,14 @@
 }
 
 
-@TECHREPORT{vandenberg10TRsol,
-  author = {Ewout {van den Berg} and Michael P. Friedlander},
-  title = {Sparse optimization with least-squares constraints},
-  institution = {Department of Computer Science},
-  year = {2010},
-  type = {Technical Report},
-  number = {TR-2010-02},
-  address = {University of British Columbia, Vancouver},
-  abstract = {The use of convex optimization for the recovery of
-                  sparse signals from incomplete or compressed data is
-                  now common practice. Motivated by the success of
-                  basis pursuit in recovering sparse vectors, new
-                  formulations have been proposed that take advantage
-                  of different types of sparsity. In this paper we
-                  propose an efficient algorithm for solving a general
-                  class of sparsifying formulations. For several
-                  common types of sparsity we provide applications,
-                  along with details on how to apply the algorithm,
-                  and experimental results.},
-  month = {01},
-  url = {http://www.cs.ubc.ca/~mpf/papers/2011BergFriedlander.pdf}
-}
-
-
-@TECHREPORT{vandenberg09TRter,
-  author = {Ewout {van den Berg} and Michael P. Friedlander},
-  title = {Theoretical and empirical results for recovery from multiple measurements},
-  institution = {Department of Computer Science},
-  year = {2009},
-  type = {Tech. Rep.},
-  number = {TR-2009-7},
-  address = {University of British Columbia, Vancouver},
-  abstract = {The joint-sparse recovery problem aims to recover, from
-                  sets of compressed measurements, unknown sparse
-                  matrices with nonzero entries restricted to a subset
-                  of rows. This is an extension of the
-                  single-measurement-vector (SMV) problem widely
-                  studied in compressed sensing. We analyze the
-                  recovery properties for two types of recovery
-                  algorithms. First, we show that recovery using
-                  sum-of-norm minimization cannot exceed the uniform
-                  recovery rate of sequential SMV using L1
-                  minimization, and that there are problems that can
-                  be solved with one approach but not with the
-                  other. Second, we analyze the performance of the
-                  ReMBo algorithm [M. Mishali and Y. Eldar, IEEE
-                  Trans. Sig. Proc., 56 (2008)] in combination with L1
-                  minimization, and show how recovery improves as more
-                  measurements are taken. From this analysis it
-                  follows that having more measurements than number of
-                  nonzero rows does not improve the potential
-                  theoretical recovery rate.},
-  month = {09},
-  url = {http://www.cs.ubc.ca/~mpf/papers/vdBergFriedlander09.pdf}
-}
-
-
 @TECHREPORT{vandenberg07TRipr,
   author = {Ewout {van den Berg} and Michael P. Friedlander},
   title = {In pursuit of a root},
   institution = {Department of Computer Science},
   year = {2007},
-  type = {Technical Report},
+  month = {06},
   number = {TR-2007-19},
   address = {University of British Columbia, Vancouver},
-  month = {06},
   abstract = {The basis pursuit technique is used to find a minimum
                   one-norm solution of an underdetermined
                   least-squares problem. Basis pursuit denoise fits
@@ -891,29 +833,7 @@
                   curve. Numerical experiments demonstrate that our
                   method, which relies on only matrix-vector
                   operations, scales well to large problems.},
-  url = {http://www.cs.ubc.ca/~mpf/papers/2007BergFriedlander.pdf}
-}
-
-
-@TECHREPORT{vandenberg07TRsat,
-  author = {Ewout {van den Berg} and Michael P. Friedlander and Gilles Hennenfent
-	and Felix J. Herrmann and Rayan Saab and Ozgur Yilmaz},
-  title = {Sparco: a testing framework for sparse reconstruction},
-  institution = {UBC Computer Science Department},
-  year = {2007},
-  number = {TR-2007-20},
-  abstract = {Sparco is a framework for testing and benchmarking
-                  algorithms for sparse reconstruction. It includes a
-                  large collection of sparse reconstruction problems
-                  drawn from the imaging, compressed sensing, and
-                  geophysics literature. Sparco is also a framework
-                  for implementing new test problems and can be used
-                  as a tool for reproducible research. Sparco is
-                  implemented entirely in Matlab, and is released as
-                  open-source software under the GNU Public License.},
-  keywords = {SLIM, Sparco},
-  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Tech%20Report/SINBAD/2007/vandenberg07TRsat.pdf},
-  url = {http://www.cs.ubc.ca/labs/scl/sparco/downloads.php?filename=sparco.pdf}
+  url = {http://www.optimization-online.org/DB_HTML/2007/06/1708.html}
 }
 
 

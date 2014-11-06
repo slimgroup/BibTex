@@ -1,6 +1,57 @@
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+@CONFERENCE{herrmann2014SEGWSfli,
+  author = {Ning Tu and Felix J. Herrmann},
+  title = {Fast linearized inversion with surface-related multiples with source estimation},
+  booktitle = {SEG Workshop on Using Multiples as Signal for Imaging; Denver},
+  year = {2014},
+  month = {10},
+  abstract = {In the well-known SRME relation, multiples are expressed
+                  as the multi-dimensional convolution between the
+                  subsurface Green’s function and the downgoing
+                  receiver wavefield. Therefore these multiples can be
+                  considered as the response of the subsurface to an
+                  "areal" source term given by the same downgoing
+                  receiver wavefield. This relation can be used to
+                  treat these multiples as signals instead of
+                  considering them as noise that must removed before
+                  seismic imaging. However, when we use conventional
+                  reverse-time migration to image these multiple
+                  events, it results in acausal imaging artifacts
+                  caused by cross-correlations between wrong pairs of
+                  up- and downgoing wavefields. We find that these
+                  artifacts can be removed by adopting a
+                  sparsity-promoting least-squares inversion
+                  approach. However, iterative inversions go at the
+                  expense of excessive computational costs. By
+                  combining the SRME relation and wave-equation based
+                  linearized modelling, we are able to significantly
+                  reduce the costs by avoiding the dense matrix-matrix
+                  multiplications of SRME and the number of
+                  wave-equation solves via source subsampling. As a
+                  result, we arrive at a method with a cost comparable
+                  to that of a single reverse-time migration with all
+                  shots.},
+  keywords = {SEG, workshop, multiples, inversion},
+  note = {(SEG Workshop, Denver)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/herrmann2014SEGWSfli/herrmann2014SEGWSfli.pdf},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/herrmann2014SEGWSfli/herrmann2014SEGWSfli_pres.pdf}
+}
+
+
+@CONFERENCE{herrmann2014SEGWS,
+  author = {Felix J. Herrmann and Ernie Esser and Tristan van Leeuwen and Bas Peters},
+  title = {Wavefield {Reconstruction} {Inversion} ({WRI}) – a new take on wave-equation based inversion},
+  booktitle = {SEG Workshop on Full Waveform Inversion - Elastic Approaches and Issues with Anisotropy, Nonshallow Inversion, Poor Starting Model; Denver},
+  year = {2014},
+  month = {10},
+  keywords = {SEG, workshop, WRI, FWI},
+  note = {(SEG Workshop, Denver)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/herrmann2014SEGWSwri/herrmann2014SEGWSwri_pres.pdf}
+}
+
+
 @CONFERENCE{wason2014SEGsss,
   author = {Haneet Wason and Rajiv Kumar and Aleksandr Y. Aravkin and Felix J. Herrmann},
   title = {Source separation via {SVD}-free rank minimization in the hierarchical semi-separable representation},
@@ -26,6 +77,7 @@
                   delays (of < 1 second) are applied to one of the
                   sources.},
   keywords = {SEG, source separation, deblending, marine, acquisition, rank, HSS},
+  note = {(SEG)},
   doi = {http://dx.doi.org/10.1190/segam2014-1583.1},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/wason2014SEGsss/wason2014SEGsss.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/wason2014SEGsss/wason2014SEGsss_pres.pdf}  
@@ -48,6 +100,7 @@
                   comparable to conventional methods where
                   repeatability is key to their success.},
   keywords = {SEG, marine, acquisition, time-laspe, deblending},
+  note = {(SEG)},
   doi = {http://dx.doi.org/10.1190/segam2014-1677.1},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/wason2014SEGrrt/wason2014SEGrrt.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/wason2014SEGrrt/wason2014SEGrrt_pres.pdf}  
@@ -79,6 +132,7 @@
                   reconstruction of the multiple parameters at very
                   low additional memory and computational expense.},
   keywords = {SEG, full-waveform inversion, optimization, Hessian, penalty method},
+  note = {(SEG)},
   doi = {http://dx.doi.org/10.1190/segam2014-1667.1},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/peters2014SEGsrh/peters2014SEGsrh.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/peters2014SEGsrh/peters2014SEGsrh_pres.pdf}
@@ -121,6 +175,7 @@
                   levels, provided the survey geometry details are
                   known afterwards.},
   keywords = {SEG, acquisition, repetition, 4D, time-lapse, random},
+  note = {(SEG)},
   doi = {http://dx.doi.org/10.1190/segam2014-1627.1},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/oghenekohwo2014SEGrsw/oghenekohwo2014SEGrsw.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/oghenekohwo2014SEGrsw/oghenekohwo2014SEGrsw_pres.pdf}
@@ -146,6 +201,7 @@
                   domain as a preprocessor for the L1 recovery in
                   Curvelet domain.},
   keywords = {SEG, interpolation, AMP},
+  note = {(SEG)},
   doi = {http://dx.doi.org/10.1190/segam2014-0577.1},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/ghadermarzy2014SEGsti/ghadermarzy2014SEGsti.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/ghadermarzy2014SEGsti/ghadermarzy2014SEGsti_pres.pdf}
@@ -179,6 +235,7 @@
                   mitigate the effects of data gaps during the
                   inversion process.},
   keywords = {SEG, EPSI, REPSI, multiples, inversion, algorithm},
+  note = {(SEG)},
   doi = {http://dx.doi.org/10.1190/segam2014-1680.1},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/lin2014SEGmdg/lin2014SEGmdg.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/lin2014SEGmdg/lin2014SEGmdg_pres.pdf}
@@ -191,8 +248,8 @@
   year = {2014},
   month = {10},
   date = {5-10},
-  booktitle = {Workshop on Sparse Representations, Numerical Linear Algebra, and Optimization; Banff, Alberta.},
-  keywords = {low-rank, matrix completion, hierarchical tucker, source separation},
+  booktitle = {Workshop on Sparse Representations, Numerical Linear Algebra, and Optimization; Banff},
+  keywords = {workshop, low-rank, matrix completion, hierarchical tucker, source separation},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/BIRS/2014/herrmann2014BIRSlrb_pres.pdf},
   note = {(Workshop at the Banff International Research Station for Mathematical Innovation and Discovery)}
 }
@@ -225,7 +282,7 @@
   title = {Relax the physics and expand the search space – {FWI} via {Wavefield} {Reconstruction} {Inversion}},
   year = {2014},
   month = {05},
-  booktitle = {ROSE Consortium, Norway, 2014},
+  booktitle = {ROSE Consortium; Norway},
   keywords = {ROSE, Consortium, FWI, WRI},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ROSE/2014/herrmann2014ROSErpe.pdf},
   note = {(ROSE Consortium)}
@@ -237,7 +294,7 @@
   title = {Randomization and repeatability in time-lapse marine acquisition},
   year = {2014},
   month = {04},
-  booktitle = {EAGE Workshop on Land and Ocean Bottom; Broadband Full Azimuth Seismic Surveys, Spain, 2014},
+  booktitle = {EAGE Workshop on Land and Ocean Bottom; Broadband Full Azimuth Seismic Surveys; Spain},
   keywords = {EAGE, workshop, 4D seismic, marine acquisition},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2014/herrmann2014EAGEWSrrt.pdf},
   note = {(EAGE Workshop, Spain)}
@@ -741,10 +798,10 @@
 @CONFERENCE{herrmann2013SEGpmc,
   author = {Tristan van Leeuwen and Felix J. Herrmann},
   title = {A penalty method for PDE-constrained optimization with applications to wave-equation based seismic inversion},
-  booktitle = {SEG Workshop on Computational Mathematics for Geophysics, Houston},
+  booktitle = {SEG Workshop on Computational Mathematics for Geophysics; Houston},
   year = {2013},
   month = {09},
-  keywords = {SEG, Houston, penalty method, optimization},
+  keywords = {SEG, workshop, penalty method, optimization},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2013/herrmann2013SEGpmc/herrmann2013SEGpmc_pres.pdf}
 }
 
@@ -849,7 +906,7 @@
   title = {Efficient {WEMVA} using extended images},
   year = {2013},
   month = {09},
-  booktitle = {SEG Workshop on Advances in Model Building, Imaging, and FWI, Houston},
+  booktitle = {SEG Workshop on Advances in Model Building, Imaging, and FWI; Houston},
   abstract = {Image gathers as a function of subsurface offset are an
                   important tool for velocity analysis in areas of
                   complex geology. Here, we offer a new perspective on
@@ -1010,10 +1067,10 @@
 @CONFERENCE{lin2013SEGdss,
   author = {Tim T.Y. Lin and Haneet Wason and Felix J. Herrmann},
   title = {Dense shot-sampling via time-jittered marine sources},
-  booktitle = {SEG Workshop on Simultaneous Sources, Houston},
+  booktitle = {SEG Workshop on Simultaneous Sources; Houston},
   year = {2013},
   month = {09},
-  keywords = {SEG, Houston, acquisition, simultaneous sources},
+  keywords = {SEG, workshop, acquisition, simultaneous sources},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2013/lin2013SEGdss/lin2013SEGdss_pres.pdf}
 }
 
@@ -1313,10 +1370,10 @@
 @CONFERENCE{herrmann2013SEGOMANrdw,
   author = {Felix J. Herrmann},
   title = {Recent developments in wave-equation based inversion technology},
-  booktitle = {SEG Workshop on FWI, Oman},
+  booktitle = {SEG Workshop on FWI; Oman},
   year = {2013},
   month = {04},
-  keywords = {SEG, workshop, Oman, randomized sampling, exploration seismology, 3D, FWI},
+  keywords = {SEG, workshop, randomized sampling, exploration seismology, 3D, FWI},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2013/herrmann2013SEGOMANrdw/herrmann2013SEGOMANrdw_pres.pdf}
 }
 
@@ -1836,7 +1893,7 @@
   author = {Andrew J. Calvert and Ian Hanlon and Mostafa Javanmehri and Rajiv Kumar and Tristan van Leeuwen and Xiang Li and Brendan Smithyman and Eric Takam Takougang and Haneet Wason and Felix J. Herrmann},
   title = {{FWI} from the {West} {Coasts}: lessons learned from "Gulf of Mexico Imaging
 	Challenges: What Can Full Waveform Inversion Achieve?"},
-  booktitle = {SEG Workshop on FWI, Las Vegas},
+  booktitle = {SEG Workshop on FWI; Las Vegas},
   year = {2012},
   organization = {SEG},
   keywords = {workshop, FWI, SEG},
@@ -2405,7 +2462,7 @@
                   existing methods. Finally, we discuss the challenges
                   related to sparsity-promoting solvers for the
                   large-scale problems the industry faces.},
-  keywords = {Presentation, SLIM, EAGE},
+  keywords = {Presentation, SLIM, EAGE, workshop},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2007/hennenfent07EAGEcrw/hennenfent07EAGEcrw_pres.pdf},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2007/hennenfent07EAGEcrw/hennenfent07EAGEcrw.pdf},
   url2 = {http://earthdoc.eage.org/publication/publicationdetails/?publication=7553}
@@ -13047,21 +13104,9 @@
                   large-scale seismic interpolation problems with real
                   data, even in the presence of data contamination.},
   keywords = {interpolation, denoising, robust, SVD-free},
+  note = {(SISC)},
   doi = {10.1137/130919210},
   url = {http://epubs.siam.org/doi/abs/10.1137/130919210}
-}
-
-
-@ARTICLE{jumah2014GEOPROdre,
-  author = {Bander Jumah and Felix J. Herrmann},
-  title = {Dimensionality-reduced estimation of primaries by sparse inversion},
-  year = {2014},
-  month = {02},
-  journal = {Geophysical Prospecting},
-  keywords = {Sparse inversion, Factorization, Primaries},
-  url = {http://onlinelibrary.wiley.com/doi/10.1111/1365-2478.12113/abstract},
-  doi = {10.1111/1365-2478.12113},
-  note = {(Article first published online: 21 FEB 2014)}
 }
 
 
@@ -13085,9 +13130,11 @@
   author = {Bander Jumah and Felix J. Herrmann},
   title = {Dimensionality-reduced estimation of primaries by sparse inversion},
   year = {2014},
-  month = {02},
+  month = {09},
   journal = {Geophysical Prospecting},
-  keywords = {sparse inversion, factorization, primaries},
+  volume = {62},
+  number = {5},
+  pages = {972-993},
   abstract = {Wave-equation based methods, such as the estimation of
                   primaries by sparse inversion, have been successful
                   in the mitigation of the adverse effects of
@@ -13116,9 +13163,10 @@
                   memory use are achievable at a low computational
                   up-front cost required by the low-rank
                   factorization.},
+  keywords = {sparse inversion, factorization, primaries},
   url = {http://onlinelibrary.wiley.com/doi/10.1111/1365-2478.12113/abstract},
   doi = {10.1111/1365-2478.12113},
-  note = {(article first published online: 21 FEB 2014)}
+  note = {(Geophysical Prospecting)}
 }
 
 
@@ -13298,7 +13346,7 @@
 }
 
 
-@ARTICLE{shahidi2013GEOPROSars,
+@ARTICLE{shahidi2013GPars,
   author = {Reza Shahidi and Gang Tang and Jianwei Ma and Felix J. Herrmann},  
   title = {Application of randomized sampling schemes to curvelet-based sparsity-promoting seismic data recovery},
   journal = {Geophysical Prospecting},
@@ -13338,7 +13386,7 @@
                   both known to possess blue-noise spectra, are also
                   shown to perform well.},
   keywords = {Geophysical Prospecting, randomized sampling, curvelets},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GeophysicalProspecting/2013/shahidi2013GEOPROSars/shahidi2013GEOPROSars.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GeophysicalProspecting/2013/shahidi2013GPars/shahidi2013GPars.pdf},
   doi = {10.1111/1365-2478.12050}
 }
 

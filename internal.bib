@@ -12916,7 +12916,7 @@
 				partial overlapping randomized samplings lead to the best trade-off between the recovery
 				quality of the vintages and the time-lapse signal. We confirm this by a series of experiments.},
   keywords = {acquistion, time-lapse, marine, sampling, random, joint recovery method, private},
-  note = {Submitted revision 1 to Geophysics on October 22, 2014.},
+  note = {Submitted revision 1 to Geophysics on October 22, 2014},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/oghenekohwo2014GEOPfrt/oghenekohwo2014GEOPfrt.html}
 }
 
@@ -12946,39 +12946,50 @@
   abstract = {In marine exploration seismology, surface-related
                   multiples are usually treated as noise mainly
                   because subsequent processing steps, such as
-                  migration-velocity analysis and imaging, require
+                  migration velocity analysis and imaging, require
                   multiple-free data. Failure to remove these
                   wavefield components from the data may lead to
                   erroneous estimates for migration velocity or result
                   in strong coherent artifacts that interfere with the
-                  imaged reflectors. On the other hand, multiples
-                  interact with the free surface and are therefore
-                  exposed more to the subsurface. Hence, multiples
-                  carry complementary information compared to the
-                  primaries and when processed correctly improve the
-                  illumination. Given a sufficiently accurate
-                  background velocity model and an estimate for the
-                  source signature, we propose a wave-equation based
-                  inversion procedure that produces accurate images of
-                  velocity perturbations in the subsurface from the
-                  total upgoing wavefield including surface-related
-                  multiples. Because our method uses subsampling
-                  techniques, we obtain high-quality true-amplitude
-                  least-squares migrated images at computational costs
-                  of roughly a single reverse-time migration with
-                  fully sampled data. We also incur a minimal overhead
-                  from incorporating the multiples by having the
-                  wave-equation solver carry out the
-                  multiple-predictions via the inclusion of an areal
-                  source. Our method derives its efficacy from
-                  promoting curvelet-domain sparsity in the imaged
-                  domain and leads to images that are virtually free
-                  of artifacts from data that includes multiples. The
-                  method is also relatively robust with respect to
-                  linearization errors and errors in the background
-                  velocity model.},
+                  imaged reflectors. However, multiples can carry
+                  complementary information compared to primaries, as
+                  they interact with the free surface and are
+                  therefore exposed more to the subsurface. Recent
+                  work has shown that when processed correctly
+                  multiples can improve seismic illumination. Given a
+                  sufficiently accurate background velocity model and
+                  an estimate for the source signature, we propose a
+                  new and computationally efficient two-way
+                  wave-equation based linearized inversion procedure
+                  that produces accurate images of the subsurface from
+                  the total upgoing wavefield including
+                  surface-related multiples. Modelling of the
+                  surface-related multiples in the proposed method
+                  derives from the well-known surface-related multiple
+                  elimination method. We incur a minimal overhead from
+                  incorporating the multiples by having the
+                  wave-equation solver carry out the multiple
+                  predictions via the inclusion of an areal source
+                  instead of expensive dense matrix-matrix
+                  multiplications. By using subsampling techniques, we
+                  obtain high-quality true-amplitude least-squares
+                  migrated images at computational costs of roughly a
+                  single reverse-time migration with all the
+                  data. These images are virtually free of coherent
+                  artifacts from multiples. Proper inversion of the
+                  multiples would be computationally infeasible
+                  without using these techniques that significantly
+                  brings down the cost. By promoting sparsity in the
+                  curvelet domain and using rerandomization, out
+                  method gains improved robustness to errors in the
+                  background velocity model, and errors incurred in
+                  the linearization of the wave-equation with respect
+                  to the model. We demonstrate the superior
+                  performance of the proposed method compared to the
+                  conventional reverse-time migration using realistic
+                  synthetic examples.},
   keywords = {multiples, inversion, Kaczmarz, compressive sensing, curvelet, approximate message passing, private},
-  note = {Submitted to Geophysical Journal International},
+  note = {Submitted revision 1 to Geophysical Journal International on October 27, 2014},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/tu2014fis/tu2014fis.pdf}
 }
 

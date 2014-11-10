@@ -158,57 +158,6 @@
 }
 
 
-@UNPUBLISHED{vanLeeuwen20143Dfds,
-  author = {Tristan van Leeuwen and Felix J. Herrmann},
-  title = {{3D} frequency-domain seismic inversion with controlled sloppiness},
-  year = {2014},
-  month = {03},
-  abstract = {Seismic waveform inversion aims at obtaining detailed
-                  estimates of subsurface medium parameters, such as
-                  the spatial distribution of soundspeed, from
-                  multi-experiment seismic data. A formulation of this
-                  inverse problem in the frequency-domain leads to an
-                  optimization problem constrained by a Helmholtz
-                  equation with many right-hand-sides. Application of
-                  this technique to industry-scale problem faces
-                  several challenges: Firstly, we need to solve the
-                  Helmholtz equation for high wavenumbers over large
-                  computational domains. Secondly, the data consists
-                  of many independent experiments, leading to a large
-                  number of PDE-solves. This results in high
-                  computational complexity both in terms of memory and
-                  CPU time as well as i/o costs. Finally, the inverse
-                  problem is highly non-linear and a lot of art goes
-                  into preprocessing and regularization. Ideally, an
-                  inversion needs to be run several times with
-                  different initial guesses and/or tuning
-                  parameters. In this paper, we discuss the
-                  requirements of the various components (PDE-solver,
-                  optimization method, ...) when applied to
-                  large-scale 3D seismic waveform inversion and
-                  combine several existing approaches into a flexible
-                  inversion scheme for seismic waveform inversion. The
-                  scheme is based on the idea that in the early stages
-                  of the inversion we do not need all the data or very
-                  accurate PDE-solves. We base our method on an
-                  existing preconditioned Krylov solver (CARP-CG) and
-                  use ideas from stochastic optimization to formulate
-                  a gradient-based (Quasi-Newton) optimization
-                  algorithm that works with small subsets of the
-                  right-hand-sides and uses inexact PDE solves for the
-                  gradient calculations. We proposed novel heuristics
-                  to adaptively control both the accuracy and the
-                  number of right-hand-sides. We illustrate the
-                  algorithms on synthetic benchmark models for which
-                  significant computational gains can be made without
-                  being sensitive to noise and without loosing
-                  accuracy of the inverted model.},
-  keywords = {waveform inversion, optimization},
-  note = {to appear in the SIAM Journal on Scientific Computing (SISC)}, 
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/SIAM_Journal_on_Scientific_Computing/2014/vanLeeuwen20143Dfds/vanLeeuwen20143Dfds.pdf}
-}
-
-
 %-----2013-----%
 
 @UNPUBLISHED{ghadermarzy2013ncs,

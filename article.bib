@@ -1,8 +1,63 @@
 % This file was created with JabRef 2.8.1.
 % Encoding: MacRoman
 
+@ARTICLE{vanLeeuwen2014SISC3Dfds,
+  author = {Tristan van Leeuwen and Felix J. Herrmann},
+  title = {{3D} frequency-domain seismic inversion with controlled sloppiness},
+  year = {2014},
+  month = {10},
+  journal = {SIAM Journal on Scientific Computing},
+  volume = {36},
+  number = {5},
+  pages = {S192-S217},
+  abstract = {Seismic waveform inversion aims at obtaining detailed
+                  estimates of subsurface medium parameters, such as
+                  the spatial distribution of soundspeed, from
+                  multiexperiment seismic data. A formulation of this
+                  inverse problem in the frequency domain leads to an
+                  optimization problem constrained by a Helmholtz
+                  equation with many right-hand sides. Application of
+                  this technique to industry-scale problems faces
+                  several challenges: First, we need to solve the
+                  Helmholtz equation for high wave numbers over large
+                  computational domains. Second, the data consist of
+                  many independent experiments, leading to a large
+                  number of PDE solves. This results in high
+                  computational complexity both in terms of memory and
+                  CPU time as well as input/output costs. Finally, the
+                  inverse problem is highly nonlinear and a lot of art
+                  goes into preprocessing and regularization. Ideally,
+                  an inversion needs to be run several times with
+                  different initial guesses and/or tuning
+                  parameters. In this paper, we discuss the
+                  requirements of the various components (PDE solver,
+                  optimization method, \dots) when applied to
+                  large-scale three-dimensional seismic waveform
+                  inversion and combine several existing approaches
+                  into a flexible inversion scheme for seismic
+                  waveform inversion. The scheme is based on the idea
+                  that in the early stages of the inversion we do not
+                  need all the data or very accurate PDE solves. We
+                  base our method on an existing preconditioned Krylov
+                  solver (CARP-CG) and use ideas from stochastic
+                  optimization to formulate a gradient-based
+                  (quasi-Newton) optimization algorithm that works
+                  with small subsets of the right-hand sides and uses
+                  inexact PDE solves for the gradient calculations. We
+                  propose novel heuristics to adaptively control both
+                  the accuracy and the number of right-hand sides. We
+                  illustrate the algorithms on synthetic benchmark
+                  models for which significant computational gains can
+                  be made without being sensitive to noise and without
+                  losing the accuracy of the inverted model.},
+  keywords = {seismic inversion, Helmholtz equation, preconditioning, Kaczmarz method, inexact gradient, block-cg},
+  note = {(SISC)},
+  doi = {10.1137/130918629},
+  url = {http://epubs.siam.org/doi/abs/10.1137/130918629}
+}
 
-@ARTICLE{aravkin2014SISCLR,
+
+@ARTICLE{aravkin2014SISCfmd,
   author = {Aleksandr Y. Aravkin and Rajiv Kumar and Hassan Mansour and Ben Recht and Felix J. Herrmann},
   title = {Fast methods for denoising matrix completion formulations, with applications to robust seismic data interpolation},
   year = {2014},
@@ -43,7 +98,7 @@
                   to obtain high-quality reconstructions for
                   large-scale seismic interpolation problems with real
                   data, even in the presence of data contamination.},
-  keywords = {interpolation, denoising, robust, SVD-free},
+  keywords = {matrix completion, factorized formulations, seismic trace interpolation, variational optimization, robust statistics},
   note = {(SISC)},
   doi = {10.1137/130919210},
   url = {http://epubs.siam.org/doi/abs/10.1137/130919210}

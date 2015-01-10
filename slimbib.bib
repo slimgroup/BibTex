@@ -8141,6 +8141,705 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2008/lin08THccl.pdf}
 }
 
+%----- 2014 (FALL) -----%
+
+@PRESENTATION{dasilva2014SINBADlss,
+  title = {Large-scale seismic data interpolation in a parallel computing environment},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {This talk will outline the details for a parallel
+                  implementation of the SPG-LR algorithm for matrix
+                  completion and its applications to large-scale
+                  seismic data interpolation. Previous work done in
+                  our group on LR-based matrix factorization has been
+                  shown to be extremely efficient for seismic data
+                  interpolation that fits in memory. We extend the
+                  SPGL1 framework that this method is built on to
+                  instances where the full seismic data volume cannot
+                  entirely fit in the memory of one computational node
+                  and must be run in a distributed environment. We
+                  will also look at off-the-grid regularization for
+                  tensor completion using a non-uniform FFT operator
+                  and examine its effects on interpolating an
+                  irregularly sampled, 3D seismic frequency slice.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/dasilva2014SINBADlss.pdf},
+  author = {Curt da Silva}
+}
+
+
+@PRESENTATION{esser2014SINBADlcs,
+  title = {A lifted $\ell_1$/$\ell_2$ constraint for sparse blind deconvolution},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {We propose a modification to a sparsity constraint based
+                  on the ratio of l1 and l2 norms for solving blind
+                  seismic deconvolution problems in which the data
+                  consist of linear convolutions of different sparse
+                  reflectivities with the same source wavelet. No
+                  assumptions are made about the location of the
+                  support of either the wavelet or the sparse
+                  signals. Minimizing the ratio of l1 and l2 norms has
+                  been previously shown to promote sparsity in a
+                  variety of applications including blind
+                  deconvolution. Most existing implementations are
+                  heuristic or require smoothing the l1/l2
+                  penalty. Lifted versions of l1/l2 constraints have
+                  also been proposed but are still challenging to
+                  implement. Inspired by the lifting approach, we
+                  propose to split the sparse signals into positive
+                  and negative components and apply an l1/l2
+                  constraint to the difference, thereby obtaining a
+                  constraint that is easy to implement without
+                  smoothing the l1 or l2 norms. We show that a method
+                  of multipliers implementation of the resulting model
+                  can recover source wavelets that are not necessarily
+                  minimum phase and approximately reconstruct the
+                  sparse reflectivities. It appears to be robust to
+                  the initialization and to small amounts of noise in
+                  the data. We also discuss extensions to the
+                  Estimation of Primaries by Sparse Inversion (EPSI)
+                  convolution model.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/esser2014SINBADlcs.pdf},
+  author = {Ernie Esser}
+}
+
+
+@PRESENTATION{esser2014SINBADtvc,
+  title = {Total variation constrained full waveform inversion with continuation},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {Adding a total variation constraint to the Wavefield
+                  Reconstruction Inversion model proposed by van
+                  Leeuwen and Herrmann can improve robustness and
+                  remove artifacts by encouraging piecewise smooth
+                  solutions. However, if the parameter controlling the
+                  strength of the TV regularization is not well
+                  chosen, important details can be lost. We
+                  investigate continuation strategies that gradually
+                  reduce the strength of the TV constraint so that
+                  these important details are eventually allowed back
+                  into the solution. Preliminary numerical experiments
+                  suggest that this can improve the solution path and
+                  lead to better velocity models than if TV
+                  regularization were not used during the intermediate
+                  steps.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/esser2014SINBADtvc.pdf},
+  author = {Ernie Esser}
+}
+
+
+@PRESENTATION{fang2014SINBADsew,
+  title = {Source estimation for {WRI} and its application},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/fang2014SINBADsew.pdf},
+  author = {Zhilong Fang}
+}
+
+
+@PRESENTATION{fang2014SINBADuqw,
+  title = {Uncertainty quantification for {Wavefield} {Reconstruction} {Inversion}},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {This talk discusses the uncertainty quantification for
+                  the wavefield reconstruction inversion. The Hessian
+                  and gradient of the WRI can be easily obtained once
+                  the wave field is generated. As a result, we use a
+                  Newton type McMC method to sample the posterior
+                  distribution. Statistical property such as mean,
+                  standard deviation, confidence interval are
+                  calculated based on the sampled distribution.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/fang2014SINBADuqw.pdf},
+  author = {Zhilong Fang}
+}
+
+
+@PRESENTATION{ghadermarzy2014SINBADwrr,
+  title = {Wavefield reconstruction via randomized sampling},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {Regular sampling along the time axis is a common
+                  approach for seismic imaging. However, seismic data
+                  are often spatially undersampled due to economical
+                  reasons as well as ground surface
+                  limitations. Operational conditions might result in
+                  noisy traces or even gaps in coverage and irregular
+                  sampling which often leads to image
+                  artifacts. Seismic trace interpolation aims to
+                  interpolate missing traces in an otherwise regularly
+                  sampled seismic data to a complete regular grid. In
+                  this talk, we explain some techniques, with low
+                  computational complexity, that can be used to
+                  improve the results. In particular, we talk about
+                  weighting, switching to midpoint-offset domain from
+                  frequency-space domain, and uniform versus jittered
+                  undersampling. We illustrate the advantages of these
+                  modifications using a real seismic line from the
+                  Gulf of Suez.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/ghadermarzy2014SINBADwrr.pdf},
+  author = {Navid Ghadermarzy}
+}
+
+
+@PRESENTATION{herrmann2014SINBADldm2,
+  title = {Latest developments in randomized ({4D}) acquisition},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {We will present the latest developments in randomized
+                  (4D) seismic data acquisition.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/herrmann2014SINBADldm2.pdf},
+  author = {Felix J. Herrmann}
+}
+
+
+@PRESENTATION{herrmann2014SINBADwri,
+  title = {Wavefield {Reconstruction} {Inversion} ({WRI}) - a new take on wave-equation based inversion},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {We discuss a recently proposed novel method for waveform
+                  inversion: Wavefield Reconstruction Inversion
+                  (WRI). As opposed to conventional FWI --- which
+                  attempts to minimize the error between observed and
+                  predicted data obtained by solving a wave equation
+                  --- WRI reconstructs a wave-field from the data and
+                  extracts a model-update from this wavefield by
+                  minimizing the wave-equation residual. The method
+                  does not require explicit computation of an adjoint
+                  wavefield as all the necessary information is
+                  contained in the reconstructed wavefield. We show
+                  how the corresponding model updates can be
+                  interpreted physically analogously to the
+                  conventional imaging-condition-based approach.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/herrmann2014SINBADwri.pdf},
+  author = {Felix J. Herrmann}
+}
+
+
+@PRESENTATION{kumar2014SINBADeia,
+  title = {Extended images in action --- image gather with surface-related multiples},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {Common image gathers are used in building velocity
+                  models, invert anisotropy parameters and to analyze
+                  reservoir attributes. Often primary reflections are
+                  used to form the image gathers and multiples are
+                  typically attenuated in processing. However,
+                  researchers have shown that, if correctly used, they
+                  can provide useful information about the subsurface
+                  during reverse-time migration. In this work, i will
+                  show how we can use multiples along with primaries
+                  to form the image-gathers.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/kumar2014SINBADeia.pdf},
+  author = {Rajiv Kumar}
+}
+
+
+@PRESENTATION{kumar2014SINBADtjm,
+  title = {Time-jittered marine acquisition: low-rank v/s sparsity},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {In this work we will show how simultaneous or blended
+                  acquisition can be setup as a rank-minimization
+                  (deblending) problem. The simultaneous acquisition
+                  scenario is a pragmatic time-jittered marine
+                  acquisition scheme, where a source vessel (with two
+                  airgun arrays) sails across an ocean-bottom array
+                  firing at jittered source locations and instances in
+                  time, resulting in better spatial sampling and
+                  acquisition speedup. We make comparisons with
+                  sparsity-promoting based techniques and demonstrate
+                  that rank-minimization based debelending techniques
+                  are computationally faster and memory
+                  efficient. This is joint work with Haneet Wason.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/kumar2014SINBADtjm.pdf},
+  author = {Rajiv Kumar}
+}
+
+
+@PRESENTATION{lago2014SINBADmri,
+  title = {Minimal-residual iterative methods for time-harmonic wave-equation},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {In this work we aim at comparing the performance of some
+                  iterative methods for solving the time-harmonic
+                  acoustic wave-equation, one of the most challenging
+                  problems in the numerical linear algebra
+                  community. Widely used in frequency domain full
+                  waveform inversion, the discrete wave-equation
+                  yields very large, complex, sparse, ill-conditioned
+                  linear systems. In this extended abstract we aim at
+                  further comparing our recently proposed method,
+                  CRMN, against CGMN and another method renown for
+                  being very memory efficient, the two-level
+                  preconditioner with shifted Laplacian operator. We
+                  propose several improvements for the two-level
+                  preconditioner by combining this method with CRMN in
+                  several senses.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lago2014SINBADmri.pdf},
+  author = {Rafael Lago}
+}
+
+
+@PRESENTATION{li2014SINBADtsi,
+  title = {2D/{3D} time-stepping for imaging and inversion},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {In this talk, we present a SLIM version of 2D/3D
+                  time-stepping modeling kernel for inversion and
+                  imaging. One key aspect of this framework is that
+                  the implementation follows some mathematic
+                  principles, such as linear operator test. Aside from
+                  obeying mathematic principles, we also developed a
+                  strategy that allows us to compute the gradient of
+                  conventional FWI objective or RTM imaging without
+                  storing extra wavefield. We also show some
+                  applications of this framework on the Chevron 2014
+                  benchmark elastic synthetic data set.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/li2014SINBADtsi.pdf},
+  author = {Xiang Li}
+}
+
+
+@PRESENTATION{li2014SINBADwmg,
+  title = {Why the modified {Gauss-Newton} method?},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {In our earlier work, we develop the modified
+                  Gauss-Newton method for FWI, which requires each
+                  update of FWI to be sparse in the curvelet
+                  domain. Our empirical observation of the MGN method
+                  is that it can find us a solution for FWI problem
+                  with sparse perturbation of the initial guess
+                  without changing the underlying objective. In this
+                  talk, we will analyze the MGN method to find out the
+                  reason why it can generate a sparse perturbation of
+                  the initial model, because sum of spares updates
+                  could easily generate non-sparse
+                  perturbations. Moreover, we will illustrate when do
+                  we expect the modified Gauss-Newton method to yield
+                  a solution with sparse perturbation and in what
+                  circumstances should we use it in place of other
+                  algorithms like standard Gauss-Newton.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/li2014SINBADwmg.pdf},
+  author = {Xiang Li}
+}
+
+
+@PRESENTATION{lin2014SINBADdag,
+  title = {Dealing with acquisition gaps in {Robust} {EPSI} without interpolation using wavefield auto-convolution},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {Straightforward modifications to the Estimation of
+                  Primaries by Sparse Inversion (EPSI) problem allows
+                  us to mitigate acquisition holes without any
+                  reconstruction of the missing traces, neither prior
+                  to nor during the inversion process. This is
+                  achieved by simulating the missing multiple
+                  contributions with terms involving auto-convolutions
+                  of the primary wavefield. In this formulation we no
+                  longer need to treat the missing data as another
+                  unknown in the inversion process, which is important
+                  in eliminating a significant source of possible
+                  local minima from attempting to invent data using
+                  incorrect primary and multiple models. In this talk
+                  we investigate the necessary modifications to the
+                  Robust EPSI problem, as well as algorithms that
+                  account for the resulting non-linear modelling
+                  operator. We will also investigate the
+                  reconstruction limits of this approach in relation
+                  to acquisition geometry and subsurface
+                  characteristics.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lin2014SINBADdag.pdf},
+  author = {Tim T. Y. Lin}
+}
+
+
+@PRESENTATION{lopez2014SINBADogm,
+  title = {Off-the-grid matrix completion},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {This talk discusses a modified rank minimization
+                  workflow designed to handle unstructured matrix
+                  completion problems. We extend current rank
+                  minimization based trace interpolation techniques to
+                  optimally handle undersampled irregular data, in
+                  such a way that allows us to recover regularized
+                  densely sampled data. This is achieved by
+                  introducing a regularization operator, that
+                  accurately allows us to simulate the effect of an
+                  unstructured grid. We provide reconstruction error
+                  bounds to demonstrate the potential of our
+                  procedure.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lopez2014SINBADogm.pdf},
+  author = {Oscar Lopez}
+}
+
+
+@PRESENTATION{lopez2014SINBADrma,
+  title = {Rank minimization via alternating optimization},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {This talk discusses the benefits of an alternating
+                  optimization approach for seismic trace
+                  interpolation via rank minimization. We consider
+                  recent factorization approaches to rank minimization
+                  problems where we write our low rank matrix in
+                  bi-linear form, and modify this workflow by
+                  alternating our optimization to handle a single
+                  matrix factor at a time. This allows for a more
+                  tractable procedure that can better handle highly
+                  sub sampled data sets without increasing the time
+                  complexity. We demonstrate the potential of this
+                  approach with several seismic trace interpolation
+                  experiments.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lopez2014SINBADrma.pdf},
+  author = {Oscar Lopez}
+}
+
+
+@PRESENTATION{oghenekohwo2014SINBADrst,
+  title = {Randomized subsampling in time-lapse surveys and recovery techniques},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {This talk centres on new insights on how we think of
+                  acquisition of time-lapse data using ideas from
+                  compressed sensing. Specifically, we will show how
+                  simultaneous processing of time-lapse data from
+                  randomized subsampling gives more reliable estimates
+                  of the vintages and time-lapse signal, compared to
+                  parallel processing.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/oghenekohwo2014SINBADrst.pdf},
+  author = {Felix Oghenekohwo}
+}
+
+
+@PRESENTATION{oghenekohwo2014SINBADuwc,
+  title = {Use what`s in common: time-lapse {FWI} with distributed {Compressive} {Sensing}},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {In this talk, we will extend our joint recovery
+                  formulation to FWI in time-lapse seismic, using the
+                  modified Gauss-Newton approach. Leveraging ideas
+                  from distributed compressive sensing, we exploit
+                  shared information in the sparse model perturbations
+                  of the baseline and monitor data.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/oghenekohwo2014SINBADuwc.pdf},
+  author = {Felix Oghenekohwo}
+}
+
+
+@PRESENTATION{peters2014SINBADcda,
+  title = {Challenges and developments arising from {2D} {FWI} of a land {VSP} dataset in the {Permian} {Basin}},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {Full-waveform inversion was carried out to map 3D
+                  velocity structures for a site in the Permian Basin
+                  of Texas, USA. The data come from co-located surface
+                  and 3D VSP seismic surveys that share common source
+                  vibration points. This challenging on-land setting
+                  has been used as a testbed to evaluate our FWI
+                  algorithms and their effectiveness when applied to
+                  real-data problems. We discuss the challenges posed
+                  by this case study, and several new techniques and
+                  methodological refinements that have been developed
+                  and tested as a result. These include:
+                  regularization and incorporation of multiple
+                  datasets in an on-land FWI workflow; restrictions on
+                  the types of models allowed (viz., smoothness
+                  regularization) by quadratic penalty and by
+                  Projected Quasi-Newton (PQN) inversion; corrections
+                  to enable 2D FWI and recovery of 3D models; the
+                  state of ongoing work in WRI (``Penalty Method''
+                  inversion) and the handling of anisotropy.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/.pdf},
+  author = {Brendan Smithyman and Bas Peters}
+}
+
+
+@PRESENTATION{peters2014SINBADiss,
+  title = {Iterative solution strategy for least-squares problem with a {PDE}-block},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {Waveform inversion using the Wavefield Reconstruction
+                  Inversion (WRI) is a quadratic-penalty based method
+                  developed in our group and has shown to have
+                  advantages over the reduced Lagrangian based
+                  conventional FWI methods. WRI involves no explicit
+                  PDE solves, but a least-squares problem with a PDE
+                  block. This type of least-squares problem is very
+                  challenging to solve using iterative methods. In
+                  this talk we show algorithms we developed
+                  specifically for this application and which involve
+                  a combination of preconditioning, low-rank
+                  decomposition and deflation.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADiss.pdf},
+  author = {Bas Peters}
+}
+
+
+@PRESENTATION{peters2014SINBADqpb,
+  title = {Quadratic-penalty based full-space methods for waveform inversion},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {Waveform inversion problems are commonly solved by
+                  eliminating the field variables. Full-space methods
+                  store and update the fields, rather than solving for
+                  them. This leads to a problem with nice properties,
+                  such as free function value evaluation and exact
+                  gradients and Hessians at no cost. The existing
+                  literature is almost exclusively based on the
+                  Lagrangian formulation. We propose to work with a
+                  quadratic penalty formulation, which allows us to
+                  reduce the storage requirements and gives the Newton
+                  system a favourable structure which we exploit to
+                  obtain a intrinsically parallel updating scheme for
+                  the fields and medium parameters. We will show a
+                  comparison with reduced-space methods.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADqpb.pdf},
+  author = {Bas Peters}
+}
+
+
+@PRESENTATION{peters2014SINBADsmp,
+  title = {Single- and multi-parameter WRI --- synthetic examples},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {We demonstrate the performance of WRI on a number of
+                  single- and multi-parameter synthetic examples. The
+                  examples shot that WRI is less reliant on accurate
+                  starting models while this formulation is also
+                  conducive to multi-parameter inversion.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADsmp.pdf},
+  author = {Bas Peters}
+}
+
+
+@PRESENTATION{tu2014SINBADfis,
+  title = {Fast imaging with surface-related multiples by sparse inversion},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {When used correctly, surface-related multiples can
+                  provide extra illumination coverage compared with
+                  primaries. In this talk, I will discuss how to
+                  jointly image primaries and surface-related
+                  multiples in a computationally efficient fashion. We
+                  bring down the computational cost by two
+                  means. First we use wave-equation solvers to
+                  implicitly carry out the expensive dense
+                  matrix-matrix multiplications in the prediction of
+                  surface-related multiples. Second we bring down the
+                  simulation cost by subsampling the frequencies and
+                  monochromatic source experiments together with
+                  curvelet-domain sparsity-promoting and
+                  rerandomization. As a result, we obtain
+                  true-amplitude least-squares migrated seismic images
+                  with computational costs that are comparable to a
+                  single RTM with all the data. We demonstrate the
+                  efficacy of the proposed method using realistic
+                  synthetic examples.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADfis.pdf},
+  author = {Ning Tu}
+}
+
+
+@PRESENTATION{tu2014SINBADfis2,
+  title = {Fast imaging with source estimation},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {In seismic imaging, an inaccurate estimate of the source
+                  wavelet may result in degraded seismic images. While
+                  conventional reverse-time migration requires the
+                  knowledge of the source wavelet as prior
+                  information, we propose to include source estimation
+                  in the fast compressive imaging procedure. Using the
+                  proposed method, we can obtain seismic images that
+                  are comparable to those imaged with the true source
+                  wavelet, with computational costs that are
+                  comparable to conventional RTM images with all the
+                  data. We also extend the proposed method to image
+                  data with surface-related multiples, where these
+                  multiples help to mitigate the amplitude ambiguity
+                  in source estimation. We verify the proposed method
+                  using realistic synthetic examples.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADfis2.pdf},
+  author = {Ning Tu}
+}
+
+
+@PRESENTATION{tu2014SINBADind,
+  title = {Imaging the {Nelson} data set using surface-related multiples},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {We will present out latest finding on migration with
+                  multiples on the Nelson dataset.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADind.pdf},
+  author = {Ning Tu}
+}
+
+
+@PRESENTATION{tu2014SINBADsis,
+  title = {Sparse inversion simplified},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {Implementation of the SPGl1 solver in low-level computer
+                  languages such as C or Fortran may sound daunting to
+                  many. This talk is tailored for you if you would
+                  like to reap benefits from using sparse constraints
+                  to regularize your inversion problem, and at the
+                  same time want some easy-to-implement algorithm to
+                  solve it. We discuss in this talk the linearized
+                  Bregman projection method that embraces both
+                  ingredients, and show promising applications in fast
+                  least-squares imaging and seismic data interpolation
+                  problems.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADsis.pdf},
+  author = {Ning Tu}
+}
+
+
+@PRESENTATION{wang2014SINBADdwi,
+  title = {Denoising the wavefield inversion problem through source blending and penalty method},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {Previous FWI denoising techniques, such as source
+                  blending and stacking, are designed applied to the
+                  seismic traces. Hence no physical information is
+                  used to improve the fidelity of the reconstruction,
+                  even when a good initial model is
+                  available. Moreover, traditional source blending
+                  requires the existence of common source gathers,
+                  which might be missing from the data. In this talk,
+                  we incorporate the source blending idea into the
+                  penalty method, and extract the synthetic sources
+                  corresponding to the principle directions of the
+                  gradient update. By blending the sources, we can not
+                  only achieve an acceleration and storage efficiency
+                  of the penalty method, but also make the
+                  reconstruction more robust to the random noise. This
+                  method is applicable to any source receiver position
+                  but is more efficient if common source gathers are
+                  available.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/wang2014SINBADdwi.pdf},
+  author = {Rongrong Wang}
+}
+
+
+@PRESENTATION{wason2014SINBADrrt,
+  title = {Randomization and repeatability in time-lapse marine acquisition},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {During this talk, we will show how randomization
+                  techniques from (distributed) compressed sensing
+                  affect the way we think about time-lapse surveys.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/wason2014SINBADrrt.pdf},
+  author = {Haneet Wason}
+}
+
+
+@PRESENTATION{wason2014SINBADsss,
+  title = {Source separation via {SVD}-free rank-minimization in the hierarchical semi-separable representation},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {During this talk, we will show a source separation
+                  algorithm for blended marine acquisition, where two
+                  sources are deployed at different depths (over/under
+                  acquisition). The separation method incorporates the
+                  Hierarchical Semi-Separable (HSS) structure inside
+                  rank-regularized least-squares formulations. We also
+                  compare this deblending scheme with the
+                  sparsity-promoting one-norm minimization scheme.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/wason2014SINBADsss.pdf},
+  author = {Haneet Wason}
+}
+
+
+@PRESENTATION{yilmaz2014SINBADadc,
+  title = {Analog-to-digital conversion in compressive sampling},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2014},
+  abstract = {Compressive sampling theory is now established as an
+                  effective method for dimension reduction when the
+                  underlying signals (e.g., seismic data) are sparse
+                  with respect to some suitable basis or frame (e.g.,
+                  curvelets in the case of seismic). One important
+                  problem directly related to the acquisition of
+                  analog signals is how to perform analog-to-digital
+                  conversion. This is directly related to two
+                  important issues: (i) how accurately one can acquire
+                  a signal using compressive sampling (in terms of bit
+                  depth), and (ii) how ``compressed'' is compressive
+                  sampling (in terms of the total number of bits one
+                  ends up using after acquiring the signal). We will
+                  present recent results that provide answers to these
+                  questions. Specifically, we provide an
+                  analog-to-digital conversion method that achieves
+                  nearly optimal compression using cheap analog
+                  devices with a large margin for imperfections.},
+  keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/yilmaz2014SINBADadc.pdf},
+  author = {Ozgur Yilmaz}
+}
+
+
 %----- 2014 (SPRING) -----%
 
 @PRESENTATION{dasilva2014SINBADlrp,
@@ -8153,9 +8852,9 @@
                   uses an extremely efficient representation for
                   representing high-dimensional tensors exhibiting
                   low-rank structure, to handle subsampled tensors
-                  with noisy entries. We consider a ’low-noise’ case,
+                  with noisy entries. We consider a `low-noise' case,
                   so that the energies of the noise and the signal are
-                  nearly indistinguishable, and a ’high-noise’ case,
+                  nearly indistinguishable, and a `high-noise' case,
                   in which the noise energy is now scaled to the
                   amplitude of the entire data volume. For the
                   low-noise case in particular, standard

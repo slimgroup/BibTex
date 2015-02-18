@@ -1,6 +1,38 @@
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+@CONFERENCE{herrmann2015ASEGrae,
+  author = {Felix J. Herrmann},
+  title = {Randomized algorithms in exploration seismology},
+  booktitle = {ASEG Annual Conference Proceedings},
+  year = {2015},
+  month = {02},
+  abstract = {As in several other industries, progress in exploration
+                  seismology relies on the collection and processing
+                  of massive data volumes that grow exponentially in
+                  size as the survey area and desired resolution
+                  increase.  This exponential growth --- in
+                  combination with the increased complexity of the
+                  next-generation of iterative wave-equation based
+                  inversion algorithms --- puts strains on our
+                  acquisition systems and computational back ends
+                  impeding progress in our field. During this talk, I
+                  will review how recent randomized algorithms from
+                  Compressive Sensing and Machine learning can be used
+                  to overcome some of these challenges by
+                  fundamentally rethinking how we sample and process
+                  seismic data. The key idea here is to reduce
+                  acquisition and computational costs by deliberately
+                  working on small randomized subsets of the data at a
+                  desired accuracy. I will illustrate these concepts
+                  using a variety of compelling examples on realistic
+                  synthetics and field data.},
+  keywords = {ASEG, compressed sensing, seismology, acquisition, imaging, FWI},
+  note = {(ASEG, Perth)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ASEG/2015/herrmann2015ASEGrae/herrmann2015ASEGrae.pdf}
+}
+
+
 @CONFERENCE{herrmann2014SEGWSfli,
   author = {Ning Tu and Felix J. Herrmann},
   title = {Fast linearized inversion with surface-related multiples with source estimation},
@@ -13902,6 +13934,47 @@
 }
 
 
+@UNPUBLISHED{kumar2015sss,
+  author = {Rajiv Kumar and Haneet Wason and Felix J. Herrmann},
+  title = {Source separation for simultaneous towed-streamer marine acquisition---a compressed sensing approach},
+  year = {2015},
+  date_submitted = {02/16/2015},
+  institution = {UBC},
+  abstract = {Simultaneous marine acquisition is an economic way to
+                  sample seismic data and speedup acquisition, wherein
+                  single and/or multiple source vessels fire sources
+                  at near-simultaneous or slightly random times,
+                  resulting in overlapping shot records. The current
+                  paradigm for simultaneous towed-streamer marine
+                  acquisition incorporates "low-variability" in source
+                  firing times---i.e., $\leq$ 1 or 2 seconds, since
+                  both the sources and receivers are moving. This
+                  results in low degree of randomness in simultaneous
+                  data, which is challenging to separate (into its
+                  constituent sources) using compressed sensing based
+                  separation techniques since randomization is the key
+                  to successful recovery via compressed sensing. In
+                  this paper, we address the challenge of source
+                  separation for simultaneous towed-streamer
+                  acquisitions via two compressed sensing based
+                  approaches---i.e., sparsity-promotion and
+                  rank-minimization. We illustrate the performance of
+                  both the sparsity-promotion and rank-minimization
+                  based techniques by simulating two simultaneous
+                  towed-streamer acquisition scenarios---i.e.,
+                  over/under and simultaneous long offset. We observe
+                  that the proposed approaches give good and
+                  comparable recovery qualities of the separated
+                  sources, but the rank-minimization technique is
+                  relatively faster and memory efficient. We also
+                  compare these two techniques with the NMO-based
+                  median filtering type approach.},
+  keywords = {simultaneous marine acquisition, source separation, sparsity, rank, private},
+  note = {Submitted to Geophysics on February 16.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/kumar2015sss/kumar2015sss.html}
+}
+
+
 @UNPUBLISHED{lago2015EAGEtrg,
   author = {Rafael Lago and Felix J. Herrmann},
   title = {Towards a robust geometric multigrid scheme for {Helmholtz} equation},
@@ -14120,6 +14193,28 @@
   keywords = {multiples, inversion, Kaczmarz, compressive sensing, curvelet, approximate message passing},
   note = {(to be published in Geophysical Journal International)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GeophysicalJournalInternational/2015/tu2015GJIfis/tu2015GJIfis.pdf}
+}
+
+
+@UNPUBLISHED{vanleeuwen2015EAGEafs,
+  author = {Tristan van Leeuwen and Rajiv Kumar and Felix J. Herrmann},
+  title = {Affordable full subsurface image volume---an application to {WEMVA}},
+  year = {2015},
+  date_submitted = {02/15/2015},
+  institution = {UBC},
+  abstract = {Common image gathers are used in building velocity
+                  models, inverting for anisotropy parameters, and
+                  analyzing reservoir attributes. In this paper, we
+                  offer a new perspective on image gathers, where we
+                  glean information from the image volume via
+                  efficient matrix-vector products. The proposed
+                  formulation make the computation of full subsurface
+                  image volume feasible. We illustrate how this
+                  matrix-vector product can be used to construct
+                  objective functions for automatic MVA.},
+  keywords = {EAGE, MVA, wave-equation, randomized trace estimation, private},
+  note = {Submitted to EAGE on February 15.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/EAGE/2015/vanleeuwen2015EAGEafs/vanleeuwen2015EAGEafs.pdf}
 }
 
 

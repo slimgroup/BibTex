@@ -1,6 +1,65 @@
 % This file was created with JabRef 2.8.1.
 % Encoding: MacRoman
 
+@ARTICLE{tu2014fis,
+  author = {Ning Tu and Felix J. Herrmann},
+  title = {Fast imaging with surface-related multiples by sparse inversion},
+  journal = {Geophysical Journal International}, 
+  year = {2015},
+  volume = {201}, 
+  number = {1}, 
+  pages = {304-317}, 
+  abstract = {In marine exploration seismology, surface-related
+                  multiples are usually treated as noise mainly
+                  because subsequent processing steps, such as
+                  migration velocity analysis and imaging, require
+                  multiple-free data. Failure to remove these
+                  wavefield components from the data may lead to
+                  erroneous estimates for migration velocity or result
+                  in strong coherent artefacts that interfere with the
+                  imaged reflectors. However, multiples can carry
+                  complementary information compared to primaries, as
+                  they interact with the free surface and are
+                  therefore exposed more to the subsurface. Recent
+                  work has shown that when processed correctly
+                  multiples can improve seismic illumination. Given a
+                  sufficiently accurate background velocity model and
+                  an estimate for the source signature, we propose a
+                  new and computationally efficient linearized
+                  inversion procedure based on two-way wave equations,
+                  which produces accurate images of the subsurface
+                  from the total upgoing wavefield including
+                  surface-related multiples. Modelling of the
+                  surface-related multiples in the proposed method
+                  derives from the well-known surface-related multiple
+                  elimination method. We incur a minimal overhead from
+                  incorporating the multiples by having the
+                  wave-equation solver carry out the multiple
+                  predictions via the inclusion of an areal source
+                  instead of expensive dense matrix-matrix
+                  multiplications. By using subsampling techniques, we
+                  obtain high-quality true-amplitude least-squares
+                  migrated images at computational costs of roughly a
+                  single reverse-time migration (RTM) with all the
+                  data. These images are virtually free of coherent
+                  artefacts from multiples. Proper inversion of the
+                  multiples would be computationally infeasible
+                  without using these techniques that significantly
+                  bring down the cost. By promoting sparsity in the
+                  curvelet domain and using rerandomization, out
+                  method gains improved robustness to errors in the
+                  background velocity model, and errors incurred in
+                  the linearization of the wave equation with respect
+                  to the model. We demonstrate the superior
+                  performance of the proposed method compared to the
+                  conventional RTM using realistic synthetic
+                  examples.},
+  keywords = {multiples, inversion, Kaczmarz, compressive sensing, curvelet, approximate message passing},
+  note = {(Geophysical Journal International)},
+  url = {http://gji.oxfordjournals.org/cgi/content/full/ggv020?ijkey=pKzrSXbtxjlOjzd&keytype=ref}
+}
+
+
 @ARTICLE{vanLeeuwen2014SISC3Dfds,
   author = {Tristan van Leeuwen and Felix J. Herrmann},
   title = {{3D} frequency-domain seismic inversion with controlled sloppiness},

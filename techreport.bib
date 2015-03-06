@@ -1,6 +1,142 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+%-----2015-----%
+
+@TECHREPORT{kumar2015EAGElse,
+  author = {Rajiv Kumar and Ning Tu and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Least-squares extended imaging with surface-related multiples},
+  year = {2015},
+  month = {01},
+  institution = {UBC},
+  abstract = {Common image gathers are used in building velocity
+                  models, inverting for anisotropy parameters, and
+                  analyzing reservoir attributes. Typically, only
+                  primary reflections are used to form image gathers
+                  as multiples can cause artifacts that interfere with
+                  the events of interest. However, it has been shown
+                  that multiples can actually provide extra
+                  illumination of the subsurface, especially for
+                  delineating the near-surface features. In this
+                  paper, we aim to form common image gathers directly
+                  from the data with surface related multiples by
+                  applying concepts that have been used to
+                  successfully deal with surface-related multiples in
+                  imaging. We achieve this by effectively inverting an
+                  extended migration operator. This results in
+                  extended images with better near-surface
+                  illumination that are free of artifacts that can
+                  hamper velocity analysis. In addition, being able to
+                  generate extended images directly from the total
+                  data avoids the need for (time-consuming)
+                  pre-processing. Synthetic examples on a layered
+                  model show that the proposed formulation is
+                  promising.},
+  keywords = {surface-related multiples, image gathers},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2015/kumar2015EAGElse/kumar2015EAGElse.html}
+}
+
+
+@TECHREPORT{kumar2015EAGEtjm,
+  author = {Rajiv Kumar and Haneet Wason and Felix J. Herrmann},
+  title = {Time-jittered marine acquisition: low-rank v/s sparsity},
+  year = {2015},
+  month = {01},
+  institution = {UBC},
+  abstract = {Time-jittered simultaneous marine acquisition has been
+                  recognized as an economic way of improving the
+                  spatial sampling, and speedup acquisition, where a
+                  single (or multiple) source vessel fires at --
+                  jittered source locations and instances in time. It
+                  has been shown in the past that this problem can be
+                  setup as a -- compressed sensing problem, where
+                  conventional seismic data is reconstructed from
+                  blended data via a sparsity-promoting optimization
+                  formulation. While the recovery quality of deblended
+                  data is very good, the recovery process is
+                  computationally very expensive. In this paper, we
+                  present a computationally efficient
+                  rank-minimization algorithm to deblend the seismic
+                  data. The proposed algorithm is suitable for
+                  large-scale seismic data, since it avoids SVD
+                  computations and uses a low-rank factorized
+                  formulation instead. Results are illustrated with
+                  simulations of time-jittered marine acquisition,
+                  which translates to jittered source locations for a
+                  given speed of the source vessel, for a single
+                  source vessel with two airgun arrays.},
+  keywords = {deblending, low-rank},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2015/kumar2015EAGEtjm/kumar2015EAGEtjm.html}
+}
+
+
+@TECHREPORT{lago2015EAGEtrg,
+  author = {Rafael Lago and Felix J. Herrmann},
+  title = {Towards a robust geometric multigrid scheme for {Helmholtz} equation},
+  year = {2015},
+  month = {01},
+  institution = {UBC},
+  abstract = {We discuss an improvement of existing multigrid
+                  techniques for the solution of the time harmonic
+                  wave equation targeting application to seismic
+                  inversion and imaging, using non-traditional
+                  smoothing and coarse correction techniques, namely
+                  the CGMN and CRMN methods. We aim at developing a
+                  multigrid scheme to be used as a preconditioner for
+                  FGMRES showing less sensibility to changes in the
+                  discretization of the operator. We compare this
+                  multigrid scheme with recent developments in the
+                  multigrid field obtaining very satisfactory
+                  results. Our numerical experiments using SEG/EAGE
+                  Overthrust velocity model showing not only more
+                  robustness when switching from a basic 7 points
+                  stencil to a more compact 27 points stencil, but
+                  also a considerable reduction in the number of
+                  preconditioning steps required to attain
+                  convergence, a result encouraging further
+                  investigation.},
+  keywords = {Helmholtz, multigrid, CGMN, CRMN},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2015/lago2015EAGEtrg/lago2015EAGEtrg.pdf}
+}
+
+
+@TECHREPORT{peters2015EAGErwi,
+  author = {Bas Peters and Brendan Smithyman and Felix J. Herrmann},
+  title = {Regularizing waveform inversion by projection onto intersections of convex sets},
+  year = {2015},
+  month = {01},
+  institution = {UBC},
+  abstract = {A framework is proposed for regularizing the waveform
+                  inversion problem by projections onto intersections
+                  of convex sets. Multiple pieces of prior information
+                  about the geology are represented by multiple convex
+                  sets, for example limits on the velocity or minimum
+                  smoothness conditions on the model. The data-misfit
+                  is then minimized, such that the estimated model is
+                  always in the intersection of the convex
+                  sets. Therefore, it is clear what properties the
+                  estimated model will have at each iteration. This
+                  approach does not require any quadratic penalties to
+                  be used and thus avoids the known problems and
+                  limitations of those types of penalties. It is shown
+                  that by formulating waveform inversion as a
+                  constrained problem, regularization ideas such as
+                  Tikhonov regularization and gradient filtering can
+                  be incorporated into one framework. The algorithm is
+                  generally applicable, in the sense that it works
+                  with any (differentiable) objective function,
+                  several gradient and quasi-Newton based solvers and
+                  does not require significant additional
+                  computation. The method is demonstrated on the
+                  inversion of very noisy synthetic data and vertical
+                  seismic profiling field data.},
+  keywords = {waveform inversion, regularization, convex sets},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2015/peters2015EAGErwi/peters2015EAGErwi.html}
+}
+
+
+%-----2014-----%
+
 @TECHREPORT{herrmann2014pmpde,
   author = {Felix J. Herrmann and Tristan van Leeuwen},
   title = {A penalty method for {PDE}-constrained optimization},

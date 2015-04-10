@@ -13741,27 +13741,35 @@
 % Encoding: MacRoman
 
 %-----2015-----%
+
 @UNPUBLISHED{esser2015SEGasd,
   author = {Ernie Esser and Lluís Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
   title = {Automatic salt delineation --- {Wavefield} {Reconstruction} {Inversion} with convex constraints},
   year = {2015},
   date_submitted = {04/01/2015},
-  abstract = { We extend full-waveform inversion by Wavefield Reconstruction
-               Inversion by  including convex constraints on the model. Contrary to the
-               conventional adjoint-state formulations, Wavefield Reconstruction Inversion
-               has the advantage that the Gauss-Newton Hessian is well approximated by a
-               diagonal scaling, which allows us to add convex constraints, such as the box- and the
-               edge-preserving total-variation constraint, on the square slowness without
-               incurring significant increases in computational costs. As the examples
-               demonstrate, including these constraints yields far superior results in
-               complex geological areas that contain high-velocity high-contrast bodies (e.g. salt
-               or basalt). Without these convex constraints, adjoint-state and Wavefield
-               Reconstruction Inversion get trapped in local minima for poor starting
-               models.},
+  abstract = {We extend full-waveform inversion by Wavefield
+                  Reconstruction Inversion by including convex
+                  constraints on the model. Contrary to the
+                  conventional adjoint-state formulations, Wavefield
+                  Reconstruction Inversion has the advantage that the
+                  Gauss-Newton Hessian is well approximated by a
+                  diagonal scaling, which allows us to add convex
+                  constraints, such as the box- and the
+                  edge-preserving total-variation constraint, on the
+                  square slowness without incurring significant
+                  increases in computational costs. As the examples
+                  demonstrate, including these constraints yields far
+                  superior results in complex geological areas that
+                  contain high-velocity high-contrast bodies
+                  (e.g. salt or basalt). Without these convex
+                  constraints, adjoint-state and Wavefield
+                  Reconstruction Inversion get trapped in local minima
+                  for poor starting models.},
   keywords = {SEG, full-waveform inversion, convex constraints, total-variation norm, salt, private},
   note = {(submitted to the SEG conference)},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2015/esser2015SEGasd/esser2015SEGasd.html}
 }
+
 
 @UNPUBLISHED{louboutin2015SEGtcs,
   author = {Mathias Louboutin and Felix J. Herrmann},
@@ -14068,7 +14076,6 @@
   author = {Rajiv Kumar and Haneet Wason and Felix J. Herrmann},
   title = {Source separation for simultaneous towed-streamer marine acquisition---a compressed sensing approach},
   year = {2015},
-  date_submitted = {02/16/2015},
   institution = {UBC},
   abstract = {Simultaneous marine acquisition is an economic way to
                   sample seismic data and speedup acquisition, wherein
@@ -14231,6 +14238,51 @@
   keywords = {EAGE, waveform inversion, VSP},
   note = {(to be presented at the EAGE Conference)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/smithyman2015EAGEcwi/smithyman2015EAGEcwi.pdf}
+}
+
+
+@UNPUBLISHED{tu2015TLEfls,
+  author = {Ning Tu and Felix J. Herrmann},
+  title = {Fast least-squares imaging with surface-related multiples: application to a {North}-{Sea} data set},
+  year = {2015},
+  date_submitted = {04/09/2015},
+  institution = {UBC},
+  abstract = {In marine seismic acquisition, surface-related multiples
+                  constitute a significant portion of the acquired
+                  data. Typically, multiples are removed during
+                  early-stage data-processing as they can lead to
+                  phantom reflectors during migration that may result
+                  in erroneous geological interpretations. However, if
+                  properly dealt with, multiples can provide valuable
+                  extra information and complement primaries in
+                  illuminating the subsurface. In this article, we
+                  demonstrate the limitation of the reverse-time
+                  migration in imaging these multiples, and present an
+                  alternative inversion procedure that is
+                  computationally efficient, that jointly maps both
+                  primaries and multiples to the true reflectors, and
+                  where the source function is estimated on the
+                  fly. As a result, we obtain high-quality, mostly
+                  artifact-free, broad-band images where the imprint
+                  of the source-function are partly removed at a
+                  computationally affordable expense compared to the
+                  combined costs of the wave-equation based
+                  surface-related multiple elimination and the
+                  reverse-time migration. We achieve all this by
+                  including the total downgoing wavefields as areal
+                  sources in the least-squares migration in
+                  combination with curvelet-domain sparsity promotion.
+                  We apply the proposed method to a shallow-water
+                  marine data set from the North sea, which contains
+                  abundant short-period surface-related multiples, and
+                  show its efficacy in eliminating coherent imaging
+                  artifacts associated with these multiples. We also
+                  demonstrate the benefits of joint imaging of
+                  primaries and multiples compared to imaging these
+                  signal components separately.},
+  keywords = {migration, multiples, inversion, least squares, field data, private},
+  note = {Submitted to The Leading Edge on April 9.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/tu2015TLEfls/tu2015TLEfls.html}
 }
 
 

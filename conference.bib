@@ -1,6 +1,35 @@
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+@CONFERENCE{peters2015SIAMmfq,
+  author = {Bas Peters and Felix J. Herrmann and Chen Grief},
+  title = {Matrix-free quadratic-penalty methods for {PDE}-constrained optimization},
+  booktitle = {SIAM Conference on Computational Science and Engineering},
+  year = {2015},
+  month = {03},
+  abstract = {The large scale of seismic waveform inversion makes
+                  matrix free implementations essential. We show how
+                  to exploit the quadratic penalty structure to
+                  construct matrix free reduced-space and full-space
+                  algorithms, which have some advantages over the
+                  commonly used Lagrangian based methods for
+                  PDE-constrained optimization. This includes the
+                  construction of effective and sparse Hessian
+                  approximations and reduced sensitivity to the
+                  initial guess. A computational bottleneck is the
+                  need to solve a large least squares problem with a
+                  PDE block. When direct solvers are not available, we
+                  propose a fast matrix free iterative approach with
+                  reasonable memory requirements. It takes advantage
+                  of the structure of the least squares problem with a
+                  combination of preconditioning, low rank
+                  decomposition and deflation.},
+  keywords = {quadratic-penalty, least-squares, low-rank, waveform inversion, PDE-constrained optimization, private},
+  note = {presented at the SIAM Conference in Salt Lake City, USA},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SIAM/2015/peters2015SIAMmfq/peters2015SIAMmfq.pdf}
+}
+
+
 @CONFERENCE{herrmann2015ASEGrae,
   author = {Felix J. Herrmann},
   title = {Randomized algorithms in exploration seismology},
@@ -11,13 +40,13 @@
                   seismology relies on the collection and processing
                   of massive data volumes that grow exponentially in
                   size as the survey area and desired resolution
-                  increase.  This exponential growth --- in
-                  combination with the increased complexity of the
-                  next-generation of iterative wave-equation based
-                  inversion algorithms --- puts strains on our
-                  acquisition systems and computational back ends
-                  impeding progress in our field. During this talk, I
-                  will review how recent randomized algorithms from
+                  increase. This exponential growth --- in combination
+                  with the increased complexity of the next-generation
+                  of iterative wave-equation based inversion
+                  algorithms --- puts strains on our acquisition
+                  systems and computational back ends impeding
+                  progress in our field. During this talk, I will
+                  review how recent randomized algorithms from
                   Compressive Sensing and Machine learning can be used
                   to overcome some of these challenges by
                   fundamentally rethinking how we sample and process

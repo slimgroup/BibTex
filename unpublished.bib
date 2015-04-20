@@ -3,93 +3,6 @@
 
 %-----2015-----%
 
-@UNPUBLISHED{esser2015SEGasd,
-  author = {Ernie Esser and Lluís Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
-  title = {Automatic salt delineation --- {Wavefield} {Reconstruction} {Inversion} with convex constraints},
-  year = {2015},
-  date_submitted = {04/01/2015},
-  abstract = {We extend full-waveform inversion by Wavefield
-                  Reconstruction Inversion by including convex
-                  constraints on the model. Contrary to the
-                  conventional adjoint-state formulations, Wavefield
-                  Reconstruction Inversion has the advantage that the
-                  Gauss-Newton Hessian is well approximated by a
-                  diagonal scaling, which allows us to add convex
-                  constraints, such as the box- and the
-                  edge-preserving total-variation constraint, on the
-                  square slowness without incurring significant
-                  increases in computational costs. As the examples
-                  demonstrate, including these constraints yields far
-                  superior results in complex geological areas that
-                  contain high-velocity high-contrast bodies
-                  (e.g. salt or basalt). Without these convex
-                  constraints, adjoint-state and Wavefield
-                  Reconstruction Inversion get trapped in local minima
-                  for poor starting models.},
-  keywords = {SEG, full-waveform inversion, convex constraints, total-variation norm, salt, private},
-  note = {(submitted to the SEG conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2015/esser2015SEGasd/esser2015SEGasd.html}
-}
-
-
-@UNPUBLISHED{louboutin2015SEGtcs,
-  author = {Mathias Louboutin and Felix J. Herrmann},
-  title = {Time compressively sampled full-waveform inversion with stochastic optimization},
-  year = {2015},
-  date_submitted = {04/01/2015},
-  abstract = { Time-domain Full-Waveform Inversion (FWI) aims to image the subsurface of the
-               earth accurately from field recorded data and can be solved via the reduced
-               adjoint-state method. However, this method requires access to the forward and
-               adjoint wavefields that are meet when computing gradient updates. The challenge
-               here is that the adjoint wavefield is computed in reverse order during time
-               stepping and therefore requires storage or other type of mitigation because
-               storing the full time history of the forward wavefield is too expensive in
-               realistic 3D settings. To overcome this challenge, we propose an approximate
-               adjoint-state method where the wavefields are
-               subsampled randomly, which drastically the amount of storage needed. By using
-               techniques from stochastic optimization, we control the errors induced by the
-               subsampling. Examples of the proposed technique on a synthetic but realistic
-               2D model show that the subsampling-related artifacts can be reduced significantly
-               by changing the sampling for each source after each model update. Combination of
-               this gradient approximation with a quasi-Newton method shows virtually artifact
-               free inversion results requiring only 5% of storage compared to saving the
-               history at Nyquist. In addition, we avoid having to recompute the wavefields
-               as is required by checkpointing.},
-  keywords = {SEG, Full-waveform inversion, Acoustic, Subsampling, Time-domain, Inversion, Stochastic optimization, private},
-  note = {(submitted to the SEG conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2015/louboutin2015SEGtcs/louboutin2015SEGtcs.html}
-}
-
-
-@UNPUBLISHED{peters2015SEGrwi,
-  author = {Bas Peters and Zhilong Fang and Brendan Smithyman and Felix J. Herrmann},
-  title = {Regularizing waveform inversion by projections onto convex sets --- application to the {2D} {Chevron} 2014 synthetic blind-test dataset},
-  year = {2015},
-  date_submitted = {04/01/2015},
-  abstract = { A framework is proposed for regularizing the waveform inversion
-               problem by projections onto intersections of convex sets. Multiple pieces of
-               prior information about the geology are represented by multiple convex sets,
-               for example limits on the velocity or minimum smoothness conditions on the model.
-               The data-misfit is then minimized, such that the estimated model is always in
-               the intersection of the convex sets. Therefore, it is clear what properties the
-               estimated model will have at each iteration. This approach does not require any
-               quadratic penalties to be used and thus avoids the known problems and
-               limitations of those types of penalties. It is shown that by formulating
-               waveform inversion as a constrained problem, regularization ideas such as
-               Tikhonov regularization and gradient filtering can be incorporated into one
-               framework. The algorithm is generally applicable, in the sense that it works
-               with any (differentiable) objective function and does not require significant
-               additional computation. The method is demonstrated on the inversion of the 2D
-               marine isotropic elastic synthetic seismic benchmark by Chevron using an
-               acoustic modeling code. To highlight the effect of the projections, we apply
-               no data pre-processing.},
-  keywords = {SEG, Waveform inversion, regularization, projection, blind-test,Wavefield Reconstruction Inversion, private},
-  note = {(submitted to the SEG conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2015/peters2015SEGrwi/peters2015SEGrwi.html}
-}
-
-
-
 @UNPUBLISHED{bougher2015CSEGpsu,
   author = {Ben Bougher},
   title = {Prediction of stratigraphic units from spectral co-occurance coefficients of well logs},
@@ -184,6 +97,35 @@
   keywords = {EAGE, blind deconvolution, EPSI},
   note = {(to be presented at the EAGE Conference)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/esser2015EAGElcs/esser2015EAGElcs.html}
+}
+
+
+@UNPUBLISHED{esser2015SEGasd,
+  author = {Ernie Esser and Lluís Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  title = {Automatic salt delineation --- {Wavefield} {Reconstruction} {Inversion} with convex constraints},
+  year = {2015},
+  date_submitted = {04/01/2015},
+  abstract = {We extend full-waveform inversion by Wavefield
+                  Reconstruction Inversion by including convex
+                  constraints on the model. Contrary to the
+                  conventional adjoint-state formulations, Wavefield
+                  Reconstruction Inversion has the advantage that the
+                  Gauss-Newton Hessian is well approximated by a
+                  diagonal scaling, which allows us to add convex
+                  constraints, such as the box- and the
+                  edge-preserving total-variation constraint, on the
+                  square slowness without incurring significant
+                  increases in computational costs. As the examples
+                  demonstrate, including these constraints yields far
+                  superior results in complex geological areas that
+                  contain high-velocity high-contrast bodies
+                  (e.g. salt or basalt). Without these convex
+                  constraints, adjoint-state and Wavefield
+                  Reconstruction Inversion get trapped in local minima
+                  for poor starting models.},
+  keywords = {SEG, full-waveform inversion, convex constraints, total-variation norm, salt, private},
+  note = {(submitted to the SEG conference)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2015/esser2015SEGasd/esser2015SEGasd.html}
 }
 
 
@@ -400,6 +342,44 @@
 }
 
 
+@UNPUBLISHED{louboutin2015SEGtcs,
+  author = {Mathias Louboutin and Felix J. Herrmann},
+  title = {Time compressively sampled full-waveform inversion with stochastic optimization},
+  year = {2015},
+  date_submitted = {04/01/2015},
+  abstract = {Time-domain Full-Waveform Inversion (FWI) aims to image
+                  the subsurface of the earth accurately from field
+                  recorded data and can be solved via the reduced
+                  adjoint-state method. However, this method requires
+                  access to the forward and adjoint wavefields that
+                  are meet when computing gradient updates. The
+                  challenge here is that the adjoint wavefield is
+                  computed in reverse order during time stepping and
+                  therefore requires storage or other type of
+                  mitigation because storing the full time history of
+                  the forward wavefield is too expensive in realistic
+                  3D settings. To overcome this challenge, we propose
+                  an approximate adjoint-state method where the
+                  wavefields are subsampled randomly, which
+                  drastically the amount of storage needed. By using
+                  techniques from stochastic optimization, we control
+                  the errors induced by the subsampling. Examples of
+                  the proposed technique on a synthetic but realistic
+                  2D model show that the subsampling-related artifacts
+                  can be reduced significantly by changing the
+                  sampling for each source after each model
+                  update. Combination of this gradient approximation
+                  with a quasi-Newton method shows virtually artifact
+                  free inversion results requiring only 5% of storage
+                  compared to saving the history at Nyquist. In
+                  addition, we avoid having to recompute the
+                  wavefields as is required by checkpointing.},
+  keywords = {SEG, Full-waveform inversion, Acoustic, Subsampling, Time-domain, Inversion, Stochastic optimization, private},
+  note = {(submitted to the SEG conference)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2015/louboutin2015SEGtcs/louboutin2015SEGtcs.html}
+}
+
+
 @UNPUBLISHED{oghenekohwo2015CSEGctl,
   author = {Felix Oghenekohwo and Felix J. Herrmann},
   title = {Compressive time-lapse seismic data processing using shared information},
@@ -463,6 +443,94 @@
   keywords = {EAGE, time-lapse, FWI},
   note = {(to be presented at the EAGE Conference)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/oghenekohwo2015EAGEuci/oghenekohwo2015EAGEuci.html}
+}
+
+
+@UNPUBLISHED{oghenekohwo2015PIMSntc,
+  author = {Felix Oghenekohwo and Felix J. Herrmann},
+  title = {A new take on compressive time-lapse seismic acquisition, imaging and inversion},
+  year = {2015},
+  abstract = {Compressive sensing (CS), a sampling paradigm that is
+                  changing how data is acquired and processed in many
+                  fields, has attracted tremendous attention in recent
+                  years. In exploration seismology, particularly in 3D
+                  seismic technology, there have been published work
+                  on the application of CS to seismic data
+                  acquisition, processing and inversion. However, very
+                  little is known about the implications of CS in
+                  time-lapse (4D) seismic. Leveraging ideas from
+                  distributed CS where more than one signal is
+                  acquired and processed, as in 4D seismic, we present
+                  a joint recovery algorithm for time-lapse seismic
+                  data acquisition, imaging and inversion. The
+                  algorithm exploits the common information in the
+                  data sets (baseline and monitor) as part of an
+                  inversion procedure. Application of our algorithm to
+                  realistic synthetic examples highlight its
+                  advantages over other conventional approaches for
+                  processing time-lapse seismic data.},
+  keywords = {PIMS, workshop, time-lapse, private},
+  note = {to be presented at the PIMS Workshop on Advances in Seismic Imaging and Inversion, University of Alberta, Edmonton}
+}
+
+
+@UNPUBLISHED{peters2015AIPwri,
+  author = {Bas Peters},
+  title = {Wavefield-reconstruction inversion},
+  year = {2015},
+  date_submitted = {04/17/2015},
+  abstract = {Wavefield Reconstruction Inversion is a method for
+                  PDE-constrained optimization, which revolves around
+                  the estimation of fields using the PDE as well as
+                  the observed data in a least-squares sense. The
+                  method is quadratic penalty based, which offers some
+                  interesting possibilities for the construction of
+                  algorithms, compared to the Lagrangian form. One of
+                  the main benefits of the method is when the initial
+                  guess is far from the global minimizer.
+                  Reduced-space and full-space algorithms are
+                  discussed, including illustrative examples. The
+                  method was developed with seismic applications in
+                  mind, but applies to other PDE-constrained
+                  optimization problems as well.},
+  keywords = {AIP, Waveform reconstruction inversion, penalty method, optimization, full-waveform inversion, private},
+  note = {to be presented at the AIP Conference in Helsinki, Finland}
+}
+
+
+@UNPUBLISHED{peters2015SEGrwi,
+  author = {Bas Peters and Zhilong Fang and Brendan Smithyman and Felix J. Herrmann},
+  title = {Regularizing waveform inversion by projections onto convex sets --- application to the {2D} {Chevron} 2014 synthetic blind-test dataset},
+  year = {2015},
+  date_submitted = {04/01/2015},
+  abstract = {A framework is proposed for regularizing the waveform
+                  inversion problem by projections onto intersections
+                  of convex sets. Multiple pieces of prior information
+                  about the geology are represented by multiple convex
+                  sets, for example limits on the velocity or minimum
+                  smoothness conditions on the model.  The data-misfit
+                  is then minimized, such that the estimated model is
+                  always in the intersection of the convex
+                  sets. Therefore, it is clear what properties the
+                  estimated model will have at each iteration. This
+                  approach does not require any quadratic penalties to
+                  be used and thus avoids the known problems and
+                  limitations of those types of penalties. It is shown
+                  that by formulating waveform inversion as a
+                  constrained problem, regularization ideas such as
+                  Tikhonov regularization and gradient filtering can
+                  be incorporated into one framework. The algorithm is
+                  generally applicable, in the sense that it works
+                  with any (differentiable) objective function and
+                  does not require significant additional
+                  computation. The method is demonstrated on the
+                  inversion of the 2D marine isotropic elastic
+                  synthetic seismic benchmark by Chevron using an
+                  acoustic modeling code. To highlight the effect of
+                  the projections, we apply no data pre-processing.},
+  keywords = {SEG, Waveform inversion, regularization, projection, blind-test,Wavefield Reconstruction Inversion, private},
+  note = {(submitted to the SEG conference)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2015/peters2015SEGrwi/peters2015SEGrwi.html}
 }
 
 

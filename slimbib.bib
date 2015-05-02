@@ -12632,6 +12632,7 @@
   title = {Least-squares extended imaging with surface-related multiples},
   year = {2015},
   month = {01},
+  number = {TR-EOAS-2015-1},
   institution = {UBC},
   abstract = {Common image gathers are used in building velocity
                   models, inverting for anisotropy parameters, and
@@ -12666,6 +12667,7 @@
   title = {Time-jittered marine acquisition: low-rank v/s sparsity},
   year = {2015},
   month = {01},
+  number = {TR-EOAS-2015-2},
   institution = {UBC},
   abstract = {Time-jittered simultaneous marine acquisition has been
                   recognized as an economic way of improving the
@@ -12699,6 +12701,7 @@
   title = {Towards a robust geometric multigrid scheme for {Helmholtz} equation},
   year = {2015},
   month = {01},
+  number = {TR-EOAS-2015-3},
   institution = {UBC},
   abstract = {We discuss an improvement of existing multigrid
                   techniques for the solution of the time harmonic
@@ -12729,6 +12732,7 @@
   title = {Regularizing waveform inversion by projection onto intersections of convex sets},
   year = {2015},
   month = {01},
+  number = {TR-EOAS-2015-4},
   institution = {UBC},
   abstract = {A framework is proposed for regularizing the waveform
                   inversion problem by projections onto intersections
@@ -12760,6 +12764,19 @@
 
 
 %-----2014-----%
+
+@TECHREPORT{esser2014sln,
+  author = {Ernie Esser},
+  title = {Some lifting notes},
+  year = {2014},
+  month = {02},
+  number = {TR-EOAS-2014-1},
+  institution = {UBC},
+  keywords = {lifting, nonconvex quadratic problems, convex semidefinite programming, low rank},
+  note = {written on February 15, 2014},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2014/esser2014sln/esser2014sln.pdf}
+}
+
 
 @TECHREPORT{herrmann2014pmpde,
   author = {Felix J. Herrmann and Tristan van Leeuwen},
@@ -12802,6 +12819,7 @@
   author = {Felix J. Herrmann},
   title = {{NSERC} 2014 {DNOISE} application},
   year = {2014},
+  number = {TR-EOAS-2014-7},
   institution = {UBC},
   abstract = {This current proposal describes a comprehensive
                   five-year continuation of our research project in
@@ -12848,6 +12866,7 @@
   title = {A scaled gradient projection method for total variation regularized full waveform inversion},
   year = {2014},
   month = {04},
+  number = {TR-EOAS-2014-2},
   institution = {UBC},
   abstract = {We propose an extended full waveform inversion
                   formulation that includes convex constraints on the
@@ -12868,6 +12887,7 @@
   title = {A stochastic quasi-Newton {McMC} method for uncertainty quantification of full-waveform inversion},
   year = {2014},
   month = {04},
+  number = {TR-EOAS-2014-6},  
   institution = {UBC},
   abstract = {In this work we propose a stochastic quasi-Newton Markov
                   chain Monte Carlo (McMC) method to quantify the
@@ -12907,6 +12927,7 @@
   title = {Full waveform inversion with interferometric measurements},
   year = {2014},
   month = {04},
+  number = {TR-EOAS-2014-5},
   institution = {UBC},
   abstract = {In this note, we design new misfit functions for
                   full-waveform inversion by using interferometric
@@ -12931,6 +12952,7 @@
   title = {Matrix completion on unstructured grids : 2-D seismic data regularization and interpolation},
   year = {2014},
   month = {04},
+  number = {TR-EOAS-2014-3},
   institution = {UBC},
   abstract = {Seismic data interpolation via rank-minimization
                   techniques has been recently introduced in the
@@ -12961,6 +12983,7 @@
   title = {Joint full-waveform inversion of on-land surface and {VSP} data from the {Permian} {Basin}},
   year = {2014},
   month = {04},
+  number = {TR-EOAS-2014-4},
   institution = {UBC},
   abstract = {Full-waveform Inversion is applied to generate a
                   high-resolution model of P-wave velocity for a site
@@ -12981,6 +13004,7 @@
   author = {Felix J. Herrmann},
   title = {{NSERC} 2014 {DNOISE} progress report},
   year = {2014},
+  number = {TR-EOAS-2014-8},
   institution = {UBC},
   abstract = {As we entered the second half of the DNOISE II project,
                   we are happy to report that we have made significant
@@ -13070,114 +13094,71 @@
 }
 
 
-@TECHREPORT{dasilva2014htuck,
-  author = {Curt Da Silva and Felix J. Herrmann},
-  title = {Optimization on the {Hierarchical} {Tucker} manifold - applications to tensor completion},
-  year = {2014},
-  month = {03},
+%-----2013-----%
+
+@TECHREPORT{li2013EAGEwebmplijsp,
+  author = {Xiang Li and Felix J. Herrmann},
+  title = {Wave-equation based multi-parameter linearized inversion with joint-sparsity promotion},
+  year = {2013},
+  number = {TR-EOAS-2013-1},  
   institution = {UBC},
-  abstract = {In this work, we develop an optimization framework for
-                  problems whose solutions are well-approximated by
-                  Hierarchical Tucker (HT) tensors, an efficient
-                  structured tensor format based on recursive subspace
-                  factorizations. By exploiting the smooth manifold
-                  structure of these tensors, we construct standard
-                  optimization algorithms such as Steepest Descent and
-                  Conjugate Gradient for completing tensors from
-                  missing entries. Our algorithmic framework is fast
-                  and scalable to large problem sizes as we do not
-                  require SVDs on the ambient tensor space, as
-                  required by other methods. Moreover, we exploit the
-                  structure of the Gramian matrices associated with
-                  the HT format to regularize our problem, reducing
-                  overfitting for high subsampling ratios. We also
-                  find that the organization of the tensor can have a
-                  major impact on completion from realistic seismic
-                  acquisition geometries. These samplings are far from
-                  idealized randomized samplings that are usually
-                  considered in the literature but are realizable in
-                  practical scenarios. Using these algorithms, we
-                  successfully interpolate large-scale seismic data
-                  sets and demonstrate the competitive computational
-                  scaling of our algorithms as the problem sizes
-                  grow.},
-  keywords = {hierarchical tucker, structured tensor, tensor interpolation, differential geometry, riemannian optimization, gauss newton},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2014/dasilva2014htuck/dasilva2014htuck.pdf}
+  abstract = {The successful application of linearized inversion is
+                  affected by the prohibitive size of the data,
+                  computational resources required, and how accurately
+                  the model parameters reflects the real Earth
+                  properties. The issue of data size and computational
+                  resources can be addressed by combining ideas from
+                  sparsity promoting and stochastic optimization,
+                  which can allow us to invert model perturbation with
+                  a small subset of the data, yielding a few PDE
+                  solves for the inversion. In this abstract, we are
+                  aiming at addressing the issue of accuracy of model
+                  parameters by inverting density and velocity
+                  simultaneously rather than only using velocity. As a
+                  matter of face, the effects of density and velocity
+                  variations towards the wavefield are very similar,
+                  which will cause energy leakage between density and
+                  velocity images. To overcome this issue, we proposed
+                  a incoherence enhanced method that can reduce the
+                  similarity between the effect of density and
+                  velocity. Moreover, the location of structural
+                  variations in velocity and density are often
+                  overlapped in geological setting, thus in this
+                  abstract, we also exploit this property with
+                  joint-sparsity promoting to further improve the
+                  imaging result.},
+  keywords = {linearized inversion, incoherence enhancement, joint-sparsity},
+  month = {01},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2013/li2013EAGEwebmplijsp/li2013EAGEwebmplijsp.pdf}
 }
 
 
-@TECHREPORT{slim2011NSERCpr,
-  author = {Felix J. Herrmann},
-  title = {{NSERC} 2011 {DNOISE} progress report},
-  year = {2011},
+@TECHREPORT{kumar2013ICMLlr,
+  author = {Aleksandr Y. Aravkin and Rajiv Kumar and Hassan Mansour and Ben Recht and Felix J. Herrmann},
+  title = {An {SVD}-free {Pareto} curve approach to rank minimization},
+  year = {2013},
+  number = {TR-EOAS-2013-2},  
   institution = {UBC},
-  abstract = {The main thrust of the DNOISE project is focused on the
-                  following researth themes: [1] seismic acquisition
-                  design and recovery from incomplete data with the
-                  goal to reduce acquisition costs while increasing
-                  the spatial bandwidth and aperture of seismic data;
-                  [2] Removal of the 'surface nonlinearity' by
-                  simultaneous estimation of the source signature and
-                  the surface-free Green's function by inverting the
-                  surface-related multiple prediction operator; [3]
-                  Reduction of the computational complexity of
-                  full-waveform inversion (FWI) by randomized
-                  dimensionality reduction; [4] "Convexification" of
-                  FWI to remove or at least diminish the adverse
-                  effects of non-uniqueness that has plagued FWI since
-                  its inception; The first three themes are directed
-                  towards removing major impediments faced by FWI
-                  related to the costs of acquiring data, the
-                  computational costs of processing and inverting
-                  data, and to issues with source calibration and
-                  surface-related multiples. The final theme is more
-                  'blue sky' and tries to incorporate ideas from
-                  migration-velocity analysis into the formulation of
-                  full-waveform inversion. Aside from these themes, we
-                  will continue to work on seismic data acquisition
-                  schemes that favor sparsity-promoting recovery and
-                  on the development of large-scale solvers using
-                  recent developments in convex and stochastic
-                  optimization.},
-  keywords = {NSERC, DNOISE, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/TechReport/NSERC/2011/nserc-2011-dnoise-progress-report.pdf}
-}
-
-
-@TECHREPORT{slim2010NSERCapp,
-  author = {Felix J. Herrmann},
-  title = {{NSERC} 2010 {DNOISE} application},
-  year = {2010},
-  institution = {UBC},
-  abstract = {DNOISE II: Dynamic Nonlinear Optimization for Imaging in
-                  Seismic Exploration is a multidisciplinary research
-                  project that involves faculty from the Mathematics,
-                  Computer Science, and Earth and Ocean Sciences
-                  Departments at the University of British Columbia.
-                  DNOISE II constitutes a transformative research
-                  program towards a new paradigm in seismic
-                  exploration where the acquisition- and
-                  processing-related costs are no longer determined by
-                  the survey area and discretization but by
-                  transform-domain sparsity of the final result. In
-                  this approach, we rid ourselves from the
-                  confinements of conventional overly stringent
-                  sampling criteria that call for regular sampling
-                  with sequentiual sources at Nyquist rates. By
-                  adapting the principles of compressive sensing,
-                  DNOISE II promotes a ground-up formulation for
-                  seismic imaging where adverse subsampling-related
-                  artifacts are removed by intelligent
-                  simultaneous-acquisition design and recovery by
-                  transform-domain sparsity promotion. This
-                  development---in conjunction with our track records
-                  in sparse recovery and time-harmonic Helmholtz
-                  solvers---puts us in an unique position to deliver
-                  on fundamental breakthroughs in the development and
-                  implementation of the next-generation of processing,
-                  imaging, and full-waveform inversion solutions.},
-  keywords = {NSERC, DNOISE, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/TechReport/NSERC/2010/nserc-2010-dnoise-application.pdf}
+  abstract = {Recent SVD-free matrix factorization formulations have
+                  enabled rank optimization for extremely large-scale
+                  systems (millions of rows and columns). In this
+                  paper, we consider rank-regularized formulations
+                  that only require a target data-fitting error level,
+                  and propose an algorithm for the corresponding
+                  problem. We illustrate the advantages of the new
+                  approach using the Netflix problem, and use it to
+                  obtain high quality results for seismic trace
+                  interpolation, a key application in exploration
+                  geophysics. We show that factor rank can be easily
+                  adjusted as the inversion proceeds, and propose a
+                  weighted extension that allows known subspace
+                  information to improve the results of matrix
+                  completion formulations. Using these methods, we
+                  obtain high-quality reconstructions for large scale
+                  seismic interpolation problems with real data.},
+  keywords = {interpolation, low rank},
+  month = {02},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2013/kumar2013ICMLlr/kumar2013ICMLlr.pdf}
 }
 
 
@@ -13185,6 +13166,7 @@
   author = {Felix Oghenekohwo and Felix J. Herrmann},
   title = {Time-lapse seismics with randomized sampling},
   year = {2013},
+  number = {TR-EOAS-2013-3},  
   institution = {UBC},
   abstract = {In time-lapse or 4D seismics, repeatability of the
                   acquisition is a very crucial step, as we do not
@@ -13212,8 +13194,33 @@
                   image space, as a least-squares migration of the
                   model perturbation and they are shown for a subset
                   of a synthetic model - the Marmousi model},
-  keywords = {acquisition, time-lapse, migration, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/oghenekohwo2013SEGtlswrs/oghenekohwo2013SEGtlswrs.pdf}
+  keywords = {acquisition, time-lapse, migration},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2013/oghenekohwo2013SEGtlswrs/oghenekohwo2013SEGtlswrs.pdf}
+}
+
+
+@TECHREPORT{petrenko2013SEGsaoc,
+  author = {Art Petrenko and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Software acceleration of {CARP}, an iterative linear solver and preconditioner},
+  year = {2013},
+  number = {TR-EOAS-2013-4},  
+  institution = {UBC},
+  abstract = {We present the results of software optimization of a
+                  row-wise preconditioner (Component Averaged Row
+                  Projections) for the method of conjugate gradients,
+                  which is used to solve the diagonally banded
+                  Helmholtz system representing frequency domain,
+                  isotropic acoustic seismic wave simulation. We
+                  demonstrate that in our application, a
+                  preconditioner bound to one processor core and
+                  accessing memory contiguously reduces execution time
+                  by 7\% for matrices having on the order of 108
+                  non-zeros. For reference we note that our C
+                  implementation is over 80 times faster than the
+                  corresponding code written for a high-level
+                  numerical analysis language.},
+  keywords = {Helmholtz equation, Kaczmarz, software, wave propagation, frequency-domain},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2013/petrenko2013SEGsaoc/petrenko2013SEGsaoc.pdf}
 }
 
 
@@ -13221,6 +13228,7 @@
   author = {Felix J. Herrmann},
   title = {{NSERC} 2013 {DNOISE} progress report},
   year = {2013},
+  number = {TR-EOAS-2013-5},  
   institution = {UBC},
   abstract = {As we enter the second half of the DNOISE II project, we
                   are happy to report that we have made significant
@@ -13279,108 +13287,11 @@
 }
 
 
-@TECHREPORT{slim2012NSERCpr,
-  author = {Felix J. Herrmann},
-  title = {{NSERC} 2012 {DNOISE} progress report},
-  year = {2012},
-  institution = {UBC},
-  keywords = {NSERC, DNOISE, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/TechReport/NSERC/2012/Progress_Report_2012.pdf}
-}
-
-
-@TECHREPORT{petrenko2013SEGsaoc,
-  author = {Art Petrenko and Tristan van Leeuwen and Felix J. Herrmann},
-  title = {Software acceleration of {CARP}, an iterative linear solver and preconditioner},
-  year = {2013},
-  institution = {UBC},
-  abstract = {We present the results of software optimization of a
-                  row-wise preconditioner (Component Averaged Row
-                  Projections) for the method of conjugate gradients,
-                  which is used to solve the diagonally banded
-                  Helmholtz system representing frequency domain,
-                  isotropic acoustic seismic wave simulation. We
-                  demonstrate that in our application, a
-                  preconditioner bound to one processor core and
-                  accessing memory contiguously reduces execution time
-                  by 7\% for matrices having on the order of 108
-                  non-zeros. For reference we note that our C
-                  implementation is over 80 times faster than the
-                  corresponding code written for a high-level
-                  numerical analysis language.},
-  keywords = {Helmholtz equation, Kaczmarz, software, wave propagation, frequency-domain, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2013/petrenko2013SEGsaoc/petrenko2013SEGsaoc.pdf}
-}
-
-
-@TECHREPORT{kumar2013ICMLlr,
-  author = {Aleksandr Y. Aravkin and Rajiv Kumar and Hassan Mansour and Ben Recht and Felix J. Herrmann},
-  title = {An {SVD}-free {Pareto} curve approach to rank minimization},
-  year = {2013},
-  institution = {UBC},
-  abstract = {Recent SVD-free matrix factorization formulations have
-                  enabled rank optimization for extremely large-scale
-                  systems (millions of rows and columns). In this
-                  paper, we consider rank-regularized formulations
-                  that only require a target data-fitting error level,
-                  and propose an algorithm for the corresponding
-                  problem. We illustrate the advantages of the new
-                  approach using the Netflix problem, and use it to
-                  obtain high quality results for seismic trace
-                  interpolation, a key application in exploration
-                  geophysics. We show that factor rank can be easily
-                  adjusted as the inversion proceeds, and propose a
-                  weighted extension that allows known subspace
-                  information to improve the results of matrix
-                  completion formulations. Using these methods, we
-                  obtain high-quality reconstructions for large scale
-                  seismic interpolation problems with real data.},
-  keywords = {interpolation, low-rank},
-  month = {02},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2013/kumar2013ICMLlr/kumar2013ICMLlr.pdf}
-}
-
-
-@TECHREPORT{li2013EAGEwebmplijsp,
-  author = {Xiang Li and Felix J. Herrmann},
-  title = {Wave-equation based multi-parameter linearized inversion with joint-sparsity promotion},
-  year = {2013},
-  institution = {UBC},
-  abstract = {The successful application of linearized inversion is
-                  affected by the prohibitive size of the data,
-                  computational resources required, and how accurately
-                  the model parameters reflects the real Earth
-                  properties. The issue of data size and computational
-                  resources can be addressed by combining ideas from
-                  sparsity promoting and stochastic optimization,
-                  which can allow us to invert model perturbation with
-                  a small subset of the data, yielding a few PDE
-                  solves for the inversion. In this abstract, we are
-                  aiming at addressing the issue of accuracy of model
-                  parameters by inverting density and velocity
-                  simultaneously rather than only using velocity. As a
-                  matter of face, the effects of density and velocity
-                  variations towards the wavefield are very similar,
-                  which will cause energy leakage between density and
-                  velocity images. To overcome this issue, we proposed
-                  a incoherence enhanced method that can reduce the
-                  similarity between the effect of density and
-                  velocity. Moreover, the location of structural
-                  variations in velocity and density are often
-                  overlapped in geological setting, thus in this
-                  abstract, we also exploit this property with
-                  joint-sparsity promoting to further improve the
-                  imaging result.},
-  keywords = {linearized inversion, incoherence enhancement, joint-sparsity},
-  month = {01},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2013/li2013EAGEwebmplijsp/li2013EAGEwebmplijsp.pdf}
-}
-
-
 @TECHREPORT{vanLeeuwen2013Penalty2,
   author = {Tristan van Leeuwen and Felix J. Herrmann},
   title = {A penalty method for {PDE}-constrained optimization},
   year = {2013},
+  number = {TR-EOAS-2013-6},  
   institution = {UBC},
   abstract = {We present a method for solving PDE constrained
                   optimization problems based on a penalty
@@ -13408,10 +13319,53 @@
 }
 
 
+%-----2012-----%
+
+@TECHREPORT{rajiv2012SEGFRM,
+  author = {Rajiv Kumar and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  title = {Fast methods for rank minimization with applications to seismic-data interpolation},
+  institution = {Department of Earth and Ocean Sciences},
+  year = {2012},
+  number = {TR-EOAS-2012-3},
+  address = {University of British Columbia, Vancouver},
+  abstract = {Rank penalizing techniques are an important direction in
+                  seismic inverse problems, since they allow improved
+                  recovery by exploiting low-rank structure. A major
+                  downside of current state of the art techniques is
+                  their reliance on the SVD of seismic data
+                  structures, which can be prohibitively
+                  expensive. Fortunately, recent work allows us to
+                  circumvent this problem by working with matrix
+                  factorizations. We review a novel approach to rank
+                  penalization, and successfully apply it to the
+                  seismic interpolation problem by exploiting the
+                  low-rank structure of seismic data in the
+                  midpoint-offset domain. Experiments for the recovery
+                  of 2D monochromatic data matrices and seismic lines
+                  represented as 3D volumes support the feasibility
+                  and potential of the new approach.},
+  keywords = {rank, optimization, seismic data interpolation},
+  month = {04},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2012/rajiv2012SEGFRM/rajiv2012SEGFRM.pdf}
+}
+
+
+@TECHREPORT{slim2012NSERCpr,
+  author = {Felix J. Herrmann},
+  title = {{NSERC} 2012 {DNOISE} progress report},
+  year = {2012},
+  number = {TR-EOAS-2012-4},
+  institution = {UBC},
+  keywords = {NSERC, DNOISE, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/TechReport/NSERC/2012/Progress_Report_2012.pdf}
+}
+
+
 @TECHREPORT{vanleeuwen2012CGMN,
   author = {Tristan van Leeuwen},
   title = {Fourier analysis of the {CGMN} method for solving the {Helmholtz} equation},
   year = {2012},
+  number = {TR-EOAS-2012-1},
   institution = {Department of Earth, Ocean and Atmospheric Sciences},
   address = {The University of British Columbia, Vancouver},
   abstract = {The Helmholtz equation arises in many applications, such
@@ -13436,13 +13390,114 @@
   keywords = {Helmholtz equation, modelling},
   url = {http://arxiv.org/abs/1210.2644},
 }
+
+
+@TECHREPORT{vanleeuwen2012SEGparallel,
+  author = {Tristan van Leeuwen and Felix J. Herrmann},
+  title = {A parallel, object-oriented framework for frequency-domain wavefield imaging and inversion.},
+  institution = {Department of Earth and Ocean Sciences},
+  year = {2012},
+  number = {TR-EOAS-2012-2},
+  address = {University of British Columbia, Vancouver},
+  abstract = {We present a parallel object-oriented matrix-free
+                  framework for frequency-domain seismic modeling,
+                  imaging and inversion. The key aspects of the
+                  framework are its modularity and level of
+                  abstraction, which allows us to write code that
+                  reflects the underlying mathematical structure and
+                  develop unit-tests that guarantee the fidelity of
+                  the code. By overloading standard linear-algebra
+                  operations, such as matrix-vector multiplications,
+                  we can use standard optimization packages to work
+                  with our code without any modification. This leads
+                  to a scalable testbed on which new methods can be
+                  rapidly prototyped and tested on medium-sized 2D
+                  problems. Although our current implementation uses
+                  (parallel) Matlab, all of these design principles
+                  can also be met by using lower-level languages which
+                  is important when we want to scale to realistic 3D
+                  problems. We present some numerical examples on
+                  synthetic data.},
+  keywords = {modeling, imaging, inversion, SEG},
+  month = {04},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2012/vanleeuwen2012SEGparallel/vanleeuwen2012SEGparallel.pdf}
+}
+
   
+@TECHREPORT{vanleeuwen2012smii,
+  author = {Tristan van Leeuwen},
+  title = {A parallel matrix-free framework for frequency-domain seismic modelling, imaging and inversion in Matlab},
+  year = {2012},
+  number = {TR-EOAS-2012-5},
+  abstract = {I present a parallel matrix-free framework for
+                  frequency-domain seismic modeling, imaging and
+                  inversion. The framework provides basic building
+                  blocks for designing and testing optimization-based
+                  formulations of both linear and non-linear seismic
+                  in- verse problems. By overloading standard
+                  linear-algebra operations, such as matrix-vector
+                  multiplications, standard optimization packages can
+                  be used to work with the code without any
+                  modification. This leads to a scalable testbed on
+                  which new methods can be rapidly prototyped and
+                  tested on medium-sized 2D problems. I present some
+                  numerical examples on both linear and non-linear
+                  seismic inverse problems.},
+  keywords = {seismic imaging, optimization, Matlab, object-oriented programming},
+  month = {07},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2012/vanleeuwen2012smii/vanleeuwen2012smii.pdf}
+}
+
+
+%-----2011-----%
+
+@TECHREPORT{slim2011NSERCpr,
+  author = {Felix J. Herrmann},
+  title = {{NSERC} 2011 {DNOISE} progress report},
+  year = {2011},
+  number = {TR-EOAS-2011-1},
+  institution = {UBC},
+  abstract = {The main thrust of the DNOISE project is focused on the
+                  following researth themes: [1] seismic acquisition
+                  design and recovery from incomplete data with the
+                  goal to reduce acquisition costs while increasing
+                  the spatial bandwidth and aperture of seismic data;
+                  [2] Removal of the 'surface nonlinearity' by
+                  simultaneous estimation of the source signature and
+                  the surface-free Green's function by inverting the
+                  surface-related multiple prediction operator; [3]
+                  Reduction of the computational complexity of
+                  full-waveform inversion (FWI) by randomized
+                  dimensionality reduction; [4] "Convexification" of
+                  FWI to remove or at least diminish the adverse
+                  effects of non-uniqueness that has plagued FWI since
+                  its inception; The first three themes are directed
+                  towards removing major impediments faced by FWI
+                  related to the costs of acquiring data, the
+                  computational costs of processing and inverting
+                  data, and to issues with source calibration and
+                  surface-related multiples. The final theme is more
+                  'blue sky' and tries to incorporate ideas from
+                  migration-velocity analysis into the formulation of
+                  full-waveform inversion. Aside from these themes, we
+                  will continue to work on seismic data acquisition
+                  schemes that favor sparsity-promoting recovery and
+                  on the development of large-scale solvers using
+                  recent developments in convex and stochastic
+                  optimization.},
+  keywords = {NSERC, DNOISE, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/TechReport/NSERC/2011/nserc-2011-dnoise-progress-report.pdf}
+}
+
+
+%-----2010-----%
 
 @TECHREPORT{almatar10SEGesfd,
   author = {Mufeed H. AlMatar and Tim T.Y. Lin and Felix J. Herrmann},
   title = {Estimation of surface-free data by curvelet-domain matched filtering and sparse inversion},
   institution = {Department of Earth and Ocean Sciences},
   year = {2010},
+  number = {TR-EOAS-2010-1},
   address = {University of British Columbia, Vancouver},
   abstract = {Matching seismic wavefields and images lies at the heart
                   of many pre-post-processing steps part of seismic
@@ -13468,7 +13523,6 @@
                   latter property renders curvelet-domain sparsity
                   promotion an effective prior.},
   keywords = {SEG},
-  organization = {SEG},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2010/almatar10SEGesfd/almatar10SEGesfd.pdf}
 }
 
@@ -13478,6 +13532,7 @@
   title = {Empirical recovery conditions for seismic sampling},
   institution = {Department of Earth and Ocean Sciences, UBC},
   year = {2010},
+  number = {TR-EOAS-2010-2},
   abstract = {In this paper, we offer an alternative sampling method
                   leveraging recent insights from compressive sensing
                   towards seismic acquisition and processing for data
@@ -13512,97 +13567,52 @@
 }
 
 
-@TECHREPORT{hennenfent08TRori,
-  author = {Gilles Hennenfent and Felix J. Herrmann},
-  title = {One-norm regularized inversion: learning from the {Pareto} curve},
-  institution = {UBC Earth and Ocean Sciences Department},
-  year = {2008},
-  number = {TR-2008-5},
-  abstract = {Geophysical inverse problems typically involve a trade
-                  off between data misfit and some prior. Pareto
-                  curves trace the optimal trade off between these two
-                  competing aims. These curves are commonly used in
-                  problems with two-norm priors where they are plotted
-                  on a log-log scale and are known as L-curves. For
-                  other priors, such as the sparsity-promoting one
-                  norm, Pareto curves remain relatively
-                  unexplored. First, we show how these curves provide
-                  an objective criterion to gauge how robust one-norm
-                  solvers are when they are limited by a maximum
-                  number of matrix-vector products that they can
-                  perform. Second, we use Pareto curves and their
-                  properties to define and compute one-norm
-                  compressibilities. We argue this notion is key to
-                  understand one-norm regularized inversion. Third, we
-                  illustrate the correlation between the one-norm
-                  compressibility and the performance of Fourier and
-                  curvelet reconstructions with sparsity promoting
-                  inversion.},
-  keywords = {SLIM},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2008/hennenfent08TRori/hennenfent08TRori.pdf}
+@TECHREPORT{slim2010NSERCapp,
+  author = {Felix J. Herrmann},
+  title = {{NSERC} 2010 {DNOISE} application},
+  year = {2010},
+  number = {TR-EOAS-2010-3},
+  institution = {UBC},
+  abstract = {DNOISE II: Dynamic Nonlinear Optimization for Imaging in
+                  Seismic Exploration is a multidisciplinary research
+                  project that involves faculty from the Mathematics,
+                  Computer Science, and Earth and Ocean Sciences
+                  Departments at the University of British Columbia.
+                  DNOISE II constitutes a transformative research
+                  program towards a new paradigm in seismic
+                  exploration where the acquisition- and
+                  processing-related costs are no longer determined by
+                  the survey area and discretization but by
+                  transform-domain sparsity of the final result. In
+                  this approach, we rid ourselves from the
+                  confinements of conventional overly stringent
+                  sampling criteria that call for regular sampling
+                  with sequentiual sources at Nyquist rates. By
+                  adapting the principles of compressive sensing,
+                  DNOISE II promotes a ground-up formulation for
+                  seismic imaging where adverse subsampling-related
+                  artifacts are removed by intelligent
+                  simultaneous-acquisition design and recovery by
+                  transform-domain sparsity promotion. This
+                  development---in conjunction with our track records
+                  in sparse recovery and time-harmonic Helmholtz
+                  solvers---puts us in an unique position to deliver
+                  on fundamental breakthroughs in the development and
+                  implementation of the next-generation of processing,
+                  imaging, and full-waveform inversion solutions.},
+  keywords = {NSERC, DNOISE, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/TechReport/NSERC/2010/nserc-2010-dnoise-application.pdf}
 }
 
 
-@TECHREPORT{rajiv2012SEGFRM,
-  author = {Rajiv Kumar and Aleksandr Y. Aravkin and Felix J. Herrmann},
-  title = {Fast methods for rank minimization with applications to seismic-data interpolation},
-  institution = {Department of Earth and Ocean Sciences},
-  year = {2012},
-  number = {TR-2012-04},
-  address = {University of British Columbia, Vancouver},
-  abstract = {Rank penalizing techniques are an important direction in
-                  seismic inverse problems, since they allow improved
-                  recovery by exploiting low-rank structure. A major
-                  downside of current state of the art techniques is
-                  their reliance on the SVD of seismic data
-                  structures, which can be prohibitively
-                  expensive. Fortunately, recent work allows us to
-                  circumvent this problem by working with matrix
-                  factorizations. We review a novel approach to rank
-                  penalization, and successfully apply it to the
-                  seismic interpolation problem by exploiting the
-                  low-rank structure of seismic data in the
-                  midpoint-offset domain. Experiments for the recovery
-                  of 2D monochromatic data matrices and seismic lines
-                  represented as 3D volumes support the feasibility
-                  and potential of the new approach.},
-  keywords = {rank, optimization, seismic data interpolation},
-  month = {04},
-  organization = {SEG},
-  url = {https://www.slim.eos.ubc.ca/Publications//Public/TechReport/2012/rajiv2012SEGFRM/rajiv2012SEGFRM.pdf}
-}
-
-
-@TECHREPORT{lebed08TRhgg,
-  author = {Evgeniy Lebed and Felix J. Herrmann},
-  title = {A hitchhiker's guide to the galaxy of transform-domain sparsification},
-  institution = {UBC Earth and Ocean Sciences Department},
-  year = {2008},
-  number = {TR-2008-4},
-  abstract = {The ability to efficiently and sparsely represent
-                  seismic data is becoming an increasingly important
-                  problem in geophysics. Over the last decade many
-                  transforms such as wavelets, curvelets, contourlets,
-                  surfacelets, shearlets, and many other types of
-                  'x-lets' have been developed to try to resolve this
-                  issue. In this abstract we compare the properties of
-                  four of these commonly used transforms, namely the
-                  shift-invariant wavelets, complex wavelets,
-                  curvelets and surfacelets. We also briefly explore
-                  the performance of these transforms for the problem
-                  of recovering seismic wavefields from incomplete
-                  measurements.},
-  keywords = {SLIM},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2008/lebed08TRhgg/lebed08TRhgg.pdf}
-}
-
+%-----2009-----%
 
 @TECHREPORT{tang09TRdtr,
   author = {Gang Tang and Reza Shahidi and Jianwei Ma},
   title = {Design of two-dimensional randomized sampling schemes for curvelet-based sparsity-promoting seismic data recovery},
   institution = {UBC Earth and Ocean Sciences Department},
   year = {2009},
-  number = {TR-2009-03},
+  number = {TR-EOAS-2009-3},
   abstract = {The tasks of sampling, compression and reconstruction
                   are very common and often necessary in seismic data
                   processing due to the large size of seismic
@@ -13651,88 +13661,60 @@
 }
 
 
-@TECHREPORT{vandenberg07TRipr,
-  author = {Ewout {van den Berg} and Michael P. Friedlander},
-  title = {In pursuit of a root},
-  institution = {Department of Computer Science},
-  year = {2007},
-  month = {06},
-  number = {TR-2007-19},
-  address = {University of British Columbia, Vancouver},
-  abstract = {The basis pursuit technique is used to find a minimum
-                  one-norm solution of an underdetermined
-                  least-squares problem. Basis pursuit denoise fits
-                  the least-squares problem only approximately, and a
-                  single parameter determines a curve that traces the
-                  trade-off between the least-squares fit and the
-                  one-norm of the solution. We show that the function
-                  that describes this curve is convex and continuously
-                  differentiable over all points of interest. The dual
-                  solution of a least-squares problem with an explicit
-                  one-norm constraint gives function and derivative
-                  information needed for a root-finding method. As a
-                  result, we can compute arbitrary points on this
-                  curve. Numerical experiments demonstrate that our
-                  method, which relies on only matrix-vector
-                  operations, scales well to large problems.},
-  url = {http://www.optimization-online.org/DB_HTML/2007/06/1708.html}
+%-----2008-----%
+
+@TECHREPORT{lebed08TRhgg,
+  author = {Evgeniy Lebed and Felix J. Herrmann},
+  title = {A hitchhiker's guide to the galaxy of transform-domain sparsification},
+  institution = {UBC Earth and Ocean Sciences Department},
+  year = {2008},
+  number = {TR-EOAS-2008-4},
+  abstract = {The ability to efficiently and sparsely represent
+                  seismic data is becoming an increasingly important
+                  problem in geophysics. Over the last decade many
+                  transforms such as wavelets, curvelets, contourlets,
+                  surfacelets, shearlets, and many other types of
+                  'x-lets' have been developed to try to resolve this
+                  issue. In this abstract we compare the properties of
+                  four of these commonly used transforms, namely the
+                  shift-invariant wavelets, complex wavelets,
+                  curvelets and surfacelets. We also briefly explore
+                  the performance of these transforms for the problem
+                  of recovering seismic wavefields from incomplete
+                  measurements.},
+  keywords = {SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2008/lebed08TRhgg/lebed08TRhgg.pdf}
 }
 
 
-@TECHREPORT{vanleeuwen2012SEGparallel,
-  author = {Tristan van Leeuwen and Felix J. Herrmann},
-  title = {A parallel, object-oriented framework for frequency-domain wavefield imaging and inversion.},
-  institution = {Department of Earth and Ocean Sciences},
-  year = {2012},
-  number = {TR-2012-03},
-  address = {University of British Columbia, Vancouver},
-  abstract = {We present a parallel object-oriented matrix-free
-                  framework for frequency-domain seismic modeling,
-                  imaging and inversion. The key aspects of the
-                  framework are its modularity and level of
-                  abstraction, which allows us to write code that
-                  reflects the underlying mathematical structure and
-                  develop unit-tests that guarantee the fidelity of
-                  the code. By overloading standard linear-algebra
-                  operations, such as matrix-vector multiplications,
-                  we can use standard optimization packages to work
-                  with our code without any modification. This leads
-                  to a scalable testbed on which new methods can be
-                  rapidly prototyped and tested on medium-sized 2D
-                  problems. Although our current implementation uses
-                  (parallel) Matlab, all of these design principles
-                  can also be met by using lower-level languages which
-                  is important when we want to scale to realistic 3D
-                  problems. We present some numerical examples on
-                  synthetic data.},
-  keywords = {modeling, imaging, inversion, SEG},
-  month = {04},
-  organization = {SEG},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2012/vanleeuwen2012SEGparallel/vanleeuwen2012SEGparallel.pdf}
-}
-
-
-@TECHREPORT{vanleeuwen2012smii,
-  author = {Tristan van Leeuwen},
-  title = {A parallel matrix-free framework for frequency-domain seismic modelling, imaging and inversion in Matlab},
-  year = {2012},
-  abstract = {I present a parallel matrix-free framework for
-                  frequency-domain seismic modeling, imaging and
-                  inversion. The framework provides basic building
-                  blocks for designing and testing optimization-based
-                  formulations of both linear and non-linear seismic
-                  in- verse problems. By overloading standard
-                  linear-algebra operations, such as matrix-vector
-                  multiplications, standard optimization packages can
-                  be used to work with the code without any
-                  modification. This leads to a scalable testbed on
-                  which new methods can be rapidly prototyped and
-                  tested on medium-sized 2D problems. I present some
-                  numerical examples on both linear and non-linear
-                  seismic inverse problems.},
-  keywords = {seismic imaging, optimization, Matlab, object-oriented programming},
-  month = {07},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2012/vanleeuwen2012smii/vanleeuwen2012smii.pdf}
+@TECHREPORT{hennenfent08TRori,
+  author = {Gilles Hennenfent and Felix J. Herrmann},
+  title = {One-norm regularized inversion: learning from the {Pareto} curve},
+  institution = {UBC Earth and Ocean Sciences Department},
+  year = {2008},
+  number = {TR-EOAS-2008-5},
+  abstract = {Geophysical inverse problems typically involve a trade
+                  off between data misfit and some prior. Pareto
+                  curves trace the optimal trade off between these two
+                  competing aims. These curves are commonly used in
+                  problems with two-norm priors where they are plotted
+                  on a log-log scale and are known as L-curves. For
+                  other priors, such as the sparsity-promoting one
+                  norm, Pareto curves remain relatively
+                  unexplored. First, we show how these curves provide
+                  an objective criterion to gauge how robust one-norm
+                  solvers are when they are limited by a maximum
+                  number of matrix-vector products that they can
+                  perform. Second, we use Pareto curves and their
+                  properties to define and compute one-norm
+                  compressibilities. We argue this notion is key to
+                  understand one-norm regularized inversion. Third, we
+                  illustrate the correlation between the one-norm
+                  compressibility and the performance of Fourier and
+                  curvelet reconstructions with sparsity promoting
+                  inversion.},
+  keywords = {SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2008/hennenfent08TRori/hennenfent08TRori.pdf}
 }
 
 
@@ -13741,7 +13723,7 @@
   title = {Bayesian-signal separation by sparsity promotion: application to primary-multiple separation},
   institution = {UBC Earth and Ocean Sciences Department},
   year = {2008},
-  number = {TR-2008-1},
+  number = {TR-EOAS-2008-1},
   abstract = {Successful removal of coherent noise sources greatly
                   determines the quality of seismic imaging. Major
                   advances were made in this direction, e.g.,
@@ -13766,13 +13748,43 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Journals/2008/wang08TRbss/paper_html/paper.html}
 }
 
+
+%-----2007-----%
+
+@TECHREPORT{vandenberg07TRipr,
+  author = {Ewout {van den Berg} and Michael P. Friedlander},
+  title = {In pursuit of a root},
+  institution = {Department of Computer Science},
+  year = {2007},
+  month = {06},
+  number = {TR-EOAS-2007-19},
+  address = {University of British Columbia, Vancouver},
+  abstract = {The basis pursuit technique is used to find a minimum
+                  one-norm solution of an underdetermined
+                  least-squares problem. Basis pursuit denoise fits
+                  the least-squares problem only approximately, and a
+                  single parameter determines a curve that traces the
+                  trade-off between the least-squares fit and the
+                  one-norm of the solution. We show that the function
+                  that describes this curve is convex and continuously
+                  differentiable over all points of interest. The dual
+                  solution of a least-squares problem with an explicit
+                  one-norm constraint gives function and derivative
+                  information needed for a root-finding method. As a
+                  result, we can compute arbitrary points on this
+                  curve. Numerical experiments demonstrate that our
+                  method, which relies on only matrix-vector
+                  operations, scales well to large problems.},
+  url = {http://www.optimization-online.org/DB_HTML/2007/06/1708.html}
+}
+
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
 %-----2015-----%
 
 @UNPUBLISHED{bougher2015CSEGpsu,
-  author = {Ben Bougher},
+  author = {Ben Bougher and Felix J. Herrmann},
   title = {Prediction of stratigraphic units from spectral co-occurance coefficients of well logs},
   year = {2015},
   abstract = {Well logging is the process of making physical
@@ -14243,7 +14255,7 @@
 
 
 @UNPUBLISHED{peters2015AIPwri,
-  author = {Bas Peters},
+  author = {Bas Peters and Felix J. Herrmann},
   title = {Wavefield-reconstruction inversion},
   year = {2015},
   date_submitted = {04/17/2015},
@@ -14421,6 +14433,43 @@
 
 %-----2014-----%
 
+@UNPUBLISHED{dasilva2014htuck,
+  author = {Curt Da Silva and Felix J. Herrmann},
+  title = {Optimization on the {Hierarchical} {Tucker} manifold - applications to tensor completion},
+  year = {2014},
+  month = {04},
+  institution = {UBC},
+  abstract = {In this work, we develop an optimization framework for
+                  problems whose solutions are well-approximated by
+                  Hierarchical Tucker (HT) tensors, an efficient
+                  structured tensor format based on recursive subspace
+                  factorizations. By exploiting the smooth manifold
+                  structure of these tensors, we construct standard
+                  optimization algorithms such as Steepest Descent and
+                  Conjugate Gradient for completing tensors from
+                  missing entries. Our algorithmic framework is fast
+                  and scalable to large problem sizes as we do not
+                  require SVDs on the ambient tensor space, as
+                  required by other methods. Moreover, we exploit the
+                  structure of the Gramian matrices associated with
+                  the HT format to regularize our problem, reducing
+                  overfitting for high subsampling ratios. We also
+                  find that the organization of the tensor can have a
+                  major impact on completion from realistic seismic
+                  acquisition geometries. These samplings are far from
+                  idealized randomized samplings that are usually
+                  considered in the literature but are realizable in
+                  practical scenarios. Using these algorithms, we
+                  successfully interpolate large-scale seismic data
+                  sets and demonstrate the competitive computational
+                  scaling of our algorithms as the problem sizes
+                  grow.},
+  keywords = {hierarchical tucker, structured tensor, tensor interpolation, differential geometry, riemannian optimization, gauss newton, private},
+  note = {Accepted to be published in the journal - Linear Algebra and its Applications, 2015},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/dasilva2014htuck/dasilva2014htuck.pdf}
+}
+
+
 @UNPUBLISHED{kumar2014GEOPemc,
   author = {Rajiv Kumar and Curt Da Silva and Okan Akalin and Aleksandr Y. Aravkin and Hassan Mansour and Ben Recht and Felix J. Herrmann},
   title = {Efficient matrix completion for seismic data reconstruction},
@@ -14513,9 +14562,6 @@
   note = {Submitted revision 1 to Geophysics on October 22, 2014},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/oghenekohwo2014GEOPfrt/oghenekohwo2014GEOPfrt.html}
 }
-
-
-
 
 
 %-----2013-----%

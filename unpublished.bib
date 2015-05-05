@@ -315,6 +315,51 @@
 }
 
 
+@UNPUBLISHED{lin2015scatterEPSI,
+  author = {Tim T.Y. Lin and Felix J. Herrmann},
+  title = {Estimation of primaries by sparse inversion with scattering-based multiple predictions for data with large gaps},
+  year = {2015},
+  institution = {UBC},
+  abstract = {We propose to solve the Estimation of Primaries by
+                  Sparse Inversion problem without any explicit data
+                  reconstruction, from a seismic record with missing
+                  near-offsets and large holes in the acquisition grid
+                  which does not produce aliasing but otherwise causes
+                  large errors in the multiple prediction. Exclusion
+                  of the unknown data as an inversion variable from
+                  the process is desirable, since it sidesteps
+                  possible issues arising from fitting observations
+                  that are also unknowns in the same inversion
+                  problem. Instead, we simulate their multiple
+                  contributions by augmenting the forward prediction
+                  model for the total wavefield with a scattering
+                  series that mimics the action of the free surface
+                  reflector within the confines of the unobserved
+                  trace locations. Each term in this scattering series
+                  simply involves convolution of the predicted
+                  wavefield once more with the current estimated
+                  surface-free Green's function at these unobserved
+                  locations. We investigate the necessary
+                  modifications to the primary estimation algorithm to
+                  account for the resulting nonlinearity in the
+                  modeling operator, and also demonstrate that just a
+                  few scattering terms are enough to satisfactorily
+                  mitigate the effects of near-offset data gaps during
+                  the inversion process. Numerical experiments on
+                  synthetic data show that the final derived method
+                  can significantly outperform explicit data
+                  reconstruction for large near-offset gaps. This is
+                  achieved with a similar computational cost and
+                  better memory efficiency compared to explicit data
+                  reconstruction. We also show on real data that our
+                  scheme outperforms pre-interpolation of the
+                  near-offset gap.},
+  keywords = {multiples, REPSI, EPSI, scattering, sparsity, optimization, private},
+  note = {Submitted to Geophysics on May 5.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/lin2015scatterEPSI/lin2015scatterEPSI.html}
+}
+
+
 @UNPUBLISHED{lopez2015EAGErma,
   author = {Oscar Lopez and Rajiv Kumar and Felix J. Herrmann},
   title = {Rank minimization via alternating optimization: seismic data interpolation},

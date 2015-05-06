@@ -1,6 +1,8 @@
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+%-----2015-----%
+
 @CONFERENCE{peters2015SIAMmfq,
   author = {Bas Peters and Felix J. Herrmann and Chen Greif},
   title = {Matrix-free quadratic-penalty methods for {PDE}-constrained optimization},
@@ -62,6 +64,8 @@
 }
 
 
+%-----2014-----%
+
 @CONFERENCE{herrmann2014SEGWSfli,
   author = {Ning Tu and Felix J. Herrmann},
   title = {Fast linearized inversion with surface-related multiples with source estimation},
@@ -110,6 +114,17 @@
   keywords = {SEG, workshop, WRI, FWI},
   note = {(SEG Workshop, Denver)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2014/herrmann2014SEGWSwri/herrmann2014SEGWSwri_pres.pdf}
+}
+
+
+@CONFERENCE{herrmann2014SEGAGUWSiii,
+  author = {Felix J. Herrmann},
+  title = {Imaging/{Inversion} with irregular/random sampled spatial arrays},
+  booktitle = {SEG-AGU Workshop on Advances in Active + Passive "Full Wavefield" Seismic Imaging: From Reservoirs to Plate Tectonics},
+  year = {2014},
+  month = {07},
+  keywords = {SEG-AGU, workshop, imaging, inversion, randomization},
+  note = {(SEG-AGU Workshop, 22-24 July, Vancouver)}
 }
 
 
@@ -834,6 +849,8 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/2014/herrmann2014CSEGbsw_pres.pdf}
 }
 
+
+%-----2013-----%
 
 @CONFERENCE{herrmann2013EAGEfrtm,
   author = {Felix J. Herrmann and Ning Tu},
@@ -13663,30 +13680,6 @@
 
 %-----2008-----%
 
-@TECHREPORT{lebed08TRhgg,
-  author = {Evgeniy Lebed and Felix J. Herrmann},
-  title = {A hitchhiker's guide to the galaxy of transform-domain sparsification},
-  institution = {UBC Earth and Ocean Sciences Department},
-  year = {2008},
-  number = {TR-EOAS-2008-4},
-  abstract = {The ability to efficiently and sparsely represent
-                  seismic data is becoming an increasingly important
-                  problem in geophysics. Over the last decade many
-                  transforms such as wavelets, curvelets, contourlets,
-                  surfacelets, shearlets, and many other types of
-                  'x-lets' have been developed to try to resolve this
-                  issue. In this abstract we compare the properties of
-                  four of these commonly used transforms, namely the
-                  shift-invariant wavelets, complex wavelets,
-                  curvelets and surfacelets. We also briefly explore
-                  the performance of these transforms for the problem
-                  of recovering seismic wavefields from incomplete
-                  measurements.},
-  keywords = {SLIM},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2008/lebed08TRhgg/lebed08TRhgg.pdf}
-}
-
-
 @TECHREPORT{hennenfent08TRori,
   author = {Gilles Hennenfent and Felix J. Herrmann},
   title = {One-norm regularized inversion: learning from the {Pareto} curve},
@@ -13715,6 +13708,51 @@
                   inversion.},
   keywords = {SLIM},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2008/hennenfent08TRori/hennenfent08TRori.pdf}
+}
+
+
+@TECHREPORT{lebed08TRhgg,
+  author = {Evgeniy Lebed and Felix J. Herrmann},
+  title = {A hitchhiker's guide to the galaxy of transform-domain sparsification},
+  institution = {UBC Earth and Ocean Sciences Department},
+  year = {2008},
+  number = {TR-EOAS-2008-4},
+  abstract = {The ability to efficiently and sparsely represent
+                  seismic data is becoming an increasingly important
+                  problem in geophysics. Over the last decade many
+                  transforms such as wavelets, curvelets, contourlets,
+                  surfacelets, shearlets, and many other types of
+                  'x-lets' have been developed to try to resolve this
+                  issue. In this abstract we compare the properties of
+                  four of these commonly used transforms, namely the
+                  shift-invariant wavelets, complex wavelets,
+                  curvelets and surfacelets. We also briefly explore
+                  the performance of these transforms for the problem
+                  of recovering seismic wavefields from incomplete
+                  measurements.},
+  keywords = {SLIM},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2008/lebed08TRhgg/lebed08TRhgg.pdf}
+}
+
+
+@TECHREPORT{vandenberg08gsv,
+  author = {Ewout {van den Berg} and Mark Schmidt and Michael P. Friedlander and K. Murphy},
+  title = {Group sparsity via linear-time projection},
+  year = {2008},
+  number = {TR-2008-09},
+  month = {06},
+  abstract = {We present an efficient spectral projected-gradient
+                  algorithm for optimization subject to a group
+                  one-norm constraint. Our approach is based on a
+                  novel linear-time algorithm for Euclidean projection
+                  onto the one- and group one-norm
+                  constraints. Numerical experiments on large data
+                  sets suggest that the proposed method is
+                  substantially more efficient and scalable than
+                  existing methods.},
+  institution = {UBC - Department of Computer Science},
+  keywords = {SLIM, optimization},
+  url = {http://www.optimization-online.org/DB_FILE/2008/07/2056.pdf}
 }
 
 
@@ -13966,6 +14004,34 @@
   keywords = {EAGE, UQ, WRI, FWI},
   note = {(to be presented at the EAGE Conference)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/fang2015EAGEuqw/fang2015EAGEuqw.html}
+}
+
+
+@UNPUBLISHED{herrmann2015SIAMpcf,
+  author = {Felix J. Herrmann and Bas Peters},
+  title = {Pros and cons of full- and reduced-space methods for {Wavefield} {Reconstruction} {Inversion}},
+  year = {2015},
+  abstract = {By insisting on fitting observed data, Wavefield
+                  Reconstruction Inversion (WRI) is no longer cycle
+                  skipped and therefore less reliant on the accuracy
+                  of starting models. While extending the search space
+                  mitigates local minima, there are challenges scaling
+                  to 3D seismic when using reduced-space methods that
+                  require accurate solves. Conversely, full-space
+                  methods allow for inaccurate solves but require
+                  storage of all wavefields. We weigh pros and cons of
+                  these two approaches in the seismic context.},
+  keywords = {SIAM, WRI, FWI, private},
+  note = {(to be presented at the SIAM Conference on Mathematical and Computational Issues in the Geosciences, June 29 - July 2, Stanford University, California)}
+}
+
+
+@UNPUBLISHED{herrmann2015SIAMwri,
+  author = {Felix J. Herrmann},
+  title = {Wavefield {Reconstruction} {Inversion} – reaping the benefits from extending the search space},
+  year = {2015},
+  keywords = {SIAM, WRI, private},
+  note = {(to be presented at the SIAM Conference on Mathematical and Computational Issues in the Geosciences, June 29 - July 2, Stanford University, California)}
 }
 
 
@@ -14452,6 +14518,26 @@
   keywords = {penalty method, PDE, optimization, inverse problems, private},
   note = {Submitted to Inverse Problems on April 10.},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/vanleeuwen2015IPpmp/vanleeuwen2015IPpmp.pdf}
+}
+
+
+@UNPUBLISHED{wang2015SIAMsdc,
+  author = {Rongrong Wang and Felix J. Herrmann and Ozgur Yilmaz},
+  title = {A stable data-constrained formulation of full-waveform inversion with wavefield reconstruction for few principle sources},
+  year = {2015},
+  abstract = {We avoid local minima related to cycle skipping by
+                  considering a modified data-constrained FWI
+                  formulation where observed data is fitted
+                  exactly. This formulation is a well-conditioned
+                  limit of the Lagrangian dual of Wavefield
+                  Reconstruction Inversion. To mitigate instabilities,
+                  we use a source encoding strategy based on singular
+                  vectors of the wavefields. In addition, we propose a
+                  frugal SVD that efficiently computes the principle
+                  components of the wavefields directly from the
+                  data.},
+  keywords = {SIAM, FWI, private},
+  note = {(to be presented at the SIAM Conference on Mathematical and Computational Issues in the Geosciences, June 29 - July 2, Stanford University, California)}
 }
 
 
@@ -15289,33 +15375,12 @@
 }
 
 
-@ARTICLE{vandenberg08gsv,
-  author = {Ewout {van den Berg} and Mark Schmidt and Michael P. Friedlander and K. Murphy},
-  title = {Group sparsity via linear-time projection},
-  year = {2008},
-  number = {TR-2008-09},
-  month = {06},
-  abstract = {We present an efficient spectral projected-gradient
-                  algorithm for optimization subject to a group
-                  one-norm constraint. Our approach is based on a
-                  novel linear-time algorithm for Euclidean projection
-                  onto the one- and group one-norm
-                  constraints. Numerical experiments on large data
-                  sets suggest that the proposed method is
-                  substantially more efficient and scalable than
-                  existing methods.},
-  institution = {UBC - Department of Computer Science},
-  keywords = {SLIM, optimization},
-  url = {http://www.cs.ubc.ca/~ewout78/papers/TR-2008-09.pdf}
-}
-
-
 @ARTICLE{vandenberg2009ACMstf,
   author = {Ewout {van den Berg} and Michael P. Friedlander and Gilles Hennenfent and Felix J. Herrmann and Rayan Saab and Ozgur Yilmaz},
   title = {Sparco: a testing framework for sparse reconstruction},
   year = {2009},
   month = {02},
-  journal = {{ACM} Transactions on Mathematical Software},
+  journal = {ACM Transactions on Mathematical Software},
   volume = {35},
   number = {4},
   pages = {1-16},
@@ -15460,7 +15525,7 @@
 @ARTICLE{mansour2012IEEETITrcs,
   author = {Michael P. Friedlander and Hassan Mansour and Rayan Saab and Ozgur Yilmaz},
   title = {Recovering compressively sampled signals using partial support information},
-  journal = {IEEE Trans. on Information Theory},
+  journal = {IEEE Transactions on Information Theory},
   year = {2012},
   volume = {58},
   pages = {1122-1134},
@@ -15543,34 +15608,7 @@
                   the approach.},
   keywords = {optimization},
   doi = {10.1137/110830629},
-  publisher = {Department of Computer Science},
-  url = {http://www.cs.ubc.ca/%7Empf/2011-hybrid-for-data-fitting.html}
-}
-
-
-@ARTICLE{friedlander2011CoRRhybrid,
-  author = {Michael P. Friedlander and Mark Schmidt},
-  title = {Hybrid deterministic-stochastic methods for data fitting},
-  journal = {CoRR},
-  year = {2011},
-  month = {04},
-  abstract = {Many structured data-fitting applications require the
-                  solution of an optimization problem involving a sum
-                  over a potentially large number of
-                  measurements. Incremental gradient algorithms (both
-                  deterministic and randomized) offer inexpensive
-                  iterations by sampling only subsets of the terms in
-                  the sum. These methods can make great progress
-                  initially, but often slow as they approach a
-                  solution. In contrast, full gradient methods achieve
-                  steady convergence at the expense of evaluating the
-                  full objective and gradient on each iteration. We
-                  explore hybrid methods that exhibit the benefits of
-                  both approaches. Rate of convergence analysis and
-                  numerical experiments illustrate the potential for
-                  the approach.},
-  keywords = {optimization},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedlander11hybrid.pdf}
+  url = {https://www.math.ucdavis.edu/~mpf/2011-hybrid-for-data-fitting.html}
 }
 
 
@@ -16408,6 +16446,70 @@
 }
 
 
+@ARTICLE{herrmann2011RECORDERcsse2,
+  author = {Felix J. Herrmann and Haneet Wason and Tim T.Y. Lin},
+  title = {Compressive sensing in seismic exploration: an outlook on a new paradigm},
+  journal = {CSEG Recorder},
+  year = {2011},
+  volume = {36},
+  pages = {34-39},
+  number = {6},
+  month = {06},
+  abstract = {Many seismic exploration techniques rely on the
+                  collection of massive data volumes that are
+                  subsequently mined for information during
+                  processing. While this approach has been extremely
+                  successful in the past, current efforts toward
+                  higher resolution images in increasingly complicated
+                  regions of the Earth continue to reveal fundamental
+                  shortcomings in our workflows. Chiefly amongst these
+                  is the so-called "curse of dimensionality"
+                  exemplified by Nyquist's sampling criterion, which
+                  disproportionately strains current acquisition and
+                  processing systems as the size and desired
+                  resolution of our survey areas continues to
+                  increase. We offer an alternative sampling method
+                  leveraging recent insights from compressive sensing
+                  towards seismic acquisition and processing for data
+                  that, from a traditional point of view, are
+                  considered to be undersampled. The main outcome of
+                  this approach is a new technology where acquisition
+                  and processing related costs are decoupled the
+                  stringent Nyquist sampling criterion. At the heart
+                  of our approach lies randomized incoherent sampling
+                  that breaks subsampling-related interferences by
+                  turning them into harmless noise, which we
+                  subsequently remove by promoting sparsity in a
+                  transform-domain. Acquisition schemes designed to
+                  fit into this regime no longer grow significantly in
+                  cost with increasing resolution and dimensionality
+                  of the survey area, but instead its cost ideally
+                  only depends on transform-domain sparsity of the
+                  expected data. Our contribution is twofold. First,
+                  we demonstrate by means of carefully designed
+                  numerical experiments that ideas from compressive
+                  sensing can be adapted to seismic
+                  acquisition. Second, we leverage the property that
+                  seismic data volumes are well approximated by a
+                  small percentage of curvelet coefficients. Thus
+                  curvelet-domain sparsity allows us to recover
+                  conventionally-sampled seismic data volumes from
+                  compressively-sampled data volumes whose size
+                  exceeds this percentage by only a small
+                  factor. Because compressive sensing combines
+                  transformation and encoding by a single linear
+                  encoding step, this technology is directly
+                  applicable to seismic acquisition and therefore
+                  constitutes a new paradigm where acquisitions costs
+                  scale with transform-domain sparsity instead of the
+                  gridsize. We illustrate this principle by showcasing
+                  recovery of a real seismic line from simulated
+                  compressively sampled acquisitions.},
+  note = {Part 1 was published in April and Part 2 was published in June},
+  url = {http://csegrecorder.com/articles/view/compressive-sensing-in-seismic-exploration-an-outlook-on-a-new-paradigm}
+}
+
+
 @ARTICLE{herrmann2011RECORDERcsse1,
   author = {Felix J. Herrmann and Haneet Wason and Tim T.Y. Lin},
   title = {Compressive sensing in seismic exploration: an outlook on a new paradigm},
@@ -16449,8 +16551,8 @@
                   only depends on transform-domain sparsity of the
                   expected data. Our contribution is split into two
                   part.},
-  url = {http://209.91.124.56/publications/recorder/2011/06jun/Jun2011-Compressive-Sensing-in-Seismic-Expl.pdf},
-  html_version = {http://csegrecorder.com/articles/view/compressive-sensing-in-seismic-exploration-an-outlook-on-a-new-paradig}
+  note = {Part 1 was published in April and Part 2 was published in June},
+  url = {http://csegrecorder.com/articles/view/compressive-sensing-in-seismic-exploration-outlook-on-a-new-paradigm}
 }
 
 

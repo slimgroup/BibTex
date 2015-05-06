@@ -650,33 +650,12 @@
 }
 
 
-@ARTICLE{vandenberg08gsv,
-  author = {Ewout {van den Berg} and Mark Schmidt and Michael P. Friedlander and K. Murphy},
-  title = {Group sparsity via linear-time projection},
-  year = {2008},
-  number = {TR-2008-09},
-  month = {06},
-  abstract = {We present an efficient spectral projected-gradient
-                  algorithm for optimization subject to a group
-                  one-norm constraint. Our approach is based on a
-                  novel linear-time algorithm for Euclidean projection
-                  onto the one- and group one-norm
-                  constraints. Numerical experiments on large data
-                  sets suggest that the proposed method is
-                  substantially more efficient and scalable than
-                  existing methods.},
-  institution = {UBC - Department of Computer Science},
-  keywords = {SLIM, optimization},
-  url = {http://www.cs.ubc.ca/~ewout78/papers/TR-2008-09.pdf}
-}
-
-
 @ARTICLE{vandenberg2009ACMstf,
   author = {Ewout {van den Berg} and Michael P. Friedlander and Gilles Hennenfent and Felix J. Herrmann and Rayan Saab and Ozgur Yilmaz},
   title = {Sparco: a testing framework for sparse reconstruction},
   year = {2009},
   month = {02},
-  journal = {{ACM} Transactions on Mathematical Software},
+  journal = {ACM Transactions on Mathematical Software},
   volume = {35},
   number = {4},
   pages = {1-16},
@@ -821,7 +800,7 @@
 @ARTICLE{mansour2012IEEETITrcs,
   author = {Michael P. Friedlander and Hassan Mansour and Rayan Saab and Ozgur Yilmaz},
   title = {Recovering compressively sampled signals using partial support information},
-  journal = {IEEE Trans. on Information Theory},
+  journal = {IEEE Transactions on Information Theory},
   year = {2012},
   volume = {58},
   pages = {1122-1134},
@@ -904,34 +883,7 @@
                   the approach.},
   keywords = {optimization},
   doi = {10.1137/110830629},
-  publisher = {Department of Computer Science},
-  url = {http://www.cs.ubc.ca/%7Empf/2011-hybrid-for-data-fitting.html}
-}
-
-
-@ARTICLE{friedlander2011CoRRhybrid,
-  author = {Michael P. Friedlander and Mark Schmidt},
-  title = {Hybrid deterministic-stochastic methods for data fitting},
-  journal = {CoRR},
-  year = {2011},
-  month = {04},
-  abstract = {Many structured data-fitting applications require the
-                  solution of an optimization problem involving a sum
-                  over a potentially large number of
-                  measurements. Incremental gradient algorithms (both
-                  deterministic and randomized) offer inexpensive
-                  iterations by sampling only subsets of the terms in
-                  the sum. These methods can make great progress
-                  initially, but often slow as they approach a
-                  solution. In contrast, full gradient methods achieve
-                  steady convergence at the expense of evaluating the
-                  full objective and gradient on each iteration. We
-                  explore hybrid methods that exhibit the benefits of
-                  both approaches. Rate of convergence analysis and
-                  numerical experiments illustrate the potential for
-                  the approach.},
-  keywords = {optimization},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CoRR/2011/friedlander11hybrid.pdf}
+  url = {https://www.math.ucdavis.edu/~mpf/2011-hybrid-for-data-fitting.html}
 }
 
 
@@ -1769,6 +1721,70 @@
 }
 
 
+@ARTICLE{herrmann2011RECORDERcsse2,
+  author = {Felix J. Herrmann and Haneet Wason and Tim T.Y. Lin},
+  title = {Compressive sensing in seismic exploration: an outlook on a new paradigm},
+  journal = {CSEG Recorder},
+  year = {2011},
+  volume = {36},
+  pages = {34-39},
+  number = {6},
+  month = {06},
+  abstract = {Many seismic exploration techniques rely on the
+                  collection of massive data volumes that are
+                  subsequently mined for information during
+                  processing. While this approach has been extremely
+                  successful in the past, current efforts toward
+                  higher resolution images in increasingly complicated
+                  regions of the Earth continue to reveal fundamental
+                  shortcomings in our workflows. Chiefly amongst these
+                  is the so-called "curse of dimensionality"
+                  exemplified by Nyquist's sampling criterion, which
+                  disproportionately strains current acquisition and
+                  processing systems as the size and desired
+                  resolution of our survey areas continues to
+                  increase. We offer an alternative sampling method
+                  leveraging recent insights from compressive sensing
+                  towards seismic acquisition and processing for data
+                  that, from a traditional point of view, are
+                  considered to be undersampled. The main outcome of
+                  this approach is a new technology where acquisition
+                  and processing related costs are decoupled the
+                  stringent Nyquist sampling criterion. At the heart
+                  of our approach lies randomized incoherent sampling
+                  that breaks subsampling-related interferences by
+                  turning them into harmless noise, which we
+                  subsequently remove by promoting sparsity in a
+                  transform-domain. Acquisition schemes designed to
+                  fit into this regime no longer grow significantly in
+                  cost with increasing resolution and dimensionality
+                  of the survey area, but instead its cost ideally
+                  only depends on transform-domain sparsity of the
+                  expected data. Our contribution is twofold. First,
+                  we demonstrate by means of carefully designed
+                  numerical experiments that ideas from compressive
+                  sensing can be adapted to seismic
+                  acquisition. Second, we leverage the property that
+                  seismic data volumes are well approximated by a
+                  small percentage of curvelet coefficients. Thus
+                  curvelet-domain sparsity allows us to recover
+                  conventionally-sampled seismic data volumes from
+                  compressively-sampled data volumes whose size
+                  exceeds this percentage by only a small
+                  factor. Because compressive sensing combines
+                  transformation and encoding by a single linear
+                  encoding step, this technology is directly
+                  applicable to seismic acquisition and therefore
+                  constitutes a new paradigm where acquisitions costs
+                  scale with transform-domain sparsity instead of the
+                  gridsize. We illustrate this principle by showcasing
+                  recovery of a real seismic line from simulated
+                  compressively sampled acquisitions.},
+  note = {Part 1 was published in April and Part 2 was published in June},
+  url = {http://csegrecorder.com/articles/view/compressive-sensing-in-seismic-exploration-an-outlook-on-a-new-paradigm}
+}
+
+
 @ARTICLE{herrmann2011RECORDERcsse1,
   author = {Felix J. Herrmann and Haneet Wason and Tim T.Y. Lin},
   title = {Compressive sensing in seismic exploration: an outlook on a new paradigm},
@@ -1810,8 +1826,8 @@
                   only depends on transform-domain sparsity of the
                   expected data. Our contribution is split into two
                   part.},
-  url = {http://209.91.124.56/publications/recorder/2011/06jun/Jun2011-Compressive-Sensing-in-Seismic-Expl.pdf},
-  html_version = {http://csegrecorder.com/articles/view/compressive-sensing-in-seismic-exploration-an-outlook-on-a-new-paradig}
+  note = {Part 1 was published in April and Part 2 was published in June},
+  url = {http://csegrecorder.com/articles/view/compressive-sensing-in-seismic-exploration-outlook-on-a-new-paradigm}
 }
 
 

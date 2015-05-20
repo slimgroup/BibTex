@@ -13996,7 +13996,6 @@
   author = {Ernie Esser and Lluís Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
   title = {Automatic salt delineation --- {Wavefield} {Reconstruction} {Inversion} with convex constraints},
   year = {2015},
-  date_submitted = {04/01/2015},
   abstract = {We extend full-waveform inversion by Wavefield
                   Reconstruction Inversion by including convex
                   constraints on the model. Contrary to the
@@ -14202,6 +14201,54 @@
 }
 
 
+@UNPUBLISHED{li2015GEOPmgn,
+  author = {Xiang Li and Ernie Esser and Felix J. Herrmann},
+  title = {Modified {Gauss}-{Newton} full-waveform inversion explained—why sparsity-promoting updates do matter},
+  year = {2015},
+  abstract = {Full-waveform inversion can be formulated as a nonlinear
+                  least-squares optimization problem. This non-convex
+                  problem can be extremely computationally expensive
+                  because it requires repeatedly solving large linear
+                  systems that correspond to discretized partial
+                  differential equations. Randomized subsampling
+                  techniques allow us to work with small subsets of
+                  (monochromatic) source experiments, reducing the
+                  computational cost. However, this subsampling
+                  weakens subsurface illumination and introduces
+                  subsampling related incoherent artifacts. These
+                  subsampling-related artifacts---in conjunction with
+                  local minima that are known to plague full-waveform
+                  inversion---motivate us to come up with a technique
+                  to "regularize" this problem. Following earlier
+                  work, we take advantage of the fact that curvelets
+                  represent subsurface models and perturbations
+                  parsimoniously. At first impulse promoting sparsity
+                  on the model directly seems the most natural way to
+                  proceed, but we will demonstrate that in certain
+                  cases it can be advantageous to promote sparsity on
+                  the Gauss-Newton updates instead. While constraining
+                  the one-norm of the descent directions does not
+                  change not change the underlying full-waveform
+                  inversion objective, the constrained model updates
+                  remain descent directions, remove
+                  subsampling-related artifacts and improve the
+                  overall inversion result. We empirically observe
+                  this phenomenon in situations where the different
+                  model updates occur at roughly the same locations in
+                  the curvelet domain. We further investigate and
+                  analyze this phenomenon, where nonlinear inversions
+                  benefit from sparsity-promoting constraints on the
+                  updates, by means of a set of carefully selected
+                  examples including phase retrieval and full-waveform
+                  inversion. In all cases, we observe a faster decay
+                  of the residual and model error as a function of the
+                  number of iterations.},
+  keywords = {full-waveform inversion, Gauss-Newton method, sparsity promotion, private},
+  note = {Submitted to Geophysics on May 6.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/li2015GEOPmgn/li2015GEOPmgn.pdf}
+}
+
+
 @UNPUBLISHED{lin2015scatterEPSI,
   author = {Tim T.Y. Lin and Felix J. Herrmann},
   title = {Estimation of primaries by sparse inversion with scattering-based multiple predictions for data with large gaps},
@@ -14277,7 +14324,6 @@
   author = {Mathias Louboutin and Felix J. Herrmann},
   title = {Time compressively sampled full-waveform inversion with stochastic optimization},
   year = {2015},
-  date_submitted = {04/01/2015},
   abstract = {Time-domain Full-Waveform Inversion (FWI) aims to image
                   the subsurface of the earth accurately from field
                   recorded data and can be solved via the reduced
@@ -14400,7 +14446,6 @@
   author = {Bas Peters and Zhilong Fang and Brendan Smithyman and Felix J. Herrmann},
   title = {Regularizing waveform inversion by projections onto convex sets --- application to the {2D} {Chevron} 2014 synthetic blind-test dataset},
   year = {2015},
-  date_submitted = {04/01/2015},
   abstract = {A framework is proposed for regularizing the waveform
                   inversion problem by projections onto intersections
                   of convex sets. Multiple pieces of prior information

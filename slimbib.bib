@@ -31,6 +31,38 @@
 }
 
 
+@CONFERENCE{herrmann2015ASEGrae,
+  author = {Felix J. Herrmann},
+  title = {Randomized algorithms in exploration seismology},
+  booktitle = {ASEG Annual Conference Proceedings},
+  year = {2015},
+  month = {02},
+  abstract = {As in several other industries, progress in exploration
+                  seismology relies on the collection and processing
+                  of massive data volumes that grow exponentially in
+                  size as the survey area and desired resolution
+                  increase. This exponential growth --- in combination
+                  with the increased complexity of the next-generation
+                  of iterative wave-equation based inversion
+                  algorithms --- puts strains on our acquisition
+                  systems and computational back ends impeding
+                  progress in our field. During this talk, I will
+                  review how recent randomized algorithms from
+                  Compressive Sensing and Machine learning can be used
+                  to overcome some of these challenges by
+                  fundamentally rethinking how we sample and process
+                  seismic data. The key idea here is to reduce
+                  acquisition and computational costs by deliberately
+                  working on small randomized subsets of the data at a
+                  desired accuracy. I will illustrate these concepts
+                  using a variety of compelling examples on realistic
+                  synthetics and field data.},
+  keywords = {ASEG, compressed sensing, seismology, acquisition, imaging, FWI},
+  note = {(ASEG, Perth)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ASEG/2015/herrmann2015ASEGrae/herrmann2015ASEGrae.pdf}
+}
+
+
 @CONFERENCE{kumar2015CSEGlse,
   author = {Rajiv Kumar and Ning Tu and Tristan van Leeuwen and Felix J. Herrmann},
   title = {Least-squares extended imaging with surface-related multiples},
@@ -63,6 +95,37 @@
   note = {(CSEG, Calgary)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/2015/kumar2015CSEGlse/kumar2015CSEGlse.pdf},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/2015/kumar2015CSEGlse/kumar2015CSEGlse_pres.pdf}
+}
+
+
+@CONFERENCE{oghenekohwo2015PIMSntc,
+  author = {Felix Oghenekohwo and Felix J. Herrmann},
+  title = {A new take on compressive time-lapse seismic acquisition, imaging and inversion},
+  booktitle = {PIMS Workshop on Advances in Seismic Imaging and Inversion},
+  year = {2015},
+  month = {05},
+  abstract = {Compressive sensing (CS), a sampling paradigm that is
+                  changing how data is acquired and processed in many
+                  fields, has attracted tremendous attention in recent
+                  years. In exploration seismology, particularly in 3D
+                  seismic technology, there have been published work
+                  on the application of CS to seismic data
+                  acquisition, processing and inversion. However, very
+                  little is known about the implications of CS in
+                  time-lapse (4D) seismic. Leveraging ideas from
+                  distributed CS where more than one signal is
+                  acquired and processed, as in 4D seismic, we present
+                  a joint recovery algorithm for time-lapse seismic
+                  data acquisition, imaging and inversion. The
+                  algorithm exploits the common information in the
+                  data sets (baseline and monitor) as part of an
+                  inversion procedure. Application of our algorithm to
+                  realistic synthetic examples highlight its
+                  advantages over other conventional approaches for
+                  processing time-lapse seismic data.},
+  keywords = {PIMS, workshop, time-lapse},
+  note = {(PIMS Workshop on Advances in Seismic Imaging and Inversion, University of Alberta, Edmonton)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/PIMS/2015/oghenekohwo2015PIMSntc/oghenekohwo2015PIMSntc_pres.pdf}
 }
 
 
@@ -131,35 +194,33 @@
 }
 
 
-@CONFERENCE{herrmann2015ASEGrae,
-  author = {Felix J. Herrmann},
-  title = {Randomized algorithms in exploration seismology},
-  booktitle = {ASEG Annual Conference Proceedings},
+@CONFERENCE{tu2015PIMSsls,
+  author = {Ning Tu and Felix J. Herrmann},
+  title = {Sparse least-squares seismic imaging with source estimation utilizing multiples},
+  booktitle = {PIMS Workshop on Advances in Seismic Imaging and Inversion},
   year = {2015},
-  month = {02},
-  abstract = {As in several other industries, progress in exploration
-                  seismology relies on the collection and processing
-                  of massive data volumes that grow exponentially in
-                  size as the survey area and desired resolution
-                  increase. This exponential growth --- in combination
-                  with the increased complexity of the next-generation
-                  of iterative wave-equation based inversion
-                  algorithms --- puts strains on our acquisition
-                  systems and computational back ends impeding
-                  progress in our field. During this talk, I will
-                  review how recent randomized algorithms from
-                  Compressive Sensing and Machine learning can be used
-                  to overcome some of these challenges by
-                  fundamentally rethinking how we sample and process
-                  seismic data. The key idea here is to reduce
-                  acquisition and computational costs by deliberately
-                  working on small randomized subsets of the data at a
-                  desired accuracy. I will illustrate these concepts
-                  using a variety of compelling examples on realistic
-                  synthetics and field data.},
-  keywords = {ASEG, compressed sensing, seismology, acquisition, imaging, FWI},
-  note = {(ASEG, Perth)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ASEG/2015/herrmann2015ASEGrae/herrmann2015ASEGrae.pdf}
+  month = {05},
+  abstract = {We present an least-squares seismic imaging method that
+                  (1) is efficient by subsampling the monochromatic
+                  source experiments; (2) does not require the prior
+                  knowledge of the source wavelet, by inverting for
+                  the seismic image and the source wavelet
+                  simultaneously using variable projection; and (3)
+                  makes active use of surface-related multiples to
+                  increase the illumination and to resolve the scaling
+                  ambiguity in source estimation, by tightly
+                  integrating the well-established
+                  surface-related-multiple-prediction into the
+                  wave-equation based modelling. As a result, we are
+                  able to obtain ambiguity-resolved, high-fidelity
+                  least-squares inverted seismic images with
+                  computational costs that are comparable to
+                  conventional reverse-time migrations with all the
+                  data.  We demonstrate the efficacy of the proposed
+                  method using synthetic examples.},
+  keywords = {PIMS, workshop, least-squares migration, source estimation, multiples, inversion, seismic imaging},
+  note = {(PIMS Workshop on Advances in Seismic Imaging and Inversion, University of Alberta, Edmonton)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/PIMS/2015/tu2015PIMSsls/tu2015PIMSsls_pres.pdf}
 }
 
 
@@ -14387,34 +14448,6 @@
   keywords = {EAGE, time-lapse, FWI},
   note = {(to be presented at the EAGE Conference)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/oghenekohwo2015EAGEuci/oghenekohwo2015EAGEuci.html}
-}
-
-
-@UNPUBLISHED{oghenekohwo2015PIMSntc,
-  author = {Felix Oghenekohwo and Felix J. Herrmann},
-  title = {A new take on compressive time-lapse seismic acquisition, imaging and inversion},
-  year = {2015},
-  abstract = {Compressive sensing (CS), a sampling paradigm that is
-                  changing how data is acquired and processed in many
-                  fields, has attracted tremendous attention in recent
-                  years. In exploration seismology, particularly in 3D
-                  seismic technology, there have been published work
-                  on the application of CS to seismic data
-                  acquisition, processing and inversion. However, very
-                  little is known about the implications of CS in
-                  time-lapse (4D) seismic. Leveraging ideas from
-                  distributed CS where more than one signal is
-                  acquired and processed, as in 4D seismic, we present
-                  a joint recovery algorithm for time-lapse seismic
-                  data acquisition, imaging and inversion. The
-                  algorithm exploits the common information in the
-                  data sets (baseline and monitor) as part of an
-                  inversion procedure. Application of our algorithm to
-                  realistic synthetic examples highlight its
-                  advantages over other conventional approaches for
-                  processing time-lapse seismic data.},
-  keywords = {PIMS, workshop, time-lapse, private},
-  note = {to be presented at the PIMS Workshop on Advances in Seismic Imaging and Inversion, University of Alberta, Edmonton}
 }
 
 

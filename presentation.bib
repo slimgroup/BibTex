@@ -1,3 +1,245 @@
+%----- 2015 (SPRING) -----%
+
+@PRESENTATION{dasilva2015SINBADrii,
+  title = {Recent improvements to the {2/3—D} imaging & inversion algorithms in the {SLIM} software release},
+  booktitle = {SINBAD Spring consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {The SLIM software release contains algorithms for
+                  frequency domain 2D imaging and inversion based on
+                  direct LU and QR factorizations. Recent improvments
+                  include significant speedups, by utilizing the
+                  latest parallel direct factorization algorithms and
+                  inversion strategies which solve for each frequency
+                  on its corresponding grid. The iterative Helmholtz
+                  solvers available in the software release are now
+                  also applicable to 2D problems, extending the 2D
+                  algorithms to very large & high frequency 2D imaging
+                  and inversion.},
+  keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/dasilva2015SINBADrii/dasilva2015SINBADrii.pdf},
+  author = {Curt Da Silva}
+}
+
+
+@PRESENTATION{dasilva2015SINBADogt,
+  title = {Off the grid tensor completion for seismic data interpolation},
+  booktitle = {SINBAD Spring consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {In this work, we extend our previous low-rank tensor
+                  techniques for seismic data interpolation to the
+                  “off-the-grid” case, wherein the data is not
+                  acquired on a regularly-spaced grid. This irregular
+                  sampling scheme causes the underlying tensor to
+                  become high-rank, thus preventing our previous
+                  Hierarchical Tucker tensor algorithms from
+                  successfully recovering the volume. Instead of
+                  applying these techniques naively, we introduce a
+                  fictitious, regular grid on which the volume
+                  exhibits low-rank behaviour and a resampling
+                  operator that interpolates the data from the
+                  regular, low-rank domain to the irregular sampling
+                  domain. By incorporating these changes in to our
+                  previous framework, we can interpolate irregularly
+                  sampled data volumes with costs determined primarily
+                  by the choice of resampling transform. In our case,
+                  we use a non-uniform Fast Fourier Transform, but
+                  other choices are possible.},
+  keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/dasilva2015SINBADogt/dasilva2015SINBADogt.pdf},
+  author = {Curt Da Silva}
+}
+
+
+@PRESENTATION{esser2015SINBADasd,
+  title = {Automatic salt delineation — {Wavefield} {Reconstruction} {Inversion} with convex constraints},
+  booktitle = {SINBAD Spring consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We extend full-waveform inversion by Wavefield
+                  Reconstruction Inversion by including convex
+                  constraints on the model. Contrary to the
+                  conventional adjoint-state formulations, Wavefield
+                  Reconstruction Inversion has the advantage that the
+                  Gauss-Newton Hessian is well approximated by a
+                  diagonal scaling, which allows us to add convex
+                  constraints, such as the box- and the
+                  edge-preserving total-variation constraint, on the
+                  square slowness without incurring significant
+                  increases in computational costs. As the examples
+                  demonstrate, including these constraints yields far
+                  superior results in complex geological areas that
+                  contain high-velocity high-contrast bodies
+                  (e.g. salt or basalt). Without these convex
+                  constraints, adjoint-state and Wavefield
+                  Reconstruction Inversion get trapped in local minima
+                  for poor starting models.},
+  keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
+  note = {posthumously presented by Felix J. Herrmann},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/esser2015SINBADasd/esser2015SINBADasd.pdf},
+  author = {Ernie Esser}
+}
+
+
+@PRESENTATION{fang2015SINBADwri,
+  title = {Wavefield reconstruction inversion with source estimation and its application to 2014 {Chevron} synthetic blind test dataset},
+  booktitle = {SINBAD Spring consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We present a robust wavefield reconstruction inversion
+                  with source estimation. The source wavelet is
+                  estimated with the reconstruction of wavefield
+                  simultaneously by solving an extended data
+                  augmentation problem. We apply this method to the
+                  2014 Chevron synthetic blind test dataset and show
+                  the robustness of our method.},
+  keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/fang2015SINBADwri/fang2015SINBADwri.pdf},
+  author = {Zhilong Fang}
+}
+
+
+@PRESENTATION{herrmann2015SINBADfom,
+  title = {Fast “online” migration with Compressive Sensing},
+  booktitle = {SINBAD Spring consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We present a novel adaptation of a recently developed
+                  relatively simple iterative algorithm to solve
+                  large-scale sparsity-promoting optimization
+                  problems. Our algorithm is particularly suitable to
+                  large-scale geophysical inversion problems, such as
+                  sparse least-squares reverse-time migration or
+                  Kirchoff migration since it allows for a tradeoff
+                  between parallel computations, memory allocation,
+                  and turnaround times, by working on subsets of the
+                  data with different sizes. Comparison of the
+                  proposed method for sparse least-squares imaging
+                  shows a performance that rivals and even exceeds the
+                  performance of state-of-the art one-norm solvers
+                  that are able to carry out least-squares migration
+                  at the cost of a single migration with all data.},
+  keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/herrmann2015SINBADfom/herrmann2015SINBADfom.pdf},
+  author = {Felix J. Herrmann}
+}
+
+
+@PRESENTATION{lopez2015SINBADdmc,
+  title = {Deterministic matrix completion: applications to seismic trace interpolation},
+  booktitle = {SINBAD Spring consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {This talk discusses recent developments in the theory of
+                  matrix completion that allow us to analyze how
+                  successful a given sub sampling scheme will be for
+                  seismic trace interpolation via nuclear norm
+                  minimization. By adopting a graph theory
+                  perspective, we utilize the spectral gap of our
+                  sampling operator as a means to quantify our
+                  acquisition design. This approach offers a heuristic
+                  technique that is practical and with the potential
+                  to achieve trace interpolation via rank penalization
+                  in a deterministic manner.},
+  keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/lopez2015SINBADdmc/lopez2015SINBADdmc.pdf},
+  author = {Oscar Lopez}
+}
+
+
+@PRESENTATION{oghenekohwo2015SINBADrdc,
+  title = {Recent developments in compressive sensing for time-lapse studies},
+  booktitle = {SINBAD Spring consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We present an overview of the advances we have made with
+                  respect to extending compressive sensing ideas to
+                  time-lapse studies. We show applications in
+                  compressive time-lapse seismic data acquisition,
+                  imaging and full-waveform inversion.},
+  keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/oghenekohwo2015SINBADrdc/oghenekohwo2015SINBADrdc.pdf},
+  author = {Felix Oghenekohwo}
+}
+
+
+@PRESENTATION{peters2015SINBADrwi,
+  title = {Regularizing waveform inversion by projections onto convex sets},
+  booktitle = {SINBAD Spring consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {A framework is proposed for regularizing the waveform
+                  inversion problem by projections onto intersections
+                  of convex sets. Multiple pieces of prior information
+                  about the geology are represented by multiple convex
+                  sets, for example limits on the velocity or minimum
+                  smoothness conditions on the model. The data-misfit
+                  is then minimized, such that the estimated model is
+                  always in the intersection of the convex
+                  sets. Therefore, it is clear what properties the
+                  estimated model will have at each iteration. This
+                  approach does not require any quadratic penalties to
+                  be used and thus avoids the known problems and
+                  limitations of those types of penalties. It is shown
+                  that by formulating waveform inversion as a
+                  constrained problem, regularization ideas such as
+                  Tikhonov regularization and gradient filtering can
+                  be incorporated into one framework. The algorithm is
+                  generally applicable, in the sense that it works
+                  with any (differentiable) objective function and
+                  does not require significant additional
+                  computation. The method is demonstrated on the
+                  inversion of the 2D marine isotropic elastic
+                  synthetic seismic benchmark by Chevron using an
+                  acoustic modeling code. To highlight the effect of
+                  the projections, we apply no data pre-processing.},
+  keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/peters2015SINBADrwi/peters2015SINBADrwi.pdf},
+  author = {Bas Peters}
+}
+
+
+@PRESENTATION{peters2015SINBADswr,
+  title = {Solving {WRI’s} data-augmented wave equation in {3D}},
+  booktitle = {SINBAD Spring consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {The Wavefield Reconstruction Inversion (WRI) approach to
+                  seismic inversion is a topic of active research in
+                  the SLIM group. Several variants have been proposed,
+                  all of which rely on the solution of a linear
+                  least-squares problem with a Helmholtz
+                  discretization. While algorithms based on LU or QR
+                  factorization are very efficient for 2D problems, 3D
+                  problems required the development of a
+                  factorization-free iterative method. This talk
+                  introduces the current version of the algorithm,
+                  which requires significantly less memory and
+                  computation then a few months ago and uses existing
+                  Helmholtz solvers as an important building block.},
+  keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/peters2015SINBADswr/peters2015SINBADswr.pdf},
+  author = {Bas Peters}
+}
+
+
+@PRESENTATION{wason2015SINBADldr,
+  title = {Latest developments in randomized marine acquisition and source separation},
+  booktitle = {SINBAD Spring consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We present the latest developments in randomized
+                  (simultaneous) marine acquisition for time-lapse
+                  surveys. We also show a comparison between two
+                  source separation algorithms — sparsity-promotion
+                  and rank-minimization — for simultaneous data.},
+  keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/wason2015SINBADldr/wason2015SINBADldr.pdf},
+  author = {Haneet Wason}
+}
+
+
 %----- 2014 (FALL) -----%
 
 @PRESENTATION{dasilva2014SINBADlss,

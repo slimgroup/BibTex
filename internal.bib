@@ -165,6 +165,32 @@
 }
 
 
+@CONFERENCE{peters2015AIPwri,
+  author = {Bas Peters and Felix J. Herrmann},
+  title = {Wavefield-reconstruction inversion},
+  booktitle = {Applied Inverse Problems},
+  year = {2015},
+  month = {05},
+  abstract = {Wavefield Reconstruction Inversion is a method for
+                  PDE-constrained optimization, which revolves around
+                  the estimation of fields using the PDE as well as
+                  the observed data in a least-squares sense. The
+                  method is quadratic penalty based, which offers some
+                  interesting possibilities for the construction of
+                  algorithms, compared to the Lagrangian form. One of
+                  the main benefits of the method is when the initial
+                  guess is far from the global minimizer.
+                  Reduced-space and full-space algorithms are
+                  discussed, including illustrative examples. The
+                  method was developed with seismic applications in
+                  mind, but applies to other PDE-constrained
+                  optimization problems as well.},
+  keywords = {AIP, Waveform reconstruction inversion, penalty method, optimization, full-waveform inversion},
+  note = {(AIP, Helsinki)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/AIP/2015/peters2015AIPwri/peters2015AIPwri.pdf}
+}
+
+
 @CONFERENCE{peters2015SIAMmfq,
   author = {Bas Peters and Felix J. Herrmann and Chen Greif},
   title = {Matrix-free quadratic-penalty methods for {PDE}-constrained optimization},
@@ -13182,6 +13208,42 @@
 }
 
 
+@TECHREPORT{esser2015tvwri,
+  author = {Ernie Esser and Lluís Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  title = {Total variation regularization strategies in full waveform inversion for improving robustness to noise, limited data and poor initializations},
+  year = {2015},
+  month = {06},
+  number = {TR-EOAS-2015-5},
+  institution = {UBC},
+  abstract = {We propose an extended full waveform inversion
+                  formulation that includes convex constraints on the
+                  model. In particular, we show how to simultaneously
+                  constrain the total variation of the slowness
+                  squared while enforcing bound constraints to keep it
+                  within a physically realistic range. Synthetic
+                  experiments show that including total variation
+                  regularization can improve the recovery of a high
+                  velocity perturbation to a smooth background model,
+                  removing artifacts caused by noise and limited data.
+                  Total variation-like constraints can make the
+                  inversion results significantly more robust to a
+                  poor initial model, leading to reasonable results in
+                  some cases where unconstrained variants of the
+                  method completely fail. Numerical results are
+                  presented for portions of the SEG/EAGE salt model
+                  and the 2004 BP velocity
+                  benchmark. ***Disclaimer.*** *This technical report
+                  is ongoing work (and posted as is except for the
+                  addition of another author) of the late John "Ernie"
+                  Esser (May 19, 1980 - March 8, 2015), who passed
+                  away under tragic circumstances. We will work hard
+                  to finalize and submit this work to the peer-review
+                  literature.* Felix J. Herrmann},
+  keywords = {Wavefield Reconstruction Inversion, total-variation, hinge loss, cones constraints},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2015/esser2015tvwri/esser2015tvwri.html}
+}
+
+
 %-----2014-----%
 
 @TECHREPORT{esser2014sln,
@@ -14690,29 +14752,6 @@
   keywords = {EAGE, time-lapse, FWI},
   note = {(to be presented at the EAGE Conference)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/oghenekohwo2015EAGEuci/oghenekohwo2015EAGEuci.html}
-}
-
-
-@UNPUBLISHED{peters2015AIPwri,
-  author = {Bas Peters and Felix J. Herrmann},
-  title = {Wavefield-reconstruction inversion},
-  year = {2015},
-  abstract = {Wavefield Reconstruction Inversion is a method for
-                  PDE-constrained optimization, which revolves around
-                  the estimation of fields using the PDE as well as
-                  the observed data in a least-squares sense. The
-                  method is quadratic penalty based, which offers some
-                  interesting possibilities for the construction of
-                  algorithms, compared to the Lagrangian form. One of
-                  the main benefits of the method is when the initial
-                  guess is far from the global minimizer.
-                  Reduced-space and full-space algorithms are
-                  discussed, including illustrative examples. The
-                  method was developed with seismic applications in
-                  mind, but applies to other PDE-constrained
-                  optimization problems as well.},
-  keywords = {AIP, Waveform reconstruction inversion, penalty method, optimization, full-waveform inversion, private},
-  note = {to be presented at the AIP Conference in Helsinki, Finland}
 }
 
 

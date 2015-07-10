@@ -31,6 +31,182 @@
 }
 
 
+@CONFERENCE{dasilva2015EAGEogt,
+  author = {Curt Da Silva and Felix J. Herrmann},
+  title = {Off the grid tensor completion for seismic data interpolation},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2015},
+  month = {06},
+  abstract = {The practical realities of acquiring seismic data in a
+                  realistic survey are often at odds with the
+                  stringent requirements of Shannon-Nyquist-based
+                  sampling theory. The unpredictable movement of the
+                  ocean`s currents can be detrimental in acquiring
+                  exactly equally-spaced samples while sampling at
+                  Nyquist-rates are expensive, given the huge
+                  dimensionality and size of the data volume. Recent
+                  work in matrix and tensor completion for seismic
+                  data interpolation aim to alleviate such stringent
+                  Nyquist-based sampling requirements but are
+                  fundamentally posed on a regularly-spaced grid. In
+                  this work, we extend our previous results in using
+                  the so-called Hierarchical Tucker (HT) tensor format
+                  for recovering seismic data to the irregularly
+                  sampled case. We introduce an interpolation operator
+                  that resamples our tensor from a regular grid (in
+                  which we impose our low-rank constraints) to our
+                  irregular sampling grid. Our framework is very
+                  flexible and efficient, depending primarily on the
+                  computational costs of this operator. We demonstrate
+                  the superiority of this approach on a realistic BG
+                  data set compared to using low-rank tensor methods
+                  that merely use binning.},
+  keywords = {EAGE, hierarchical tucker, structured tensor, tensor interpolation, off the grid, irregular sampling},
+  note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.201412978},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/dasilva2015EAGEogt/dasilva2015EAGEogt.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/dasilva2015EAGEogt/dasilva2015EAGEogt_pres.pdf}
+}
+
+
+@CONFERENCE{dasilva2015WSLRigt,
+  author = {Curt Da Silva and Felix J. Herrmann},
+  title = {Irregular grid tensor completion},
+  year = {2015},
+  abstract = {Low rank tensor completion has recently garnered the
+                  attention of researchers owing to the ubiquity of
+                  tensors in the sciences and the theoretical and
+                  numerical challenges compared to matrix
+                  completion. Here we consider a tensor completion
+                  scheme where the data arises from sampling a
+                  continuous function. When the sampling grid is not
+                  periodic, the resulting tensor may not be low rank
+                  in the Hierarchical Tucker sense, which can
+                  adversely affect reconstruction quality when there
+                  are missing samples. In order to compensate for this
+                  off-grid sampling, we introduce a resampling
+                  operator (here, the non-uniform Fourier transform)
+                  that accounts for this non-uniformity moreso than
+                  merely treating the sampling grid as
+                  periodic. Numerical experiments demonstrate that
+                  this approach can improve reconstruction quality
+                  when there is relatively little data.},
+  keywords = {hierarchical tucker, structured tensor, tensor interpolation, off the grid, irregular sampling},
+  note = {(Workshop on Low-rank Optimization and Applications, University of Bonn, Germany)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/BONN_WS/2015/dasilva2015WSLRigt/dasilva2015WSLRigt_poster.pdf}
+}
+
+
+@CONFERENCE{esser2015EAGElcs,
+  author = {Ernie Esser and Tim T.Y. Lin and Rongrong Wang and Felix J. Herrmann},
+  title = {A lifted $\ell_1/\ell_2$ constraint for sparse blind deconvolution},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2015},
+  month = {06},
+  abstract = {We propose a modification to a sparsity constraint based
+                  on the ratio of $\ell_1$ and $\ell_2$ norms for
+                  solving blind seismic deconvolution problems in
+                  which the data consist of linear convolutions of
+                  different sparse reflectivities with the same source
+                  wavelet. We also extend the approach to the
+                  Estimation of Primaries by Sparse Inversion (EPSI)
+                  model, which includes surface related multiples.
+                  Minimizing the ratio of $\ell_1$ and $\ell_2$ norms
+                  has been previously shown to promote sparsity in a
+                  variety of applications including blind
+                  deconvolution. Most existing implementations are
+                  heuristic or require smoothing the $\ell_1/\ell_2$
+                  penalty. Lifted versions of $\ell_1/\ell_2$
+                  constraints have also been proposed but are
+                  challenging to implement. Inspired by the lifting
+                  approach, we propose to split the sparse signals
+                  into positive and negative components and apply an
+                  $\ell_1/\ell_2$ constraint to the difference,
+                  thereby obtaining a constraint that is easy to
+                  implement without smoothing the $\ell_1$ or $\ell_2$
+                  norms. We show that a method of multipliers
+                  implementation of the resulting model can recover
+                  source wavelets that are not necessarily minimum
+                  phase and approximately reconstruct the sparse
+                  reflectivities. Numerical experiments demonstrate
+                  robustness to the initialization as well as to noise
+                  in the data.},
+  keywords = {EAGE, blind deconvolution, EPSI},
+  note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.201413420},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/esser2015EAGElcs/esser2015EAGElcs.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/esser2015EAGElcs/esser2015EAGElcs_poster.pdf}
+}
+
+
+@CONFERENCE{fang2015EAGEsew,
+  author = {Zhilong Fang and Felix J. Herrmann},
+  title = {Source estimation for {Wavefield} {Reconstruction} {Inversion}},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2015},
+  month = {06},
+  abstract = {Wavefield reconstruction inversion is a new approach to
+                  waveform based inversion that helps overcome the
+                  `cycle skipping' problem. However, like most
+                  waveform based inversion methods, wavefield
+                  reconstruction inversion also requires good source
+                  wavelets. Without correct source wavelets,
+                  wavefields cannot be reconstructed correctly and the
+                  velocity model cannot be updated correctly
+                  neither. In this work, we propose a source
+                  estimation method for wavefield reconstruction
+                  inversion based on the variable projection method.
+                  In this method, we reconstruct wavefields and
+                  estimate source wavelets simultaneously by solving
+                  an extended least-squares problem, which contains
+                  source wavelets. This approach does not increase the
+                  computational cost compared to conventional
+                  wavefield reconstruction inversion. Numerical
+                  results illustrates with our source estimation
+                  method we are able to recover source wavelets and
+                  obtain inversion results that are comparable to
+                  results obtained with true source wavelets.},
+  keywords = {EAGE, source estimation, WRI},
+  note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.201412588},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/fang2015EAGEsew/fang2015EAGEsew.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/fang2015EAGEsew/fang2015EAGEsew_pres.pdf}
+}
+
+
+@CONFERENCE{fang2015EAGEuqw,
+  author = {Zhilong Fang and Chia Ying Lee and Curt Da Silva and Felix J. Herrmann and Rachel Kuske},
+  title = {Uncertainty quantification for {Wavefield} {Reconstruction} {Inversion}},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2015},
+  month = {06},
+  abstract = {In this work, we propose a method to quantify the
+                  uncertainty of wavefield reconstruction inversion
+                  under the framework of Bayesian inference. Unlike
+                  the conventional method using the wave equation as
+                  the forward mapping, we involve the wave equation
+                  misfit in the posterior distribution and propose a
+                  new posterior distribution. The negative
+                  log-likelihood of the new distribution is less
+                  oscillatory than that of the conventional posterior
+                  distribution, and its Gauss-Newton Hessian is a
+                  diagonal matrix that can be generated without any
+                  additional computational cost. We use the diagonal
+                  Gauss-Newton Hessian to derive an approximate
+                  Gaussian distribution at the maximum likelihood
+                  point to quantify the uncertainty. This method makes
+                  the uncertainty quantification for WRI
+                  computationally tractable and is able to provide
+                  reasonable uncertainty analysis based on our
+                  numerical results.},
+  keywords = {EAGE, UQ, WRI, FWI},
+  note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.201413198},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/fang2015EAGEuqw/fang2015EAGEuqw.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/fang2015EAGEuqw/fang2015EAGEuqw_pres.pdf}
+}
+
+
 @CONFERENCE{herrmann2015ASEGrae,
   author = {Felix J. Herrmann},
   title = {Randomized algorithms in exploration seismology},
@@ -60,6 +236,68 @@
   keywords = {ASEG, compressed sensing, seismology, acquisition, imaging, FWI},
   note = {(ASEG, Perth)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ASEG/2015/herrmann2015ASEGrae/herrmann2015ASEGrae.pdf}
+}
+
+
+@CONFERENCE{herrmann2015EAGEfom,
+  author = {Felix J. Herrmann and Ning Tu and Ernie Esser},
+  title = {Fast "online" migration with {Compressive} {Sensing}},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2015},
+  month = {06},
+  abstract = {We present a novel adaptation of a recently developed
+                  relatively simple iterative algorithm to solve
+                  large-scale sparsity-promoting optimization
+                  problems. Our algorithm is particularly suitable to
+                  large-scale geophysical inversion problems, such as
+                  sparse least-squares reverse-time migration or
+                  Kirchoff migration since it allows for a tradeoff
+                  between parallel computations, memory allocation,
+                  and turnaround times, by working on subsets of the
+                  data with different sizes. Comparison of the
+                  proposed method for sparse least-squares imaging
+                  shows a performance that rivals and even exceeds the
+                  performance of state-of-the art one-norm solvers
+                  that are able to carry out least-squares migration
+                  at the cost of a single migration with all data.},
+  keywords = {EAGE, LSRTM},
+  note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.201412942},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/herrmann2015EAGEfom/herrmann2015EAGEfom.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/herrmann2015EAGEfom/herrmann2015EAGEfom_pres.pdf}
+}
+
+
+@CONFERENCE{kumar2015EAGEmcu,
+  author = {Rajiv Kumar and Oscar Lopez and Ernie Esser and Felix J. Herrmann},
+  title = {Matrix completion on unstructured grids : {2-D} seismic data regularization and interpolation},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2015},
+  month = {06},
+  abstract = {Seismic data interpolation via rank-minimization
+                  techniques has been recently introduced in the
+                  seismic community. All the existing
+                  rank-minimization techniques assume the recording
+                  locations to be on a regular grid, e.g., sampled
+                  periodically, but seismic data are typically
+                  irregularly sampled along spatial axes. Other than
+                  the irregularity of the sampled grid, we often have
+                  missing data. In this paper, we study the effect of
+                  grid irregularity to conduct matrix completion on a
+                  regular grid for unstructured data. We propose an
+                  improvement of existing rank-minimization techniques
+                  to do regularization. We also demonstrate that we
+                  can perform seismic data regularization and
+                  interpolation simultaneously. We illustrate the
+                  advantages of the modification using a real seismic
+                  line from the Gulf of Suez to obtain high quality
+                  results for regularization and interpolation, a key
+                  application in exploration geophysics.},
+  keywords = {EAGE, regularization, interpolation, matrix completion, NFFT},
+  note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.201413448},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/kumar2015EAGEmcu/kumar2015EAGEmcu.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/kumar2015EAGEmcu/kumar2015EAGEmcu_poster.pdf}
 }
 
 
@@ -95,6 +333,74 @@
   note = {(CSEG, Calgary)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/2015/kumar2015CSEGlse/kumar2015CSEGlse.pdf},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CSEG/2015/kumar2015CSEGlse/kumar2015CSEGlse_pres.pdf}
+}
+
+
+@CONFERENCE{lopez2015EAGErma,
+  author = {Oscar Lopez and Rajiv Kumar and Felix J. Herrmann},
+  title = {Rank minimization via alternating optimization: seismic data interpolation},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2015},
+  month = {06},
+  abstract = {Low-rank matrix completion techniques have recently
+                  become an effective tool for seismic trace
+                  interpolation problems. In this talk, we consider an
+                  alternating optimization scheme for nuclear norm
+                  minimization and discuss the applications to large
+                  scale wave field reconstruction. By adopting a
+                  factorization approach to the rank minimization
+                  problem we write our low-rank matrix in bi-linear
+                  form, and modify this workflow by alternating our
+                  optimization to handle a single matrix factor at a
+                  time. This allows for a more tractable procedure
+                  that can robustly handle large scale, highly
+                  oscillatory and critically subsampled seismic data
+                  sets. We demonstrate the potential of this approach
+                  with several numerical experiments on a seismic line
+                  from the Nelson 2D data set and a frequency slice
+                  from the Gulf of Mexico data set.},
+  keywords = {EAGE, matrix completion, low-rank, interpolation},
+  note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.201413453},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/lopez2015EAGErma/lopez2015EAGErma.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/lopez2015EAGErma/lopez2015EAGErma_poster.pdf}
+}
+
+
+@CONFERENCE{oghenekohwo2015EAGEuci,
+  author = {Felix Oghenekohwo and Rajiv Kumar and Ernie Esser and Felix J. Herrmann},
+  title = {Using common information in compressive time-lapse full-waveform inversion},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2015},
+  month = {06},
+  abstract = {The use of time-lapse seismic data to monitor changes in
+                  the subsurface has become standard practice in
+                  industry. In addition, full-waveform inversion has
+                  also been extended to time-lapse seismic to obtain
+                  useful time-lapse information. The computational
+                  cost of this method are becoming more pronounced as
+                  the volume of data increases. Therefore, it is
+                  necessary to develop fast inversion algorithms that
+                  can also give improved time-lapse results. Rather
+                  than following existing joint inversion algorithms,
+                  we are motivated by a joint recovery model which
+                  exploits the common information among the baseline
+                  and monitor data. We propose a joint inversion
+                  framework, leveraging ideas from distributed
+                  compressive sensing and the modified Gauss-Newton
+                  method for full-waveform inversion, by using the
+                  shared information in the time-lapse data. Our
+                  results on a realistic synthetic example highlight
+                  the benefits of our joint inversion approach over a
+                  parallel inversion method that does not exploit the
+                  shared information. Preliminary results also
+                  indicate that our formulation can address time-lapse
+                  data with inconsistent acquisition geometries.},
+  keywords = {EAGE, time-lapse, FWI},
+  note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.201413086},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/oghenekohwo2015EAGEuci/oghenekohwo2015EAGEuci.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/oghenekohwo2015EAGEuci/oghenekohwo2015EAGEuci_poster.pdf}
 }
 
 
@@ -220,6 +526,47 @@
 }
 
 
+
+@CONFERENCE{smithyman2015EAGEcwi,
+  author = {Brendan Smithyman and Bas Peters and Felix J. Herrmann},
+  title = {Constrained waveform inversion of colocated {VSP} and surface seismic data},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2015},
+  month = {06},
+  abstract = {Constrained Full-Waveform Inversion (FWI) is applied to
+                  produce a high-resolution velocity model from both
+                  Vertical Seismic Profiling (VSP) and surface seismic
+                  data. The case study comes from the Permian Basin in
+                  Texas, USA. This dataset motivates and tests several
+                  new developments in methodology that enable recovery
+                  of model results that sit within multiple a priori
+                  constraint sets. These constraints are imposed
+                  through a Projected Quasi-Newton (PQN) approach,
+                  wherein the projection set is the intersection of
+                  physical property bounds and anisotropic wavenumber
+                  filtering. This enables the method to recover
+                  geologically-reasonable models while preserving the
+                  fast model convergence offered by a quasi-Newton
+                  optimization scheme like l-BFGS. In the Permian
+                  Basin example, low-frequency data from both arrays
+                  are inverted together and regularized by this
+                  projection approach. Careful choice of the
+                  constraint sets is possible without requiring
+                  tradeoff parameters as in a quadratic penalty
+                  approach to regularization. Multiple 2D FWI results
+                  are combined to produce an interpolated 3D model
+                  that is consistent with the models from migration
+                  velocity analysis and VSP processing, while offering
+                  improved resolution and illumination of features
+                  from both datasets.},
+  keywords = {EAGE, waveform inversion, VSP},
+  note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.201412906},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/smithyman2015EAGEcwi/smithyman2015EAGEcwi.pdf},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/smithyman2015EAGEcwi/smithyman2015EAGEcwi_pres.pdf}
+}
+
+
 @CONFERENCE{tu2015PIMSsls,
   author = {Ning Tu and Felix J. Herrmann},
   title = {Sparse least-squares seismic imaging with source estimation utilizing multiples},
@@ -247,6 +594,30 @@
   keywords = {PIMS, workshop, least-squares migration, source estimation, multiples, inversion, seismic imaging},
   note = {(PIMS Workshop on Advances in Seismic Imaging and Inversion, University of Alberta, Edmonton)},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/PIMS/2015/tu2015PIMSsls/tu2015PIMSsls_pres.pdf}
+}
+
+
+@CONFERENCE{wason2015EAGEcsm,
+  author = {Haneet Wason and Felix Oghenekohwo and Felix J. Herrmann},
+  title = {Compressed sensing in {4-D marine}---recovery of dense time-lapse data from subsampled data without repetition},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2015},
+  month = {06},
+  abstract = {We present an extension of our time-jittered marine
+                  acquisition for time-lapse surveys by working on
+                  more realistic field acquisition scenarios by
+                  incorporating irregular spatial grids without
+                  insisting on repeatability between the
+                  surveys. Since we are always subsampled in both the
+                  baseline and monitor surveys, we are interested in
+                  recovering the densely sampled baseline and monitor,
+                  and then the (complete) 4-D difference from
+                  subsampled/incomplete baseline and monitor data.},
+  keywords = {EAGE, simultaneous acquisition, time-lapse, off-the-grid, NFFT},
+  note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.201413088},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/wason2015EAGEcsm/wason2015EAGEcsm.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/wason2015EAGEcsm/wason2015EAGEcsm_poster.pdf}
 }
 
 
@@ -616,9 +987,9 @@
 @CONFERENCE{lago2014EAGEfst,
   author = {Rafael Lago and Art Petrenko and Zhilong Fang and Felix J. Herrmann},
   title = {Fast solution of time-harmonic wave-equation for full-waveform inversion},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {For many full-waveform inversion techniques, the most
                   computationally intensive step is the computation of
                   a numerical solution for the wave equation on every
@@ -654,9 +1025,9 @@
 @CONFERENCE{peters2014EAGEweb,
   author = {Bas Peters and Felix J. Herrmann and Tristan van Leeuwen},
   title = {Wave-equation based inversion with the penalty method: adjoint-state versus wavefield-reconstruction inversion},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {In this paper we make a comparison between wave-equation
                   based inversions based on the adjoint-state and
                   penalty methods. While the adjoint-state method
@@ -693,9 +1064,9 @@
 @CONFERENCE{leeuwen2014EAGEntf,
   author = {Tristan van Leeuwen and Felix J. Herrmann and Bas Peters},
   title = {A new take on {FWI}: wavefield reconstruction inversion},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {We discuss a recently proposed novel method for waveform
                   inversion: Wavefield Reconstruction Inversion
                   (WRI). As opposed to conventional FWI -- which
@@ -720,9 +1091,9 @@
 @CONFERENCE{oghenekohwo2014EAGEtls,
   author = {Felix Oghenekohwo and Ernie Esser and Felix J. Herrmann},
   title = {Time-lapse seismic without repetition: reaping the benefits from randomized sampling and joint recovery},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {In the current paradigm of 4-D seismic, guaranteeing
                   repeatability in acquisition and processing of the
                   baseline and monitor surveys ranks highest amongst
@@ -752,9 +1123,9 @@
 @CONFERENCE{dasilva2014EAGEhtucknoisy,
   author = {Curt Da Silva and Felix J. Herrmann},
   title = {Low-rank promoting transformations and tensor interpolation - applications to seismic data denoising},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {In this abstract, we extend our previous work in
                   Hierarchical Tucker (HT) tensor completion, which
                   uses an extremely efficient representation for
@@ -789,9 +1160,9 @@
 @CONFERENCE{esser2014EAGEacp,
   author = {Ernie Esser and Felix J. Herrmann},
   title = {Application of a convex phase retrieval method to blind seismic deconvolution},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {A classical strategy for blind seismic deconvolution is
                   to first estimate the autocorrelation of the unknown
                   source wavelet from the data and then recover the
@@ -825,9 +1196,9 @@
 @CONFERENCE{lin2014EAGEmas,
   author = {Tim T.Y. Lin and Felix J. Herrmann},
   title = {Multilevel acceleration strategy for the robust estimation of primaries by sparse inversion},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {We propose a method to substantially reduce the
                   computational costs of the Robust Estimation of
                   Primaries by Sparse Inversion algorithm, based on a
@@ -850,9 +1221,9 @@
 @CONFERENCE{zheglova2014EAGEams,
   author = {Polina Zheglova and Felix J. Herrmann},
   title = {Application of matrix square root and its inverse to downward wavefield extrapolation},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {In this paper we propose a method for computation of the
                   square root of the Helmholtz operator and its
                   inverse that arise in downward extrapolation methods
@@ -882,9 +1253,9 @@
 @CONFERENCE{fang2014EAGEfuq,
   author = {Zhilong Fang and Curt Da Silva and Felix J. Herrmann},
   title = {Fast uncertainty quantification for {2D} full-waveform inversion with randomized source subsampling},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {Uncertainties arise in every area of seismic
                   exploration, especially in full-waveform inversion,
                   which is highly non-linear. In the framework of
@@ -910,9 +1281,9 @@
 @CONFERENCE{petrenko2014EAGEaih,
   author = {Art Petrenko and Tristan van Leeuwen and Diego Oriato and Simon Tilbury and Felix J. Herrmann},
   title = {Accelerating an iterative {Helmholtz} solver with {FPGAs}},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {We implement the Kaczmarz row-projection algorithm
                   (Kaczmarz (1937)) on a CPU host + FPGA accelerator
                   platform using techniques of dataflow
@@ -933,9 +1304,9 @@
 @CONFERENCE{kumar2014EAGErank,
   author = {Rajiv Kumar and Aleksandr Y. Aravkin and Ernie Esser and Hassan Mansour and Felix J. Herrmann},
   title = {{SVD}-free low-rank matrix factorization : wavefield reconstruction via jittered subsampling and reciprocity},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {Recently computationally efficient rank optimization
                   techniques have been studied extensively to develop
                   a new mathematical tool for the seismic data
@@ -964,9 +1335,9 @@
 @CONFERENCE{kumar2014EAGEeia,
   author = {Rajiv Kumar and Tristan van Leeuwen and Felix J. Herrmann},
   title = {Extended images in action: efficient {WEMVA} via randomized probing},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2014},
   month = {06},
-  booktitle = {EAGE},
   abstract = {Image gathers as a function of subsurface offset are an
                   important tool for velocity analysis in areas of
                   complex geology. In this paper, we offer a new
@@ -1387,7 +1758,7 @@
 @CONFERENCE{dasilva2013EAGEhtucktensor,
   author = {Curt Da Silva and Felix J. Herrmann},
   title = {Hierarchical {Tucker} tensor optimization - applications to {4D} seismic data interpolation},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2013},
   month = {06},
   abstract = {In this work, we develop optimization algorithms on the
@@ -1428,7 +1799,7 @@
 @CONFERENCE{kumar2013EAGEsind,
   author = {Rajiv Kumar and Aleksandr Y. Aravkin and Hassan Mansour and Ben Recht and Felix J. Herrmann},
   title = {Seismic data interpolation and denoising using {SVD}-free low-rank matrix factorization},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2013},
   month = {06},
   abstract = {Recent developments in rank optimization have allowed
@@ -1454,7 +1825,7 @@
 @CONFERENCE{lin2013EAGEcsd,
   author = {Tim T.Y. Lin and Felix J. Herrmann},
   title = {Cosparse seismic data interpolation},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2013},
   month = {06},
   abstract = {Many modern seismic data interpolation and redatuming
@@ -1494,7 +1865,7 @@
 @CONFERENCE{tu2013EAGElsm,
   author = {Ning Tu and Aleksandr Y. Aravkin and Tristan van Leeuwen and Felix J. Herrmann},
   title = {Fast least-squares migration with multiples and source estimation},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2013},
   month = {06},
   abstract = {The advent of modern computing has made it possible to
@@ -1525,7 +1896,7 @@
 @CONFERENCE{vanleeuwen2013EAGErobustFWI,
   author = {Tristan van Leeuwen and Aleksandr Y. Aravkin and Henri Calandra and Felix J. Herrmann},
   title = {In which domain should we measure the misfit for robust full waveform inversion?},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2013},
   month = {06},
   abstract = {Full-waveform inversion relies on minimizing the
@@ -1557,7 +1928,7 @@
 @CONFERENCE{wason2013EAGEobs,
   author = {Haneet Wason and Felix J. Herrmann},
   title = {Ocean bottom seismic acquisition via jittered sampling},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2013},
   month = {06},
   abstract = {We present a pragmatic marine acquisition scheme where
@@ -1775,7 +2146,7 @@
 @CONFERENCE{aravkin2011EAGEnspf,
   author = {Aleksandr Y. Aravkin and James V. Burke and Felix J. Herrmann and Tristan van Leeuwen},
   title = {A nonlinear sparsity promoting formulation and algorithm for full waveform inversion},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2011},
   month = {05},
   abstract = {Full Waveform Inversion (FWI) is a computational
@@ -1878,7 +2249,7 @@
 @CONFERENCE{aravkin2011EAGEspfwi,
   author = {Aleksandr Y. Aravkin and Tristan van Leeuwen and James V. Burke and Felix J. Herrmann},
   title = {Sparsity promoting formulations and algorithms for {FWI}},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2011},
   keywords = {EAGE, full-waveform inversion},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2011/Aravkin2011EAGEspfwi/Aravkin2011EAGEspfwi.pdf}
@@ -2061,7 +2432,7 @@
 @CONFERENCE{aravkin2012EAGErobust,
   author = {Aleksandr Y. Aravkin and Tristan van Leeuwen and Henri Calandra and Felix J. Herrmann},
   title = {Source estimation for frequency-domain {FWI} with robust penalties},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2012},
   month = {06},
   abstract = {Source estimation is an essential component of full
@@ -2138,7 +2509,7 @@
 @CONFERENCE{beyreuther2004EAGEcdo,
   author = {Moritz Beyreuther and Felix J. Herrmann and Jamin Cristall},
   title = {Curvelet denoising of {4-D} seismic},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2004},
   month = {06},
   abstract = {With burgeoning world demand and a limited rate of
@@ -2223,10 +2594,9 @@
 @CONFERENCE{dasilva2012EAGEprobingprecond,
   author = {Curt {Da Silva} and Felix J. Herrmann},
   title = {Matrix probing and simultaneous sources: a new approach for preconditioning the {Hessian}},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2012},
   month = {06},
-  organization = {EAGE},
   abstract = {Recent advances based on the mathematical understanding
                   of the Hessian as, under certain conditions, a
                   pseudo-differential operator have resulted in a new
@@ -2258,7 +2628,7 @@
 @CONFERENCE{erlangga2009EAGEmwi,
   author = {Yogi A. Erlangga and Felix J. Herrmann},
   title = {Migration with implicit solvers for the time-harmonic {Helmholtz} equation},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2009},
   month = {06},
   abstract = {From the measured seismic data, the location and the
@@ -2488,7 +2858,7 @@
 @CONFERENCE{frijlink2010EAGEcos,
   author = {M. O. Frijlink and Reza Shahidi and Felix J. Herrmann and R. G. van Borselen},
   title = {Comparison of standard adaptive subtraction and primary-multiple separation in the curvelet domain},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2010},
   month = {06},
   abstract = {In recent years, data-driven multiple prediction methods
@@ -2756,7 +3126,7 @@
 @CONFERENCE{hennenfent2007EAGEisf,
   author = {Gilles Hennenfent and Felix J. Herrmann},
   title = {Irregular sampling: from aliasing to noise},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2007},
   month = {06},
   abstract = {Seismic data is often irregularly and/or sparsely
@@ -2968,7 +3338,7 @@
 @CONFERENCE{hennenfent2005EAGEsdr,
   author = {Gilles Hennenfent and R. Neelamani and Felix J. Herrmann},
   title = {Seismic deconvolution revisited with curvelet frames},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2005},
   month = {06},
   abstract = {We propose an efficient iterative curvelet-regularized
@@ -3050,7 +3420,7 @@
 @CONFERENCE{herrmann2012EAGEpmr,
   author = {Felix J. Herrmann},
   title = {Pass on the message: recent insights in large-scale sparse recovery},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2012},
   month = {06},
   abstract = {Data collection, data processing, and imaging in
@@ -3176,7 +3546,7 @@
 @CONFERENCE{herrmann2010EAGErss,
   author = {Felix J. Herrmann},
   title = {Randomized sampling strategies},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2010},
   month = {06},
   abstract = {Seismic exploration relies on the collection of massive
@@ -3936,7 +4306,7 @@
 @CONFERENCE{herrmann2007EAGErdi,
   author = {Felix J. Herrmann},
   title = {Recent developments in curvelet-based seismic processing},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2007},
   month = {06},
   abstract = {Combinations of parsimonious signal representations with
@@ -3956,7 +4326,7 @@
 @CONFERENCE{herrmann2007EAGEsrm,
   author = {Felix J. Herrmann},
   title = {Surface related multiple prediction from incomplete data},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2007},
   month = {06},
   abstract = {Incomplete data, unknown source-receiver signatures and
@@ -4349,9 +4719,8 @@
 @CONFERENCE{herrmann2001EAGEsas,
   author = {Felix J. Herrmann},
   title = {Scaling and seismic reflectivity: implications of scaling on {AVO}},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2001},
-  organization = {EAGE},
   abstract = {AVO analysis of seismic data is based on the assumption
                   that transitions in the earth consist of jump
                   discontinuities only. Generalization of these
@@ -4493,7 +4862,7 @@
 @CONFERENCE{herrmann2009EAGEcsa,
   author = {Felix J. Herrmann and Yogi A. Erlangga and Tim T.Y. Lin},
   title = {Compressive sensing applied to full-waveform inversion},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2009},
   month = {06},
   abstract = {With the recent resurgence of full-waveform inversion,
@@ -4681,7 +5050,7 @@
 @CONFERENCE{herrmann2005EAGErcd,
   author = {Felix J. Herrmann and Gilles Hennenfent},
   title = {Robust curvelet-domain data continuation with sparseness constraints},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2005},
   month = {06},
   abstract = {A robust data interpolation method using curvelets
@@ -4706,7 +5075,7 @@
 @CONFERENCE{herrmann2007EAGEsia,
   author = {Felix J. Herrmann and Gilles Hennenfent and Peyman P. Moghaddam},
   title = {Seismic imaging and processing with curvelets},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2007},
   month = {06},
   abstract = {In this paper, we present a nonlinear curvelet-based
@@ -4740,7 +5109,7 @@
 @CONFERENCE{herrmann2011EAGEefmsp,
   author = {Felix J. Herrmann and Xiang Li},
   title = {Efficient least-squares migration with sparsity promotion},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2011},
   month = {05},
   abstract = {Seismic imaging relies on the collection of
@@ -4778,7 +5147,7 @@
 @CONFERENCE{herrmann2010EAGErds,
   author = {Felix J. Herrmann and Xiang Li},
   title = {Randomized dimensionality reduction for full-waveform inversion},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2010},
   month = {06},
   abstract = {Full-waveform inversion relies on the collection of
@@ -4952,7 +5321,7 @@
 @CONFERENCE{herrmann2004EAGEcdl,
   author = {Felix J. Herrmann and Peyman P. Moghaddam},
   title = {Curvelet-domain least-squares migration with sparseness constraints},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2004},
   month = {06},
   abstract = {A non-linear edge-preserving solution to the
@@ -4982,9 +5351,8 @@
 @CONFERENCE{herrmann2004EAGEcdp,
   author = {Felix J. Herrmann and Peyman P. Moghaddam},
   title = {Curvelet-domain preconditioned 'wave-equation' depth-migration with sparseness and illumination constraints},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2004},
-  organization = {EAGE},
   abstract = {A non-linear edge-preserving solution to the
                   least-squares migration problem with sparseness
                   constraints is introduced. The applied formalism
@@ -5039,7 +5407,7 @@
 @CONFERENCE{herrmann2005EAGEosf,
   author = {Felix J. Herrmann and Peyman P. Moghaddam and R. Kirlin},
   title = {Optimization strategies for sparseness- and continuity-enhanced imaging: theory},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2005},
   month = {06},
   abstract = {Two complementary solution strategies to the
@@ -5106,9 +5474,8 @@
   author = {Felix J. Herrmann and Gang Tang and Reza Shahidi and Gilles Hennenfent
 	and Tim T.Y. Lin},
   title = {Beating Nyquist by randomized sampling},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2009},
-  keywords = {Presentation},
   note = {Presented at the EAGE (workshop), Amsterdam},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2009/herrmann09EAGEbnrs/herrmann09EAGEbnrs.pdf}
 }
@@ -5117,7 +5484,7 @@
 @CONFERENCE{herrmann2005EAGErcd1,
   author = {Felix J. Herrmann and D. J. Verschuur},
   title = {Robust curvelet-domain primary-multiple separation with sparseness constraints},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2005},
   month = {06},
   abstract = {A non-linear primary-multiple separation method using
@@ -5181,9 +5548,8 @@
 @CONFERENCE{herrmann2004EAGEsop,
   author = {Felix J. Herrmann and D. J. Verschuur},
   title = {Separation of primaries and multiples by non-linear estimation in the curvelet domain},
-  booktitle = {EAGE Technical Program Expanded Abstracts},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2004},
-  organization = {EAGE},
   abstract = {Predictive multiple suppression methods consist of two
                   main steps: a prediction step, in which multiples
                   are predicted from the seismic data, and a
@@ -5319,7 +5685,7 @@
 @CONFERENCE{herrmann2012EAGEcsm,
   author = {Felix J. Herrmann and Haneet Wason},
   title = {Compressive sensing in marine acquisition and beyond},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2012},
   month = {06},
   abstract = {Simultaneous-source marine acquisition is an example of
@@ -5403,7 +5769,7 @@
 @CONFERENCE{johnson2010EAGEeop,
   author = {James Johnson and Tim T.Y. Lin and Felix J. Herrmann},
   title = {Estimation of primaries via sparse inversion with reciprocity},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2010},
   abstract = {Accurate removal of surface related multiples is a key
                   step in seismic data processing. The industry
@@ -5803,7 +6169,7 @@
 @CONFERENCE{vanleeuwen2011EAGEhsdomwi,
   author = {Tristan van Leeuwen and Felix J. Herrmann and Mark Schmidt and Michael P. Friedlander},
   title = {A hybrid stochastic-deterministic optimization method for waveform inversion},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2011},
   month = {05},
   abstract = {Present-day high quality 3D acquisition can give us
@@ -5905,7 +6271,7 @@
 @CONFERENCE{li2011EAGEfwirr,
   author = {Xiang Li and Aleksandr Y. Aravkin and Tristan van Leeuwen and Felix J. Herrmann},
   title = {Full-waveform inversion with randomized {L1} recovery for the model updates},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2011},
   month = {05},
   abstract = {Full-waveform inversion (FWI) is a data fitting
@@ -6191,7 +6557,7 @@
 @CONFERENCE{lin2011EAGEepsic,
   author = {Tim T.Y. Lin and Felix J. Herrmann},
   title = {Estimating primaries by sparse inversion in a curvelet-like representation domain},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2011},
   month = {05},
   abstract = {We present an uplift in the fidelity and wavefront
@@ -6270,7 +6636,7 @@
 @CONFERENCE{lin2010EAGEseo,
   author = {Tim T.Y. Lin and Felix J. Herrmann},
   title = {Stabilized estimation of primaries via sparse inversion},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2010},
   month = {06},
   abstract = {Estimation of Primaries by Sparse Inversion (EPSI) is a
@@ -6308,7 +6674,7 @@
 @CONFERENCE{lin2009EAGEdsa,
   author = {Tim T.Y. Lin and Felix J. Herrmann},
   title = {Designing simultaneous acquisitions with compressive sensing},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2009},
   month = {06},
   abstract = {The goal of this paper is in designing a functional
@@ -6344,7 +6710,6 @@
   month = {10},
   volume = {28},
   pages = {3113-3117},
-  organization = {SEG},
   abstract = {The central promise of simultaneous acquisition is a
                   vastly improved crew efficiency during acquisition
                   at the cost of additional post-processing to obtain
@@ -6386,7 +6751,6 @@
   year = {2007},
   volume = {26},
   pages = {1997-2001},
-  organization = {SEG},
   abstract = {An explicit algorithm for the extrapolation of one-way
                   wavefields is proposed which combines recent
                   developments in information theory and theoretical
@@ -6703,7 +7067,7 @@
 @CONFERENCE{maysami2007EAGEsrc,
   author = {Mohammad Maysami and Felix J. Herrmann},
   title = {Seismic reflector characterization by a multiscale detection-estimation method},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2007},
   month = {06},
   abstract = {Seismic transitions of the subsurface are typically
@@ -7007,7 +7371,7 @@
 @CONFERENCE{moghaddam2007EAGEsar,
   author = {Peyman P. Moghaddam and Felix J. Herrmann and C. C. Stolk},
   title = {Seismic amplitude recovery with curvelets},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2007},
   month = {06},
   abstract = {A non-linear singularity-preserving solution to the
@@ -7112,7 +7476,7 @@
 @CONFERENCE{min2012EAGEefwi,
   author = {Ju-Won Oh and Dong-Joo Min and Felix J. Herrmann},
   title = {Frequency-domain elastic waveform inversion using weighting factors related to source-deconvolved residuals},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2012},
   month = {06},
   abstract = {One of the limitations in seismic waveform inversion is
@@ -7338,7 +7702,7 @@
 @CONFERENCE{challa2007EAGEsrf,
   author = {Challa S. Sastry and Gilles Hennenfent and Felix J. Herrmann},
   title = {Signal reconstruction from incomplete and misplaced measurements},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2007},
   month = {06},
   abstract = {Constrained by practical and economical considerations,
@@ -7538,7 +7902,7 @@
 @CONFERENCE{tu2012EAGElsm,
   author = {Ning Tu and Felix J. Herrmann},
   title = {Least-squares migration of full wavefield with source encoding},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2012},
   month = {06},
   abstract = {Multiples can provide valuable information that is
@@ -7600,7 +7964,7 @@
 @CONFERENCE{tu2011EAGEspmsrm,
   author = {Ning Tu and Tim T.Y. Lin and Felix J. Herrmann},
   title = {Sparsity-promoting migration with surface-related multiples},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2011},
   month = {05},
   abstract = {Multiples, especially the surface-related multiples,
@@ -7762,7 +8126,7 @@
 @CONFERENCE{vanderneut2012EAGEdecomp,
   author = {Joost {van der Neut} and Felix J. Herrmann},
   title = {Up / down wavefield decomposition by sparse inversion},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2012},
   month = {06},
   abstract = {Expressions have been derived for the decomposition of
@@ -7818,7 +8182,7 @@
 @CONFERENCE{vanleeuwen2012EAGEcarpcg,
   author = {Tristan van Leeuwen and Dan Gordon and Rachel Gordon and Felix J. Herrmann},
   title = {Preconditioning the {Helmholtz} equation via row-projections},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2012},
   month = {06},
   abstract = {3D frequency-domain full waveform inversion relies on
@@ -7841,7 +8205,7 @@
 @CONFERENCE{vanleeuwen2012EAGEext,
   author = {Tristan {van Leeuwen} and Felix J. Herrmann},
   title = {Wave-equation extended images: computation and velocity continuation},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2012},
   month = {06},
   abstract = {An extended image is a multi-dimensional correlation of
@@ -7999,7 +8363,7 @@
 @CONFERENCE{wason2012EAGEode,
   author = {Haneet Wason and Felix J. Herrmann},
   title = {Only dither: efficient simultaneous marine acquisition},
-  booktitle = {EAGE},
+  booktitle = {EAGE Annual Conference Proceedings},
   year = {2012},
   month = {06},
   abstract = {Simultaneous-source acquisition is an emerging

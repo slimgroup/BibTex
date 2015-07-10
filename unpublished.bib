@@ -3,78 +3,6 @@
 
 %-----2015-----%
 
-@UNPUBLISHED{dasilva2015EAGEogt,
-  author = {Curt Da Silva and Felix J. Herrmann},
-  title = {Off the grid tensor completion for seismic data interpolation},
-  year = {2015},
-  abstract = {The practical realities of acquiring seismic data in a
-                  realistic survey are often at odds with the
-                  stringent requirements of Shannon-Nyquist-based
-                  sampling theory. The unpredictable movement of the
-                  ocean`s currents can be detrimental in acquiring
-                  exactly equally-spaced samples while sampling at
-                  Nyquist-rates are expensive, given the huge
-                  dimensionality and size of the data volume. Recent
-                  work in matrix and tensor completion for seismic
-                  data interpolation aim to alleviate such stringent
-                  Nyquist-based sampling requirements but are
-                  fundamentally posed on a regularly-spaced grid. In
-                  this work, we extend our previous results in using
-                  the so-called Hierarchical Tucker (HT) tensor format
-                  for recovering seismic data to the irregularly
-                  sampled case. We introduce an interpolation operator
-                  that resamples our tensor from a regular grid (in
-                  which we impose our low-rank constraints) to our
-                  irregular sampling grid. Our framework is very
-                  flexible and efficient, depending primarily on the
-                  computational costs of this operator. We demonstrate
-                  the superiority of this approach on a realistic BG
-                  data set compared to using low-rank tensor methods
-                  that merely use binning.},
-  keywords = {EAGE, hierarchical tucker, structured tensor, tensor interpolation, off the grid, irregular sampling},
-  note = {(to be presented at the EAGE Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/dasilva2015EAGEogt/dasilva2015EAGEogt.html}
-}
-
-
-@UNPUBLISHED{esser2015EAGElcs,
-  author = {Ernie Esser and Tim T.Y. Lin and Rongrong Wang and Felix J. Herrmann},
-  title = {A lifted $\ell_1/\ell_2$ constraint for sparse blind deconvolution},
-  year = {2015},
-  abstract = {We propose a modification to a sparsity constraint based
-                  on the ratio of $\ell_1$ and $\ell_2$ norms for
-                  solving blind seismic deconvolution problems in
-                  which the data consist of linear convolutions of
-                  different sparse reflectivities with the same source
-                  wavelet. We also extend the approach to the
-                  Estimation of Primaries by Sparse Inversion (EPSI)
-                  model, which includes surface related multiples.
-                  Minimizing the ratio of $\ell_1$ and $\ell_2$ norms
-                  has been previously shown to promote sparsity in a
-                  variety of applications including blind
-                  deconvolution. Most existing implementations are
-                  heuristic or require smoothing the $\ell_1/\ell_2$
-                  penalty. Lifted versions of $\ell_1/\ell_2$
-                  constraints have also been proposed but are
-                  challenging to implement. Inspired by the lifting
-                  approach, we propose to split the sparse signals
-                  into positive and negative components and apply an
-                  $\ell_1/\ell_2$ constraint to the difference,
-                  thereby obtaining a constraint that is easy to
-                  implement without smoothing the $\ell_1$ or $\ell_2$
-                  norms. We show that a method of multipliers
-                  implementation of the resulting model can recover
-                  source wavelets that are not necessarily minimum
-                  phase and approximately reconstruct the sparse
-                  reflectivities. Numerical experiments demonstrate
-                  robustness to the initialization as well as to noise
-                  in the data.},
-  keywords = {EAGE, blind deconvolution, EPSI},
-  note = {(to be presented at the EAGE Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/esser2015EAGElcs/esser2015EAGElcs.html}
-}
-
-
 @UNPUBLISHED{esser2015SEGasd,
   author = {Ernie Esser and Lluís Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
   title = {Automatic salt delineation --- {Wavefield} {Reconstruction} {Inversion} with convex constraints},
@@ -103,63 +31,32 @@
 }
 
 
-@UNPUBLISHED{fang2015EAGEsew,
-  author = {Zhilong Fang and Felix J. Herrmann},
-  title = {Source estimation for {Wavefield} {Reconstruction} {Inversion}},
+@UNPUBLISHED{esser2015CAMSAPrsa,
+  author = {Ernie Esser and Rongrong Wang and Tim T.Y. Lin and Felix J. Herrmann},
+  title = {Resolving scaling ambiguities with the $\ell_1/\ell_2$ norm in a blind deconvolution problem with feedback},
   year = {2015},
-  abstract = {Wavefield reconstruction inversion is a new approach to
-                  waveform based inversion that helps overcome the
-                  `cycle skipping' problem. However, like most
-                  waveform based inversion methods, wavefield
-                  reconstruction inversion also requires good source
-                  wavelets. Without correct source wavelets,
-                  wavefields cannot be reconstructed correctly and the
-                  velocity model cannot be updated correctly
-                  neither. In this work, we propose a source
-                  estimation method for wavefield reconstruction
-                  inversion based on the variable projection method.
-                  In this method, we reconstruct wavefields and
-                  estimate source wavelets simultaneously by solving
-                  an extended least-squares problem, which contains
-                  source wavelets. This approach does not increase the
-                  computational cost compared to conventional
-                  wavefield reconstruction inversion. Numerical
-                  results illustrates with our source estimation
-                  method we are able to recover source wavelets and
-                  obtain inversion results that are comparable to
-                  results obtained with true source wavelets.},
-  keywords = {EAGE, source estimation, WRI},
-  note = {(to be presented at the EAGE Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/fang2015EAGEsew/fang2015EAGEsew.html}
-}
-
-
-@UNPUBLISHED{fang2015EAGEuqw,
-  author = {Zhilong Fang and Chia Ying Lee and Curt Da Silva and Felix J. Herrmann and Rachel Kuske},
-  title = {Uncertainty quantification for {Wavefield} {Reconstruction} {Inversion}},
-  year = {2015},
-  abstract = {In this work, we propose a method to quantify the
-                  uncertainty of wavefield reconstruction inversion
-                  under the framework of Bayesian inference. Unlike
-                  the conventional method using the wave equation as
-                  the forward mapping, we involve the wave equation
-                  misfit in the posterior distribution and propose a
-                  new posterior distribution. The negative
-                  log-likelihood of the new distribution is less
-                  oscillatory than that of the conventional posterior
-                  distribution, and its Gauss-Newton Hessian is a
-                  diagonal matrix that can be generated without any
-                  additional computational cost. We use the diagonal
-                  Gauss-Newton Hessian to derive an approximate
-                  Gaussian distribution at the maximum likelihood
-                  point to quantify the uncertainty. This method makes
-                  the uncertainty quantification for WRI
-                  computationally tractable and is able to provide
-                  reasonable uncertainty analysis based on our
-                  numerical results.},
-  keywords = {EAGE, UQ, WRI, FWI},
-  note = {(to be presented at the EAGE Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/fang2015EAGEuqw/fang2015EAGEuqw.html}
+  date_submitted = {07/03/2015},
+  abstract = {Compared to more mundane blind deconvolution problems,
+                  blind deconvolution in seismic applications involves
+                  a feedback mechanism related to the free
+                  surface. The presence of this feedback mechanism
+                  gives us an unique opportunity to remove ambiguities
+                  that have plagued blind deconvolution for a long
+                  time. While beneficial, this feedback by itself is
+                  insufficient to remove the ambiguities even with
+                  $\ell_1$ constraints. However, when paired with an
+                  $\ell_1/\ell_2$ constraint the feedback allows us to
+                  resolve the scaling ambiguity under relatively mild
+                  assumptions. Inspired by lifting approaches, we
+                  propose to split the sparse signal into positive and
+                  negative components and apply an $\ell_1/\ell_2$
+                  constraint to the difference, thereby obtaining a
+                  constraint that is easy to implement. Numerical
+                  experiments demonstrate robustness to the
+                  initialization as well as to noise in the data.},
+  keywords = {CAMSAP, blind deconvolution, $\ell_1/\ell_2$, lifting, method of multipliers, private},
+  note = {submitted to the IEEE workshop on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/CAMSAP/2015/esser2015CAMSAPrsa/esser2015CAMSAPrsa.pdf}
 }
 
 
@@ -188,60 +85,6 @@
   year = {2015},
   keywords = {SIAM, WRI, private},
   note = {(to be presented at the SIAM Conference on Mathematical and Computational Issues in the Geosciences, June 29 - July 2, Stanford University, California)}
-}
-
-
-@UNPUBLISHED{herrmann2015EAGEfom,
-  author = {Felix J. Herrmann and Ning Tu and Ernie Esser},
-  title = {Fast "online" migration with {Compressive} {Sensing}},
-  year = {2015},
-  abstract = {We present a novel adaptation of a recently developed
-                  relatively simple iterative algorithm to solve
-                  large-scale sparsity-promoting optimization
-                  problems. Our algorithm is particularly suitable to
-                  large-scale geophysical inversion problems, such as
-                  sparse least-squares reverse-time migration or
-                  Kirchoff migration since it allows for a tradeoff
-                  between parallel computations, memory allocation,
-                  and turnaround times, by working on subsets of the
-                  data with different sizes. Comparison of the
-                  proposed method for sparse least-squares imaging
-                  shows a performance that rivals and even exceeds the
-                  performance of state-of-the art one-norm solvers
-                  that are able to carry out least-squares migration
-                  at the cost of a single migration with all data.},
-  keywords = {EAGE, LSRTM},
-  note = {(to be presented at the EAGE Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/herrmann2015EAGEfom/herrmann2015EAGEfom.html}
-}
-
-
-@UNPUBLISHED{kumar2015EAGEmcu,
-  author = {Rajiv Kumar and Oscar Lopez and Ernie Esser and Felix J. Herrmann},
-  title = {Matrix completion on unstructured grids : {2-D} seismic data regularization and interpolation},
-  year = {2015},
-  abstract = {Seismic data interpolation via rank-minimization
-                  techniques has been recently introduced in the
-                  seismic community. All the existing
-                  rank-minimization techniques assume the recording
-                  locations to be on a regular grid, e.g., sampled
-                  periodically, but seismic data are typically
-                  irregularly sampled along spatial axes. Other than
-                  the irregularity of the sampled grid, we often have
-                  missing data. In this paper, we study the effect of
-                  grid irregularity to conduct matrix completion on a
-                  regular grid for unstructured data. We propose an
-                  improvement of existing rank-minimization techniques
-                  to do regularization. We also demonstrate that we
-                  can perform seismic data regularization and
-                  interpolation simultaneously. We illustrate the
-                  advantages of the modification using a real seismic
-                  line from the Gulf of Suez to obtain high quality
-                  results for regularization and interpolation, a key
-                  application in exploration geophysics.},
-  keywords = {EAGE, regularization, interpolation, matrix completion, NFFT},
-  note = {(to be presented at the EAGE Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/kumar2015EAGEmcu/kumar2015EAGEmcu.html}
 }
 
 
@@ -376,33 +219,6 @@
 }
 
 
-@UNPUBLISHED{lopez2015EAGErma,
-  author = {Oscar Lopez and Rajiv Kumar and Felix J. Herrmann},
-  title = {Rank minimization via alternating optimization: seismic data interpolation},
-  year = {2015},
-  abstract = {Low-rank matrix completion techniques have recently
-                  become an effective tool for seismic trace
-                  interpolation problems. In this talk, we consider an
-                  alternating optimization scheme for nuclear norm
-                  minimization and discuss the applications to large
-                  scale wave field reconstruction. By adopting a
-                  factorization approach to the rank minimization
-                  problem we write our low-rank matrix in bi-linear
-                  form, and modify this workflow by alternating our
-                  optimization to handle a single matrix factor at a
-                  time. This allows for a more tractable procedure
-                  that can robustly handle large scale, highly
-                  oscillatory and critically subsampled seismic data
-                  sets. We demonstrate the potential of this approach
-                  with several numerical experiments on a seismic line
-                  from the Nelson 2D data set and a frequency slice
-                  from the Gulf of Mexico data set.},
-  keywords = {EAGE, matrix completion, low-rank, interpolation},
-  note = {(to be presented at the EAGE Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/lopez2015EAGErma/lopez2015EAGErma.html}
-}
-
-
 @UNPUBLISHED{louboutin2015SEGtcs,
   author = {Mathias Louboutin and Felix J. Herrmann},
   title = {Time compressively sampled full-waveform inversion with stochastic optimization},
@@ -440,39 +256,6 @@
 }
 
 
-@UNPUBLISHED{oghenekohwo2015EAGEuci,
-  author = {Felix Oghenekohwo and Rajiv Kumar and Ernie Esser and Felix J. Herrmann},
-  title = {Using common information in compressive time-lapse full-waveform inversion},
-  year = {2015},
-  abstract = {The use of time-lapse seismic data to monitor changes in
-                  the subsurface has become standard practice in
-                  industry. In addition, full-waveform inversion has
-                  also been extended to time-lapse seismic to obtain
-                  useful time-lapse information. The computational
-                  cost of this method are becoming more pronounced as
-                  the volume of data increases. Therefore, it is
-                  necessary to develop fast inversion algorithms that
-                  can also give improved time-lapse results. Rather
-                  than following existing joint inversion algorithms,
-                  we are motivated by a joint recovery model which
-                  exploits the common information among the baseline
-                  and monitor data. We propose a joint inversion
-                  framework, leveraging ideas from distributed
-                  compressive sensing and the modified Gauss-Newton
-                  method for full-waveform inversion, by using the
-                  shared information in the time-lapse data. Our
-                  results on a realistic synthetic example highlight
-                  the benefits of our joint inversion approach over a
-                  parallel inversion method that does not exploit the
-                  shared information. Preliminary results also
-                  indicate that our formulation can address time-lapse
-                  data with inconsistent acquisition geometries.},
-  keywords = {EAGE, time-lapse, FWI},
-  note = {(to be presented at the EAGE Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/oghenekohwo2015EAGEuci/oghenekohwo2015EAGEuci.html}
-}
-
-
 @UNPUBLISHED{peters2015SEGrwi,
   author = {Bas Peters and Zhilong Fang and Brendan Smithyman and Felix J. Herrmann},
   title = {Regularizing waveform inversion by projections onto convex sets --- application to the {2D} {Chevron} 2014 synthetic blind-test dataset},
@@ -505,42 +288,6 @@
   keywords = {SEG, Waveform inversion, regularization, projection, blind-test,Wavefield Reconstruction Inversion, private},
   note = {(submitted to the SEG conference)},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2015/peters2015SEGrwi/peters2015SEGrwi.html}
-}
-
-
-@UNPUBLISHED{smithyman2015EAGEcwi,
-  author = {Brendan Smithyman and Bas Peters and Felix J. Herrmann},
-  title = {Constrained waveform inversion of colocated {VSP} and surface seismic data},
-  year = {2015},
-  abstract = {Constrained Full-Waveform Inversion (FWI) is applied to
-                  produce a high-resolution velocity model from both
-                  Vertical Seismic Profiling (VSP) and surface seismic
-                  data. The case study comes from the Permian Basin in
-                  Texas, USA. This dataset motivates and tests several
-                  new developments in methodology that enable recovery
-                  of model results that sit within multiple a priori
-                  constraint sets. These constraints are imposed
-                  through a Projected Quasi-Newton (PQN) approach,
-                  wherein the projection set is the intersection of
-                  physical property bounds and anisotropic wavenumber
-                  filtering. This enables the method to recover
-                  geologically-reasonable models while preserving the
-                  fast model convergence offered by a quasi-Newton
-                  optimization scheme like l-BFGS. In the Permian
-                  Basin example, low-frequency data from both arrays
-                  are inverted together and regularized by this
-                  projection approach. Careful choice of the
-                  constraint sets is possible without requiring
-                  tradeoff parameters as in a quadratic penalty
-                  approach to regularization. Multiple 2D FWI results
-                  are combined to produce an interpolated 3D model
-                  that is consistent with the models from migration
-                  velocity analysis and VSP processing, while offering
-                  improved resolution and illumination of features
-                  from both datasets.},
-  keywords = {EAGE, waveform inversion, VSP},
-  note = {(to be presented at the EAGE Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/smithyman2015EAGEcwi/smithyman2015EAGEcwi.pdf}
 }
  
 
@@ -709,27 +456,6 @@
   keywords = {SIAM, FWI, private},
   note = {(to be presented at the SIAM Conference on Mathematical and Computational Issues in the Geosciences, June 29 - July 2, Stanford University, California)}
 }
-
-
-@UNPUBLISHED{wason2015EAGEcsm,
-  author = {Haneet Wason and Felix Oghenekohwo and Felix J. Herrmann},
-  title = {Compressed sensing in {4-D marine}---recovery of dense time-lapse data from subsampled data without repetition},
-  year = {2015},
-  abstract = {We present an extension of our time-jittered marine
-                  acquisition for time-lapse surveys by working on
-                  more realistic field acquisition scenarios by
-                  incorporating irregular spatial grids without
-                  insisting on repeatability between the
-                  surveys. Since we are always subsampled in both the
-                  baseline and monitor surveys, we are interested in
-                  recovering the densely sampled baseline and monitor,
-                  and then the (complete) 4-D difference from
-                  subsampled/incomplete baseline and monitor data.},
-  keywords = {EAGE, simultaneous acquisition, time-lapse, off-the-grid, NFFT},
-  note = {(to be presented at the EAGE Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/wason2015EAGEcsm/wason2015EAGEcsm.html}
-}
-
 
 
 %-----2014-----%

@@ -1,13 +1,96 @@
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+@PHDTHESIS{li2015THsps,
+  author = {Xiang Li},
+  title = {Sparsity promoting seismic imaging and full-waveform inversion},
+  school = {The University of British Columbia},
+  year = {2015},
+  month = {07},
+  address = {Vancouver},
+  abstract = {This thesis will address the large computational costs
+                  of solving least-squares migration and full-waveform
+                  inversion problems. Least-squares seismic imaging
+                  and full-waveform inversion are seismic inversion
+                  techniques that require iterative minimizations of
+                  large least-squares misfit functions. Each iteration
+                  requires an evaluation of the Jacobian operator and
+                  its adjoint, both of which require two wave-equation
+                  solves for all sources, creating prohibitive
+                  computational costs. In order to reduce costs, we
+                  utilize randomized dimensionality reduction
+                  techniques, reducing the number of sources used
+                  during inversion. The randomized dimensionality
+                  reduction techniques create subsampling related
+                  artifacts, which we mitigate by using
+                  curvelet-domain sparsity-promoting inversion
+                  techniques. Our method conducts least-squares
+                  imaging at the approximate cost of one reverse-time
+                  migration with all sources, and computes the
+                  Gauss-Newton full-waveform inversion update at
+                  roughly the cost of one gradient update with all
+                  sources. Finally, during our research of the
+                  full-waveform inversion problem, we discovered that
+                  we can utilize our method as an alternative approach
+                  to add sparse constraints on the entire velocity
+                  model by imposing sparsity constraints on each model
+                  update separately, rather than regularizing the
+                  total velocity model as typically practiced. We also
+                  observed this alternative approach yields a faster
+                  decay of the residual and model error as a function
+                  of iterations. We provided empirical arguments why
+                  and when imposing sparsity on the updates can lead
+                  to improved full-waveform inversion results.},
+  keywords = {full-waveform inversion, Gauss-Newton method, sparsity promoting, least-squares imaging, seismic imaging},
+  note = {(PhD)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2015/li2015THsps/li2015THsps.pdf},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2015/li2015THsps/li2015THsps_pres.pdf}
+}
+
+
+@PHDTHESIS{moghaddam10phd,
+  author = {Peyman P. Moghaddam},
+  title = {Curvelet-based migration amplitude recovery},
+  school = {The University of British Columbia},
+  year = {2010},
+  month = {05},
+  address = {Vancouver},
+  abstract = {Migration can accurately locate reflectors in the earth
+                  but in most cases fails to correctly resolve their
+                  amplitude. This might lead to mis-interpretation of
+                  the nature of reflector. In this thesis, I
+                  introduced a method to accurately recover the
+                  amplitude of the seismic reflector. This method
+                  relies on a new transform-based recovery that
+                  exploits the expression of seismic images by the
+                  recently developed curvelet transform. The elements
+                  of this transform, called curvelets, are
+                  multi-dimensional, multi-scale, and
+                  multi-directional. They also remain approximately
+                  invariant under the imaging operator. I exploit
+                  these properties of the curvelets to introduce a
+                  method called Curvelet Match Filtering (CMF) for
+                  recovering the seismic amplitude in presence of
+                  noise in both migrated image and data. I detail the
+                  method and illustrate its performance on synthetic
+                  dataset. I also extend CMF formulation to other
+                  geophysical applications and present results on
+                  multiple removal. In addition of that, I investigate
+                  preconditioning of the migration which results to
+                  rapid convergence rate of the iterative method using
+                  migration.},
+  note = {(PhD)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2010/moghaddam10phd.pdf}
+}
+
+
 @PHDTHESIS{hennenfent08phd,
   author = {Gilles Hennenfent},
   title = {Sampling and reconstruction of seismic wavefields in the curvelet domain},
   school = {The University of British Columbia},
   year = {2008},
-  type = {phd},
-  address = {Vancouver, BC Canada},
+  month = {05},
+  address = {Vancouver},
   abstract = {Wavefield reconstruction is a crucial step in the
                   seismic processing flow. For instance, unsuccessful
                   interpolation leads to erroneous multiple
@@ -49,43 +132,7 @@
                   and present results on multiple removal and
                   migration-amplitude recovery.},
   keywords = {curvelet transform, reconstruction, SLIM},
-  month = {05},
+  note = {(PhD)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2008/hennenfent08phd.pdf}
-}
-
-
-@PHDTHESIS{moghaddam10phd,
-  author = {Peyman P. Moghaddam},
-  title = {Curvelet-based migration amplitude recovery},
-  school = {The University of British Columbia},
-  year = {2010},
-  type = {phd},
-  address = {Vancouver, BC Canada},
-  abstract = {Migration can accurately locate reflectors in the earth
-                  but in most cases fails to correctly resolve their
-                  amplitude. This might lead to mis-interpretation of
-                  the nature of reflector. In this thesis, I
-                  introduced a method to accurately recover the
-                  amplitude of the seismic reflector. This method
-                  relies on a new transform-based recovery that
-                  exploits the expression of seismic images by the
-                  recently developed curvelet transform. The elements
-                  of this transform, called curvelets, are
-                  multi-dimensional, multi-scale, and
-                  multi-directional. They also remain approximately
-                  invariant under the imaging operator. I exploit
-                  these properties of the curvelets to introduce a
-                  method called Curvelet Match Filtering (CMF) for
-                  recovering the seismic amplitude in presence of
-                  noise in both migrated image and data. I detail the
-                  method and illustrate its performance on synthetic
-                  dataset. I also extend CMF formulation to other
-                  geophysical applications and present results on
-                  multiple removal. In addition of that, I investigate
-                  preconditioning of the migration which results to
-                  rapid convergence rate of the iterative method using
-                  migration.},
-  month = {05},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2010/moghaddam10phd.pdf}
 }
 

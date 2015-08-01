@@ -14961,6 +14961,41 @@
 }
 
 
+@UNPUBLISHED{lopez2015IEEEogl,
+  author = {Oscar Lopez and Rajiv Kumar and Ozgur Yilmaz and Felix J. Herrmann},
+  title = {Off the grid low rank matrix recovery},
+  year = {2015},
+  abstract = {Matrix sensing and matrix completion problems capitalize
+                  on the knowledge that a data matrix of interest
+                  exhibits low rank properties. This low dimensional
+                  structure often arises because the data matrix is
+                  obtained by sampling a smooth function on a regular
+                  (or structured) grid. However, in many practical
+                  situations the measurements are taken on an
+                  irregular grid (that is completely known). This
+                  results in an ``unstructured data matrix'' that is
+                  less fit for the low rank model in comparison to its
+                  regular counterpart. In this paper we propose and
+                  analyze a modified low rank matrix recovery workflow
+                  that admits unstructured observations. By
+                  incorporating a regularization operator which
+                  accurately maps structured data to unstructured
+                  data, into the nuclear norm minimization problem, we
+                  are able to compensate for data irregularity.
+                  Furthermore, by construction our formulation yields
+                  output that is supported on a structured grid, so
+                  that in effect we also regularize the data
+                  matrix. We establish recovery error bounds for our
+                  methodology and offer several matrix sensing and
+                  matrix completion numerical experiments including
+                  applications to frugal seismic data acquisition to
+                  demonstrate the potential of the approach.},
+  keywords = {matrix sensing, matrix completion, nuclear norm relaxation, NFFT, seismic trace interpolation, simultaneous source separation, private},
+  note = {Submitted to the IEEE Journal of Selected Topics in Signal Processing on July 30.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/lopez2015IEEEogl/lopez2015IEEEogl.pdf}
+}
+
+
 @UNPUBLISHED{louboutin2015SEGtcs,
   author = {Mathias Louboutin and Felix J. Herrmann},
   title = {Time compressively sampled full-waveform inversion with stochastic optimization},
@@ -15162,97 +15197,6 @@
 
 %-----2014-----%
 
-@UNPUBLISHED{dasilva2014htuck,
-  author = {Curt Da Silva and Felix J. Herrmann},
-  title = {Optimization on the {Hierarchical} {Tucker} manifold - applications to tensor completion},
-  year = {2014},
-  month = {04},
-  abstract = {In this work, we develop an optimization framework for
-                  problems whose solutions are well-approximated by
-                  Hierarchical Tucker (HT) tensors, an efficient
-                  structured tensor format based on recursive subspace
-                  factorizations. By exploiting the smooth manifold
-                  structure of these tensors, we construct standard
-                  optimization algorithms such as Steepest Descent and
-                  Conjugate Gradient for completing tensors from
-                  missing entries. Our algorithmic framework is fast
-                  and scalable to large problem sizes as we do not
-                  require SVDs on the ambient tensor space, as
-                  required by other methods. Moreover, we exploit the
-                  structure of the Gramian matrices associated with
-                  the HT format to regularize our problem, reducing
-                  overfitting for high subsampling ratios. We also
-                  find that the organization of the tensor can have a
-                  major impact on completion from realistic seismic
-                  acquisition geometries. These samplings are far from
-                  idealized randomized samplings that are usually
-                  considered in the literature but are realizable in
-                  practical scenarios. Using these algorithms, we
-                  successfully interpolate large-scale seismic data
-                  sets and demonstrate the competitive computational
-                  scaling of our algorithms as the problem sizes
-                  grow.},
-  keywords = {hierarchical tucker, structured tensor, tensor interpolation, differential geometry, riemannian optimization, gauss newton, private},
-  note = {Accepted to be published in the journal - Linear Algebra and its Applications, 2015},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/dasilva2014htuck/dasilva2014htuck.pdf}
-}
-
-
-@UNPUBLISHED{kumar2014GEOPemc,
-  author = {Rajiv Kumar and Curt Da Silva and Okan Akalin and Aleksandr Y. Aravkin and Hassan Mansour and Ben Recht and Felix J. Herrmann},
-  title = {Efficient matrix completion for seismic data reconstruction},
-  year = {2014},
-  month = {08},
-  abstract = {Despite recent developments in improved acquisition,
-                  seismic data often remains undersampled along source
-                  and/or receiver coordinates, resulting in incomplete
-                  data for key applications such as migration and
-                  multiple prediction requiring densely sampled,
-                  alias-free wide azimuth data. When seismic data is
-                  organized in monochromatic frequency slices,
-                  missing-trace interpolation can be cast into a
-                  matrix completion problem, where the low-rank
-                  structure of seismic data in the appropriate domain
-                  can be exploited to recover densely sampled data
-                  volumes from data with missing entries. Current
-                  approaches that exploit low-rank structure are based
-                  on repeated singular value decompositions, which
-                  become prohibitively expensive for large-scale
-                  problems unless the data is partitioned and
-                  processed in small windows. While computationally
-                  manageable, our theory and experiments show degraded
-                  results when the windows sizes become too small. To
-                  overcome this problem, we carry out our
-                  interpolations for each frequency independently
-                  while working with the complete data in the
-                  midpoint-offset domain instead of windowing. For
-                  lateral varying geologies that are not too complex,
-                  working in the midpoint-offset domain leads to
-                  favorable rank minimization recovery because the
-                  singular values decay faster while sampling-related
-                  artifacts remain full rank. This combination of fast
-                  decay and full-rank artifacts agrees with the
-                  principles of the compressive sensing paradigm,
-                  which is based on exploiting (low-rank) structure, a
-                  sampling process that breaks this structure, and a
-                  rank-minimizing optimization that restores the
-                  signal's structure and interpolates the subsampled
-                  data. To make our proposed method computationally
-                  viable and practical, we introduce a
-                  factorization-based approach that avoids computing
-                  the singular values, and that therefore scales to
-                  large seismic data problems as long as the factors
-                  can be stored in memory. Tests on realistic two- and
-                  three-dimensional seismic data show that our method
-                  compares favorably, both in terms of computational
-                  speed and recovery quality, to existing
-                  curvelet-based and tensor-based techniques.},
-  keywords = {interpolation, low-rank, private},
-  note = {Submitted to Geophysics on August 8, 2014.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2014/kumar2014GEOPemc/kumar2014GEOPemc.pdf}
-}
-
-
 @UNPUBLISHED{oghenekohwo2014GEOPfrt,
   author = {Felix Oghenekohwo and Haneet Wason and Ernie Esser and Felix J. Herrmann},
   title = {Compressive 4D—economic time-lapse seismic with randomized subsampling and joint recovery},
@@ -15294,6 +15238,103 @@
 
 % This file was created with JabRef 2.8.1.
 % Encoding: MacRoman
+
+@ARTICLE{dasilva2014htuck,
+  author = {Curt Da Silva and Felix J. Herrmann},
+  title = {Optimization on the {Hierarchical} {Tucker} manifold - applications to tensor completion},
+  journal = {Linear Algebra and its Applications}, 
+  year = {2015},
+  month = {09},
+  volume = {481}, 
+  pages = {131-173},
+  abstract = {In this work, we develop an optimization framework for
+                  problems whose solutions are well-approximated by
+                  Hierarchical Tucker (HT) tensors, an efficient
+                  structured tensor format based on recursive subspace
+                  factorizations. By exploiting the smooth manifold
+                  structure of these tensors, we construct standard
+                  optimization algorithms such as Steepest Descent and
+                  Conjugate Gradient for completing tensors from
+                  missing entries. Our algorithmic framework is fast
+                  and scalable to large problem sizes as we do not
+                  require SVDs on the ambient tensor space, as
+                  required by other methods. Moreover, we exploit the
+                  structure of the Gramian matrices associated with
+                  the HT format to regularize our problem, reducing
+                  overfitting for high subsampling ratios. We also
+                  find that the organization of the tensor can have a
+                  major impact on completion from realistic seismic
+                  acquisition geometries. These samplings are far from
+                  idealized randomized samplings that are usually
+                  considered in the literature but are realizable in
+                  practical scenarios. Using these algorithms, we
+                  successfully interpolate large-scale seismic data
+                  sets and demonstrate the competitive computational
+                  scaling of our algorithms as the problem sizes
+                  grow.},
+  keywords = {hierarchical tucker tensors, tensor completion, Riemannian manifold optimization, Gauss–Newton, differential geometry, low-rank tensor},
+  note = {(Linear Algebra and its Applications)},
+  doi = {10.1016/j.laa.2015.04.015},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/LinearAlgebraAndItsApplications/2015/dasilva2014htuck/dasilva2014htuck.pdf},
+  url2 = {http://www.sciencedirect.com/science/article/pii/S0024379515002530}
+}
+
+
+@ARTICLE{kumar2014GEOPemc,
+  author = {Rajiv Kumar and Curt Da Silva and Okan Akalin and Aleksandr Y. Aravkin and Hassan Mansour and Ben Recht and Felix J. Herrmann},
+  title = {Efficient matrix completion for seismic data reconstruction},
+  journal = {Geophysics}, 
+  year = {2015},
+  month = {09},
+  volume = {80}, 
+  number = {05}, 
+  pages = {V97-V114},
+  abstract = {Despite recent developments in improved acquisition,
+                  seismic data often remain undersampled along source
+                  and receiver coordinates, resulting in incomplete
+                  data for key applications such as migration and
+                  multiple prediction. We have interpreted the
+                  missing-trace interpolation problem in the context
+                  of matrix completion (MC), and developed three
+                  practical principles for using low-rank optimization
+                  techniques to recover seismic data. Specifically, we
+                  strive for recovery scenarios wherein the original
+                  signal is low rank and the subsampling scheme
+                  increases the singular values of the matrix. We use
+                  an optimization program that restores this low-rank
+                  structure to recover the full volume. Omitting one
+                  or more of these principles can lead to poor
+                  interpolation results, as we found
+                  experimentally. In light of this theory, we
+                  compensate for the high-rank behavior of data in the
+                  source-receiver domain by using the midpoint-offset
+                  transformation for 2D data and a source-receiver
+                  permutation for 3D data to reduce the overall
+                  singular values. Simultaneously, to work with
+                  computationally feasible algorithms for large-scale
+                  data, we use a factorization-based approach to MC,
+                  which significantly speeds up the computations
+                  compared with repeated singular value decompositions
+                  without reducing the recovery quality. In the
+                  context of our theory and experiments, we also find
+                  that windowing the data too aggressively can have
+                  adverse effects on the recovery quality. To overcome
+                  this problem, we carried out our interpolations for
+                  each frequency independently while working with the
+                  entire frequency slice. The result is a
+                  computationally efficient, theoretically motivated
+                  framework for interpolating missing-trace data. Our
+                  tests on realistic 2D and 3D seismic data sets show
+                  that our method compares favorably in terms of
+                  computational speed and recovery quality with
+                  existing curvelet- and tensor-based techniques.},
+  keywords = {2D, 3D, algorithm, interpolation, signal processing, low-rank},
+  note = {(Geophysics)},
+  doi = {10.1190/geo2014-0369.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2015/kumar2014GEOPemc/kumar2014GEOPemc.pdf},
+  url2 = {http://library.seg.org/doi/abs/10.1190/geo2014-0369.1}
+}
+
 
 @ARTICLE{tu2015TLEfls,
   author = {Ning Tu and Felix J. Herrmann},
@@ -15339,7 +15380,7 @@
   keywords = {migration, multiples, inversion, least squares, field data},
   note = {(The Leading Edge)},
   doi = {10.1190/tle34070788.1},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/The_Leading_Edge/2015/tu2015TLEfls/tu2015TLEfls.html}
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2015/tu2015TLEfls/tu2015TLEfls.html}
 }
 
 
@@ -15455,7 +15496,7 @@
   note = {(SISC)},
   doi = {10.1137/130918629},
   url = {http://epubs.siam.org/doi/abs/10.1137/130918629},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/SIAM_Journal_on_Scientific_Computing/2014/vanLeeuwen2014SISC3Dfds/vanLeeuwen2014SISC3Dfds.pdf}
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/SIAMJournalOnScientificComputing/2014/vanLeeuwen2014SISC3Dfds/vanLeeuwen2014SISC3Dfds.pdf}
 }
 
 
@@ -15623,7 +15664,7 @@
                   creating sub-salt images to inverting for sub-salt
                   overpressure.},
   keywords = {waveform inversion, optimization},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/The_Leading_Edge/2013/herrmann2013ffwi/herrmann2013ffwi.html},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2013/herrmann2013ffwi/herrmann2013ffwi.html},
   doi = {10.1190/tle32091082.1}
 }
 
@@ -15933,7 +15974,7 @@
   keywords = {basis pursuit, convex program, duality, Newton{\textquoteright}s method, one-norm regularization, projected gradient, root-finding, sparse solutions, optimization},
   doi = {10.1137/080714488},
   publisher = {SIAM},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/SIAM_Journal_on_Scientific_Computing/2008/vanderberg08SIAMptp/vanderberg08SIAMptp.pdf}
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/SIAMJournalOnScientificComputing/2008/vanderberg08SIAMptp/vanderberg08SIAMptp.pdf}
 }
 
 

@@ -99,6 +99,28 @@
 }
 
 
+@CONFERENCE{dasilva2015SEGWSsfm,
+  author = {Curt Da Silva and Rajiv Kumar and Oscar Lopez and Haneet Wason and Felix J. Herrmann},
+  title = {{SVD}-free matrix completion in randomized marine acquisition},
+  booktitle = {SEG Workshop on Rank-Reduction and Other Sparse Transform Methods with Application to Data Reconstruction, De-Noising, De-Blending and Imaging},
+  year = {2015},
+  month = {10},
+  abstract = {During this presentation, we will illustrate how
+                  insights from matrix-free matrix completion can be
+                  used to solve problems in (on- and off-the-grid)
+                  missing trace interpolation and time-jittered
+                  (simultaneous) marine acquisition. In particular, we
+                  will demonstrate the importance of data organization
+                  to favor recovery by rank minimization and the use
+                  of deterministic spectral properties to predict the
+                  recovery. We also make make comparisons between
+                  wavefield reconstructions based on transform-domain
+                  sparsity promotion and matrix completion.},
+  keywords = {SEG, workshop, matrix completion, rank reduction, interpolation, acquisition, private},
+  note = {(to be presented at the SEG, New Orleans)}
+}
+
+
 @CONFERENCE{esser2015EAGElcs,
   author = {Ernie Esser and Tim T.Y. Lin and Rongrong Wang and Felix J. Herrmann},
   title = {A lifted $\ell_1/\ell_2$ constraint for sparse blind deconvolution},
@@ -138,6 +160,66 @@
   doi = {10.3997/2214-4609.201413420},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/esser2015EAGElcs/esser2015EAGElcs.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/esser2015EAGElcs/esser2015EAGElcs_poster.pdf}
+}
+
+
+@CONFERENCE{esser2015SEGasd,
+  author = {Ernie Esser and Lluís Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  title = {Automatic salt delineation --- {Wavefield} {Reconstruction} {Inversion} with convex constraints},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  year = {2015},
+  month = {10},
+  abstract = {We extend full-waveform inversion by Wavefield
+                  Reconstruction Inversion by including convex
+                  constraints on the model. Contrary to the
+                  conventional adjoint-state formulations, Wavefield
+                  Reconstruction Inversion has the advantage that the
+                  Gauss-Newton Hessian is well approximated by a
+                  diagonal scaling, which allows us to add convex
+                  constraints, such as the box- and the
+                  edge-preserving total-variation constraint, on the
+                  square slowness without incurring significant
+                  increases in computational costs. As the examples
+                  demonstrate, including these constraints yields far
+                  superior results in complex geological areas that
+                  contain high-velocity high-contrast bodies
+                  (e.g. salt or basalt). Without these convex
+                  constraints, adjoint-state and Wavefield
+                  Reconstruction Inversion get trapped in local minima
+                  for poor starting models.},
+  keywords = {SEG, full-waveform inversion, convex constraints, total-variation norm, salt},
+  note = {(to be presented at the SEG, New Orleans)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/esser2015SEGasd/esser2015SEGasd.html}
+}
+
+
+@CONFERENCE{esser2015CAMSAPrsa,
+  author = {Ernie Esser and Rongrong Wang and Tim T.Y. Lin and Felix J. Herrmann},
+  title = {Resolving scaling ambiguities with the $\ell_1/\ell_2$ norm in a blind deconvolution problem with feedback},
+  booktitle = {IEEE workshop on Computational Advances in Multi-Sensor Adaptive Processing},
+  year = {2015},
+  month = {12},
+  abstract = {Compared to more mundane blind deconvolution problems,
+                  blind deconvolution in seismic applications involves
+                  a feedback mechanism related to the free
+                  surface. The presence of this feedback mechanism
+                  gives us an unique opportunity to remove ambiguities
+                  that have plagued blind deconvolution for a long
+                  time. While beneficial, this feedback by itself is
+                  insufficient to remove the ambiguities even with
+                  $\ell_1$ constraints. However, when paired with an
+                  $\ell_1/\ell_2$ constraint the feedback allows us to
+                  resolve the scaling ambiguity under relatively mild
+                  assumptions. Inspired by lifting approaches, we
+                  propose to split the sparse signal into positive and
+                  negative components and apply an $\ell_1/\ell_2$
+                  constraint to the difference, thereby obtaining a
+                  constraint that is easy to implement. Numerical
+                  experiments demonstrate robustness to the
+                  initialization as well as to noise in the data.},
+  keywords = {CAMSAP, blind deconvolution, $\ell_1/\ell_2$, lifting, method of multipliers, private},
+  note = {(to be presented at the IEEE (CAMSAP) workshop in Cancun, Mexico)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/CAMSAP/2015/esser2015CAMSAPrsa/esser2015CAMSAPrsa.pdf}
 }
 
 
@@ -403,6 +485,45 @@
 }
 
 
+@CONFERENCE{louboutin2015SEGtcs,
+  author = {Mathias Louboutin and Felix J. Herrmann},
+  title = {Time compressively sampled full-waveform inversion with stochastic optimization},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  year = {2015},
+  month = {10},
+  abstract = {Time-domain Full-Waveform Inversion (FWI) aims to image
+                  the subsurface of the earth accurately from field
+                  recorded data and can be solved via the reduced
+                  adjoint-state method. However, this method requires
+                  access to the forward and adjoint wavefields that
+                  are meet when computing gradient updates. The
+                  challenge here is that the adjoint wavefield is
+                  computed in reverse order during time stepping and
+                  therefore requires storage or other type of
+                  mitigation because storing the full time history of
+                  the forward wavefield is too expensive in realistic
+                  3D settings. To overcome this challenge, we propose
+                  an approximate adjoint-state method where the
+                  wavefields are subsampled randomly, which
+                  drastically the amount of storage needed. By using
+                  techniques from stochastic optimization, we control
+                  the errors induced by the subsampling. Examples of
+                  the proposed technique on a synthetic but realistic
+                  2D model show that the subsampling-related artifacts
+                  can be reduced significantly by changing the
+                  sampling for each source after each model
+                  update. Combination of this gradient approximation
+                  with a quasi-Newton method shows virtually artifact
+                  free inversion results requiring only 5% of storage
+                  compared to saving the history at Nyquist. In
+                  addition, we avoid having to recompute the
+                  wavefields as is required by checkpointing.},
+  keywords = {SEG, Full-waveform inversion, Acoustic, Subsampling, Time-domain, Inversion, Stochastic optimization},
+  note = {(to be presented at the SEG, New Orleans)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/louboutin2015SEGtcs/louboutin2015SEGtcs.html}
+}
+
+
 @CONFERENCE{oghenekohwo2015EAGEuci,
   author = {Felix Oghenekohwo and Rajiv Kumar and Ernie Esser and Felix J. Herrmann},
   title = {Using common information in compressive time-lapse full-waveform inversion},
@@ -542,6 +663,17 @@
   keywords = {least-squares, matrix-free, CGMN, randomized linear algebra, Helmholtz, private},
   note = {(PRECON, The Netherlands)},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/PRECON/2015/peters2015PRECONasl/peters2015PRECONasl_pres.pdf}
+}
+
+
+@CONFERENCE{peters2015SEGWSsew,
+  author = {Bas Peters and Felix J. Herrmann},
+  title = {Simultaneous estimation of wavefields and medium parameters - reduced-space versus full-space waveform inversion},
+  booktitle = {SEG Workshop on The Limit of FWI in Subsurface Parameter Recovery},
+  year = {2015},
+  month = {10},
+  keywords = {SEG, workshop, waveform inversion, full-space, PDE-constrained optimization, quadratic penalty method, private},
+  note = {(to be presented at the SEG, New Orleans)}
 }
 
 

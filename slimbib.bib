@@ -291,6 +291,68 @@
 }
 
 
+@CONFERENCE{fang2015IIPFWIsoa,
+  author = {Zhilong Fang and Tim Burgess and Felix J. Herrmann},
+  title = {Stochastic optimization and its application to seismic inversion},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  keywords = {FWI, stochastic, optimization, inversion, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/fang2015IIPFWIsoa/fang2015IIPFWIsoa_pres.pdf}
+}
+
+
+@CONFERENCE{fang2015IIPFWIuqw,
+  author = {Zhilong Fang and Chia Ying Lee and Curt Da Silva and Felix J. Herrmann and Rachel Kuske},
+  title = {Uncertainty quantification for {Wavefield} {Reconstruction} {Inversion}},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {In this work, we propose a method to quantify the
+                  uncertainty of wavefield reconstruction inversion
+                  under the framework of Bayesian inference. Unlike
+                  the conventional method using the wave equation as
+                  the forward mapping, we involve the wave equation
+                  misfit in the posterior distribution and propose a
+                  new posterior distribution. The negative
+                  log-likelihood of the new distribution is less
+                  oscillatory than that of the conventional posterior
+                  distribution, and its Gauss-Newton Hessian is a
+                  diagonal matrix that can be generated without any
+                  additional computational cost. We use the diagonal
+                  Gauss-Newton Hessian to derive an approximate
+                  Gaussian distribution at the maximum likelihood
+                  point to quantify the uncertainty. This method makes
+                  the uncertainty quantification for WRI
+                  computationally tractable and is able to provide
+                  reasonable uncertainty analysis based on our
+                  numerical results.},
+  keywords = {FWI, WRI, uncertainity, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/fang2015IIPFWIuqw/fang2015IIPFWIuqw_pres.pdf}
+}
+
+
+@CONFERENCE{fang2015IIPFWIwri,
+  author = {Zhilong Fang and Felix J. Herrmann},
+  title = {Wavefield {Reconstruction} {Inversion} with source estimation and its application to 2014 {Chevron} synthetic blind test dataset},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {We present a robust wavefield reconstruction inversion
+                  with source estimation. The source wavelet is
+                  estimated with the reconstruction of wavefield
+                  simultaneously by solving an extended data
+                  augmentation problem. We apply this method to the
+                  2014 Chevron synthetic blind test dataset and show
+                  the robustness of our method.},
+  keywords = {FWI, WRI, source estimation, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/fang2015IIPFWIwri/fang2015IIPFWIwri_pres.pdf}
+}
+
+
 @CONFERENCE{herrmann2015ASEGrae,
   author = {Felix J. Herrmann},
   title = {Randomized algorithms in exploration seismology},
@@ -349,6 +411,84 @@
   doi = {10.3997/2214-4609.201412942},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/herrmann2015EAGEfom/herrmann2015EAGEfom.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/herrmann2015EAGEfom/herrmann2015EAGEfom_pres.pdf}
+}
+
+
+@CONFERENCE{herrmann2015IIPFWIras,
+  author = {Felix J. Herrmann},
+  title = {Randomized algorithms in seismic imaging},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {As in several other industries, progress in exploration
+                  seismology relies on the collection and processing
+                  of massive data volumes that grow exponentially in
+                  size as the survey area and desired resolution
+                  increase. This exponential growth – in combination
+                  with the increased complexity of the next-generation
+                  of iterative wave-equation based inversion
+                  algorithms – puts strains on our acquisition systems
+                  and computational back ends impeding progress in our
+                  field. During this talk, I will review how recent
+                  randomized algorithms from Compressive Sensing and
+                  Machine learning can be used to overcome some of
+                  these challenges by fundamentally rethinking how we
+                  sample and process seismic data. The key idea here
+                  is to reduce acquisition and computational costs by
+                  deliberately working on small randomized subsets of
+                  the data at a desired accuracy. I will illustrate
+                  these concepts using a variety of compelling
+                  examples on realistic synthetics and field data.},
+  keywords = {FWI, randomization, seismic, imaging, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/herrmann2015IIPFWIras/herrmann2015IIPFWIras_pres.pdf}
+}
+
+
+@CONFERENCE{herrmann2015IIPFWIwri,
+  author = {Felix J. Herrmann},
+  title = {Wavefield-{Reconstruction} {Inversion} — {WRI}},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {We discuss a recently proposed novel method for waveform
+                  inversion: Wavefield Reconstruction Inversion
+                  (WRI). As opposed to conventional FWI — which
+                  attempts to minimize the error between observed and
+                  predicted data obtained by solving a wave equation –
+                  WRI reconstructs a wave-field from the data and
+                  extracts a model-update from this wavefield by
+                  minimizing the wave-equation residual. The method
+                  does not require explicit computation of an adjoint
+                  wavefield as all the necessary information is
+                  contained in the reconstructed wavefield. We show
+                  how the corresponding model updates can be
+                  interpreted physically analogously to the
+                  conventional imaging-condition-based approach.},
+  keywords = {FWI, WRI, inversion, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/herrmann2015IIPFWIwri/herrmann2015IIPFWIwri_pres.pdf}
+}
+
+
+@CONFERENCE{herrmann2015IIPFWIwcc,
+  author = {Felix J. Herrmann and Ernie Esser and Lluis Guash},
+  title = {Wavefield {Reconstruction} {Inversion} with convex constraints},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {During this talk, we discuss how to exploit the special
+                  structure of Wavefield Reconstruction Inversion
+                  (WRI) to include convex bound and total-variation
+                  constraints in a computationally feasible
+                  manner. The resulting method shows promising results
+                  on challenging models that include high-velocity
+                  high-contrast inclusions such as salt or
+                  basalt. This is joint work with Ernie Esser who
+                  passed away and who is dearly missed.},
+  keywords = {FWI, regularization, convex, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/herrmann2015IIPFWIwcc/herrmann2015IIPFWIwcc_pres.pdf}
 }
 
 
@@ -454,6 +594,64 @@
 }
 
 
+@CONFERENCE{kumar2015IIPFWIrmb,
+  author = {Rajiv Kumar and Curt Da Silva and Oscar Lopez and Aleksandr Y. Aravkin and Hassan Mansour and Haneet Wason and Ernie Esser and Felix J. Herrmann},
+  title = {Rank minimization based seismic data processing and inversion},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {We present the low-rank extensions of full-waveform
+                  inversion to mitigate the local-minima issues. The
+                  purpose formulation is computationally tractable and
+                  does not involve any extra computational cost
+                  compared to the adjoint-state method.},
+  keywords = {FWI, rank minimization, processing, inversion, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/kumar2015IIPFWIrmb/kumar2015IIPFWIrmb_pres.pdf}
+}
+
+
+@CONFERENCE{lin2015IIPFWIsws,
+  author = {Tim T.Y. Lin and Curt Da Silva and Felix J. Herrmann},
+  title = {Software and workflows at {SLIM}/{SINBAD}},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  keywords = {FWI, SLIM, software, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/lin2015IIPFWIsws/lin2015IIPFWIsws_pres.pdf}
+}
+
+
+@CONFERENCE{lin2015IIPFWIsdh,
+  author = {Tim T.Y. Lin and Felix J. Herrmann},
+  title = {The student-driven {HPC} environment at {SLIM}},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {A major role of academic environments is to provide
+                  learning experiences for students to critically
+                  analyze and develop methods, both at a high-level of
+                  mathematical rigour, and at a low-enough level of
+                  implementation in order to yield experimental
+                  results on real datasets. Often these two goals are
+                  in conflict with each other, in terms of both
+                  learning time and attention. At SLIM, we strive to
+                  strike a balance between the two by abstracting away
+                  many of the low-level aspects of distributed HPC
+                  under a framework that matches syntactically with
+                  the mathematics of our field, while exposing enough
+                  control parameters for tuning performance
+                  characteristics. This talk will touch on the history
+                  of our efforts at SLIM, and culminate in an overview
+                  of our current method of interacting with the
+                  in-house compute cluster.},
+  keywords = {FWI, HPC, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/lin2015IIPFWIsdh/lin2015IIPFWIsdh_pres.pdf}
+}
+
+
 @CONFERENCE{lopez2015EAGErma,
   author = {Oscar Lopez and Rajiv Kumar and Felix J. Herrmann},
   title = {Rank minimization via alternating optimization: seismic data interpolation},
@@ -482,6 +680,44 @@
   doi = {10.3997/2214-4609.201413453},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/lopez2015EAGErma/lopez2015EAGErma.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/lopez2015EAGErma/lopez2015EAGErma_poster.pdf}
+}
+
+
+@CONFERENCE{louboutin2015IIPFWIrwi,
+  author = {Mathias Louboutin and Bas Peters and Brendan Smithyman and Felix J. Herrmann},
+  title = {Regularizing waveform inversion by projections onto convex sets},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {A framework is proposed for regularizing the waveform
+                  inversion problem by projections onto intersections
+                  of convex sets. Multiple pieces of prior information
+                  about the geology are represented by multiple convex
+                  sets, for example limits on the velocity or minimum
+                  smoothness conditions on the model. The data-misfit
+                  is then minimized, such that the estimated model is
+                  always in the intersection of the convex
+                  sets. Therefore, it is clear what properties the
+                  estimated model will have at each iteration. This
+                  approach does not require any quadratic penalties to
+                  be used and thus avoids the known problems and
+                  limitations of those types of penalties. It is shown
+                  that by formulating waveform inversion as a
+                  constrained problem, regularization ideas such as
+                  Tikhonov regularization and gradient filtering can
+                  be incorporated into one framework. The algorithm is
+                  generally applicable, in the sense that it works
+                  with any (differentiable) objective function and
+                  does not require significant additional
+                  computation. The method is demonstrated on the
+                  inversion of the 2D marine isotropic elastic
+                  synthetic seismic benchmark by Chevron using an
+                  acoustic modeling code. To highlight the effect of
+                  the projections, we apply no data
+                  pre-processing. This is joint work with Bas Peters.},
+  keywords = {FWI, regularization, convex, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/louboutin2015IIPFWIrwi/louboutin2015IIPFWIrwi_pres.pdf}
 }
 
 
@@ -558,6 +794,27 @@
   doi = {10.3997/2214-4609.201413086},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/oghenekohwo2015EAGEuci/oghenekohwo2015EAGEuci.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/oghenekohwo2015EAGEuci/oghenekohwo2015EAGEuci_poster.pdf}
+}
+
+
+@CONFERENCE{oghenekohwo2015IIPFWItlf,
+  author = {Felix Oghenekohwo and Rajiv Kumar and Ernie Esser and Felix J. Herrmann},
+  title = {Time-lapse {FWI} with distributed compressed sensing},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {In this talk, I will discuss our most recent application
+                  of full-waveform inversion (FWI) to time-lapse
+                  seismic data inversion. Specifically, I will
+                  illustrate how a joint recovery model (JRM) can be
+                  used in a joint inversion framework, leveraging
+                  ideas from distributed compressed sensing (DCS). The
+                  key idea involves exploiting the common information
+                  in the baseline and monitor gradients during the
+                  inversion.},
+  keywords = {FWI, time lapse, distributed compressed sensing, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/oghenekohwo2015IIPFWItlf/oghenekohwo2015IIPFWItlf_pres.pdf}
 }
 
 
@@ -833,6 +1090,52 @@
   doi = {10.3997/2214-4609.201413088},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/wason2015EAGEcsm/wason2015EAGEcsm.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/wason2015EAGEcsm/wason2015EAGEcsm_poster.pdf}
+}
+
+
+@CONFERENCE{witte2015IIPFWIspl,
+  author = {Philipp Witte and Ning Tu and Ernie Esser and Mengmeng Yang and Mathias Louboutin and Felix J. Herrmann},
+  title = {Sparsity-promoting least-square migration with linearized {Bregman} and compressive sensing},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {We present a novel adaptation of a recently developed
+                  relatively simple iterative algorithm to solve
+                  large-scale sparsity-promoting optimization
+                  problems. Our algorithm is particularly suitable to
+                  large-scale geophysical inversion problems, such as
+                  sparse least-squares reverse-time migration or
+                  Kirchoff migration since it allows for a tradeoff
+                  between parallel computations, memory allocation,
+                  and turnaround times, by working on subsets of the
+                  data with different sizes. Comparison of the
+                  proposed method for sparse least-squares imaging
+                  shows a performance that rivals and even exceeds the
+                  performance of state-of-the art one-norm solvers
+                  that are able to carry out least-squares migration
+                  at the cost of a single migration with all data.},
+  keywords = {FWI, sparsity promotion, migration, Bregman, compressed sensing, time domain, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/witte2015IIPFWIspl/witte2015IIPFWIspl_pres.pdf}
+}
+
+
+@CONFERENCE{witte2015IIPFWItdf,
+  author = {Philipp Witte and Mathias Louboutin and Felix J. Herrmann},
+  title = {Time-domain {FWI} in {TTI} media},
+  booktitle = {Inaugural Full-Waveform Inversion Workshop},
+  year = {2015},
+  month = {08-09},
+  abstract = {We develop an inversion workflow for tilted transverse
+                  isotropic (TTI) media using a purely acoustic
+                  formulation of the wave equation. The anisotropic
+                  modeling kernel is used for the forward modeling
+                  operator, as well as for the adjoint Jacobian to
+                  back propagate the data residual, thus providing the
+                  true gradient of the FWI objective function.},
+  keywords = {FWI, TTI, time domain, private},
+  note = {(Natal, Brazil)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/IIPFWI/witte2015IIPFWItdf/witte2015IIPFWItdf_pres.pdf}
 }
 
 

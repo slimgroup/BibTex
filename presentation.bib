@@ -1,3 +1,356 @@
+%----- 2015 (FULL) -----%
+@PRESENTATION{dasilva2015SINBADFans,
+  title = {A new software organization for 3D FWI},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {In this work, I have implemented a scalable and extendable framework for 3D Full Waveform Inversion in Matlab. This approach uses modern software design
+             principles to create a codebase that is easy to understand, maintain, and extend and that also allows for rapid prototyping of new algorithmic ideas that can                be easily transferred to large scale problems. The code itself is modularized in a proper way, which allows straightforward testing of each component (e.g.,                 Taylor error test, adjoint tests, etc.). Improvements to the computational kernel (i.e., Helmholtz solves with more efficient matrix-vector products, new                    preconditioners, etc.) propagate to the entire framework.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/dasilva2015SINBADFans.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/dasilva2015SINBADFans.mov},
+  author = {Curt Da Silva}
+}
+
+@PRESENTATION{dasilva2015SINBADFsdd,
+  title = {SPOT, distributed data, and you},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/dasilva2015SINBADFsdd.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/dasilva2015SINBADFsdd.mov},
+  author = {Curt Da Silva}
+}
+
+@PRESENTATION{dasilva2015SINBADFsss,
+  title = {Scaling SINBAD software to 3-D on Yemoja},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/dasilva2015SINBADFss.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/dasilva2015SINBADFsss.mov},
+  author = {Curt Da Silva}
+}
+
+@PRESENTATION{esser2015SINBADFasd,
+  title = {Automatic salt delineation — Wavefield Reconstruction Inversion with convex constraints},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We extend full-waveform inversion by Wavefield Reconstruction Inversion by including convex constraints on the model. Contrary to the conventional   
+              adjoint-state formulations, Wavefield Reconstruction Inversion has the advantage that the Gauss-Newton Hessian is well approximated by a diagonal scaling,  
+              which allows us to add convex constraints, such as the box- and the edge-preserving total-variation constraint, on the square slowness without incurring
+              significant increases in computational costs. As the examples demonstrate, including these constraints yields far superior results in complex geological areas 
+              that contain high-velocity high-contrast bodies (e.g. salt or basalt). Without these convex constraints, adjoint-state and Wavefield Reconstruction Inversion 
+              get trapped in local minima for poor starting models.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/esser2015SINBADFasd.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/esser2015SINBADFasd.mov},
+  author = {Ernie Esser}
+}
+
+@PRESENTATION{esser2015SINBADFrsa,
+  title = {Resolving Scaling Ambiguities with the L1/L2 Norm in a Blind Deconvolution Problem with Feedback},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {Compared to more mundane blind deconvolution problems, blind deconvolution in seismic applications involves a feedback mechanism related to the free surface.                The presence of this feedback mechanism gives us an unique opportunity to remove ambiguities that have plagued blind deconvolution for a long time. While 
+              beneficial, this feedback by itself is insufficient to remove the ambiguities even with L1 constraints. However, when paired with an L1/L2 constraint the 
+              feedback allows us to resolve the scaling ambiguity under relatively mild assumptions. Inspired by lifting approaches, we propose to split the sparse signal 
+              into positive and negative components and apply an \ell_1/\ell_2 constraint to the difference, thereby obtaining a constraint that is easy to implement. 
+              Numerical experiments demonstrate robustness to the initialization as well as to noise in the data.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/esser2015SINBADFrsa.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/esser2015SINBADFrsa.mov},
+  author = {Ernie Esser}
+}
+
+@PRESENTATION{fang2015SINBADFuqw,
+  title = {Uncertainty quantification for Wavefield-Reconstruction Inversion using a positive-definite approximated Hessian},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We analyze the Hessian of wavefield reconstruction inversion (WRI) and propose a new approximated Hessian. Instead of requiring PDE solves, the matrix-vector 
+              multiplication action of the approximate Hessian can be achieved with several matrix-vector multiplications. The diagonal part of the approximated Hessian can 
+              be also calculated without additional PDE solves. We apply this approximated Hessian to uncertainty quantification and obtain statistical parameters such as 
+              standard deviation and confidence interval. Numerical example illustrate the accuracy of the estimated Hessian and the feasibility of the method to quantify 
+              uncertainties.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/fang2015SINBADFuqw.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/fang2015SINBADFuqw.mov},
+  author = {Zhilong Fang}
+}
+
+
+@PRESENTATION{fang2015SINBADFwri,
+  title = {Wavefield-reconstruction inversion with source estimation and minimum smoothness constraint – application to the Chevron 2014 dataset},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We present a robust wavefield reconstruction inversion with source estimation. The source wavelet is estimated with the reconstruction of wavefield 
+              simultaneously by solving an extended data-augmented problem. We apply this method to the 2014 Chevron synthetic blind test dataset and show the robustness of 
+              our method.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/fang2015SINBADFwri.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/fang2015SINBADFwri.mov},
+  author = {Zhilong Fang}
+}
+
+@PRESENTATION{herrmann2015SINBADFwom,
+  title = {Welcome & Overview of the Meeting},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/herrmann2015SINBADFwom.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/herrmann2015SINBADFwom.mov},
+  author = {Felix J. Herrmann}
+}
+
+@PRESENTATION{kumar2015SINBADFaoi,
+  title = {Affordable omnidirectional image volumes extension to 3D},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {Image gathers are an important tool for velocity analysis, AVA analysis and targeted imaging, however, the computational cost involving in forming the image 
+              volumes makes them prohibitively expensive in case of large scale 3D seismic data acquisition. In this work, we propose the extension of our probing 
+              techniques from 2D to 3D to form the extended image volumes efficiently. We show the efficacy of proposed formulation on synthetic data set.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/kumar2015SINBADFaoi.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/kumar2015SINBADFaoi.mov},
+  author = {Rajiv Kumar}
+}
+
+
+@PRESENTATION{lin2015SINBADFosd,
+  title = {Our student-driven HPC environment},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {A major role of academic environments is to provide learning experiences for students to critically analyze and develop methods, both at a high-level of 
+              mathematical rigour, and at a low-enough level of implementation in order to yield experimental results on real datasets. Often these two goals are in 
+              conflict with each other, in terms of both learning time and attention. At SLIM, we strive to strike a balance between the two by abstracting away many of the 
+              low-level aspects of distributed HPC under a framework that matches syntactically with the mathematics of our field, while exposing enough control parameters 
+              for tuning performance characteristics. This talk will touch on the history of our efforts at SLIM, and culminate in an overview of our current method of 
+              interacting with the in-house compute cluster.},
+              keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/lin2015SINBADFosd.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/lin2015SINBADFosd.mov},
+  author = {Tim Lin}
+}
+
+@PRESENTATION{lopez2015SINBADFumc,
+  title = {Universal Matrix Completion: Applications to Seismic Data Acquisition},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {This talk discusses the potential applications of universal matrix completion for infill management and acquisition design. We consider recent developments in 
+              the theory of matrix completion that produce practical tools to quantify how successful a given sub sampling mask will be for seismic trace interpolation via  
+              nuclear norm minimization. This approach provides an on the fly infill management system as well as instruments to design acquisition schemes that favor 
+              interpolation via rank penalization techniques.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/lopez2015SINBADFumc.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/lopez2015SINBADFumc.mov},
+  author = {Oscar Lopez}
+}
+
+@PRESENTATION{louboutin2015SINBADFess,
+  title = {Universal Matrix Completion: Applications to Seismic Data Acquisition},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We introduce a modified adjoint-state method for time domain FWI that allows us to extend the research space. As a result, we arrive at a formulation where 
+              the sensitivity to cycle skipping is reduced. Our method obtains results with the same computational costs as FWI (The PDE solved is the same) but with 
+              significantly reduced memory costs. We use new results in non-convex optimization to justify the method as well as new regularization techniques and 
+              stochastic optimization to improve the behavior of the algorithm.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/louboutin2015SINBADFess.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/louboutin2015SINBADFess.mov},
+  author = {Mathias Louboutin}
+}
+
+@PRESENTATION{oghenekohwo2015SINBADFcst,
+  title = {Comparative study of time-lapse FWI approaches},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {I will illustrate the performance of our joint recovery model for time-lapse FWI. Specifically, I will compare our method to other conventional methods, 
+              namely, parallel difference and sequential difference FWI. I will illustrate the robustness of our method compared to others especially in the presence of                   missing data caused by large acquisition gaps. In addition, I will assess the performance of these methods in the detectability of the time-lapse change in 
+              synthetic data. Analysis of these methods under different starting FWI model will also be highlighted.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/oghenekohwo2015SINBADFcst.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/oghenekohwo2015SINBADFcst.mov},
+  author = {Felix Oghenekohwo}
+}
+
+@PRESENTATION{oghenekohwo2015SINBADFtli,
+  title = {Time-lapse imaging with multiples and distributed compressed sensing},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {In this talk, we leverage our joint-recovery model, which uses the fact that time-lapse images generally have a lot in common, to improve imaging problems 
+              with large gaps. We demonstrate that the adverse effects of large acquisition gaps can be mitigated by using this joint-recovery model especially in 
+              combination with imaging with surface-related multiples.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/oghenekohwo2015SINBADFtli.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/oghenekohwo2015SINBADFtli.mov},
+  author = {Felix Oghenekohwo}
+}
+
+@PRESENTATION{peters2015SINBADF3dw,
+  title = {3D WRI},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {In this talk, we leverage our joint-recovery model, which uses the fact that time-lapse images generally have a lot in common, to improve imaging problems 
+              with large gaps. We demonstrate that the adverse effects of large acquisition gaps can be mitigated by using this joint-recovery model especially in 
+              combination with imaging with surface-related multiples.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/peters2015SINBADF3dw.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/peters2015SINBADF3dw.mov},
+  author = {Bas Peters}
+}
+
+@PRESENTATION{peters2015SINBADFaqp,
+  title = {A quadratic-penalty full-space method for waveform inversion},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {In PDE-constrained optimization problems other than geophysical full-waveform inversion, full-space optimization methods are commonly used. This type of 
+              optimization method updates both the medium parameters and the wavefields, instead of solving wave equations explicitly. In the FWI context, this means the   
+              objective function value and gradient can be obtained at very little computational cost. A major obstacle is, however, the requirement to have all wavefields 
+              in memory.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/peters2015SINBADFaqp.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/peters2015SINBADFaqp.mov},
+  author = {Bas Peters}
+}
+
+@PRESENTATION{peters2015SINBADFrwi,
+  title = {Regularizing waveform inversion by projections onto intersections of convex sets},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {Common strategies to regularize waveform inversion (and other geophysical inverse problems) are adding quadratic penalty terms to the objective function or    
+              filtering the gradients used to update the model estimate. An example are penalties or filters to prevent/filter spurious high spatial frequency oscillations 
+              in the model while working with low frequency data.
+              
+              We present an alternative way of regularization, which works by projecting the model onto an intersection of convex sets, where each sets encodes certain 
+              desired model properties. This approach has certain theoretical and practical advantages over quadratic penalties or gradient filters. Some examples of useful 
+              convex sets in various challenging waveform inversion settings are shown on both real and synthetic data.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/peters2015SINBADFrwi.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/peters2015SINBADFrwi.mov},
+  author = {Bas Peters}
+}
+
+@PRESENTATION{sharan2015SINBADFscu,
+  title = {Source collocation using the method of Linearized Bregman},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {In this work, we present a method to collocate sources from seismic reflections recorded at receiver locations. We use the method of linearized Bregman. This 
+              algorithm focuses unknown sources by promoting sparsity in the “Helmholtz domain”—i.e., the wavefield under the action of the the Helmholtz system—under the 
+              constraint of a data misfit within a particular tolerance. We extend this method to noisy measurements. We are in particular interested in situations where 
+              the noise is coherent because it is in the range of the Helmholtz equation.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/sharan2015SINBADFscu.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/sharan2015SINBADFscu.mov},
+  author = {Shashin Sharan}
+}
+
+@PRESENTATION{wang2015SINBADFifw,
+  title = {Improving Full Waveform Inversion with Spectral Extrapolation},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We develop a sparsity based frequency extrapolation method to obtain low frequency data from the high frequency ones. As other frequency extrapolation 
+              methods, the extrapolation introduces noise due to dispersion and possibly densely distributed reflectors. To mitigate such noise, we incorporate Curvlet 
+              coefficient regularization in the extrapolation algorithm. Numerical results demonstrate the effectiveness of the extrapolation in frequency domain FWI in 
+              models of moderate complexity.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/wang2015SINBADFifw.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/wang2015SINBADFifw.mov},
+  author = {Rongrong Wang}
+}
+
+@PRESENTATION{wason2015SINBADFrtl,
+  title = {Randomization of time-lapse marine surveys},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We present an extension of our time-jittered (simultaneous) marine acquisition for time-lapse surveys, where we work on more realistic field acquisition 
+              scenarios by incorporating irregular spatial grids without insisting on repeatability between the surveys. Since we are always subsampled in both the baseline 
+              and monitor surveys, we recover the densely sampled baseline and monitor and then the (complete) 4-D difference from subsampled baseline and monitor data.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/wason2015SINBADFrtl.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/wason2015SINBADFrtl.mov},
+  author = {Haneet Wason}
+}
+
+@PRESENTATION{wason2015SINBADFsss,
+  title = {Source separation for simultaneous towed-streamer acquisition via compressed sensing},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We show a comparison between two compressed-sensing based source-separation algorithms, i.e., sparsity promotion and rank minimization, for simultaneous 
+              data.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/wason2015SINBADFsss.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/wason2015SINBADFsss.mov},
+  author = {Haneet Wason}
+}
+
+@PRESENTATION{witte2015SINBADFara,
+  title = {Anisotropic RTM applied to field data},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {In this talk we present our latest reverse time-migration results of the BP Machar data set, a 2D seismic line from the North sea featuring a large chalk 
+              dome. In contrast to our prior imaging attempts, we now account for anisotropic effects in the data using our new TTI pure quasi-P wave modeling code in the 
+              time domain.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/witte2015SINBADFara.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/witte2015SINBADFara.mov},
+  author = {Philipp Witte}
+}
+
+@PRESENTATION{witte2015SINBADFtdf,
+  title = {Time-domain FWI in TTI media},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {We develop an inversion workflow for tilted transverse isotropic (TTI) media using a purely acoustic formulation of the wave equation. The anisotropic 
+              modeling kernel is used for the forward modeling operator, as well as for the adjoint Jacobian to back propagate the data residual, thus providing the true 
+              gradient of the FWI objective function. We apply this workflow on a synthetic FWI example and perform RTM on a field data set. Furthermore, we discuss 
+              alternatives for the pseudo-spectral Laplacian operator of the current implementation.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/witte2015SINBADFtdf.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/witte2015SINBADFtdf.mov},
+  author = {Philipp Witte}
+}
+
+@PRESENTATION{yang2015SINBADFfis,
+  title = {Fast imaging with surface-related multiples: – shallow water multiples},
+  booktitle = {SINBAD Full consortium talks},  
+  organization = {SINBAD},
+  year = {2015},
+  abstract = {In this talk, we will show surface-related multiples imaging with source estimation. Here the algorithms are based on linearized bregman, and we give the 
+              source estimation formulation in this case. With the featured blocked structure of linearized bregman, we can do efficient imaging in straightforward way by 
+              randomly choosing sources and frequencies. Another benefit is the simplicity to delivery the algorithm.},
+  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/yang2015SINBADFfis.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/yang2015SINBADFfis.mov},
+  author = {Mengmeng Yang}
+}
+
+
 %----- 2015 (SPRING) -----%
 
 @PRESENTATION{dasilva2015SINBADrii,

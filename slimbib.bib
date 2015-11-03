@@ -99,28 +99,6 @@
 }
 
 
-@CONFERENCE{dasilva2015SEGWSsfm,
-  author = {Curt Da Silva and Rajiv Kumar and Oscar Lopez and Haneet Wason and Felix J. Herrmann},
-  title = {{SVD}-free matrix completion in randomized marine acquisition},
-  booktitle = {SEG Workshop on Rank-Reduction and Other Sparse Transform Methods with Application to Data Reconstruction, De-Noising, De-Blending and Imaging},
-  year = {2015},
-  month = {10},
-  abstract = {During this presentation, we will illustrate how
-                  insights from matrix-free matrix completion can be
-                  used to solve problems in (on- and off-the-grid)
-                  missing trace interpolation and time-jittered
-                  (simultaneous) marine acquisition. In particular, we
-                  will demonstrate the importance of data organization
-                  to favor recovery by rank minimization and the use
-                  of deterministic spectral properties to predict the
-                  recovery. We also make make comparisons between
-                  wavefield reconstructions based on transform-domain
-                  sparsity promotion and matrix completion.},
-  keywords = {SEG, workshop, matrix completion, rank reduction, interpolation, acquisition, private},
-  note = {(to be presented at the SEG, New Orleans)}
-}
-
-
 @CONFERENCE{esser2015EAGElcs,
   author = {Ernie Esser and Tim T.Y. Lin and Rongrong Wang and Felix J. Herrmann},
   title = {A lifted $\ell_1/\ell_2$ constraint for sparse blind deconvolution},
@@ -164,11 +142,12 @@
 
 
 @CONFERENCE{esser2015SEGasd,
-  author = {Ernie Esser and Lluís Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  author = {Ernie Esser and Lluis Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
   title = {Automatic salt delineation --- {Wavefield} {Reconstruction} {Inversion} with convex constraints},
   booktitle = {SEG Technical Program Expanded Abstracts},
   year = {2015},
   month = {10},
+  pages = {1337-1343},
   abstract = {We extend full-waveform inversion by Wavefield
                   Reconstruction Inversion by including convex
                   constraints on the model. Contrary to the
@@ -188,8 +167,22 @@
                   Reconstruction Inversion get trapped in local minima
                   for poor starting models.},
   keywords = {SEG, full-waveform inversion, convex constraints, total-variation norm, salt},
-  note = {(to be presented at the SEG, New Orleans)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/esser2015SEGasd/esser2015SEGasd.html}
+  note = {(SEG, New Orleans)},
+  doi = {10.1190/segam2015-5877995.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/esser2015SEGasd/esser2015SEGasd.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/esser2015SEGasd/esser2015SEGasd_pres.pdf}
+}
+
+
+@CONFERENCE{esser2015SEGWSasf,
+  author = {Ernie Esser and Lluis Guasch and Felix J. Herrmann},
+  title = {Automatic salt flooding with hinged {FWI}},
+  booktitle = {SEG Workshop on Subsalt model buiding long to short wavelengths; New Orleans},
+  year = {2015},
+  month = {10},
+  keywords = {SEG, workshop, waveform inversion},
+  note = {(SEG, New Orleans)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/esser2015SEGWSasf/esser2015SEGWSasf_pres.pdf}
 }
 
 
@@ -472,7 +465,7 @@
 
 
 @CONFERENCE{herrmann2015IIPFWIwcc,
-  author = {Felix J. Herrmann and Ernie Esser and Lluis Guash},
+  author = {Felix J. Herrmann and Ernie Esser and Lluis Guasch},
   title = {Wavefield {Reconstruction} {Inversion} with convex constraints},
   booktitle = {Inaugural Full-Waveform Inversion Workshop},
   year = {2015},
@@ -683,6 +676,29 @@
 }
 
 
+@CONFERENCE{lopez2015SEGWSsfm,
+  author = {Oscar Lopez and Haneet Wason and Curt Da Silva and Rajiv Kumar and Felix J. Herrmann},
+  title = {{SVD}-free matrix completion in randomized marine acquisition},
+  booktitle = {SEG Workshop on Rank-Reduction and Other Sparse Transform Methods with Application to Data Reconstruction, De-Noising, De-Blending and Imaging; New Orleans},
+  year = {2015},
+  month = {10},
+  abstract = {During this presentation, we will illustrate how
+                  insights from matrix-free matrix completion can be
+                  used to solve problems in (on- and off-the-grid)
+                  missing trace interpolation and time-jittered
+                  (simultaneous) marine acquisition. In particular, we
+                  will demonstrate the importance of data organization
+                  to favor recovery by rank minimization and the use
+                  of deterministic spectral properties to predict the
+                  recovery. We also make make comparisons between
+                  wavefield reconstructions based on transform-domain
+                  sparsity promotion and matrix completion.},
+  keywords = {SEG, workshop, matrix completion, rank reduction, interpolation, acquisition},
+  note = {(SEG, New Orleans)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/lopez2015SEGWSsfm/lopez2015SEGWSsfm_pres.pdf}
+}
+
+
 @CONFERENCE{louboutin2015IIPFWIrwi,
   author = {Mathias Louboutin and Bas Peters and Brendan Smithyman and Felix J. Herrmann},
   title = {Regularizing waveform inversion by projections onto convex sets},
@@ -727,6 +743,7 @@
   booktitle = {SEG Technical Program Expanded Abstracts},
   year = {2015},
   month = {10},
+  pages = {5153-5157},
   abstract = {Time-domain Full-Waveform Inversion (FWI) aims to image
                   the subsurface of the earth accurately from field
                   recorded data and can be solved via the reduced
@@ -755,8 +772,10 @@
                   addition, we avoid having to recompute the
                   wavefields as is required by checkpointing.},
   keywords = {SEG, Full-waveform inversion, Acoustic, Subsampling, Time-domain, Inversion, Stochastic optimization},
-  note = {(to be presented at the SEG, New Orleans)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/louboutin2015SEGtcs/louboutin2015SEGtcs.html}
+  note = {(SEG, New Orleans)},
+  doi = {10.1190/segam2015-5924937.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/louboutin2015SEGtcs/louboutin2015SEGtcs.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/louboutin2015SEGtcs/louboutin2015SEGtcs_poster.pdf}
 }
 
 
@@ -926,11 +945,12 @@
 @CONFERENCE{peters2015SEGWSsew,
   author = {Bas Peters and Felix J. Herrmann},
   title = {Simultaneous estimation of wavefields and medium parameters - reduced-space versus full-space waveform inversion},
-  booktitle = {SEG Workshop on The Limit of FWI in Subsurface Parameter Recovery},
+  booktitle = {SEG Workshop on The Limit of FWI in Subsurface Parameter Recovery; New Orleans},
   year = {2015},
   month = {10},
-  keywords = {SEG, workshop, waveform inversion, full-space, PDE-constrained optimization, quadratic penalty method, private},
-  note = {(to be presented at the SEG, New Orleans)}
+  keywords = {SEG, workshop, waveform inversion, full-space, PDE-constrained optimization, quadratic penalty method},
+  note = {(SEG, New Orleans)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/peters2015SEGWSsew/peters2015SEGWSsew_pres.pdf}
 }
 
 
@@ -9287,358 +9307,531 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2008/lin08THccl.pdf}
 }
 
-%----- 2015 (FULL) -----%
-@PRESENTATION{dasilva2015SINBADFans,
-  title = {A new software organization for 3D FWI},
-  booktitle = {SINBAD Full consortium talks},  
+%----- 2015 (FALL) -----%
+
+@PRESENTATION{dasilva2015SINBADFnso,
+  title = {A new software organization for {3D} {FWI}},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {In this work, I have implemented a scalable and extendable framework for 3D Full Waveform Inversion in Matlab. This approach uses modern software design
-             principles to create a codebase that is easy to understand, maintain, and extend and that also allows for rapid prototyping of new algorithmic ideas that can                be easily transferred to large scale problems. The code itself is modularized in a proper way, which allows straightforward testing of each component (e.g.,                 Taylor error test, adjoint tests, etc.). Improvements to the computational kernel (i.e., Helmholtz solves with more efficient matrix-vector products, new                    preconditioners, etc.) propagate to the entire framework.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/dasilva2015SINBADFans.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/dasilva2015SINBADFans.mov},
-  author = {Curt Da Silva}
+  abstract = {In this work, I have implemented a scalable and
+                  extendable framework for 3D Full Waveform Inversion
+                  in Matlab. This approach uses modern software design
+                  principles to create a codebase that is easy to
+                  understand, maintain, and extend and that also
+                  allows for rapid prototyping of new algorithmic
+                  ideas that can be easily transferred to large scale
+                  problems. The code itself is modularized in a proper
+                  way, which allows straightforward testing of each
+                  component (e.g., Taylor error test, adjoint tests,
+                  etc.). Improvements to the computational kernel
+                  (i.e., Helmholtz solves with more efficient
+                  matrix-vector products, new preconditioners, etc.)
+                  propagate to the entire framework.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/dasilva2015SINBADFnso/dasilva2015SINBADFans.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/dasilva2015SINBADFnso/dasilva2015SINBADFans.mov},
+  url3 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/dasilva2015SINBADFnso/dasilva2015SINBADFsdd.pdf},
+  url4 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/dasilva2015SINBADFnso/dasilva2015SINBADFsdd.mov},
+  author = {Curt Da Silva and Felix J. Herrmann}
 }
 
-@PRESENTATION{dasilva2015SINBADFsdd,
-  title = {SPOT, distributed data, and you},
-  booktitle = {SINBAD Full consortium talks},  
-  organization = {SINBAD},
-  year = {2015},
-  abstract = {},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/dasilva2015SINBADFsdd.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/dasilva2015SINBADFsdd.mov},
-  author = {Curt Da Silva}
-}
 
 @PRESENTATION{dasilva2015SINBADFsss,
-  title = {Scaling SINBAD software to 3-D on Yemoja},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Scaling {SINBAD} software to {3-D} on {Yemoja}},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/dasilva2015SINBADFsss.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/dasilva2015SINBADFsss.mov},
-  author = {Curt Da Silva}
+  abstract = {We present early results on the scalability of SINBAD’s
+                  wavefield reconstruction and wave-equation based
+                  inversion technologies on Yemoja, a 17k core cluster
+                  made available to us by BG Group at SENAI CIMATEC
+                  Supercomputing Centre in Brazil.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/dasilva2015SINBADFsss/dasilva2015SINBADFsss.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/dasilva2015SINBADFsss/dasilva2015SINBADFsss.mov},
+  author = {Curt Da Silva and Haneet Wason and Mathias Louboutin and Bas Peters and Shashin Sharan and Zhilong Fang and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{esser2015SINBADFasd,
-  title = {Automatic salt delineation — Wavefield Reconstruction Inversion with convex constraints},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Automatic salt delineation — {Wavefield} {Reconstruction} {Inversion} with convex constraints},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {We extend full-waveform inversion by Wavefield Reconstruction Inversion by including convex constraints on the model. Contrary to the conventional   
-              adjoint-state formulations, Wavefield Reconstruction Inversion has the advantage that the Gauss-Newton Hessian is well approximated by a diagonal scaling,  
-              which allows us to add convex constraints, such as the box- and the edge-preserving total-variation constraint, on the square slowness without incurring
-              significant increases in computational costs. As the examples demonstrate, including these constraints yields far superior results in complex geological areas 
-              that contain high-velocity high-contrast bodies (e.g. salt or basalt). Without these convex constraints, adjoint-state and Wavefield Reconstruction Inversion 
-              get trapped in local minima for poor starting models.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/esser2015SINBADFasd.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/esser2015SINBADFasd.mov},
-  author = {Ernie Esser}
+  abstract = {We extend full-waveform inversion by Wavefield
+                  Reconstruction Inversion by including convex
+                  constraints on the model. Contrary to the
+                  conventional adjoint-state formulations, Wavefield
+                  Reconstruction Inversion has the advantage that the
+                  Gauss-Newton Hessian is well approximated by a
+                  diagonal scaling, which allows us to add convex
+                  constraints, such as the box- and the
+                  edge-preserving total-variation constraint, on the
+                  square slowness without incurring significant
+                  increases in computational costs. As the examples
+                  demonstrate, including these constraints yields far
+                  superior results in complex geological areas that
+                  contain high-velocity high-contrast bodies
+                  (e.g. salt or basalt). Without these convex
+                  constraints, adjoint-state and Wavefield
+                  Reconstruction Inversion get trapped in local minima
+                  for poor starting models.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/esser2015SINBADFasd/esser2015SINBADFasd.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/esser2015SINBADFasd/esser2015SINBADFasd.mov},
+  author = {Ernie Esser and Lluis Guasch and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{esser2015SINBADFrsa,
-  title = {Resolving Scaling Ambiguities with the L1/L2 Norm in a Blind Deconvolution Problem with Feedback},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Resolving scaling ambiguities with the {L1}/{L2} norm in a blind deconvolution problem with feedback},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {Compared to more mundane blind deconvolution problems, blind deconvolution in seismic applications involves a feedback mechanism related to the free surface.                The presence of this feedback mechanism gives us an unique opportunity to remove ambiguities that have plagued blind deconvolution for a long time. While 
-              beneficial, this feedback by itself is insufficient to remove the ambiguities even with L1 constraints. However, when paired with an L1/L2 constraint the 
-              feedback allows us to resolve the scaling ambiguity under relatively mild assumptions. Inspired by lifting approaches, we propose to split the sparse signal 
-              into positive and negative components and apply an \ell_1/\ell_2 constraint to the difference, thereby obtaining a constraint that is easy to implement. 
-              Numerical experiments demonstrate robustness to the initialization as well as to noise in the data.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/esser2015SINBADFrsa.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/esser2015SINBADFrsa.mov},
-  author = {Ernie Esser}
+  abstract = {Compared to more mundane blind deconvolution problems,
+                  blind deconvolution in seismic applications involves
+                  a feedback mechanism related to the free surface.
+                  The presence of this feedback mechanism gives us an
+                  unique opportunity to remove ambiguities that have
+                  plagued blind deconvolution for a long time. While
+                  beneficial, this feedback by itself is insufficient
+                  to remove the ambiguities even with L1
+                  constraints. However, when paired with an L1/L2
+                  constraint the feedback allows us to resolve the
+                  scaling ambiguity under relatively mild
+                  assumptions. Inspired by lifting approaches, we
+                  propose to split the sparse signal into positive and
+                  negative components and apply an \ell_1/\ell_2
+                  constraint to the difference, thereby obtaining a
+                  constraint that is easy to implement.  Numerical
+                  experiments demonstrate robustness to the
+                  initialization as well as to noise in the data.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/esser2015SINBADFrsa/esser2015SINBADFrsa.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/esser2015SINBADFrsa/esser2015SINBADFrsa.mov},
+  author = {Ernie Esser and Rongrong Wang and Tim T.Y. Lin and Felix J. Herrmann}
 }
 
+
 @PRESENTATION{fang2015SINBADFuqw,
-  title = {Uncertainty quantification for Wavefield-Reconstruction Inversion using a positive-definite approximated Hessian},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Uncertainty quantification for {Wavefield}-{Reconstruction} {Inversion} using a positive-definite approximated {Hessian}},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {We analyze the Hessian of wavefield reconstruction inversion (WRI) and propose a new approximated Hessian. Instead of requiring PDE solves, the matrix-vector 
-              multiplication action of the approximate Hessian can be achieved with several matrix-vector multiplications. The diagonal part of the approximated Hessian can 
-              be also calculated without additional PDE solves. We apply this approximated Hessian to uncertainty quantification and obtain statistical parameters such as 
-              standard deviation and confidence interval. Numerical example illustrate the accuracy of the estimated Hessian and the feasibility of the method to quantify 
-              uncertainties.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/fang2015SINBADFuqw.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/fang2015SINBADFuqw.mov},
-  author = {Zhilong Fang}
+  abstract = {We analyze the Hessian of wavefield reconstruction
+                  inversion (WRI) and propose a new approximated
+                  Hessian. Instead of requiring PDE solves, the
+                  matrix-vector multiplication action of the
+                  approximate Hessian can be achieved with several
+                  matrix-vector multiplications. The diagonal part of
+                  the approximated Hessian can be also calculated
+                  without additional PDE solves. We apply this
+                  approximated Hessian to uncertainty quantification
+                  and obtain statistical parameters such as standard
+                  deviation and confidence interval. Numerical example
+                  illustrate the accuracy of the estimated Hessian and
+                  the feasibility of the method to quantify
+                  uncertainties.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/fang2015SINBADFuqw/fang2015SINBADFuqw.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/fang2015SINBADFuqw/fang2015SINBADFuqw.mov},
+  author = {Zhilong Fang and Chia-Ying Lee and Curt Da Silva and Felix J. Herrmann and Rachel Kuske}
 }
 
 
 @PRESENTATION{fang2015SINBADFwri,
-  title = {Wavefield-reconstruction inversion with source estimation and minimum smoothness constraint – application to the Chevron 2014 dataset},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Wavefield-reconstruction inversion with source estimation and minimum smoothness constraint – application to the {Chevron} 2014 dataset},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {We present a robust wavefield reconstruction inversion with source estimation. The source wavelet is estimated with the reconstruction of wavefield 
-              simultaneously by solving an extended data-augmented problem. We apply this method to the 2014 Chevron synthetic blind test dataset and show the robustness of 
-              our method.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/fang2015SINBADFwri.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/fang2015SINBADFwri.mov},
-  author = {Zhilong Fang}
+  abstract = {We present a robust wavefield reconstruction inversion
+                  with source estimation. The source wavelet is
+                  estimated with the reconstruction of wavefield
+                  simultaneously by solving an extended data-augmented
+                  problem. We apply this method to the 2014 Chevron
+                  synthetic blind test dataset and show the robustness
+                  of our method.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/fang2015SINBADFwri/fang2015SINBADFwri.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/fang2015SINBADFwri/fang2015SINBADFwri.mov},
+  author = {Zhilong Fang and Bas Peters and Felix J. Herrmann}
 }
 
+
 @PRESENTATION{herrmann2015SINBADFwom,
-  title = {Welcome & Overview of the Meeting},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Welcome & {Overview} of the {Meeting}},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/herrmann2015SINBADFwom.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/herrmann2015SINBADFwom.mov},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/herrmann2015SINBADFwom/herrmann2015SINBADFwom.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/herrmann2015SINBADFwom/herrmann2015SINBADFwom.mov},
   author = {Felix J. Herrmann}
 }
 
+
 @PRESENTATION{kumar2015SINBADFaoi,
-  title = {Affordable omnidirectional image volumes extension to 3D},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Affordable omnidirectional image volumes extension to {3D}},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {Image gathers are an important tool for velocity analysis, AVA analysis and targeted imaging, however, the computational cost involving in forming the image 
-              volumes makes them prohibitively expensive in case of large scale 3D seismic data acquisition. In this work, we propose the extension of our probing 
-              techniques from 2D to 3D to form the extended image volumes efficiently. We show the efficacy of proposed formulation on synthetic data set.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/kumar2015SINBADFaoi.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/kumar2015SINBADFaoi.mov},
-  author = {Rajiv Kumar}
+  abstract = {Image gathers are an important tool for velocity
+                  analysis, AVA analysis and targeted imaging,
+                  however, the computational cost involving in forming
+                  the image volumes makes them prohibitively expensive
+                  in case of large scale 3D seismic data
+                  acquisition. In this work, we propose the extension
+                  of our probing techniques from 2D to 3D to form the
+                  extended image volumes efficiently. We show the
+                  efficacy of proposed formulation on synthetic data
+                  set.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/kumar2015SINBADFaoi/kumar2015SINBADFaoi.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/kumar2015SINBADFaoi/kumar2015SINBADFaoi.mov},
+  author = {Rajiv Kumar and Tristan van Leeuwen and Felix J. Herrmann}
 }
 
 
 @PRESENTATION{lin2015SINBADFosd,
-  title = {Our student-driven HPC environment},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Our student-driven {HPC} environment},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {A major role of academic environments is to provide learning experiences for students to critically analyze and develop methods, both at a high-level of 
-              mathematical rigour, and at a low-enough level of implementation in order to yield experimental results on real datasets. Often these two goals are in 
-              conflict with each other, in terms of both learning time and attention. At SLIM, we strive to strike a balance between the two by abstracting away many of the 
-              low-level aspects of distributed HPC under a framework that matches syntactically with the mathematics of our field, while exposing enough control parameters 
-              for tuning performance characteristics. This talk will touch on the history of our efforts at SLIM, and culminate in an overview of our current method of 
-              interacting with the in-house compute cluster.},
-              keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/lin2015SINBADFosd.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/lin2015SINBADFosd.mov},
-  author = {Tim T.Y. Lin}
+  abstract = {A major role of academic environments is to provide
+                  learning experiences for students to critically
+                  analyze and develop methods, both at a high-level of
+                  mathematical rigour, and at a low-enough level of
+                  implementation in order to yield experimental
+                  results on real datasets. Often these two goals are
+                  in conflict with each other, in terms of both
+                  learning time and attention. At SLIM, we strive to
+                  strike a balance between the two by abstracting away
+                  many of the low-level aspects of distributed HPC
+                  under a framework that matches syntactically with
+                  the mathematics of our field, while exposing enough
+                  control parameters for tuning performance
+                  characteristics. This talk will touch on the history
+                  of our efforts at SLIM, and culminate in an overview
+                  of our current method of interacting with the
+                  in-house compute cluster.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/lin2015SINBADFosd/lin2015SINBADFosd.pdf},
+  author = {Tim T.Y. Lin and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{lopez2015SINBADFumc,
-  title = {Universal Matrix Completion: Applications to Seismic Data Acquisition},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Universal matrix completion: applications to seismic data acquisition},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {This talk discusses the potential applications of universal matrix completion for infill management and acquisition design. We consider recent developments in 
-              the theory of matrix completion that produce practical tools to quantify how successful a given sub sampling mask will be for seismic trace interpolation via  
-              nuclear norm minimization. This approach provides an on the fly infill management system as well as instruments to design acquisition schemes that favor 
-              interpolation via rank penalization techniques.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/lopez2015SINBADFumc.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/lopez2015SINBADFumc.mov},
-  author = {Oscar Lopez}
+  abstract = {This talk discusses the potential applications of
+                  universal matrix completion for infill management
+                  and acquisition design. We consider recent
+                  developments in the theory of matrix completion that
+                  produce practical tools to quantify how successful a
+                  given sub sampling mask will be for seismic trace
+                  interpolation via nuclear norm minimization. This
+                  approach provides an on the fly infill management
+                  system as well as instruments to design acquisition
+                  schemes that favor interpolation via rank
+                  penalization techniques.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/lopez2015SINBADFumc/lopez2015SINBADFumc.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/lopez2015SINBADFumc/lopez2015SINBADFumc.mov},
+  author = {Oscar Lopez and Haneet Wason and Rajiv Kumar and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{louboutin2015SINBADFess,
-  title = {Extending the search space of time-domain adjoint-state FWI w/ randomized implicit time shifts},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Extending the search space of time-domain adjoint-state {FWI} w/ randomized implicit time shifts},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {We introduce a modified adjoint-state method for time domain FWI that allows us to extend the research space. As a result, we arrive at a formulation where 
-              the sensitivity to cycle skipping is reduced. Our method obtains results with the same computational costs as FWI (The PDE solved is the same) but with 
-              significantly reduced memory costs. We use new results in non-convex optimization to justify the method as well as new regularization techniques and 
-              stochastic optimization to improve the behavior of the algorithm.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/louboutin2015SINBADFess.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/louboutin2015SINBADFess.mov},
-  author = {Mathias Louboutin}
+  abstract = {We introduce a modified adjoint-state method for time
+                  domain FWI that allows us to extend the research
+                  space. As a result, we arrive at a formulation where
+                  the sensitivity to cycle skipping is reduced. Our
+                  method obtains results with the same computational
+                  costs as FWI (The PDE solved is the same) but with
+                  significantly reduced memory costs. We use new
+                  results in non-convex optimization to justify the
+                  method as well as new regularization techniques and
+                  stochastic optimization to improve the behavior of
+                  the algorithm.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/louboutin2015SINBADFess/louboutin2015SINBADFess.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/louboutin2015SINBADFess/louboutin2015SINBADFess.mov},
+  author = {Mathias Louboutin and Felix J. Herrmann}
 }
 
+
 @PRESENTATION{oghenekohwo2015SINBADFcst,
-  title = {Comparative study of time-lapse FWI approaches},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Comparative study of time-lapse {FWI} approaches},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {I will illustrate the performance of our joint recovery model for time-lapse FWI. Specifically, I will compare our method to other conventional methods, 
-              namely, parallel difference and sequential difference FWI. I will illustrate the robustness of our method compared to others especially in the presence of                   missing data caused by large acquisition gaps. In addition, I will assess the performance of these methods in the detectability of the time-lapse change in 
-              synthetic data. Analysis of these methods under different starting FWI model will also be highlighted.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/oghenekohwo2015SINBADFcst.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/oghenekohwo2015SINBADFcst.mov},
-  author = {Felix Oghenekohwo}
+  abstract = {I will illustrate the performance of our joint recovery
+                  model for time-lapse FWI. Specifically, I will
+                  compare our method to other conventional methods,
+                  namely, parallel difference and sequential
+                  difference FWI. I will illustrate the robustness of
+                  our method compared to others especially in the
+                  presence of missing data caused by large acquisition
+                  gaps. In addition, I will assess the performance of
+                  these methods in the detectability of the time-lapse
+                  change in synthetic data. Analysis of these methods
+                  under different starting FWI model will also be
+                  highlighted.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/oghenekohwo2015SINBADFcst/oghenekohwo2015SINBADFcst.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/oghenekohwo2015SINBADFcst/oghenekohwo2015SINBADFcst.mov},
+  author = {Felix Oghenekohwo and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{oghenekohwo2015SINBADFtli,
   title = {Time-lapse imaging with multiples and distributed compressed sensing},
-  booktitle = {SINBAD Full consortium talks},  
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {In this talk, we leverage our joint-recovery model, which uses the fact that time-lapse images generally have a lot in common, to improve imaging problems 
-              with large gaps. We demonstrate that the adverse effects of large acquisition gaps can be mitigated by using this joint-recovery model especially in 
-              combination with imaging with surface-related multiples.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/oghenekohwo2015SINBADFtli.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/oghenekohwo2015SINBADFtli.mov},
-  author = {Felix Oghenekohwo}
+  abstract = {In this talk, we leverage our joint-recovery model,
+                  which uses the fact that time-lapse images generally
+                  have a lot in common, to improve imaging problems
+                  with large gaps. We demonstrate that the adverse
+                  effects of large acquisition gaps can be mitigated
+                  by using this joint-recovery model especially in
+                  combination with imaging with surface-related
+                  multiples.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/oghenekohwo2015SINBADFtli/oghenekohwo2015SINBADFtli.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/oghenekohwo2015SINBADFtli/oghenekohwo2015SINBADFtli.mov},
+  author = {Felix Oghenekohwo and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{peters2015SINBADF3dw,
-  title = {3D WRI},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {3D {WRI}},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {The Wavefield Reconstruction Inversion (WRI) approach to seismic inversion is a topic of active research in the SLIM group. Several variants have been 
-              proposed, all of which rely on the solution of a linear least-squares problem with a Helmholtz discretization. While algorithms based on LU or QR 
-              factorization are very efficient for 2D problems, 3D problems required the development of a factorization-free iterative method. This talk introduces the 
-              current version of the algorithm, which requires significantly less memory and computation and uses existing Helmholtz solvers as an important building block. 
-              We plan to discuss early results of 3-D WRI on a small 3-D synthetic example.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/peters2015SINBADF3dw.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/peters2015SINBADF3dw.mov},
-  author = {Bas Peters}
+  abstract = {The Wavefield Reconstruction Inversion (WRI) approach to
+                  seismic inversion is a topic of active research in
+                  the SLIM group. Several variants have been proposed,
+                  all of which rely on the solution of a linear
+                  least-squares problem with a Helmholtz
+                  discretization. While algorithms based on LU or QR
+                  factorization are very efficient for 2D problems, 3D
+                  problems required the development of a
+                  factorization-free iterative method. This talk
+                  introduces the current version of the algorithm,
+                  which requires significantly less memory and
+                  computation and uses existing Helmholtz solvers as
+                  an important building block.  We plan to discuss
+                  early results of 3-D WRI on a small 3-D synthetic
+                  example.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/peters2015SINBADF3dw/peters2015SINBADF3dw.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/peters2015SINBADF3dw/peters2015SINBADF3dw.mov},
+  author = {Bas Peters and Chen Greif and Felix J. Herrmann}
 }
 
-@PRESENTATION{peters2015SINBADFaqp,
+
+@PRESENTATION{peters2015SINBADFqpf,
   title = {A quadratic-penalty full-space method for waveform inversion},
-  booktitle = {SINBAD Full consortium talks},  
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {In PDE-constrained optimization problems other than geophysical full-waveform inversion, full-space optimization methods are commonly used. This type of 
-              optimization method updates both the medium parameters and the wavefields, instead of solving wave equations explicitly. In the FWI context, this means the   
-              objective function value and gradient can be obtained at very little computational cost. A major obstacle is, however, the requirement to have all wavefields 
-              in memory.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/peters2015SINBADFaqp.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/peters2015SINBADFaqp.mov},
-  author = {Bas Peters}
+  abstract = {In PDE-constrained optimization problems other than
+                  geophysical full-waveform inversion, full-space
+                  optimization methods are commonly used. This type of
+                  optimization method updates both the medium
+                  parameters and the wavefields, instead of solving
+                  wave equations explicitly. In the FWI context, this
+                  means the objective function value and gradient can
+                  be obtained at very little computational cost. A
+                  major obstacle is, however, the requirement to have
+                  all wavefields in memory.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/peters2015SINBADFqpf/peters2015SINBADFqpf.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/peters2015SINBADFqpf/peters2015SINBADFqpf.mov},
+  author = {Bas Peters and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{peters2015SINBADFrwi,
   title = {Regularizing waveform inversion by projections onto intersections of convex sets},
-  booktitle = {SINBAD Full consortium talks},  
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {Common strategies to regularize waveform inversion (and other geophysical inverse problems) are adding quadratic penalty terms to the objective function or    
-              filtering the gradients used to update the model estimate. An example are penalties or filters to prevent/filter spurious high spatial frequency oscillations 
-              in the model while working with low frequency data.
-              
-              We present an alternative way of regularization, which works by projecting the model onto an intersection of convex sets, where each sets encodes certain 
-              desired model properties. This approach has certain theoretical and practical advantages over quadratic penalties or gradient filters. Some examples of useful 
-              convex sets in various challenging waveform inversion settings are shown on both real and synthetic data.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/peters2015SINBADFrwi.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/peters2015SINBADFrwi.mov},
-  author = {Bas Peters}
+  abstract = {Common strategies to regularize waveform inversion (and
+                  other geophysical inverse problems) are adding
+                  quadratic penalty terms to the objective function or
+                  filtering the gradients used to update the model
+                  estimate. An example are penalties or filters to
+                  prevent/filter spurious high spatial frequency
+                  oscillations in the model while working with low
+                  frequency data. We present an alternative way of
+                  regularization, which works by projecting the model
+                  onto an intersection of convex sets, where each sets
+                  encodes certain desired model properties. This
+                  approach has certain theoretical and practical
+                  advantages over quadratic penalties or gradient
+                  filters. Some examples of useful convex sets in
+                  various challenging waveform inversion settings are
+                  shown on both real and synthetic data.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/peters2015SINBADFrwi/peters2015SINBADFrwi.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/peters2015SINBADFrwi/peters2015SINBADFrwi.mov},
+  author = {Bas Peters and Brendan Smithyman and Mathias Louboutin and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{sharan2015SINBADFscu,
-  title = {Source collocation using the method of Linearized Bregman},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Source collocation using the method of {Linearized} {Bregman}},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {In this work, we present a method to collocate sources from seismic reflections recorded at receiver locations. We use the method of linearized Bregman. This 
-              algorithm focuses unknown sources by promoting sparsity in the “Helmholtz domain”—i.e., the wavefield under the action of the the Helmholtz system—under the 
-              constraint of a data misfit within a particular tolerance. We extend this method to noisy measurements. We are in particular interested in situations where 
-              the noise is coherent because it is in the range of the Helmholtz equation.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/sharan2015SINBADFscu.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/sharan2015SINBADFscu.mov},
-  author = {Shashin Sharan}
+  abstract = {In this work, we present a method to collocate sources
+                  from seismic reflections recorded at receiver
+                  locations. We use the method of linearized
+                  Bregman. This algorithm focuses unknown sources by
+                  promoting sparsity in the “Helmholtz domain”—i.e.,
+                  the wavefield under the action of the the Helmholtz
+                  system—under the constraint of a data misfit within
+                  a particular tolerance. We extend this method to
+                  noisy measurements. We are in particular interested
+                  in situations where the noise is coherent because it
+                  is in the range of the Helmholtz equation.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/sharan2015SINBADFscu/sharan2015SINBADFscu.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/sharan2015SINBADFscu/sharan2015SINBADFscu.mov},
+  author = {Shashin Sharan and Rongrong Wang and Felix J. Herrmann}
 }
 
+
 @PRESENTATION{wang2015SINBADFifw,
-  title = {Improving Full Waveform Inversion with Spectral Extrapolation},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Improving full waveform inversion with spectral extrapolation},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {We develop a sparsity based frequency extrapolation method to obtain low frequency data from the high frequency ones. As other frequency extrapolation 
-              methods, the extrapolation introduces noise due to dispersion and possibly densely distributed reflectors. To mitigate such noise, we incorporate Curvlet 
-              coefficient regularization in the extrapolation algorithm. Numerical results demonstrate the effectiveness of the extrapolation in frequency domain FWI in 
-              models of moderate complexity.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/wang2015SINBADFifw.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/wang2015SINBADFifw.mov},
-  author = {Rongrong Wang}
+  abstract = {We develop a sparsity based frequency extrapolation
+                  method to obtain low frequency data from the high
+                  frequency ones. As other frequency extrapolation
+                  methods, the extrapolation introduces noise due to
+                  dispersion and possibly densely distributed
+                  reflectors. To mitigate such noise, we incorporate
+                  Curvlet coefficient regularization in the
+                  extrapolation algorithm. Numerical results
+                  demonstrate the effectiveness of the extrapolation
+                  in frequency domain FWI in models of moderate
+                  complexity.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/wang2015SINBADFifw/wang2015SINBADFifw.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/wang2015SINBADFifw/wang2015SINBADFifw.mov},
+  author = {Rongrong Wang and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{wason2015SINBADFrtl,
   title = {Randomization of time-lapse marine surveys},
-  booktitle = {SINBAD Full consortium talks},  
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {We present an extension of our time-jittered (simultaneous) marine acquisition for time-lapse surveys, where we work on more realistic field acquisition 
-              scenarios by incorporating irregular spatial grids without insisting on repeatability between the surveys. Since we are always subsampled in both the baseline 
-              and monitor surveys, we recover the densely sampled baseline and monitor and then the (complete) 4-D difference from subsampled baseline and monitor data.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/wason2015SINBADFrtl.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/wason2015SINBADFrtl.mov},
-  author = {Haneet Wason}
+  abstract = {We present an extension of our time-jittered
+                  (simultaneous) marine acquisition for time-lapse
+                  surveys, where we work on more realistic field
+                  acquisition scenarios by incorporating irregular
+                  spatial grids without insisting on repeatability
+                  between the surveys. Since we are always subsampled
+                  in both the baseline and monitor surveys, we recover
+                  the densely sampled baseline and monitor and then
+                  the (complete) 4-D difference from subsampled
+                  baseline and monitor data.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/wason2015SINBADFrtl/wason2015SINBADFrtl.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/wason2015SINBADFrtl/wason2015SINBADFrtl.mov},
+  author = {Haneet Wason and Felix Oghenekohwo and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{wason2015SINBADFsss,
   title = {Source separation for simultaneous towed-streamer acquisition via compressed sensing},
-  booktitle = {SINBAD Full consortium talks},  
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {We show a comparison between two compressed-sensing based source-separation algorithms, i.e., sparsity promotion and rank minimization, for simultaneous 
-              data.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/wason2015SINBADFsss.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/wason2015SINBADFsss.mov},
-  author = {Haneet Wason}
+  abstract = {We show a comparison between two compressed-sensing
+                  based source-separation algorithms, i.e., sparsity
+                  promotion and rank minimization, for simultaneous
+                  data.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/wason2015SINBADFsss/wason2015SINBADFsss.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/wason2015SINBADFsss/wason2015SINBADFsss.mov},
+  author = {Haneet Wason and Rajiv Kumar and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{witte2015SINBADFara,
-  title = {Anisotropic RTM applied to field data},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Anisotropic {RTM} applied to field data},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {In this talk we present our latest reverse time-migration results of the BP Machar data set, a 2D seismic line from the North sea featuring a large chalk 
-              dome. In contrast to our prior imaging attempts, we now account for anisotropic effects in the data using our new TTI pure quasi-P wave modeling code in the 
-              time domain.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/witte2015SINBADFara.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/witte2015SINBADFara.mov},
-  author = {Philipp Witte}
+  abstract = {In this talk we present our latest reverse
+                  time-migration results of the BP Machar data set, a
+                  2D seismic line from the North sea featuring a large
+                  chalk dome. In contrast to our prior imaging
+                  attempts, we now account for anisotropic effects in
+                  the data using our new TTI pure quasi-P wave
+                  modeling code in the time domain.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/witte2015SINBADFara/witte2015SINBADFara.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/witte2015SINBADFara/witte2015SINBADFara.mov},
+  author = {Philipp Witte and Felix J. Herrmann}
 }
 
+
 @PRESENTATION{witte2015SINBADFtdf,
-  title = {Time-domain FWI in TTI media},
-  booktitle = {SINBAD Full consortium talks},  
+  title = {Time-domain {FWI} in {TTI} media},
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {We develop an inversion workflow for tilted transverse isotropic (TTI) media using a purely acoustic formulation of the wave equation. The anisotropic 
-              modeling kernel is used for the forward modeling operator, as well as for the adjoint Jacobian to back propagate the data residual, thus providing the true 
-              gradient of the FWI objective function. We apply this workflow on a synthetic FWI example and perform RTM on a field data set. Furthermore, we discuss 
-              alternatives for the pseudo-spectral Laplacian operator of the current implementation.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/witte2015SINBADFtdf.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/witte2015SINBADFtdf.mov},
-  author = {Philipp Witte}
+  abstract = {We develop an inversion workflow for tilted transverse
+                  isotropic (TTI) media using a purely acoustic
+                  formulation of the wave equation. The anisotropic
+                  modeling kernel is used for the forward modeling
+                  operator, as well as for the adjoint Jacobian to
+                  back propagate the data residual, thus providing the
+                  true gradient of the FWI objective function. We
+                  apply this workflow on a synthetic FWI example and
+                  perform RTM on a field data set. Furthermore, we
+                  discuss alternatives for the pseudo-spectral
+                  Laplacian operator of the current implementation.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/witte2015SINBADFtdf/witte2015SINBADFtdf.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/witte2015SINBADFtdf/witte2015SINBADFtdf.mov},
+  author = {Philipp Witte and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{yang2015SINBADFfis,
   title = {Fast imaging with surface-related multiples: – shallow water multiples},
-  booktitle = {SINBAD Full consortium talks},  
+  booktitle = {SINBAD Fall consortium talks},  
   organization = {SINBAD},
   year = {2015},
-  abstract = {In this talk, we will show surface-related multiples imaging with source estimation. Here the algorithms are based on linearized bregman, and we give the 
-              source estimation formulation in this case. With the featured blocked structure of linearized bregman, we can do efficient imaging in straightforward way by 
-              randomly choosing sources and frequencies. Another benefit is the simplicity to delivery the algorithm.},
-  keywords = {presentation, SINBAD, SINBADFULL2015, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/PDFs/yang2015SINBADFfis.pdf},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/Movies/yang2015SINBADFfis.mov},
-  author = {Mengmeng Yang}
+  abstract = {In this talk, we will show surface-related multiples
+                  imaging with source estimation. Here the algorithms
+                  are based on linearized bregman, and we give the
+                  source estimation formulation in this case. With the
+                  featured blocked structure of linearized bregman, we
+                  can do efficient imaging in straightforward way by
+                  randomly choosing sources and frequencies. Another
+                  benefit is the simplicity to delivery the
+                  algorithm.},
+  keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/yang2015SINBADFfis/yang2015SINBADFfis.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/yang2015SINBADFfis/yang2015SINBADFfis.mov},
+  author = {Mengmeng Yang and Ning Tu and Felix J. Herrmann}
 }
 
 
@@ -9662,7 +9855,7 @@
                   and inversion.},
   keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/dasilva2015SINBADrii/dasilva2015SINBADrii.pdf},
-  author = {Curt Da Silva}
+  author = {Curt Da Silva and Bas Peters and Felix J. Herrmann}
 }
 
 
@@ -9692,7 +9885,7 @@
                   other choices are possible.},
   keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/dasilva2015SINBADogt/dasilva2015SINBADogt.pdf},
-  author = {Curt Da Silva}
+  author = {Curt Da Silva and Felix J. Herrmann}
 }
 
 
@@ -9722,7 +9915,7 @@
   keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
   note = {posthumously presented by Felix J. Herrmann},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/esser2015SINBADasd/esser2015SINBADasd.pdf},
-  author = {Ernie Esser}
+  author = {Ernie Esser and Lluis Guasch and Felix J. Herrmann}
 }
 
 
@@ -9740,7 +9933,7 @@
                   the robustness of our method.},
   keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/fang2015SINBADwri/fang2015SINBADwri.pdf},
-  author = {Zhilong Fang}
+  author = {Zhilong Fang and Felix J. Herrmann}
 }
 
 
@@ -9788,7 +9981,7 @@
                   in a deterministic manner.},
   keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/lopez2015SINBADdmc/lopez2015SINBADdmc.pdf},
-  author = {Oscar Lopez}
+  author = {Oscar Lopez and Felix J. Herrmann}
 }
 
 
@@ -9804,7 +9997,7 @@
                   imaging and full-waveform inversion.},
   keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/oghenekohwo2015SINBADrdc/oghenekohwo2015SINBADrdc.pdf},
-  author = {Felix Oghenekohwo}
+  author = {Felix Oghenekohwo and Rajiv Kumar and Haneet Wason and Ernie Esser and Ning Tu and Felix J. Herrmann}
 }
 
 
@@ -9840,7 +10033,7 @@
                   the projections, we apply no data pre-processing.},
   keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/peters2015SINBADrwi/peters2015SINBADrwi.pdf},
-  author = {Bas Peters}
+  author = {Bas Peters and Brendan Smithyman and Felix J. Herrmann}
 }
 
 
@@ -9864,7 +10057,7 @@
                   Helmholtz solvers as an important building block.},
   keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/peters2015SINBADswr/peters2015SINBADswr.pdf},
-  author = {Bas Peters}
+  author = {Bas Peters and Chen Greif and Felix J. Herrmann}
 }
 
 
@@ -9880,7 +10073,7 @@
                   and rank-minimization — for simultaneous data.},
   keywords = {presentation, SINBAD, SINBADSPRING2015, SLIM, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Spring/wason2015SINBADldr/wason2015SINBADldr.pdf},
-  author = {Haneet Wason}
+  author = {Haneet Wason and Rajiv Kumar and Felix Oghenekohwo and Felix J. Herrmann}
 }
 
 
@@ -9907,8 +10100,8 @@
                   and examine its effects on interpolating an
                   irregularly sampled, 3D seismic frequency slice.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/dasilva2014SINBADlss.pdf},
-  author = {Curt da Silva}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/dasilva2014SINBADlss/dasilva2014SINBADlss.pdf},
+  author = {Curt da Silva and Felix J. Herrmann}
 }
 
 
@@ -9946,8 +10139,8 @@
                   Estimation of Primaries by Sparse Inversion (EPSI)
                   convolution model.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/esser2014SINBADlcs.pdf},
-  author = {Ernie Esser}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/esser2014SINBADlcs/esser2014SINBADlcs.pdf},
+  author = {Ernie Esser and Tim T.Y. Lin and Rongrong Wang and Felix J. Herrmann}
 }
 
 
@@ -9972,8 +10165,8 @@
                   regularization were not used during the intermediate
                   steps.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/esser2014SINBADtvc.pdf},
-  author = {Ernie Esser}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/esser2014SINBADtvc/esser2014SINBADtvc.pdf},
+  author = {Ernie Esser and Lluis Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann}
 }
 
 
@@ -9983,8 +10176,8 @@
   organization = {SINBAD},
   year = {2014},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/fang2014SINBADsew.pdf},
-  author = {Zhilong Fang}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/fang2014SINBADsew/fang2014SINBADsew.pdf},
+  author = {Zhilong Fang and Xiang Li and Bas Peters and Felix Herrmann}
 }
 
 
@@ -10002,8 +10195,8 @@
                   standard deviation, confidence interval are
                   calculated based on the sampled distribution.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/fang2014SINBADuqw.pdf},
-  author = {Zhilong Fang}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/fang2014SINBADuqw/fang2014SINBADuqw.pdf},
+  author = {Zhilong Fang and Chia-Ying Lee and Curt Da Silva and Felix Herrmann and Rachel Kuske}
 }
 
 
@@ -10031,8 +10224,8 @@
                   modifications using a real seismic line from the
                   Gulf of Suez.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/ghadermarzy2014SINBADwrr.pdf},
-  author = {Navid Ghadermarzy}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/ghadermarzy2014SINBADwrr/ghadermarzy2014SINBADwrr.pdf},
+  author = {Navid Ghadermarzy and Ozgur Yilmaz and Felix J. Herrmann}
 }
 
 
@@ -10044,7 +10237,7 @@
   abstract = {We will present the latest developments in randomized
                   (4D) seismic data acquisition.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/herrmann2014SINBADldm2.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/herrmann2014SINBADldm2/herrmann2014SINBADldm2.pdf},
   author = {Felix J. Herrmann}
 }
 
@@ -10069,7 +10262,7 @@
                   interpreted physically analogously to the
                   conventional imaging-condition-based approach.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/herrmann2014SINBADwri.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/herrmann2014SINBADwri/herrmann2014SINBADwri.pdf},
   author = {Felix J. Herrmann}
 }
 
@@ -10090,8 +10283,8 @@
                   show how we can use multiples along with primaries
                   to form the image-gathers.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/kumar2014SINBADeia.pdf},
-  author = {Rajiv Kumar}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/kumar2014SINBADeia/kumar2014SINBADeia.pdf},
+  author = {Rajiv Kumar and Ning Tu and Tristan van Leeuwen and Felix J. Herrmann}
 }
 
 
@@ -10114,8 +10307,8 @@
                   are computationally faster and memory
                   efficient. This is joint work with Haneet Wason.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/kumar2014SINBADtjm.pdf},
-  author = {Rajiv Kumar}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/kumar2014SINBADtjm/kumar2014SINBADtjm.pdf},
+  author = {Rajiv Kumar and Haneet Wason and Felix J. Herrmann}
 }
 
 
@@ -10140,8 +10333,8 @@
                   preconditioner by combining this method with CRMN in
                   several senses.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lago2014SINBADmri.pdf},
-  author = {Rafael Lago}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lago2014SINBADmri/lago2014SINBADmri.pdf},
+  author = {Rafael Lago and Felix J. Herrmann}
 }
 
 
@@ -10162,8 +10355,8 @@
                   applications of this framework on the Chevron 2014
                   benchmark elastic synthetic data set.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/li2014SINBADtsi.pdf},
-  author = {Xiang Li}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/li2014SINBADtsi/li2014SINBADtsi.pdf},
+  author = {Xiang Li and Felix J. Herrmann}
 }
 
 
@@ -10189,8 +10382,8 @@
                   circumstances should we use it in place of other
                   algorithms like standard Gauss-Newton.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/li2014SINBADwmg.pdf},
-  author = {Xiang Li}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/li2014SINBADwmg/li2014SINBADwmg.pdf},
+  author = {Xiang Li and Ernie Esser and Felix Herrmann}
 }
 
 
@@ -10220,8 +10413,8 @@
                   to acquisition geometry and subsurface
                   characteristics.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lin2014SINBADdag.pdf},
-  author = {Tim T. Y. Lin}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lin2014SINBADdag/lin2014SINBADdag.pdf},
+  author = {Tim T.Y. Lin and Felix J. Herrmann}
 }
 
 
@@ -10243,8 +10436,8 @@
                   bounds to demonstrate the potential of our
                   procedure.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lopez2014SINBADogm.pdf},
-  author = {Oscar Lopez}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lopez2014SINBADogm/lopez2014SINBADogm.pdf},
+  author = {Oscar Lopez and Rajiv Kumar and Ernie Esser and Felix J. Herrmann}
 }
 
 
@@ -10267,8 +10460,8 @@
                   approach with several seismic trace interpolation
                   experiments.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lopez2014SINBADrma.pdf},
-  author = {Oscar Lopez}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/lopez2014SINBADrma/lopez2014SINBADrma.pdf},
+  author = {Oscar Lopez and Rajiv Kumar and Felix J. Herrmann}
 }
 
 
@@ -10285,8 +10478,8 @@
                   of the vintages and time-lapse signal, compared to
                   parallel processing.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/oghenekohwo2014SINBADrst.pdf},
-  author = {Felix Oghenekohwo}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/oghenekohwo2014SINBADrst/oghenekohwo2014SINBADrst.pdf},
+  author = {Felix Oghenekohwo and Rajiv Kumar and Haneet Wason and Ernie Esser and Felix Herrmann}
 }
 
 
@@ -10302,8 +10495,8 @@
                   shared information in the sparse model perturbations
                   of the baseline and monitor data.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/oghenekohwo2014SINBADuwc.pdf},
-  author = {Felix Oghenekohwo}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/oghenekohwo2014SINBADuwc/oghenekohwo2014SINBADuwc.pdf},
+  author = {Felix Oghenekohwo and Rajiv Kumar and Ernie Esser and Felix J. Herrmann}
 }
 
 
@@ -10332,8 +10525,8 @@
                   state of ongoing work in WRI (``Penalty Method''
                   inversion) and the handling of anisotropy.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADcda.pdf},
-  author = {Brendan Smithyman and Bas Peters}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADcda/peters2014SINBADcda.pdf},
+  author = {Brendan Smithyman and Bas Peters and Felix J. Herrmann}
 }
 
 
@@ -10355,8 +10548,8 @@
                   a combination of preconditioning, low-rank
                   decomposition and deflation.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADiss.pdf},
-  author = {Bas Peters}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADiss/peters2014SINBADiss.pdf},
+  author = {Bas Peters and Felix J. Herrmann}
 }
 
 
@@ -10380,8 +10573,8 @@
                   the fields and medium parameters. We will show a
                   comparison with reduced-space methods.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADqpb.pdf},
-  author = {Bas Peters}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADqpb/peters2014SINBADqpb.pdf},
+  author = {Bas Peters and Felix J. Herrmann}
 }
 
 
@@ -10396,8 +10589,8 @@
                   starting models while this formulation is also
                   conducive to multi-parameter inversion.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADsmp.pdf},
-  author = {Bas Peters}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/peters2014SINBADsmp/peters2014SINBADsmp.pdf},
+  author = {Bas Peters and Felix J. Herrmann}
 }
 
 
@@ -10426,8 +10619,8 @@
                   efficacy of the proposed method using realistic
                   synthetic examples.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADfis.pdf},
-  author = {Ning Tu}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADfis/tu2014SINBADfis.pdf},
+  author = {Ning Tu and Felix J. Herrmann}
 }
 
 
@@ -10452,8 +10645,8 @@
                   in source estimation. We verify the proposed method
                   using realistic synthetic examples.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADfis2.pdf},
-  author = {Ning Tu}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADfis2/tu2014SINBADfis2.pdf},
+  author = {Ning Tu and Aleksandr Y. Aravkin and Tristan van Leeuwen and Tim T.Y. Lin and Felix J. Herrmann}
 }
 
 
@@ -10465,8 +10658,8 @@
   abstract = {We will present out latest finding on migration with
                   multiples on the Nelson dataset.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADind.pdf},
-  author = {Ning Tu}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADind/tu2014SINBADind.pdf},
+  author = {Ning Tu and Felix J. Herrmann}
 }
 
 
@@ -10487,8 +10680,8 @@
                   least-squares imaging and seismic data interpolation
                   problems.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADsis.pdf},
-  author = {Ning Tu}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/tu2014SINBADsis/tu2014SINBADsis.pdf},
+  author = {Ning Tu and Navid Ghadermarzy and Rajiv Kumar and Felix J. Herrmann}
 }
 
 
@@ -10516,8 +10709,8 @@
                   but is more efficient if common source gathers are
                   available.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/wang2014SINBADdwi.pdf},
-  author = {Rongrong Wang}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/wang2014SINBADdwi/wang2014SINBADdwi.pdf},
+  author = {Rongrong Wang and Felix J. Herrmann}
 }
 
 
@@ -10530,8 +10723,8 @@
                   techniques from (distributed) compressed sensing
                   affect the way we think about time-lapse surveys.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/wason2014SINBADrrt.pdf},
-  author = {Haneet Wason}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/wason2014SINBADrrt/wason2014SINBADrrt.pdf},
+  author = {Haneet Wason and Felix Oghenekohwo and Felix J. Herrmann}
 }
 
 
@@ -10549,8 +10742,8 @@
                   compare this deblending scheme with the
                   sparsity-promoting one-norm minimization scheme.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/wason2014SINBADsss.pdf},
-  author = {Haneet Wason}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/wason2014SINBADsss/wason2014SINBADsss.pdf},
+  author = {Haneet Wason and Rajiv Kumar and Felix J. Herrmann}
 }
 
 
@@ -10578,7 +10771,7 @@
                   nearly optimal compression using cheap analog
                   devices with a large margin for imperfections.},
   keywords = {presentation, SINBAD, SINBADFALL2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/yilmaz2014SINBADadc.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Fall/yilmaz2014SINBADadc/yilmaz2014SINBADadc.pdf},
   author = {Ozgur Yilmaz}
 }
 
@@ -10620,8 +10813,8 @@
                   demonstrate the effectiveness of this approach on a
                   4D frequency slice.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/dasilva2014SINBADlrp.pdf},
-  author = {Curt da Silva}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/dasilva2014SINBADlrp/dasilva2014SINBADlrp.pdf},
+  author = {Curt da Silva and Felix J. Herrmann}
 }
 
 
@@ -10642,8 +10835,8 @@
                   the recovery of a high velocity perturbation to a
                   smooth background model.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/esser2014SINBADsgp.pdf},
-  author = {Ernie Esser}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/esser2014SINBADsgp/esser2014SINBADsgp.pdf},
+  author = {Ernie Esser and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann}
 }
 
 
@@ -10661,8 +10854,8 @@
                   estimating the Hessian. Numerical result shows the
                   capability of this fast McMC method.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/fang2014SINBADsqn.pdf},
-  author = {Zhilong Fang}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/fang2014SINBADsqn/fang2014SINBADsqn.pdf},
+  author = {Zhilong Fang and Chia Ying Lee and Felix J. Herrmann}
 }
 
 
@@ -10677,7 +10870,7 @@
                   the industry contributions of SINBAD
                   dollar-for-dollar.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/herrmann2014SINBADdns.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/herrmann2014SINBADdns/herrmann2014SINBADdns.pdf},
   author = {Felix J. Herrmann}
 }
 
@@ -10694,7 +10887,7 @@
                   time-lapse surveys. This is joint work with Felix
                   and Haneet.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/herrmann2014SINBADldm.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/herrmann2014SINBADldm/herrmann2014SINBADldm.pdf},
   author = {Felix J. Herrmann}
 }
 
@@ -10730,7 +10923,7 @@
                   with Tristan van Leeuwen, Bas Peters, and Ernie
                   Esser.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/herrmann2014SINBADrpe.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/herrmann2014SINBADrpe/herrmann2014SINBADrpe.pdf},
   author = {Felix J. Herrmann}
 }
 
@@ -10760,8 +10953,8 @@
                   and interpolation, a key application in exploration
                   geophysics.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/kumar2014SINBADsfm.pdf},
-  author = {Rajiv Kumar}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/kumar2014SINBADsfm/kumar2014SINBADsfm.pdf},
+  author = {Rajiv Kumar and Oscar Lopez and Ernie Esser and Felix J. Herrmann}
 }
 
 
@@ -10797,8 +10990,8 @@
                   CGMN. Joint work with Art Petrenko, Zhilong Fang,
                   Felix J. Herrmann.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/lago2014SINBADhfw.pdf},
-  author = {Rafael Lago}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/lago2014SINBADhfw/lago2014SINBADhfw.pdf},
+  author = {Rafael Lago and Felix J. Herrmann}
 }
 
 
@@ -10826,8 +11019,8 @@
                   are enough to satisfactorily mitigate the effects of
                   data gaps during the inversion process.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/lin2014SINBADiit.pdf},
-  author = {Tim T. Y. Lin}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/lin2014SINBADiit/lin2014SINBADiit.pdf},
+  author = {Tim T.Y. Lin and Felix J. Herrmann}
 }
 
 
@@ -10848,8 +11041,8 @@
                   only requiring trace decimation, low-pass filtering,
                   and rudimentary interpolation techniques.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/lin2014SINBADmas.pdf},
-  author = {Tim T. Y. Lin}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/lin2014SINBADmas/lin2014SINBADmas.pdf},
+  author = {Tim T.Y. Lin and Felix J. Herrmann}
 }
 
 
@@ -10869,8 +11062,8 @@
                   baseline and less for the monitor or vice-versa, and
                   how this sampling scheme affects the 4-D signal.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/oghenekohwo2014SINBADrsw.pdf},
-  author = {Felix Oghenekohwo}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/oghenekohwo2014SINBADrsw/oghenekohwo2014SINBADrsw.pdf},
+  author = {Felix Oghenekohwo and Haneet Wason and Ernie Esser and Felix J. Herrmann}
 }
 
 
@@ -10901,8 +11094,8 @@
                   coupling between the two medium parameters, can help
                   reconstruct both compressibility and buoyancy.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/peters2014SINBADmpw.pdf},
-  author = {Bas Peters}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/peters2014SINBADmpw/peters2014SINBADmpw.pdf},
+  author = {Bas Peters and Felix J. Herrmann}
 }
 
 
@@ -10956,8 +11149,8 @@
                   exploit the accelerator platform, and my work is set
                   in its larger context},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/petrenko2014SINBADaih.pdf},
-  author = {Art Petrenko}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/petrenko2014SINBADaih/petrenko2014SINBADaih.pdf},
+  author = {Art Petrenko and Tristan van Leeuwen and Diego Oriato and Simon Tilbury and Felix J. Herrmann}
 }
 
 
@@ -10987,7 +11180,7 @@
                   including multiples and refractions, and it does not
                   have the high computational costs of WEMVA in 3D.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/warner2014SINBADawi.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/warner2014SINBADawi/warner2014SINBADawi.pdf},
   author = {Mike Warner}
 }
 
@@ -11017,8 +11210,8 @@
                   applications as preconditioning of iterative methods
                   for Helmholtz equation and imaging.},
   keywords = {presentation, SINBAD, SINBADSPRING2014, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/zheglova2014SINBADead.pdf},
-  author = {Polina Zheglova}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2014/Spring/zheglova2014SINBADead/zheglova2014SINBADead.pdf},
+  author = {Polina Zheglova and Felix J. Herrmann}
 }
 
 
@@ -11047,8 +11240,8 @@
                   with overthrust data. This is joint work with Thomas
                   Lai, Harsh Juneja, Bas Peters.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/fang2013SINBADsfwi.pdf},
-  author = {Zhilong Fang}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/fang2013SINBADsfwi/fang2013SINBADsfwi.pdf},
+  author = {Zhilong Fang and Henryk Modzelewski and Tristan van Leeuwen and Thomas Lai and Harsh Juneja and Bas Peters and Felix J. Herrmann}
 }
 
 
@@ -11078,8 +11271,8 @@
                   possible solution strategies for both time and
                   frequency-domain applications.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/vanleeuwen2013SINBADsda.pdf},
-  author = {Tristan van Leeuwen}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/vanleeuwen2013SINBADsda/vanleeuwen2013SINBADsda.pdf},
+  author = {Tristan van Leeuwen and Bas Peters and Felix J. Herrmann}
 }
 
 
@@ -11117,8 +11310,8 @@
                   parallelism. Ongoing work porting the CARP-CG
                   algorithm to the accelerator is presented.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/petrenko2013SINBADaih.pdf},
-  author = {Art Petrenko}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/petrenko2013SINBADaih/petrenko2013SINBADaih.pdf},
+  author = {Art Petrenko and Tristan van Leeuwen and Felix J. Herrmann and Diego Oriato and Simon Tilbury}
 }
 
 
@@ -11140,8 +11333,8 @@
                   possibility of use of some of these techniques in
                   the context of an inversion.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/lago2013SINBADksf.pdf},
-  author = {Rafael Lago}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/lago2013SINBADksf/lago2013SINBADksf.pdf},
+  author = {Rafael Lago and Felix J. Herrmann}
 }
 
 
@@ -11161,8 +11354,8 @@
                   situation of taking an outrageously small number of
                   samples.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/yeung2013SINBADcsr.pdf},
-  author = {Enrico Au-Yeung}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/yeung2013SINBADcsr/yeung2013SINBADcsr.pdf},
+  author = {Enrico Au-Yeung and Ozgur Yilmaz and Felix J. Herrmann}
 }
 
 
@@ -11191,8 +11384,8 @@
                   sampling strategy independent of the types of
                   forward operators we use.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/wang2013SINBADnru.pdf},
-  author = {Rongrong Wang}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/wang2013SINBADnru/wang2013SINBADnru.pdf},
+  author = {Rongrong Wang and Bas Peters and Felix J. Herrmann}
 }
 
 
@@ -11210,8 +11403,8 @@
                   accelerating computations and explore applications
                   to seismic deconvolution.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/esser2013SINBADasr.pdf},
-  author = {Ernie Esser}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/esser2013SINBADasr/esser2013SINBADasr.pdf},
+  author = {Ernie Esser and Felix J. Herrmann}
 }
 
 
@@ -11242,8 +11435,8 @@
                   redundancy, support information, and weighting play
                   important roles.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/hargreaves2013SINBADbfo.pdf},
-  author = {Brock Hargreaves}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/hargreaves2013SINBADbfo/hargreaves2013SINBADbfo.pdf},
+  author = {Brock Hargreaves and Ozgur Yilmaz and Felix J. Herrmann}
 }
 
 
@@ -11263,8 +11456,8 @@
                   for the L2 distance and comparing vectors of
                   different lengths.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/goh2013SINBADttt.pdf},
-  author = {Gabriel Goh}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/goh2013SINBADttt/goh2013SINBADttt.pdf},
+  author = {Gabriel Goh and Michael P. Friedlander and Felix J. Herrmann}
 }
 
 
@@ -11284,8 +11477,8 @@
                   number of constraints. Preliminary numerical results
                   illustrate our approach and its flexibility.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/macedo2013SINBADdap.pdf},
-  author = {Ives Macedo}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/macedo2013SINBADdap/macedo2013SINBADdap.pdf},
+  author = {Ives Macedo and Michael P. Friedlander and Felix J. Herrmann}
 }
 
 
@@ -11309,8 +11502,8 @@
                   solvers and improve upon the convergence rates of
                   existing solvers.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/nutini2013SINBADpcb.pdf},
-  author = {Julie Nutini}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/nutini2013SINBADpcb/nutini2013SINBADpcb.pdf},
+  author = {Julie Nutini and Michael P. Friedlander and Felix J. Herrmann}
 }  
 
 
@@ -11337,8 +11530,8 @@
                   algorithm converges to an optimal solution, and
                   establish an upper bound on iteration complexity.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/pong2013SINBADppg.pdf},
-  author = {Ting Kei Pong}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/pong2013SINBADppg/pong2013SINBADppg.pdf},
+  author = {Ting Kei Pong and Michael P. Friedlander and Felix J. Herrmann}
 }  
 
 
@@ -11370,8 +11563,8 @@
                   Silva, Rajiv Kumar, Ben Recht, and Felix
                   J. Herrmann.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/akalin2013SINBADmtc.pdf},
-  author = {Okan Akalin}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/akalin2013SINBADmtc/akalin2013SINBADmtc.pdf},
+  author = {Okan Akalin and Curt Da Silva and Rajiv Kumar and Ben Recht and Felix J. Herrmann}
 }  
 
 
@@ -11392,8 +11585,8 @@
                   tackling high-dimensional problems such as
                   Uncertainty Quantification.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/dasilva2013SINBADstf.pdf},
-  author = {Curt da Silva}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/dasilva2013SINBADstf/dasilva2013SINBADstf.pdf},
+  author = {Curt da Silva and Felix J. Herrmann}
 }  
 
 
@@ -11425,8 +11618,8 @@
                   sequential source data from simultaneous source
                   data.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/kumar2013SINBADwrs.pdf},
-  author = {Rajiv Kumar}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/kumar2013SINBADwrs/kumar2013SINBADwrs.pdf},
+  author = {Rajiv Kumar and Aleksandr Y. Aravkin and Hassan Mansour and Ernie Esser and Felix J. Herrmann}
 }  
 
 
@@ -11455,8 +11648,8 @@
                   extensive numerical experiments on synthetic data
                   and seismic data reconstruction.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/ghadermarzy2013SINBADups.pdf},
-  author = {Navid Ghadermarzy}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/ghadermarzy2013SINBADups/ghadermarzy2013SINBADups.pdf},
+  author = {Navid Ghadermarzy and Ozgur Yilmaz and Felix J. Herrmann}
 }  
 
 
@@ -11483,8 +11676,8 @@
                   the effect of under sampled data in a controlled
                   way.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/lin2013SINBADbre.pdf},
-  author = {Tim T. Y. Lin}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/lin2013SINBADbre/lin2013SINBADbre.pdf},
+  author = {Tim T.Y. Lin and Felix J. Herrmann}
 }  
   
 
@@ -11512,8 +11705,8 @@
                   estimating the 4D difference and compare their
                   relative performance to each other.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/oghenekohwo2013SINBADedt.pdf},
-  author = {Felix Oghenekohwo}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/oghenekohwo2013SINBADedt/oghenekohwo2013SINBADedt.pdf},
+  author = {Felix Oghenekohwo and Ernie Esser and Felix J. Herrmann}
 }  
 
 
@@ -11548,8 +11741,8 @@
                   along with regularization and interpolation to a
                   (finer) regular grid.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/wason2013SINBADtjm.pdf},
-  author = {Haneet Wason}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/wason2013SINBADtjm/wason2013SINBADtjm.pdf},
+  author = {Haneet Wason and Felix J. Herrmann}
 }  
 
 
@@ -11579,8 +11772,8 @@
                   (linearized) Zoeppritz equations for a few synthetic
                   models.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/kumar2013SINBADava.pdf},
-  author = {Rajiv Kumar}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/kumar2013SINBADava/kumar2013SINBADava.pdf},
+  author = {Rajiv Kumar and Tristan van Leeuwen and Felix J. Herrmann}
 }  
 
 
@@ -11601,8 +11794,8 @@
                   resulting in an accleration from cubic numerical
                   complexity to linear numerical complexity.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/miao2013SINBADfid.pdf},
-  author = {Lina Miao}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/miao2013SINBADfid/miao2013SINBADfid.pdf},
+  author = {Lina Miao and Felix J. Herrmann}
 }  
 
 
@@ -11624,8 +11817,8 @@
                   representations of operators will be shown in this
                   talk.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/zheglova2013SINBADihss.pdf},
-  author = {Polina Zheglova}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/zheglova2013SINBADihss/zheglova2013SINBADihss.pdf},
+  author = {Polina Zheglova and Felix J. Herrmann}
 }  
 
 
@@ -11654,8 +11847,8 @@
                   the subsets of data we are working with at each
                   iteration.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/tu2013SINBADfim.pdf},
-  author = {Ning Tu}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/tu2013SINBADfim/tu2013SINBADfim.pdf},
+  author = {Ning Tu and Felix J. Herrmann}
 }  
 
 
@@ -11676,8 +11869,8 @@
                   pdf. Simultaneous shots are also used to reduce the
                   computational costs.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/fang2013SINBADuafwi.pdf},
-  author = {Zhilong Fang}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/fang2013SINBADuafwi/fang2013SINBADuafwi.pdf},
+  author = {Zhilong Fang and Felix J. Herrmann}
 }  
 
 
@@ -11708,8 +11901,8 @@
                   results that we believe can be improved by combining
                   these two methods.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/li2013SINBADmsd.pdf},
-  author = {Xiang Li}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/li2013SINBADmsd/li2013SINBADmsd.pdf},
+  author = {Xiang Li and Anais Tamalet and Tristan van Leeuwen and Felix J. Herrmann}
 }  
 
 
@@ -11729,8 +11922,8 @@
                   conclusive results we have got, and explain the key
                   techniques in imaging this dataset.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/tu2013SINBADmachar.pdf},
-  author = {Ning Tu}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/tu2013SINBADmachar/tu2013SINBADmachar.pdf},
+  author = {Ning Tu and Felix J. Herrmann}
 }  
 
 
@@ -11754,8 +11947,8 @@
                   Kumar, Tristan van Leeuwen, Brendan Smithyman,
                   Haneet Wason and Felix J. Herrmann},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/li2013SINBADgom.pdf},
-  author = {Xiang Li}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/li2013SINBADgom/li2013SINBADgom.pdf},
+  author = {Xiang Li and Andrew J. Calvert and Ian Hanlon and Mostafa Javanmehri and Rajiv Kumar and Tristan van Leeuwen and Brendan Smithyman and Haneet Wason and Felix J. Herrmann}
 }  
 
 
@@ -11765,7 +11958,7 @@
   organization = {SINBAD},
   year = {2013},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/warner2013SINBADrfwi.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/warner2013SINBADrfwi/warner2013SINBADrfwi.pdf},
   author = {Mike Warner}
 }  
 
@@ -11787,8 +11980,8 @@
                   information from multiple data to mitigate cycle
                   skips and avoid local minima?},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/smithyman2013SINBADprb.pdf},
-  author = {Brendan Smithyman}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/smithyman2013SINBADprb/smithyman2013SINBADprb.pdf},
+  author = {Brendan Smithyman and Felix J. Herrmann}
 }  
 
 
@@ -11809,8 +12002,8 @@
                   compromise between the computational costs and
                   accuracy.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/fang2013SINBADp3dfwi.pdf},
-  author = {Zhilong Fang}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/fang2013SINBADp3dfwi/fang2013SINBADp3dfwi.pdf},
+  author = {Zhilong Fang and Tristan van Leeuwen and Felix J. Herrmann}
 }  
 
 
@@ -11840,8 +12033,8 @@
                   to a computationally efficient implementation of
                   WEMVA. This is joint work with Tristan van Leeuwen.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/kumar2013SINBADeia.pdf},
-  author = {Rajiv Kumar}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/kumar2013SINBADeia/kumar2013SINBADeia.pdf},
+  author = {Rajiv Kumar and Tristan van Leeuwen and Felix J. Herrmann}
 }  
 
 
@@ -11871,8 +12064,8 @@
                   inversion, as well as linearized seismic imaging by
                   migration.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/peters2013SINBADepm.pdf},
-  author = {Bas Peters}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/peters2013SINBADepm/peters2013SINBADepm.pdf},
+  author = {Bas Peters and Tristan van Leeuwen and Felix J. Herrmann}
 }  
 
 
@@ -11918,7 +12111,7 @@
                   algorithms on synthetic benchmark models. This is
                   joint work with Tristan van Leeuwen.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/herrmann2013SINBADffwi.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/herrmann2013SINBADffwi/herrmann2013SINBADffwi.pdf},
   author = {Felix J. Herrmann}
 }  
 
@@ -11960,8 +12153,8 @@
                   formulation, fields can be computed independently
                   and aggregated, possibly in parallel.},
   keywords = {presentation, SINBAD, SINBADFALL2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/vanleeuwen2013SINBADrpp.pdf},
-  author = {Tristan van Leeuwen}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Fall/vanleeuwen2013SINBADrpp/vanleeuwen2013SINBADrpp.pdf},
+  author = {Tristan van Leeuwen and Felix J. Herrmann}
 }  
 
 
@@ -12004,7 +12197,7 @@
                   approach and we demonstrate our recovery on a
                   synthetic 5D data set provided to us by BG.},
   keywords = {presentation, SINBAD, SINBADSPRING2013, SLIM, Hierarchical Tucker, Structured Tensor, 3D Data interpolation, structured tensor, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/dasilva2013SINBADSPRhtuck.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/dasilva2013SINBADSPRhtuck/dasilva2013SINBADSPRhtuck.pdf},
   author = {Curt Da Silva and Felix J. Herrmann}
 }
 
@@ -12043,7 +12236,7 @@
                   research. This is joint work with Tristan van
                   Leeuwen.},
   keywords = {presentation, SINBAD, SINBADSPRING2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/herrmann2013SINBADmlm.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/herrmann2013SINBADmlm/herrmann2013SINBADmlm.pdf},
   author = {Felix J. Herrmann}  
 }
 
@@ -12090,7 +12283,7 @@
                   algorithms on synthetic benchmark models. This is
                   joint work with Tristan van Leeuwen.},
   keywords = {presentation, SINBAD, SINBADSPRING2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/herrmann2013SINBADfwi.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/herrmann2013SINBADfwi/herrmann2013SINBADfwi.pdf},
   author = {Felix J. Herrmann}  
 }
 
@@ -12130,7 +12323,7 @@
                   correction. This is joint work with Tristan van
                   Leeuwen and Rajiv Kumar.},
   keywords = {presentation, SINBAD, SINBADSPRING2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/herrmann2013SINBADeia.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/herrmann2013SINBADeia/herrmann2013SINBADeia.pdf},
   author = {Felix J. Herrmann}  
 }
 
@@ -12146,7 +12339,7 @@
                   joint work with Andrew Calvert, Brendan Smithyman,
                   and the SLIM team.},
   keywords = {presentation, SINBAD, SINBADSPRING2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/herrmann2013SINBADldc.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/herrmann2013SINBADldc/herrmann2013SINBADldc.pdf},
   author = {Felix J. Herrmann}  
 }
 
@@ -12182,12 +12375,12 @@
                   a seismic line from the Gulf of Suez and compare the
                   reconstruction with conventional rank minimization.},
   keywords = {presentation, SINBAD, SINBADSPRING2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/kumar2013SINBADhss.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/kumar2013SINBADhss/kumar2013SINBADhss.pdf},
   author = {Rajiv Kumar and Hassan Mansour and Aleksandr Y. Aravkin and Felix J. Herrmann}  
 }
 
 
-@PRESENTATION{lin2013SINBADa,
+@PRESENTATION{lin2013SINBADcsd,
   title = {Cosparse seismic data interpolation},
   booktitle = {SINBAD Spring consortium talks},
   organization = {SINBAD},
@@ -12231,8 +12424,8 @@
                   different analysis operators and their impact on
                   both sparsity and cosparsity-based algorithms.},
   keywords = {presentation, SINBAD, SINBADSPRING2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/lin2013SINBADcsd.pdf},
-  author = {Tim T.Y. Lin}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/lin2013SINBADcsd/lin2013SINBADcsd.pdf},
+  author = {Tim T.Y. Lin and Felix J. Herrmann}
 }
 
 
@@ -12257,8 +12450,8 @@
                   simulation cost without compromising the image
                   quality.},
   keywords = {presentation, SINBAD, SINBADSPRING2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/tu2013SINBADvp.pdf},
-  author = {Ning Tu}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/tu2013SINBADvp/tu2013SINBADvp.pdf},
+  author = {Ning Tu and Aleksandr Y. Aravkin and Tristan van Leeuwen and Felix J. Herrmann}
 }
 
 
@@ -12284,9 +12477,10 @@
                   rerandomization, especially for resolving fine
                   sub-salt structures.},
   keywords = {presentation, SINBAD,  SINBADSPRING2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/tu2013SINBADrerand.pdf},
-  author = {Ning Tu}
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/tu2013SINBADrerand/tu2013SINBADrerand.pdf},
+  author = {Ning Tu and Felix J. Herrmann}
 }
+
 
 @PRESENTATION{wason2013SINBADtjo,
   title = {Time-jittered ocean bottom seismic acquisition},
@@ -12314,7 +12508,7 @@
                   which translates to jittered source locations for a
                   given speed of the source vessel.},
   keywords = {presentation, SINBAD, SINBADSPRING2013, SLIM, private},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/wason2013SINBADtjo.pdf},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2013/Spring/wason2013SINBADtjo/wason2013SINBADtjo.pdf},
   author = {Haneet Wason and Felix J. Herrmann}
 }
 

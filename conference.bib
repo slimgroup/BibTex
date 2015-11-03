@@ -99,28 +99,6 @@
 }
 
 
-@CONFERENCE{dasilva2015SEGWSsfm,
-  author = {Curt Da Silva and Rajiv Kumar and Oscar Lopez and Haneet Wason and Felix J. Herrmann},
-  title = {{SVD}-free matrix completion in randomized marine acquisition},
-  booktitle = {SEG Workshop on Rank-Reduction and Other Sparse Transform Methods with Application to Data Reconstruction, De-Noising, De-Blending and Imaging},
-  year = {2015},
-  month = {10},
-  abstract = {During this presentation, we will illustrate how
-                  insights from matrix-free matrix completion can be
-                  used to solve problems in (on- and off-the-grid)
-                  missing trace interpolation and time-jittered
-                  (simultaneous) marine acquisition. In particular, we
-                  will demonstrate the importance of data organization
-                  to favor recovery by rank minimization and the use
-                  of deterministic spectral properties to predict the
-                  recovery. We also make make comparisons between
-                  wavefield reconstructions based on transform-domain
-                  sparsity promotion and matrix completion.},
-  keywords = {SEG, workshop, matrix completion, rank reduction, interpolation, acquisition, private},
-  note = {(to be presented at the SEG, New Orleans)}
-}
-
-
 @CONFERENCE{esser2015EAGElcs,
   author = {Ernie Esser and Tim T.Y. Lin and Rongrong Wang and Felix J. Herrmann},
   title = {A lifted $\ell_1/\ell_2$ constraint for sparse blind deconvolution},
@@ -164,11 +142,12 @@
 
 
 @CONFERENCE{esser2015SEGasd,
-  author = {Ernie Esser and Lluís Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  author = {Ernie Esser and Lluis Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
   title = {Automatic salt delineation --- {Wavefield} {Reconstruction} {Inversion} with convex constraints},
   booktitle = {SEG Technical Program Expanded Abstracts},
   year = {2015},
   month = {10},
+  pages = {1337-1343},
   abstract = {We extend full-waveform inversion by Wavefield
                   Reconstruction Inversion by including convex
                   constraints on the model. Contrary to the
@@ -188,8 +167,22 @@
                   Reconstruction Inversion get trapped in local minima
                   for poor starting models.},
   keywords = {SEG, full-waveform inversion, convex constraints, total-variation norm, salt},
-  note = {(to be presented at the SEG, New Orleans)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/esser2015SEGasd/esser2015SEGasd.html}
+  note = {(SEG, New Orleans)},
+  doi = {10.1190/segam2015-5877995.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/esser2015SEGasd/esser2015SEGasd.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/esser2015SEGasd/esser2015SEGasd_pres.pdf}
+}
+
+
+@CONFERENCE{esser2015SEGWSasf,
+  author = {Ernie Esser and Lluis Guasch and Felix J. Herrmann},
+  title = {Automatic salt flooding with hinged {FWI}},
+  booktitle = {SEG Workshop on Subsalt model buiding long to short wavelengths; New Orleans},
+  year = {2015},
+  month = {10},
+  keywords = {SEG, workshop, waveform inversion},
+  note = {(SEG, New Orleans)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/esser2015SEGWSasf/esser2015SEGWSasf_pres.pdf}
 }
 
 
@@ -472,7 +465,7 @@
 
 
 @CONFERENCE{herrmann2015IIPFWIwcc,
-  author = {Felix J. Herrmann and Ernie Esser and Lluis Guash},
+  author = {Felix J. Herrmann and Ernie Esser and Lluis Guasch},
   title = {Wavefield {Reconstruction} {Inversion} with convex constraints},
   booktitle = {Inaugural Full-Waveform Inversion Workshop},
   year = {2015},
@@ -683,6 +676,29 @@
 }
 
 
+@CONFERENCE{lopez2015SEGWSsfm,
+  author = {Oscar Lopez and Haneet Wason and Curt Da Silva and Rajiv Kumar and Felix J. Herrmann},
+  title = {{SVD}-free matrix completion in randomized marine acquisition},
+  booktitle = {SEG Workshop on Rank-Reduction and Other Sparse Transform Methods with Application to Data Reconstruction, De-Noising, De-Blending and Imaging; New Orleans},
+  year = {2015},
+  month = {10},
+  abstract = {During this presentation, we will illustrate how
+                  insights from matrix-free matrix completion can be
+                  used to solve problems in (on- and off-the-grid)
+                  missing trace interpolation and time-jittered
+                  (simultaneous) marine acquisition. In particular, we
+                  will demonstrate the importance of data organization
+                  to favor recovery by rank minimization and the use
+                  of deterministic spectral properties to predict the
+                  recovery. We also make make comparisons between
+                  wavefield reconstructions based on transform-domain
+                  sparsity promotion and matrix completion.},
+  keywords = {SEG, workshop, matrix completion, rank reduction, interpolation, acquisition},
+  note = {(SEG, New Orleans)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/lopez2015SEGWSsfm/lopez2015SEGWSsfm_pres.pdf}
+}
+
+
 @CONFERENCE{louboutin2015IIPFWIrwi,
   author = {Mathias Louboutin and Bas Peters and Brendan Smithyman and Felix J. Herrmann},
   title = {Regularizing waveform inversion by projections onto convex sets},
@@ -727,6 +743,7 @@
   booktitle = {SEG Technical Program Expanded Abstracts},
   year = {2015},
   month = {10},
+  pages = {5153-5157},
   abstract = {Time-domain Full-Waveform Inversion (FWI) aims to image
                   the subsurface of the earth accurately from field
                   recorded data and can be solved via the reduced
@@ -755,8 +772,10 @@
                   addition, we avoid having to recompute the
                   wavefields as is required by checkpointing.},
   keywords = {SEG, Full-waveform inversion, Acoustic, Subsampling, Time-domain, Inversion, Stochastic optimization},
-  note = {(to be presented at the SEG, New Orleans)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/louboutin2015SEGtcs/louboutin2015SEGtcs.html}
+  note = {(SEG, New Orleans)},
+  doi = {10.1190/segam2015-5924937.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/louboutin2015SEGtcs/louboutin2015SEGtcs.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/louboutin2015SEGtcs/louboutin2015SEGtcs_poster.pdf}
 }
 
 
@@ -926,11 +945,12 @@
 @CONFERENCE{peters2015SEGWSsew,
   author = {Bas Peters and Felix J. Herrmann},
   title = {Simultaneous estimation of wavefields and medium parameters - reduced-space versus full-space waveform inversion},
-  booktitle = {SEG Workshop on The Limit of FWI in Subsurface Parameter Recovery},
+  booktitle = {SEG Workshop on The Limit of FWI in Subsurface Parameter Recovery; New Orleans},
   year = {2015},
   month = {10},
-  keywords = {SEG, workshop, waveform inversion, full-space, PDE-constrained optimization, quadratic penalty method, private},
-  note = {(to be presented at the SEG, New Orleans)}
+  keywords = {SEG, workshop, waveform inversion, full-space, PDE-constrained optimization, quadratic penalty method},
+  note = {(SEG, New Orleans)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2015/peters2015SEGWSsew/peters2015SEGWSsew_pres.pdf}
 }
 
 

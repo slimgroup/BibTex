@@ -1,6 +1,70 @@
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+@PHDTHESIS{lin2015THpes,
+  author = {Tim T.Y. Lin},
+  title = {Primary estimation with sparsity-promoting bi-convex optimization},
+  school = {The University of British Columbia},
+  year = {2015},
+  month = {10},
+  address = {Vancouver},
+  abstract = {This thesis establishes a novel inversion methodology
+                  for the surface-related primaries from a given
+                  recorded seismic wavefield, called the Robust
+                  Estimation of Primaries by Sparse Inversion (Robust
+                  EPSI, or REPSI). Surface-related multiples are a
+                  major source of coherent noise in seismic data, and
+                  inferring fine geological structures from
+                  active-source seismic recordings typically first
+                  necessitates its removal or mitigation. For this
+                  task, current practice calls for data-driven
+                  approaches which produce only approximate multiple
+                  models that must be non-linearly subtracted from the
+                  data, often distorting weak primary events in the
+                  process. A recently proposed method called
+                  Estimation of Primaries by Sparse Inversion (EPSI)
+                  avoids this adaptive subtraction by directly
+                  inverting for a discrete representation of the
+                  underlying multiple-free subsurface impulse response
+                  as a set of band-limited spikes. However, in its
+                  original form, the EPSI algorithm exhibits a few
+                  notable shortcomings that impede adoption. Although
+                  it was shown that the correct impulse response can
+                  be obtained through a sparsest solution criteria,
+                  the current EPSI algorithm is not designed to take
+                  advantage of this finding, but instead approximates
+                  a sparse solution in an ad-hoc manner that requires
+                  practitioners to decide on a multitude of inversion
+                  parameters. The Robust EPSI method introduced in
+                  this thesis reformulates the original EPSI problem
+                  as a formal bi-convex optimization problem that
+                  makes obtaining the sparsest solution an explicit
+                  goal, while also reliably admit satisfactory
+                  solutions using contemporary self-tuning gradient
+                  methods commonly seen in large-scale machine
+                  learning communities. I show that the Robust EPSI
+                  algorithm is able to operate successfully on a
+                  variety of datasets with minimal user input, while
+                  also producing a more accurate model of the
+                  subsurface impulse response when compared to the
+                  original algorithm. Furthermore, this thesis makes
+                  several contributions that improves the capability
+                  and practicality of EPSI: a novel scattering-based
+                  multiple prediction model that allows Robust EPSI to
+                  deal with wider near-offset receiver gaps than
+                  previously demonstrated for EPSI, as well as a
+                  multigrid-inspired continuation strategy that
+                  significantly reduces the computation time needed to
+                  solve EPSI-type problems. These additions are
+                  enabled by and built upon the formalism of the
+                  Robust EPSI as developed in this thesis.},
+  keywords = {PhD, inversion, EPSI, biconvex, multiples, sparsity, optimization},
+  note = {(PhD)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2015/lin2015THpes/lin2015THpes.pdf},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2015/lin2015THpes/lin2015THpes_pres.pdf}
+}
+
+
 @PHDTHESIS{tu2015THfis,
   author = {Ning Tu},
   title = {Fast imaging with surface-related multiples},

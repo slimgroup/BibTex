@@ -15991,55 +15991,55 @@
 
 @UNPUBLISHED{tu2015GJIsem,
   author = {Ning Tu and Aleksandr Y. Aravkin and Tristan van Leeuwen and Tim T.Y. Lin and Felix J. Herrmann},
-  title = {Source estimation with multiples—fast ambiguity-resolved seismic imaging},
+  title = {Source estimation with surface-related multiples---fast ambiguity-resolved seismic imaging},
   year = {2015},
-  abstract = {We propose a fast "wavelet-free" least-squares imaging
-                  procedure that produces high-accuracy seismic images
-                  without the knowledge of the source
-                  wavelet. Conventional reverse-time migration
-                  requires the knowledge of the source wavelet, which
-                  is either unavailable or very difficult to
-                  accurately determine; inaccurate estimates of the
-                  source wavelet can result in seriously degraded
-                  reverse-time migrated images, and therefore wrong
-                  geological interpretations. To solve this problem,
-                  we present a "wavelet-free" imaging procedure that
-                  simultaneously inverts for the source wavelet and
-                  the seismic image, by tightly integrating source
-                  estimation into a fast least-squares imaging
-                  framework, namely compressive imaging, given a
-                  reasonably accurate background velocity
-                  model. However, this joint inversion problem is
-                  difficult to solve as it is plagued with local
-                  minima and the ambiguity with respect to amplitude
-                  scalings, because of the multiplicative, and
-                  therefore nonlinear, appearance of the source
-                  wavelet in the otherwise linear formalism. We have
-                  found a way to solve this nonlinear joint-inversion
-                  problem using a technique called variable
-                  projection, and a way to overcome the scaling
-                  ambiguity by including surface-related multiples in
-                  our imaging procedure following recent developments
-                  in surface-related multiple prediction by sparse
-                  inversion. As a result, we obtain highly accurate
-                  estimates of the source wavelet and high-resolution
-                  seismic images, comparable in quality to images
-                  obtained assuming the true source wavelet is
-                  known. By leveraging the computationally efficient
-                  compressive-imaging methodology, these results are
-                  obtained at affordable computational costs compared
-                  with conventional processing work flows that include
-                  surface-related multiple removal and reverse-time
-                  migration.},
+  abstract = {We address the problem of obtaining a reliable seismic
+                  image without prior knowledge of the source wavelet,
+                  especially from data that contain strong
+                  surface-related multiples. Conventional reverse-time
+                  migration requires prior knowledge of the source
+                  wavelet, which is either technically or
+                  computationally challenging to accurately determine;
+                  inaccurate estimates of the source wavelet can
+                  result in seriously degraded reverse-time migrated
+                  images, and therefore wrong geological
+                  interpretations. To solve this problem, we present a
+                  "wavelet-free" imaging procedure that simultaneously
+                  inverts for the source wavelet and the seismic
+                  image, by tightly integrating source estimation into
+                  a fast least-squares imaging framework, namely
+                  compressive imaging, given a reasonably accurate
+                  background velocity model. However, this joint
+                  inversion problem is difficult to solve as it is
+                  plagued with local minima and the ambiguity with
+                  respect to amplitude scalings, because of the
+                  multiplicative, and therefore nonlinear, appearance
+                  of the source wavelet in the otherwise linear
+                  formalism. We have found a way to solve this
+                  nonlinear joint-inversion problem using a technique
+                  called variable projection, and a way to overcome
+                  the scaling ambiguity by including surface-related
+                  multiples in our imaging procedure following recent
+                  developments in surface-related multiple prediction
+                  by sparse inversion. As a result, we obtain without
+                  prior knowledge of the source wavelet
+                  high-resolution seismic images, comparable in
+                  quality to images obtained assuming the true source
+                  wavelet is known. By leveraging the computationally
+                  efficient compressive-imaging methodology, these
+                  results are obtained at affordable computational
+                  costs compared with conventional processing work
+                  flows that include surface-related multiple removal
+                  and reverse-time migration.},
   keywords = {inverse theory, time series analysis, computational seismology, wave propagation, free surface, multiples, seismic imaging, private},
-  note = {Submitted to Geophysical Journal International on May 14.},
+  note = {Submitted to Geophysical Journal International on May 14. Revision 1 submitted on November 29.},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/tu2015GJIsem/tu2015GJIsem.html}
 }
 
 
 @UNPUBLISHED{vanleeuwen2015GPWEMVA,
   author = {Tristan van Leeuwen and Rajiv Kumar and Felix J. Herrmann},
-  title = {Affordable omnidirectional subsurface extended image volumes},
+  title = {Enabling affordable omnidirectional subsurface extended image volumes via probing},
   year = {2015},
   abstract = {Image gathers as a function of subsurface offset are an
                   important tool for the inference of rock properties
@@ -16048,31 +16048,37 @@
                   as multidimensional correlations of the source and
                   receiver wavefields. The bottleneck in computing
                   these gathers lies in the fact that one needs to
-                  store, compute, and correlate these wavefields in
-                  order to obtain the desired image
+                  store, compute, and correlate these wavefields for
+                  all shots in order to obtain the desired image
                   gathers. Therefore, the image gathers are typically
                   only computed for a limited number of subsurface
                   points and for a limited range of subsurface
-                  offsets. In this paper, we offer a new perspective
-                  on such gathers by organizing the extended image, as
-                  a function of all subsurface offsets and all
-                  subsurface points, into a matrix whose (i,j)th entry
-                  captures the interaction between gridpoints i and
-                  j. Of course, it is infeasible to form and store
-                  this matrix explicitly. Instead, we propose an
-                  efficient algorithm to glean information from the
-                  image volume via matrix-vector products, which can
-                  be computed efficiently. The probing techniques have
-                  two main advantages; i) by using all subsurface
-                  offsets, we can handle complex geological structures
-                  with steep dips, ii) we can probe the whole model
-                  simultaneously and do not have to pick points at
-                  which to compute the image gathers. We illustrate
-                  these advantages using two important applications of
-                  image gathers: amplitude-versus-angle reflectivity
-                  analysis and migration velocity analysis.},
+                  offsets, which may cause problems in complex
+                  geological areas with large geologic dips. We
+                  overcome increasing computational and storage costs
+                  of extended image volumes by introducing a
+                  formulation that avoids explicit storage and removes
+                  the customary and expensive loop over shots, found
+                  in conventional extended imaging. As a result, we
+                  end up with a matrix-vector formulation from which
+                  different image gathers can be formed and with which
+                  amplitude-versus-angle and wave-equation migration
+                  velocity analyses can be performed without requiring
+                  prior information on the geologic dips. Aside from
+                  demonstrating the formation of two-way extended
+                  image gathers for different purposes and at greatly
+                  reduced costs, we also present a new approach to
+                  conduct automatic wave-equation based
+                  migration-velocity analysis. Instead of focussing in
+                  particular offset directions and preselected subsets
+                  of subsurface points, our method focuses every
+                  subsurface point for all subsurface offset
+                  directions using a randomized probing technique. As
+                  a consequence, we obtain good velocity models at low
+                  cost for complex models without the need to provide
+                  information on the geologic dips.},
   keywords = {migration velocity analysis, AVA, stochastic optimization, private},
-  note = {Submitted to Geophysical Prospecting on May 6.},
+  note = {Submitted to Geophysical Prospecting on May 6. Revision 1 submitted on November 30.},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/vanleeuwen2015GPWEMVA/vanleeuwen2015GPWEMVA.pdf}
 }
 

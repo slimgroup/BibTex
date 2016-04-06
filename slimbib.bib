@@ -1130,7 +1130,7 @@
 
 
 @CONFERENCE{witte2015IIPFWIspl,
-  author = {Philipp Witte and Ning Tu and Ernie Esser and Mengmeng Yang and Mathias Louboutin and Felix J. Herrmann},
+  author = {Philipp A. Witte and Ning Tu and Ernie Esser and Mengmeng Yang and Mathias Louboutin and Felix J. Herrmann},
   title = {Sparsity-promoting least-square migration with linearized {Bregman} and compressive sensing},
   booktitle = {Inaugural Full-Waveform Inversion Workshop},
   year = {2015},
@@ -1157,7 +1157,7 @@
 
 
 @CONFERENCE{witte2015IIPFWItdf,
-  author = {Philipp Witte and Mathias Louboutin and Felix J. Herrmann},
+  author = {Philipp A. Witte and Mathias Louboutin and Felix J. Herrmann},
   title = {Time-domain {FWI} in {TTI} media},
   booktitle = {Inaugural Full-Waveform Inversion Workshop},
   year = {2015},
@@ -9816,7 +9816,7 @@
   keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/witte2015SINBADFara/witte2015SINBADFara.pdf},
   url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/witte2015SINBADFara/witte2015SINBADFara.mov},
-  author = {Philipp Witte and Felix J. Herrmann}
+  author = {Philipp A. Witte and Felix J. Herrmann}
 }
 
 
@@ -9839,7 +9839,7 @@
   keywords = {presentation, SINBAD, SINBADFALL2015, SLIM, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/witte2015SINBADFtdf/witte2015SINBADFtdf.pdf},
   url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2015/Fall/witte2015SINBADFtdf/witte2015SINBADFtdf.mov},
-  author = {Philipp Witte and Felix J. Herrmann}
+  author = {Philipp A. Witte and Felix J. Herrmann}
 }
 
 
@@ -14759,7 +14759,7 @@
 
 
 @TECHREPORT{witte2015TRoam,
-  author = {Philipp Witte and Mathias Louboutin and Felix J. Herrmann},
+  author = {Philipp A. Witte and Mathias Louboutin and Felix J. Herrmann},
   title = {Overview on anisotropic modeling and inversion},
   year = {2015},
   month = {08},
@@ -15847,6 +15847,189 @@
 
 %-----2016-----%
 
+@UNPUBLISHED{bougher2016SEGava,
+  author = {Ben B. Bougher and Felix J. Herrmann},
+  title = {AVA classification as an unsupervised machine-learning problem},
+  year = {2016},
+  abstract = {Much of AVA analysis relies on characterizing background
+                  trends and anomalies in pre-stack seismic
+                  data. Analysts reduce a seismic section into a small
+                  number of these trends and anomalies, suggesting
+                  that a low-dimensional structure can be inferred
+                  from the data. We describe AVA-attribute
+                  characterization as an unsupervised-learning
+                  problem, where AVA classes are learned directly from
+                  the data without any prior assumptions on physics
+                  and geological settings. The method is demonstrated
+                  on the Marmousi II elastic model, where a gas
+                  reservoir was successfully delineated from a
+                  background trend in a depth migrated image.},
+  keywords = {AVA, machine learning, SEG, private},
+  note = {submitted to the SEG conference},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2016/bougher2016SEGava/bougher2016SEGava.html}
+}
+
+
+@UNPUBLISHED{dasilva2016SEGuse,
+  author = {Curt Da Silva and Felix J. Herrmann},
+  title = {A unified {2D/3D} software environment for large scale time-harmonic full waveform inversion},
+  year = {2016},
+  abstract = {Full-Waveform Inversion is a costly and complex
+                  procedure for realistically sized 3D seismic
+                  data. The performance-critical nature of this
+                  problem often results in software environments that
+                  are written entirely in low-level languages, making
+                  them hard to understand, maintain, improve, and
+                  extend. The unreadability of such codes can stymie
+                  research developments, where the translation from
+                  higher level mathematical ideas to high performance
+                  codes can be lost, inhibiting the uptake of new
+                  ideas in production-level codebases. We propose a
+                  new software organization paradigm for Full-Waveform
+                  Inversion and other PDE-constrained optimization
+                  problems that is flexible, efficient, scalable, and
+                  demonstrably correct. We decompose the various
+                  structural components of FWI in to its constituent
+                  components, from parallel computation to assembling
+                  objective functions and gradients to lower level
+                  matrix-vector multiplications. This decomposition
+                  allows us to create a framework where individual
+                  components can be easily swapped out to suit a
+                  particular user's existing software environment. The
+                  ease of applying high-level algorithms to the FWI
+                  problem allows us to easily implement stochastic FWI
+                  and demonstrate its effectiveness on a large scale
+                  3D problem.},
+  keywords = {software, full-waveform inversion, large scale, numerical analysis, SEG, private},
+  note = {submitted to the SEG conference},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2016/dasilva2016SEGuse/dasilva2016SEGuse.html}
+}
+
+
+@UNPUBLISHED{fang2016SEGuqw,
+  author = {Zhilong Fang and Chia Ying Lee and Curt Da Silva and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Uncertainty quantification for {Wavefield} {Reconstruction} {Inversion} using a {PDE} free semidefinite {Hessian} and randomize-then-optimize method},
+  year = {2016},
+  abstract = {The data of full-waveform inversion often contains
+                  noise, which induces uncertainties in the inversion
+                  results. Ideally, one would like to run a number of
+                  independent inversions with different realizations
+                  of the noise and assess model-side uncertainties
+                  from the resulting models, however this is not
+                  feasible because we collect the data only once. To
+                  circumvent this restriction, various sampling
+                  schemes have been devised to generate an ensemble of
+                  models that fit the data to within the noise
+                  level. Such sampling schemes typically involve
+                  running multiple inversions or evaluating the
+                  Hessian of the cost function, both of which are
+                  computationally expensive. In this work, we propose
+                  a new method to quantify uncertainties based on a
+                  novel formulation of the full-waveform inversion
+                  problem – wavefield reconstruction inversion. Based
+                  on this formulation, we formulate a semidefinite
+                  approximation of the corresponding Hessian
+                  matrix. By precomputing certain quantities, we are
+                  able to apply this Hessian to given input vectors
+                  without additional solutions of the underlying
+                  partial differential equations. To generate a
+                  sample, we solve an auxiliary stochastic
+                  optimization problem involving this Hessian. The
+                  result is a computationally feasible method that,
+                  with little overhead, can generate as many samples
+                  as required at small additional cost. We test our
+                  method on the synthetic BG Compass model and compare
+                  the results to a direct-sampling approach. The
+                  results show the feasibility of applying our method
+                  to computing statistical quantities such as the mean
+                  and standard deviation in the context of wavefield
+                  reconstruction inversion.},
+  keywords = {WRI, uncertainty quantification, SEG, private},
+  note = {submitted to the SEG conference},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2016/fang2016SEGuqw/fang2016SEGuqw.html}
+}
+
+
+@UNPUBLISHED{kumar2016SEGtjm,
+  author = {Rajiv Kumar and Shashin Sharan and Haneet Wason and Felix J. Herrmann},
+  title = {Time-jittered marine acquisition---a rank-minimization approach for {5D} source separation},
+  year = {2016},
+  abstract = {Simultaneous source marine acquisition has been
+                  recognized as an economic way of improving spatial
+                  sampling and speedup acquisition time, where a
+                  single- (or multiple-) source vessel fires at
+                  jittered source locations and time
+                  instances. Consequently, the acquired simultaneous
+                  data volume is processed to separate the overlapping
+                  shot records resulting in densely sampled data
+                  volume. It has been shown in the past that the
+                  simultaneous source acquisition design and source
+                  separation process can be setup as a compressed
+                  sensing problem, where conventional seismic data is
+                  reconstructed from simultaneous data via a
+                  sparsity-promoting optimization formulation. While
+                  the recovery quality of separated data is reasonably
+                  well, the recovery process can be computationally
+                  expensive due to transform-domain redundancy. In
+                  this paper, we present a computationally tractable
+                  rank-minimization algorithm to separate simultaneous
+                  data volumes. The proposed algorithm is suitable for
+                  large-scale seismic data, since it avoids
+                  singular-value decompositions and uses a low-rank
+                  based factorized formulation instead. Results are
+                  illustrated for simulations of simultaneous
+                  time-jittered continuous recording for a 3D
+                  ocean-bottom cable survey.},
+  keywords = {5D, marine, time-jittered acquisition, source separation, SEG, private},
+  note = {submitted to the SEG conference},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2016/kumar2016SEGtjm/kumar2016SEGtjm.html}
+}
+
+
+@UNPUBLISHED{louboutin2016SEGocp,
+  author = {Mathias Louboutin and Gerard Gorman and Felix J. Herrmann},
+  title = {Optimizing the computational performance and maintainability of time-domain modelling---leveraging multiple right-hand-sides},
+  year = {2016},
+  abstract = {Numerical solvers for the wave equation are a key
+                  component of Full-Waveform Inversion (FWI) and
+                  Reverse-Time Migration (RTM). The main computational
+                  cost of a wave-equation solver stems from the
+                  computation of the Laplacian at each time step. When
+                  using a finite difference discretization this can be
+                  characterized as a structured grid computation
+                  within Colella's Seven Dwarfs. Independent of the
+                  degree of parallelization the performance will be
+                  limited by the relatively low operational intensity
+                  (number of operations divided by memory traffic) of
+                  finite-difference stencils, that is so say that the
+                  method is memory bandwidth bound. For this reason
+                  many developers have focused on porting their code
+                  to platforms that have higher memory bandwidth, such
+                  as GPU's, or put significant effort into highly
+                  intrusive optimisations. However, these
+                  optimisations rarely strike the right performance vs
+                  productivity balance as the software becomes less
+                  maintainable and extensible. By solving the wave
+                  equation for multiple sources/right-hand-sides
+                  (RHSs) at once, we overcome this problem arriving at
+                  a time-stepping solver with higher operational
+                  intensity. In essence, we arrive at this result by
+                  turning the usual matrix-vector products into a
+                  matrix-matrix products where the first matrix
+                  implements the discretized wave equation and each
+                  column of the second matrix contain separate
+                  wavefields for each given source. By making this
+                  relatively minor change to the solver we readily
+                  achieved a $\times{2}$ speedup. While we limit
+                  ourselves to acoustic modeling, our approach can
+                  easily be extended to the anisotropic or elastic
+                  cases.},
+  keywords = {modelling, 3D, time-domain, SEG, private},
+  note = {submitted to the SEG conference},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2016/louboutin2016SEGocp/louboutin2016SEGocp.html}
+}
+
+
 @UNPUBLISHED{oghenekohwo2016GEOPctl,
   author = {Felix Oghenekohwo and Haneet Wason and Ernie Esser and Felix J. Herrmann},
   title = {Cheap time lapse with distributed Compressive Sensing---exploiting common information among the vintages},
@@ -15897,43 +16080,194 @@
 }
 
 
+@UNPUBLISHED{peters2016SEGprs,
+  author = {Bas Peters and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Parallel reformulation of the sequential adjoint-state method},
+  year = {2016},
+  abstract = {This abstract is about reducing the total computation
+                  time to solve full-waveform inversion problems. A
+                  common problem formulation is a nonlinear
+                  least-squares problem where the gradient is computed
+                  using the adjoint-state algorithm. This formulation
+                  offers parallelism for the computation of gradients
+                  for different sources and frequencies. The
+                  adjoint-state algorithm itself is sequential however
+                  and this is a limiting factor when a lot of compute
+                  nodes are available and only a few wavefields need
+                  to be computed. This situation occurs when
+                  stochastic optimization strategies are used to
+                  minimize the objective function. We present a
+                  parallel reformulation of the sequential
+                  adjoint-state algorithm, which allows the forward-
+                  and adjoint wavefields to be computed in
+                  parallel. Both algorithms are mathematically
+                  equivalent but the parallel version is twice as fast
+                  in run time. An important characteristic of the
+                  proposed algorithm is that one wavefield needs to be
+                  computed per source and one per receiver. These
+                  fields can be used to apply the (inverse)
+                  Gauss-Newton Hessian to a vector without recomputing
+                  wavefields. A 2D example shows that good
+                  full-waveform inversion results are obtained, even
+                  when a small number of sources and receivers is
+                  used.},
+  keywords = {numerical linear algebra, PDE-constrained optimization, FWI, parallel computing, SEG, private},
+  note = {submitted to the SEG conference},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2016/peters2016SEGprs/peters2016SEGprs.html}
+}
+
+
+@UNPUBLISHED{sharan2016SEGspj,
+  author = {Shashin Sharan and Rongrong Wang and Tristan van Leeuwen and Felix J. Herrmann},
+  title = {Sparsity-promoting joint microseismic source collocation and source-time function estimation},
+  year = {2016},
+  abstract = {In this work, we propose a new method to simultaneously
+                  locate microseismic events (e.g., induced by
+                  hydraulic fracturing) and estimate the source
+                  signature of these events. We use the method of
+                  linearized Bregman. This algorithm focuses unknown
+                  sources at their true locations by promoting
+                  sparsity along space and at the same time keeping
+                  the energy along time in check. We are particularly
+                  interested in situations where the microseismic data
+                  is noisy, sources have different signatures and we
+                  only have access to the smooth background-velocity
+                  model. We perform numerical experiments to
+                  demonstrate the usability of the proposed method. We
+                  also compare our results with full-waveform
+                  inversion based microseismic event collocation
+                  methods. Our method gives flexibility to
+                  simultaneously get a more accurate source image
+                  along with an estimate of the source-time function,
+                  which carries important information on the rupturing
+                  process and source mechanism.},
+  keywords = {microseismic, sparse, sources, wave-equation, noise, SEG, private},
+  note = {submitted to the SEG conference},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2016/sharan2016SEGspj/sharan2016SEGspj.html}
+}
+
+
+@UNPUBLISHED{wang2016SEGfde,
+  author = {Rongrong Wang and Felix J. Herrmann},
+  title = {Frequency down-extrapolation with {TV} norm minimization},
+  year = {2016},
+  abstract = {In this work, we present a total-variation (TV)-norm
+                  minimization method to perform model-free
+                  low-frequency data extrapolation for the purpose of
+                  assisting full-waveform inversion. Low-frequency
+                  extrapolation is the process of extending reliable
+                  frequency bands of the raw data towards the lower
+                  end of the spectrum. To this end, we propose to
+                  solve a TV-norm based convex optimization problem
+                  that has a global minimum and is equipped with a
+                  fast solver. The approach takes into account both
+                  the sparsity of the reflectivity series associated
+                  with a single trace, as well as the inter-trace
+                  correlations. A favorable byproduct of this approach
+                  is that it allows one to work with coarsely sampled
+                  trace along time (as coarse as 0.02s per sample),
+                  hence substantially reduces the size of the proposed
+                  optimization problem. Last, we show the
+                  effectiveness of the method for frequency-domain FWI
+                  on the Marmousi model.},
+  keywords = {extrapolation, sparse, FWI, SEG, private},
+  note = {submitted to the SEG conference},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2016/wang2016SEGfde/wang2016SEGfde.html}
+}
+
+
 @UNPUBLISHED{wason2016GEOPctl,
   author = {Haneet Wason and Felix Oghenekohwo and Felix J. Herrmann},
-  title = {Cheap time lapse with distributed Compressive Sensing---impact on repeatability},
+  title = {Cheap time lapse with distributed {Compressive Sensing}---impact on repeatability},
   year = {2016},
   keywords = {marine acquisition, time-lapse seismic, off-the-grid recovery, random sampling, joint recovery method, optimization, private},
   note = {to be submitted to Geophysics}
 }
 
 
-%-----2015-----%
-
-@UNPUBLISHED{bougher2015CSEGust,
-  author = {Ben B. Bougher and Felix J. Herrmann},
-  title = {Using the scattering transform to predict stratigraphic units from well logs},
-  year = {2015},
-  abstract = {Much of geophysical interpretation relies on trained
-                  pattern recognition of signals and images, a
-                  workflow that can be modeled by supervised machine
-                  learning. A challenge of supervised learning is
-                  determining a physically meaningful feature set that
-                  can successfully classify the data. Defined by a
-                  network of cascading wavelets, the scattering
-                  transform provides a non-linear multiscale analysis
-                  that has deep connections to the fractal statistics
-                  of the signal. Interestingly, the scattering
-                  transform takes the form of a pre-trained
-                  convolutional neural network. This paper uses the
-                  scattering transform to extract features from well
-                  logs in order to train a classifier that can predict
-                  stratigraphic units. The methodology is tested on
-                  interpreted well logs from Trenton-Black River
-                  project and initial results are presented.},
-  keywords = {machine learning, scattering transform, well logs, private},
-  note = {Submitted to CSEG Recorder on November 16.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/bougher2015CSEGust/bougher2015CSEGust.html}
+@UNPUBLISHED{witte2016SEGpve,
+  author = {Philipp A. Witte and Christiaan C. Stolk and Felix J. Herrmann},
+  title = {Phase velocity error minimizing scheme for the anisotropic pure {P-wave} equation},
+  year = {2016},
+  abstract = {Pure P-wave equations for acoustic modeling in
+                  transverse isotropic media are derived by
+                  approximating the exact pure Pwave dispersion
+                  relation. In this work, we present an alternative
+                  approach to the approximate dispersion relation of
+                  Etgen and Brandsberg-Dahl, in which we approximate
+                  the exact dispersion relation through a polynomial
+                  expansion and determine its coefficients by solving
+                  a linear least squares problem that minimizes the
+                  phase velocity error over the entire range of phase
+                  angles. The coefficients are also optimized over a
+                  pre-defined range of Thomsen parameters, so that the
+                  phase error is small for models with spatially
+                  varying anisotropy. Phase velocity error analysis
+                  shows that the optimized pure P-wave equation is up
+                  to one order of magnitude more accurate than other
+                  popular pure P-wave equations, even for highly
+                  non-elliptic anisotropy. The optimized equation can
+                  be easily turned into a time-domain forward modeling
+                  scheme and comparisons of the modeled waveforms with
+                  analytical travel times once more illustrate its
+                  high accuracy. We also provide an efficient
+                  implementation of our approach for 3D tilted TI
+                  media that limits the count of fast Fourier
+                  transforms per time step to a number that is
+                  comparable to other pure P-wave equations.},
+  keywords = {anisotropy, modelling, TTI, least squares, SEG, private},
+  note = {submitted to the SEG conference},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2016/witte2016SEGpve/witte2016SEGpve.html}
 }
 
+
+@UNPUBLISHED{yang2016SEGtds,
+  author = {Mengmeng Yang and Philipp A. Witte and Zhilong Fang and Felix J. Herrmann},
+  title = {Time-domain sparsity-promoting least-squares migration with source estimation},
+  year = {2016},
+  abstract = {Traditional reverse-time migration (RTM) gives images
+                  with wrong amplitudes and low
+                  resolution. Least-squares RTM (LS-RTM) on the other
+                  hand, is capable of obtaining true-amplitude images
+                  as solutions of $\ell_2$-norm norm minimization
+                  problems by fitting the synthetic and observed
+                  reflection data. The shortcoming of this approach is
+                  that solutions of these $\ell_2$ problems are
+                  typically smoothed, tend to be overfitted, and
+                  computationally too expensive because it requires
+                  compared to standard RTM too many iterations. By
+                  working with randomized subsets of data only, the
+                  computational costs of LS-RTM can be brought down to
+                  an acceptable level while producing artifact-free
+                  high-resolution images without overfitting the
+                  data. While initial results of these "compressive
+                  imaging" methods were encouraging various open
+                  issues remain including guaranteed convergence,
+                  algorithmic complexity of the solver, and lack of
+                  on-the-fly source estimation for LS-RTMs with
+                  wave-equation solvers based on time-stepping. By
+                  including on-the-fly source-time function estimation
+                  into the method of Linearized Bregman (LB), on which
+                  we reported before, we tackle all these issues
+                  resulting in a easy-to-implement algorithm that
+                  offers flexibility in the trade-off between the
+                  number of iterations and the number of wave-equation
+                  solves per iteration for a fixed total number of
+                  wave-equation solves. Application of our algorithm
+                  on a 2D synthetic shows that we are able to obtain
+                  high-resolution images, including accurate estimates
+                  of the wavelet, for a single pass through the
+                  data. The produced image, which is by virtue of the
+                  inversion deconvolved with respect to the wavelet,
+                  is roughly of the same quality as the image obtained
+                  given the correct source function.},
+  keywords = {time domain, least squares, RTM, source estimation, SEG, private},
+  note = {submitted to the SEG conference},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2016/yang2016SEGtds/yang2016SEGtds.html}
+}
+
+
+%-----2015-----%
 
 @UNPUBLISHED{lopez2015IEEEogl,
   author = {Oscar Lopez and Rajiv Kumar and Ozgur Yilmaz and Felix J. Herrmann},
@@ -15947,7 +16281,7 @@
                   structured) grid. However, in many practical
                   situations the measurements are taken on an
                   irregular grid (that is completely known). This
-                  results in an ``unstructured data matrix'' that is
+                  results in an "unstructured data matrix" that is
                   less fit for the low rank model in comparison to its
                   regular counterpart and therefore subject to
                   degraded reconstruction via rank penalization
@@ -16071,6 +16405,39 @@
 % This file was created with JabRef 2.8.1.
 % Encoding: MacRoman
 
+@ARTICLE{bougher2015CSEGust,
+  author = {Ben B. Bougher and Felix J. Herrmann},
+  title = {Using the scattering transform to predict stratigraphic units from well logs},
+  journal = {CSEG Recorder},
+  year = {2016},
+  month = {01},
+  volume = {41},
+  number = {1},
+  pages = {22-25},
+  abstract = {Much of geophysical interpretation relies on trained
+                  pattern recognition of signals and images, a
+                  workflow that can be modeled by supervised machine
+                  learning. A challenge of supervised learning is
+                  determining a physically meaningful feature set that
+                  can successfully classify the data. Defined by a
+                  network of cascading wavelets, the scattering
+                  transform provides a non-linear multiscale analysis
+                  that has deep connections to the fractal statistics
+                  of the signal. Interestingly, the scattering
+                  transform takes the form of a pre-trained
+                  convolutional neural network. This paper uses the
+                  scattering transform to extract features from well
+                  logs in order to train a classifier that can predict
+                  stratigraphic units. The methodology is tested on
+                  interpreted well logs from Trenton-Black River
+                  project and initial results are presented.},
+  keywords = {machine learning, scattering transform, well logs},
+  note = {(CSEG Recorder)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/CSEGRecorder/2016/bougher2015CSEGust/bougher2015CSEGust.html},
+  url2 = {http://csegrecorder.com/articles/view/using-the-scattering-transform-to-predict-strat-units-from-well-logs}
+}
+
+
 @ARTICLE{esser2016TLEcwi,
   author = {Ernie Esser and Llu\'{i}s Guasch and Felix J. Herrmann and Mike Warner},
   title = {Constrained waveform inversion for automatic salt flooding},
@@ -16125,7 +16492,12 @@
 @ARTICLE{lin2015scatterEPSI,
   author = {Tim T.Y. Lin and Felix J. Herrmann},
   title = {Estimation of primaries by sparse inversion with scattering-based multiple predictions for data with large gaps},
+  journal = {Geophysics},
   year = {2016},
+  month = {04},
+  volume = {81},
+  number = {3},
+  pages = {V183-V197},
   abstract = {We propose to solve the Estimation of Primaries by
                   Sparse Inversion problem without any explicit data
                   reconstruction, from a seismic record with missing
@@ -16161,7 +16533,8 @@
                   scheme outperforms pre-interpolation of the
                   near-offset gap.},
   keywords = {multiples, REPSI, EPSI, scattering, sparsity, optimization},
-  note = {(accepted to be published in Geophysics)},
+  note = {(Geophysics)},
+  doi = {10.1190/geo2015-0263.1},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2016/lin2015scatterEPSI/lin2015scatterEPSI.html}
 }
 

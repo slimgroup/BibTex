@@ -16332,54 +16332,6 @@
 }
 
 
-@UNPUBLISHED{tu2015GJIsem,
-  author = {Ning Tu and Aleksandr Y. Aravkin and Tristan van Leeuwen and Tim T.Y. Lin and Felix J. Herrmann},
-  title = {Source estimation with surface-related multiples---fast ambiguity-resolved seismic imaging},
-  year = {2015},
-  abstract = {We address the problem of obtaining a reliable seismic
-                  image without prior knowledge of the source wavelet,
-                  especially from data that contain strong
-                  surface-related multiples. Conventional reverse-time
-                  migration requires prior knowledge of the source
-                  wavelet, which is either technically or
-                  computationally challenging to accurately determine;
-                  inaccurate estimates of the source wavelet can
-                  result in seriously degraded reverse-time migrated
-                  images, and therefore wrong geological
-                  interpretations. To solve this problem, we present a
-                  "wavelet-free" imaging procedure that simultaneously
-                  inverts for the source wavelet and the seismic
-                  image, by tightly integrating source estimation into
-                  a fast least-squares imaging framework, namely
-                  compressive imaging, given a reasonably accurate
-                  background velocity model. However, this joint
-                  inversion problem is difficult to solve as it is
-                  plagued with local minima and the ambiguity with
-                  respect to amplitude scalings, because of the
-                  multiplicative, and therefore nonlinear, appearance
-                  of the source wavelet in the otherwise linear
-                  formalism. We have found a way to solve this
-                  nonlinear joint-inversion problem using a technique
-                  called variable projection, and a way to overcome
-                  the scaling ambiguity by including surface-related
-                  multiples in our imaging procedure following recent
-                  developments in surface-related multiple prediction
-                  by sparse inversion. As a result, we obtain without
-                  prior knowledge of the source wavelet
-                  high-resolution seismic images, comparable in
-                  quality to images obtained assuming the true source
-                  wavelet is known. By leveraging the computationally
-                  efficient compressive-imaging methodology, these
-                  results are obtained at affordable computational
-                  costs compared with conventional processing work
-                  flows that include surface-related multiple removal
-                  and reverse-time migration.},
-  keywords = {inverse theory, time series analysis, computational seismology, wave propagation, free surface, multiples, seismic imaging, private},
-  note = {Submitted to Geophysical Journal International on May 14. Revision 1 submitted on November 29.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/tu2015GJIsem/tu2015GJIsem.html}
-}
-
-
 @UNPUBLISHED{vanleeuwen2015GPWEMVA,
   author = {Tristan van Leeuwen and Rajiv Kumar and Felix J. Herrmann},
   title = {Enabling affordable omnidirectional subsurface extended image volumes via probing},
@@ -16430,6 +16382,8 @@
 
 % This file was created with JabRef 2.8.1.
 % Encoding: MacRoman
+
+%----- 2016 -----%
 
 @ARTICLE{bougher2015CSEGust,
   author = {Ben B. Bougher and Felix J. Herrmann},
@@ -16613,51 +16567,58 @@
 }
 
 
-@ARTICLE{vanleeuwen2015IPpmp,
-  author = {Tristan van Leeuwen and Felix J. Herrmann},
-  title = {A penalty method for {PDE}-constrained optimization in inverse problems},
-  journal = {Inverse Problems}, 
-  year = {2015},
-  month = {12},
-  volume = {32}, 
-  number = {1},
-  pages = {015007},
-  abstract = {Many inverse and parameter estimation problems can be
-                  written as PDE-constrained optimization
-                  problems. The goal is to infer the parameters,
-                  typically coefficients of the PDE, from partial
-                  measurements of the solutions of the PDE for several
-                  right-hand sides. Such PDE-constrained problems can
-                  be solved by finding a stationary point of the
-                  Lagrangian, which entails simultaneously updating
-                  the parameters and the (adjoint) state
-                  variables. For large-scale problems, such an
-                  all-at-once approach is not feasible as it requires
-                  storing all the state variables. In this case one
-                  usually resorts to a reduced approach where the
-                  constraints are explicitly eliminated (at each
-                  iteration) by solving the PDEs. These two
-                  approaches, and variations thereof, are the main
-                  workhorses for solving PDE-constrained optimization
-                  problems arising from inverse problems. In this
-                  paper, we present an alternative method that aims to
-                  combine the advantages of both approaches. Our
-                  method is based on a quadratic penalty formulation
-                  of the constrained optimization problem. By
-                  eliminating the state variable, we develop an
-                  efficient algorithm that has roughly the same
-                  computational complexity as the conventional reduced
-                  approach while exploiting a larger search
-                  space. Numerical results show that this method
-                  indeed reduces some of the nonlinearity of the
-                  problem and is less sensitive to the initial
-                  iterate.},
-  keywords = {penalty method, PDE, optimization, inverse problems},
-  note = {(Inverse Problems)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InverseProblems/2015/vanleeuwen2015IPpmp/vanleeuwen2015IPpmp.pdf},
-  url2 = {http://stacks.iop.org/0266-5611/32/i=1/a=015007}
+@ARTICLE{tu2015GJIsem,
+  author = {Ning Tu and Aleksandr Y. Aravkin and Tristan van Leeuwen and Tim T.Y. Lin and Felix J. Herrmann},
+  title = {Source estimation with surface-related multiples---fast ambiguity-resolved seismic imaging},
+  journal = {Geophysical Journal International},
+  year = {2016},
+  month = {03},
+  abstract = {We address the problem of obtaining a reliable seismic
+                  image without prior knowledge of the source wavelet,
+                  especially from data that contain strong
+                  surface-related multiples. Conventional reverse-time
+                  migration requires prior knowledge of the source
+                  wavelet, which is either technically or
+                  computationally challenging to accurately determine;
+                  inaccurate estimates of the source wavelet can
+                  result in seriously degraded reverse-time migrated
+                  images, and therefore wrong geological
+                  interpretations. To solve this problem, we present a
+                  "wavelet-free" imaging procedure that simultaneously
+                  inverts for the source wavelet and the seismic
+                  image, by tightly integrating source estimation into
+                  a fast least-squares imaging framework, namely
+                  compressive imaging, given a reasonably accurate
+                  background velocity model. However, this joint
+                  inversion problem is difficult to solve as it is
+                  plagued with local minima and the ambiguity with
+                  respect to amplitude scalings, because of the
+                  multiplicative, and therefore nonlinear, appearance
+                  of the source wavelet in the otherwise linear
+                  formalism. We have found a way to solve this
+                  nonlinear joint-inversion problem using a technique
+                  called variable projection, and a way to overcome
+                  the scaling ambiguity by including surface-related
+                  multiples in our imaging procedure following recent
+                  developments in surface-related multiple prediction
+                  by sparse inversion. As a result, we obtain without
+                  prior knowledge of the source wavelet
+                  high-resolution seismic images, comparable in
+                  quality to images obtained assuming the true source
+                  wavelet is known. By leveraging the computationally
+                  efficient compressive-imaging methodology, these
+                  results are obtained at affordable computational
+                  costs compared with conventional processing work
+                  flows that include surface-related multiple removal
+                  and reverse-time migration.},
+  keywords = {inverse theory, time series analysis, computational seismology, wave propagation, free surface, multiples, seismic imaging},
+  note = {(published online in Geophysical Journal International)},
+  doi = {10.1093/gji/ggw097},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2015/tu2015GJIsem/tu2015GJIsem.html}
 }
 
+
+%----- 2015 -----%
 
 @ARTICLE{dasilva2014htuck,
   author = {Curt Da Silva and Felix J. Herrmann},
@@ -16697,55 +16658,6 @@
   doi = {10.1016/j.laa.2015.04.015},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/LinearAlgebraAndItsApplications/2015/dasilva2014htuck/dasilva2014htuck.pdf},
   url2 = {http://www.sciencedirect.com/science/article/pii/S0024379515002530}
-}
-
-
-@ARTICLE{kumar2015sss,
-  author = {Rajiv Kumar and Haneet Wason and Felix J. Herrmann},
-  title = {Source separation for simultaneous towed-streamer marine acquisition --- a compressed sensing approach},
-  journal = {Geophysics}, 
-  year = {2015},
-  month = {11},
-  volume = {80}, 
-  number = {6}, 
-  pages = {WD73-WD88},
-  abstract = {Simultaneous marine acquisition is an economic way to
-                  sample seismic data and speed up acquisition,
-                  wherein single or multiple source vessels fire
-                  sources at near-simultaneous or slightly random
-                  times, resulting in overlapping shot records. The
-                  current paradigm for simultaneous towed-streamer
-                  marine acquisition incorporates “low variability” in
-                  source firing times, i.e., 0 ≤ 1 or 2 s because the
-                  sources and receivers are moving. This results in a
-                  low degree of randomness in simultaneous data, which
-                  is challenging to separate (into its constituent
-                  sources) using compressed-sensing-based separation
-                  techniques because randomization is key to
-                  successful recovery via compressed sensing. We have
-                  addressed the challenge of source separation for
-                  simultaneous towed-streamer acquisitions via two
-                  compressed-sensing-based approaches, i.e., sparsity
-                  promotion and rank minimization. We have evaluated
-                  the performance of the sparsity-promotion- and
-                  rank-minimization-based techniques by simulating two
-                  simultaneous towed-streamer acquisition scenarios,
-                  i.e., over/under and simultaneous long offset. A
-                  field data example from the Gulf of Suez for the
-                  over/under acquisition scenario was also
-                  developed. We observed that the proposed approaches
-                  gave good and comparable recovery qualities of the
-                  separated sources, but the rank-minimization
-                  technique outperformed the sparsity-promoting
-                  technique in terms of the computational time and
-                  memory. We also compared these two techniques with
-                  the normal-moveout-based median-filtering-type
-                  approach, which had comparable results.},
-  keywords = {acquisition, 2D, inversion, marine, source separation, optimization, sparsity, rank},
-  note = {(Geophysics)},
-  doi = {10.1190/geo2015-0108.1},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2015/kumar2015sss/kumar2015sss_revised.pdf},
-  url2 = {http://library.seg.org/doi/abs/10.1190/geo2015-0108.1}
 }
 
 
@@ -16805,51 +16717,52 @@
 }
 
 
-@ARTICLE{tu2015TLEfls,
-  author = {Ning Tu and Felix J. Herrmann},
-  title = {Fast least-squares imaging with surface-related multiples: application to a {North}-{Sea} data set},
-  journal = {The Leading Edge}, 
+@ARTICLE{kumar2015sss,
+  author = {Rajiv Kumar and Haneet Wason and Felix J. Herrmann},
+  title = {Source separation for simultaneous towed-streamer marine acquisition --- a compressed sensing approach},
+  journal = {Geophysics}, 
   year = {2015},
-  volume = {34}, 
-  number = {7}, 
-  pages = {788–794},
-  abstract = {In marine seismic acquisition, surface-related multiples
-                  constitute a significant portion of the acquired
-                  data. Typically, multiples are removed during
-                  early-stage data-processing as they can lead to
-                  phantom reflectors during migration that may result
-                  in erroneous geological interpretations. However, if
-                  properly dealt with, multiples can provide valuable
-                  extra information and complement primaries in
-                  illuminating the subsurface. In this article, we
-                  demonstrate the limitation of the reverse-time
-                  migration in imaging these multiples, and present an
-                  alternative inversion procedure that is
-                  computationally efficient, that jointly maps both
-                  primaries and multiples to the true reflectors, and
-                  where the source function is estimated on the
-                  fly. As a result, we obtain high-quality, mostly
-                  artifact-free, broad-band images where the imprint
-                  of the source-function are partly removed at a
-                  computationally affordable expense compared to the
-                  combined costs of the wave-equation based
-                  surface-related multiple elimination and the
-                  reverse-time migration. We achieve all this by
-                  including the total downgoing wavefields as areal
-                  sources in the least-squares migration in
-                  combination with curvelet-domain sparsity promotion.
-                  We apply the proposed method to a shallow-water
-                  marine data set from the North sea, which contains
-                  abundant short-period surface-related multiples, and
-                  show its efficacy in eliminating coherent imaging
-                  artifacts associated with these multiples. We also
-                  demonstrate the benefits of joint imaging of
-                  primaries and multiples compared to imaging these
-                  signal components separately.},
-  keywords = {migration, multiples, inversion, least squares, field data},
-  note = {(The Leading Edge)},
-  doi = {10.1190/tle34070788.1},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2015/tu2015TLEfls/tu2015TLEfls.html}
+  month = {11},
+  volume = {80}, 
+  number = {6}, 
+  pages = {WD73-WD88},
+  abstract = {Simultaneous marine acquisition is an economic way to
+                  sample seismic data and speed up acquisition,
+                  wherein single or multiple source vessels fire
+                  sources at near-simultaneous or slightly random
+                  times, resulting in overlapping shot records. The
+                  current paradigm for simultaneous towed-streamer
+                  marine acquisition incorporates “low variability” in
+                  source firing times, i.e., 0 ≤ 1 or 2 s because the
+                  sources and receivers are moving. This results in a
+                  low degree of randomness in simultaneous data, which
+                  is challenging to separate (into its constituent
+                  sources) using compressed-sensing-based separation
+                  techniques because randomization is key to
+                  successful recovery via compressed sensing. We have
+                  addressed the challenge of source separation for
+                  simultaneous towed-streamer acquisitions via two
+                  compressed-sensing-based approaches, i.e., sparsity
+                  promotion and rank minimization. We have evaluated
+                  the performance of the sparsity-promotion- and
+                  rank-minimization-based techniques by simulating two
+                  simultaneous towed-streamer acquisition scenarios,
+                  i.e., over/under and simultaneous long offset. A
+                  field data example from the Gulf of Suez for the
+                  over/under acquisition scenario was also
+                  developed. We observed that the proposed approaches
+                  gave good and comparable recovery qualities of the
+                  separated sources, but the rank-minimization
+                  technique outperformed the sparsity-promoting
+                  technique in terms of the computational time and
+                  memory. We also compared these two techniques with
+                  the normal-moveout-based median-filtering-type
+                  approach, which had comparable results.},
+  keywords = {acquisition, 2D, inversion, marine, source separation, optimization, sparsity, rank},
+  note = {(Geophysics)},
+  doi = {10.1190/geo2015-0108.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2015/kumar2015sss/kumar2015sss_revised.pdf},
+  url2 = {http://library.seg.org/doi/abs/10.1190/geo2015-0108.1}
 }
 
 
@@ -16858,6 +16771,7 @@
   title = {Fast imaging with surface-related multiples by sparse inversion},
   journal = {Geophysical Journal International}, 
   year = {2015},
+  month = {04},
   volume = {201}, 
   number = {1}, 
   pages = {304-317}, 
@@ -16912,6 +16826,103 @@
   url2 = {http://gji.oxfordjournals.org/cgi/content/full/ggv020?ijkey=pKzrSXbtxjlOjzd&keytype=ref}
 }
 
+
+@ARTICLE{tu2015TLEfls,
+  author = {Ning Tu and Felix J. Herrmann},
+  title = {Fast least-squares imaging with surface-related multiples: application to a {North}-{Sea} data set},
+  journal = {The Leading Edge}, 
+  year = {2015},
+  month = {07},
+  volume = {34}, 
+  number = {7}, 
+  pages = {788–794},
+  abstract = {In marine seismic acquisition, surface-related multiples
+                  constitute a significant portion of the acquired
+                  data. Typically, multiples are removed during
+                  early-stage data-processing as they can lead to
+                  phantom reflectors during migration that may result
+                  in erroneous geological interpretations. However, if
+                  properly dealt with, multiples can provide valuable
+                  extra information and complement primaries in
+                  illuminating the subsurface. In this article, we
+                  demonstrate the limitation of the reverse-time
+                  migration in imaging these multiples, and present an
+                  alternative inversion procedure that is
+                  computationally efficient, that jointly maps both
+                  primaries and multiples to the true reflectors, and
+                  where the source function is estimated on the
+                  fly. As a result, we obtain high-quality, mostly
+                  artifact-free, broad-band images where the imprint
+                  of the source-function are partly removed at a
+                  computationally affordable expense compared to the
+                  combined costs of the wave-equation based
+                  surface-related multiple elimination and the
+                  reverse-time migration. We achieve all this by
+                  including the total downgoing wavefields as areal
+                  sources in the least-squares migration in
+                  combination with curvelet-domain sparsity promotion.
+                  We apply the proposed method to a shallow-water
+                  marine data set from the North sea, which contains
+                  abundant short-period surface-related multiples, and
+                  show its efficacy in eliminating coherent imaging
+                  artifacts associated with these multiples. We also
+                  demonstrate the benefits of joint imaging of
+                  primaries and multiples compared to imaging these
+                  signal components separately.},
+  keywords = {migration, multiples, inversion, least squares, field data},
+  note = {(The Leading Edge)},
+  doi = {10.1190/tle34070788.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2015/tu2015TLEfls/tu2015TLEfls.html}
+}
+
+
+@ARTICLE{vanleeuwen2015IPpmp,
+  author = {Tristan van Leeuwen and Felix J. Herrmann},
+  title = {A penalty method for {PDE}-constrained optimization in inverse problems},
+  journal = {Inverse Problems}, 
+  year = {2015},
+  month = {12},
+  volume = {32}, 
+  number = {1},
+  pages = {015007},
+  abstract = {Many inverse and parameter estimation problems can be
+                  written as PDE-constrained optimization
+                  problems. The goal is to infer the parameters,
+                  typically coefficients of the PDE, from partial
+                  measurements of the solutions of the PDE for several
+                  right-hand sides. Such PDE-constrained problems can
+                  be solved by finding a stationary point of the
+                  Lagrangian, which entails simultaneously updating
+                  the parameters and the (adjoint) state
+                  variables. For large-scale problems, such an
+                  all-at-once approach is not feasible as it requires
+                  storing all the state variables. In this case one
+                  usually resorts to a reduced approach where the
+                  constraints are explicitly eliminated (at each
+                  iteration) by solving the PDEs. These two
+                  approaches, and variations thereof, are the main
+                  workhorses for solving PDE-constrained optimization
+                  problems arising from inverse problems. In this
+                  paper, we present an alternative method that aims to
+                  combine the advantages of both approaches. Our
+                  method is based on a quadratic penalty formulation
+                  of the constrained optimization problem. By
+                  eliminating the state variable, we develop an
+                  efficient algorithm that has roughly the same
+                  computational complexity as the conventional reduced
+                  approach while exploiting a larger search
+                  space. Numerical results show that this method
+                  indeed reduces some of the nonlinearity of the
+                  problem and is less sensitive to the initial
+                  iterate.},
+  keywords = {penalty method, PDE, optimization, inverse problems},
+  note = {(Inverse Problems)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InverseProblems/2015/vanleeuwen2015IPpmp/vanleeuwen2015IPpmp.pdf},
+  url2 = {http://stacks.iop.org/0266-5611/32/i=1/a=015007}
+}
+
+
+%----- 2014 -----%
 
 @ARTICLE{vanLeeuwen2014SISC3Dfds,
   author = {Tristan van Leeuwen and Felix J. Herrmann},

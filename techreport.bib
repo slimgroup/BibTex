@@ -2,6 +2,52 @@
 % Encoding: MacRoman
 
 %-----2016-----%
+@TECHREPORT{louboutin2016SEGocp,
+  author = {Mathias Louboutin and Gerard Gorman and Felix J. Herrmann},
+  title = {Optimizing the computational performance and maintainability of time-domain modelling---leveraging multiple right-hand-sides},
+  year = {2016},
+  month = {6},
+  number = {TR-EOAS-2016-2},
+  institution = {UBC},
+  abstract = {Numerical solvers for the wave equation are a key
+                  component of Full-Waveform Inversion (FWI) and
+                  Reverse-Time Migration (RTM). The main computational
+                  cost of a wave-equation solver stems from the
+                  computation of the Laplacian at each time step. When
+                  using a finite difference discretization this can be
+                  characterized as a structured grid computation
+                  within Colella's Seven Dwarfs. Independent of the
+                  degree of parallelization the performance will be
+                  limited by the relatively low operational intensity
+                  (number of operations divided by memory traffic) of
+                  finite-difference stencils, that is so say that the
+                  method is memory bandwidth bound. For this reason
+                  many developers have focused on porting their code
+                  to platforms that have higher memory bandwidth, such
+                  as GPU's, or put significant effort into highly
+                  intrusive optimisations. However, these
+                  optimisations rarely strike the right performance vs
+                  productivity balance as the software becomes less
+                  maintainable and extensible. By solving the wave
+                  equation for multiple sources/right-hand-sides
+                  (RHSs) at once, we overcome this problem arriving at
+                  a time-stepping solver with higher operational
+                  intensity. In essence, we arrive at this result by
+                  turning the usual matrix-vector products into a
+                  matrix-matrix products where the first matrix
+                  implements the discretized wave equation and each
+                  column of the second matrix contain separate
+                  wavefields for each given source. By making this
+                  relatively minor change to the solver we readily
+                  achieved a $\times{2}$ speedup. While we limit
+                  ourselves to acoustic modeling, our approach can
+                  easily be extended to the anisotropic or elastic
+                  cases.},
+  keywords = {modelling, 3D, time-domain, SEG},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2016/louboutin2016SEGocp/louboutin2016SEGocp.html}
+}
+
+
 
 @TECHREPORT{herrmann2016SLBors,
   author = {Felix J. Herrmann},

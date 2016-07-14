@@ -3,52 +3,96 @@
 
 %-----2016-----%
 
+@UNPUBLISHED{esser2016tvr,
+  author = {Ernie Esser and Llu\'{i}s Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  title = {Total-variation regularization strategies in full-waveform inversion},
+  year = {2016},
+  abstract = {We propose an extended full-waveform inversion
+                  formulation that includes general convex constraints
+                  on the model. Though the full problem is highly
+                  nonconvex, the overarching optimization scheme
+                  arrives at geologically plausible results by solving
+                  a sequence of relaxed and warm-started constrained
+                  convex subproblems. The combination of box,
+                  total-variation, and successively relaxed asymmetric
+                  total-variation constraints allows us to steer free
+                  from parasitic local minima while keeping the
+                  estimated physical parameters laterally continuous
+                  and in a physically realistic range. For accurate
+                  starting models, numerical experiments carried out
+                  on the challenging 2004 BP velocity benchmark
+                  demonstrate that bound and total-variation
+                  constraints improve the inversion result
+                  significantly by removing inversion artifacts,
+                  related to source encoding, and by clearly improved
+                  delineation of top, bottom, and flanks of a
+                  high-velocity high-contrast salt inclusion. The
+                  experiments also show that for poor starting models
+                  these two constraints by themselves are insufficient
+                  to detect the bottom of high-velocity inclusions
+                  such as salt. Inclusion of the one-sided asymmetric
+                  total-variation constraint overcomes this issue by
+                  discouraging velocity lows to buildup during the
+                  early stages of the inversion. To the author's
+                  knowledge the presented algorithm is the first to
+                  successfully remove the imprint of local minima
+                  caused by poor starting models and band-width
+                  limited finite aperture data.},
+  keywords = {full-waveform inversion, constrained optimization, total variation, salt, hinge loss, private},
+  note = {Submitted on July 13, 2016.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/esser2016tvr/esser2016tvr.pdf}
+}
+
+
 @UNPUBLISHED{oghenekohwo2016GEOPctl,
   author = {Felix Oghenekohwo and Haneet Wason and Ernie Esser and Felix J. Herrmann},
-  title = {Cheap time lapse with distributed Compressive Sensing---exploiting common information among the vintages},
+  title = {Low-cost time-lapse seismic with distributed {Compressive} {Sensing}---exploiting common information amongst the vintages},
   year = {2016},
-  abstract = {Time-lapse seismic has been a powerful, but technically
-                  challenging, practice for monitoring changes due to
-                  production. Aside from physical changes amongst
-                  time-lapse surveys---such as noise and variations in
-                  water column velocities, over which we have limited
-                  control---executing colocated densely sampled
-                  baseline and monitor surveys with high degrees of
-                  replicability are expensive propositions. We
-                  demonstrate that under “ideal” circumstances, where
-                  the surveys are in principle replicable,
-                  high-quality pre-stack data can be obtained from
-                  cheap randomized subsampled measurements that are
-                  observed from nonreplicated surveys. Aside from the
-                  obvious economic advantage of removing reliance on
-                  replication during acquisition, we find that the
-                  recovered densely sampled pre-stack baseline and
+  abstract = {Time-lapse seismic is a powerful technology for
+                  monitoring a variety of subsurface changes due to
+                  reservoir fluid flow. However, the practice can be
+                  technically challenging when one seeks to acquire
+                  colocated time-lapse surveys with high degrees of
+                  replicability amongst the shot locations. We
+                  demonstrate that under "ideal" circumstances, where
+                  we ignore errors related to taking measurements off
+                  the grid, high-quality prestack data can be obtained
+                  from randomized subsampled measurements that are
+                  observed from surveys where we choose not to revisit
+                  the same randomly subsampled on-the-grid shot
+                  locations. Our acquisition is low cost since our
+                  measurements are subsampled. We find that the
+                  recovered finely sampled prestack baseline and
                   monitor data actually improve significantly when the
-                  acquisitions are not replicated. We achieve this
-                  result by using the fact that different time-lapse
-                  data share information and that nonreplicated
-                  surveys can add information when pre-stack data are
-                  recovered jointly. Whenever the time-lapse data
-                  exhibit joint structure---i.e., are compressible in
-                  some transform domain and share
-                  information---sparsity-promoting recovery of the
-                  “common component” and “innovations”, with respect
-                  to this common component, outperforms independent
-                  recovery of both the pre-stack baseline and monitor
-                  data. The recovered time-lapse data are of high
-                  enough quality to serve as input to extract
-                  post-stack attributes used to compute time-lapse
-                  differences. Without joint recovery, artifacts---due
-                  to the randomized subsampling---lead to
-                  deterioration of the degree of repeatability of the
-                  time-lapse data. We support our claims by carrying
-                  out experiments that collect reliable statistics
-                  from thousands of repeated experiments. We also
-                  confirm that high degrees of repeatability are
-                  achievable for an ocean-bottom cable survey acquired
-                  with time-jittered continuous recording.},
+                  same on-the-grid shot locations are not
+                  revisited. We achieve this result by using the fact
+                  that different time-lapse data share information and
+                  that nonreplicated (on-the-grid) acquisitions can
+                  add information when prestack data are recovered
+                  jointly. Whenever the time-lapse data exhibit joint
+                  structure---i.e., are compressible in some transform
+                  domain and share information---sparsity-promoting
+                  recovery of the "common component" and
+                  "innovations", with respect to this common
+                  component, outperforms independent recovery of both
+                  the prestack baseline and monitor data. The
+                  recovered time-lapse data are of high enough quality
+                  to serve as input to extract poststack attributes
+                  used to compute time-lapse differences. Without
+                  joint recovery, artifacts---due to the randomized
+                  subsampling---lead to deterioration of the degree of
+                  repeatability of the time-lapse data. We support our
+                  claims by carrying out experiments that collect
+                  reliable statistics from thousands of repeated
+                  experiments. We also confirm that high degrees of
+                  repeatability are achievable for an ocean-bottom
+                  cable survey acquired with time-jittered continuous
+                  recording. This is part 1 of a two-paper series on
+                  time-lapse seismic with compressed sensing. Part 2:
+                  "Cheap time-lapse with distributed Compressive
+                  Sensing---impact on repeatability".},
   keywords = {acquisition, time-lapse seismic, marine, random sampling, joint recovery method, private},
-  note = {Submitted to Geophysics on February 5, 2016.},
+  note = {Revision 1 submitted on July 7, 2016.},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/oghenekohwo2016GEOPctl/oghenekohwo2016GEOPctl.html}
 }
 

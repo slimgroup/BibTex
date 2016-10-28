@@ -1,3 +1,626 @@
+%----- 2016 (FALL) -----%
+
+@PRESENTATION{bougher2016SINBADFaaa,
+  title = {Amplitude vs. angle analysis as an unsupervised learning problem},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Amplitude vs. angle analysis (AVA) of pre-stack seismic
+                  data is a commonly used method for inferring
+                  petrophysical information from seismic
+                  data. Conventionally, a two-term linearized rock
+                  physics model (Shuey equation) is used to invert
+                  angle-domain common-image gathers. Multivariate
+                  analysis of the inverted terms leads to a background
+                  of siliciclastic interfaces, where outlying points
+                  are associated with hydrocarbon saturated sands.
+                  The acquisition and processing of seismic data does
+                  not result in highly-calibrated measurements that
+                  adhere to the rock physics model, which often
+                  inhibits the success of AVA analysis. We offer an
+                  alternative approach that uses PCA-based methods to
+                  learn projections directly from the data without the
+                  need of a physical model. Results on synthetic and
+                  field data show that PCA-based projections can
+                  improve segmentation of potential reservoirs in
+                  seismic data.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/bougher2016SINBADFaaa/bougher2016SINBADFaaa.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/bougher2016SINBADFaaa/bougher2016SINBADFaaa.mov},
+  author = {Ben B. Bougher and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{dasilva2016SINBADFccs,
+  title = {Composite convex smooth optimization with seismic data processing applications},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {In this work, we show a general technique for solving
+                  optimization problems that are comprised of
+                  minimizing a composition of a convex, non-smooth
+                  function with a smooth function. We demonstrate this
+                  technique in the seismic data processing context
+                  applied to robust missing trace interpolation in the
+                  low-rank Hierarchical Tucker tensor format as well
+                  as cosparsity-based missing trace interpolation.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/dasilva2016SINBADFccs/dasilva2016SINBADFccs.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/dasilva2016SINBADFccs/dasilva2016SINBADFccs.mov},
+  author = {Curt Da Silva and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{dasilva2016SINBADFuse,
+  title = {A unified {2D}/{3D} software environment for large scale time-harmonic full waveform inversion},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Full Waveform Inversion is a costly and complex
+                  procedure, resulting in industrial codebases that
+                  are often written entirely in low-level languages,
+                  making them hard to understand, maintain, improve,
+                  and extend. In this work, we propose a software
+                  framework for organizing a 3D FWI environment that
+                  helps mitigate design complexities inherent in the
+                  problem in a straightforward way while delegating
+                  the performance-critical portions to low level
+                  languages to maintain efficiency. The result is a
+                  software framework that has a unified interface for
+                  2D and 3D and is flexible, efficient, scalable, and
+                  demonstrably correct. We demonstrate the
+                  effectiveness of this approach on a large scale 3D
+                  FWI example.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/dasilva2016SINBADFuse/dasilva2016SINBADFuse.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/dasilva2016SINBADFuse/dasilva2016SINBADFuse.mov},
+  author = {Curt Da Silva and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{fang2016SINBADFeaq,
+  title = {Efficient approach for quantifying uncertainty of wavefield reconstruction inversion},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Due to the noisy measurements, sparse observations,
+                  uncertain forward models, and uncertain prior
+                  parameter information, significant uncertainty
+                  arises in the inverted velocity model of
+                  full-waveform inversion. The uncertain velocity
+                  model leads to the uncertainty in the correct
+                  positions of events in the migrated images, which
+                  subsequently influences the important
+                  decision-makings in the oil and gas exploration and
+                  production (E&P) business such as the drilling
+                  decisions and economic evaluations. Therefore,
+                  understanding the uncertainty in the inverted
+                  velocity model is essential for the mitigation of
+                  the E&P risks. A common approach to accounting for
+                  uncertainty in seismic inverse problems like
+                  full-waveform inversion is to describe the unknown
+                  parameters in probabilistic by the Bayesian
+                  inference. The Bayesian inference aims at
+                  incorporating the information from the data,
+                  physics, and one’s prior knowledge to formulate a
+                  posterior distribution function to characterize the
+                  statistical properties of the unknown
+                  parameters. However, characterizing uncertainties
+                  for the large-scale full-waveform inversion in
+                  seismic exploration is prohibitively expensive since
+                  it requires thousands of function evaluations to
+                  sample the parameter space (e.g. via Markov chain
+                  Monte Carlo sampling). Apart from this, the existing
+                  methods of uncertainty quantification for
+                  full-waveform inversion is through applying the
+                  Bayesian inference to the standard method such as
+                  the adjoint-state method with the assumption that no
+                  uncertainty arises from the wave-equation. However,
+                  the wave-equation may not be able to reflect all the
+                  physics, hence, incorporating uncertainty from
+                  wave-equation might benefit the quantification of
+                  uncertainty. In this work, we propose to perform
+                  uncertainty quantification using the recently
+                  proposed wavefield reconstruction inversion
+                  technique, which gives an appropriate framework to
+                  tackle the uncertainty in wave-equation solve by
+                  adding the misfit of the wave-equation to the
+                  likelihood distribution and relaxing the
+                  wave-equation constraint. Moreover, we propose a
+                  computationally feasible approach to analyzing the
+                  posterior distribution of the wavefield
+                  reconstruction inversion method, which incorporates
+                  a Gaussian distribution that approximates the
+                  posterior distribution with an optimization-driven
+                  Gaussian simulator to sample the Gaussian
+                  distribution efficiently. Numerical examples show
+                  that comparing to the McMC method, our approach is
+                  able to produce comparable results with less
+                  computational cost. This is joint work with Curt da
+                  Silva and Rachel Kuske.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/fang2016SINBADFeaq/fang2016SINBADFeaq.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/fang2016SINBADFeaq/fang2016SINBADFeaq.mov},
+  author = {Zhilong Fang and Chia Ying Lee and Curt Da Silva and Tristan van Leeuwen and Felix J. Herrmann and Rachel Kuske}
+}
+
+
+@PRESENTATION{gorman2016SINBADFopp,
+  title = {Open {Performance} {portablE} {SeismiC} {Imaging}---{OPESCI}},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {In this project, we introduce OPESCI-FD, a Python
+                  package built on symbolic mathematics to
+                  automatically generate Finite Difference models from
+                  a high-level description of the model equations. We
+                  investigate applying this framework to generate the
+                  propagator program used in seismic imaging. We
+                  implement the 3D acoustic and anisotropic FD scheme
+                  as an example and demonstrate the advantages of
+                  usability, flexibility and accuracy of the
+                  framework. The design of OPESCI-FD aims to allow
+                  rapid development, analysis and optimisation of
+                  Finite Difference programs. OPESCI-FD is the
+                  foundation for continuing development by the OPESCI
+                  project team, building on the research presented in
+                  this report. This talk concludes by reviewing the
+                  further developments that are already under way, as
+                  well as the scope for extension to cater for other
+                  equations and numerical schemes. This joint work
+                  with SINBAD and SENAI CIMATEC and has received
+                  additional funding from Intel.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/gorman2016SINBADFopp/gorman2016SINBADFopp.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/gorman2016SINBADFopp/gorman2016SINBADFopp.mov},
+  author = {Gerard Gorman and Marcos de Aguiar and David Ham and Felix J. Herrmann and Paul Kelly and Navjot Kukreja and Michael Lange and Mathias Louboutin and Fabio Luporini and Paulius Velesko and Vincenzo Pandolfo and Felippe Vieira Zacarias}
+}
+
+
+@PRESENTATION{herrmann2016SINBADFcvp,
+  title = {Constraints versus penalties for edge-preserving full-waveform inversion},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Full-waveform inversion is challenging in complex
+                  geological areas. Even when provided with an
+                  accurate starting model, the inversion algorithms
+                  often struggle to update the velocity
+                  model. Contrary to other areas in applied
+                  geophysics, including prior information in
+                  full-waveform inversion is still relatively in its
+                  infancy. In part this is due to the fact that
+                  incorporating prior information that relates to
+                  geological settings where strong discontinuities in
+                  the velocity model dominate is difficult, because
+                  these settings call for non-smooth
+                  regularizations. We tackle this problem by including
+                  constraints on the spatial variations and value
+                  ranges of the inverted velocities, as opposed to
+                  adding penalties to the objective as is more
+                  customary in main stream geophysical inversion. By
+                  demonstrating the lack of predictability of
+                  edge-preserving inversion when the regularization is
+                  in the form of an added penalty term, we advocate
+                  the inclusion of constraints instead. Our examples
+                  show that the latter lead to more predictable
+                  results and to significant improvements in the
+                  delineation of Salt bodies. This is joint work with
+                  Bas Peters.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/herrmann2016SINBADFcvp/herrmann2016SINBADFcvp.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/herrmann2016SINBADFcvp/herrmann2016SINBADFcvp.mov},
+  author = {Felix J. Herrmann and Bas Peters}
+}
+
+
+@PRESENTATION{herrmann2016SINBADFwom,
+  title = {Welcome & {Overview} of the {Meeting}},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/herrmann2016SINBADFwom/herrmann2016SINBADFwom.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/herrmann2016SINBADFwom/herrmann2016SINBADFwom.mov},
+  author = {Felix J. Herrmann}
+}
+
+
+@PRESENTATION{kumar2016SINBADFels,
+  title = {Efficient large-scale {5D} seismic data acquisition and processing using rank-minimization},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Seismic data collection is becoming challenging because
+                  of increased demands for high-quality, long-offset
+                  and wide-azimuth data. Leveraging ideas from CS, in
+                  this work we establish a cost effective acquisition
+                  and processing techniques, which are no longer
+                  dominated by survey area size but by the sparsity of
+                  seismic data volumes. In the first part of abstract,
+                  we establish connections between random time
+                  dithering and jittered sampling in
+                  space. Specifically, we recover high-quality 5D
+                  seismic data volumes from time-jittered marine
+                  acquisition where the average inter-shot time is
+                  significantly reduced, leading to cheaper surveys
+                  due to fewer overlapping shots. The time-jittered
+                  acquisition, in conjunction with the shot separation
+                  by Singular-Value Decomposition (SVD)-free
+                  factorization based rank-minimization approach,
+                  allows us to recover high quality 5D seismic data
+                  volumes. Results are illustrated for simulations of
+                  simultaneous time-jittered continuous recording for
+                  a 3D ocean-bottom cable survey, where we outperforms
+                  existing techniques, by an order of magnitude
+                  computational speedup and using 1/20th of the
+                  memory, that use sparsity in transforms domains. The
+                  second part of abstract focussed on leveraging
+                  low-rank structure in seismic data to solve
+                  extremely large data recovery (interpolation)
+                  problems. We introduced a large–scale SVD-free
+                  optimization framework that is robust with respect
+                  to outliers and that uses information on the
+                  support. We test the efficacy of the proposed
+                  interpolation framework on a large-scale 5D seismic
+                  data, generated from the geologically complex
+                  synthetic 3D Compass velocity model, where 80\% of
+                  the data has been removed. Our findings show that
+                  major computational and memory gains are possible
+                  compared to curvelet-based reconstruction.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/kumar2016SINBADFels/kumar2016SINBADFels.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/kumar2016SINBADFels/kumar2016SINBADFels.mov},
+  author = {Rajiv Kumar and Shashin Sharan and Haneet Wason and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{kumar2016SINBADFlrm,
+  title = {Low-rank methods for on-the-fly slicing & dicing of seismic data & image volumes},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Conventional oil and gas fields are increasingly
+                  difficult to explore and produce, which calls for
+                  more complex wave-equation based inversion (WEI)
+                  algorithms that require dense long-offset
+                  samplings. These requirements result in an
+                  exponential growth in data volumes and prohibitive
+                  demands on computational resources. In this work, we
+                  propose a fast, resilient, and scalable
+                  wave-equation based inversion methodology for both
+                  the data and image-domain, which can handle
+                  complicated wave physics. First we show that both
+                  the data and image domains exhibit low-rank
+                  structure in a transform-domain, which can be
+                  exploited to compress the dense data or image
+                  volumes. Then, by accessing information from the
+                  compressed volumes on-the fly, we devise a scalable
+                  computational inversion framework driven by gradient
+                  calculations, which works with small subsets of
+                  source experiments. In the full-waveform inversion
+                  context, we demonstrate the efficacy of low-rank
+                  interpolation to improve downstream inversion
+                  results compared to merely inverting the velocity
+                  model using the subsampled data volume directly. We
+                  demonstrate the effectiveness of the proposed
+                  framework on two different waveform-inversion
+                  formulations, specifically performing full-waveform
+                  inversion on 5D data set generated using the
+                  overthrust model, and wave-equation based migration
+                  velocity analysis on the Marmousi model. This is
+                  joint work with Curt Da Silva and Yiming Zhang.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/kumar2016SINBADFlrm/kumar2016SINBADFlrm.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/kumar2016SINBADFlrm/kumar2016SINBADFlrm.mov},
+  author = {Rajiv Kumar and Curt Da Silva and Yiming Zhang and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{lopez2016SINBADFlrm,
+  title = {Low-rank matrix recovery for parallel architectures},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Low-rank matrix recovery (LRMR) techniques offer
+                  potential tools for frugal seismic data acquisition,
+                  where dense acquisition is replaced by large-scale
+                  optimization. This shift of focus means that
+                  efficient numerical methods are critical for
+                  successful LRMR implementation in seismic
+                  applications. In this talk, we extend the
+                  rank-penalization methodology to a parallelizable
+                  framework. We adopt a factorization-based
+                  alternating minimization scheme and decouple it into
+                  an independent system of simpler sub-problems that
+                  can be handled in parallel. The methodology is
+                  flexible, where the approach can be adapted to the
+                  number of workers available. Numerical experiments
+                  are conducted to demonstrate that the quality of
+                  reconstruction is comparable to existing methods at
+                  a fraction of the computational time.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/lopez2016SINBADFlrm/lopez2016SINBADFlrm.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/lopez2016SINBADFlrm/lopez2016SINBADFlrm.mov},
+  author = {Oscar Lopez and Rajiv Kumar and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{louboutin2016SINBADFhps,
+  title = {High-performance seismic applications of {OPESCI}},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {We present our latest geophysical applications built on
+                  OPESCI. By using a high-level symbolic API, we allow
+                  for fast development and easy implementation of
+                  various (acoustic, VT, TTI) wave propagators
+                  relevant to exploration geophysics. We start by
+                  highlighting possibilities in an acoustic setting
+                  including classical operators such as forward
+                  modelling and linearised forward (Born) modelling as
+                  well as more advanced operators deriving from wave
+                  equations with double dipoles and the application of
+                  the PDE to a wavefield instead of applying its
+                  inverse. We will also show that the performance
+                  (time to solution) of this code is on par with
+                  industrial software libraries (10\% faster on the
+                  full SEAM model). We finally present our
+                  implementation of 3D TTI modelling and its adjoint
+                  including out comprehensive testing framework. This
+                  is joint work with Gerard Gorman},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/louboutin2016SINBADFhps/louboutin2016SINBADFhps.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/louboutin2016SINBADFhps/louboutin2016SINBADFhps.mov},
+  author = {Mathias Louboutin and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{oghenekohwo2016SINBADFast,
+  title = {Asymmetric sampling for time-lapse surveys},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {In this talk, we use the joint recovery model (JRM),
+                  which derives from distributed compressed sensing,
+                  to reconstruct time-lapse data acquired via
+                  time-jittered marine sources that are significantly
+                  subsampled in the monitor survey(s) in comparison to
+                  the baseline survey, hence, saving acquisition
+                  cost. We analyze the effects of two or more
+                  asymmetrically subsampled monitor surveys on
+                  wavefield reconstruction via JRM. We leverage the
+                  common information shared amongst the vintages
+                  during our sparsity-promoting recovery.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/oghenekohwo2016SINBADFast/oghenekohwo2016SINBADFast.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/oghenekohwo2016SINBADFast/oghenekohwo2016SINBADFast.mov},
+  author = {Felix Oghenekohwo and Haneet Wason and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{peters2016SINBADFcnc,
+  title = {Convex & non-convex constraint sets for full-waveform inversion},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {We extend some of our previous work on constrained
+                  formulations of full-waveform inversion. Some
+                  motivating examples illustrate why solving
+                  constrained problems directly is a simpler approach
+                  for solving non-linear inverse problems than
+                  penalized problem formulations. So far we used
+                  constraints which can be represented as convex sets,
+                  for which most optimization theory is
+                  developed. Some non-convex counterparts of convex
+                  sets are introduced and examples show that the
+                  algorithms developed for convex sets also work well
+                  with non-convex sets. The motivation to also explore
+                  non-convex sets, is that they sometimes translate
+                  prior geological knowledge into mathematical
+                  constraints in a more direct way. All presented
+                  material is available as a user-friendly
+                  toolbox. The toolbox works with any code which can
+                  provide a data-misfit function value and a gradient
+                  direction.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/peters2016SINBADFcnc/peters2016SINBADFcnc.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/peters2016SINBADFcnc/peters2016SINBADFcnc.mov},
+  author = {Bas Peters and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{sharan2016SINBADFhrm,
+  title = {High resolution microseismic source collocation},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Microseismic waves generated by hydraulic fracturing are
+                  used to locate the fractures created in the
+                  reservoir. Most of the existing source collocation
+                  methods have their limitations in terms of
+                  resolution of very closely spaced microseismic
+                  events. In this work we propose a method to
+                  collocate microseismic events with high resolution
+                  along with simultaneous estimation of source time
+                  function. In the context of waves, the
+                  finite-difference modelling operator acts as an
+                  analysis operator for wavefields. This implies that
+                  wavefields under the action of a finite-difference
+                  modelling kernel can be focused to sources
+                  generating these wavefields. We exploit this
+                  property of wavefields to locate microseismic events
+                  and estimate the source time function jointly. To
+                  arrive at a computational feasible scheme, we use
+                  the accelerated version of Linearized Bregman (LBR)
+                  algorithm to solve the above mentioned problem. This
+                  is joint work with Rongrong Wang.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/sharan2016SINBADFhrm/sharan2016SINBADFhrm.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/sharan2016SINBADFhrm/sharan2016SINBADFhrm.mov},
+  author = {Shashin Sharan and Rongrong Wang and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{wang2016SINBADFtmf,
+  title = {Two methods for frequency down-extrapolation},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {It is well known that low frequency data are essential
+                  to the success of the Full-Waveform Inversion. Field
+                  data from a usual marine acquisition, however,
+                  typically lack reliable low frequencies due to the
+                  existing physical limitations. One research
+                  direction focuses on studying low-frequency
+                  extrapolation, the process of extending reliable
+                  frequency bands of the raw data towards the lower
+                  end of the spectrum. We propose two optimization
+                  problems, by solving which low frequencies can be
+                  made out of the high SNR high frequency
+                  component. We present both theoretical explanation
+                  and numerical experiments to demonstrate the
+                  efficacy as well as limitation of these methods.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/wang2016SINBADFtmf/wang2016SINBADFtmf.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/wang2016SINBADFtmf/wang2016SINBADFtmf.mov},
+  author = {Rongrong Wang and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{wason2016SINBADFlcr,
+  title = {Low-cost, randomized {3D} towed-marine time-lapse seismic acquisition},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Most often conventional 3D towed-marine seismic data
+                  acquisition suffers from limited illumination of
+                  subsurface due to narrow azimuth. Although,
+                  acquisition techniques such as Ocean Bottom Cable
+                  (OBC), Ocean Bottom Node (OBN), Rich-Azimuth (RAZ)
+                  acquisition, Multi-Azimuth (MAZ) acquisition have
+                  been developed to illuminate the subsurface from all
+                  possible angles, these acquisition techniques are
+                  expensive. Motivated by the design principles of
+                  compressed sensing, we acquire randomly subsampled
+                  and simultaneous (e.g., simultaneous long offset) 3D
+                  towed-marine time-lapse seismic data for few
+                  (random) azimuths, and recover densely sampled
+                  multiple azimuth baseline and monitor data via
+                  sparsity promotion and rank minimization. Our
+                  acquisition is low cost since we have subsampled
+                  measurements.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/wason2016SINBADFlcr/wason2016SINBADFlcr.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/wason2016SINBADFlcr/wason2016SINBADFlcr.mov},
+  author = {Rajiv Kumar and Felix Oghenekohwo and Shashin Sharan and Haneet Wason and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{witte2016SINBADFlst,
+  title = {A large-scale time-domain modeling and inversion workflow in {Julia}},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {We present our initial steps towards the development of
+                  a large-scale seismic modeling workflow in Julia
+                  which provides a framework for wave-equation based
+                  inversion methods like full waveform inversion or
+                  least squares migration. Our framework is based on
+                  the Devito tool for optimized finite difference
+                  computations that generates highly optimized code
+                  from symbolic PDEs. We aim at developing a flexible
+                  workflow which is based on abstract operators and
+                  allows coding that is “close to the math”, while at
+                  the same time relying on extremely fast and
+                  efficient, state of the art wave equation solvers.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/witte2016SINBADFlst/witte2016SINBADFlst.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/witte2016SINBADFlst/witte2016SINBADFlst.mov},
+  author = {Philipp A. Witte and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{witte2016SINBADFpve,
+  title = {Phase velocity error minimizing scheme for the anisotropic pure {P-wave} equation},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Pure P-wave equations for acoustic modeling in
+                  transverse isotropic media are derived by
+                  approximating the exact pure P-wave dispersion
+                  relation. In this work, we present an alternative to
+                  the common Taylor expansion based equations, in
+                  which we approximate the exact dispersion relation
+                  through a polynomial expansion and determine its
+                  coefficients by solving a least squares problem that
+                  minimizes the phase velocity error over the complete
+                  range of phase angles. We show that this approach is
+                  up to an order of magnitude more accurate than other
+                  pure P-wave equations at a comparable computational
+                  cost.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/witte2016SINBADFpve/witte2016SINBADFpve.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/witte2016SINBADFpve/witte2016SINBADFpve.mov},
+  author = {Philipp A. Witte and Christiaan C. Stolk and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{witte2016SINBADFtdl,
+  title = {Time-domain least-squares {RTM} with sparsity promotion on field data},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Least squares reverse time migration (LSRTM) is an
+                  inversion based imaging algorithm which can surpress
+                  acquisition related artifacts and provides images
+                  with increased frequency content, decreased noise
+                  level and balanced amplitudes. In this work
+                  demonstrate our time-domain LSRTM workflow using
+                  various pre-conditioners, source-subsampling and
+                  sparsity promotion and show its application to the
+                  2D Machar field data set.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/witte2016SINBADFtdl/witte2016SINBADFtdl.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/witte2016SINBADFtdl/witte2016SINBADFtdl.mov},
+  author = {Philipp A. Witte and Felix J. Herrmann}
+}
+
+
+@PRESENTATION{yang2016SINBADFtds,
+  title = {Time-domain sparsity-promoting least-squares migration with source estimation},
+  booktitle = {SINBAD Fall consortium talks},  
+  organization = {SINBAD},
+  year = {2016},
+  abstract = {Compared to traditional reverse-time migration (RTM),
+                  least-squares RTM (LS_RTM) is able to obtain true
+                  amplitude images as solutions of $\ell_2$-norm
+                  minimization problems by fitting the synthetic and
+                  observed reflection data. The shortcoming is that
+                  solutions of these $\ell_2$ problems tend to be
+                  overfitted and computationally too expensive. By
+                  working with randomized subsets of data only, the
+                  computational costs of LS-RTM can be brought down to
+                  an acceptable level, producing artifact-free
+                  high-resolution images. By including on-the-fly
+                  source-time function estimation into the method of
+                  Linearized Bregman (LB), we tackle the open issues
+                  of these "compressive imaging" in the aspects of
+                  algorithmic complexity of solver, guaranteed
+                  convergence and source estimation. We also
+                  inbvestigate whether the algorithm can be
+                  accelerated when we combine LB with the Nesterov
+                  method. Application of our algorithm on a 2D
+                  synthetic shows that we are able to get
+                  high-resolution images, with accurate estimates of
+                  the wavelet, for one single data pass.},
+  keywords = {presentation, SINBAD, SINBADFALL2016, SLIM, private},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/yang2016SINBADFtds/yang2016SINBADFtds.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/2016/Fall/yang2016SINBADFtds/yang2016SINBADFtds.mov},
+  author = {Mengmeng Yang and Philipp A. Witte and Zhilong Fang and Felix J. Herrmann}
+}
+
+
 %----- 2015 (FALL) -----%
 
 @PRESENTATION{dasilva2015SINBADFnso,

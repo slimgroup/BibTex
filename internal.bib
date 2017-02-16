@@ -17092,6 +17092,43 @@
 }
 
 
+@UNPUBLISHED{dasilva2017uls,
+  author = {Curt Da Silva and Felix J. Herrmann},
+  title = {A unified {2D/3D} large scale software environment for nonlinear inverse problems},
+  year = {2017},
+  abstract = {Large scale parameter estimation problems are some of
+                  the most computationally demanding problems. An
+                  academic researcher's domain-specific knowledge
+                  often precludes that of software design, which
+                  results in software frameworks for inversion that
+                  are technically correct, but not scalable to
+                  realistically-sized problems. On the other hand, the
+                  computational demands of the problem for realistic
+                  problems result in industrial codebases that are
+                  geared solely for performance, rather than
+                  comprehensibility or flexibility. We propose a new
+                  software design that bridges the gap between these
+                  two seemingly disparate worlds. A hierarchical and
+                  modular design allows a user to delve into as much
+                  detail as she desires, while using high performance
+                  primitives at the lower levels. Our code has the
+                  added benefit of actually reflecting the underlying
+                  mathematics of the problem, which lowers the
+                  cognitive load on user using it and reduces the
+                  initial startup period before a researcher can be
+                  fully productive. We also introduce a new
+                  preconditioner for the Helmholtz equation that is
+                  suitable for fault-tolerant distributed
+                  systems. Numerical experiments on a variety of 2D
+                  and 3D test problems demonstrate the effectiveness
+                  of this approach on scaling algorithms from small to
+                  large scale problems with minimal code changes.},
+  keywords = {optimization, PDE-constrained inversion, large scale, matlab, private},
+  note = {Submitted to ACM Transactions on Mathematical Software on February 14, 2017.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2017/dasilva2017uls/}
+}
+
+
 @UNPUBLISHED{fang2017WAVESuqf,
   author = {Zhilong Fang and Curt Da Silva and Rachel Kuske and Felix J. Herrmann},
   title = {Uncertainty quantification for inverse problems with a weak wave-equation constraint},
@@ -17470,42 +17507,8 @@
                   "Cheap time-lapse with distributed Compressive
                   Sensing---impact on repeatability".},
   keywords = {acquisition, time-lapse seismic, marine, random sampling, joint recovery method, private},
-  note = {Revision 1 submitted on July 7, 2016.},
+  note = {to be published in Geophysics},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/oghenekohwo2016GEOPctl/oghenekohwo2016GEOPctl.html}
-}
-
-
-@UNPUBLISHED{peters2016cvp,
-  author = {Bas Peters and Felix J. Herrmann},
-  title = {Constraints versus penalties for edge-preserving full-waveform inversion},
-  year = {2016},
-  abstract = {Full-waveform inversion is challenging in complex
-                  geological areas. Even when provided with an
-                  accurate starting model, the inversion algorithms
-                  often struggle to update the velocity
-                  model. Contrary to other areas in applied
-                  geophysics, including prior information in
-                  full-waveform inversion is still relatively in its
-                  infancy. In part this is due to the fact that
-                  incorporating prior information that relates to
-                  geological settings where strong discontinuities in
-                  the velocity model dominate is difficult, because
-                  these settings call for non-smooth
-                  regularizations. We tackle this problem by including
-                  constraints on the spatial variations and value
-                  ranges of the inverted velocities, as opposed to
-                  adding penalties to the objective as is more
-                  customary in main stream geophysical inversion. By
-                  demonstrating the lack of predictability of
-                  edge-preserving inversion when the regularization is
-                  in the form of an added penalty term, we advocate
-                  the inclusion of constraints instead. Our examples
-                  show that the latter lead to more predictable
-                  results and to significant improvements in the
-                  delineation of Salt bodies.},
-  keywords = {full-waveform inversion, constrained optimization, total variation, penalty methods, private},
-  note = {Revision 1 submitted to The Leading Edge on November 13, 2016.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/peters2016cvp/peters2016cvp.html}
 }
 
 
@@ -17561,7 +17564,7 @@
                   changes in wave heights, water column velocities or
                   temperature and salinity profiles, etc.},
   keywords = {marine acquisition, time-lapse seismic, off-the-grid recovery, random sampling, joint recovery method, optimization, private},
-  note = {Revision 1 submitted to Geophysics on January 13, 2017.},
+  note = {to be published in Geophysics},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/wason2016GEOPctl/wason2016GEOPctl.html}
 }
 
@@ -17570,6 +17573,50 @@
 
 % This file was created with JabRef 2.8.1.
 % Encoding: MacRoman
+
+%----- 2017 -----%
+
+@ARTICLE{peters2016cvp,
+  author = {Bas Peters and Felix J. Herrmann},
+  title = {Constraints versus penalties for edge-preserving full-waveform inversion},
+  journal = {The Leading Edge},
+  year = {2017},
+  month = {01},
+  volume = {36},
+  number = {1},
+  pages = {94-100},
+  abstract = {Full-waveform inversion is challenging in complex
+                  geologic areas. Even when provided with an accurate
+                  starting model, the inversion algorithms often
+                  struggle to update the velocity model. Compared with
+                  other areas in applied geophysics, including prior
+                  information in full-waveform inversion is still in
+                  its relative infancy. In part, this is due to the
+                  fact that it is difficult to incorporate prior
+                  information that relates to geologic settings where
+                  strong discontinuities in the velocity model
+                  dominate, because these settings call for nonsmooth
+                  regularizations. We tackle this problem by including
+                  constraints on the spatial variations and value
+                  ranges of the inverted velocities, as opposed to
+                  adding penalties to the objective, which is more
+                  customary in mainstream geophysical inversion. By
+                  demonstrating the lack of predictability of
+                  edge-preserving inversion when the regularization is
+                  in the form of an added penalty term, we advocate
+                  the inclusion of constraints instead. Our examples
+                  show that the latter leads to more predictable
+                  results and to significant improvements in the
+                  delineation of salt bodies when these constraints
+                  are relaxed gradually in combination with extending
+                  the search space to approximately fit the observed
+                  data but not the noise.},
+  keywords = {full waveform inversion, salt dome, algorithm, noise, optimization, total variation, penalty methods},
+  note = {(The Leading Edge)},
+  doi = {10.1190/tle36010094.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2016/peters2016cvp/peters2016cvp.html}
+}
+
 
 %----- 2016 -----%
 

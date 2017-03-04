@@ -103,6 +103,40 @@
 }
 
 
+@CONFERENCE{deaguiar2016SCdff,
+  author = {Marcos de Aguiar and Gerard Gorman and Felix J. Herrmann and Navjot Kukreja and Michael Lange and Mathias Louboutin and Felippe Vieira Zacarias},
+  title = {DeVito: fast finite difference computation},
+  booktitle = {Super Computing (SC16)},
+  year = {2016},
+  month = {11},
+  abstract = {Seismic imaging, used in energy exploration, is arguably
+                  the most compute and data intensive application in
+                  the private sector. The commonly used methods
+                  involve solving the wave equations numerically using
+                  finite difference formulations. Writing optimized
+                  code for these applications involves multiple
+                  man-years of effort that need to be repeated every
+                  time a new development needs to be factored in – for
+                  every target platform. DeVito is a new tool for
+                  performing optimized Finite Difference (FD)
+                  computation from high-level symbolic problem
+                  definitions. The application developer needs to
+                  provide a differential equation in symbolic
+                  form. DeVito performs automated code generation and
+                  Just-In-Time (JIT) compilation based on this
+                  symbolic equation to create and execute highly
+                  optimized Finite Difference kernels on multiple
+                  computer platforms. DeVito has been designed to be
+                  used as part of complex workflows involving data
+                  flows across multiple applications over different
+                  nodes of a cluster.},
+  keywords = {finite differences, high performance computing, full-waveform inversion},
+  note = {(Super Computing Conference, Utah)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SC/2016/deaguiar2016SCdff/deaguiar2016SCdff_poster.pdf},
+  url2 = {http://sc16.supercomputing.org/sc-archive/tech_poster/tech_poster_pages/post155.html}
+}
+
+
 @CONFERENCE{fang2016SEGuqw,
   author = {Zhilong Fang and Chia Ying Lee and Curt Da Silva and Tristan van Leeuwen and Felix J. Herrmann},
   title = {Uncertainty quantification for {Wavefield} {Reconstruction} {Inversion} using a {PDE} free semidefinite {Hessian} and randomize-then-optimize method},
@@ -218,6 +252,38 @@
 }
 
 
+@CONFERENCE{kukreja2016WOLFHPCdaf,
+  author = {Navjot Kukreja and Mathias Louboutin and Felippe Vieira Zacarias and Fabio Luporini and Michael Lange and Gerard Gorman},
+  title = {Devito: automated fast finite difference computation},
+  booktitle = {WOLFHPC 2016 Workshop (Super Computing)},
+  year = {2016},
+  month = {11},
+  abstract = {Domain specific languages have successfully been used in
+                  a variety of fields to cleanly express scientific
+                  problems as well as to simplify implementation and
+                  performance optimization on different computer
+                  architectures. Although a large number of stencil
+                  languages are available, finite difference domain
+                  specific languages have proved challenging to design
+                  because most practical use cases require additional
+                  features that fall outside the finite difference
+                  abstraction. Inspired by the complexity of
+                  real-world seismic imaging problems, we introduce
+                  Devito, a domain specific language in which high
+                  level equations are expressed using symbolic
+                  expressions from the SymPy package. Complex
+                  equations are automatically manipulated, optimized,
+                  and translated into highly optimized C code that
+                  aims to perform comparably or better than hand-tuned
+                  code. All this is transparent to users, who only see
+                  concise symbolic mathematical expressions.},
+  keywords = {finite differences, high performance computing, modelling, acoustic, compiler, stencil},
+  note = {(WOLFHPC Workshop (SC16))},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SC/2016/WOLFHPC/kukreja2016WOLFHPCdaf/kukreja2016WOLFHPCdaf.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SC/2016/WOLFHPC/kukreja2016WOLFHPCdaf/kukreja2016WOLFHPCdaf_pres.pdf}
+}
+
+
 @CONFERENCE{kumar2016SEGtjm,
   author = {Rajiv Kumar and Shashin Sharan and Haneet Wason and Felix J. Herrmann},
   title = {Time-jittered marine acquisition---a rank-minimization approach for {5D} source separation},
@@ -256,6 +322,40 @@
   doi = {10.1190/segam2016-13878249.1},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2016/kumar2016SEGtjm/kumar2016SEGtjm.html},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SEG/2016/kumar2016SEGtjm/kumar2016SEGtjm_pres.pdf}
+}
+
+
+@CONFERENCE{lange2016dtg,
+  author = {Michael Lange and Navjot Kukreja and Mathias Louboutin and Fabio Luporini and Felippe Vieira Zacarias and Vincenzo Pandolfo and Paulius Velesko and Paulius Kazakas and Gerard Gorman},
+  title = {Devito: {Towards} a generic finite difference {DSL} using symbolic python},
+  booktitle = {6th Workshop on Python for High-Performance and Scientific Computing},
+  year = {2016},
+  month = {11},
+  pages = {67-75},
+  abstract = {Domain specific languages (DSL) have been used in a
+                  variety of fields to express complex scientific
+                  problems in a concise manner and provide automated
+                  performance optimization for a range of
+                  computational architectures. As such DSLs provide a
+                  powerful mechanism to speed up scientific Python
+                  computation that goes beyond traditional
+                  vectorization and pre-compilation approaches, while
+                  allowing domain scientists to build applications
+                  within the comforts of the Python software
+                  ecosystem. In this paper we present Devito, a new
+                  finite difference DSL that provides optimized
+                  stencil computation from high-level problem
+                  specifications based on symbolic Python
+                  expressions. We demonstrate Devito's symbolic API
+                  and performance advantages over traditional Python
+                  acceleration methods before highlighting its use in
+                  the scientific context of seismic inversion
+                  problems.},
+  keywords = {HPC, python, finite differences, acoustic, modelling, inversion, software optimization},
+  note = {(PyHPC 2016, Utah)},
+  doi = {10.1109/PyHPC.2016.9},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/PyHPC/2016/lange2016dtg/lange2016dtg.pdf},
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/PyHPC/2016/lange2016dtg/lange2016dtg_pres.pdf}
 }
 
 
@@ -17086,7 +17186,6 @@
                   randomized under-sampled acquisition, we can recover
                   accurate S-waves with an economical cost compared
                   with conventional acquisition designs.},
-  date_submitted = {01/15/2017},
   keywords = {EAGE, shear waves, rank minimization, interpolation, randomized acquisition, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/EAGE/2017/alfaraj2017EAGEswr/alfaraj2017EAGEswr.pdf}
 }
@@ -17176,7 +17275,6 @@
                   common-shot gather extracted from a coil shooting
                   survey in the Gulf of Mexico shows the potential of
                   our approach.},
-  date_submitted = {01/15/2017},
   keywords = {EAGE, denoising, coil data, cross-flow noise, curvelet, SPCP, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/EAGE/2017/kumar2017EAGEdha/kumar2017EAGEdha.html}
 }
@@ -17199,7 +17297,6 @@
                   corresponding update directions and show how we
                   handle scaling error correctly in both the objective
                   function and the gradient.},
-  date_submitted = {01/15/2017},
   keywords = {EAGE, FWI, normalization, inversion, nonlinear, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/EAGE/2017/louboutin2017EAGEdns/louboutin2017EAGEdns.html}
 }
@@ -17228,7 +17325,6 @@
                   extension of the velocity model, time compression
                   techniques and recent results on stochastic sampling
                   in non-smooth/non-convex optimization},
-  date_submitted = {01/15/2017},
   keywords = {EAGE, time domain, FWI, cycle skipping, inversion, nonconvex, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/EAGE/2017/louboutin2017EAGEess/louboutin2017EAGEess.html}
 }
@@ -17258,7 +17354,6 @@
                   where there are calibration errors i.e. where the
                   acquisition parameters such as source/receiver
                   coordinates are not precise.},
-  date_submitted = {01/15/2017},
   keywords = {EAGE, repeatability, time lapse, compressive sensing, calibration, noise, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/EAGE/2017/oghenekohwo2017EAGEitl/oghenekohwo2017EAGEitl.html}
 }
@@ -17295,23 +17390,12 @@
                   of PDE solves to a number comparable to conventional
                   RTM, making our workflow applicable to large-scale
                   problems.},
-  date_submitted = {01/15/2017},
   keywords = {EAGE, least-squares migration, imaging condition, linearized Bregman, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/EAGE/2017/witte2017EAGEspl/witte2017EAGEspl.html}
 }
 
 
 %-----2016-----%
-
-@UNPUBLISHED{deaguiar2016SCdff,
-  author = {Marcos de Aguiar and Gerard Gorman and Felix J. Herrmann and Navjot Kukreja and Michael Lange and Mathias Louboutin and Felippe Vieira Zacarias},
-  title = {DeVito: fast finite difference computation},
-  year = {2016},
-  keywords = {finite differences, high performance computing, full-waveform inversion, private},
-  note = {to be presented at the Super Computing Conference},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SC/2016/deaguiar2016SCdff/deaguiar2016SCdff_poster.pdf}
-}
-
 
 @UNPUBLISHED{esser2016tvr,
   author = {Ernie Esser and Llu\'{i}s Guasch and Tristan van Leeuwen and Aleksandr Y. Aravkin and Felix J. Herrmann},
@@ -17351,35 +17435,6 @@
   keywords = {full-waveform inversion, constrained optimization, total variation, salt, hinge loss, private},
   note = {Submitted on July 13, 2016.},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/esser2016tvr/esser2016tvr.pdf}
-}
-
-
-@UNPUBLISHED{kukreja2016WOLFHPCdaf,
-  author = {Navjot Kukreja and Mathias Louboutin and Felippe Vieira Zacarias and Fabio Luporini and Michael Lange and Gerard Gorman},
-  title = {Devito: automated fast finite difference computation},
-  year = {2016},
-  abstract = {Domain specific languages have successfully been used in
-                  a variety of fields to cleanly express scientific
-                  problems as well as to simplify implementation and
-                  performance optimization on different computer
-                  architectures. Although a large number of stencil
-                  languages are available, finite difference domain
-                  specific languages have proved challenging to design
-                  because most practical use cases require additional
-                  features that fall outside the finite difference
-                  abstraction. Inspired by the complexity of
-                  real-world seismic imaging problems, we introduce
-                  Devito, a domain specific language in which high
-                  level equations are expressed using symbolic
-                  expressions from the SymPy package. Complex
-                  equations are automatically manipulated, optimized,
-                  and translated into highly optimized C code that
-                  aims to perform comparably or better than hand-tuned
-                  code. All this is transparent to users, who only see
-                  concise symbolic mathematical expressions.},
-  keywords = {finite differences, high performance computing, modelling, acoustic, compiler, stencil, private},
-  note = {to be presented at the WOLFHPC 2016 Workshop (in conjunction with Super Computing Conference)},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SC/2016/WOLFHPC/kukreja2016WOLFHPCdaf/kukreja2016WOLFHPCdaf.pdf}
 }
 
 
@@ -17567,6 +17622,7 @@
   note = {Accepted to be published in Geophysics.},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/wason2016GEOPctl/wason2016GEOPctl.html}
 }
+
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 
@@ -17907,8 +17963,11 @@
   author = {Tristan van Leeuwen and Rajiv Kumar and Felix J. Herrmann},
   title = {Enabling affordable omnidirectional subsurface extended image volumes via probing},
   journal = {Geophysical Prospecting},
-  year = {2016},
-  month = {08},
+  year = {2017},
+  month = {03},
+  volume = {65},
+  number = {2},
+  pages = {385-406},
   abstract = {Image gathers as a function of subsurface offset are an
                   important tool for the inference of rock properties
                   and velocity analysis in areas of complex
@@ -17926,18 +17985,18 @@
                   overcome increasing computational and storage costs
                   of extended image volumes by introducing a
                   formulation that avoids explicit storage and removes
-                  the customary and expensive loop over shots, found
-                  in conventional extended imaging. As a result, we
-                  end up with a matrix-vector formulation from which
+                  the customary and expensive loop over shots found in
+                  conventional extended imaging. As a result, we end
+                  up with a matrix–vector formulation from which
                   different image gathers can be formed and with which
                   amplitude-versus-angle and wave-equation migration
-                  velocity analyses can be performed without requiring
+                  velocity analysis can be performed without requiring
                   prior information on the geologic dips. Aside from
                   demonstrating the formation of two-way extended
                   image gathers for different purposes and at greatly
                   reduced costs, we also present a new approach to
-                  conduct automatic wave-equation based
-                  migration-velocity analysis. Instead of focussing in
+                  conduct automatic wave-equation-based
+                  migration-velocity analysis. Instead of focusing in
                   particular offset directions and preselected subsets
                   of subsurface points, our method focuses every
                   subsurface point for all subsurface offset
@@ -17946,7 +18005,7 @@
                   cost for complex models without the need to provide
                   information on the geologic dips.},
   keywords = {migration velocity analysis, AVA, stochastic optimization},
-  note = {(published online in Geophysical Prospecting)},
+  note = {(Geophysical Prospecting)},
   doi = {10.1111/1365-2478.12418},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GeophysicalProspecting/2016/vanleeuwen2015GPWEMVA/vanleeuwen2015GPWEMVA.pdf}
 }

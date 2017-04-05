@@ -17291,6 +17291,48 @@
 }
 
 
+@UNPUBLISHED{alfaraj2017SEGrsw,
+  author = {Ali M. Alfaraj and Rajiv Kumar and Felix J. Herrmann},
+  title = {Reconstruction of {S-waves} from low-cost randomized and simultaneous acquisition by joint sparse inversion},
+  year = {2017},
+  abstract = {Spatial Nyquist sampling rate, which is proportional to
+                  the apparent subsurface velocity, is the key
+                  deciding cost factor for conventional seismic
+                  acquisition. Due to the lower shear wave velocity
+                  compared with compressional waves, finer spatial
+                  sampling is required to properly record the earlier,
+                  which increases the acquisition costs. This is one
+                  of the reasons why shear waves are usually not
+                  considered in practice. To avoid having the Nyquist
+                  criterion as the deciding cost factor and to utilize
+                  multicomponent data to its available full extent, we
+                  propose acquiring randomly undersampled ocean bottom
+                  seismic data. Each component can then be
+                  interpolated separately, followed by elastic
+                  decomposition to recover up- and down-going
+                  S-waves. Instead, we jointly interpolate and
+                  decompose the recorded multicomponent data by
+                  solving one sparsity promoting optimization
+                  problem. This way we ensure that the relative
+                  amplitudes of the multicomponent data is
+                  preserved. We compare two sparsifying transforms:
+                  the curvelet transform and the frequency-wavenumber
+                  transform. Another key cost deciding factor for
+                  seismic acquisition is the efficiency of acquiring
+                  data. This calls for simultaneous acquisition, which
+                  requires a source separation step. Similarly,
+                  instead of taking a two-step approach, we perform a
+                  sparsity-promoting joint source separation
+                  decomposition. Results on economically and
+                  efficiently acquired synthetic data of both joint
+                  methods show their ability of reconstructing
+                  accurate up- and down-going S-waves.},
+  keywords = {SEG, elastic, shear wave, randomized acquisition, interpolation, source separation, decomposition, sparse, private},
+  date_submitted = {04/01/2017},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2017/alfaraj2017SEGrsw/alfaraj2017SEGrsw.html}
+}
+
+
 @UNPUBLISHED{dasilva2017uls,
   author = {Curt Da Silva and Felix J. Herrmann},
   title = {A unified {2D/3D} large scale software environment for nonlinear inverse problems},
@@ -17325,6 +17367,30 @@
   keywords = {optimization, PDE-constrained inversion, large scale, matlab, private},
   note = {Submitted to ACM Transactions on Mathematical Software on February 14, 2017.},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2017/dasilva2017uls/dasilva2017uls.html}
+}
+
+
+@UNPUBLISHED{daskalakis2017SEGdds,
+  author = {Emmanouil Daskalakis and Rachel Kuske and Felix J. Herrmann},
+  title = {Developments in the direction of solving extremly large problems in {Geophysics}},
+  year = {2017},
+  abstract = {Often in exploration Geophysics we are forced to work
+                  with extremely large problems. Acquisitions via
+                  dense grids of receivers translate into very large
+                  mathematical systems. Usually, depending on the
+                  acquisition, the size of the matrix of the system to
+                  be solved, can be measured in the millions. The
+                  proper way to address this problem is by
+                  subsampling. Even though subsampling can reduce the
+                  computational efforts required, it can not address
+                  stability problems caused by preconditioning and/or
+                  instrumental response errors. In this abstract, we
+                  introduce a modification of the linearized Bregman
+                  solver for these large problems that resolves
+                  stability issues.},
+  keywords = {SEG, linearized Bregman, cycling, weighted increment, least-squares migration, private},
+  date_submitted = {04/01/2017},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2017/daskalakis2017SEGdds/daskalakis2017SEGdds.html}
 }
 
 
@@ -17459,6 +17525,63 @@
 }
 
 
+@UNPUBLISHED{sharan2017SEGhrf,
+  author = {Shashin Sharan and Rongrong Wang and Felix J. Herrmann},
+  title = {High resolution fast microseismic source collocation and source time function estimation},
+  year = {2017},
+  abstract = {Sparsity promotion based joint microseismic source
+                  collocation and source time function estimation,
+                  using Linearized Bregman algorithm, although simple
+                  to implement, suffers from slow convergence. This is
+                  due to the fact that Linearized Bregman algorithm
+                  has only first order of convergence. In this work,
+                  we propose to accelerate the existing Linearized
+                  Bregman algorithm using the L-BFGS
+                  algorithm. Without any initial guess for the source
+                  location or source time function, our method is able
+                  to estimate the source location and source time
+                  function for kinematically correct smooth velocity
+                  model. We demonstrate the effectiveness of our
+                  method for multiple sources spaced within half a
+                  wavelength. We also compare our results with
+                  Linearized Bregman based method in ``2.5``D instead
+                  of ``2``D.},
+  keywords = {SEG, algorithm, full-waveform inversion, microseismic, passive imaging, wave equation, private},
+  date_submitted = {04/01/2017},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2017/sharan2017SEGhrf/sharan2017SEGhrf.html}
+}
+
+
+@UNPUBLISHED{wang2017SEGdff,
+  author = {Rongrong Wang and Felix J. Herrmann},
+  title = {A denoising formulation of full-waveform inversion},
+  year = {2017},
+  abstract = {We propose a wave-equation-based subsurface inversion
+                  method that in many cases is more robust than the
+                  conventional Full-Waveform Inversion. The new
+                  formulation is written in a denoising form that
+                  allows the synthetic data to match the observed ones
+                  up to a small error. Compared to the Full-Waveform
+                  Inversion, our method treats the noise arising from
+                  the data measuring/recording process and that from
+                  the synthetic modelling process
+                  separately. Comparing to the Wavefields
+                  Reconstruction Inversion, the new formulation
+                  mitigates the difficulty of choosing the penalty
+                  parameter $\lambda$. To solve the proposed
+                  optimization problem, we develop an efficient
+                  frequency domain algorithm that alternatively
+                  updates the model and the data. Numerical
+                  experiments confirm strong stability of the proposed
+                  method by comparisons between the results of our
+                  algorithm with that from both plain FWI and a
+                  weighted formulation of the FWI.},
+  keywords = {SEG, FWI, denoising, private},
+  date_submitted = {04/01/2017},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2017/wang2017SEGdff/wang2017SEGdff.pdf}
+}
+
+
 @UNPUBLISHED{witte2017EAGEspl,
   author = {Philipp A. Witte and Mengmeng Yang and Felix J. Herrmann},
   title = {Sparsity-promoting least-squares migration with the linearized inverse scattering imaging condition},
@@ -17492,6 +17615,85 @@
                   problems.},
   keywords = {EAGE, least-squares migration, imaging condition, linearized Bregman, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/EAGE/2017/witte2017EAGEspl/witte2017EAGEspl.html}
+}
+
+
+@UNPUBLISHED{yang2017SEGfsp,
+  author = {Mengmeng Yang and Emmanouil Daskalakis and Felix J. Herrmann},
+  title = {Fast sparsity-promoting least-squares migration with multiples in time domain},
+  year = {2017},
+  abstract = {Based on the latest developments of research in
+                  inversion technology with optimization, researchers
+                  have made significant progress in the implementation
+                  of least-squares reverse-time migration (LS-RTM) of
+                  primaries. In Marine data however, these
+                  applications rely on the success of a pre-imaging
+                  separation of primaries and multiples, which can be
+                  modeled as a multi-dimensional convolution between
+                  the vertical derivative of the surface-free Green’s
+                  function and the down-going receiver
+                  wavefield. Instead of imaging the primaries and
+                  multiples separately, we implement the LS-RTM of the
+                  total down-going wavefield by combining areal source
+                  injection and linearized Born modelling, where
+                  strong surface related multiples are generated from
+                  a strong density variation at the ocean bottom. The
+                  advantage including surface related multiples in
+                  LS-RTM is the extra illumination we obtain from
+                  these multiples without incurring additional
+                  computational costs related to carrying out
+                  multi-dimensional convolutions part of conventional
+                  multiple prediction procedures. Even though we are
+                  able to avert these computational costs, our
+                  approach shares the large costs of LSRTM. We reduce
+                  these costs by combining randomized source
+                  subsampling with our sparsity-promoting imaging
+                  technology, which produces artifact-free,
+                  high-resolution images, with the surface-related
+                  multiples migrated properly.},
+  keywords = {SEG, sparsity, least-squares RTM, multiples, time domain, private},
+  date_submitted = {04/01/2017},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2017/yang2017SEGfsp/yang2017SEGfsp.html}
+}
+
+
+@UNPUBLISHED{zhang2017SEGmsd,
+  author = {Yiming Zhang and Curt Da Silva and Rajiv Kumar and Felix J. Herrmann},
+  title = {Massive {3D} seismic data compression and inversion with hierarchical {Tucker}},
+  year = {2017},
+  abstract = {Modern-day oil and gas exploration, especially in areas
+                  of complex geology such as fault belts and sub-salt
+                  areas, is an increasingly expensive and risky
+                  endeavour. Typically long-offset and dense sampling
+                  seismic data are required for subsequent shot based
+                  processing procedures, e.g. wave-equation based
+                  inversion (WEI) and surface-related multiple
+                  elimination (SRME). However, these strict
+                  requirements result in an exponential growth in data
+                  volume size and prohibitive demands on computational
+                  resources, given the multidimensional nature of the
+                  data volumes. Moreover the physical constraints and
+                  cost limitations impose restrictions on acquiring
+                  fully sampled data. In this work, we propose to
+                  invert our large-scale data from a set of subsampled
+                  measurements, resulting in an estimate of the true
+                  volume in a compressed low-rank tensor
+                  format. Rather than expanding the data to its
+                  fully-sampled form for later downstream processes,
+                  we demonstrate how to use this compressed data
+                  directly via on-the-fly common shot or receiver
+                  gathers extraction. The combination of massive
+                  compression and fast on demand data reconstruction
+                  of 3D shot or receiver gathers leads to a
+                  substantial reduction in memory costs but with
+                  minimal effects on results in the subsequent
+                  processing procedures. We demonstrate the effective
+                  implementation of our proposed framework on
+                  full-waveform inversion on a 3D seismic synthetic
+                  data set generated from a Overthrust model.},
+  keywords = {SEG, 3D, tensor algebra, FWI, private},
+  date_submitted = {04/01/2017},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SEG/2017/zhang2017SEGmsd/zhang2017SEGmsd.html}
 }
 
 

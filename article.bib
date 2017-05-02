@@ -3,6 +3,103 @@
 
 %----- 2017 -----%
 
+@ARTICLE{kumar2016bls,
+  author = {Rajiv Kumar and Oscar Lopez and Damek Davis and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  title = {Beating level-set methods for {5D} seismic data interpolation: a primal-dual alternating approach},
+  journal = {IEEE Transactions on Computational Imaging},
+  year = {2017},
+  month = {04},
+  abstract = {Acquisition cost is a crucial bottleneck for seismic
+                  workflows, and low-rank formulations for data
+                  interpolation allow practitioners to 'fill in' data
+                  volumes from critically subsampled data acquired in
+                  the field. Tremendous size of seismic data volumes
+                  required for seismic processing remains a major
+                  challenge for these techniques. Residual-constrained
+                  formulations require less parameter tuning when the
+                  target noise floor is known. We propose a new
+                  approach to solve residual constrained formulations
+                  for interpolation. We represent the data volume in a
+                  compressed manner using low-rank matrix factors, and
+                  build a block-coordinate algorithm with constrained
+                  convex subproblems that are solved with a
+                  primal-dual splitting scheme. The develop
+                  optimization framework works on the whole seismic
+                  temporal frequency slices and does not require
+                  windowing or non-trivial sorting of seismic
+                  data. The new approach is competitive with state of
+                  the art level-set algorithms that interchange the
+                  role of objectives with constraints. We use the new
+                  algorithm to successfully interpolate a large scale
+                  5D seismic data volume (upto 1010 data-points),
+                  generated from the geologically complex synthetic 3D
+                  Compass velocity model, where 80\% of the data has
+                  been removed. We also develop a robust extension of
+                  the primal-dual approach to deal with the outliers
+                  (or noise) in the data.},
+  keywords = {matrix completion, seismic data, seismic trace interpolation, alternating minimization, primal-dual splitting},
+  note = {(published online in IEEE Transactions on Computational Imaging)},
+  doi = {10.1109/TCI.2017.2693966},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/IEEETransComputationalImaging/2017/kumar2016bls/kumar2016bls.pdf}
+}
+
+
+@ARTICLE{oghenekohwo2016GEOPctl,
+  author = {Felix Oghenekohwo and Haneet Wason and Ernie Esser and Felix J. Herrmann},
+  title = {Low-cost time-lapse seismic with distributed compressive sensing---{Part} 1: exploiting common information among the vintages},
+  journal = {Geophysics},
+  year = {2017},
+  month = {05},
+  volume = {82},
+  number = {3},
+  pages = {P1-P13},
+  abstract = {Time-lapse seismic is a powerful technology for
+                  monitoring a variety of subsurface changes due to
+                  reservoir fluid flow. However, the practice can be
+                  technically challenging when one seeks to acquire
+                  colocated time-lapse surveys with high degrees of
+                  replicability among the shot locations. We have
+                  determined that under "ideal" circumstances, in
+                  which we ignore errors related to taking
+                  measurements off the grid, high-quality prestack
+                  data can be obtained from randomized subsampled
+                  measurements that are observed from surveys in which
+                  we choose not to revisit the same randomly
+                  subsampled on-the-grid shot locations. Our
+                  acquisition is low cost because our measurements are
+                  subsampled. We have found that the recovered finely
+                  sampled prestack baseline and monitor data actually
+                  improve significantly when the same on-the-grid shot
+                  locations are not revisited. We achieve this result
+                  by using the fact that different time-lapse data
+                  share information and that nonreplicated
+                  (on-the-grid) acquisitions can add information when
+                  prestack data are recovered jointly. Whenever the
+                  time-lapse data exhibit joint structure---i.e., they
+                  are compressible in some transform domain and share
+                  information---sparsity-promoting recovery of the
+                  "common component" and "innovations," with respect
+                  to this common component, outperforms independent
+                  recovery of the prestack baseline and monitor
+                  data. The recovered time-lapse data are of high
+                  enough quality to serve as the input to extract
+                  poststack attributes used to compute time-lapse
+                  differences. Without joint recovery, artifacts---due
+                  to the randomized subsampling---lead to
+                  deterioration of the degree of repeatability of the
+                  time-lapse data. We tested this method by carrying
+                  out experiments with reliable statistics from
+                  thousands of repeated experiments. We also confirmed
+                  that high degrees of repeatability are achievable
+                  for an ocean-bottom cable survey acquired with
+                  time-jittered continuous recording.},
+  keywords = {acquisition, time-lapse seismic, marine, random sampling, joint recovery method},
+  note = {(Geophysics)},
+  doi = {10.1190/geo2016-0076.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2017/oghenekohwo2016GEOPctl/oghenekohwo2016GEOPctl.html}
+}
+
+
 @ARTICLE{peters2016cvp,
   author = {Bas Peters and Felix J. Herrmann},
   title = {Constraints versus penalties for edge-preserving full-waveform inversion},
@@ -42,6 +139,69 @@
   note = {(The Leading Edge)},
   doi = {10.1190/tle36010094.1},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2016/peters2016cvp/peters2016cvp.html}
+}
+
+
+@ARTICLE{wason2016GEOPctl,
+  author = {Haneet Wason and Felix Oghenekohwo and Felix J. Herrmann},
+  title = {Low-cost time-lapse seismic with distributed compressive sensing---{Part} 2: impact on repeatability},
+  journal = {Geophysics},
+  year = {2017},
+  month = {05},
+  volume = {82},
+  number = {3},
+  pages = {P15-P30},
+  abstract = {Irregular or off-the-grid spatial sampling of sources
+                  and receivers is inevitable in field seismic
+                  acquisitions. Consequently, time-lapse surveys
+                  become particularly expensive since current
+                  practices aim to replicate densely sampled surveys
+                  for monitoring changes occurring in the reservoir
+                  due to hydrocarbon production. We demonstrate that
+                  under certain circumstances, high-quality prestack
+                  data can be obtained from cheap randomized
+                  subsampled measurements that are observed from
+                  nonreplicated surveys. We extend our time-jittered
+                  marine acquisition to time-lapse surveys by
+                  designing acquisition on irregular spatial grids
+                  that render simultaneous, subsampled and irregular
+                  measurements. Using the fact that different
+                  time-lapse data share information and that
+                  nonreplicated surveys add information when prestack
+                  data are recovered jointly, we recover periodic
+                  densely sampled and colocated prestack data by
+                  adapting the recovery method to incorporate a
+                  regularization operator that maps traces from an
+                  irregular spatial grid to a regular periodic
+                  grid. The recovery method is, therefore, a combined
+                  operation of regularization, interpolation
+                  (estimating missing fine-grid traces from subsampled
+                  coarse-grid data), and source separation (unraveling
+                  overlapping shot records). By relaxing the
+                  insistence on replicability between surveys, we find
+                  that recovery of the time-lapse difference shows
+                  little variability for realistic field scenarios of
+                  slightly nonreplicated surveys that suffer from
+                  unavoidable natural deviations in spatial sampling
+                  of shots (or receivers) and pragmatic
+                  compressed-sensing based nonreplicated surveys when
+                  compared to the "ideal" scenario of exact
+                  replicability between surveys. Moreover, the
+                  recovered densely sampled prestack baseline and
+                  monitor data improve significantly when the
+                  acquisitions are not replicated, and hence can serve
+                  as input to extract poststack attributes used to
+                  compute time-lapse differences. Our observations are
+                  based on experiments conducted for an ocean-bottom
+                  cable survey acquired with time-jittered continuous
+                  recording assuming source equalization (or same
+                  source signature) for the time-lapse surveys and no
+                  changes in wave heights, water column velocities or
+                  temperature and salinity profiles, etc.},
+  keywords = {marine acquisition, time-lapse seismic, off-the-grid recovery, random sampling, joint recovery method, optimization},
+  note = {(Geophysics)},
+  doi = {10.1190/geo2016-0252.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2017/wason2016GEOPctl/wason2016GEOPctl.html}
 }
 
 

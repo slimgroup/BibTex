@@ -17740,35 +17740,6 @@
 }
 
 
-@UNPUBLISHED{kumar2016bls,
-  author = {Rajiv Kumar and Oscar Lopez and Damek Davis and Aleksandr Y. Aravkin and Felix J. Herrmann},
-  title = {Beating level-set methods for {3D} seismic data interpolation: a primal-dual alternating approach},
-  year = {2016},
-  abstract = {Acquisition cost is a crucial bottleneck for seismic
-                  workflows, and low-rank formulations for data
-                  interpolation allow practitioners to 'fill in' data
-                  volumes from critically subsampled data acquired in
-                  the field. Tremendous size of seismic data volumes
-                  required for seismic processing remains a major
-                  challenge for these techniques. We propose a new
-                  approach to solve residual constrained formulations
-                  for interpolation. We represent the data volume
-                  using matrix factors, and build a block-coordinate
-                  algorithm with constrained convex subproblems that
-                  are solved with a primal-dual splitting scheme. The
-                  new approach is competitive with state of the art
-                  level-set algorithms that interchange the role of
-                  objectives with constraints. We use the new
-                  algorithm to successfully interpolate a large scale
-                  5D seismic data volume, generated from the
-                  geologically complex synthetic 3D Compass velocity
-                  model, where 80\% of the data has been removed.},
-  keywords = {matrix completion, nuclear-norm relaxation, seismic data, interpolation, alternating minimization, primal-dual splitting, private},
-  note = {Submitted on July 18, 2016.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/kumar2016bls/kumar2016bls.pdf}
-}
-
-
 @UNPUBLISHED{louboutin2016ppf,
   author = {Mathias Louboutin and Michael Lange and Felix J. Herrmann and Navjot Kukreja and Gerard Gorman},
   title = {Performance prediction of finite-difference solvers for different computer architectures},
@@ -17815,64 +17786,162 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/louboutin2016ppf/louboutin2016ppf.pdf}
 }
 
+% This file was created with JabRef 2.6.
+% Encoding: MacRoman
 
-@UNPUBLISHED{oghenekohwo2016GEOPctl,
+% This file was created with JabRef 2.8.1.
+% Encoding: MacRoman
+
+%----- 2017 -----%
+
+@ARTICLE{kumar2016bls,
+  author = {Rajiv Kumar and Oscar Lopez and Damek Davis and Aleksandr Y. Aravkin and Felix J. Herrmann},
+  title = {Beating level-set methods for {5D} seismic data interpolation: a primal-dual alternating approach},
+  journal = {IEEE Transactions on Computational Imaging},
+  year = {2017},
+  month = {04},
+  abstract = {Acquisition cost is a crucial bottleneck for seismic
+                  workflows, and low-rank formulations for data
+                  interpolation allow practitioners to 'fill in' data
+                  volumes from critically subsampled data acquired in
+                  the field. Tremendous size of seismic data volumes
+                  required for seismic processing remains a major
+                  challenge for these techniques. Residual-constrained
+                  formulations require less parameter tuning when the
+                  target noise floor is known. We propose a new
+                  approach to solve residual constrained formulations
+                  for interpolation. We represent the data volume in a
+                  compressed manner using low-rank matrix factors, and
+                  build a block-coordinate algorithm with constrained
+                  convex subproblems that are solved with a
+                  primal-dual splitting scheme. The develop
+                  optimization framework works on the whole seismic
+                  temporal frequency slices and does not require
+                  windowing or non-trivial sorting of seismic
+                  data. The new approach is competitive with state of
+                  the art level-set algorithms that interchange the
+                  role of objectives with constraints. We use the new
+                  algorithm to successfully interpolate a large scale
+                  5D seismic data volume (upto 1010 data-points),
+                  generated from the geologically complex synthetic 3D
+                  Compass velocity model, where 80\% of the data has
+                  been removed. We also develop a robust extension of
+                  the primal-dual approach to deal with the outliers
+                  (or noise) in the data.},
+  keywords = {matrix completion, seismic data, seismic trace interpolation, alternating minimization, primal-dual splitting},
+  note = {(published online in IEEE Transactions on Computational Imaging)},
+  doi = {10.1109/TCI.2017.2693966},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/IEEETransComputationalImaging/2017/kumar2016bls/kumar2016bls.pdf}
+}
+
+
+@ARTICLE{oghenekohwo2016GEOPctl,
   author = {Felix Oghenekohwo and Haneet Wason and Ernie Esser and Felix J. Herrmann},
-  title = {Low-cost time-lapse seismic with distributed {Compressive} {Sensing}---exploiting common information amongst the vintages},
-  year = {2016},
+  title = {Low-cost time-lapse seismic with distributed compressive sensing---{Part} 1: exploiting common information among the vintages},
+  journal = {Geophysics},
+  year = {2017},
+  month = {05},
+  volume = {82},
+  number = {3},
+  pages = {P1-P13},
   abstract = {Time-lapse seismic is a powerful technology for
                   monitoring a variety of subsurface changes due to
                   reservoir fluid flow. However, the practice can be
                   technically challenging when one seeks to acquire
                   colocated time-lapse surveys with high degrees of
-                  replicability amongst the shot locations. We
-                  demonstrate that under "ideal" circumstances, where
-                  we ignore errors related to taking measurements off
-                  the grid, high-quality prestack data can be obtained
-                  from randomized subsampled measurements that are
-                  observed from surveys where we choose not to revisit
-                  the same randomly subsampled on-the-grid shot
-                  locations. Our acquisition is low cost since our
-                  measurements are subsampled. We find that the
-                  recovered finely sampled prestack baseline and
-                  monitor data actually improve significantly when the
-                  same on-the-grid shot locations are not
-                  revisited. We achieve this result by using the fact
-                  that different time-lapse data share information and
-                  that nonreplicated (on-the-grid) acquisitions can
-                  add information when prestack data are recovered
-                  jointly. Whenever the time-lapse data exhibit joint
-                  structure---i.e., are compressible in some transform
-                  domain and share information---sparsity-promoting
-                  recovery of the "common component" and
-                  "innovations", with respect to this common
-                  component, outperforms independent recovery of both
-                  the prestack baseline and monitor data. The
-                  recovered time-lapse data are of high enough quality
-                  to serve as input to extract poststack attributes
-                  used to compute time-lapse differences. Without
-                  joint recovery, artifacts---due to the randomized
-                  subsampling---lead to deterioration of the degree of
-                  repeatability of the time-lapse data. We support our
-                  claims by carrying out experiments that collect
-                  reliable statistics from thousands of repeated
-                  experiments. We also confirm that high degrees of
-                  repeatability are achievable for an ocean-bottom
-                  cable survey acquired with time-jittered continuous
-                  recording. This is part 1 of a two-paper series on
-                  time-lapse seismic with compressed sensing. Part 2:
-                  "Cheap time-lapse with distributed Compressive
-                  Sensing---impact on repeatability".},
-  keywords = {acquisition, time-lapse seismic, marine, random sampling, joint recovery method, private},
-  note = {Accepted to be published in Geophysics.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/oghenekohwo2016GEOPctl/oghenekohwo2016GEOPctl.html}
+                  replicability among the shot locations. We have
+                  determined that under "ideal" circumstances, in
+                  which we ignore errors related to taking
+                  measurements off the grid, high-quality prestack
+                  data can be obtained from randomized subsampled
+                  measurements that are observed from surveys in which
+                  we choose not to revisit the same randomly
+                  subsampled on-the-grid shot locations. Our
+                  acquisition is low cost because our measurements are
+                  subsampled. We have found that the recovered finely
+                  sampled prestack baseline and monitor data actually
+                  improve significantly when the same on-the-grid shot
+                  locations are not revisited. We achieve this result
+                  by using the fact that different time-lapse data
+                  share information and that nonreplicated
+                  (on-the-grid) acquisitions can add information when
+                  prestack data are recovered jointly. Whenever the
+                  time-lapse data exhibit joint structure---i.e., they
+                  are compressible in some transform domain and share
+                  information---sparsity-promoting recovery of the
+                  "common component" and "innovations," with respect
+                  to this common component, outperforms independent
+                  recovery of the prestack baseline and monitor
+                  data. The recovered time-lapse data are of high
+                  enough quality to serve as the input to extract
+                  poststack attributes used to compute time-lapse
+                  differences. Without joint recovery, artifacts---due
+                  to the randomized subsampling---lead to
+                  deterioration of the degree of repeatability of the
+                  time-lapse data. We tested this method by carrying
+                  out experiments with reliable statistics from
+                  thousands of repeated experiments. We also confirmed
+                  that high degrees of repeatability are achievable
+                  for an ocean-bottom cable survey acquired with
+                  time-jittered continuous recording.},
+  keywords = {acquisition, time-lapse seismic, marine, random sampling, joint recovery method},
+  note = {(Geophysics)},
+  doi = {10.1190/geo2016-0076.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2017/oghenekohwo2016GEOPctl/oghenekohwo2016GEOPctl.html}
 }
 
 
-@UNPUBLISHED{wason2016GEOPctl,
+@ARTICLE{peters2016cvp,
+  author = {Bas Peters and Felix J. Herrmann},
+  title = {Constraints versus penalties for edge-preserving full-waveform inversion},
+  journal = {The Leading Edge},
+  year = {2017},
+  month = {01},
+  volume = {36},
+  number = {1},
+  pages = {94-100},
+  abstract = {Full-waveform inversion is challenging in complex
+                  geologic areas. Even when provided with an accurate
+                  starting model, the inversion algorithms often
+                  struggle to update the velocity model. Compared with
+                  other areas in applied geophysics, including prior
+                  information in full-waveform inversion is still in
+                  its relative infancy. In part, this is due to the
+                  fact that it is difficult to incorporate prior
+                  information that relates to geologic settings where
+                  strong discontinuities in the velocity model
+                  dominate, because these settings call for nonsmooth
+                  regularizations. We tackle this problem by including
+                  constraints on the spatial variations and value
+                  ranges of the inverted velocities, as opposed to
+                  adding penalties to the objective, which is more
+                  customary in mainstream geophysical inversion. By
+                  demonstrating the lack of predictability of
+                  edge-preserving inversion when the regularization is
+                  in the form of an added penalty term, we advocate
+                  the inclusion of constraints instead. Our examples
+                  show that the latter leads to more predictable
+                  results and to significant improvements in the
+                  delineation of salt bodies when these constraints
+                  are relaxed gradually in combination with extending
+                  the search space to approximately fit the observed
+                  data but not the noise.},
+  keywords = {full waveform inversion, salt dome, algorithm, noise, optimization, total variation, penalty methods},
+  note = {(The Leading Edge)},
+  doi = {10.1190/tle36010094.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2016/peters2016cvp/peters2016cvp.html}
+}
+
+
+@ARTICLE{wason2016GEOPctl,
   author = {Haneet Wason and Felix Oghenekohwo and Felix J. Herrmann},
-  title = {Low-cost time-lapse seismic with distributed Compressive Sensing---impact on repeatability},
-  year = {2016},
+  title = {Low-cost time-lapse seismic with distributed compressive sensing---{Part} 2: impact on repeatability},
+  journal = {Geophysics},
+  year = {2017},
+  month = {05},
+  volume = {82},
+  number = {3},
+  pages = {P15-P30},
   abstract = {Irregular or off-the-grid spatial sampling of sources
                   and receivers is inevitable in field seismic
                   acquisitions. Consequently, time-lapse surveys
@@ -17920,58 +17989,10 @@
                   source signature) for the time-lapse surveys and no
                   changes in wave heights, water column velocities or
                   temperature and salinity profiles, etc.},
-  keywords = {marine acquisition, time-lapse seismic, off-the-grid recovery, random sampling, joint recovery method, optimization, private},
-  note = {Accepted to be published in Geophysics.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2016/wason2016GEOPctl/wason2016GEOPctl.html}
-}
-
-% This file was created with JabRef 2.6.
-% Encoding: MacRoman
-
-% This file was created with JabRef 2.8.1.
-% Encoding: MacRoman
-
-%----- 2017 -----%
-
-@ARTICLE{peters2016cvp,
-  author = {Bas Peters and Felix J. Herrmann},
-  title = {Constraints versus penalties for edge-preserving full-waveform inversion},
-  journal = {The Leading Edge},
-  year = {2017},
-  month = {01},
-  volume = {36},
-  number = {1},
-  pages = {94-100},
-  abstract = {Full-waveform inversion is challenging in complex
-                  geologic areas. Even when provided with an accurate
-                  starting model, the inversion algorithms often
-                  struggle to update the velocity model. Compared with
-                  other areas in applied geophysics, including prior
-                  information in full-waveform inversion is still in
-                  its relative infancy. In part, this is due to the
-                  fact that it is difficult to incorporate prior
-                  information that relates to geologic settings where
-                  strong discontinuities in the velocity model
-                  dominate, because these settings call for nonsmooth
-                  regularizations. We tackle this problem by including
-                  constraints on the spatial variations and value
-                  ranges of the inverted velocities, as opposed to
-                  adding penalties to the objective, which is more
-                  customary in mainstream geophysical inversion. By
-                  demonstrating the lack of predictability of
-                  edge-preserving inversion when the regularization is
-                  in the form of an added penalty term, we advocate
-                  the inclusion of constraints instead. Our examples
-                  show that the latter leads to more predictable
-                  results and to significant improvements in the
-                  delineation of salt bodies when these constraints
-                  are relaxed gradually in combination with extending
-                  the search space to approximately fit the observed
-                  data but not the noise.},
-  keywords = {full waveform inversion, salt dome, algorithm, noise, optimization, total variation, penalty methods},
-  note = {(The Leading Edge)},
-  doi = {10.1190/tle36010094.1},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2016/peters2016cvp/peters2016cvp.html}
+  keywords = {marine acquisition, time-lapse seismic, off-the-grid recovery, random sampling, joint recovery method, optimization},
+  note = {(Geophysics)},
+  doi = {10.1190/geo2016-0252.1},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2017/wason2016GEOPctl/wason2016GEOPctl.html}
 }
 
 

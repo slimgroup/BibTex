@@ -1,6 +1,66 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+%-----2017-----%
+
+@TECHREPORT{louboutin2016OGHPCocp,
+  author = {Mathias Louboutin and Gerard Gorman and Felix J. Herrmann},
+  title = {Optimizing the computational performance of time-domain modelling---leveraging multiple right-hand-sides},
+  year = {2017},
+  number = {TR-EOAS-2017-2},
+  institution = {UBC},
+  abstract = {Exploration geophysics heavily relies upon fast solvers
+                  for the wave-equation and its adjoint. The main
+                  computational cost of a wave-equation solver is to
+                  compute the Laplacian, or more complex
+                  finite-difference operators, at every time step. The
+                  performance of many discretizations is limited by
+                  the relatively low operational intensity (number of
+                  floating point operations divided by memory traffic)
+                  of the finite-difference stencil. Solving the
+                  wave-equation for multiple sources/right-hand-sides
+                  (RHSs) at once mitigates this problem by increasing
+                  the operational intensity. This is implemented by
+                  rewriting the classical matrix-vector product into a
+                  matrix-matrix product where each column of the
+                  second matrix represent the solution wavefield for
+                  each given source. This minor modification to the
+                  solver is shown to achieve a 2-4 times speedup
+                  compared to a single source solver. We concentrate
+                  in this paper on acoustic modelling, but our
+                  approach can easily be extended to anisotropic or
+                  elastic cases for both forward and adjoint
+                  modelling.},
+  keywords = {finite differences, HPC, modelling, time domain},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2017/louboutin2016OGHPCocp/louboutin2016OGHPCocp.pdf}
+}
+
+
+@TECHREPORT{witte2016OGHPClst,
+  author = {Philipp A. Witte and Mathias Louboutin and Gerard Gorman and Felix J. Herrmann},
+  title = {A large-scale time-domain seismic modeling and inversion workflow in {Julia}},
+  year = {2017},
+  number = {TR-EOAS-2017-1},
+  institution = {UBC},
+  abstract = {We present our initial steps towards the development of
+                  a large-scale seismic modeling workflow in Julia
+                  that provides a framework for wave equation based
+                  inversion methods like full waveform inversion or
+                  least squares migration. Our framework is based on
+                  the Devito, a finite difference domain specific
+                  language compiler that generates highly optimized
+                  and parallel code. We develop a flexible workflow
+                  that is based on abstract matrixfree linear
+                  operators and enables developers to write code that
+                  closely resembles the underlying math, while at the
+                  same time leveraging highly optimized wave equation
+                  solvers, allowing us to solve large-scale
+                  three-dimensional inverse problems.},
+  keywords = {HPC, inversion, modelling},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2017/witte2016OGHPClst/witte2016OGHPClst.pdf}
+}
+
+
 %-----2016-----%
 
 @TECHREPORT{louboutin2016SEGocp,

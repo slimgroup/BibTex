@@ -15,6 +15,44 @@
 }
 
 
+@CONFERENCE{kukreja2016OGHPClsm,
+  author = {Navjot Kukreja and Mathias Louboutin and Michael Lange and Fabio Luporini and Gerard Gorman},
+  title = {Leveraging symbolic math for rapid development of applications for seismic modeling},
+  year = {2017},
+  month = {03},
+  booktitle = {OGHPC},
+  abstract = {Wave propagation kernels are the core of many commonly
+                  used algorithms for inverse problems in exploration
+                  geophysics. While they are easy to write and analyze
+                  for the simplied cases, the code quickly becomes
+                  complex when the physics needs to be made more
+                  precise or the performance of these codes is to be
+                  optimized. Signicant eort is repeated every time new
+                  forms of physics need to be implemented, or a new
+                  computing platform to be supported. The use of
+                  symbolic mathematics as a domain specic language
+                  (DSL) for input, combined with automatic generation
+                  of high performance code customized for the target
+                  hardware platform is a promising approach to
+                  maximize code reuse. Devito is a DSL for nite
+                  dierence that uses symbolic mathematics to generate
+                  optimized code for wave propagation based on a
+                  provided wave equation. It enables rapid application
+                  development in a eld where the average time spent on
+                  development has historically been in weeks and
+                  months. The Devito DSL system is completely wrapped
+                  within the Python programming language and the fact
+                  that the running code is in C is completely
+                  transparent, making it simple to include Devito as
+                  part of a larger work ow including multiple
+                  applications over a large cluster.},
+  keywords = {OGHPC, finite differences, HPC, modelling, time domain},
+  note = {(Oil and Gas HPC Conference, Rice University)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/OGHPC/2017/kukreja2016OGHPClsm/kukreja2016OGHPClsm.pdf},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/OGHPC/2017/kukreja2016OGHPClsm/kukreja2016OGHPClsm_pres.pdf}
+}
+
+
 @CONFERENCE{kukreja2017SIAMdsm,
   author = {Navjot Kukreja and Michael Lange and Mathias Louboutin and Fabio Luporini and Gerard Gorman},
   title = {Devito: symbolic math for automated fast finite difference computations},
@@ -2627,8 +2665,8 @@
                   use to solve the time-harmonic acoustic isotropic
                   constant density wave equation.},
   keywords = {OGHPC, Kaczmarz, CGMN, FPGA, reconfigurable computing, Helmholtz equation},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/OGHPC/petrenko2014OGHPCaih.pdf},
-  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/OGHPC/petrenko2014OGHPCaih_poster.pdf}
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/OGHPC/2014/petrenko2014OGHPCaih/petrenko2014OGHPCaih.pdf},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/OGHPC/2014/petrenko2014OGHPCaih/petrenko2014OGHPCaih_poster.pdf}
 }
 
 
@@ -15939,6 +15977,66 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+%-----2017-----%
+
+@TECHREPORT{louboutin2016OGHPCocp,
+  author = {Mathias Louboutin and Gerard Gorman and Felix J. Herrmann},
+  title = {Optimizing the computational performance of time-domain modelling---leveraging multiple right-hand-sides},
+  year = {2017},
+  number = {TR-EOAS-2017-2},
+  institution = {UBC},
+  abstract = {Exploration geophysics heavily relies upon fast solvers
+                  for the wave-equation and its adjoint. The main
+                  computational cost of a wave-equation solver is to
+                  compute the Laplacian, or more complex
+                  finite-difference operators, at every time step. The
+                  performance of many discretizations is limited by
+                  the relatively low operational intensity (number of
+                  floating point operations divided by memory traffic)
+                  of the finite-difference stencil. Solving the
+                  wave-equation for multiple sources/right-hand-sides
+                  (RHSs) at once mitigates this problem by increasing
+                  the operational intensity. This is implemented by
+                  rewriting the classical matrix-vector product into a
+                  matrix-matrix product where each column of the
+                  second matrix represent the solution wavefield for
+                  each given source. This minor modification to the
+                  solver is shown to achieve a 2-4 times speedup
+                  compared to a single source solver. We concentrate
+                  in this paper on acoustic modelling, but our
+                  approach can easily be extended to anisotropic or
+                  elastic cases for both forward and adjoint
+                  modelling.},
+  keywords = {finite differences, HPC, modelling, time domain},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2017/louboutin2016OGHPCocp/louboutin2016OGHPCocp.pdf}
+}
+
+
+@TECHREPORT{witte2016OGHPClst,
+  author = {Philipp A. Witte and Mathias Louboutin and Gerard Gorman and Felix J. Herrmann},
+  title = {A large-scale time-domain seismic modeling and inversion workflow in {Julia}},
+  year = {2017},
+  number = {TR-EOAS-2017-1},
+  institution = {UBC},
+  abstract = {We present our initial steps towards the development of
+                  a large-scale seismic modeling workflow in Julia
+                  that provides a framework for wave equation based
+                  inversion methods like full waveform inversion or
+                  least squares migration. Our framework is based on
+                  the Devito, a finite difference domain specific
+                  language compiler that generates highly optimized
+                  and parallel code. We develop a flexible workflow
+                  that is based on abstract matrixfree linear
+                  operators and enables developers to write code that
+                  closely resembles the underlying math, while at the
+                  same time leveraging highly optimized wave equation
+                  solvers, allowing us to solve large-scale
+                  three-dimensional inverse problems.},
+  keywords = {HPC, inversion, modelling},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2017/witte2016OGHPClst/witte2016OGHPClst.pdf}
+}
+
+
 %-----2016-----%
 
 @TECHREPORT{louboutin2016SEGocp,
@@ -17446,6 +17544,61 @@
 }
 
 
+@UNPUBLISHED{kumar2017hrc,
+  author = {Rajiv Kumar and Haneet Wason and Shashin Sharan and Felix J. Herrmann},
+  title = {Highly repeatable {3D} compressive full-azimuth towed-streamer time-lapse acquisition --- a numerical feasibility study at scale},
+  year = {2017},
+  month = {05},
+  abstract = {Most conventional 3D time-lapse (or 4D) acquisitions are
+                  ocean-bottom cable (OBC) or ocean-bottom node (OBN)
+                  surveys since these surveys are relatively easy to
+                  replicate compared to towed-streamer surveys. To
+                  attain high degrees of repeatability, survey
+                  replicability and dense periodic sampling has become
+                  the norm for 4D surveys that renders this technology
+                  expensive. Conventional towed-streamer acquisitions
+                  suffer from limited illumination of subsurface due
+                  to narrow azimuth. Although, acquisition techniques
+                  such as multi-azimuth, wide-azimuth, rich-azimuth
+                  acquisition, etc., have been developed to illuminate
+                  the subsurface from all possible angles, these
+                  techniques can be prohibitively expensive for
+                  densely sampled surveys. This leads to uneven
+                  sampling, i.e., dense receiver and coarse source
+                  sampling or vice-versa, in order to make these
+                  acquisitions more affordable. Motivated by the
+                  design principles of Compressive Sensing (CS), we
+                  acquire economic, randomly subsampled (or
+                  compressive) and simultaneous towed-streamer
+                  time-lapse data without the need of replicating the
+                  surveys. We recover densely sampled time-lapse data
+                  on one and the same periodic grid by using a
+                  joint-recovery model (JRM) that exploits shared
+                  information among different time-lapse recordings,
+                  coupled with a computationally cheap and scalable
+                  rank-minimization technique. The acquisition is low
+                  cost since we have subsampled measurements (about
+                  70\% subsampled), simulated with a simultaneous
+                  long-offset acquisition configuration of two source
+                  vessels travelling across a survey area at random
+                  azimuths. We analyze the performance of our proposed
+                  compressive acquisition and subsequent recovery
+                  strategy by conducting a synthetic, at scale,
+                  seismic experiment on a 3D time-lapse model
+                  containing geological features such as channel
+                  systems, dipping and faulted beds, unconformities
+                  and a gas cloud. Our findings indicate that the
+                  insistence on replicability between surveys and the
+                  need for OBC/OBN 4D surveys can, perhaps, be
+                  relaxed. Moreover, this is a natural next step
+                  beyond the successful CS acquisition examples
+                  discussed in this special issue.},
+  keywords = {time-lapse seismic, marine, 3D, simultaneous long offset, CS, rank minimization, private},
+  note = {Submitted to The Leading Edge},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2017/kumar2017hrc/kumar2017hrc.html}
+}
+
+
 @UNPUBLISHED{louboutin2017EAGEdns,
   author = {Mathias Louboutin and Llu\'{i}s Guasch and Felix J. Herrmann},
   title = {Data normalization strategies for seismic inversion},
@@ -17522,6 +17675,51 @@
                   coordinates are not precise.},
   keywords = {EAGE, repeatability, time lapse, compressive sensing, calibration, noise, private},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Conferences/EAGE/2017/oghenekohwo2017EAGEitl/oghenekohwo2017EAGEitl.html}
+}
+
+
+@UNPUBLISHED{oghenekohwo2017hrt,
+  author = {Felix Oghenekohwo and Felix J. Herrmann},
+  title = {Highly repeatable time-lapse seismic with distributed {Compressive} {Sensing}---mitigating effects of calibration errors},
+  year = {2017},
+  month = {05},
+  abstract = {Recently, we demonstrated that combining joint recovery
+                  with low-cost non-replicated randomized sampling
+                  tailored to time-lapse seismic can give us access to
+                  high fidelity, highly repeatable, dense prestack
+                  vintages, and high-grade time-lapse. To arrive at
+                  this result, we assumed well-calibrated
+                  surveys---i.e., we presumed accurate post-plot
+                  source/receiver positions. Unfortunately, in
+                  practice seismic surveys are prone to calibration
+                  errors, which are unknown deviations between actual
+                  and post-plot acquisition geometry. By means of
+                  synthetic experiments, we analyze the possible
+                  impact of these errors on vintages and on time-lapse
+                  data obtained with our joint recovery model from
+                  compressively sampled surveys. Supported by these
+                  experiments, we demonstrate that highly repeatable
+                  time-lapse vintages are attainable despite the
+                  presence of unknown calibration errors in the
+                  positions of the shots. We assess the repeatability
+                  quantitatively for two scenarios by studying the
+                  impact of calibration errors on conventional dense
+                  but irregularly sampled surveys and on low-cost
+                  compressed surveys. To separate time-lapse effects
+                  from calibration issues, we consider the idealized
+                  case where the subsurface remains unchanged and the
+                  practical situation where time-lapse changes are
+                  restricted to a subset of the data. In both cases,
+                  the quality of the recovered vintages and time-lapse
+                  decreases gracefully for low-cost compressed surveys
+                  with increasing calibration errors. Conversely, the
+                  quality of vintages from expensive densely
+                  periodically sampled surveys decreases more rapidly
+                  as unknown and difficult to control calibration
+                  errors increase.},
+  keywords = {time-lapse seismic, marine, random sampling, calibration errors, joint-recovery method, private},
+  note = {Submitted to The Leading Edge},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2017/oghenekohwo2017hrt/oghenekohwo2017hrt.html}
 }
 
 

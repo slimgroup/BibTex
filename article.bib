@@ -44,6 +44,59 @@
 }
 
 
+@ARTICLE{louboutin2016ppf,
+  author = {Mathias Louboutin and Michael Lange and Felix J. Herrmann and Navjot Kukreja and Gerard Gorman},
+  title = {Performance prediction of finite-difference solvers for different computer architectures},
+  journal = {Computers \& Geosciences},
+  year = {2017},
+  month = {08},
+  volume = {105},
+  pages = {148-157},
+  abstract = {The life-cycle of a partial differential equation (PDE)
+                  solver is often characterized by three development
+                  phases: the development of a stable numerical
+                  discretization; development of a correct (verified)
+                  implementation; and the optimization of the
+                  implementation for different computer
+                  architectures. Often it is only after significant
+                  time and effort has been invested that the
+                  performance bottlenecks of a PDE solver are fully
+                  understood, and the precise details varies between
+                  different computer architectures. One way to
+                  mitigate this issue is to establish a reliable
+                  performance model that allows a numerical analyst to
+                  make reliable predictions of how well a numerical
+                  method would perform on a given computer
+                  architecture, before embarking upon potentially long
+                  and expensive implementation and optimization
+                  phases. The availability of a reliable performance
+                  model also saves developer effort as it both informs
+                  the developer on what kind of optimisations are
+                  beneficial, and when the maximum expected
+                  performance has been reached and optimisation work
+                  should stop. We show how discretization of a
+                  wave-equation can be theoretically studied to
+                  understand the performance limitations of the method
+                  on modern computer architectures. We focus on the
+                  roofline model, now broadly used in the
+                  high-performance computing community, which
+                  considers the achievable performance in terms of the
+                  peak memory bandwidth and peak floating point
+                  performance of a computer with respect to
+                  algorithmic choices. A first principles analysis of
+                  operational intensity for key time-stepping
+                  finite-difference algorithms is presented. With this
+                  information available at the time of algorithm
+                  design, the expected performance on target computer
+                  systems can be used as a driver for algorithm
+                  design. },
+  keywords = {finite differences, performance, modeling, HPC},
+  note = {(Computers \& Geosciences)},
+  doi = {https://doi.org/10.1016/j.cageo.2017.04.014},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/ComputersAndGeosciences/2016/louboutin2016ppf/louboutin2016ppf.pdf}
+}
+
+
 @ARTICLE{oghenekohwo2016GEOPctl,
   author = {Felix Oghenekohwo and Haneet Wason and Ernie Esser and Felix J. Herrmann},
   title = {Low-cost time-lapse seismic with distributed compressive sensing---{Part} 1: exploiting common information among the vintages},

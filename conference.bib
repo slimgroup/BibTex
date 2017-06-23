@@ -3,6 +3,39 @@
 
 %-----2017-----%
 
+@CONFERENCE{alfaraj2017EAGEswr,
+  author = {Ali M. Alfaraj and Rajiv Kumar and Felix J. Herrmann},
+  title = {Shear wave reconstruction from low cost randomized acquisition},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2017},
+  month = {06},
+  abstract = {Shear waves travel in the subsurface at a lower speed
+                  compared with compressional waves. Therefore, much
+                  finer spatial sampling is required to properly
+                  record the shear waves. This leads to higher
+                  acquisition costs which are typically avoided by
+                  designing surveys geared towards only compressional
+                  waves imaging. We propose using randomly
+                  under-sampled ocean bottom acquisition for recording
+                  both compressional and shear waves. The recorded
+                  multicomponent data is then interpolated using an
+                  SVD-free low rank interpolation scheme that is
+                  feasible for large scale seismic data volumes to
+                  obtain finely sampled data. Following that, we
+                  perform elastic wavefield decomposition at the ocean
+                  bottom to recover accurate up- and dow-going
+                  S-waves. Synthetic data results indicate that using
+                  randomized under-sampled acquisition, we can recover
+                  accurate S-waves with an economical cost compared
+                  with conventional acquisition designs.},
+  keywords = {EAGE, shear waves, rank minimization, interpolation, randomized acquisition},
+  note = {(EAGE, Paris)},
+  doi = {10.3997/2214-4609.201700594},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/alfaraj2017EAGEswr/alfaraj2017EAGEswr.pdf},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/alfaraj2017EAGEswr/alfaraj2017EAGEswr_pres.pdf}
+}
+
+
 @CONFERENCE{herrmann2017SIAMdsa,
   author = {Felix J. Herrmann and Curt Da Silva},
   title = {Domain-specific abstractions for full-waveform inversion},
@@ -66,6 +99,103 @@
 }
 
 
+@CONFERENCE{kumar2017EAGEdha,
+  author = {Rajiv Kumar and Nick Moldoveanu and Felix J. Herrmann},
+  title = {Denoising high-amplitude cross-flow noise using curvelet-based stable principle component pursuit},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2017},
+  month = {06},
+  abstract = {Removal of high-amplitude cross-flow noise in marine
+                  towed-streamer acquisition is of great interest
+                  because cross-flow noise hinders the success of
+                  subsequent processing (e.g. EPSI) and
+                  migration. However, the removal of cross-flow noise
+                  is a challenging process because cross-flow noise
+                  dominates steep angles and low-frequency components
+                  of the signal. As a result, applying a simple
+                  high-pass filter can result in a loss of coherent
+                  diving waves and reflected energy. We propose a
+                  stable curvelet-based principle-component pursuit
+                  approach that does not suffer from this shortcoming
+                  because it uses angle- and scale-adaptivity of the
+                  curvelet transform in combination with the low-rank
+                  property of cross-flow noise. As long as the
+                  cross-flow noise exhibits low-rank in the curvelet
+                  domain, our method successfully separates this
+                  signal component from the diving waves and seismic
+                  reflectivity, which is well-know to be sparse in the
+                  curvelet domain. Experimental results on a
+                  common-shot gather extracted from a coil shooting
+                  survey in the Gulf of Mexico shows the potential of
+                  our approach.},
+  keywords = {EAGE, denoising, coil data, cross-flow noise, curvelet, SPCP},
+  note = {(EAGE, Paris)},
+  doi = {10.3997/2214-4609.201701055},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/kumar2017EAGEdha/kumar2017EAGEdha.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/kumar2017EAGEdha/kumar2017EAGEdha_poster.pdf}
+}
+
+
+@CONFERENCE{louboutin2017EAGEdns,
+  author = {Mathias Louboutin and Llu\'{i}s Guasch and Felix J. Herrmann},
+  title = {Data normalization strategies for full-waveform inversion},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2017},
+  month = {06},
+  abstract = {Amplitude mismatch is an inherent problem in seismic
+                  inversion. Most of the source estimation techniques
+                  are associated with amplitude uncertainty due to
+                  incomplete representation of the physics or
+                  estimation method parameters. Rewriting the
+                  inversion problem in an amplitude free formulation
+                  allows to mitigate the amplitude ambiguity and help
+                  the inversion process to converge. We present in
+                  this work two different strategies to lessen
+                  amplitude effects in seismic inversion, derive the
+                  corresponding update directions and show how we
+                  handle scaling error correctly in both the objective
+                  function and the gradient.},
+  keywords = {EAGE, FWI, normalization, inversion, nonlinear},
+  note = {(EAGE, Paris)},
+  doi = {10.3997/2214-4609.201700720},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/louboutin2017EAGEdns/louboutin2017EAGEdns.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/louboutin2017EAGEdns/louboutin2017EAGEdns_poster.pdf}
+}
+
+
+@CONFERENCE{louboutin2017EAGEess,
+  author = {Mathias Louboutin and Felix J. Herrmann},
+  title = {Extending the search space of time-domain adjoint-state {FWI} with randomized implicit time shifts},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2017},
+  month = {06},
+  abstract = {Adjoint-state full-waveform inversion aims to obtain
+                  subsurface properties such as velocity, density or
+                  anisotropy parameters, from surface recorded
+                  data. As with any (non-stochastic) gradient based
+                  optimization procedure, the solution of this
+                  inversion procedure is to a large extend determined
+                  by the quality of the starting model. If this
+                  starting model is too far from the true model, these
+                  derivative-based optimizations will likely end up in
+                  local minima and erroneous inversion results. In
+                  certain cases, extension of the search space,
+                  e.g. by making the wavefields or focused matched
+                  sources additional unknowns, has removed some of
+                  these non-uniqueness issues but these rely on
+                  time-harmonic formulations. Here, we follow a
+                  different approach by combining an implicit
+                  extension of the velocity model, time compression
+                  techniques and recent results on stochastic sampling
+                  in non-smooth/non-convex optimization},
+  keywords = {EAGE, time domain, FWI, cycle skipping, inversion, nonconvex},
+  note = {(EAGE, Paris)},
+  doi = {10.3997/2214-4609.201700831},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/louboutin2017EAGEess/louboutin2017EAGEess.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/louboutin2017EAGEess/louboutin2017EAGEess_pres.pdf}
+}
+
+
 @CONFERENCE{louboutin2017SIAMras,
   author = {Mathias Louboutin and Michael Lange and Navjot Kukreja and Fabio Luporini and Felix J. Herrmann and Gerard Gorman},
   title = {Raising the abstraction to separate concerns: enabling different physics for geophysical exploration},
@@ -99,6 +229,81 @@
   note = {(SIAM Conference on Computational Science and Engineering, Atlanta)},
   presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SIAM/2017/louboutin2017SIAMras/louboutin2017SIAMras_pres.pdf},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SIAM/2017/louboutin2017SIAMras/louboutin2017SIAMras_pres.mov}
+}
+
+
+@CONFERENCE{oghenekohwo2017EAGEitl,
+  author = {Felix Oghenekohwo and Felix J. Herrmann},
+  title = {Improved time-lapse data repeatability with randomized sampling and distributed compressive sensing},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2017},
+  month = {06},
+  abstract = {Recently, new ideas on randomized sampling for
+                  time-lapse seismic acquisition have been proposed to
+                  address some of the challenges of replicating
+                  time-lapse surveys. These ideas, which stem from
+                  distributed compressed sensing (DCS) led to the
+                  birth of a joint recovery model (JRM) for processing
+                  time-lapse data (noise-free) acquired from
+                  non-replicated acquisition geometries. However, when
+                  the earth does not change---i.e. no time-lapse—the
+                  recovered vintages from two non-replicated surveys
+                  should show high repeatability measured in terms of
+                  normalized RMS, which is a standard metric for
+                  quantifying time-lapse data repeatability. Under
+                  this assumption of no time-lapse change, we
+                  demonstrate improved repeatability (with JRM) of the
+                  recovered data from non-replicated random samplings,
+                  first with noisy data and secondly in situations
+                  where there are calibration errors i.e. where the
+                  acquisition parameters such as source/receiver
+                  coordinates are not precise.},
+  keywords = {EAGE, repeatability, time lapse, compressive sensing, calibration, noise},
+  note = {(EAGE, Paris)},
+  doi = {10.3997/2214-4609.201701389},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/oghenekohwo2017EAGEitl/oghenekohwo2017EAGEitl.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/oghenekohwo2017EAGEitl/oghenekohwo2017EAGEitl_poster.pdf}
+}
+
+
+@CONFERENCE{witte2017EAGEspl,
+  author = {Philipp A. Witte and Mengmeng Yang and Felix J. Herrmann},
+  title = {Sparsity-promoting least-squares migration with the linearized inverse scattering imaging condition},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2017},
+  month = {06},
+  abstract = {Reverse-time migration (RTM) with the conventional
+                  cross-correlation imaging condition suffers from
+                  low-frequency artifacts that result from
+                  backscattered energy in the background velocity
+                  models. This problem translates to least-squares
+                  reverse-time migration (LS-RTM), where these
+                  artifacts slow down the convergence, as many of the
+                  initial iterations are spent on removing them. In
+                  RTM, this problem has been successfully addressed by
+                  the introduction of the so-called inverse scattering
+                  imaging condition, which naturally removes these
+                  artifacts. In this work, we derive the corresponding
+                  linearized forward operator of the inverse
+                  scattering imaging operator and incorporate this
+                  forward/adjoint operator pair into a
+                  sparsity-promoting (SPLS-RTM) workflow. We
+                  demonstrate on a challenging salt model, that LS-RTM
+                  with the inverse scattering imaging condition is far
+                  less prone to low-frequency artifacts than the
+                  conventional cross-correlation imaging condition,
+                  improves the convergence and does not require any
+                  type of additional image filters within the
+                  inversion. Through source subsampling and sparsity
+                  promotion, we reduce the computational cost in terms
+                  of PDE solves to a number comparable to conventional
+                  RTM, making our workflow applicable to large-scale
+                  problems.},
+  keywords = {EAGE, least-squares migration, imaging condition, linearized Bregman},
+  note = {(EAGE, Paris)},
+  doi = {10.3997/2214-4609.201701125},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/witte2017EAGEspl/witte2017EAGEspl.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2017/witte2017EAGEspl/witte2017EAGEspl_poster.pdf}
 }
 
 

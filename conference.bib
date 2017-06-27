@@ -36,6 +36,73 @@
 }
 
 
+@CONFERENCE{fang2017AIPepm,
+  author = {Zhilong Fang and Curt Da Silva and Felix J. Herrmann},
+  title = {An efficient penalty method for {PDE}-constrained optimization problem with source estimation and stochastic optimization},
+  booktitle = {Applied Inverse Problems Annual Conference Proceedings},
+  year = {2017},
+  month = {05--06},
+  pages = {40},
+  abstract = {Many inverse problems in applied science and engineering
+                  can be written as PDE-constrained optimization
+                  problems. Typically, one is interested in estimating
+                  the unknown medium parameters of the PDE describing
+                  the system, given multi-source measurements of the
+                  fields in the true medium. The objective function is
+                  often very oscillatory, which gives rise to
+                  problematic local minima, and merely evaluating one
+                  or more of its derivatives requires solving multiple
+                  PDEs, which are expensive. In many applications such
+                  as seismic exploration, only the source location is
+                  available and the source signature itself is
+                  unknown, which results in erroneous estimated
+                  parameters. In this work, we propose a penalty
+                  method to solve the PDE-constrained optimization
+                  problem, whereby we replace the PDE constraints by a
+                  two-norm penalty term, which leads to a bi-linear
+                  optimization problem with a much less oscillatory
+                  objective function. By applying the variable
+                  projection method, we develop an efficient method to
+                  invert the unknown parameters and source signatures
+                  simultaneously. To reduce the computational cost, we
+                  randomly select a subset of all data to update the
+                  parameters at each iteration. Numerical examples
+                  demonstrate that this method is less prone to
+                  becoming stuck in harmful local minima and is able
+                  to successfully invert the unknown parameters and
+                  source signature with less computational cost
+                  compared to using all the data.},
+  keywords = {optimization, source estimation, stochastic optimization, penalty method},
+  note = {(AIP, Hangzhou)},
+  url = {http://aip2017.csp.escience.cn/dct/page/1},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/AIP/2017/fang2017AIPepm/fang2017AIPepm_pres.pdf}
+}
+
+
+@CONFERENCE{fang2017WAVESuqf,
+  author = {Zhilong Fang and Curt Da Silva and Rachel Kuske and Felix J. Herrmann},
+  title = {Uncertainty quantification for inverse problems with a weak wave-equation constraint},
+  booktitle = {WAVES 2017 --- 13th International Conference on Mathematical and Numerical Aspects of Wave Propagation},
+  year = {2017},
+  month = {05},
+  pages = {127--128},
+  abstract = {In this work, we present a new posterior distribution to
+                  quantify uncertainties in solutions of wave-equation
+                  based inverse problems. By introducing an auxiliary
+                  variable for the wavefields, we weaken the strict
+                  wave-equation constraint used by conventional
+                  Bayesian approaches. With this weak constraint, the
+                  new posterior distribution is a bi-Gaussian
+                  distribution with respect to both model parameters
+                  and wavefields, which can be directly sampled by the
+                  Gibbs sampling method.},
+  keywords = {uncertainty, wave equation, constraint, Gibbs sampling},
+  note = {(WAVES, Minneapolis)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/WAVES/2017/fang2017WAVESuqf/fang2017WAVESuqf.html},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/WAVES/2017/fang2017WAVESuqf/fang2017WAVESuqf_pres.pdf}
+}
+
+
 @CONFERENCE{herrmann2017SIAMdsa,
   author = {Felix J. Herrmann and Curt Da Silva},
   title = {Domain-specific abstractions for full-waveform inversion},

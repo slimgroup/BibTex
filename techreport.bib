@@ -36,6 +36,40 @@
 }
 
 
+@TECHREPORT{witte2017TRcls,
+  author = {Philipp A. Witte and Mengmeng Yang and Felix J. Herrmann},
+  title = {Compressive least-squares migration with source estimation},
+  year = {2017},
+  number = {TR-EOAS-2017-3},
+  institution = {UBC},
+  abstract = {Least-squares reverse-time migration is a powerful
+                  approach for true-amplitude seismic imaging of
+                  complex geological structures. The successful
+                  application of this method is hindered by its
+                  exceedingly large computational cost and required
+                  prior knowledge of the generally unknown source
+                  wavelet. We address these problems by introducing an
+                  algorithm for low-cost sparsity-promoting
+                  least-squares migration with source estimation. We
+                  adapt a recent algorithm from sparse optimization,
+                  which allows to work with randomized subsets of
+                  shots during each iteration of least-squares
+                  migration, while still converging to an
+                  artifact-free solution. We modify the algorithm to
+                  incorporate on-the-fly source estimation through
+                  variable projection, which lets us estimate the
+                  wavelet without additional PDE solves. The algorithm
+                  is easy to implement and allows imaging at a
+                  fraction of the cost of conventional least squares
+                  reverse-time migration, requiring only around two
+                  passes trough the data, making the method feasible
+                  for large-scale imaging problems with unknown source
+                  wavelets.},
+  keywords = {LSRTM, source estimation, sparsity, migration, time domain},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/TechReport/2017/witte2017TRcls/witte2017TRcls.html}
+}
+
+
 @TECHREPORT{witte2016OGHPClst,
   author = {Philipp A. Witte and Mathias Louboutin and Gerard Gorman and Felix J. Herrmann},
   title = {A large-scale time-domain seismic modeling and inversion workflow in {Julia}},

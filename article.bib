@@ -3,6 +3,115 @@
 
 %----- 2017 -----%
 
+@ARTICLE{oghenekohwo2017hrt,
+  author = {Felix Oghenekohwo and Felix J. Herrmann},
+  title = {Highly repeatable time-lapse seismic with distributed {Compressive} {Sensing}---mitigating effects of calibration errors},
+  journal = {The \& Leading \& Edge},
+  year = {2017},
+  month = {08},
+  volume = {36},
+  number = {8},
+  pages = {688-694},
+  abstract = {Recently, we demonstrated that combining joint recovery
+                  with low-cost non-replicated randomized sampling
+                  tailored to time-lapse seismic can give us access to
+                  high fidelity, highly repeatable, dense prestack
+                  vintages, and high-grade time-lapse. To arrive at
+                  this result, we assumed well-calibrated
+                  surveys---i.e., we presumed accurate post-plot
+                  source/receiver positions. Unfortunately, in
+                  practice seismic surveys are prone to calibration
+                  errors, which are unknown deviations between actual
+                  and post-plot acquisition geometry. By means of
+                  synthetic experiments, we analyze the possible
+                  impact of these errors on vintages and on time-lapse
+                  data obtained with our joint recovery model from
+                  compressively sampled surveys. Supported by these
+                  experiments, we demonstrate that highly repeatable
+                  time-lapse vintages are attainable despite the
+                  presence of unknown calibration errors in the
+                  positions of the shots. We assess the repeatability
+                  quantitatively for two scenarios by studying the
+                  impact of calibration errors on conventional dense
+                  but irregularly sampled surveys and on low-cost
+                  compressed surveys. To separate time-lapse effects
+                  from calibration issues, we consider the idealized
+                  case where the subsurface remains unchanged and the
+                  practical situation where time-lapse changes are
+                  restricted to a subset of the data. In both cases,
+                  the quality of the recovered vintages and time-lapse
+                  decreases gracefully for low-cost compressed surveys
+                  with increasing calibration errors. Conversely, the
+                  quality of vintages from expensive densely
+                  periodically sampled surveys decreases more rapidly
+                  as unknown and difficult to control calibration
+                  errors increase.},
+  keywords = {time-lapse seismic, marine, random sampling, calibration errors, joint-recovery method},
+  doi  = {10.1190/tle36080688.1},
+  note = {(The Leading Edge)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2017/oghenekohwo2017hrt/oghenekohwo2017hrt.html}
+}
+
+
+@ARTICLE{kumar2017hrc,
+  author = {Rajiv Kumar and Haneet Wason and Shashin Sharan and Felix J. Herrmann},
+  title = {Highly repeatable {3D} compressive full-azimuth towed-streamer time-lapse acquisition --- a numerical feasibility study at scale},
+  journal = {The \& Leading \& Edge},
+  volume = {36},
+  number = {8},
+  pages = {677-687},
+  year = {2017},
+  month = {08},
+  abstract = {Most conventional 3D time-lapse (or 4D) acquisitions are
+                  ocean-bottom cable (OBC) or ocean-bottom node (OBN)
+                  surveys since these surveys are relatively easy to
+                  replicate compared to towed-streamer surveys. To
+                  attain high degrees of repeatability, survey
+                  replicability and dense periodic sampling has become
+                  the norm for 4D surveys that renders this technology
+                  expensive. Conventional towed-streamer acquisitions
+                  suffer from limited illumination of subsurface due
+                  to narrow azimuth. Although, acquisition techniques
+                  such as multi-azimuth, wide-azimuth, rich-azimuth
+                  acquisition, etc., have been developed to illuminate
+                  the subsurface from all possible angles, these
+                  techniques can be prohibitively expensive for
+                  densely sampled surveys. This leads to uneven
+                  sampling, i.e., dense receiver and coarse source
+                  sampling or vice-versa, in order to make these
+                  acquisitions more affordable. Motivated by the
+                  design principles of Compressive Sensing (CS), we
+                  acquire economic, randomly subsampled (or
+                  compressive) and simultaneous towed-streamer
+                  time-lapse data without the need of replicating the
+                  surveys. We recover densely sampled time-lapse data
+                  on one and the same periodic grid by using a
+                  joint-recovery model (JRM) that exploits shared
+                  information among different time-lapse recordings,
+                  coupled with a computationally cheap and scalable
+                  rank-minimization technique. The acquisition is low
+                  cost since we have subsampled measurements (about
+                  70\% subsampled), simulated with a simultaneous
+                  long-offset acquisition configuration of two source
+                  vessels travelling across a survey area at random
+                  azimuths. We analyze the performance of our proposed
+                  compressive acquisition and subsequent recovery
+                  strategy by conducting a synthetic, at scale,
+                  seismic experiment on a 3D time-lapse model
+                  containing geological features such as channel
+                  systems, dipping and faulted beds, unconformities
+                  and a gas cloud. Our findings indicate that the
+                  insistence on replicability between surveys and the
+                  need for OBC/OBN 4D surveys can, perhaps, be
+                  relaxed. Moreover, this is a natural next step
+                  beyond the successful CS acquisition examples
+                  discussed in this special issue.},
+  keywords = {time-lapse seismic, marine, 3D, simultaneous long offset, CS, rank minimization},
+  doi = {10.1190/tle36080677.1},
+  note = {(The Leading Edge)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2017/kumar2017hrc/kumar2017hrc.html}
+}
+
 @ARTICLE{kumar2016bls,
   author = {Rajiv Kumar and Oscar Lopez and Damek Davis and Aleksandr Y. Aravkin and Felix J. Herrmann},
   title = {Beating level-set methods for {5D} seismic data interpolation: a primal-dual alternating approach},
@@ -696,10 +805,10 @@
 @ARTICLE{dasilva2014htuck,
   author = {Curt Da Silva and Felix J. Herrmann},
   title = {Optimization on the {Hierarchical} {Tucker} manifold - applications to tensor completion},
-  journal = {Linear Algebra and its Applications}, 
+  journal = {Linear Algebra and its Applications},
   year = {2015},
   month = {09},
-  volume = {481}, 
+  volume = {481},
   pages = {131-173},
   abstract = {In this work, we develop an optimization framework for
                   problems whose solutions are well-approximated by
@@ -737,11 +846,11 @@
 @ARTICLE{kumar2014GEOPemc,
   author = {Rajiv Kumar and Curt Da Silva and Okan Akalin and Aleksandr Y. Aravkin and Hassan Mansour and Ben Recht and Felix J. Herrmann},
   title = {Efficient matrix completion for seismic data reconstruction},
-  journal = {Geophysics}, 
+  journal = {Geophysics},
   year = {2015},
   month = {09},
-  volume = {80}, 
-  number = {5}, 
+  volume = {80},
+  number = {5},
   pages = {V97-V114},
   abstract = {Despite recent developments in improved acquisition,
                   seismic data often remain undersampled along source
@@ -793,11 +902,11 @@
 @ARTICLE{kumar2015sss,
   author = {Rajiv Kumar and Haneet Wason and Felix J. Herrmann},
   title = {Source separation for simultaneous towed-streamer marine acquisition --- a compressed sensing approach},
-  journal = {Geophysics}, 
+  journal = {Geophysics},
   year = {2015},
   month = {11},
-  volume = {80}, 
-  number = {6}, 
+  volume = {80},
+  number = {6},
   pages = {WD73-WD88},
   abstract = {Simultaneous marine acquisition is an economic way to
                   sample seismic data and speed up acquisition,
@@ -842,12 +951,12 @@
 @ARTICLE{tu2014fis,
   author = {Ning Tu and Felix J. Herrmann},
   title = {Fast imaging with surface-related multiples by sparse inversion},
-  journal = {Geophysical Journal International}, 
+  journal = {Geophysical Journal International},
   year = {2015},
   month = {04},
-  volume = {201}, 
-  number = {1}, 
-  pages = {304-317}, 
+  volume = {201},
+  number = {1},
+  pages = {304-317},
   abstract = {In marine exploration seismology, surface-related
                   multiples are usually treated as noise mainly
                   because subsequent processing steps, such as
@@ -903,11 +1012,11 @@
 @ARTICLE{tu2015TLEfls,
   author = {Ning Tu and Felix J. Herrmann},
   title = {Fast least-squares imaging with surface-related multiples: application to a {North}-{Sea} data set},
-  journal = {The Leading Edge}, 
+  journal = {The Leading Edge},
   year = {2015},
   month = {07},
-  volume = {34}, 
-  number = {7}, 
+  volume = {34},
+  number = {7},
   pages = {788–794},
   abstract = {In marine seismic acquisition, surface-related multiples
                   constitute a significant portion of the acquired
@@ -952,10 +1061,10 @@
 @ARTICLE{vanleeuwen2015IPpmp,
   author = {Tristan van Leeuwen and Felix J. Herrmann},
   title = {A penalty method for {PDE}-constrained optimization in inverse problems},
-  journal = {Inverse Problems}, 
+  journal = {Inverse Problems},
   year = {2015},
   month = {12},
-  volume = {32}, 
+  volume = {32},
   number = {1},
   pages = {015007},
   abstract = {Many inverse and parameter estimation problems can be
@@ -1223,12 +1332,12 @@
 
 
 @ARTICLE{vanLeeuwen2013GJImlm,
-  author = {Tristan van Leeuwen and Felix J. Herrmann}, 
+  author = {Tristan van Leeuwen and Felix J. Herrmann},
   title = {Mitigating local minima in full-waveform inversion by expanding the search space},
-  journal = {Geophysical Journal International}, 
-  year = {2013}, 
+  journal = {Geophysical Journal International},
+  year = {2013},
   month = {10},
-  volume = {195}, 
+  volume = {195},
   pages = {661-667},
   abstract = {Wave equation based inversions, such as full-waveform
                   inversion and reverse-time migration, are
@@ -1265,10 +1374,10 @@
                   these solutions directly, which leads to significant
                   computational savings. We demonstrate the validity
                   of our approach by carefully selected examples and
-                  discuss possible extensions and future research.}, 
+                  discuss possible extensions and future research.},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GeophysicalJournalInternational/2013/vanLeeuwen2013GJImlm/vanLeeuwen2013mlm.pdf},
-  doi = {10.1093/gji/ggt258}, 
-  eprint = {http://gji.oxfordjournals.org/content/early/2013/07/30/gji.ggt258.full.pdf+html} 
+  doi = {10.1093/gji/ggt258},
+  eprint = {http://gji.oxfordjournals.org/content/early/2013/07/30/gji.ggt258.full.pdf+html}
 }
 
 
@@ -1309,7 +1418,7 @@
                   in terms of antialiasing capability, reconstruction
                   quality and computational memory requirements.},
   keywords = {trace interpolation, weighted one-norm minimization, compressed sensing, randomized sampling},
-  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2013/mansour2013GEOPiwr/mansour2013GEOPiwr.pdf}, 
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2013/mansour2013GEOPiwr/mansour2013GEOPiwr.pdf},
   doi = {10.1190/geo2012-0383.1}
 }
 
@@ -1364,7 +1473,7 @@
 
 
 @ARTICLE{shahidi2013GPars,
-  author = {Reza Shahidi and Gang Tang and Jianwei Ma and Felix J. Herrmann},  
+  author = {Reza Shahidi and Gang Tang and Jianwei Ma and Felix J. Herrmann},
   title = {Application of randomized sampling schemes to curvelet-based sparsity-promoting seismic data recovery},
   journal = {Geophysical Prospecting},
   volume = {61},
@@ -1409,7 +1518,7 @@
 
 
 @ARTICLE{moghaddam2013GEOPnoa,
-  author = {Peyman P. Moghaddam and Henk Keers and Felix J. Herrmann and Wim A. Mulder},  
+  author = {Peyman P. Moghaddam and Henk Keers and Felix J. Herrmann and Wim A. Mulder},
   title = {A new optimization approach for source-encoding full-waveform inversion},
   journal = {Geophysics},
   year = {2013},
@@ -1449,7 +1558,7 @@
                   inversion methods, and it approaches the model
                   misfit reduction obtained in conventional waveform
                   inversion.},
-  keywords = {Geophysics, FWI, optimization, source encoding},    
+  keywords = {Geophysics, FWI, optimization, source encoding},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2013/moghaddam2013GEOPnoa/moghaddam2013GEOPnoa.pdf},
   doi = {10.1190/GEO2012-0090.1}
 }
@@ -1488,7 +1597,7 @@
                   content. These improvements lead to a better image
                   of the target from the redatumed data.},
   keywords = {Controlled source seismology, interferometry, inverse theory},
-  url = {http://gji.oxfordjournals.org/content/192/2/666}  
+  url = {http://gji.oxfordjournals.org/content/192/2/666}
 }
 
 
@@ -1662,7 +1771,7 @@
 	estimation, optimization, FWI},
   doi = {10.1007/s10107-012-0571-6},
   url = {http://www.springerlink.com/content/35rwr101h5736340/},
-  url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/MathematicalProgramming/aravkin2012MPrid/aravkin2012MPrid.pdf} 
+  url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/MathematicalProgramming/aravkin2012MPrid/aravkin2012MPrid.pdf}
 }
 
 
@@ -3117,4 +3226,3 @@
   html_version = {https://www.slim.eos.ubc.ca/Publications/Private/Journals/2008/wang08TRbss/paper_html/paper.html},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2008/wang08GEObws/wang08GEObws.pdf}
 }
-

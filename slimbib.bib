@@ -17902,9 +17902,6 @@
 
 %-----2017-----%
 
-
-
-
 @UNPUBLISHED{dasilva2017uls,
   author = {Curt Da Silva and Felix J. Herrmann},
   title = {A unified {2D/3D} large scale software environment for nonlinear inverse problems},
@@ -17940,6 +17937,10 @@
   note = {Submitted to ACM Transactions on Mathematical Software on February 14, 2017.},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2017/dasilva2017uls/dasilva2017uls.html}
 }
+
+
+
+
 % This file was created with JabRef 2.6.
 % Encoding: MacRoman
 
@@ -21314,6 +21315,204 @@
 % Encoding: ISO8859_1
 
 %-----2017-----%
+
+@PHDTHESIS{dasilva2017THlso,
+  author = {Curt Da Silva},
+  title = {Large-scale optimization algorithms for missing data completion and inverse problems},
+  school = {The University of British Columbia},
+  year = {2017},
+  month = {09},
+  address = {Vancouver},
+  abstract = {Inverse problems are an important class of problems
+                  found in many areas of science and engineering. In
+                  these problems, one aims to estimate unknown
+                  parameters of a physical system through indirect
+                  multi-experiment measurements. Inverse problems
+                  arise in a number of fields including seismology,
+                  medical imaging, and astronomy, among others. An
+                  important aspect of inverse problems is the quality
+                  of the acquired data itself. Real-world data
+                  acquisition restrictions, such as time and budget
+                  constraints, often results in measured data with
+                  missing entries. Many inversion algorithms assume
+                  that the input data is fully sampled and relatively
+                  noise free and produce poor results when these
+                  assumptions are violated. Given the multidimensional
+                  nature of real-world data, we propose a new low-rank
+                  optimization method on the smooth manifold of
+                  Hierarchical Tucker tensors. Tensors that exhibit
+                  this low-rank structure can be recovered from
+                  solving this non-convex program in an efficient
+                  manner. We successfully interpolate realistically
+                  sized seismic data volumes using this approach. If
+                  our low-rank tensor is corrupted with non-Gaussian
+                  noise, the resulting optimization program can be
+                  formulated as a convex-composite problem. This class
+                  of problems involves minimizing a non-smooth but
+                  convex objective composed with a nonlinear smooth
+                  mapping. In this thesis, we develop a level set
+                  method for solving composite-convex problems and
+                  prove that the resulting subproblems converge
+                  linearly. We demonstrate that this method is
+                  competitive when applied to examples in noisy tensor
+                  completion, analysis-based compressed sensing, audio
+                  declipping, total-variation deblurring and
+                  denoising, and one-bit compressed sensing. With
+                  respect to solving the inverse problem itself, we
+                  introduce a new software design framework that
+                  manages the cognitive complexity of the various
+                  components involved. Our framework is modular by
+                  design, which enables us to easily integrate and
+                  replace components such as linear solvers, finite
+                  difference stencils, preconditioners, and
+                  parallelization schemes. As a result, a researcher
+                  using this framework can formulate her algorithms
+                  with respect to high-level components such as
+                  objective functions and hessian operators. We
+                  showcase the ease with which one can prototype such
+                  algorithms in a 2D test problem and, with little
+                  code modification, apply the same method to
+                  large-scale 3D problems.},
+  keywords = {PhD, optimization, convex composite, tensor completion, low-rank, tensor, interpolation, software design},
+  note = {(PhD)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2017/dasilva2017THlso/dasilva2017THlso.pdf},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2017/dasilva2017THlso/dasilva2017THlso_pres.pdf}
+}
+
+
+@PHDTHESIS{kumar2017THels,
+  author = {Rajiv Kumar},
+  title = {Enabling large-scale seismic data acquisition, processing and waveform-inversion via rank-minimization},
+  school = {The University of British Columbia},
+  year = {2017},
+  month = {08},
+  address = {Vancouver},
+  abstract = {In this thesis, I adapt ideas from the field of
+                  compressed sensing to mitigate the computational and
+                  memory bottleneck of seismic processing workflows
+                  such as missing-trace interpolation, source
+                  separation and wave-equation based inversion for
+                  large-scale 3- and 5-D seismic data. For
+                  interpolation and source separation using
+                  rank-minimization, I propose three main ingredients,
+                  namely a rank-revealing transform domain, a
+                  subsampling scheme that increases the rank in the
+                  transform domain, and a practical large-scale
+                  data-consistent rank-minimization framework, which
+                  avoids the need for expensive computation of
+                  singular value decompositions. We also devise a
+                  wave-equation based factorization approach that
+                  removes computational bottlenecks and provides
+                  access to the kinematics and amplitudes of
+                  full-subsurface offset extended images via actions
+                  of full extended image volumes on probing vectors,
+                  which I use to perform the amplitude-versus- angle
+                  analyses and automatic wave-equation migration
+                  velocity analyses on complex geological
+                  environments. After a brief overview of matrix
+                  completion techniques in Chapter 1, we propose a
+                  singular value decomposition (SVD)-free
+                  factorization based rank-minimization approach for
+                  large-scale matrix completion problems. Then, I
+                  extend this framework to deal with large-scale
+                  seismic data interpolation problems, where I show
+                  that the standard approach of partitioning the
+                  seismic data into windows is not required, which use
+                  the fact that events tend to become linear in these
+                  windows, while exploiting the low-rank structure of
+                  seismic data. Carefully selected synthetic and
+                  realistic seismic data examples validate the
+                  efficacy of the interpolation framework. Next, I
+                  extend the SVD-free rank-minimization approach to
+                  remove the seismic cross-talk in simultaneous source
+                  acquisition. Experimental results verify that source
+                  separation using the SVD-free rank-minimization
+                  approaches are comparable to the sparsity-promotion
+                  based techniques; however, separation via
+                  rank-minimization is significantly faster and memory
+                  efficient. We further introduce a matrix-vector
+                  formulation to form full-subsurface extended image
+                  volumes, which removes the storage and computational
+                  bottleneck found in the convention methods. I
+                  demonstrate that the proposed matrix-vector
+                  formulation is used to form different image gathers
+                  with which amplitude-versus-angle and wave-equation
+                  migration velocity analyses is performed, without
+                  requiring prior information on the geologic
+                  dips. Finally, I conclude the thesis by outlining
+                  potential future research directions and extensions
+                  of the thesis work.},
+  keywords = {PhD, acquisition, processing, waveform inversion, rank minimization, extended image volumes, migration velocity analysis},
+  note = {(PhD)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2017/kumar2017THels/kumar2017THels.pdf},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2017/kumar2017THels/kumar2017THels_pres.pdf}
+}
+
+
+@PHDTHESIS{wason2017THsss,
+  author = {Haneet Wason},
+  title = {Simultaneous-source seismic data acquisition and processing with compressive sensing},
+  school = {The University of British Columbia},
+  year = {2017},
+  month = {08},
+  address = {Vancouver},
+  abstract = {The work in this thesis adapts ideas from the field of
+                  compressive sensing (CS) that lead to new insights
+                  into acquiring and processing seismic data, where we
+                  can fundamentally rethink how we design seismic
+                  acquisition surveys and process acquired data to
+                  minimize acquisition- and processing-related
+                  costs. Current efforts towards dense source/receiver
+                  sampling and full azimuthal coverage to produce
+                  high-resolution images of the subsurface have led to
+                  the deployment of multiple sources across survey
+                  areas. A step ahead from multisource acquisition is
+                  simultaneous-source acquisition, where multiple
+                  sources fire shots at near-simultaneous/random times
+                  resulting in overlapping shot records, in comparison
+                  to no overlaps during conventional sequential-source
+                  acquisition. Adoption of simultaneous-source
+                  techniques has helped to improve survey efficiency
+                  and data density. The engine that drives
+                  simultaneous-source technology is
+                  simultaneous-source separation --- a methodology
+                  that aims to recover conventional sequential-source
+                  data from simultaneous-source data. This is
+                  essential because many seismic processing techniques
+                  rely on dense and periodic (or regular)
+                  source/receiver sampling. We address the challenge
+                  of source separation through a combination of
+                  tailored simultaneous-source acquisition design and
+                  sparsity-promoting recovery via convex optimization
+                  using l1 objectives. We use CS metrics to
+                  investigate the relationship between marine
+                  simultaneous-source acquisition design and data
+                  reconstruction fidelity, and consequently assert the
+                  importance of randomness in the acquisition system
+                  in combination with an appropriate choice for a
+                  sparsifying transform (i.e., curvelet transform) in
+                  the reconstruction algorithm. We also address the
+                  challenge of minimizing the cost of expensive,
+                  dense, periodically-sampled and replicated
+                  time-lapse surveying and data processing by adapting
+                  ideas from distributed compressive sensing. We show
+                  that compressive randomized time-lapse surveys need
+                  not be replicated to attain acceptable levels of
+                  data repeatability, as long as we know the shot
+                  positions (post acquisition) to a sufficient degree
+                  of accuracy. We conclude by comparing
+                  sparsity-promoting and rank-minimization recovery
+                  techniques for marine simultaneous-source
+                  separation, and demonstrate that recoveries are
+                  comparable; however, the latter approach readily
+                  scales to large-scale seismic data and is
+                  computationally faster.},
+  keywords = {PhD, acquisition, marine, simultaneous source, source separation, compressive sensing, optimization},
+  note = {(PhD)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2017/wason2017THsss/wason2017THsss.pdf},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Thesis/2017/wason2017THsss/wason2017THsss_pres.pdf}
+}
+
 
 @PHDTHESIS{oghenekohwo2017THetl,
   author = {Felix Oghenekohwo},

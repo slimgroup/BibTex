@@ -10,7 +10,7 @@ from email.mime.text import MIMEText
 
 #---------------SEARCH THE FILE FOR FOLLOWING STRINGS----------
 datefield="date_submitted"
-admin_email=“ssharan@eoas.ubc.ca"
+admin_email="ssharan@eoas.ubc.ca"
 sender= "webadmin@slimweb.eos.ubc.ca"
 #dateformat = '%m/%d/%Y'  # Date should be in the format: month/date/year eg: 12/22/2012
 timer_days=45

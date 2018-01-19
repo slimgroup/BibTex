@@ -18167,14 +18167,76 @@
 
 %-----2018-----%
 
-@UNPUBLISHED{witte2018fwip3,
-  author = {Philipp A. Witte and Mathias Louboutin and Keegan Lensink and Michael Lange and Navjot Kukreja and Fabio Luporini and Gerard Gorman and Felix J. Herrmann},
-  title = {Full-Waveform Inversion - Part 3: optimization},
+
+@UNPUBLISHED{alfaraj2018EAGEasa,
+  author = {Ali M. Alfaraj and Rajiv Kumar and Felix J. Herrmann},
+  title = {Automatic statics and residual statics correction with low-rank approximation},
   year = {2018},
-  abstract = {This tutorial is the third part of a full-waveform inversion (FWI) tutorial series with a step-by-step walkthrough of setting up forward and adjoint wave equations and building a basic FWI inversion framework. For discretizing and solving wave equations, we use Devito, a Python-based domain-specific language for automated generation of finite-difference code (Lange et al., 2016). The first two parts of this tutorial (Louboutin et al., 2017, 2018) demonstrated how to solve the acoustic wave equation for modeling seismic shot records and how to compute the gradient of the FWI objective function using the adjoint-state method. With these two key ingredients, we will now build an inversion framework that can be used to minimize the FWI least-squares objective function.},
-  keywords = {devito, finite-differences, FWI, Modeling, tutorial, inversion, private},
-  note = {Submitted to The Leading Edge on December 15, 2017.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/witte2018fwip3/witte2018fwip3.html}
+  abstract = {Seismic data, mainly on land, suffers from long-wavelength statics
+due to the laterally varying and heterogeneous nature of the near-surface
+weathering layers. We propose an automatic, data-driven and computationally efficient
+statics correction method based on low-rank approximation to correct for such
+statics. The method does not require a model to estimate static time shifts,
+which is the case for other static correction methods; rather it applies the
+appropriate static corrections on the data such that it becomes low rank in a
+certain domain. As of now, the method is applicable to data that has been
+corrected for elevation statics. Due to the near-surface irregularities and
+due to approximations used by static correction methods that lead to not fully
+correcting for statics, an iterative residual statics correction becomes
+necessary. Our proposed method corrects for residual statics without the
+necessity of the surface consistency assumption and a multi-iterate process.
+Additional benefits of the method include artifacts and noise suppression. We
+demonstrate the successful application of our method on several synthetic
+data examples.},
+  keywords = {EAGE, statics, residual statics, rank, land, private},
+  note = {Submitted to EAGE on Janurary 15, 2018},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/alfaraj2018EAGEasa/alfaraj2018EAGEasa.html}
+}
+
+
+@UNPUBLISHED{kadu2018EAGEdfwi,
+  author = {Ajinkya Kadu and Rajiv Kumar},
+  title = {Decentralized full-waveform inversion},
+  year = {2018},
+  abstract = {With the advent of efficient seismic data acquisition, we are
+having a surplus of seismic data, which is improving the imaging of the earth using
+full-waveform inversion. However, such inversion suffers from many issues,
+including (i) substantial network waiting time due to repeated communications of
+function and gradient values in the distributed environment, and (ii)
+requirement of the sophisticated optimizer to solve an optimization problem
+involving non-smooth regularizers. To circumvent these issues, we propose a
+decentralized full-waveform inversion, a scheme where connected agents in a
+network optimize their objectives locally while being in consensus. The
+proposed formulation can be solved using the ADMM method efficiently. We demonstrate
+using the standard marmousi model that such scheme can decouple the
+regularization from data fitting and reduce the network waiting time.},
+  keywords = {EAGE, private},
+  note = {Submitted to EAGE on Janurary 15, 2018},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/kadu2018EAGEdfwi/kadu2018EAGEdfwi.pdf}
+}
+
+
+@UNPUBLISHED{kumar2018EAGEcsb,
+  author = {Rajiv Kumar and Shashin Sharan and Nick Moldoveanu and Felix J. Herrmann},
+  title = {Compressed sensing based land simultaneous acquisition using encoded sweeps},
+  year = {2018},
+  abstract = {Simultaneous shooting methods using encoded sweeps can enhance the
+productivity of land acquisition in situations where deployment of many
+vibrators and larger receiver spread is not possible in the field due to
+obstructions or permit limitations. However, the existing framework requires
+shooting the full sequence of encoded sweeps on each shot point to
+reconstruct the complete frequency bandwidth Green's function. Although this simultaneous
+shooting method reduces the sweeping time vs conventional sequential
+shooting, the gain in efficiency is limited. To further reduce the sweeping time, we
+propose to acquire randomly selected subsets of the encoded sweeps sequences
+followed by a rank-minimization based joint source separation and spectral
+interpolation framework to reconstruct the full bandwidth deblended Green's
+function. We demonstrate the advantages of proposed sampling and
+reconstruction framework using a synthetic seismic line simulated using SEG-SEAM Phase II
+land velocity and density model.},
+  keywords = {EAGE, compressed sensing, source separation, spectral interpolation, Land, SEAM, private},
+  note = {Submitted to EAGE on Janurary 15, 2018},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/kumar2018EAGEcsb/kumar2018EAGEcsb.html}
 }
 
 
@@ -18187,6 +18249,17 @@
   note = {Submitted to EAGE on Janurary 15, 2018},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/siahkoohi2018EAGEsdr/siahkoohi2018EAGEsdr.html}
 }
+
+@UNPUBLISHED{witte2018fwip3,
+  author = {Philipp A. Witte and Mathias Louboutin and Keegan Lensink and Michael Lange and Navjot Kukreja and Fabio Luporini and Gerard Gorman and Felix J. Herrmann},
+  title = {Full-Waveform Inversion - Part 3: optimization},
+  year = {2018},
+  abstract = {This tutorial is the third part of a full-waveform inversion (FWI) tutorial series with a step-by-step walkthrough of setting up forward and adjoint wave equations and building a basic FWI inversion framework. For discretizing and solving wave equations, we use Devito, a Python-based domain-specific language for automated generation of finite-difference code (Lange et al., 2016). The first two parts of this tutorial (Louboutin et al., 2017, 2018) demonstrated how to solve the acoustic wave equation for modeling seismic shot records and how to compute the gradient of the FWI objective function using the adjoint-state method. With these two key ingredients, we will now build an inversion framework that can be used to minimize the FWI least-squares objective function.},
+  keywords = {devito, finite-differences, FWI, Modeling, tutorial, inversion, private},
+  note = {Submitted to The Leading Edge on December 15, 2017.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/witte2018fwip3/witte2018fwip3.html}
+}
+
 
 %-----2017-----%
 

@@ -89,7 +89,7 @@ land velocity and density model.},
 
 @UNPUBLISHED{silva2018alr,
   author = {Curt Da Silva and Yiming Zhang and Rajiv Kumar and Felix J. Herrmann},
-  title = { Applications of low-rank compressed seismic data to full waveform inversion and extended image volumes},
+  title = {Applications of low-rank compressed seismic data to full waveform inversion and extended image volumes},
   year = {2018},
   abstract = { Conventional oil and gas fields are increasingly difficult to explore and image, resulting in the call for more complex wave-equation based inversion algorithms that require dense long-offset samplings. Consequently, there is an exponential growth in the size of data volumes and prohibitive demands on computational resources. In this work, we propose a method to compress and process seismic data directly in a low-rank tensor format, which drastically reduces the amount of storage required to represent the data. We first outline how seismic data exhibits low-rank structure in a particular transform-domain, which can be exploited to compress the dense data in one extremely storage-efficient tensor format when the data is fully sampled. In the more realistic case of missing data, we can use efficient interpolation techniques to approximate the fully sampled volume in compressed form. In either case, once we have our data represented in its compressed tensor form, we design an algorithm to extract source or receiver gathers directly from the compressed parameters. This extraction process can be done on-the-fly directly on the compressed data, in a full waveform inversion context, and does not require scanning through the entire dataset in order to form shot gathers. To the best of our knowledge, this work is one of the first major contributions to working with seismic data applications directly in the compressed domain without reconstructing the entire data volume. We use a stochastic inversion approach, which works with small subsets of source experiments at each iteration, further reducing the computational and memory costs of full waveform inversion. We also demonstrate how this data compression and extraction technique can be applied to forming full subsurface image gathers through probing techniques.},
   keywords = {low rank, tensor, common shot/receiver gather, full waveform inversion, extended image volume, private},
@@ -98,11 +98,22 @@ land velocity and density model.},
 }
 
 
+@UNPUBLISHED{witte2018alf,
+  author = {Philipp A. Witte and Mathias Louboutin and Navjot Kukreja and Fabio Luporini and and Michael Lange and Gerard J. Gorman and Felix J. Herrmann},
+  title = {A large-scale framework for symbolic implementations of seismic inversion algorithms in Julia},
+  year = {2018},
+  abstract = {Writing software packages for seismic inversion is a very challenging task, since problems such as full-waveform inversion or least-squares imaging are both algorithmically and computationally demanding due to the large number of unknown parameters and the fact that we are propagating waves over many wavelengths. Software frameworks therefore need to combine both versatility and performance to provide geophysicists with the means and flexibility to implement complex algorithms that scale to exceedingly large 3D problems. Following these principles, we introduce the Julia Devito Inversion framework, an open-source software package in Julia for large-scale seismic modeling and inversion based on Devito, a domain-specific language compiler for automatic code generation. The framework consists of matrix-free linear operators for implementing seismic inversion algorithms that closely resembles the mathematical notation, a flexible resilient parallelization and an interface to Devito for generating optimized stencil code to solve the underlying wave equations. In comparison to many manually optimized industry codes written in low-level languages, our software is built on the idea of independent layers of abstractions and user interfaces with symbolic operators, making it possible to manage both the complexity of algorithms and performance optimizations, while preserving modularity, which allows for a level of expressiveness needed to formulate a broad range of wave-equation-based inversion problems. Through a series of numerical examples, we demonstrate that this allows users to implement algorithms for waveform inversion and imaging as simple Julia scripts that scale to large-scale 3D problems; thus providing a truly performant research and production framework.},
+  keywords = {FWI, LSRTM, modeling, inversion, software, private},
+  note = {Submitted to Geophysics on March 1, 2018.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/witte2018alf/witte2018alf.html}
+}
+
+
 %-----2017-----%
 
 @UNPUBLISHED{fang2017uqfip,
   author = {Zhilong Fang and Curt Da Silva and Rachel Kuske and Felix J. Herrmann},
-  title = { Uncertainty quantification for inverse problems with weak
+  title = {Uncertainty quantification for inverse problems with weak
 {PDE}-constraints},
   year = {2017},
   abstract = { In a statistical inverse problem, the objective is a complete

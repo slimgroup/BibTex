@@ -76,6 +76,17 @@ land velocity and density model.},
 }
 
 
+@UNPUBLISHED{peters2018pmf,
+  author = {Bas Peters and Brendan R. Smithyman and Felix J. Herrmann},
+  title = {Projection methods for nonlinear inverse problems with multiple constraints},
+  year = {2018},
+  abstract = {Nonlinear inverse problems are often hampered by non-uniqueness and local minima because of missing low frequencies and far offsets in the data, lack of access to good starting models, noise, and modeling errors. A well-known approach to counter these deficiencies is to include prior information on the unknown model, which regularizes the inverse problem. While conventional regularization methods have resulted in enormous progress in ill-posed (geophysical) inverse problems, challenges remain when the prior information consists of multiple pieces. To handle this situation, we propose an optimization framework that allows us to add multiple pieces of prior information in the form of constraints. Compared to additive regularization penalties, constraints have a number of advantages making them more suitable for inverse problems such as full-waveform inversion. The proposed framework is rigorous because it offers assurances that multiple constraints are imposed uniquely at each iteration, irrespective of the order in which they are invoked. To project onto the intersection of multiple sets uniquely, we employ Dykstra’s algorithm that scales to large problems and does not rely on trade-off parameters. In that sense, our approach differs substantially from approaches such as Tikhonov regularization, penalty methods, and gradient filtering. None of these offer assurances, which makes them less suitable to full-waveform inversion where unrealistic intermediate results effectively derail the iterative inversion process. By working with intersections of sets, we keep expensive objective and gradient calculations unaltered, separate from projections, and we also avoid trade-off parameters. These features allow for easy integration into existing code bases. In addition to more predictable behavior, working with constraints also allows for heuristics where we built up the complexity of the model gradually by relaxing the constraints. This strategy helps to avoid convergence to local minima that represent unrealistic models. We illustrate this unique feature with examples of varying complexity.},
+  keywords = {full-waveform inversion, optimization, constraints, regularization, projection, intersection, private},
+  note = {Submitted to Geophysics on March 7, 2018.},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/peters2018pmf/peters2018pmf.html}
+}
+
+
 @UNPUBLISHED{siahkoohi2018EAGEsdr,
   author = {Ali Siahkoohi and Rajiv Kumar and Felix J. Herrmann},
   title = {Seismic data reconstruction with Generative Adversarial Networks},

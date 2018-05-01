@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: referencecheck.aux
+The style file: plain.bst
+Database file #1: conference.bib
+Reallocated field_info (elt_size=4) to 10014 items from 5000.
+Database file #2: bscthesis.bib
+Database file #3: masterthesis.bib
+Database file #4: techreport.bib
+Database file #5: unpublished.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Reallocated field_info (elt_size=4) to 15028 items from 10014.
+Database file #6: book.bib
+Database file #7: article.bib
+Database file #8: manual.bib
+Database file #9: phdthesis.bib
+Database file #10: booklet.bib
+Database file #11: inbook.bib
+Database file #12: incollection.bib
+Database file #13: misc.bib
+Database file #14: proceedings.bib
+Warning--there's a number but no series in herrmann2011SPIEmsp
+Warning--can't use both volume and number fields in herrmann2008SEGcdm
+Warning--empty booktitle in Herrmann2011BG
+Warning--empty booktitle in petrenko2013HPCSsaoc
+Warning--empty booktitle in dasilva2013SAMPTAhtuck
+Warning--empty booktitle in vandenberg07VONipo
+Warning--empty institution in vanleeuwen2012smii
+You've used 531 entries,
+            2118 wiz_defined-function locations,
+            2830 strings with 82901 characters,
+and the built_in function-call counts, 174464 in all, are:
+= -- 16456
+> -- 8229
+< -- 195
++ -- 3283
+- -- 2709
+* -- 11150
+:= -- 28589
+add.period$ -- 1856
+call.type$ -- 531
+change.case$ -- 2933
+chr.to.int$ -- 0
+cite$ -- 538
+duplicate$ -- 7589
+empty$ -- 14783
+format.name$ -- 2709
+if$ -- 37601
+int.to.chr$ -- 0
+int.to.str$ -- 531
+missing$ -- 438
+newline$ -- 2827
+num.names$ -- 1064
+pop$ -- 3766
+preamble$ -- 1
+purify$ -- 2415
+quote$ -- 0
+skip$ -- 4939
+stack$ -- 0
+substring$ -- 7234
+swap$ -- 1846
+text.length$ -- 195
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2124
+warning$ -- 7
+while$ -- 1320
+width$ -- 534
+write$ -- 6072
+(There were 7 warnings)

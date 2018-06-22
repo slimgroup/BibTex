@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: referencecheck.aux
 The style file: plain.bst
 Database file #1: conference.bib
@@ -7,8 +7,8 @@ Reallocated field_info (elt_size=4) to 10014 items from 5000.
 Database file #2: bscthesis.bib
 Database file #3: masterthesis.bib
 Database file #4: techreport.bib
-Database file #5: unpublished.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Database file #5: unpublished.bib
 Reallocated field_info (elt_size=4) to 15028 items from 10014.
 Database file #6: book.bib
 Database file #7: article.bib
@@ -19,52 +19,60 @@ Database file #11: inbook.bib
 Database file #12: incollection.bib
 Database file #13: misc.bib
 Database file #14: proceedings.bib
+Warning--empty booktitle in alfaraj2018SEGswi
 Warning--there's a number but no series in herrmann2011SPIEmsp
 Warning--can't use both volume and number fields in herrmann2008SEGcdm
 Warning--empty booktitle in Herrmann2011BG
+Warning--empty booktitle in kadu2018SEGMSFWI
+Warning--empty booktitle in kumar2018SEGlreiv
+Warning--empty booktitle in louboutin2018SEGeow
+Warning--empty booktitle in moldoveanu2018SEGcsbdl
 Warning--empty booktitle in petrenko2013HPCSsaoc
+Warning--empty booktitle in sharan2018SEGada
+Warning--empty booktitle in siahkoohi2018SEGcnn
 Warning--empty booktitle in dasilva2013SAMPTAhtuck
 Warning--empty booktitle in vandenberg07VONipo
 Warning--empty institution in vanleeuwen2012smii
+Warning--empty booktitle in yang2018SEGrde
 You've used 532 entries,
             2118 wiz_defined-function locations,
-            2834 strings with 83129 characters,
-and the built_in function-call counts, 174736 in all, are:
-= -- 16482
+            2834 strings with 83098 characters,
+and the built_in function-call counts, 175532 in all, are:
+= -- 16510
 > -- 8252
 < -- 195
 + -- 3292
 - -- 2717
-* -- 11169
-:= -- 28644
-add.period$ -- 1859
+* -- 11205
+:= -- 28684
+add.period$ -- 1871
 call.type$ -- 532
 change.case$ -- 2940
 chr.to.int$ -- 0
-cite$ -- 539
-duplicate$ -- 7595
-empty$ -- 14794
+cite$ -- 547
+duplicate$ -- 7683
+empty$ -- 14982
 format.name$ -- 2717
-if$ -- 37651
+if$ -- 37879
 int.to.chr$ -- 0
 int.to.str$ -- 532
-missing$ -- 438
-newline$ -- 2832
+missing$ -- 450
+newline$ -- 2844
 num.names$ -- 1066
-pop$ -- 3770
+pop$ -- 3850
 preamble$ -- 1
 purify$ -- 2421
 quote$ -- 0
-skip$ -- 4944
+skip$ -- 4968
 stack$ -- 0
 substring$ -- 7239
-swap$ -- 1846
+swap$ -- 1862
 text.length$ -- 195
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 2128
-warning$ -- 7
+warning$ -- 15
 while$ -- 1322
 width$ -- 535
-write$ -- 6082
-(There were 7 warnings)
+write$ -- 6098
+(There were 15 warnings)

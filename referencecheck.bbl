@@ -18,12 +18,14 @@ Ali~M. Alfaraj, Rajiv Kumar, and Felix~J. Herrmann.
 Ali~M. Alfaraj, Rajiv Kumar, and Felix~J. Herrmann.
 \newblock Automatic statics and residual statics correction with low-rank
   approximation.
-\newblock Submitted to EAGE on January 15, 2018, 2018.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2018.
+\newblock (EAGE, Copenhagen).
 
 \bibitem{alfaraj2018SEGswi}
 Ali~M. Alfaraj, Rajiv Kumar, and Felix~J. Herrmann.
 \newblock Seismic waveform inversion using decomposed one-way wavefields.
-\newblock Submitted to SEG on April 1, 2018, 2018.
+\newblock 2018.
+\newblock Accepted for SEG 2018.
 
 \bibitem{alhashim09THsdp}
 Fadhel~Abbas Alhashim.
@@ -1449,12 +1451,14 @@ Bander Jumah and Felix~J. Herrmann.
 \bibitem{kadu2018EAGEdfwi}
 Ajinkya Kadu and Rajiv Kumar.
 \newblock Decentralized full-waveform inversion.
-\newblock Submitted to EAGE on January 15, 2018, 2018.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2018.
+\newblock (EAGE, Copenhagen).
 
 \bibitem{kadu2018SEGMSFWI}
 Ajinkya Kadu, Rajiv Kumar, and Tristan van Leeuwen.
 \newblock Full-waveform inversion with mumford-shah regularization.
-\newblock Submitted to SEG on April 1, 2018, 2018.
+\newblock 2018.
+\newblock Accepted for SEG 2018.
 
 \bibitem{kukreja2017SIAMdsm}
 Navjot Kukreja, Michael Lange, Mathias Louboutin, Fabio Luporini, and Gerard
@@ -1512,7 +1516,8 @@ Rajiv Kumar, Aleksandr~Y. Aravkin, Hassan Mansour, Ben Recht, and Felix~J.
 Rajiv Kumar, Marie Graff-Kray, Tristan van Leeuwen, and Felix~J. Herrmann.
 \newblock Low-rank representation of extended image volumes––applications
   to imaging and velocity continuation.
-\newblock Submitted to SEG on April 1, 2018, 2018.
+\newblock 2018.
+\newblock Accepted for SEG 2018.
 
 \bibitem{kumar2018toi}
 Rajiv Kumar, Marie Graff-Kray, Ivan Vasconcelos, and Felix~J. Herrmann.
@@ -1559,7 +1564,8 @@ Rajiv Kumar, Nick Moldoveanu, and Felix~J. Herrmann.
 Rajiv Kumar, Shashin Sharan, Nick Moldoveanu, and Felix~J. Herrmann.
 \newblock Compressed sensing based land simultaneous acquisition using encoded
   sweeps.
-\newblock Submitted to EAGE on January 15, 2018, 2018.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2018.
+\newblock (EAGE, Copenhagen).
 
 \bibitem{kumar2016SEGtjm}
 Rajiv Kumar, Shashin Sharan, Haneet Wason, and Felix~J. Herrmann.
@@ -2035,7 +2041,8 @@ Mathias Louboutin, Bas Peters, Brendan~R. Smithyman, and Felix~J. Herrmann.
 \bibitem{louboutin2018SEGeow}
 Mathias Louboutin, Philipp~A. Witte, and Felix~J. Herrmann.
 \newblock Effects of wrong adjoints for rtm in tti media.
-\newblock Submitted to SEG on April 1, 2018, 2018.
+\newblock 2018.
+\newblock Accepted for SEG 2018.
 
 \bibitem{louboutin2017fwi}
 Mathias Louboutin, Philipp~A. Witte, Michael Lange, Navjot Kukreja, Fabio
@@ -2218,7 +2225,8 @@ Nick Moldoveanu, Philip Bilsby, John Quigley, Rajiv Kumar, and Felix~J.
   Herrmann.
 \newblock Compressive sensing based design for land and obs surveys: The noise
   issue.
-\newblock Submitted to SEG on April 1, 2018, 2018.
+\newblock 2018.
+\newblock Accepted for SEG 2018.
 
 \bibitem{oghenekohwo2017THetl}
 Felix Oghenekohwo.
@@ -2496,7 +2504,8 @@ Reza Shahidi, Gang Tang, Jianwei Ma, and Felix~J. Herrmann.
 \bibitem{sharan2018SEGada}
 Shashin Sharan, Rajiv Kumar, Rongrong Wang, and Felix~J. Herrmann.
 \newblock A debiasing approach to microseismic.
-\newblock Submitted to SEG on April 1, 2018, 2018.
+\newblock 2018.
+\newblock Accepted for SEG 2018.
 
 \bibitem{sharan2017SEGhrf}
 Shashin Sharan, Rongrong Wang, and Felix~J. Herrmann.
@@ -2522,13 +2531,15 @@ Shashin Sharan, Rongrong Wang, Tristan van Leeuwen, and Felix~J. Herrmann.
 \bibitem{siahkoohi2018EAGEsdr}
 Ali Siahkoohi, Rajiv Kumar, and Felix~J. Herrmann.
 \newblock Seismic data reconstruction with generative adversarial networks.
-\newblock Submitted to EAGE on January 15, 2018, 2018.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2018.
+\newblock (EAGE, Copenhagen).
 
 \bibitem{siahkoohi2018SEGcnn}
 Ali Siahkoohi, Mathias Louboutin, Rajiv Kumar, and Felix~J. Herrmann.
 \newblock Deep convolutional neural networks in prestack seismic---two
   exploratory examples.
-\newblock Submitted to SEG on April 1, 2018, 2018.
+\newblock 2018.
+\newblock Accepted for SEG 2018.
 
 \bibitem{dasilva2017THlso}
 Curt~Da Silva.
@@ -3201,7 +3212,8 @@ Mengmeng Yang and Felix~J. Herrmann.
 \bibitem{yang2018SEGrde}
 Mengmeng Yang, Rajiv Kumar, Rongrong Wang, and Felix~J. Herrmann.
 \newblock Removing density effects in ls-rtm with a low-rank matched filter.
-\newblock Submitted to SEG on April 1, 2018, 2018.
+\newblock 2018.
+\newblock Accepted for SEG 2018.
 
 \bibitem{yang2016SEGtds}
 Mengmeng Yang, Philipp~A. Witte, Zhilong Fang, and Felix~J. Herrmann.

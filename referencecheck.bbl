@@ -3133,7 +3133,7 @@ Philipp~A. Witte, Mathias Louboutin, and Felix~J. Herrmann.
 \newblock (SIAM Conference on Computational Science and Engineering, Atlanta).
 
 \bibitem{witte2018alf}
-Philipp~A. Witte, Mathias Louboutin, Navjot Kukreja, Fabio Luporini, , Michael
+Philipp~A. Witte, Mathias Louboutin, Navjot Kukreja, Fabio Luporini, Michael
   Lange, Gerard~J. Gorman, and Felix~J. Herrmann.
 \newblock A large-scale framework for symbolic implementations of seismic
   inversion algorithms in julia.
@@ -3145,6 +3145,13 @@ Philipp~A. Witte, Mathias Louboutin, Keegan Lensink, Michael Lange, Navjot
 \newblock Full-waveform inversion - part 3: optimization.
 \newblock {\em The Leading Edge}, 37(2):142--145, 1 2018.
 \newblock (The Leading Edge).
+
+\bibitem{witte2018cls}
+Philipp~A. Witte, Mathias Louboutin, Fabio Luporini, Gerard~J. Gorman, and
+  Felix~J. Herrmann.
+\newblock Compressive least-squares migration with on-the-fly fourier
+  transforms.
+\newblock Submitted to Geophysics on June 28, 2018., 2018.
 
 \bibitem{witte2016SEGpve}
 Philipp~A. Witte, Christiaan~C. Stolk, and Felix~J. Herrmann.

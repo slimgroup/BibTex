@@ -2058,6 +2058,15 @@ Mathias Louboutin, Philipp~A. Witte, Michael Lange, Navjot Kukreja, Fabio
 \newblock {\em The Leading Edge}, 37(1):69--72, 1 2018.
 \newblock (The Leading Edge).
 
+\bibitem{luporini2018aap}
+FABIO LUPORINI, MICHAEL LANGE, MATHIAS LOUBOUTIN, NAVJOT KUKREJA, JAN
+  HUCKELHEIM, CHARLES YOUNT, PHILIPP~A. WITTE, PAUL H.~J. KELLY, GERARD~J.
+  GORMAN, and FELIX~J. HERRMANN.
+\newblock Architecture and performance of devito, a system for automated
+  stencil computation.
+\newblock Submitted to SIAM Journal on Scientific Computing on July 9, 2018.,
+  2018.
+
 \bibitem{mansour2012SSPwspgl1}
 Hassan Mansour.
 \newblock Beyond $\ell_1$ norm minimization for sparse signal recovery.

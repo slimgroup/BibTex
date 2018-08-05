@@ -2032,6 +2032,14 @@ Mathias Louboutin, Michael Lange, Navjot Kukreja, Fabio Luporini, Felix~J.
   02-03 2017.
 \newblock (SIAM Conference on Computational Science and Engineering, Atlanta).
 
+\bibitem{louboutin2018dae}
+Mathias Louboutin, Michael Lange, Fabio Luporini, Navjot Kukreja, Philipp~A.
+  Witte, Felix~J. Herrmann, Paulius Velesko, and Gerard~J. Gorman.
+\newblock Devito: an embedded domain-specific language for finite differences
+  and geophysical exploration.
+\newblock Submitted to Geoscientific Model Development (GMD) on August 1,
+  2018., 2018.
+
 \bibitem{louboutin2015IIPFWIrwi}
 Mathias Louboutin, Bas Peters, Brendan~R. Smithyman, and Felix~J. Herrmann.
 \newblock Regularizing waveform inversion by projections onto convex sets.

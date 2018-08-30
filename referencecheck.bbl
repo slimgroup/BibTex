@@ -1178,6 +1178,14 @@ Felix~J. Herrmann, Michael~P. Friedlander, and Ozgur Yilmaz.
   exploration seismology.
 \newblock {\em Signal Processing Magazine, IEEE}, 29(3):88--100, 05 2012.
 
+\bibitem{herrmann2018SMCtpa}
+Felix~J. Herrmann, Gerard~J. Gorman, Jan Hückelheim, Keegan Lensink, Paul
+  Kelly, Navjot Kukreja, Henryk Modzelewski, Michael Lange, Mathias Louboutin,
+  Fabio Luporini, Ali Siahkoohi, and Philipp~A. Witte.
+\newblock The power of abstraction in computational exploration seismology.
+\newblock In {\em Smoky Mountains Computational Sciences and Engineering
+  Conference}, 08 2018.
+
 \bibitem{herrmann2005CSEGnld}
 Felix~J. Herrmann and Gilles Hennenfent.
 \newblock Non-linear data continuation with redundant frames.

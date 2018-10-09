@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_1) (preloaded format=pdflatex 2018.7.4)  30 AUG 2018 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_1) (preloaded format=pdflatex 2018.7.4)  9 OCT 2018 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -47,24 +47,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 325.
  [5] [6]
-Underfull \hbox (badness 1168) in paragraph at lines 479--483
+Underfull \hbox (badness 1168) in paragraph at lines 481--485
 []\OT1/cmr/m/n/10 Michael P. Fried-lan-der and Mark Schmidt.  Hy-brid determini
 stic-
  []
 
 [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
 [22] [23] [24] [25] [26]
-Underfull \hbox (badness 1226) in paragraph at lines 2078--2085
+Underfull \hbox (badness 1226) in paragraph at lines 2080--2087
 []\OT1/cmr/m/n/10 FABIO LU-PORINI, MICHAEL LANGE, MATH-IAS LOUBOUTIN,
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 2078--2085
+Underfull \hbox (badness 3428) in paragraph at lines 2080--2087
 \OT1/cmr/m/n/10 NAVJOT KUKREJA, JAN HUCK-EL-HEIM, CHARLES YOUNT,
  []
 
 [27] [28] [29]
-Underfull \hbox (badness 1694) in paragraph at lines 2257--2262
+Underfull \hbox (badness 1694) in paragraph at lines 2259--2264
 []\OT1/cmr/m/n/10 Felix Ogheneko-hwo.  \OT1/cmr/m/it/10 Eco-nomic time-lapse se
 is-mic ac-qui-si-tion and
  []
@@ -72,10 +72,10 @@ is-mic ac-qui-si-tion and
 [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43]) [44]
 (/Users/owner/Documents/BibTex/referencecheck.aux) ) 
 Here is how much of TeX's memory you used:
- 754 strings out of 493762
- 13333 string characters out of 6152600
- 64012 words of memory out of 5000000
- 4544 multiletter control sequences out of 15000+600000
+ 755 strings out of 493762
+ 13356 string characters out of 6152600
+ 64017 words of memory out of 5000000
+ 4545 multiletter control sequences out of 15000+600000
  4591 words of font info for 17 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  23i,4n,17p,263b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -85,7 +85,7 @@ fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/local/share/texmf-texlive/fonts
 /type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1
 /public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public
 /amsfonts/cm/cmti10.pfb>
-Output written on referencecheck.pdf (44 pages, 173100 bytes).
+Output written on referencecheck.pdf (44 pages, 173473 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams

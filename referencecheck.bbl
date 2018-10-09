@@ -424,12 +424,14 @@ Zhilong Fang, Curt~Da Silva, Rachel Kuske, and Felix~J. Herrmann.
 Zhilong Fang, Curt~Da Silva, Rachel Kuske, and Felix~J. Herrmann.
 \newblock Uncertainty quantification for inverse problems with weak
   {PDE}-constraints.
-\newblock Submitted to Geophysics on December 19, 2017., 2017.
+\newblock {\em Geophysics}, 2018.
+\newblock (Published online in Geophysics).
 
 \bibitem{fang2017sewri}
 Zhilong Fang, Rongrong Wang, and Felix~J. Herrmann.
 \newblock Source estimation for wavefield-reconstruction inversion.
-\newblock Submitted to GEOPHYSICS on October 20, 2017., 2017.
+\newblock {\em Geophysics}, 83(4):R345--R359, 2018.
+\newblock (Geophysics).
 
 \bibitem{fomel2007ICASSPrepro}
 Sergey Fomel and Gilles Hennenfent.
@@ -2526,6 +2528,12 @@ Reza Shahidi, Gang Tang, Jianwei Ma, and Felix~J. Herrmann.
   sparsity-promoting seismic data recovery.
 \newblock {\em Geophysical Prospecting}, 61(5):973--997, 09 2013.
 
+\bibitem{sharan2018IEEEIUSspoa}
+Shashin Sharan, Rajiv Kumar, Diego~S. Dumani, Mathias Louboutin, Rongrong Wang,
+  Stanislav Emelianov, and Felix~J. Herrmann.
+\newblock Sparsity-promoting photoacoustic imaging with source estimation.
+\newblock Submitted to IEEE IUS 2018 on October 8, 2018, 2018.
+
 \bibitem{sharan2018SEGada}
 Shashin Sharan, Rajiv Kumar, Rongrong Wang, and Felix~J. Herrmann.
 \newblock A debiasing approach to microseismic.
@@ -2542,8 +2550,9 @@ Shashin Sharan, Rongrong Wang, and Felix~J. Herrmann.
 
 \bibitem{sharan2018fsp}
 Shashin Sharan, Rongrong Wang, and Felix~J. Herrmann.
-\newblock Fast sparsity-promoting microseismic source inversion.
-\newblock Submitted to GJI on April 15, 2018., 2018.
+\newblock Fast sparsity-promoting microseismic source estimation.
+\newblock {\em Geophysical Journal International}, 2018.
+\newblock (published online in Geophysical Journal International).
 
 \bibitem{sharan2016SEGspj}
 Shashin Sharan, Rongrong Wang, Tristan van Leeuwen, and Felix~J. Herrmann.

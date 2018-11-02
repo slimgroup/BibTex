@@ -433,6 +433,12 @@ Zhilong Fang, Rongrong Wang, and Felix~J. Herrmann.
 \newblock {\em Geophysics}, 83(4):R345--R359, 2018.
 \newblock (Geophysics).
 
+\bibitem{fenelon08msc}
+Lloyd Fenelon.
+\newblock Nonequispaced discrete curvelet transform for seismic data
+  reconstruction.
+\newblock Master's thesis, August 2008.
+
 \bibitem{fomel2007ICASSPrepro}
 Sergey Fomel and Gilles Hennenfent.
 \newblock Reproducible computational experiments using scons.

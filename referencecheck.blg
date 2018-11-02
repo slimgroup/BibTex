@@ -20,6 +20,7 @@ Database file #12: incollection.bib
 Database file #13: misc.bib
 Database file #14: proceedings.bib
 Warning--empty booktitle in alfaraj2018SEGswi
+Warning--empty school in fenelon08msc
 Warning--there's a number but no series in herrmann2011SPIEmsp
 Warning--can't use both volume and number fields in herrmann2008SEGcdm
 Warning--empty booktitle in Herrmann2011BG
@@ -34,45 +35,45 @@ Warning--empty booktitle in dasilva2013SAMPTAhtuck
 Warning--empty booktitle in vandenberg07VONipo
 Warning--empty institution in vanleeuwen2012smii
 Warning--empty booktitle in yang2018SEGrde
-You've used 537 entries,
+You've used 538 entries,
             2118 wiz_defined-function locations,
-            2856 strings with 84615 characters,
-and the built_in function-call counts, 177827 in all, are:
-= -- 16703
-> -- 8472
+            2860 strings with 84777 characters,
+and the built_in function-call counts, 178024 in all, are:
+= -- 16723
+> -- 8479
 < -- 195
-+ -- 3380
-- -- 2799
-* -- 11410
-:= -- 29110
-add.period$ -- 1889
-call.type$ -- 537
-change.case$ -- 2996
++ -- 3383
+- -- 2801
+* -- 11421
+:= -- 29149
+add.period$ -- 1892
+call.type$ -- 538
+change.case$ -- 3000
 chr.to.int$ -- 0
-cite$ -- 552
-duplicate$ -- 7734
-empty$ -- 15084
-format.name$ -- 2799
-if$ -- 38307
+cite$ -- 554
+duplicate$ -- 7742
+empty$ -- 15098
+format.name$ -- 2801
+if$ -- 38344
 int.to.chr$ -- 0
-int.to.str$ -- 537
+int.to.str$ -- 538
 missing$ -- 454
-newline$ -- 2872
-num.names$ -- 1076
-pop$ -- 3902
+newline$ -- 2877
+num.names$ -- 1078
+pop$ -- 3906
 preamble$ -- 1
-purify$ -- 2472
+purify$ -- 2475
 quote$ -- 0
-skip$ -- 5001
+skip$ -- 5007
 stack$ -- 0
-substring$ -- 7292
+substring$ -- 7297
 swap$ -- 1867
 text.length$ -- 195
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2148
-warning$ -- 15
-while$ -- 1333
-width$ -- 540
-write$ -- 6155
-(There were 15 warnings)
+type$ -- 2152
+warning$ -- 16
+while$ -- 1335
+width$ -- 541
+write$ -- 6165
+(There were 16 warnings)

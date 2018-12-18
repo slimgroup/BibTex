@@ -19,16 +19,18 @@
 
 @ARTICLE{fang2017uqfip,
   author = {Zhilong Fang and Curt Da Silva and Rachel Kuske and Felix J. Herrmann},
-  title = {Uncertainty quantification for inverse problems with weak
-{PDE}-constraints},
+  title = {Uncertainty quantification for inverse problems with weak partial-differential-equation constraints},
   journal = {Geophysics},
+  volume = {83},
+  number = {6},
+  pages = {R629-R647},
   year = {2018},
   abstract = { In a statistical inverse problem, the objective is a complete
               statistical description of unknown parameters from noisy observations in order to quantify uncertainties of the parameters of interest. We consider inverse problems with partial-differential-equation-constraints, which are applicable to
               a variety of seismic problems. Bayesian inference is one of the most widely-used approaches to precisely quantify statistics through a posterior distribution, incorporating uncertainties in observed data, modeling kernel, and prior knowledge of the parameters. Typically when formulating the posterior distribution, the partial-differential-equation-constraints are required to be exactly satisfied, resulting in a highly nonlinear forward map and a posterior distribution with many local maxima. These drawbacks make it difficult to find an appropriate approximation for the posterior distribution. Another complicating factor is that traditional Markov chain Monte Carlo methods are known to converge slowly for realistically sized problems. In this work, we relax the partial-differential-equation-constraints by introducing an auxiliary variable, which allows for Gaussian deviations in the partial-differential-equations. Thus, we obtain a new bilinear posterior distribution consisting of both data and partial-differential-equation misfit terms. We illustrate that for a particular range of variance choices for the partial-differential-equation misfit term, the new posterior distribution has fewer modes and can be well-approximated by a Gaussian distribution, which can then be sampled in a straightforward manner. Since it is prohibitively expensive to explicitly construct the dense covariance matrix of the Gaussian approximation for intermediate to large-scale problems, we present a method to implicitly construct it, which enables efficient sampling. We apply this framework to two-dimensional seismic inverse problems with 1,800 and 92,455 unknown parameters. The results illustrate that our framework can produce comparable statistical quantities to those produced by conventional Markov chain Monte Carlo type methods while requiring far fewer partial-differential-equation solves, which are the main computational bottlenecks in these problems.},
   keywords = {UQ, FWI, acoustic, weak-constraint},
   doi = {10.1190/geo2017-0824.1},
-  note = {(Published online in Geophysics)},
+  note = {(Geophysics)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2018/fang2017uqfip/fang2017uqfip.html}
 }
 

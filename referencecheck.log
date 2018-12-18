@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_1) (preloaded format=pdflatex 2018.7.4)  1 NOV 2018 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_1) (preloaded format=pdflatex 2018.7.4)  18 DEC 2018 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -43,28 +43,28 @@ LaTeX Font Info:    ... okay on input line 3.
 
 {/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 325.
+(Font)              <7> on input line 326.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 325.
+(Font)              <5> on input line 326.
  [5] [6]
-Underfull \hbox (badness 1168) in paragraph at lines 487--491
+Underfull \hbox (badness 1168) in paragraph at lines 488--492
 []\OT1/cmr/m/n/10 Michael P. Fried-lan-der and Mark Schmidt.  Hy-brid determini
 stic-
  []
 
 [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
 [22] [23] [24] [25] [26]
-Underfull \hbox (badness 1226) in paragraph at lines 2086--2093
+Underfull \hbox (badness 1226) in paragraph at lines 2090--2097
 []\OT1/cmr/m/n/10 FABIO LU-PORINI, MICHAEL LANGE, MATH-IAS LOUBOUTIN,
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 2086--2093
+Underfull \hbox (badness 3428) in paragraph at lines 2090--2097
 \OT1/cmr/m/n/10 NAVJOT KUKREJA, JAN HUCK-EL-HEIM, CHARLES YOUNT,
  []
 
 [27] [28] [29]
-Underfull \hbox (badness 1694) in paragraph at lines 2265--2270
+Underfull \hbox (badness 1694) in paragraph at lines 2270--2275
 []\OT1/cmr/m/n/10 Felix Ogheneko-hwo.  \OT1/cmr/m/it/10 Eco-nomic time-lapse se
 is-mic ac-qui-si-tion and
  []
@@ -85,7 +85,7 @@ fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/local/share/texmf-texlive/fonts
 /type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1
 /public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public
 /amsfonts/cm/cmti10.pfb>
-Output written on referencecheck.pdf (44 pages, 173377 bytes).
+Output written on referencecheck.pdf (44 pages, 174027 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams

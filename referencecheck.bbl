@@ -24,8 +24,9 @@ Ali~M. Alfaraj, Rajiv Kumar, and Felix~J. Herrmann.
 \bibitem{alfaraj2018SEGswi}
 Ali~M. Alfaraj, Rajiv Kumar, and Felix~J. Herrmann.
 \newblock Seismic waveform inversion using decomposed one-way wavefields.
-\newblock 2018.
-\newblock Accepted for SEG 2018.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1379--1383,
+  10 2018.
+\newblock (SEG, Anaheim).
 
 \bibitem{alhashim09THsdp}
 Fadhel~Abbas Alhashim.
@@ -423,9 +424,9 @@ Zhilong Fang, Curt~Da Silva, Rachel Kuske, and Felix~J. Herrmann.
 \bibitem{fang2017uqfip}
 Zhilong Fang, Curt~Da Silva, Rachel Kuske, and Felix~J. Herrmann.
 \newblock Uncertainty quantification for inverse problems with weak
-  {PDE}-constraints.
-\newblock {\em Geophysics}, 2018.
-\newblock (Published online in Geophysics).
+  partial-differential-equation constraints.
+\newblock {\em Geophysics}, 83(6):R629--R647, 2018.
+\newblock (Geophysics).
 
 \bibitem{fang2017sewri}
 Zhilong Fang, Rongrong Wang, and Felix~J. Herrmann.
@@ -1473,8 +1474,9 @@ Ajinkya Kadu and Rajiv Kumar.
 \bibitem{kadu2018SEGMSFWI}
 Ajinkya Kadu, Rajiv Kumar, and Tristan van Leeuwen.
 \newblock Full-waveform inversion with mumford-shah regularization.
-\newblock 2018.
-\newblock Accepted for SEG 2018.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1258--1262,
+  10 2018.
+\newblock (SEG, Anaheim).
 
 \bibitem{kukreja2017SIAMdsm}
 Navjot Kukreja, Michael Lange, Mathias Louboutin, Fabio Luporini, and Gerard
@@ -1532,8 +1534,9 @@ Rajiv Kumar, Aleksandr~Y. Aravkin, Hassan Mansour, Ben Recht, and Felix~J.
 Rajiv Kumar, Marie Graff-Kray, Tristan van Leeuwen, and Felix~J. Herrmann.
 \newblock Low-rank representation of extended image volumes––applications
   to imaging and velocity continuation.
-\newblock 2018.
-\newblock Accepted for SEG 2018.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4418--4422,
+  10 2018.
+\newblock (SEG, Anaheim).
 
 \bibitem{kumar2018toi}
 Rajiv Kumar, Marie Graff-Kray, Ivan Vasconcelos, and Felix~J. Herrmann.
@@ -2065,8 +2068,9 @@ Mathias Louboutin, Bas Peters, Brendan~R. Smithyman, and Felix~J. Herrmann.
 \bibitem{louboutin2018SEGeow}
 Mathias Louboutin, Philipp~A. Witte, and Felix~J. Herrmann.
 \newblock Effects of wrong adjoints for rtm in tti media.
-\newblock 2018.
-\newblock Accepted for SEG 2018.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 331--335, 10
+  2018.
+\newblock (SEG, Anaheim).
 
 \bibitem{louboutin2017fwi}
 Mathias Louboutin, Philipp~A. Witte, Michael Lange, Navjot Kukreja, Fabio
@@ -2258,8 +2262,9 @@ Nick Moldoveanu, Philip Bilsby, John Quigley, Rajiv Kumar, and Felix~J.
   Herrmann.
 \newblock Compressive sensing based design for land and obs surveys: The noise
   issue.
-\newblock 2018.
-\newblock Accepted for SEG 2018.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 102--106, 10
+  2018.
+\newblock (SEG, Anaheim).
 
 \bibitem{oghenekohwo2017THetl}
 Felix Oghenekohwo.
@@ -2543,8 +2548,9 @@ Shashin Sharan, Rajiv Kumar, Diego~S. Dumani, Mathias Louboutin, Rongrong Wang,
 \bibitem{sharan2018SEGada}
 Shashin Sharan, Rajiv Kumar, Rongrong Wang, and Felix~J. Herrmann.
 \newblock A debiasing approach to microseismic.
-\newblock 2018.
-\newblock Accepted for SEG 2018.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2942--2946,
+  10 2018.
+\newblock (SEG, Anaheim).
 
 \bibitem{sharan2017SEGhrf}
 Shashin Sharan, Rongrong Wang, and Felix~J. Herrmann.
@@ -2578,8 +2584,9 @@ Ali Siahkoohi, Rajiv Kumar, and Felix~J. Herrmann.
 Ali Siahkoohi, Mathias Louboutin, Rajiv Kumar, and Felix~J. Herrmann.
 \newblock Deep convolutional neural networks in prestack seismic---two
   exploratory examples.
-\newblock 2018.
-\newblock Accepted for SEG 2018.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2196--2200,
+  10 2018.
+\newblock (SEG, Anaheim).
 
 \bibitem{dasilva2017THlso}
 Curt~Da Silva.
@@ -3259,8 +3266,9 @@ Mengmeng Yang and Felix~J. Herrmann.
 \bibitem{yang2018SEGrde}
 Mengmeng Yang, Rajiv Kumar, Rongrong Wang, and Felix~J. Herrmann.
 \newblock Removing density effects in ls-rtm with a low-rank matched filter.
-\newblock 2018.
-\newblock Accepted for SEG 2018.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4251--4255,
+  10 2018.
+\newblock (SEG, Anaheim).
 
 \bibitem{yang2016SEGtds}
 Mengmeng Yang, Philipp~A. Witte, Zhilong Fang, and Felix~J. Herrmann.

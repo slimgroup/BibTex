@@ -34,15 +34,31 @@
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2018/fang2017uqfip/fang2017uqfip.html}
 }
 
+@ARTICLE{peters2018pmf,
+  author = {Bas Peters and Brendan R. Smithyman and Felix J. Herrmann},
+  title = {Projection methods and applications for seismic nonlinear inverse problems with multiple constraints},
+  journal = {Geophysics},
+  year = {2018},
+  abstract = {Nonlinear inverse problems are often hampered by non-uniqueness and local minima because of missing low frequencies and far offsets in the data, lack of access to good starting models, noise, and modeling errors. A well-known approach to counter these deficiencies is to include prior information on the unknown model, which regularizes the inverse problem. While conventional regularization methods have resulted in enormous progress in ill-posed (geophysical) inverse problems, challenges remain when the prior information consists of multiple pieces. To handle this situation, we propose an optimization framework that allows us to add multiple pieces of prior information in the form of constraints. Compared to additive regularization penalties, constraints have a number of advantages making them more suitable for inverse problems such as full-waveform inversion. The proposed framework is rigorous because it offers assurances that multiple constraints are imposed uniquely at each iteration, irrespective of the order in which they are invoked. To project onto the intersection of multiple sets uniquely, we employ Dykstra’s algorithm that scales to large problems and does not rely on trade-off parameters. In that sense, our approach differs substantially from approaches such as Tikhonov regularization, penalty methods, and gradient filtering. None of these offer assurances, which makes them less suitable to full-waveform inversion where unrealistic intermediate results effectively derail the iterative inversion process. By working with intersections of sets, we keep expensive objective and gradient calculations unaltered, separate from projections, and we also avoid trade-off parameters. These features allow for easy integration into existing code bases. In addition to more predictable behavior, working with constraints also allows for heuristics where we built up the complexity of the model gradually by relaxing the constraints. This strategy helps to avoid convergence to local minima that represent unrealistic models. We illustrate this unique feature with examples of varying complexity.},
+  keywords = {full-waveform inversion, optimization, constraints, regularization, projection, intersection},
+  doi = {10.1190/geo2018-0192.1},
+  note = {(Published online in Geophysics)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/Geophysics/2018/peters2018pmf/peters2018pmf.html}
+}
+
 @ARTICLE{sharan2018fsp,
   author = {Shashin Sharan and Rongrong Wang and Felix J. Herrmann},
   title = {Fast sparsity-promoting microseismic source estimation},
   journal = {Geophysical Journal International},
-  year = {2018},
+  volume = {216},
+  number = {1},
+  pages = {164-181},
+  year = {2019},
+  month = {1},
   abstract = {Microseismic events are generated during hydraulic fracturing of unconventional reservoirs and carry information on fracture locations and the origin times associated with these microseismic events. For drilling purposes and to prevent hazardous situations, we need to have accurate knowledge on the fracture locations as well as on their size, and their density. Because microseismic waves can travel far distances, microseismic data collected at the surface and or in boreholes can help us to monitor hydraulic fracturing. While so-called back propagation or time-reversal methods are able to focus recorded energy back onto the sources when a reasonable velocity model is available, these methods suffer from blurring especially in situations where the data acquisition suffers from lack of aperture, sparse sampling, and noise. As a result, these methods typically cannot resolve sources in close proximity, a desired feature since we need this information if we want to follow the fracture evolution in space and time. In that situation, we need to estimate the locations and the associated source-time functions for closely spaced microseismic sources along the active fractures. To overcome the limitations of time-reversal methods, we propose a wave-equation based inversion approach where we invert for the complete source wavefield in both space and time. By promoting sparsity on the source wavefield in space, we negate the effects of non-radiating sources during the inversion and obtain high-resolution intensity plots and high-fidelity estimates for the source-time functions. We obtain these results relatively fast by accelerating the linearized Bregman method with a dual formulation. Through experiments, we demonstrate that our method is computationally feasible, robust to noise, and works for closely spaced sources with overlapping source-time functions in complex geological settings.},
   keywords = {Waveform inversion, Joint inversion, induced seismicity},
   doi = {10.1093/gji/ggy415},
-  note = {(published online in Geophysical Journal International)},
+  note = {(Geophysical Journal International)},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GeophysicalJournalInternational/2018/sharan2018fsp/sharan2018fsp.pdf}
 }
 

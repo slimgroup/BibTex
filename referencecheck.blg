@@ -8,8 +8,8 @@ Database file #2: bscthesis.bib
 Database file #3: masterthesis.bib
 Database file #4: techreport.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Database file #5: unpublished.bib
 Reallocated field_info (elt_size=4) to 15028 items from 10014.
+Database file #5: unpublished.bib
 Database file #6: book.bib
 Database file #7: article.bib
 Database file #8: manual.bib
@@ -27,45 +27,45 @@ Warning--empty booktitle in petrenko2013HPCSsaoc
 Warning--empty booktitle in dasilva2013SAMPTAhtuck
 Warning--empty booktitle in vandenberg07VONipo
 Warning--empty institution in vanleeuwen2012smii
-You've used 539 entries,
+You've used 540 entries,
             2118 wiz_defined-function locations,
-            2876 strings with 85144 characters,
-and the built_in function-call counts, 180243 in all, are:
-= -- 16982
-> -- 8512
-< -- 203
-+ -- 3396
-- -- 2813
-* -- 11596
-:= -- 29386
-add.period$ -- 1896
-call.type$ -- 539
-change.case$ -- 3009
+            2883 strings with 85337 characters,
+and the built_in function-call counts, 180765 in all, are:
+= -- 17033
+> -- 8530
+< -- 204
++ -- 3403
+- -- 2819
+* -- 11628
+:= -- 29458
+add.period$ -- 1901
+call.type$ -- 540
+change.case$ -- 3015
 chr.to.int$ -- 0
-cite$ -- 547
-duplicate$ -- 7846
-empty$ -- 15275
-format.name$ -- 2813
-if$ -- 38918
+cite$ -- 548
+duplicate$ -- 7873
+empty$ -- 15322
+format.name$ -- 2819
+if$ -- 39041
 int.to.chr$ -- 0
-int.to.str$ -- 539
-missing$ -- 455
-newline$ -- 2883
-num.names$ -- 1080
-pop$ -- 3894
+int.to.str$ -- 540
+missing$ -- 457
+newline$ -- 2890
+num.names$ -- 1082
+pop$ -- 3904
 preamble$ -- 1
-purify$ -- 2483
+purify$ -- 2488
 quote$ -- 0
-skip$ -- 5136
+skip$ -- 5158
 stack$ -- 0
-substring$ -- 7622
-swap$ -- 1960
-text.length$ -- 203
+substring$ -- 7655
+swap$ -- 1972
+text.length$ -- 204
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2156
+type$ -- 2160
 warning$ -- 8
-while$ -- 1355
-width$ -- 542
-write$ -- 6195
+while$ -- 1359
+width$ -- 543
+write$ -- 6210
 (There were 8 warnings)

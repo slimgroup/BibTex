@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_1) (preloaded format=pdflatex 2018.7.4)  22 JAN 2019 10:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_1) (preloaded format=pdflatex 2018.7.4)  22 JAN 2019 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -69,26 +69,26 @@ Underfull \hbox (badness 1694) in paragraph at lines 2277--2282
 is-mic ac-qui-si-tion and
  []
 
-[30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43]) [44]
-(/Users/owner/Documents/BibTex/referencecheck.aux) ) 
+[30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44])
+[45] (/Users/owner/Documents/BibTex/referencecheck.aux) ) 
 Here is how much of TeX's memory you used:
- 757 strings out of 493762
- 13390 string characters out of 6152600
- 63027 words of memory out of 5000000
- 4547 multiletter control sequences out of 15000+600000
+ 758 strings out of 493762
+ 13410 string characters out of 6152600
+ 63032 words of memory out of 5000000
+ 4548 multiletter control sequences out of 15000+600000
  4591 words of font info for 17 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  23i,4n,17p,263b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
-</opt/local/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/local/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmti10.pfb>
-Output written on referencecheck.pdf (44 pages, 174299 bytes).
+</opt/local/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/local/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmti10.pfb>
+Output written on referencecheck.pdf (45 pages, 174834 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
+ 171 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

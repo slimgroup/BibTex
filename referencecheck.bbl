@@ -2475,6 +2475,11 @@ Art Petrenko, Tristan van Leeuwen, Diego Oriato, Simon Tilbury, and Felix~J.
 \newblock Accelerating an iterative {Helmholtz} solver with {FPGAs}.
 \newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
 
+\bibitem{rizzuti2019EAGElis}
+Gabrio Rizzuti, Ali Siahkoohi, and Felix~J. Herrmann.
+\newblock Learned iterative solvers for the helmholtz equation.
+\newblock Submitted to EAGE on January 15, 2019, 2019.
+
 \bibitem{ross2008SINBADsit}
 Sean Ross-Ross.
 \newblock Seismic inversion through operator overloading.
@@ -2551,7 +2556,9 @@ Reza Shahidi, Gang Tang, Jianwei Ma, and Felix~J. Herrmann.
 Shashin Sharan, Rajiv Kumar, Diego~S. Dumani, Mathias Louboutin, Rongrong Wang,
   Stanislav Emelianov, and Felix~J. Herrmann.
 \newblock Sparsity-promoting photoacoustic imaging with source estimation.
-\newblock Submitted to IEEE IUS 2018 on October 8, 2018, 2018.
+\newblock In {\em 2018 IEEE International Ultrasonics Symposium (IUS)}, pages
+  206--212, 10 2018.
+\newblock (IEEE IUS, Kobe).
 
 \bibitem{sharan2018SEGada}
 Shashin Sharan, Rajiv Kumar, Rongrong Wang, and Felix~J. Herrmann.
@@ -2667,7 +2674,8 @@ Curt~Da Silva and Felix~J. Herrmann.
 Curt~Da Silva, Yiming Zhang, Rajiv Kumar, and Felix~J. Herrmann.
 \newblock Applications of low-rank compressed seismic data to full waveform
   inversion and extended image volumes.
-\newblock Submitted to Geophysics on February 9, 2018., 2018.
+\newblock {\em Geophysics}, 2019.
+\newblock Accepted on January 22, 2019.
 
 \bibitem{smithyman2014SEGjfw}
 Brendan~R. Smithyman, Bas Peters, Bryan DeVault, and Felix~J. Herrmann.

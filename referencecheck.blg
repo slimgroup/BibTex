@@ -27,45 +27,45 @@ Warning--empty booktitle in petrenko2013HPCSsaoc
 Warning--empty booktitle in dasilva2013SAMPTAhtuck
 Warning--empty booktitle in vandenberg07VONipo
 Warning--empty institution in vanleeuwen2012smii
-You've used 538 entries,
+You've used 539 entries,
             2118 wiz_defined-function locations,
-            2871 strings with 84869 characters,
-and the built_in function-call counts, 179909 in all, are:
-= -- 16952
-> -- 8479
+            2876 strings with 85144 characters,
+and the built_in function-call counts, 180243 in all, are:
+= -- 16982
+> -- 8512
 < -- 203
-+ -- 3383
-- -- 2801
-* -- 11569
-:= -- 29319
-add.period$ -- 1893
-call.type$ -- 538
-change.case$ -- 3000
++ -- 3396
+- -- 2813
+* -- 11596
+:= -- 29386
+add.period$ -- 1896
+call.type$ -- 539
+change.case$ -- 3009
 chr.to.int$ -- 0
-cite$ -- 546
-duplicate$ -- 7840
-empty$ -- 15264
-format.name$ -- 2801
-if$ -- 38858
+cite$ -- 547
+duplicate$ -- 7846
+empty$ -- 15275
+format.name$ -- 2813
+if$ -- 38918
 int.to.chr$ -- 0
-int.to.str$ -- 538
+int.to.str$ -- 539
 missing$ -- 455
-newline$ -- 2878
-num.names$ -- 1078
-pop$ -- 3888
+newline$ -- 2883
+num.names$ -- 1080
+pop$ -- 3894
 preamble$ -- 1
-purify$ -- 2475
+purify$ -- 2483
 quote$ -- 0
-skip$ -- 5131
+skip$ -- 5136
 stack$ -- 0
-substring$ -- 7617
+substring$ -- 7622
 swap$ -- 1960
 text.length$ -- 203
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2152
+type$ -- 2156
 warning$ -- 8
-while$ -- 1353
-width$ -- 541
-write$ -- 6185
+while$ -- 1355
+width$ -- 542
+write$ -- 6195
 (There were 8 warnings)

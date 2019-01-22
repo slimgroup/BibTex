@@ -1478,6 +1478,13 @@ Ajinkya Kadu, Rajiv Kumar, and Tristan van Leeuwen.
   10 2018.
 \newblock (SEG, Anaheim).
 
+\bibitem{kukreja2019PASCccd}
+Navjot Kukreja, Jan Huckelheim, Mathias Louboutin, Kaiyuan Hou, Paul Hovland,
+  and Gerard Gorman.
+\newblock Combining checkpointing and data compression to accelerate
+  adjoint-based optimization problems.
+\newblock Submitted to PASC19 on January 16, 2019, 2019.
+
 \bibitem{kukreja2017SIAMdsm}
 Navjot Kukreja, Michael Lange, Mathias Louboutin, Fabio Luporini, and Gerard
   Gorman.

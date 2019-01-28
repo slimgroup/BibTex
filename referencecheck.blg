@@ -29,37 +29,37 @@ Warning--empty booktitle in vandenberg07VONipo
 Warning--empty institution in vanleeuwen2012smii
 You've used 540 entries,
             2118 wiz_defined-function locations,
-            2883 strings with 85337 characters,
-and the built_in function-call counts, 180765 in all, are:
-= -- 17033
+            2883 strings with 85290 characters,
+and the built_in function-call counts, 180804 in all, are:
+= -- 17036
 > -- 8530
 < -- 204
 + -- 3403
 - -- 2819
-* -- 11628
-:= -- 29458
-add.period$ -- 1901
+* -- 11630
+:= -- 29462
+add.period$ -- 1902
 call.type$ -- 540
 change.case$ -- 3015
 chr.to.int$ -- 0
 cite$ -- 548
-duplicate$ -- 7873
-empty$ -- 15322
+duplicate$ -- 7877
+empty$ -- 15328
 format.name$ -- 2819
-if$ -- 39041
+if$ -- 39051
 int.to.chr$ -- 0
 int.to.str$ -- 540
-missing$ -- 457
-newline$ -- 2890
+missing$ -- 458
+newline$ -- 2891
 num.names$ -- 1082
-pop$ -- 3904
+pop$ -- 3906
 preamble$ -- 1
 purify$ -- 2488
 quote$ -- 0
-skip$ -- 5158
+skip$ -- 5160
 stack$ -- 0
 substring$ -- 7655
-swap$ -- 1972
+swap$ -- 1973
 text.length$ -- 204
 text.prefix$ -- 0
 top$ -- 0
@@ -67,5 +67,5 @@ type$ -- 2160
 warning$ -- 8
 while$ -- 1359
 width$ -- 543
-write$ -- 6210
+write$ -- 6212
 (There were 8 warnings)

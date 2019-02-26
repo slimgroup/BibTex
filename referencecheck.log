@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_1) (preloaded format=pdflatex 2018.7.4)  12 FEB 2019 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_1) (preloaded format=pdflatex 2018.7.4)  26 FEB 2019 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -54,17 +54,17 @@ stic-
 
 [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
 [22] [23] [24] [25] [26] [27]
-Underfull \hbox (badness 1226) in paragraph at lines 2097--2104
+Underfull \hbox (badness 1226) in paragraph at lines 2103--2110
 []\OT1/cmr/m/n/10 FABIO LU-PORINI, MICHAEL LANGE, MATH-IAS LOUBOUTIN,
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 2097--2104
+Underfull \hbox (badness 3428) in paragraph at lines 2103--2110
 \OT1/cmr/m/n/10 NAVJOT KUKREJA, JAN HUCK-EL-HEIM, CHARLES YOUNT,
  []
 
 [28] [29]
-Underfull \hbox (badness 1694) in paragraph at lines 2277--2282
+Underfull \hbox (badness 1694) in paragraph at lines 2283--2288
 []\OT1/cmr/m/n/10 Felix Ogheneko-hwo.  \OT1/cmr/m/it/10 Eco-nomic time-lapse se
 is-mic ac-qui-si-tion and
  []
@@ -72,10 +72,10 @@ is-mic ac-qui-si-tion and
 [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44])
 [45] (/Users/owner/Documents/BibTex/referencecheck.aux) ) 
 Here is how much of TeX's memory you used:
- 758 strings out of 493762
- 13410 string characters out of 6152600
- 63032 words of memory out of 5000000
- 4548 multiletter control sequences out of 15000+600000
+ 759 strings out of 493762
+ 13429 string characters out of 6152600
+ 63037 words of memory out of 5000000
+ 4549 multiletter control sequences out of 15000+600000
  4591 words of font info for 17 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  23i,4n,17p,263b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -85,7 +85,7 @@ live/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/local/share/texmf-texlive/
 fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/
 type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb>
-Output written on referencecheck.pdf (45 pages, 174861 bytes).
+Output written on referencecheck.pdf (45 pages, 174879 bytes).
 PDF statistics:
  171 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams

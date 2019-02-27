@@ -2710,6 +2710,12 @@ Gang Tang, Reza Shahidi, and Jianwei Ma.
 \newblock Technical Report TR-EOAS-2009-3, UBC Earth and Ocean Sciences
   Department, 2009.
 
+\bibitem{tang2008CITEocs}
+Wen Tang, Jianwei Ma, and Felix~J. Herrmann.
+\newblock Optimized compressed sensing for curvelet-based seismic data
+  reconstruction.
+\newblock {\em CiteSeer}, 2008.
+
 \bibitem{thomson2006SINBADlss}
 Darren Thomson.
 \newblock Large-scale seismic data recovery by the parallel windowed curvelet

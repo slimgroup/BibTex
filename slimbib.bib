@@ -1,6 +1,33 @@
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+%-----2019-----%
+
+@CONFERENCE{rizzuti2019SIAMGStwri,
+  author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann},
+  title = {A dual formulation for time-domain wavefield reconstruction inversion},
+  booktitle = {SIAM Conference on Mathematical & Computational Issues in the Geosciences},
+  year = {2019},
+  month = {3},
+  abstract = {Wavefield reconstruction inversion (WRI) is based on the combination of data misfit and PDE-residual penalty terms, and it aims at the reconstruction of the optimal property model and field pair. A full-space optimization would require the storage of field variables for every frequency or time sample (and every source). Remedies via variable projection are well studied, but they entail the solution of a modified wave equation, which is costly both in frequency and time domain. Here, we explore an efficient alternative to WRI, where properties are complemented, instead, by elements of the dual data space. The starting point of our proposal is the denoising reformulation of WRI: the PDE compliance is optimized under the constraint of a given data fit. Since the field variable can be eliminated from the associated saddle-point problem, we obtain a new objective functional of only properties and Lagrange multipliers. Its evaluation, and gradient computation, involves the solution of the original wave equation, which is amenable to time-domain discretization. The optimization scheme of choice can now leverage on affordable storage of the iterates.},
+  keywords = {WRI},
+  note = {(SIAM GS)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SIAMGS/2019/rizzuti2019SIAMGStwri/rizzuti2019SIAMGStwri.pdf}
+}
+
+@CONFERENCE{witte2019SIAMCSEclsmft,
+  author = {Philipp A. Witte and Mathias Louboutin and Fabio Luporini and Gerard J. Gorman and Felix J. Herrmann},
+  title = {Compressive least squares migration with on-the-fly Fourier transforms},
+  booktitle = {SIAM Conference on Computational Science and Engineering},
+  year = {2019},
+  month = {3},
+  abstract = {Least-squares seismic imaging is an inversion-based approach for accurately imaging the earth's subsurface. However, in the time-domain, the computational cost and memory requirements of this approach scale with the size and recording length of the seismic experiment, thus making this approach often prohibitively expensive in practice. To overcome these issues, we borrow ideas from compressive sensing and signal processing and introduce an algorithm for sparsity-promoting seismic imaging using on-the-fly Fourier transforms. By computing gradients and functions values for random subsets of source locations and frequencies, we considerably limit the number of wave equation solves, while on-the-fly Fourier transforms allow computing an arbitrary number of monochromatic frequency-domain wavefields with a time-domain modeling code and without having to solve large-scale Helmholtz equations. The memory requirements of this approach are independent of the number of time steps and solely depend on the number of frequencies, which determine the amount of crosstalk and subsampling artifacts in the image. We show the application of our approach to several large-scale open source data sets and compare the results to a conventional time-domain approach with optimal checkpointing.},
+  keywords = {least-squares, migration, imaging, on-the-fly, Fourier},
+  note = {(SIAM CSE)},
+  presentation = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/SIAMCSE/2019/witte2019SIAMCSEclsmft/witte2019SIAMCSEclsmft.pdf}
+}
+
+
 %-----2018-----%
 
 @CONFERENCE{alfaraj2018SEGswi,
@@ -18496,24 +18523,6 @@ land velocity and density model.},
 
 %-----2018-----%
 
-@UNPUBLISHED{liu2018ssi,
-  author = {Michelle Liu and Rajiv Kumar and Eldad Haber and Aleksandr Y. Aravkin},
-  title = {Simultaneous-shot inversion for PDE-constrained optimization problems with missing data},
-  year = {2018},
-  abstract = {Stochastic optimization is key to efficient inversion in
-PDE-constrained optimization. Using `simultaneous shots', or random
-superposition of source terms, works very well in simple acquisition
-geometries where all sources see all receivers, but this rarely occurs in practice. We
-develop an approach that interpolates data to an ideal acquisition geometry
-while solving the inverse problem using simultaneous shots. The approach is
-formulated as a joint inverse problem, combining ideas from low-rank
-interpolation with full-waveform inversion. Results using synthetic
-experiments illustrate the flexibility and efficiency of the approach.},
-  keywords = {Optimization, low-rank interpolation, full-waveform inversion, private},
-  note = {Submitted to Inverse Problem on April 29, 2018.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/liu2018ssi/liu2018ssi.pdf}
-}
-
 @UNPUBLISHED{luporini2018aap,
   author = {FABIO LUPORINI and MICHAEL LANGE and MATHIAS LOUBOUTIN and NAVJOT KUKREJA and JAN HUCKELHEIM and CHARLES YOUNT and PHILIPP A. WITTE and PAUL H. J. KELLY and GERARD J. GORMAN and FELIX J. HERRMANN},
   title = {Architecture and performance of Devito, a system for automated stencil computation},
@@ -18641,6 +18650,31 @@ syntax that strongly resembles the mathematics. The Devito compiler reads this c
 }
 
 %----- 2018 -----%
+
+@ARTICLE{liu2018ssi,
+  author = {Michelle Liu and Rajiv Kumar and Eldad Haber and Aleksandr Y. Aravkin},
+  title = {Simultaneous-shot inversion for PDE-constrained optimization problems with missing data},
+  journal = {Inverse Problems},
+  volume = {35},
+  number = {2},
+  pages = {025003},
+  year = {2018},
+  abstract = {Stochastic optimization is key to efficient inversion in
+PDE-constrained optimization. Using `simultaneous shots', or random
+superposition of source terms, works very well in simple acquisition
+geometries where all sources see all receivers, but this rarely occurs in practice. We
+develop an approach that interpolates data to an ideal acquisition geometry
+while solving the inverse problem using simultaneous shots. The approach is
+formulated as a joint inverse problem, combining ideas from low-rank
+interpolation with full-waveform inversion. Results using synthetic
+experiments illustrate the flexibility and efficiency of the approach.},
+  keywords = {Optimization, low-rank interpolation, full-waveform inversion},
+  doi = {10.1088/1361-6420/aaf317},
+  note = {(Inverse Problems)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/InverseProblems/2018/liu2018ssi/liu2018ssi.pdf}
+}
+
+
 @ARTICLE{fang2017sewri,
   author = {Zhilong Fang and Rongrong Wang and Felix J. Herrmann},
   title = {Source estimation for wavefield-reconstruction inversion},
@@ -22713,6 +22747,17 @@ scale problems with an acceptable computational cost.},
   url = {https://www.slim.eos.ubc.ca/Publications/Public/Lectures/SEG-DL/2019/Herrmann2019SEGDL/Herrmann2019SEGDL/},
   url2 = {https://www.slim.eos.ubc.ca/Publications/Public/Lectures/SEG-DL/2019/Herrmann2019SEGDL/Herrmann2019SEGDL.pdf},
   author = {Felix J. Herrmann}
+}
+
+@MISC{witte2019HOTCSEdsagip,
+  title = {Domain-specific abstractions for large-scale geophysical inverse problems},
+  booktitle = {HotCSE Seminar},  
+  year = {2019},
+  abstract = {During these times of sustained low oil prices, it is essential to look for new innovative ways to collect (time-lapse) seismic data at reduced costs and preferably also at reduced environmental impact. By now, there is an increasing body of corroborating evidence — whether these are simulated case studies or actual acquisitions on land and marine — that seismic acquisition based on the principles of compressive sensing delivers on this premise by removing the need to acquire replicated dense surveys. Up to ten-fold increases in acquisition efficiency have been reported by industry while there are indications that this breakthrough is only the beginning of a paradigm shift where full-azimuth time-lapse processing will become a reality. To familiarize the audience with this new technology, I will first describe the basics of compressive sensing, how it relates to missing-trace interpolation and simultaneous source acquisition, followed by how this technology is driving innovations in full-azimuth (time-lapse) acquisition, yielding high-fidelity data with a high degree of repeatability and at a fraction of the costs.},
+  keywords = {software, julia, large-scale, inversion, full-waveform-inversion, imaging},
+  note = {(HotCSE)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Lectures/HotCSE/2019/witte2019HOTCSEdsagip/witte2019HOTCSEdsagip.pdf},
+  author = {Philipp A. Witte and Mathias Louboutin and Felix J. Herrmann}
 }
 
 

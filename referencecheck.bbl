@@ -1983,7 +1983,8 @@ Tim~T.Y. Lin, Haneet Wason, and Felix~J. Herrmann.
 Michelle Liu, Rajiv Kumar, Eldad Haber, and Aleksandr~Y. Aravkin.
 \newblock Simultaneous-shot inversion for pde-constrained optimization problems
   with missing data.
-\newblock Submitted to Inverse Problem on April 29, 2018., 2018.
+\newblock {\em Inverse Problems}, 35(2):025003, 2018.
+\newblock (Inverse Problems).
 
 \bibitem{lopez2015EAGErma}
 Oscar Lopez, Rajiv Kumar, and Felix~J. Herrmann.
@@ -2480,6 +2481,15 @@ Art Petrenko, Tristan van Leeuwen, Diego Oriato, Simon Tilbury, and Felix~J.
   Herrmann.
 \newblock Accelerating an iterative {Helmholtz} solver with {FPGAs}.
 \newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{rizzuti2019SIAMGStwri}
+Gabrio Rizzuti, Mathias Louboutin, Rongrong Wang, Emmanouil Daskalakis, and
+  Felix~J. Herrmann.
+\newblock A dual formulation for time-domain wavefield reconstruction
+  inversion.
+\newblock In {\em SIAM Conference on Mathematical & Computational Issues in the
+  Geosciences}, 3 2019.
+\newblock (SIAM GS).
 
 \bibitem{rizzuti2019EAGElis}
 Gabrio Rizzuti, Ali Siahkoohi, and Felix~J. Herrmann.
@@ -3207,6 +3217,12 @@ Philipp~A. Witte, Mathias Louboutin, and Felix~J. Herrmann.
   02-03 2017.
 \newblock (SIAM Conference on Computational Science and Engineering, Atlanta).
 
+\bibitem{witte2019HOTCSEdsagip}
+Philipp~A. Witte, Mathias Louboutin, and Felix~J. Herrmann.
+\newblock Domain-specific abstractions for large-scale geophysical inverse
+  problems, 2019.
+\newblock (HotCSE).
+
 \bibitem{witte2018alf}
 Philipp~A. Witte, Mathias Louboutin, Navjot Kukreja, Fabio Luporini, Michael
   Lange, Gerard~J. Gorman, and Felix~J. Herrmann.
@@ -3227,6 +3243,15 @@ Philipp~A. Witte, Mathias Louboutin, Fabio Luporini, Gerard~J. Gorman, and
 \newblock Compressive least-squares migration with on-the-fly fourier
   transforms.
 \newblock Submitted to Geophysics on June 28, 2018., 2018.
+
+\bibitem{witte2019SIAMCSEclsmft}
+Philipp~A. Witte, Mathias Louboutin, Fabio Luporini, Gerard~J. Gorman, and
+  Felix~J. Herrmann.
+\newblock Compressive least squares migration with on-the-fly fourier
+  transforms.
+\newblock In {\em SIAM Conference on Computational Science and Engineering}, 3
+  2019.
+\newblock (SIAM CSE).
 
 \bibitem{witte2016SEGpve}
 Philipp~A. Witte, Christiaan~C. Stolk, and Felix~J. Herrmann.

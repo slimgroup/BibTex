@@ -3,6 +3,25 @@
 
 %----- 2019 -----%
 
+@ARTICLE{louboutin2018dae,
+  author = {Mathias Louboutin and Michael Lange and Fabio Luporini and Navjot Kukreja and Philipp A. Witte and Felix J. Herrmann and Paulius Velesko and Gerard J. Gorman},
+  title = {Devito (v3.1.0): an embedded domain-specific language for finite differences and geophysical exploration},
+  journal = {Geoscientific Model Development},
+  year = {2019},
+  abstract = {We introduce Devito, a new domain-specific language for implementing
+high-performance finite difference partial differential equation solvers.
+The motivating application is exploration seismology where methods such as
+Full-Waveform Inversion and Reverse-Time Migration are used to
+invert terabytes of seismic data to create images of the earth's
+subsurface. Even using modern supercomputers, it can take weeks to process a
+single seismic survey and create a useful subsurface image. The computational cost is dominated by the numerical solution of wave equations and their corresponding adjoints. Therefore, a great deal of effort is invested in aggressively optimizing the performance of these wave-equation propagators for different computer architectures. Additionally, the actual set of partial differential equations being solved and their numerical discretization is under constant innovation as increasingly realistic representations of the physics are developed, further ratcheting up the cost of practical solvers. By embedding a domain-specific language within Python and making heavy use of SymPy, a symbolic mathematics library, we make it possible to develop finite difference simulators quickly using a
+syntax that strongly resembles the mathematics. The Devito compiler reads this code and applies a wide range of analysis to generate highly optimized and parallel code. This approach can reduce the development time of a verified and optimized solver from months to days.},
+  keywords = {wave-equation, modeling, finite-differences, HPC},
+  doi = {10.5194/gmd-12-1165-2019},
+  note = {(Geoscientific Model Development)},
+  url = {https://www.slim.eos.ubc.ca/Publications/Public/Journals/GMD/2019/louboutin2018dae/louboutin2018dae.pdf}
+}
+
 @ARTICLE{silva2018alr,
   author = {Curt Da Silva and Yiming Zhang and Rajiv Kumar and Felix J. Herrmann},
   title = {Applications of low-rank compressed seismic data to full waveform inversion and extended image volumes},

@@ -1,7 +1,67 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
-%-----2019——%
+%-----2019-----%
+
+@UNPUBLISHED{rizzuti2019SEGadf,
+  author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann},
+  title = {A dual formulation for time-domain wavefield reconstruction inversion},
+  year = {2019},
+  abstract = {We illustrate a dual formulation for full-waveform inversion potentially apt to large 3-D problems. It is based on the optimization of the wave equation compliance, under the constraint of data misfit not exceeding a prescribed noise level. In the Lagrangian formulation, model and wavefield state variables are complemented with multipliers having the same dimension of data ("dual data" variables). Analogously to classical wavefield reconstruction inversion, the wavefield unknowns can be projected out in closed form, by solving a version of the augmented wave equation. This leads to a saddle-point problem whose variables are only model and dual data. As such, this formulation represents a model extension, and is potentially robust against local minima. The classical downsides of model extension methods and wavefield reconstruction inversion are here effectively mitigated: storage of the dual variables is affordable, the augmented wave equation is amenable to time-marching finite-difference schemes, and no continuation strategy for penalty parameters is needed, with the prospect of 3-D applications.},
+  keywords = {full-waveform inversion, time-domain, 3D, private},
+  note = {Submitted to SEG on April 1, 2019},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/rizzuti2019SEGadf/rizzuti2019SEGadf.html}
+}
+
+@UNPUBLISHED{siahkoohi2019SEGdlb,
+  author = {Ali Siahkoohi and Rajiv Kumar and Felix J. Herrmann},
+  title = {Deep-learning based ocean bottom seismic wavefield recovery},
+  year = {2019},
+  abstract = {Ocean bottom surveys usually suffer from having very sparse receivers. Assuming a desirable source sampling, achievable by existing methods such as (simultaneous-source) randomized marine acquisition, we propose a deep-learning based scheme to bring the receivers to the same spatial grid as sources using a convolutional neural network. By exploiting source-receiver reciprocity, we construct training pairs by artificially subsampling the fully-sampled single-receiver frequency slices using a random training mask and later, we deploy the trained neural network to fill-in the gaps in single-source frequency slices. Our experiments show that a random training mask is essential for successful wavefield recovery, even when receivers are on a periodic gird. No external training data is required and experiments on a 3D synthetic data set demonstrate that we are able to recover receivers for up to 90 % missing receivers, missing either randomly or periodically, with a better recovery for random case, at low to midrange frequencies.},
+  keywords = {obn, reconstruction, machine learning, reciprocity, private},
+  note = {Submitted to SEG on April 1, 2019},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/siahkoohi2019SEGdlb/siahkoohi2019SEGdlb.html}
+}
+
+@UNPUBLISHED{siahkoohi2019SEGsrm,
+  author = {Ali Siahkoohi and Dirk J. Verschuur and Felix J. Herrmann},
+  title = {Surface-related multiple elimination with deep learning},
+  year = {2019},
+  abstract = {We explore the potential of neural networks in approximating the action of the computationally expensive Estimation of Primaries by Sparse Inversion (EPSI) algorithm, applied to real data, via a supervised learning algorithm. We show that given suitable training data, consisting of a relatively cheap prediction of multiples and pairs of shot records with and without surface-related multiples, obtained via EPSI, a well-trained neural network is capable of providing an approximation to the action of the EPSI algorithm. We perform our numerical experiment on the field Nelson data set. Our results demonstrate that the quality of the multiple elimination via our neural network improves compared to the case where we only feed the network with shot records with surface-related multiples. We take these benefits by supplying the neural network with a relatively poor prediction of the multiples, e.g. obtained by a relatively cheap single step of Surface-Related Multiple Elimination.},
+  keywords = {SRME, EPSI, machine learning, private},
+  note = {Submitted to SEG on April 1, 2019},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/siahkoohi2019SEGsrm/siahkoohi2019SEGsrm.html}
+}
+
+@UNPUBLISHED{witte2019SEGedw,
+  author = {Philipp A. Witte and Mathias Louboutin and Henryk Modzelewski and Charles Jones and James Selvage and Felix J. Herrmann},
+  title = {Event-driven workflows for large-scale seismic imaging in the cloud},
+  year = {2019},
+  abstract = {Cloud computing has seen a large rise in popularity in recent years and is becoming a cost effective alternative to on-premise computing, with theoretically unlimited scalability. However, so far little progress has been made in adapting the cloud for high performance computing (HPC) tasks, such as seismic imaging and inversion. As the cloud does not provide the same type of fast and reliable connections as conventional HPC clusters, porting legacy codes developed for HPC environments to the cloud is ineffective and misses out on an opportunity to take advantage of new technologies presented by the cloud. We present a novel approach of bringing seismic imaging and inversion workflows to the cloud, which does not rely on a traditional HPC environment, but is based on serverless and event-driven computations. Computational resources are assigned dynamically in response to events, thus minimizing idle time and providing resilience to hardware failures. We test our workflow on two large-scale imaging examples and demonstrate that cost-effective HPC in the cloud is possible, but requires careful reconsiderations of how to bring software to the cloud.},
+  keywords = {cloud, large-scale, imaging, RTM, LS-RTM, workflow, private},
+  note = {Submitted to SEG on March 29, 2019},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/witte2019SEGedw/witte2019SEGedw.html}
+}
+
+@UNPUBLISHED{yang2019SEGlrr,
+  author = {Mengmeng Yang and Marie Graff and Rajiv Kumar and Felix J. Herrmann},
+  title = {Low-rank representation of subsurface extended image volumes with power iterations},
+  year = {2019},
+  abstract = {Full subsurface extended image volumes (EIVs) contain abundant information such as subsurface image gathers used in imaging, interpretation of rock properties or velocity analysis, but are expensive in term of computational cost and storage requirement due to their large size. Yet, due to their redundant information, monochromatic EIVs exhibit a low-rank structure that allows us to get a good approximation at a computational cost proportional to the rank k , while conventional techniques require at least the number of sources. Such low-rank factorized EIVs are computed thanks to the randomized singular values decomposition (SVD) algorithm. However, recent developments on low-rank approximations of EIVs raise two major questions. First, monochromatic EIVs rely on time-harmonic wave equation solvers, which do not scale well to realistic 3D models. Second, the rank of the monochromatic EIVs increases with the frequency, which yields increasing computational costs and storage. Here, we propose a construction approach based on a time-domain finite-difference wave-equation solver with time stepping, which is combined to power iteration schemes in the randomized SVD algorithm to accelerate the decay of the singular values. We compare the performances of simultaneous iterations, block-Krylov iterations and the original randomized SVD on the computation of the EIV for a small section of the Marmousi model. Then, we show further results on the full Marmousi model to validate our approach.},
+  keywords = {full extended image volumes, time domain, randomized SVD, power iterations, private},
+  note = {Submitted to SEG on April 1, 2019},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/yang2019SEGlrr/yang2019SEGlrr.html}
+}
+
+@UNPUBLISHED{zhang2019SEGhfw,
+  author = {Yijun Zhang and Shashin Sharan and Felix J. Herrmann},
+  title = {High-frequency wavefield recovery with weighted matrix factorizations},
+  year = {2019},
+  abstract = {Acquired seismic data is normally not the fully sampled data we would like to work with since traces are missing due to physical constraints or budget limitations. Rank minimization is an effective way to recovering the missing trace data. Unfortunately, this technique's performance may deteriorate at higher frequency because high-frequency data can not necessarily be captured accurately by low-rank matrix factorizations albeit remedies exist such as hierarchical semi-separable matrices. As a result, recovered data often suffers from low signal to noise ratio S/Rs at the higher frequencies. To deal with this situation, we propose a weighted recovery method that improves the performance at the high frequencies by recursively using information from matrix factorizations at neighboring lower frequencies. Essentially, we include prior information from previously reconstructed frequency slices during the wavefield reconstruction. We apply our method to data collected from the Gulf of Suez, which shows that our method performs well compared to the traditional method without weighting.},
+  keywords = {algorithm, data reconstruction, interpolation, processing, frequency-domain, private},
+  note = {Submitted to SEG on April 1, 2019},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/zhang2019SEGhfw/zhang2019SEGhfw.html}
+}
 
 @UNPUBLISHED{kukreja2019PASCccd,
   author = {Navjot Kukreja and Jan Huckelheim and Mathias Louboutin and Kaiyuan Hou and Paul Hovland and Gerard Gorman},
@@ -56,24 +116,6 @@ the proposed methodology and allow practical reflection-based extended imaging f
   keywords = {randomized linear algebra, extended image volumes, target-oriented imaging, private},
   note = {Submitted to Geophysical Prospecting on May 22, 2018.},
   url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/kumar2018toi/kumar2018toi.html}
-}
-
-
-@UNPUBLISHED{louboutin2018dae,
-  author = {Mathias Louboutin and Michael Lange and Fabio Luporini and Navjot Kukreja and Philipp A. Witte and Felix J. Herrmann and Paulius Velesko and Gerard J. Gorman},
-  title = {Devito: an embedded domain-specific language for finite differences and geophysical exploration},
-  year = {2018},
-  abstract = {We introduce Devito, a new domain-specific language for implementing
-high-performance finite difference partial differential equation solvers.
-The motivating application is exploration seismology where methods such as
-Full-Waveform Inversion and Reverse-Time Migration are used to
-invert terabytes of seismic data to create images of the earth's
-subsurface. Even using modern supercomputers, it can take weeks to process a
-single seismic survey and create a useful subsurface image. The computational cost is dominated by the numerical solution of wave equations and their corresponding adjoints. Therefore, a great deal of effort is invested in aggressively optimizing the performance of these wave-equation propagators for different computer architectures. Additionally, the actual set of partial differential equations being solved and their numerical discretization is under constant innovation as increasingly realistic representations of the physics are developed, further ratcheting up the cost of practical solvers. By embedding a domain-specific language within Python and making heavy use of SymPy, a symbolic mathematics library, we make it possible to develop finite difference simulators quickly using a
-syntax that strongly resembles the mathematics. The Devito compiler reads this code and applies a wide range of analysis to generate highly optimized and parallel code. This approach can reduce the development time of a verified and optimized solver from months to days.},
-  keywords = {wave-equation, modeling, finite-differences, HPC, private},
-  note = {Submitted to Geoscientific Model Development (GMD) on August 1, 2018.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/louboutin2018dae/louboutin2018dae.pdf}
 }
 
 @UNPUBLISHED{witte2018alf,

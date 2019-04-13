@@ -18501,6 +18501,16 @@ land velocity and density model.},
 
 %-----2019-----%
 
+@UNPUBLISHED{peters2019SEGans,
+  author = {Bas Peters and Felix J. Herrmann},
+  title = {A numerical solver for least-squares sub-problems in 3D wavefield reconstruction inversion and related problem formulations},
+  year = {2019},
+  abstract = {Recent years saw a surge of interest in seismic waveform inversion approaches based on quadratic-penalty or augmented-Lagrangian methods, including Wavefield Reconstruction Inversion. These methods typically need to solve a least-squares sub-problem that contains a discretization of the Helmholtz equation. Memory requirements for direct solvers are often prohibitively large in three dimensions, and this limited the examples in the literature to two dimensions. We present an algorithm that uses iterative Helmholtz solvers as a black-box to solve the least-squares problem corresponding to 3D grids. This algorithm enables Wavefield Reconstruction Inversion and related formulations, in three dimensions. Our new algorithm also includes a root-finding method to convert a penalty into a constraint on the data-misfit without additional computational cost, by reusing precomputed quantities. Numerical experiments show that the cost of parallel communication and other computations are small compared to the main cost of solving one Helmholtz problem per source and one per receiver.},
+  keywords = {Least-squares, numerical linear algebra, penalty method, quadratic constraints, full-waveform inversion, root finding, private},
+  note = {Submitted to SEG on April 1, 2019},
+  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/peters2019SEGans/peters2019SEGans.pdf}
+}
+
 @UNPUBLISHED{rizzuti2019SEGadf,
   author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann},
   title = {A dual formulation for time-domain wavefield reconstruction inversion},

@@ -3,6 +3,22 @@
 
 %-----2019-----%
 
+@CONFERENCE{peters2019SIAMGEOgmrip,
+  author = {Bas Peters and Felix J. Herrmann},
+  title = {Generalized Minkowski sets for the regularization of inverse problems},
+  booktitle = {SIAM Conference on Mathematical & Computational Issues in the
+Geosciences},
+  year = {2019},
+  month = {5},
+  abstract = {We present a new algorithm to compute projections onto the intersection of constraint sets, designed particularly for multiple sets because we exploit similarities between constraint sets. When we do not know projections onto the individual sets in closed form, as is the case for total-variation constraints, our algorithm does not need other optimization algorithms to solve sub-problems. This a significant advantage in terms of computational cost and number of tuning parameters and stopping conditions, compared to classical algorithms to compute projections onto the intersection, such as Dykstra's algorithm.
+  The proposed algorithm is suitable for problems with a large number of model parameters such as full-waveform inversion because it exploits coarse and fine-grained parallelism, and we also present a multilevel accelerated version. The corresponding software is open-source and implemented in Julia.
+  We present strategies to use projections onto multiple constraints to regularize full-waveform inversion for models with salt domes or sedimentary geology.},
+  keywords = {Projections, Intersections, Sets, Minkowski set, Inverse problems},
+  note = {(SIAM)},
+  url = {https://www.pathlms.com/siam/courses/11267/sections/14618/video_presentations/128671},
+  url2 = {https://meetings.siam.org/sess/dsp_talk.cfm?p=97656}
+}
+
 @CONFERENCE{rizzuti2019SIAMGStwri,
   author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann},
   title = {A dual formulation for time-domain wavefield reconstruction inversion},
@@ -29,6 +45,21 @@
 
 
 %-----2018-----%
+
+@CONFERENCE{peters2018CMSWMissrip,
+  author = {Bas Peters and Felix J. Herrmann},
+  title = {Intersections and sums of sets for the regularization of inverse problems},
+  booktitle = {Canadian Mathematical Society Winter Meeting},
+  year = {2018},
+  month = {12},
+  abstract = {We present new algorithms to compute projections onto the intersection of constraint sets. We focus on problems with multiple sets for which there is no simple and closed-form projection. Different from more classical methods such as Dykstra's algorithm, we do not need other algorithms to solve sub-problems.
+Our algorithms are based on the alternating direction method of multipliers and apply to models/images/video on small 2D and large 3D grids because we exploit computational similarity between constraint sets, coarse and fine-grained parallelism, and we also present a multilevel accelerated version.
+To obtain more flexible descriptions of prior knowledge, we introduce a formulation that allows constraint sets to be the sum of intersections of sets, which is essentially an extension of a Minkowski set. This formulation builds on the success of additive image descriptions that are usually based on penalty methods, such as cartoon-texture decomposition and robust principal component analysis.
+We show applications where we use multiple constraint sets to regularize partial-differential-equation based parameter estimation problems such as seismic waveform inversion, as well as various image and video processing and segmentation tasks.},
+  keywords = {Sets, Intersections, Projections, Inverse problems},
+  note = {(CMSWM)},
+  url = {https://cms.math.ca/Events/winter18/abs/ipi#bp}
+}
 
 @CONFERENCE{alfaraj2018SEGswi,
   author = {Ali M. Alfaraj and Rajiv Kumar and Felix J. Herrmann},

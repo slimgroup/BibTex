@@ -32,6 +32,16 @@ USAGE------------------------
    `Command('$TARGET',['$SOURCEFILE1','$SOURCEFILE2'],'python splitkey.py output input1 input2' )`
 5. If duplicate keys are found, edit them and repeat step 3
 
+## Formatting Notes ##
+
+A few must rules to properly support BibTeX attributes for website (Drupal) displays:
+
+- **month** must:
+	- be in 2-digits format, e.g. {05} instead of {5}
+	- use single dash as separator in ranges, e.g. {02-03}
+	- not use text like Sept or September, etc ...
+- **pages** must:
+	- use single dash as separator in ranges, e.g. {02-03}
 
 
 ## What is BibTeX?

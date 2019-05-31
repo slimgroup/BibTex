@@ -6,10 +6,10 @@
 @CONFERENCE{peters2019SIAMGEOgmrip,
   author = {Bas Peters and Felix J. Herrmann},
   title = {Generalized Minkowski sets for the regularization of inverse problems},
-  booktitle = {SIAM Conference on Mathematical & Computational Issues in the
+  booktitle = {SIAM Conference on Mathematical and Computational Issues in the
 Geosciences},
   year = {2019},
-  month = {5},
+  month = {05},
   abstract = {We present a new algorithm to compute projections onto the intersection of constraint sets, designed particularly for multiple sets because we exploit similarities between constraint sets. When we do not know projections onto the individual sets in closed form, as is the case for total-variation constraints, our algorithm does not need other optimization algorithms to solve sub-problems. This a significant advantage in terms of computational cost and number of tuning parameters and stopping conditions, compared to classical algorithms to compute projections onto the intersection, such as Dykstra's algorithm.
   The proposed algorithm is suitable for problems with a large number of model parameters such as full-waveform inversion because it exploits coarse and fine-grained parallelism, and we also present a multilevel accelerated version. The corresponding software is open-source and implemented in Julia.
   We present strategies to use projections onto multiple constraints to regularize full-waveform inversion for models with salt domes or sedimentary geology.},
@@ -22,9 +22,9 @@ Geosciences},
 @CONFERENCE{rizzuti2019SIAMGStwri,
   author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann},
   title = {A dual formulation for time-domain wavefield reconstruction inversion},
-  booktitle = {SIAM Conference on Mathematical & Computational Issues in the Geosciences},
+  booktitle = {SIAM Conference on Mathematical and Computational Issues in the Geosciences},
   year = {2019},
-  month = {3},
+  month = {03},
   abstract = {Wavefield reconstruction inversion (WRI) is based on the combination of data misfit and PDE-residual penalty terms, and it aims at the reconstruction of the optimal property model and field pair. A full-space optimization would require the storage of field variables for every frequency or time sample (and every source). Remedies via variable projection are well studied, but they entail the solution of a modified wave equation, which is costly both in frequency and time domain. Here, we explore an efficient alternative to WRI, where properties are complemented, instead, by elements of the dual data space. The starting point of our proposal is the denoising reformulation of WRI: the PDE compliance is optimized under the constraint of a given data fit. Since the field variable can be eliminated from the associated saddle-point problem, we obtain a new objective functional of only properties and Lagrange multipliers. Its evaluation, and gradient computation, involves the solution of the original wave equation, which is amenable to time-domain discretization. The optimization scheme of choice can now leverage on affordable storage of the iterates.},
   keywords = {WRI},
   note = {(SIAM GS)},
@@ -36,7 +36,7 @@ Geosciences},
   title = {Compressive least squares migration with on-the-fly Fourier transforms},
   booktitle = {SIAM Conference on Computational Science and Engineering},
   year = {2019},
-  month = {3},
+  month = {03},
   abstract = {Least-squares seismic imaging is an inversion-based approach for accurately imaging the earth's subsurface. However, in the time-domain, the computational cost and memory requirements of this approach scale with the size and recording length of the seismic experiment, thus making this approach often prohibitively expensive in practice. To overcome these issues, we borrow ideas from compressive sensing and signal processing and introduce an algorithm for sparsity-promoting seismic imaging using on-the-fly Fourier transforms. By computing gradients and functions values for random subsets of source locations and frequencies, we considerably limit the number of wave equation solves, while on-the-fly Fourier transforms allow computing an arbitrary number of monochromatic frequency-domain wavefields with a time-domain modeling code and without having to solve large-scale Helmholtz equations. The memory requirements of this approach are independent of the number of time steps and solely depend on the number of frequencies, which determine the amount of crosstalk and subsampling artifacts in the image. We show the application of our approach to several large-scale open source data sets and compare the results to a conventional time-domain approach with optimal checkpointing.},
   keywords = {least-squares, migration, imaging, on-the-fly, Fourier},
   note = {(SIAM CSE)},
@@ -606,7 +606,7 @@ land velocity and density model.},
   title = {An efficient penalty method for {PDE}-constrained optimization problem with source estimation and stochastic optimization},
   booktitle = {Applied Inverse Problems Annual Conference Proceedings},
   year = {2017},
-  month = {05--06},
+  month = {05-06},
   pages = {40},
   abstract = {Many inverse problems in applied science and engineering
                   can be written as PDE-constrained optimization
@@ -650,7 +650,7 @@ land velocity and density model.},
   booktitle = {WAVES 2017 --- 13th International Conference on Mathematical and Numerical Aspects of Wave Propagation},
   year = {2017},
   month = {05},
-  pages = {127--128},
+  pages = {127-128},
   abstract = {In this work, we present a new posterior distribution to
                   quantify uncertainties in solutions of wave-equation
                   based inverse problems. By introducing an auxiliary
@@ -774,7 +774,7 @@ land velocity and density model.},
   booktitle = {Python in Science Conference Proceedings},
   year = {2017},
   month = {07},
-  pages = {89--96},
+  pages = {89-96},
   abstract = {Domain-specific high-productivity environments are
                   playing an increasingly important role in scientific
                   computing due to the levels of abstraction and

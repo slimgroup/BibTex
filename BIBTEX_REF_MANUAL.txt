@@ -42,7 +42,7 @@ Example: Heres a bibtex entry that shows different fields and how to write a bib
 23        for linear inverse problems to the case where the forward model is
 24        nonlinear. },
 25  date-added = {2011-07-15},
-26 presentation={http://slim.eos.ubc.ca/Publications/Public/Presentations/2011/aravkin2011AMP.pdf},
+26 presentation={http://slim.gatech.edu/Publications/Public/Presentations/2011/aravkin2011AMP.pdf},
 27  url = {http://slim/Publications/Public/Presentations/2011/aravkin2011AMP.pdf}
 28 url2 = {http://slimweb.eos.ubc.ca}
 29 url3 = {http://slimweb.eos.ubc.ca}

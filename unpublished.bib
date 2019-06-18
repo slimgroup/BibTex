@@ -14,7 +14,7 @@ correct for the effects of, for instance, the free surface or numerical dispersi
 to using only a small fraction of high-fidelity data, we gain processing the current survey while using information from nearby surveys. We demonstrate this principle by removing surface-related multiples and ghosts from shot records and the effects of numerical dispersion from migrated images and wave simulations},
   keywords = {deep learning, transfer learning, modeling, imaging, SRME, private},
   note = {Submitted to GEOPHYSICS on February 5, 2019},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/siahkoohi2019itl/siahkoohi2019itl.html}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/siahkoohi2019itl/siahkoohi2019itl.html}
 }
 
 @UNPUBLISHED{peters2019SEGans,
@@ -24,7 +24,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   abstract = {Recent years saw a surge of interest in seismic waveform inversion approaches based on quadratic-penalty or augmented-Lagrangian methods, including Wavefield Reconstruction Inversion. These methods typically need to solve a least-squares sub-problem that contains a discretization of the Helmholtz equation. Memory requirements for direct solvers are often prohibitively large in three dimensions, and this limited the examples in the literature to two dimensions. We present an algorithm that uses iterative Helmholtz solvers as a black-box to solve the least-squares problem corresponding to 3D grids. This algorithm enables Wavefield Reconstruction Inversion and related formulations, in three dimensions. Our new algorithm also includes a root-finding method to convert a penalty into a constraint on the data-misfit without additional computational cost, by reusing precomputed quantities. Numerical experiments show that the cost of parallel communication and other computations are small compared to the main cost of solving one Helmholtz problem per source and one per receiver.},
   keywords = {Least-squares, numerical linear algebra, penalty method, quadratic constraints, full-waveform inversion, root finding, private},
   note = {Submitted to SEG on April 1, 2019},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/peters2019SEGans/peters2019SEGans.pdf}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/peters2019SEGans/peters2019SEGans.pdf}
 }
 
 @UNPUBLISHED{rizzuti2019SEGadf,
@@ -34,7 +34,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   abstract = {We illustrate a dual formulation for full-waveform inversion potentially apt to large 3-D problems. It is based on the optimization of the wave equation compliance, under the constraint of data misfit not exceeding a prescribed noise level. In the Lagrangian formulation, model and wavefield state variables are complemented with multipliers having the same dimension of data ("dual data" variables). Analogously to classical wavefield reconstruction inversion, the wavefield unknowns can be projected out in closed form, by solving a version of the augmented wave equation. This leads to a saddle-point problem whose variables are only model and dual data. As such, this formulation represents a model extension, and is potentially robust against local minima. The classical downsides of model extension methods and wavefield reconstruction inversion are here effectively mitigated: storage of the dual variables is affordable, the augmented wave equation is amenable to time-marching finite-difference schemes, and no continuation strategy for penalty parameters is needed, with the prospect of 3-D applications.},
   keywords = {full-waveform inversion, time-domain, 3D, private},
   note = {Submitted to SEG on April 1, 2019},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/rizzuti2019SEGadf/rizzuti2019SEGadf.html}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/rizzuti2019SEGadf/rizzuti2019SEGadf.html}
 }
 
 @UNPUBLISHED{siahkoohi2019SEGdlb,
@@ -44,7 +44,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   abstract = {Ocean bottom surveys usually suffer from having very sparse receivers. Assuming a desirable source sampling, achievable by existing methods such as (simultaneous-source) randomized marine acquisition, we propose a deep-learning based scheme to bring the receivers to the same spatial grid as sources using a convolutional neural network. By exploiting source-receiver reciprocity, we construct training pairs by artificially subsampling the fully-sampled single-receiver frequency slices using a random training mask and later, we deploy the trained neural network to fill-in the gaps in single-source frequency slices. Our experiments show that a random training mask is essential for successful wavefield recovery, even when receivers are on a periodic gird. No external training data is required and experiments on a 3D synthetic data set demonstrate that we are able to recover receivers for up to 90 % missing receivers, missing either randomly or periodically, with a better recovery for random case, at low to midrange frequencies.},
   keywords = {obn, reconstruction, machine learning, reciprocity, private},
   note = {Submitted to SEG on April 1, 2019},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/siahkoohi2019SEGdlb/siahkoohi2019SEGdlb.html}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/siahkoohi2019SEGdlb/siahkoohi2019SEGdlb.html}
 }
 
 @UNPUBLISHED{siahkoohi2019SEGsrm,
@@ -54,7 +54,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   abstract = {We explore the potential of neural networks in approximating the action of the computationally expensive Estimation of Primaries by Sparse Inversion (EPSI) algorithm, applied to real data, via a supervised learning algorithm. We show that given suitable training data, consisting of a relatively cheap prediction of multiples and pairs of shot records with and without surface-related multiples, obtained via EPSI, a well-trained neural network is capable of providing an approximation to the action of the EPSI algorithm. We perform our numerical experiment on the field Nelson data set. Our results demonstrate that the quality of the multiple elimination via our neural network improves compared to the case where we only feed the network with shot records with surface-related multiples. We take these benefits by supplying the neural network with a relatively poor prediction of the multiples, e.g. obtained by a relatively cheap single step of Surface-Related Multiple Elimination.},
   keywords = {SRME, EPSI, machine learning, private},
   note = {Submitted to SEG on April 1, 2019},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/siahkoohi2019SEGsrm/siahkoohi2019SEGsrm.html}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/siahkoohi2019SEGsrm/siahkoohi2019SEGsrm.html}
 }
 
 @UNPUBLISHED{witte2019SEGedw,
@@ -64,7 +64,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   abstract = {Cloud computing has seen a large rise in popularity in recent years and is becoming a cost effective alternative to on-premise computing, with theoretically unlimited scalability. However, so far little progress has been made in adapting the cloud for high performance computing (HPC) tasks, such as seismic imaging and inversion. As the cloud does not provide the same type of fast and reliable connections as conventional HPC clusters, porting legacy codes developed for HPC environments to the cloud is ineffective and misses out on an opportunity to take advantage of new technologies presented by the cloud. We present a novel approach of bringing seismic imaging and inversion workflows to the cloud, which does not rely on a traditional HPC environment, but is based on serverless and event-driven computations. Computational resources are assigned dynamically in response to events, thus minimizing idle time and providing resilience to hardware failures. We test our workflow on two large-scale imaging examples and demonstrate that cost-effective HPC in the cloud is possible, but requires careful reconsiderations of how to bring software to the cloud.},
   keywords = {cloud, large-scale, imaging, RTM, LS-RTM, workflow, private},
   note = {Submitted to SEG on March 29, 2019},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/witte2019SEGedw/witte2019SEGedw.html}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/witte2019SEGedw/witte2019SEGedw.html}
 }
 
 @UNPUBLISHED{yang2019SEGlrr,
@@ -74,7 +74,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   abstract = {Full subsurface extended image volumes (EIVs) contain abundant information such as subsurface image gathers used in imaging, interpretation of rock properties or velocity analysis, but are expensive in term of computational cost and storage requirement due to their large size. Yet, due to their redundant information, monochromatic EIVs exhibit a low-rank structure that allows us to get a good approximation at a computational cost proportional to the rank k , while conventional techniques require at least the number of sources. Such low-rank factorized EIVs are computed thanks to the randomized singular values decomposition (SVD) algorithm. However, recent developments on low-rank approximations of EIVs raise two major questions. First, monochromatic EIVs rely on time-harmonic wave equation solvers, which do not scale well to realistic 3D models. Second, the rank of the monochromatic EIVs increases with the frequency, which yields increasing computational costs and storage. Here, we propose a construction approach based on a time-domain finite-difference wave-equation solver with time stepping, which is combined to power iteration schemes in the randomized SVD algorithm to accelerate the decay of the singular values. We compare the performances of simultaneous iterations, block-Krylov iterations and the original randomized SVD on the computation of the EIV for a small section of the Marmousi model. Then, we show further results on the full Marmousi model to validate our approach.},
   keywords = {full extended image volumes, time domain, randomized SVD, power iterations, private},
   note = {Submitted to SEG on April 1, 2019},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/yang2019SEGlrr/yang2019SEGlrr.html}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/yang2019SEGlrr/yang2019SEGlrr.html}
 }
 
 @UNPUBLISHED{zhang2019SEGhfw,
@@ -84,7 +84,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   abstract = {Acquired seismic data is normally not the fully sampled data we would like to work with since traces are missing due to physical constraints or budget limitations. Rank minimization is an effective way to recovering the missing trace data. Unfortunately, this technique's performance may deteriorate at higher frequency because high-frequency data can not necessarily be captured accurately by low-rank matrix factorizations albeit remedies exist such as hierarchical semi-separable matrices. As a result, recovered data often suffers from low signal to noise ratio S/Rs at the higher frequencies. To deal with this situation, we propose a weighted recovery method that improves the performance at the high frequencies by recursively using information from matrix factorizations at neighboring lower frequencies. Essentially, we include prior information from previously reconstructed frequency slices during the wavefield reconstruction. We apply our method to data collected from the Gulf of Suez, which shows that our method performs well compared to the traditional method without weighting.},
   keywords = {algorithm, data reconstruction, interpolation, processing, frequency-domain, private},
   note = {Submitted to SEG on April 1, 2019},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/zhang2019SEGhfw/zhang2019SEGhfw.html}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/zhang2019SEGhfw/zhang2019SEGhfw.html}
 }
 
 @UNPUBLISHED{kukreja2019PASCccd,
@@ -94,7 +94,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   abstract = {Seismic inversion and imaging are adjoint-based optimization problems that processes up to terabytes of data, regularly exceeding the memory capacity of available computers. Data compression is an effective strategy to reduce this memory requirement by a certain factor, particularly if some loss in accuracy is acceptable. A popular alternative is checkpointing, where data is stored at selected points in time, and values at other times are recomputed as needed from the last stored state. This allows arbitrarily large adjoint computations with limited memory, at the cost of additional recomputations. In this paper we combine compression and checkpointing for the first time to compute a realistic seismic inversion. The combination of checkpointing and compression allows larger adjoint computations compared to using only compression, and reduces the recomputation overhead significantly compared to using only checkpointing.},
   keywords = {Adjoint-state, FD, checkpointing, compression, HPC, inverse problems, private},
   note = {Submitted to PASC19 on January 16, 2019},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/kukreja2019PASCccd/kukreja2019PASCccd.pdf}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/kukreja2019PASCccd/kukreja2019PASCccd.pdf}
 }
 
 @UNPUBLISHED{rizzuti2019EAGElis,
@@ -104,7 +104,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   abstract = {We propose a ‘learned’ iterative solver for the Helmholtz equation, by combining traditional Krylov-based solvers with machine learning. The method is, in principle, able to circumvent the shortcomings of classical iterative solvers, and has clear advantages over purely data-driven ap- proaches. We demonstrate the effectiveness of this approach under a 1.5-D assumption, when ade- quate a priori information about the velocity distribution is known.},
   keywords = {Helmholtz, Iterative, Machine learning, private},
   note = {Submitted to EAGE on January 15, 2019},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2019/rizzuti2019EAGElis/rizzuti2019EAGElis.pdf}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/rizzuti2019EAGElis/rizzuti2019EAGElis.pdf}
 }
 
 %-----2018-----%
@@ -117,7 +117,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
 performed by the Devito compiler through a series of intermediate representations. Several performance optimizations are introduced, including advanced common sub-expressions elimination, tiling and parallelization. Some of these are obtained through well-established stencil optimizers, integrated in the back-end of the Devito compiler. The architecture of the Devito compiler, as well as the performance optimizations that are applied when generating code, are presented. The effectiveness of such performance optimizations is demonstrated using operators drawn from seismic imaging applications.},
   keywords = {Stencil, finite difference method, symbolic processing, structured grid, compiler, performance optimization, private},
   note = {Submitted to SIAM Journal on Scientific Computing on July 9, 2018.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/luporini2018aap/luporini2018aap.pdf}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2018/luporini2018aap/luporini2018aap.pdf}
 }
 
 @UNPUBLISHED{witte2018alf,
@@ -127,7 +127,7 @@ performed by the Devito compiler through a series of intermediate representation
   abstract = {Writing software packages for seismic inversion is a very challenging task, since problems such as full-waveform inversion or least-squares imaging are both algorithmically and computationally demanding due to the large number of unknown parameters and the fact that we are propagating waves over many wavelengths. Software frameworks therefore need to combine both versatility and performance to provide geophysicists with the means and flexibility to implement complex algorithms that scale to exceedingly large 3D problems. Following these principles, we introduce the Julia Devito Inversion framework, an open-source software package in Julia for large-scale seismic modeling and inversion based on Devito, a domain-specific language compiler for automatic code generation. The framework consists of matrix-free linear operators for implementing seismic inversion algorithms that closely resembles the mathematical notation, a flexible resilient parallelization and an interface to Devito for generating optimized stencil code to solve the underlying wave equations. In comparison to many manually optimized industry codes written in low-level languages, our software is built on the idea of independent layers of abstractions and user interfaces with symbolic operators, making it possible to manage both the complexity of algorithms and performance optimizations, while preserving modularity, which allows for a level of expressiveness needed to formulate a broad range of wave-equation-based inversion problems. Through a series of numerical examples, we demonstrate that this allows users to implement algorithms for waveform inversion and imaging as simple Julia scripts that scale to large-scale 3D problems; thus providing a truly performant research and production framework.},
   keywords = {FWI, LSRTM, modeling, inversion, software, private},
   note = {Submitted to Geophysics on March 1, 2018.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/witte2018alf/witte2018alf.html}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2018/witte2018alf/witte2018alf.html}
 }
 
 @UNPUBLISHED{witte2018cls,
@@ -137,5 +137,5 @@ performed by the Devito compiler through a series of intermediate representation
   abstract = {Least-squares reverse-time migration is a powerful approach for true amplitude seismic imaging of complex geological structures, but the successful application of this method is currently hindered by its enormous computational cost, as well as high memory requirements for computing the gradient of the objective function. We tackle these problems by introducing an algorithm for low-cost sparsity-promoting least-squares migration using on-the-fly Fourier transforms. We formulate the least-squares migration objective function in the frequency domain and compute gradients for randomized subsets of shot records and frequencies, thus significantly reducing data movement and the number of overall wave equations solves. By using on-the-fly Fourier transforms, we can compute an arbitrary number of monochromatic frequency-domain wavefields with a time-domain modeling code, instead of having to solve individual Helmholtz equations for each frequency, which quickly becomes computationally infeasible when moving to high frequencies. Our numerical examples demonstrate that compressive imaging with on-the-fly Fourier transforms provides a fast and memory-efficient alternative to time-domain imaging with optimal checkpointing, whose memory requirements for a fixed background model and source wavelet is independent of the number of time steps. Instead, memory and additional computational cost grow with the number of frequencies and determine the amount of subsampling artifacts and crosstalk. In contrast to optimal checkpointing, this offers the possibility to trade both memory and computational cost for image quality or a larger number of iterations and is advantageous in new computing environments such as the cloud, where compute is often cheaper than memory and data movement.},
   keywords = {least squares migration, Fourier, sparsity-promotion, private},
   note = {Submitted to Geophysics on June 28, 2018.},
-  url = {https://www.slim.eos.ubc.ca/Publications/Private/Submitted/2018/witte2018cls/witte2018cls.html}
+  url = {https://slim.gatech.edu/Publications/Private/Submitted/2018/witte2018cls/witte2018cls.html}
 }

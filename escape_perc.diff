@@ -23,7 +23,7 @@ Index: conference.bib
 +                  subsampling ratios (in some cases, > 75\%) using this
                    approach.},
    keywords = {EAGE, structured tensor, 3D data interpolation, riemannian optimization},
-   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2013/dasilva2013EAGEhtucktensor/dasilva2013EAGEhtucktensor.pdf},
+   url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2013/dasilva2013EAGEhtucktensor/dasilva2013EAGEhtucktensor.pdf},
 @@ -980,7 +980,7 @@
                    demonstrate that in our application, a
                    preconditioner bound to one processor core and
@@ -43,7 +43,7 @@ Index: conference.bib
 +	recovery using 20\% of the effort required by a direct robust approach.},
    keywords = {ICASSP},
    doi = {10.1109/ICASSP.2012.6289103},
-   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/AravkinFriedlanderLeeuwen/AravkinFriedlanderLeeuwen.pdf }
+   url = {https://slim.gatech.edu/Publications/Public/Conferences/ICASSP/2012/AravkinFriedlanderLeeuwen/AravkinFriedlanderLeeuwen.pdf }
 Index: internal.bib
 ===================================================================
 --- internal.bib	(revision 376)
@@ -56,7 +56,7 @@ Index: internal.bib
 +                  subsampling ratios (in some cases, > 75\%) using this
                    approach.},
    keywords = {EAGE, structured tensor, 3D data interpolation, riemannian optimization},
-   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2013/dasilva2013EAGEhtucktensor/dasilva2013EAGEhtucktensor.pdf},
+   url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2013/dasilva2013EAGEhtucktensor/dasilva2013EAGEhtucktensor.pdf},
 @@ -980,7 +980,7 @@
                    demonstrate that in our application, a
                    preconditioner bound to one processor core and
@@ -76,7 +76,7 @@ Index: internal.bib
 +	recovery using 20\% of the effort required by a direct robust approach.},
    keywords = {ICASSP},
    doi = {10.1109/ICASSP.2012.6289103},
-   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/AravkinFriedlanderLeeuwen/AravkinFriedlanderLeeuwen.pdf }
+   url = {https://slim.gatech.edu/Publications/Public/Conferences/ICASSP/2012/AravkinFriedlanderLeeuwen/AravkinFriedlanderLeeuwen.pdf }
 @@ -7511,7 +7511,7 @@
                    sources and/or receivers by exploiting the
                    multidimensional dependencies in the data. We are
@@ -178,7 +178,7 @@ Index: slimbib.bib
 +                  subsampling ratios (in some cases, > 75\%) using this
                    approach.},
    keywords = {EAGE, structured tensor, 3D data interpolation, riemannian optimization},
-   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2013/dasilva2013EAGEhtucktensor/dasilva2013EAGEhtucktensor.pdf},
+   url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2013/dasilva2013EAGEhtucktensor/dasilva2013EAGEhtucktensor.pdf},
 @@ -980,7 +980,7 @@
                    demonstrate that in our application, a
                    preconditioner bound to one processor core and
@@ -198,7 +198,7 @@ Index: slimbib.bib
 +	recovery using 20\% of the effort required by a direct robust approach.},
    keywords = {ICASSP},
    doi = {10.1109/ICASSP.2012.6289103},
-   url = {https://www.slim.eos.ubc.ca/Publications/Public/Conferences/ICASSP/2012/AravkinFriedlanderLeeuwen/AravkinFriedlanderLeeuwen.pdf }
+   url = {https://slim.gatech.edu/Publications/Public/Conferences/ICASSP/2012/AravkinFriedlanderLeeuwen/AravkinFriedlanderLeeuwen.pdf }
 @@ -7511,7 +7511,7 @@
                    sources and/or receivers by exploiting the
                    multidimensional dependencies in the data. We are

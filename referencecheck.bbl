@@ -1,0 +1,3508 @@
+\begin{thebibliography}{100}
+
+\bibitem{alfaraj2017SEGrsw}
+Ali~M. Alfaraj, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Reconstruction of {S-waves} from low-cost randomized and simultaneous
+  acquisition by joint sparse inversion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2533--2538,
+  09 2017.
+\newblock (SEG, Houston).
+
+\bibitem{alfaraj2017EAGEswr}
+Ali~M. Alfaraj, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Shear wave reconstruction from low cost randomized acquisition.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2017.
+\newblock (EAGE, Paris).
+
+\bibitem{alfaraj2018EAGEasa}
+Ali~M. Alfaraj, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Automatic statics and residual statics correction with low-rank
+  approximation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2018.
+\newblock (EAGE, Copenhagen).
+
+\bibitem{alfaraj2018SEGswi}
+Ali~M. Alfaraj, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Seismic waveform inversion using decomposed one-way wavefields.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1379--1383,
+  10 2018.
+\newblock (SEG, Anaheim).
+
+\bibitem{alhashim09THsdp}
+Fadhel~Abbas Alhashim.
+\newblock Seismic data processing with the parallel windowed curvelet
+  transform.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 08
+  2009.
+\newblock (MSc).
+
+\bibitem{almatar10THesd}
+Mufeed~H. AlMatar.
+\newblock Estimation of surface-free data by curvelet-domain matched filtering
+  and sparse inversion.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 12
+  2010.
+\newblock (MSc).
+
+\bibitem{almatar10SEGesfd}
+Mufeed~H. AlMatar, Tim~T.Y. Lin, and Felix~J. Herrmann.
+\newblock Estimation of surface-free data by curvelet-domain matched filtering
+  and sparse inversion.
+\newblock Technical Report TR-EOAS-2010-1, Department of Earth and Ocean
+  Sciences, University of British Columbia, Vancouver, 2010.
+
+\bibitem{aravkin2011EAGEnspf}
+Aleksandr~Y. Aravkin, James~V. Burke, Felix~J. Herrmann, and Tristan van
+  Leeuwen.
+\newblock A nonlinear sparsity promoting formulation and algorithm for full
+  waveform inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 05 2011.
+
+\bibitem{Aravkin11TRridr}
+Aleksandr~Y. Aravkin, Michael~P. Friedlander, Felix~J. Herrmann, and Tristan
+  van Leeuwen.
+\newblock Robust inversion, dimensionality reduction, and randomized sampling.
+\newblock {\em Mathematical Programming}, 134(1):101--125, 08 2012.
+
+\bibitem{aravkin2012ICASSProbustb}
+Aleksandr~Y. Aravkin, Michael~P. Friedlander, and Tristan van Leeuwen.
+\newblock Robust inversion via semistochastic dimensionality reduction.
+\newblock In {\em ICASSP}, pages 5245--5248. ICASSP, 2012.
+
+\bibitem{aravkin2011SIAMfwi}
+Aleksandr~Y. Aravkin, Felix~J. Herrmann, Tristan van Leeuwen, James~V. Burke,
+  and Xiang Li.
+\newblock Full waveform inversion with compressive updates.
+\newblock In {\em SIAM}. SIAM CS\&E 2011, 2011.
+
+\bibitem{herrmann2011SEGffw}
+Aleksandr~Y. Aravkin, Felix~J. Herrmann, Tristan van Leeuwen, and Xiang Li.
+\newblock Fast full-waveform inversion with compressive sensing.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, 2011.
+
+\bibitem{kumar2013ICMLlr}
+Aleksandr~Y. Aravkin, Rajiv Kumar, Hassan Mansour, Ben Recht, and Felix~J.
+  Herrmann.
+\newblock An {SVD}-free {Pareto} curve approach to rank minimization.
+\newblock Technical Report TR-EOAS-2013-2, UBC, 02 2013.
+
+\bibitem{aravkin2014SISCfmd}
+Aleksandr~Y. Aravkin, Rajiv Kumar, Hassan Mansour, Ben Recht, and Felix~J.
+  Herrmann.
+\newblock Fast methods for denoising matrix completion formulations, with
+  applications to robust seismic data interpolation.
+\newblock {\em SIAM Journal on Scientific Computing}, 36(5):S237--S266, 10
+  2014.
+\newblock (SISC).
+
+\bibitem{aravkin2012ICASSPfastseis}
+Aleksandr~Y. Aravkin, Xiang Li, and Felix~J. Herrmann.
+\newblock Fast seismic imaging for marine data.
+\newblock In {\em ICASSP}. ICASSP, 2012.
+
+\bibitem{aravkin2012IPNuisance}
+Aleksandr~Y. Aravkin and Tristan {van Leeuwen}.
+\newblock Estimating nuisance parameters in inverse problems.
+\newblock {\em Inverse Problems}, 28(11), 10 2012.
+
+\bibitem{aravkin2012SEGST}
+Aleksandr~Y. Aravkin, Tristan van Leeuwen, Kenneth Bube, and Felix~J. Herrmann.
+\newblock On non-uniqueness of the {Student's} t-formulation for linear inverse
+  problems.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~31, pages
+  1--5. SEG, 11 2012.
+
+\bibitem{aravkin2011EAGEspfwi}
+Aleksandr~Y. Aravkin, Tristan van Leeuwen, James~V. Burke, and Felix~J.
+  Herrmann.
+\newblock Sparsity promoting formulations and algorithms for {FWI}.
+\newblock In {\em EAGE Annual Conference Proceedings}, 2011.
+
+\bibitem{aravkin2011ICIAMspf}
+Aleksandr~Y. Aravkin, Tristan van Leeuwen, James~V. Burke, and Felix~J.
+  Herrmann.
+\newblock Sparsity promoting formulations and algorithms for {FWI}.
+\newblock In {\em ICIAM}. ICIAM 2011, 07 2011.
+\newblock Presented at AMP Medical and Seismic Imaging, 2011, Vancouver BC.
+
+\bibitem{aravkin2012EAGErobust}
+Aleksandr~Y. Aravkin, Tristan van Leeuwen, Henri Calandra, and Felix~J.
+  Herrmann.
+\newblock Source estimation for frequency-domain {FWI} with robust penalties.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2012.
+
+\bibitem{aravkin2011SEGrobust}
+Aleksandr~Y. Aravkin, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Robust full-waveform inversion using the {Student's} t-distribution.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~30, pages
+  2669--2673. SEG, 09 2011.
+
+\bibitem{aravkin2011ICIAMrfwiu}
+Aleksandr~Y. Aravkin, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Robust {FWI} using {Student's} t-distribution.
+\newblock In {\em ICIAM}. ICIAM 2011, 07 2011.
+
+\bibitem{aravkin2013ICASSPssi}
+Aleksandr~Y. Aravkin, Tristan van Leeuwen, and Ning Tu.
+\newblock Sparse seismic imaging using variable projection.
+\newblock In {\em ICASSP}, 05 2013.
+
+\bibitem{bernabe2004JGRpas}
+Y.~Bernab{\'e}, U.~Mok, B.~Evans, and Felix~J. Herrmann.
+\newblock Permeability and storativity of binary mixtures of high-and
+  low-porosity materials.
+\newblock {\em Journal of Geophysical Research: Solid Earth}, 109:B12207, 12
+  2004.
+
+\bibitem{beyreuther2005SEGcot}
+Moritz Beyreuther, Jamin Cristall, and Felix~J. Herrmann.
+\newblock Computation of time-lapse differences with {3-D} directional frames.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~24, pages
+  2488--2491. SEG, 2005.
+
+\bibitem{beyreuther2004EAGEcdo}
+Moritz Beyreuther, Felix~J. Herrmann, and Jamin Cristall.
+\newblock Curvelet denoising of {4-D} seismic.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2004.
+
+\bibitem{bougher2016THmla}
+Ben~B. Bougher.
+\newblock Machine learning applications to geophysical data analysis.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 08
+  2016.
+\newblock (MSc).
+
+\bibitem{bougher2015CSEGpsu}
+Ben~B. Bougher and Felix~J. Herrmann.
+\newblock Prediction of stratigraphic units from spectral co-occurance
+  coefficients of well logs.
+\newblock In {\em CSEG Annual Conference Proceedings}, 05 2015.
+\newblock (CSEG, Calgary).
+
+\bibitem{bougher2016SEGava}
+Ben~B. Bougher and Felix~J. Herrmann.
+\newblock Ava classification as an unsupervised machine-learning problem.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 553--556, 10
+  2016.
+\newblock (SEG, Dallas).
+
+\bibitem{bougher2015CSEGust}
+Ben~B. Bougher and Felix~J. Herrmann.
+\newblock Using the scattering transform to predict stratigraphic units from
+  well logs.
+\newblock {\em CSEG Recorder}, 41(1):22--25, 01 2016.
+\newblock (CSEG Recorder).
+
+\bibitem{herrmann2012SEGfwi}
+Andrew~J. Calvert, Ian Hanlon, Mostafa Javanmehri, Rajiv Kumar, Tristan van
+  Leeuwen, Xiang Li, Brendan~R. Smithyman, Eric~Takam Takougang, Haneet Wason,
+  and Felix~J. Herrmann.
+\newblock {FWI} from the {West} {Coasts}: lessons learned from "gulf of mexico
+  imaging challenges: What can full waveform inversion achieve?".
+\newblock In {\em SEG Workshop on FWI; Las Vegas}. SEG, 2012.
+
+\bibitem{chai2016SEGlbm}
+Xintao Chai, Mengmeng Yang, Philipp~A. Witte, Rongrong Wang, Zhilong Fang, and
+  Felix~J. Herrmann.
+\newblock A linearized {Bregman} method for compressive waveform inversion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1449--1454,
+  10 2016.
+\newblock (SEG, Dallas).
+
+\bibitem{cristall2004CSEGcpa}
+Jamin Cristall, Moritz Beyreuther, and Felix~J. Herrmann.
+\newblock Curvelet processing and imaging: {4-D} adaptive subtraction.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2004.
+
+\bibitem{dasilva2012EAGEprobingprecond}
+Curt {Da Silva} and Felix~J. Herrmann.
+\newblock Matrix probing and simultaneous sources: a new approach for
+  preconditioning the {Hessian}.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2012.
+
+\bibitem{daskalakis2017SEGdds}
+Emmanouil Daskalakis, Rachel Kuske, and Felix~J. Herrmann.
+\newblock Developments in the direction of solving extremly large problems in
+  {Geophysics}.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4375--4378,
+  09 2017.
+\newblock (SEG, Houston).
+
+\bibitem{deaguiar2016SCdff}
+Marcos de~Aguiar, Gerard Gorman, Felix~J. Herrmann, Navjot Kukreja, Michael
+  Lange, Mathias Louboutin, and Felippe~Vieira Zacarias.
+\newblock Devito: fast finite difference computation.
+\newblock In {\em Super Computing (SC16)}, 11 2016.
+\newblock (Super Computing, Utah).
+
+\bibitem{dupuis05THssc}
+Catherine Dupuis.
+\newblock Seismic singularity characterization with redundant dictionaries.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 07
+  2005.
+\newblock (MSc).
+
+\bibitem{erlangga2008SEGaim}
+Yogi~A. Erlangga and Felix~J. Herrmann.
+\newblock An iterative multilevel method for computing wavefields in
+  frequency-domain seismic inversion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~27, pages
+  1957--1960. SEG, 11 2008.
+
+\bibitem{erlangga2009EAGEmwi}
+Yogi~A. Erlangga and Felix~J. Herrmann.
+\newblock Migration with implicit solvers for the time-harmonic {Helmholtz}
+  equation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2009.
+
+\bibitem{erlangga2009SEGswi}
+Yogi~A. Erlangga and Felix~J. Herrmann.
+\newblock Seismic waveform inversion with {Gauss-Newton-Krylov} method.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~28, pages
+  2357--2361. SEG, 10 2009.
+
+\bibitem{eso2008SEGira}
+R.~A. Eso, S.~Napier, Felix~J. Herrmann, and D.~W. Oldenburg.
+\newblock Iterative reconstruction algorithm for non-linear operators.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~27, pages
+  579--583. SEG, 11 2008.
+
+\bibitem{esser2014SIAMISsdc}
+Ernie Esser.
+\newblock Solving {DC} programs that promote group 1-sparsity.
+\newblock In {\em SIAM Conference on Imaging Science}, 05 2014.
+\newblock (SIAM Conference on Imaging Science).
+
+\bibitem{esser2014sln}
+Ernie Esser.
+\newblock Some lifting notes.
+\newblock Technical Report TR-EOAS-2014-1, UBC, 02 2014.
+\newblock written on February 15, 2014.
+
+\bibitem{esser2015SEGWSasf}
+Ernie Esser, Llu\'{i}s Guasch, and Felix~J. Herrmann.
+\newblock Automatic salt flooding with hinged {FWI}.
+\newblock In {\em SEG Workshop on Subsalt model buiding long to short
+  wavelengths; New Orleans}, 10 2015.
+\newblock (SEG, New Orleans).
+
+\bibitem{esser2016TLEcwi}
+Ernie Esser, Llu\'{i}s Guasch, Felix~J. Herrmann, and Mike Warner.
+\newblock Constrained waveform inversion for automatic salt flooding.
+\newblock {\em The Leading Edge}, 35(3):235--239, 03 2016.
+\newblock (The Leading Edge).
+
+\bibitem{esser2015SEGasd}
+Ernie Esser, Llu\'{i}s Guasch, Tristan van Leeuwen, Aleksandr~Y. Aravkin, and
+  Felix~J. Herrmann.
+\newblock Automatic salt delineation --- {Wavefield} {Reconstruction}
+  {Inversion} with convex constraints.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1337--1343,
+  10 2015.
+\newblock (SEG, New Orleans).
+
+\bibitem{esser2016tvr}
+Ernie Esser, Llu\'{i}s Guasch, Tristan van Leeuwen, Aleksandr~Y. Aravkin, and
+  Felix~J. Herrmann.
+\newblock Total-variation regularization strategies in full-waveform inversion.
+\newblock {\em SIAM Journal on Imaging Sciences}, 11(1):376--406, 2018.
+\newblock (SIAM Journal on Imaging Sciences).
+
+\bibitem{esser2015tvwri}
+Ernie Esser, Lluís Guasch, Tristan van Leeuwen, Aleksandr~Y. Aravkin, and
+  Felix~J. Herrmann.
+\newblock Total variation regularization strategies in full waveform inversion
+  for improving robustness to noise, limited data and poor initializations.
+\newblock Technical Report TR-EOAS-2015-5, UBC, 06 2015.
+
+\bibitem{esser2014EAGEacp}
+Ernie Esser and Felix~J. Herrmann.
+\newblock Application of a convex phase retrieval method to blind seismic
+  deconvolution.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{esser2015EAGElcs}
+Ernie Esser, Tim~T.Y. Lin, Rongrong Wang, and Felix~J. Herrmann.
+\newblock A lifted $\ell_1/\ell_2$ constraint for sparse blind deconvolution.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE, Madrid).
+
+\bibitem{esser2014SEGsgp}
+Ernie Esser, Tristan van Leeuwen, Aleksandr~Y. Aravkin, and Felix~J. Herrmann.
+\newblock A scaled gradient projection method for total variation regularized
+  full waveform inversion.
+\newblock Technical Report TR-EOAS-2014-2, UBC, 04 2014.
+
+\bibitem{esser2015CAMSAPrsa}
+Ernie Esser, Rongrong Wang, Tim~T.Y. Lin, and Felix~J. Herrmann.
+\newblock Resolving scaling ambiguities with the $\ell_1/\ell_2$ norm in a
+  blind deconvolution problem with feedback.
+\newblock In {\em IEEE International Workshop on Computational Advances in
+  Multi-Sensor Adaptive Processing}, pages 365--368, 12 2015.
+\newblock (IEEE CAMSAP Workshop, Canc\'{u}n, Mexico).
+
+\bibitem{fang2018THsea}
+Zhilong Fang.
+\newblock {\em Source estimation and uncertainty quantification for
+  wave-equation based seismic imaging and inversion}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 04 2018.
+\newblock (PhD).
+
+\bibitem{fang2015IIPFWIsoa}
+Zhilong Fang, Tim Burgess, and Felix~J. Herrmann.
+\newblock Stochastic optimization and its application to seismic inversion.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{zfang2014SEGsqn}
+Zhilong Fang and Felix~J. Herrmann.
+\newblock A stochastic quasi-newton {McMC} method for uncertainty
+  quantification of full-waveform inversion.
+\newblock Technical Report TR-EOAS-2014-6, UBC, 04 2014.
+
+\bibitem{fang2015EAGEsew}
+Zhilong Fang and Felix~J. Herrmann.
+\newblock Source estimation for {Wavefield} {Reconstruction} {Inversion}.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE, Madrid).
+
+\bibitem{fang2015IIPFWIwri}
+Zhilong Fang and Felix~J. Herrmann.
+\newblock Wavefield {Reconstruction} {Inversion} with source estimation and its
+  application to 2014 {Chevron} synthetic blind test dataset.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{fang2015EAGEuqw}
+Zhilong Fang, Chia~Ying Lee, Curt~Da Silva, Felix~J. Herrmann, and Rachel
+  Kuske.
+\newblock Uncertainty quantification for {Wavefield} {Reconstruction}
+  {Inversion}.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE, Madrid).
+
+\bibitem{fang2015IIPFWIuqw}
+Zhilong Fang, Chia~Ying Lee, Curt~Da Silva, Felix~J. Herrmann, and Rachel
+  Kuske.
+\newblock Uncertainty quantification for {Wavefield} {Reconstruction}
+  {Inversion}.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{fang2016SEGuqw}
+Zhilong Fang, Chia~Ying Lee, Curt~Da Silva, Tristan van Leeuwen, and Felix~J.
+  Herrmann.
+\newblock Uncertainty quantification for {Wavefield} {Reconstruction}
+  {Inversion} using a {PDE} free semidefinite {Hessian} and
+  randomize-then-optimize method.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1390--1394,
+  10 2016.
+\newblock (SEG, Dallas).
+
+\bibitem{fang2014EAGEfuq}
+Zhilong Fang, Curt~Da Silva, and Felix~J. Herrmann.
+\newblock Fast uncertainty quantification for {2D} full-waveform inversion with
+  randomized source subsampling.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{fang2017AIPepm}
+Zhilong Fang, Curt~Da Silva, and Felix~J. Herrmann.
+\newblock An efficient penalty method for {PDE}-constrained optimization
+  problem with source estimation and stochastic optimization.
+\newblock In {\em Applied Inverse Problems Annual Conference Proceedings},
+  page~40, 05-06 2017.
+\newblock (AIP, Hangzhou).
+
+\bibitem{fang2017WAVESuqf}
+Zhilong Fang, Curt~Da Silva, Rachel Kuske, and Felix~J. Herrmann.
+\newblock Uncertainty quantification for inverse problems with a weak
+  wave-equation constraint.
+\newblock In {\em WAVES 2017 --- 13th International Conference on Mathematical
+  and Numerical Aspects of Wave Propagation}, pages 127--128, 05 2017.
+\newblock (WAVES, Minneapolis).
+
+\bibitem{fang2017uqfip}
+Zhilong Fang, Curt~Da Silva, Rachel Kuske, and Felix~J. Herrmann.
+\newblock Uncertainty quantification for inverse problems with weak
+  partial-differential-equation constraints.
+\newblock {\em Geophysics}, 83(6):R629--R647, 2018.
+\newblock (Geophysics).
+
+\bibitem{fang2017sewri}
+Zhilong Fang, Rongrong Wang, and Felix~J. Herrmann.
+\newblock Source estimation for wavefield-reconstruction inversion.
+\newblock {\em Geophysics}, 83(4):R345--R359, 2018.
+\newblock (Geophysics).
+
+\bibitem{fenelon08msc}
+Lloyd Fenelon.
+\newblock Nonequispaced discrete curvelet transform for seismic data
+  reconstruction.
+\newblock Master's thesis, 08 2008.
+
+\bibitem{fomel2007ICASSPrepro}
+Sergey Fomel and Gilles Hennenfent.
+\newblock Reproducible computational experiments using scons.
+\newblock In {\em ICASSP}. ICASSP, 2007.
+
+\bibitem{friedlander2008SIAMasa}
+Michael~P. Friedlander.
+\newblock Active-set approaches to basis pursuit denoising.
+\newblock In {\em SIAM Optimization}. SIAM Optimization, 05 2008.
+
+\bibitem{friedlander2008SINBADafl}
+Michael~P. Friedlander.
+\newblock Algorithms for large-scale sparse reconstruction.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{friedlander2009NUalssr}
+Michael~P. Friedlander.
+\newblock Algorithms for large-scale sparse reconstruction.
+\newblock In {\em IEMS}, Northwestern University, 2009. IEMS Colloquim Speaker.
+
+\bibitem{friedlander2009VIETcsgpa}
+Michael~P. Friedlander.
+\newblock Computing sparse and group-sparse approximations.
+\newblock In {\em VIET}, Hanoi, Vietnam, 2009. 2009 High Performance Scientific
+  Computing Conference.
+
+\bibitem{mansour2012IEEETITrcs}
+Michael~P. Friedlander, Hassan Mansour, Rayan Saab, and Ozgur Yilmaz.
+\newblock Recovering compressively sampled signals using partial support
+  information.
+\newblock {\em IEEE Transactions on Information Theory}, 58(2):1122--1134, 02
+  2012.
+
+\bibitem{friedlander2007TASdtd}
+Michael~P. Friedlander and M.~A. Saunders.
+\newblock Discussion: the {Dantzig} selector: statistical estimation when p is
+  much larger than n.
+\newblock {\em The Annals of Statistics}, 35(6):2385--2391, 03 2007.
+
+\bibitem{friedlander2008WCOMasm}
+Michael~P. Friedlander and M.~A. Saunders.
+\newblock Active-set methods for basis pursuit.
+\newblock In {\em WCOM}. West Coast Opitmization Meeting (WCOM), 07 2008.
+
+\bibitem{Friedlander11TRhdm}
+Michael~P. Friedlander and Mark Schmidt.
+\newblock Hybrid deterministic-stochastic methods for data fitting.
+\newblock {\em SIAM Journal on Scientific Computing}, 34(3):A1380--A1405, 01
+  2012.
+
+\bibitem{friedlander2007SJOero}
+Michael~P. Friedlander and P.~Tseng.
+\newblock Exact regularization of convex programs.
+\newblock {\em SIAM Journal on Optimization}, 18(4):1326--1350, 05 2007.
+
+\bibitem{frijlink2010EAGEcos}
+M.~O. Frijlink, Reza Shahidi, Felix~J. Herrmann, and R.~G. van Borselen.
+\newblock Comparison of standard adaptive subtraction and primary-multiple
+  separation in the curvelet domain.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2010.
+
+\bibitem{ghadermarzy2013THups}
+Navid Ghadermarzy.
+\newblock Using prior support information in compressed sensing.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 08
+  2013.
+\newblock (MSc).
+
+\bibitem{ghadermarzy2013ncs}
+Navid Ghadermarzy, Hassan Mansour, and Ozgur Yilmaz.
+\newblock Non-convex compressed sensing using partial support information.
+\newblock {\em Journal of Sampling Theory in Signal and Image Processing},
+  13(3):249--270, 2014.
+
+\bibitem{ghadermarzy2014SEGsti}
+Navid Ghadermarzy, Ozgur Yilmaz, and Felix~J. Herrmann.
+\newblock Seismic trace interpolation with approximate message passing.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 3621--3626,
+  10 2014.
+\newblock (SEG).
+
+\bibitem{haber10TRemp}
+Eldad Haber, Matthias Chung, and Felix~J. Herrmann.
+\newblock An effective method for parameter estimation with {PDE} constraints
+  with multiple right hand sides.
+\newblock {\em SIAM Journal on Optimization}, 22(3), 07 2012.
+
+\bibitem{hargreaves2014THssr}
+Brock Hargreaves.
+\newblock Sparse signal recovery: analysis and synthesis formulations with
+  prior support information.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 04
+  2014.
+\newblock (MSc).
+
+\bibitem{hennenfent06SINBADscons}
+Gilles Hennenfent.
+\newblock Basic processing flows with scons.
+\newblock In {\em SINBAD}. SINBAD, 2006.
+
+\bibitem{hennenfent2006SINBADtnf}
+Gilles Hennenfent.
+\newblock The {Nonuniform} {Fast} {Discrete} {Curvelet} {Transform} ({NFDCT}).
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{hennenfent2006SINBADapo}
+Gilles Hennenfent.
+\newblock A primer on sparsity transforms: curvelets and wave atoms.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{hennenfent06SINBADssr}
+Gilles Hennenfent.
+\newblock A primer on stable signal recovery.
+\newblock In {\em SINBAD}. SINBAD, 2006.
+
+\bibitem{hennenfent2006SINBADros}
+Gilles Hennenfent.
+\newblock Recovery of seismic data: practical considerations.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{hennenfent2007SINBADjdn}
+Gilles Hennenfent.
+\newblock Just denoise: nonlinear recovery from randomly sampled data.
+\newblock In {\em SINBAD 2007}, 2007.
+
+\bibitem{hennenfent07gradsem}
+Gilles Hennenfent.
+\newblock Reproducible research in computational (geo)sciences.
+\newblock In {\em Graduate seminar series}. Graduate Seminar Series, 01 2007.
+
+\bibitem{hennenfent2008SINBADnii2}
+Gilles Hennenfent.
+\newblock New insights into one-norm solvers from the {Pareto} curve.
+\newblock In {\em SINBAD}, 2008.
+
+\bibitem{hennenfent08phd}
+Gilles Hennenfent.
+\newblock {\em Sampling and reconstruction of seismic wavefields in the
+  curvelet domain}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 05 2008.
+\newblock (PhD).
+
+\bibitem{hennenfent2008SINBADsdw2}
+Gilles Hennenfent.
+\newblock Simply denoise: wavefield reconstruction via jittered undersampling.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{hennenfent2010GEOPnct}
+Gilles Hennenfent, Lloyd Fenelon, and Felix~J. Herrmann.
+\newblock Nonequispaced curvelet transform for seismic data reconstruction: a
+  sparsity-promoting approach.
+\newblock {\em Geophysics}, 75(6):WB203--WB210, 12 2010.
+
+\bibitem{hennenfent2004SEGtta}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock Three-term amplitude-versus-offset ({AVO}) inversion revisited by
+  curvelet and wavelet transforms.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 211--214.
+  SEG, 2004.
+
+\bibitem{hennenfent2005SEGscd}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock Sparseness-constrained data continuation with frames: applications to
+  missing traces and aliased signals in {2/3-D}.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2162--2165.
+  SEG, 2005.
+
+\bibitem{hennenfent2006SEGaos}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock Application of stable signal recovery to seismic data interpolation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2797--2801.
+  SEG, 2006.
+
+\bibitem{hennenfent2006CiSEsdn}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock Seismic denoising with nonuniformly sampled curvelets.
+\newblock {\em Computing in Science \& Engineering}, 8(3):16--25, 05 2006.
+
+\bibitem{hennenfent2007EAGEcrw}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock Curvelet reconstruction with sparsity-promoting inversion: successes
+  and challenges.
+\newblock In {\em EAGE Workshop on Curvelets, contourlets, seislets, … in
+  seismic data processing - where are we and where are we going?}, 06 2007.
+
+\bibitem{hennenfent2007EAGEisf}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock Irregular sampling: from aliasing to noise.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2007.
+
+\bibitem{hennenfent2007SEGrsn}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock Random sampling: new insights into the reconstruction of coarsely
+  sampled wavefields.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2575--2579.
+  SEG, 2007.
+
+\bibitem{hennenfent2007SINBADrii}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock Recent insights in $\ell_1$ solvers.
+\newblock In {\em SINBAD 2007}, 2007.
+
+\bibitem{hennenfent2008SEGonri}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock One-norm regularized inversion: learning from the {Pareto} curve.
+\newblock In {\em SEG Technical Program Expanded Abstracts}. SEG, 2008.
+
+\bibitem{hennenfent08TRori}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock One-norm regularized inversion: learning from the {Pareto} curve.
+\newblock Technical Report TR-EOAS-2008-5, UBC Earth and Ocean Sciences
+  Department, 2008.
+
+\bibitem{hennenfent2008GEOPsdw}
+Gilles Hennenfent and Felix~J. Herrmann.
+\newblock Simply denoise: wavefield reconstruction via jittered undersampling.
+\newblock {\em Geophysics}, 73(3):V19--V28, 05 2008.
+
+\bibitem{hennenfent2005CSEGscs}
+Gilles Hennenfent, Felix~J. Herrmann, and R.~Neelamani.
+\newblock Sparseness-constrained seismic deconvolution with curvelets.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2005.
+
+\bibitem{hennenfent2005EAGEsdr}
+Gilles Hennenfent, R.~Neelamani, and Felix~J. Herrmann.
+\newblock Seismic deconvolution revisited with curvelet frames.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2005.
+
+\bibitem{hennenfent08MNrap}
+Gilles Hennenfent and Sean Ross-Ross.
+\newblock {\em Repro: a {Python} package for automating reproducible research
+  in scientific computing}, 08 2008.
+
+\bibitem{hennenfent2008GEOPnii}
+Gilles Hennenfent, Ewout {van den Berg}, Michael~P. Friedlander, and Felix~J.
+  Herrmann.
+\newblock New insights into one-norm solvers from the {Pareto} curve.
+\newblock {\em Geophysics}, 73(4):A23--A26, 07 2008.
+
+\bibitem{herrmann2001EAGEsas}
+Felix~J. Herrmann.
+\newblock Scaling and seismic reflectivity: implications of scaling on {AVO}.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2001.
+
+\bibitem{herrmann2003SPIEmsa}
+Felix~J. Herrmann.
+\newblock Multifractional splines: application to seismic imaging.
+\newblock In Michael~A. Unser, Akram Aldroubi, and Andrew~F. Laine, editors,
+  {\em Proceedings of SPIE Technical Conference on Wavelets: Applications in
+  Signal and Image Processing X}, volume 5207, pages 240--258. SPIE, 2003.
+
+\bibitem{herrmann2003SEGoiw}
+Felix~J. Herrmann.
+\newblock "optimal" imaging with curvelets.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~22, pages
+  997--1000, 2003.
+
+\bibitem{herrmann2004CSEGcia}
+Felix~J. Herrmann.
+\newblock Curvelet imaging and processing: an overview.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2004.
+
+\bibitem{herrmann2005ICAEsdb}
+Felix~J. Herrmann.
+\newblock Seismic deconvolution by atomic decomposition: a parametric approach
+  with sparseness constraints.
+\newblock {\em Integrated Computer-Aided Engineering}, 12(1):69--90, 01 2005.
+
+\bibitem{herrmann2006SINBADmpf}
+Felix~J. Herrmann.
+\newblock Multiple prediction from incomplete data.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{herrmann2006SINBADom}
+Felix~J. Herrmann.
+\newblock Opening meeting.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{herrmann2006SINBADapo1}
+Felix~J. Herrmann.
+\newblock A primer on sparsity transforms: curvelets and wave atoms.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{herrmann2006SINBADapow}
+Felix~J. Herrmann.
+\newblock A primer on weak conditions for stable recovery.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{herrmann2006SINBADsac}
+Felix~J. Herrmann.
+\newblock Sparsity- and continuity-promoting seismic image recovery with
+  curvelets.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{herrmann2006SINBADsra}
+Felix~J. Herrmann.
+\newblock Stable recovery and separation of seismic data.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{herrmann2007SINBADcwe}
+Felix~J. Herrmann.
+\newblock Compressed wavefield extrapolation.
+\newblock In {\em SINBAD 2007}, 2007.
+
+\bibitem{herrmann2007PIMScsm}
+Felix~J. Herrmann.
+\newblock Compressive sampling meets seismic imaging.
+\newblock In {\em PIMS}, 2007.
+
+\bibitem{herrmann2007AMScsi}
+Felix~J. Herrmann.
+\newblock Compressive seismic imaging.
+\newblock In {\em AMS Von Neumann}, 2007.
+
+\bibitem{herrmann2007SINBADfrw}
+Felix~J. Herrmann.
+\newblock Focused recovery with the curvelet transform.
+\newblock In {\em SINBAD 2007}, 2007.
+
+\bibitem{herrmann2007SLIMfsd}
+Felix~J. Herrmann.
+\newblock From seismic data to the composition of rocks: an interdisciplinary
+  and multiscale approach to exploration seismology.
+\newblock In {\em Berkhout{\textquoteright}s valedictory address: the
+  conceptual approach of understanding}, 2007.
+
+\bibitem{herrmann2007SEGmpf}
+Felix~J. Herrmann.
+\newblock Multiple prediction from incomplete data with the focused curvelet
+  transform.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~26, pages
+  2505--2600, 2007.
+
+\bibitem{herrmann2007COIPpti}
+Felix~J. Herrmann.
+\newblock Phase transitions in explorations seismology: statistical mechanics
+  meets information theory.
+\newblock In {\em COIP}, 2007.
+
+\bibitem{herrmann2007EAGErdi}
+Felix~J. Herrmann.
+\newblock Recent developments in curvelet-based seismic processing.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2007.
+
+\bibitem{herrmann2007SINBADrdi2}
+Felix~J. Herrmann.
+\newblock Recent developments in primary-multiple separation.
+\newblock In {\em SINBAD 2007}, 2007.
+
+\bibitem{herrmann2007SINBADsia2}
+Felix~J. Herrmann.
+\newblock Seismic image amplitude recovery.
+\newblock In {\em SINBAD 2007}, 2007.
+
+\bibitem{herrmann2007AIPsit}
+Felix~J. Herrmann.
+\newblock Seismic inversion through operator overloading.
+\newblock In {\em AIP}, 2007.
+
+\bibitem{herrmann2007CYBERsmc}
+Felix~J. Herrmann.
+\newblock Seismology meets compressive sampling.
+\newblock In {\em Cyber}, 2007.
+\newblock Presented at the joint NSF-IPAM meeting. Los Angeles. October, 2007.
+
+\bibitem{herrmann2007AIPssd}
+Felix~J. Herrmann.
+\newblock Stable seismic data recovery.
+\newblock In {\em AIP}, 2007.
+
+\bibitem{herrmann2007EAGEsrm}
+Felix~J. Herrmann.
+\newblock Surface related multiple prediction from incomplete data.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2007.
+
+\bibitem{herrmann2008SINBADacd2}
+Felix~J. Herrmann.
+\newblock Adaptive curvelet-domain primary-multiple separation.
+\newblock In {\em SINBAD}. SINBAD, 2008.
+\newblock SINBAD 2008.
+
+\bibitem{herrmann2008IONcsa}
+Felix~J. Herrmann.
+\newblock Compressive sampling: a new paradigm for seismic data acquistion and
+  processing?
+\newblock In {\em ION}, 2008.
+
+\bibitem{herrmann2008SEGcdm3}
+Felix~J. Herrmann.
+\newblock Curvelet-domain matched filtering.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~27, pages
+  3643--3649. SEG, 11 2008.
+
+\bibitem{herrmann2008SINBADfwr}
+Felix~J. Herrmann.
+\newblock (de)-{Focused} wavefield reconstructions.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{herrmann2008SINBADpsm}
+Felix~J. Herrmann.
+\newblock Phase-space matched filtering and migration preconditioning.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{herrmann2008SEGgbu}
+Felix~J. Herrmann.
+\newblock Seismic noise: the good, the bad, \& the ugly.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, 2008.
+
+\bibitem{herrmann2008SINBADs2c}
+Felix~J. Herrmann.
+\newblock {SINBAD} 2008 consortium meeting.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{herrmann2009PIMScssr1}
+Felix~J. Herrmann.
+\newblock Compressed sensing and sparse recovery in exploration seismology.
+\newblock In {\em PIMS}, 2009.
+\newblock Lecture I presented at the PIMS Summer School on Seismic Imaging,
+  Seattle.
+
+\bibitem{herrmann2009PIMScssr2}
+Felix~J. Herrmann.
+\newblock Compressed sensing and sparse recovery in exploration seismology.
+\newblock In {\em PIMS}, 2009.
+\newblock Lecture II presented at the PIMS Summer School on Seismic Imaging,
+  Seattle.
+
+\bibitem{herrmann2009PIMScssr3}
+Felix~J. Herrmann.
+\newblock Compressed sensing and sparse recovery in exploration seismology.
+\newblock In {\em PIMS}, 2009.
+\newblock Lecture III presented at the PIMS Summer School on Seismic Imaging,
+  Seattle.
+
+\bibitem{herrmann2009SEGcib}
+Felix~J. Herrmann.
+\newblock Compressive imaging by wavefield inversion with group sparsity.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~28, pages
+  2337--2341. SEG, 10 2009.
+
+\bibitem{herrmann2009SEGrpl}
+Felix~J. Herrmann.
+\newblock Reflector-preserved lithological upscaling.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~28, pages
+  3466--3470. SEG, 10 2009.
+
+\bibitem{herrmann2009SEGsns}
+Felix~J. Herrmann.
+\newblock Sub-{Nyquist} sampling and sparsity: how to get more information from
+  fewer samples.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~28, pages
+  3410--3415. SEG, 10 2009.
+
+\bibitem{herrmann2010MATHIAScssr}
+Felix~J. Herrmann.
+\newblock Compressive sensing and sparse recovery in exploration seismology.
+\newblock In {\em MATHIAS}, 2010.
+\newblock Presented at MATHIAS 2010 organized by Total SA. Paris.
+
+\bibitem{herrmann2010SEGerc}
+Felix~J. Herrmann.
+\newblock Empirical recovery conditions for seismic sampling.
+\newblock Technical Report TR-EOAS-2010-2, Department of Earth and Ocean
+  Sciences, UBC, 2010.
+
+\bibitem{slim2010NSERCapp}
+Felix~J. Herrmann.
+\newblock {NSERC} 2010 {DNOISE} application.
+\newblock Technical Report TR-EOAS-2010-3, UBC, 2010.
+
+\bibitem{herrmann2010GEOPrsg}
+Felix~J. Herrmann.
+\newblock Randomized sampling and sparsity: getting more information from fewer
+  samples.
+\newblock {\em Geophysics}, 75(6):WB173--WB187, 12 2010.
+
+\bibitem{herrmann2010EAGErss}
+Felix~J. Herrmann.
+\newblock Randomized sampling strategies.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2010.
+
+\bibitem{herrmann2010IRISsns}
+Felix~J. Herrmann.
+\newblock Sub-{Nyquist} sampling and sparsity: getting more information from
+  fewer samples.
+\newblock In {\em IRIS}, 2010.
+\newblock Presented at the IRIS Workshop.
+
+\bibitem{herrmann2011SLIMsummer1}
+Felix~J. Herrmann.
+\newblock {Gene} {Golub} {SIAM} {Summer} {School} {July} 4 - 15, 2011.
+\newblock In {\em SLIM}, 08 2011.
+
+\bibitem{herrmann11SLIMsummer2}
+Felix~J. Herrmann.
+\newblock Lecture 2. {Gene} {Golub} {SIAM} {Summer} {School} {July} 4 - 15,
+  2011.
+\newblock In {\em SLIM}, 08 2011.
+
+\bibitem{slim2011NSERCpr}
+Felix~J. Herrmann.
+\newblock {NSERC} 2011 {DNOISE} progress report.
+\newblock Technical Report TR-EOAS-2011-1, UBC, 2011.
+
+\bibitem{herrmann2012SEGals}
+Felix~J. Herrmann.
+\newblock Accelerated large-scale inversion with message passing.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~31, pages
+  1--6. SEG, 11 2012.
+
+\bibitem{herrmann2012SSPamp}
+Felix~J. Herrmann.
+\newblock Approximate message passing meets exploration seismology.
+\newblock In {\em 2012 IEEE Statistical Signal Processing Workshop (SSP)
+  (SSP'12)}, Ann Arbor, Michigan, USA, 03 2012. IEEE.
+
+\bibitem{herrmann2012UW}
+Felix~J. Herrmann.
+\newblock Compressive sensing and sparse recovery in exploration seismology.
+\newblock In {\em Talk at University of Wisconsin}, 2012.
+
+\bibitem{slim2012NSERCpr}
+Felix~J. Herrmann.
+\newblock {NSERC} 2012 {DNOISE} progress report.
+\newblock Technical Report TR-EOAS-2012-4, UBC, 2012.
+
+\bibitem{herrmann2012EAGEpmr}
+Felix~J. Herrmann.
+\newblock Pass on the message: recent insights in large-scale sparse recovery.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2012.
+
+\bibitem{herrmann2013SIAMdrfwi}
+Felix~J. Herrmann.
+\newblock Dimensionality reduction in {FWI}.
+\newblock In {\em SIAM}, 02 2013.
+
+\bibitem{slim2013NSERCpr}
+Felix~J. Herrmann.
+\newblock {NSERC} 2013 {DNOISE} progress report.
+\newblock Technical Report TR-EOAS-2013-5, UBC, 2013.
+
+\bibitem{herrmann2013SPIErse}
+Felix~J. Herrmann.
+\newblock Randomized sampling in exploration seismology.
+\newblock In {\em SPIE Optics and Photonics: Wavelets and Sparsity XV}, 08
+  2013.
+
+\bibitem{herrmann2013KAUSTrse}
+Felix~J. Herrmann.
+\newblock Randomized sampling in exploration seismology.
+\newblock In {\em KAUST}. KAUST, 05 2013.
+
+\bibitem{Herrmann13NIPSrse}
+Felix~J. Herrmann.
+\newblock Randomized sampling in exploration seismology.
+\newblock In {\em NIPS}, 2013.
+
+\bibitem{herrmann2013SEGOMANrdw}
+Felix~J. Herrmann.
+\newblock Recent developments in wave-equation based inversion technology.
+\newblock In {\em SEG Workshop on FWI; Oman}, 04 2013.
+
+\bibitem{herrmann2012IIsi}
+Felix~J. Herrmann.
+\newblock Seismic advances.
+\newblock {\em International Innovation}, pages 46--49, 01 2013.
+
+\bibitem{herrmann2014CSEGbsw}
+Felix~J. Herrmann.
+\newblock Breaking structure - why randomized sampling matters.
+\newblock In {\em CSEG Technical Luncheon}, 01 2014.
+
+\bibitem{herrmann2014SEGAGUWSiii}
+Felix~J. Herrmann.
+\newblock Imaging/{Inversion} with irregular/random sampled spatial arrays.
+\newblock In {\em SEG-AGU Workshop on Advances in Active + Passive "Full
+  Wavefield" Seismic Imaging: From Reservoirs to Plate Tectonics}, 07 2014.
+\newblock (SEG-AGU Workshop, 22-24 July, Vancouver).
+
+\bibitem{herrmann2014BIRSlrb}
+Felix~J. Herrmann.
+\newblock Low-rank based matrix/tensor completions for the "real" (seismic)
+  world.
+\newblock In {\em Workshop on Sparse Representations, Numerical Linear Algebra,
+  and Optimization; Banff}, 10 2014.
+\newblock (Workshop at the Banff International Research Station for
+  Mathematical Innovation and Discovery).
+
+\bibitem{slim2014NSERCapp}
+Felix~J. Herrmann.
+\newblock {NSERC} 2014 {DNOISE} application.
+\newblock Technical Report TR-EOAS-2014-7, UBC, 2014.
+
+\bibitem{slim2014NSERCpr}
+Felix~J. Herrmann.
+\newblock {NSERC} 2014 {DNOISE} progress report.
+\newblock Technical Report TR-EOAS-2014-8, UBC, 2014.
+
+\bibitem{herrmann2014ROSErpe}
+Felix~J. Herrmann.
+\newblock Relax the physics and expand the search space – {FWI} via
+  {Wavefield} {Reconstruction} {Inversion}.
+\newblock In {\em ROSE Consortium; Norway}, 05 2014.
+\newblock (ROSE Consortium).
+
+\bibitem{herrmann2015SEGWSasf}
+Felix~J. Herrmann.
+\newblock Automatic salt flooding with constrained wavefield reconstruction
+  inversion.
+\newblock In {\em SEG Summer Research Workshop on FWI Applications from Imaging
+  to Reservoir Characterization; Houston}, 07 2015.
+\newblock (SEG Summer Workshop, Houston).
+
+\bibitem{herrmann2015SEGWScse}
+Felix~J. Herrmann.
+\newblock Compressive {Sensing} in {Exploration} {Seismology} - where we came
+  from, where we are now, and where we need to go.
+\newblock In {\em SEG Geophysical Compressed Sensing Workshop; Beijing, China},
+  12 2015.
+\newblock (SEG Workshop, Beijing, China).
+
+\bibitem{herrmann2015ASEGrae}
+Felix~J. Herrmann.
+\newblock Randomized algorithms in exploration seismology.
+\newblock In {\em ASEG Annual Conference Proceedings}, 02 2015.
+\newblock (ASEG, Perth).
+
+\bibitem{herrmann2015IIPFWIras}
+Felix~J. Herrmann.
+\newblock Randomized algorithms in seismic imaging.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{herrmann2015SIAMwri}
+Felix~J. Herrmann.
+\newblock Wavefield {Reconstruction} {Inversion} – reaping the benefits from
+  extending the search space.
+\newblock In {\em SIAM Conference on Mathematical and Computational Issues in
+  the Geosciences}, 06-07 2015.
+\newblock (SIAM Conference on Mathematical and Computational Issues in the
+  Geosciences, Stanford University, California).
+
+\bibitem{herrmann2015IIPFWIwri}
+Felix~J. Herrmann.
+\newblock Wavefield-{Reconstruction} {Inversion} — {WRI}.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{herrmann2016SLBors}
+Felix~J. Herrmann.
+\newblock Overview research at the {SINBAD Consortium}.
+\newblock Technical Report TR-EOAS-2016-1, UBC, 03 2016.
+\newblock Presented at a seminar at Schlumberger Gould, Cambridge on March 17,
+  2016.
+
+\bibitem{Herrmann2019SEGDL}
+Felix~J. Herrmann.
+\newblock Sometimes it pays to be cheap – compressive time-lapse seismic data
+  acquisition, 2019.
+\newblock (SEG Distinguished Lecture).
+
+\bibitem{herrmann2011SLRAfwi}
+Felix~J. Herrmann, Aleksandr~Y. Aravkin, Xiang Li, and Tristan van Leeuwen.
+\newblock Full waveform inversion with compressive updates.
+\newblock In {\em SLRA}. Sparse and Low Rank Approximation 2011, 2011.
+
+\bibitem{herrmann2011ICIAMconvexcompfwi}
+Felix~J. Herrmann, Aleksandr~Y. Aravkin, Tristan van Leeuwen, and Xiang Li.
+\newblock {FWI} with sparse recovery: a convex-composite approach.
+\newblock In {\em ICIAM}. ICIAM 2011, 07 2011.
+
+\bibitem{herrmann2004GJIssa}
+Felix~J. Herrmann and Y.~Bernab\'e.
+\newblock Seismic singularities at upper-mantle phase transitions: a site
+  percolation model.
+\newblock {\em Geophysical Journal International}, 159(3):949--960, 12 2004.
+
+\bibitem{herrmann2006SINBADpms}
+Felix~J. Herrmann, Urs Boeniger, and D.~J. Verschuur.
+\newblock Primary-multiple separation by curvelet frames.
+\newblock In {\em SINBAD 2006}, volume 170, pages 781--799. Geophysical Journal
+  International, 2006.
+
+\bibitem{herrmann2007GJInlp}
+Felix~J. Herrmann, Urs Boeniger, and D.~J. Verschuur.
+\newblock Non-linear primary-multiple separation with directional curvelet
+  frames.
+\newblock {\em Geophysical Journal International}, 170(2):781--799, 08 2007.
+
+\bibitem{herrmann2009GEOPcbm}
+Felix~J. Herrmann, Cody~R. Brown, Yogi~A. Erlangga, and Peyman~P. Moghaddam.
+\newblock Curvelet-based migration preconditioning and scaling.
+\newblock {\em Geophysics}, 74:A41--A46, 07-08 2009.
+
+\bibitem{herrmann2013TLEffwi}
+Felix~J. Herrmann, Andrew~J. Calvert, Ian Hanlon, Mostafa Javanmehri, Rajiv
+  Kumar, Tristan van Leeuwen, Xiang Li, Brendan~R. Smithyman, Eric~Takam
+  Takougang, and Haneet Wason.
+\newblock Frugal full-waveform inversion: from theory to a practical algorithm.
+\newblock {\em The Leading Edge}, 32(9):1082--1092, 09 2013.
+
+\bibitem{herrmann2008SIAMcsm}
+Felix~J. Herrmann, Yogi~A. Erlangga, and Tim~T.Y. Lin.
+\newblock Compressive sampling meets seismic imaging.
+\newblock In {\em SIAM}, 2008.
+
+\bibitem{herrmann2009IAPcsisa}
+Felix~J. Herrmann, Yogi~A. Erlangga, and Tim~T.Y. Lin.
+\newblock Compressive seismic imaging with simultaneous acquisition.
+\newblock In {\em IAP}, 2009.
+\newblock Presented at the IAP meeting, Vienna.
+
+\bibitem{herrmann2009EAGEcsa}
+Felix~J. Herrmann, Yogi~A. Erlangga, and Tim~T.Y. Lin.
+\newblock Compressive sensing applied to full-waveform inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2009.
+
+\bibitem{herrmann2009GEOPcsf}
+Felix~J. Herrmann, Yogi~A. Erlangga, and Tim~T.Y. Lin.
+\newblock Compressive simultaneous full-waveform simulation.
+\newblock {\em Geophysics}, 74(4):A35--A40, 07-08 2009.
+
+\bibitem{herrmann2009SAMPTAcws}
+Felix~J. Herrmann, Yogi~A. Erlangga, and Tim~T.Y. Lin.
+\newblock Compressive-wavefield simulations.
+\newblock In {\em SAMPTA}. SAMPTA, 2009.
+
+\bibitem{herrmann2008SINBADitc}
+Felix~J. Herrmann, Yogi~A. Erlangga, Tim~T.Y. Lin, and Cody~R. Brown.
+\newblock Introduction to compressive (wavefield) computation.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{herrmann2015IIPFWIwcc}
+Felix~J. Herrmann, Ernie Esser, and Llu\'{i}s Guasch.
+\newblock Wavefield {Reconstruction} {Inversion} with convex constraints.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{herrmann2014SEGWS}
+Felix~J. Herrmann, Ernie Esser, Tristan van Leeuwen, and Bas Peters.
+\newblock Wavefield {Reconstruction} {Inversion} ({WRI}) – a new take on
+  wave-equation based inversion.
+\newblock In {\em SEG Workshop on Full Waveform Inversion - Elastic Approaches
+  and Issues with Anisotropy, Nonshallow Inversion, Poor Starting Model;
+  Denver}, 10 2014.
+\newblock (SEG Workshop, Denver).
+
+\bibitem{Herrmann11TRfcd}
+Felix~J. Herrmann, Michael~P. Friedlander, and Ozgur Yilmaz.
+\newblock Fighting the curse of dimensionality: compressive sensing in
+  exploration seismology.
+\newblock {\em Signal Processing Magazine, IEEE}, 29(3):88--100, 05 2012.
+
+\bibitem{herrmann2018SMCtpa}
+Felix~J. Herrmann, Gerard~J. Gorman, Jan Hückelheim, Keegan Lensink, Paul
+  Kelly, Navjot Kukreja, Henryk Modzelewski, Michael Lange, Mathias Louboutin,
+  Fabio Luporini, Ali Siahkoohi, and Philipp~A. Witte.
+\newblock The power of abstraction in computational exploration seismology.
+\newblock In {\em Smoky Mountains Computational Sciences and Engineering
+  Conference}, 08 2018.
+
+\bibitem{herrmann2005CSEGnld}
+Felix~J. Herrmann and Gilles Hennenfent.
+\newblock Non-linear data continuation with redundant frames.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2005.
+
+\bibitem{herrmann2005EAGErcd}
+Felix~J. Herrmann and Gilles Hennenfent.
+\newblock Robust curvelet-domain data continuation with sparseness constraints.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2005.
+
+\bibitem{herrmann2008GJInps}
+Felix~J. Herrmann and Gilles Hennenfent.
+\newblock Non-parametric seismic data recovery with curvelet frames.
+\newblock {\em Geophysical Journal International}, 173:233--248, 04 2008.
+
+\bibitem{herrmann2007EAGEsia}
+Felix~J. Herrmann, Gilles Hennenfent, and Peyman~P. Moghaddam.
+\newblock Seismic imaging and processing with curvelets.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2007.
+
+\bibitem{herrmann2016SEGWSctl}
+Felix~J. Herrmann, Rajiv Kumar, Felix Oghenekohwo, Shashin Sharan, and Haneet
+  Wason.
+\newblock Compressive time-lapse marine acquisition.
+\newblock In {\em SEG Workshop on Low cost geophysics: How to be creative in a
+  cost-challenged environment; Dallas}, 10 2016.
+\newblock (SEG Workshop, Dallas).
+
+\bibitem{herrmann2010EAGErds}
+Felix~J. Herrmann and Xiang Li.
+\newblock Randomized dimensionality reduction for full-waveform inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2010.
+
+\bibitem{herrmann2011EAGEefmsp}
+Felix~J. Herrmann and Xiang Li.
+\newblock Efficient least-squares migration with sparsity promotion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 05 2011.
+
+\bibitem{herrmann11GPelsqIm}
+Felix~J. Herrmann and Xiang Li.
+\newblock Efficient least-squares imaging with sparsity promotion and
+  compressive sensing.
+\newblock {\em Geophysical Prospecting}, 60(4):696--712, 07 2012.
+
+\bibitem{herrmann2011SPIEmsp}
+Felix~J. Herrmann, Xiang Li, Aleksandr~Y. Aravkin, and Tristan van Leeuwen.
+\newblock A modified, sparsity promoting, {Gauss-Newton} algorithm for seismic
+  waveform inversion.
+\newblock In {\em Proc. SPIE}, number 81380V, 08 2011.
+
+\bibitem{herrmann2004SEGcbn}
+Felix~J. Herrmann and Peyman~P. Moghaddam.
+\newblock Curvelet-based non-linear adaptive subtraction with sparseness
+  constraints.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~23, pages
+  1977--1980. SEG, 2004.
+
+\bibitem{herrmann2004EAGEcdl}
+Felix~J. Herrmann and Peyman~P. Moghaddam.
+\newblock Curvelet-domain least-squares migration with sparseness constraints.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2004.
+
+\bibitem{herrmann2004EAGEcdp}
+Felix~J. Herrmann and Peyman~P. Moghaddam.
+\newblock Curvelet-domain preconditioned 'wave-equation' depth-migration with
+  sparseness and illumination constraints.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2004.
+
+\bibitem{herrmann2004CSEGcia2}
+Felix~J. Herrmann and Peyman~P. Moghaddam.
+\newblock Curvelet imaging and processing: sparseness-constrained least-squares
+  migration.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2004.
+
+\bibitem{herrmann2005CSEGnlr}
+Felix~J. Herrmann and Peyman~P. Moghaddam.
+\newblock Non-linear regularization in seismic imaging.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2005.
+
+\bibitem{herrmann2007EAGEjda}
+Felix~J. Herrmann and Peyman~P. Moghaddam.
+\newblock Just diagonalize: a curvelet-based approach to seismic amplitude
+  recovery.
+\newblock In {\em EAGE Workshop on Curvelets, contourlets, seislets, … in
+  seismic data processing - where are we and where are we going?}, 06 2007.
+
+\bibitem{herrmann2005EAGEosf}
+Felix~J. Herrmann, Peyman~P. Moghaddam, and R.~Kirlin.
+\newblock Optimization strategies for sparseness- and continuity-enhanced
+  imaging: theory.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2005.
+
+\bibitem{herrmann2008ACHAsac}
+Felix~J. Herrmann, Peyman~P. Moghaddam, and Christiaan~C. Stolk.
+\newblock Sparsity- and continuity-promoting seismic image recovery with
+  curvelet frames.
+\newblock {\em Applied and Computational Harmonic Analysis}, 24(2):150--173, 03
+  2008.
+
+\bibitem{herrmann2008SEGcdm}
+Felix~J. Herrmann, Peyman~P. Moghaddam, and Deli Wang.
+\newblock Curvelet-domain matched filtering.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~27. SEG, 08
+  2008.
+
+\bibitem{herrmann2015SIAMpcf}
+Felix~J. Herrmann and Bas Peters.
+\newblock Pros and cons of full- and reduced-space methods for {Wavefield}
+  {Reconstruction} {Inversion}.
+\newblock In {\em SIAM Conference on Mathematical and Computational Issues in
+  the Geosciences}, 06-07 2015.
+\newblock (SIAM Conference on Mathematical and Computational Issues in the
+  Geosciences, Stanford University, California).
+
+\bibitem{herrmann2016SEGWScvp}
+Felix~J. Herrmann and Bas Peters.
+\newblock Constraints versus penalties for edge-preserving full-waveform
+  inversion.
+\newblock In {\em SEG Workshop on Where are we heading with FWI; Dallas}, 10
+  2016.
+\newblock (SEG Workshop, Dallas).
+
+\bibitem{herrmann2017SIAMdsa}
+Felix~J. Herrmann and Curt~Da Silva.
+\newblock Domain-specific abstractions for full-waveform inversion.
+\newblock In {\em SIAM Conference on Computational Science and Engineering},
+  02-03 2017.
+\newblock (SIAM Conference on Computational Science and Engineering, Atlanta).
+
+\bibitem{herrmann09EAGEbnrs}
+Felix~J. Herrmann, Gang Tang, Reza Shahidi, Gilles Hennenfent, and Tim~T.Y.
+  Lin.
+\newblock Beating nyquist by randomized sampling.
+\newblock In {\em EAGE Annual Conference Proceedings}, 2009.
+\newblock Presented at the EAGE (workshop), Amsterdam.
+
+\bibitem{herrmann2013EAGEfrtm}
+Felix~J. Herrmann and Ning Tu.
+\newblock Fast {RTM} with multiples and source estimation.
+\newblock In {\em EAGE/SEG Forum - Turning noise into geological information:
+  The next big step?}, 11 2013.
+
+\bibitem{herrmann2015EAGEfom}
+Felix~J. Herrmann, Ning Tu, and Ernie Esser.
+\newblock Fast "online" migration with {Compressive} {Sensing}.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE, Madrid).
+
+\bibitem{Herrmann2011BG}
+Felix~J. Herrmann and Tristan van Leeuwen.
+\newblock {SINBAD's} research program.
+\newblock 11 2011.
+
+\bibitem{herrmann2014pmpde}
+Felix~J. Herrmann and Tristan van Leeuwen.
+\newblock A penalty method for {PDE}-constrained optimization.
+\newblock Patent WO 2014/172787, UBC, 10 2014.
+\newblock (International publication date 30 October 2014. International
+  publication number WO 2014/172787.).
+
+\bibitem{herrmann2004SEGcdm}
+Felix~J. Herrmann and D.~J. Verschuur.
+\newblock Curvelet-domain multiple elimination with sparseness constraints.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~23, pages
+  1333--1336. SEG, 2004.
+
+\bibitem{herrmann2004CSEGcia1}
+Felix~J. Herrmann and D.~J. Verschuur.
+\newblock Curvelet imaging and processing: adaptive multiple elimination.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2004.
+
+\bibitem{herrmann2004EAGEsop}
+Felix~J. Herrmann and D.~J. Verschuur.
+\newblock Separation of primaries and multiples by non-linear estimation in the
+  curvelet domain.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2004.
+
+\bibitem{herrmann2005EAGErcd1}
+Felix~J. Herrmann and D.~J. Verschuur.
+\newblock Robust curvelet-domain primary-multiple separation with sparseness
+  constraints.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2005.
+
+\bibitem{herrmann2008SEGswi}
+Felix~J. Herrmann and Deli Wang.
+\newblock Seismic wavefield inversion with curvelet-domain sparsity promotion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~27, pages
+  2497--2501. SEG, 11 2008.
+
+\bibitem{herrmann2007SEGsdp}
+Felix~J. Herrmann, Deli Wang, Gilles Hennenfent, and Peyman~P. Moghaddam.
+\newblock Seismic data processing with curvelets: a multiscale and nonlinear
+  approach.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~26, pages
+  2220--2224. SEG, 2007.
+
+\bibitem{herrmann2008GEOPcbs}
+Felix~J. Herrmann, Deli Wang, Gilles Hennenfent, and Peyman~P. Moghaddam.
+\newblock Curvelet-based seismic data processing: a multiscale and nonlinear
+  approach.
+\newblock {\em Geophysics}, 73(1):A1--A5, 03 2008.
+
+\bibitem{herrmann2008GEOPacd}
+Felix~J. Herrmann, Deli Wang, and D.~J. Verschuur.
+\newblock Adaptive curvelet-domain primary-multiple separation.
+\newblock {\em Geophysics}, 73(3):A17--A21, 08 2008.
+
+\bibitem{herrmann2012EAGEcsm}
+Felix~J. Herrmann and Haneet Wason.
+\newblock Compressive sensing in marine acquisition and beyond.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2012.
+
+\bibitem{herrmann2011RECORDERcsse2}
+Felix~J. Herrmann, Haneet Wason, and Tim~T.Y. Lin.
+\newblock Compressive sensing in seismic exploration: an outlook on a new
+  paradigm.
+\newblock {\em CSEG Recorder}, 36(6):34--39, 06 2011.
+\newblock Part 1 was published in April and Part 2 was published in June.
+
+\bibitem{herrmann2011RECORDERcsse1}
+Felix~J. Herrmann, Haneet Wason, and Tim~T.Y. Lin.
+\newblock Compressive sensing in seismic exploration: an outlook on a new
+  paradigm.
+\newblock {\em CSEG Recorder}, 36(4):19--33, 04 2011.
+\newblock Part 1 was published in April and Part 2 was published in June.
+
+\bibitem{herrmann2007SEGsnt}
+Felix~J. Herrmann and D.~Wilkinson.
+\newblock Seismic noise: the good, the bad and the ugly.
+\newblock In {\em SEG Summer Research Workshop: Seismic Noise: Origins
+  Preventions, Mitigation, Utilization}, 2007.
+\newblock Presented at SEG Summer Research Workshop: Seismic Noise: Origins,
+  Prevention, Mitigation, Utilization.
+
+\bibitem{johnson2013THswr}
+James Johnson.
+\newblock Seismic wavefield reconstruction using reciprocity.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 03
+  2013.
+\newblock (MSc).
+
+\bibitem{johnson2008SINBADsdi}
+James Johnson and Gilles Hennenfent.
+\newblock Seismic data interpolation with symmetry.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{johnson2010EAGEeop}
+James Johnson, Tim~T.Y. Lin, and Felix~J. Herrmann.
+\newblock Estimation of primaries via sparse inversion with reciprocity.
+\newblock In {\em EAGE Annual Conference Proceedings}, 2010.
+
+\bibitem{jumah2012THdre}
+Bander Jumah.
+\newblock Dimensionality-reduced estimation of primaries by sparse inversion.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 02
+  2012.
+\newblock (MSc).
+
+\bibitem{jumah2011SEGdrepsi}
+Bander Jumah and Felix~J. Herrmann.
+\newblock Dimensionality-reduced estimation of primaries by sparse inversion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~30, pages
+  3520--3525. SEG, 09 2011.
+
+\bibitem{jumah2014GPdre}
+Bander Jumah and Felix~J. Herrmann.
+\newblock Dimensionality-reduced estimation of primaries by sparse inversion.
+\newblock {\em Geophysical Prospecting}, 62(5):972--993, 09 2014.
+\newblock (Geophysical Prospecting).
+
+\bibitem{kadu2018EAGEdfwi}
+Ajinkya Kadu and Rajiv Kumar.
+\newblock Decentralized full-waveform inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2018.
+\newblock (EAGE, Copenhagen).
+
+\bibitem{kadu2018SEGMSFWI}
+Ajinkya Kadu, Rajiv Kumar, and Tristan van Leeuwen.
+\newblock Full-waveform inversion with mumford-shah regularization.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1258--1262,
+  10 2018.
+\newblock (SEG, Anaheim).
+
+\bibitem{kukreja2019PASCccd}
+Navjot Kukreja, Jan Huckelheim, Mathias Louboutin, Kaiyuan Hou, Paul Hovland,
+  and Gerard Gorman.
+\newblock Combining checkpointing and data compression to accelerate
+  adjoint-based optimization problems.
+\newblock Submitted to PASC19 on January 16, 2019, 2019.
+
+\bibitem{kukreja2017SIAMdsm}
+Navjot Kukreja, Michael Lange, Mathias Louboutin, Fabio Luporini, and Gerard
+  Gorman.
+\newblock Devito: symbolic math for automated fast finite difference
+  computations.
+\newblock In {\em SIAM Conference on Computational Science and Engineering},
+  02-03 2017.
+\newblock (SIAM Conference on Computational Science and Engineering, Atlanta).
+
+\bibitem{kukreja2016OGHPClsm}
+Navjot Kukreja, Mathias Louboutin, Michael Lange, Fabio Luporini, and Gerard
+  Gorman.
+\newblock Leveraging symbolic math for rapid development of applications for
+  seismic modeling.
+\newblock In {\em OGHPC}, 03 2017.
+\newblock (Oil and Gas HPC Conference, Rice University).
+
+\bibitem{kukreja2016WOLFHPCdaf}
+Navjot Kukreja, Mathias Louboutin, Felippe~Vieira Zacarias, Fabio Luporini,
+  Michael Lange, and Gerard Gorman.
+\newblock Devito: automated fast finite difference computation.
+\newblock In {\em WOLFHPC 2016 Workshop (Super Computing)}, 11 2016.
+\newblock (WOLFHPC Workshop (SC16), Utah).
+
+\bibitem{kumar2017THels}
+Rajiv Kumar.
+\newblock {\em Enabling large-scale seismic data acquisition, processing and
+  waveform-inversion via rank-minimization}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 08 2017.
+\newblock (PhD).
+
+\bibitem{kumar2014EAGErank}
+Rajiv Kumar, Aleksandr~Y. Aravkin, Ernie Esser, Hassan Mansour, and Felix~J.
+  Herrmann.
+\newblock {SVD}-free low-rank matrix factorization : wavefield reconstruction
+  via jittered subsampling and reciprocity.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{rajiv2012SEGFRM}
+Rajiv Kumar, Aleksandr~Y. Aravkin, and Felix~J. Herrmann.
+\newblock Fast methods for rank minimization with applications to seismic-data
+  interpolation.
+\newblock Technical Report TR-EOAS-2012-3, Department of Earth and Ocean
+  Sciences, University of British Columbia, Vancouver, 04 2012.
+
+\bibitem{kumar2013EAGEsind}
+Rajiv Kumar, Aleksandr~Y. Aravkin, Hassan Mansour, Ben Recht, and Felix~J.
+  Herrmann.
+\newblock Seismic data interpolation and denoising using {SVD}-free low-rank
+  matrix factorization.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2013.
+
+\bibitem{kumar2018SEGlreiv}
+Rajiv Kumar, Marie Graff-Kray, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Low-rank representation of extended image volumes––applications
+  to imaging and velocity continuation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4418--4422,
+  10 2018.
+\newblock (SEG, Anaheim).
+
+\bibitem{kumar2018toi}
+Rajiv Kumar, Marie Graff-Kray, Ivan Vasconcelos, and Felix~J. Herrmann.
+\newblock Target-oriented imaging using extended image volumes—a low-rank
+  factorization approach.
+\newblock {\em Geophysical Prospecting}, 67(5):1312--1328, 2019.
+\newblock (Geophysical Prospecting).
+
+\bibitem{kumar2016bls}
+Rajiv Kumar, Oscar Lopez, Damek Davis, Aleksandr~Y. Aravkin, and Felix~J.
+  Herrmann.
+\newblock Beating level-set methods for {5D} seismic data interpolation: a
+  primal-dual alternating approach.
+\newblock {\em IEEE Transactions on Computational Imaging}, 04 2017.
+\newblock (published online in IEEE Transactions on Computational Imaging).
+
+\bibitem{kumar2014SEGmcu}
+Rajiv Kumar, Oscar Lopez, Ernie Esser, and Felix~J. Herrmann.
+\newblock Matrix completion on unstructured grids : 2-d seismic data
+  regularization and interpolation.
+\newblock Technical Report TR-EOAS-2014-3, UBC, 04 2014.
+
+\bibitem{kumar2015EAGEmcu}
+Rajiv Kumar, Oscar Lopez, Ernie Esser, and Felix~J. Herrmann.
+\newblock Matrix completion on unstructured grids : {2-D} seismic data
+  regularization and interpolation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE, Madrid).
+
+\bibitem{kumar2013SEGHSS}
+Rajiv Kumar, Hassan Mansour, Aleksandr~Y. Aravkin, and Felix~J. Herrmann.
+\newblock Reconstruction of seismic wavefields via low-rank matrix
+  factorization in the hierarchical-separable matrix representation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~32, pages
+  3628--3633, 09 2013.
+
+\bibitem{kumar2017EAGEdha}
+Rajiv Kumar, Nick Moldoveanu, and Felix~J. Herrmann.
+\newblock Denoising high-amplitude cross-flow noise using curvelet-based stable
+  principle component pursuit.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2017.
+\newblock (EAGE, Paris).
+
+\bibitem{kumar2018EAGEcsb}
+Rajiv Kumar, Shashin Sharan, Nick Moldoveanu, and Felix~J. Herrmann.
+\newblock Compressed sensing based land simultaneous acquisition using encoded
+  sweeps.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2018.
+\newblock (EAGE, Copenhagen).
+
+\bibitem{kumar2016SEGtjm}
+Rajiv Kumar, Shashin Sharan, Haneet Wason, and Felix~J. Herrmann.
+\newblock Time-jittered marine acquisition---a rank-minimization approach for
+  {5D} source separation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 119--123, 10
+  2016.
+\newblock (SEG, Dallas).
+
+\bibitem{kumar2014GEOPemc}
+Rajiv Kumar, Curt~Da Silva, Okan Akalin, Aleksandr~Y. Aravkin, Hassan Mansour,
+  Ben Recht, and Felix~J. Herrmann.
+\newblock Efficient matrix completion for seismic data reconstruction.
+\newblock {\em Geophysics}, 80(5):V97--V114, 09 2015.
+\newblock (Geophysics).
+
+\bibitem{kumar2015IIPFWIrmb}
+Rajiv Kumar, Curt~Da Silva, Oscar Lopez, Aleksandr~Y. Aravkin, Hassan Mansour,
+  Haneet Wason, Ernie Esser, and Felix~J. Herrmann.
+\newblock Rank minimization based seismic data processing and inversion.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{kumar2015CSEGlse}
+Rajiv Kumar, Ning Tu, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Least-squares extended imaging with surface-related multiples.
+\newblock In {\em CSEG Annual Conference Proceedings}, 05 2015.
+\newblock (CSEG, Calgary).
+
+\bibitem{kumar2015EAGElse}
+Rajiv Kumar, Ning Tu, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Least-squares extended imaging with surface-related multiples.
+\newblock Technical Report TR-EOAS-2015-1, UBC, 01 2015.
+
+\bibitem{kumar2013SEGAVA}
+Rajiv Kumar, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock {AVA} analysis and geological dip estimation via two-way
+  wave-equation based extended images.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~32, pages
+  423--427, 09 2013.
+
+\bibitem{kumar2013SEGMVA}
+Rajiv Kumar, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Efficient {WEMVA} using extended images.
+\newblock In {\em SEG Workshop on Advances in Model Building, Imaging, and FWI;
+  Houston}, 09 2013.
+
+\bibitem{kumar2014EAGEeia}
+Rajiv Kumar, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Extended images in action: efficient {WEMVA} via randomized probing.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{kumar2015sss}
+Rajiv Kumar, Haneet Wason, and Felix~J. Herrmann.
+\newblock Source separation for simultaneous towed-streamer marine acquisition
+  --- a compressed sensing approach.
+\newblock {\em Geophysics}, 80(6):WD73--WD88, 11 2015.
+\newblock (Geophysics).
+
+\bibitem{kumar2015EAGEtjm}
+Rajiv Kumar, Haneet Wason, and Felix~J. Herrmann.
+\newblock Time-jittered marine acquisition: low-rank v/s sparsity.
+\newblock Technical Report TR-EOAS-2015-2, UBC, 01 2015.
+
+\bibitem{kumar2017hrc}
+Rajiv Kumar, Haneet Wason, Shashin Sharan, and Felix~J. Herrmann.
+\newblock Highly repeatable {3D} compressive full-azimuth towed-streamer
+  time-lapse acquisition --- a numerical feasibility study at scale.
+\newblock {\em The Leading Edge}, 36(8):677--687, 08 2017.
+\newblock (The Leading Edge).
+
+\bibitem{kumar2008SINBADcd}
+Vishal Kumar.
+\newblock Curvelet denoising.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{kumar2008SINBADcrd}
+Vishal Kumar.
+\newblock Curvelet-regularized deconvolution.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{kumar09THins}
+Vishal Kumar.
+\newblock Incoherent noise suppression and deconvolution using curvelet-domain
+  sparsity.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 06
+  2009.
+\newblock (MSc).
+
+\bibitem{kumar2008CSEGcrs}
+Vishal Kumar and Felix~J. Herrmann.
+\newblock Curvelet-regularized seismic deconvolution.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2008.
+
+\bibitem{kumar2008SEGdwc}
+Vishal Kumar and Felix~J. Herrmann.
+\newblock Deconvolution with curvelet-domain sparsity.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~27, pages
+  1996--2000. SEG, 11 2008.
+
+\bibitem{kumar2009SEGins}
+Vishal Kumar and Felix~J. Herrmann.
+\newblock Incoherent noise suppression with curvelet-domain sparsity.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~28, pages
+  3356--3360. SEG, 10 2009.
+
+\bibitem{kumar2010TNPecr}
+Vishal Kumar, Jounada Oueity, Ron Clowes, and Felix~J. Herrmann.
+\newblock Enhancing crustal reflection data through curvelet denoising.
+\newblock {\em Technophysics}, 508(1-4):106--116, 07 2011.
+
+\bibitem{lago2015EAGEtrg}
+Rafael Lago and Felix~J. Herrmann.
+\newblock Towards a robust geometric multigrid scheme for {Helmholtz} equation.
+\newblock Technical Report TR-EOAS-2015-3, UBC, 01 2015.
+
+\bibitem{lago2014CMCCRMN}
+Rafael Lago, Art Petrenko, Zhilong Fang, and Felix~J. Herrmann.
+\newblock {CRMN} method for solving time-harmonic wave equation.
+\newblock In {\em Copper Mountain Conference}, 04 2014.
+\newblock (Copper Mountain).
+
+\bibitem{lago2014EAGEfst}
+Rafael Lago, Art Petrenko, Zhilong Fang, and Felix~J. Herrmann.
+\newblock Fast solution of time-harmonic wave-equation for full-waveform
+  inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{lange2016dtg}
+Michael Lange, Navjot Kukreja, Mathias Louboutin, Fabio Luporini,
+  Felippe~Vieira Zacarias, Vincenzo Pandolfo, Paulius Velesko, Paulius Kazakas,
+  and Gerard Gorman.
+\newblock Devito: {Towards} a generic finite difference {DSL} using symbolic
+  python.
+\newblock In {\em 6th Workshop on Python for High-Performance and Scientific
+  Computing}, pages 67--75, 11 2016.
+\newblock (PyHPC, Utah).
+
+\bibitem{lange2017SCIPYofd}
+Michael Lange, Navjot Kukreja, Fabio Luporini, Mathias Louboutin, Charles
+  Yount, Jan H\"uckelheim, and Gerard Gorman.
+\newblock Optimised finite difference computation from symbolic equations.
+\newblock In {\em Python in Science Conference Proceedings}, pages 89--96, 07
+  2017.
+\newblock (SciPy, Texas).
+
+\bibitem{lebed2008SINBADaoc1}
+Evgeniy Lebed.
+\newblock Applications of curvelets/surfacelets to seismic data processing.
+\newblock In {\em SINBAD}, 2008.
+
+\bibitem{lebed2008SINBADaoc}
+Evgeniy Lebed.
+\newblock Curvelet / {Surfacelet} comparison.
+\newblock In {\em SINBAD}, 2008.
+
+\bibitem{lebed08THssr}
+Evgeniy Lebed.
+\newblock Sparse signal recovery in a transform domain.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 08
+  2008.
+\newblock (MSc).
+
+\bibitem{lebed2008SEGhggt}
+Evgeniy Lebed and Felix~J. Herrmann.
+\newblock A hitchhiker{\textquoteright}s guide to the galaxy of
+  transform-domain sparsification.
+\newblock In {\em SEG Technical Program Expanded Abstracts}. SEG, 2008.
+
+\bibitem{lebed08TRhgg}
+Evgeniy Lebed and Felix~J. Herrmann.
+\newblock A hitchhiker's guide to the galaxy of transform-domain
+  sparsification.
+\newblock Technical Report TR-EOAS-2008-4, UBC Earth and Ocean Sciences
+  Department, 2008.
+
+\bibitem{li2015THsps}
+Xiang Li.
+\newblock {\em Sparsity promoting seismic imaging and full-waveform inversion}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 07 2015.
+\newblock (PhD).
+
+\bibitem{li2011EAGEfwirr}
+Xiang Li, Aleksandr~Y. Aravkin, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Full-waveform inversion with randomized {L1} recovery for the model
+  updates.
+\newblock In {\em EAGE Annual Conference Proceedings}, 05 2011.
+
+\bibitem{Li11TRfrfwi}
+Xiang Li, Aleksandr~Y. Aravkin, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Fast randomized full-waveform inversion with compressive sensing.
+\newblock {\em Geophysics}, 77(3):A13--A17, 05 2012.
+
+\bibitem{li2015GEOPmgn}
+Xiang Li, Ernie Esser, and Felix~J. Herrmann.
+\newblock Modified {Gauss}-{Newton} full-waveform inversion explained---why
+  sparsity-promoting updates do matter.
+\newblock {\em Geophysics}, 81(3):R125--R138, 05 2016.
+\newblock (Geophysics).
+
+\bibitem{li2010SEGfwi}
+Xiang Li and Felix~J. Herrmann.
+\newblock Full-waveform inversion from compressively recovered model updates.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~29, pages
+  1029--1033. SEG, 10 2010.
+
+\bibitem{li2011CSEGefimag}
+Xiang Li and Felix~J. Herrmann.
+\newblock Efficient full-waveform inversion with marine acquisition geometry.
+\newblock In {\em CSEG Annual Conference Proceedings}, 02 2012.
+
+\bibitem{li2012SEGspmamp}
+Xiang Li and Felix~J. Herrmann.
+\newblock Sparsity-promoting migration accelerated by message passing.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~31, pages
+  1--6. SEG, 11 2012.
+
+\bibitem{li2013EAGEwebmplijsp}
+Xiang Li and Felix~J. Herrmann.
+\newblock Wave-equation based multi-parameter linearized inversion with
+  joint-sparsity promotion.
+\newblock Technical Report TR-EOAS-2013-1, UBC, 01 2013.
+
+\bibitem{li2011SBGFmgnsu}
+Xiang Li, Felix~J. Herrmann, Tristan van Leeuwen, and Aleksandr~Y. Aravkin.
+\newblock Modified {Gauss-Newton} with sparse updates.
+\newblock In {\em SBGF}. SBGF, 2011.
+
+\bibitem{li2013SEGodmvdaiedwawe}
+Xiang Li, Anais Tamalet, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Optimization driven model-space versus data-space approaches to
+  invert elastic data with the acoustic wave equation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~32, pages
+  986--990, 09 2013.
+
+\bibitem{li2015THwmd}
+Xiaowei Li.
+\newblock A weighted $\ell_1$-minimization for distributed compressive sensing.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 09
+  2015.
+\newblock (MSc).
+
+\bibitem{lin2006SINBADci}
+Tim~T.Y. Lin.
+\newblock Compressed imaging.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{lin08THccl}
+Tim~T.Y. Lin.
+\newblock Compressed computation of large-scale wavefield extrapolation in
+  inhomogeneous medium.
+\newblock masters, University of British Columbia, 04 2008.
+
+\bibitem{lin2015THpes}
+Tim~T.Y. Lin.
+\newblock {\em Primary estimation with sparsity-promoting bi-convex
+  optimization}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 10 2015.
+\newblock (PhD).
+
+\bibitem{lin2009SEGcsf}
+Tim~T.Y. Lin, Yogi~A. Erlangga, and Felix~J. Herrmann.
+\newblock Compressive simultaneous full-waveform simulation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~28, pages
+  2577--2581. SEG, 10 2009.
+
+\bibitem{lin2007GEOPcwe}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Compressed wavefield extrapolation.
+\newblock {\em Geophysics}, 72(5):SM77--SM93, 08 2007.
+
+\bibitem{lin2007SEGcwe1}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Compressed wavefield extrapolation with curvelets.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~26, pages
+  1997--2001, 2007.
+
+\bibitem{lin2008SINBADcwe}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Compressed wavefield extrapolation.
+\newblock In {\em SINBAD}, 2008.
+
+\bibitem{lin2009EAGEdsa}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Designing simultaneous acquisitions with compressive sensing.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2009.
+
+\bibitem{lin2009SEGucs}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Unified compressive sensing framework for simultaneous acquisition
+  with primary estimation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~28, pages
+  3113--3117, 10 2009.
+
+\bibitem{lin2010EAGEseo}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Stabilized estimation of primaries via sparse inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2010.
+
+\bibitem{lin2011EAGEepsic}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Estimating primaries by sparse inversion in a curvelet-like
+  representation domain.
+\newblock In {\em EAGE Annual Conference Proceedings}, 05 2011.
+
+\bibitem{lin2011SEGrssde}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Robust source signature deconvolution and the estimation of primaries
+  by sparse inversion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~30, pages
+  4354--4359. Dept. of Earth and Ocean Sciences, University of British
+  Columbia, 09 2011.
+
+\bibitem{lin2013EAGEcsd}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Cosparse seismic data interpolation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2013.
+
+\bibitem{lin2013GEOPrepsi}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Robust estimation of primaries by sparse inversion via one-norm
+  minimization.
+\newblock {\em Geophysics}, 78(3):R133--R150, 05 2013.
+
+\bibitem{lin2014SEGmdg}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Mitigating data gaps in the estimation of primaries by sparse
+  inversion without data reconstruction.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4157--4161,
+  10 2014.
+\newblock (SEG).
+
+\bibitem{lin2014EAGEmas}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Multilevel acceleration strategy for the robust estimation of
+  primaries by sparse inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{lin2015IIPFWIsdh}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock The student-driven {HPC} environment at {SLIM}.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{lin2015scatterEPSI}
+Tim~T.Y. Lin and Felix~J. Herrmann.
+\newblock Estimation of primaries by sparse inversion with scattering-based
+  multiple predictions for data with large gaps.
+\newblock {\em Geophysics}, 81(3):V183--V197, 05 2016.
+\newblock (Geophysics).
+
+\bibitem{lin2009DELPHIrwi}
+Tim~T.Y. Lin, Felix~J. Herrmann, and Yogi~A. Erlangga.
+\newblock Randomized wavefield inversion.
+\newblock In {\em DELPHI}, 2009.
+\newblock Presented at the DELPHI meeting. The Hague.
+
+\bibitem{lin2008SEGiso}
+Tim~T.Y. Lin, Evgeniy Lebed, Yogi~A. Erlangga, and Felix~J. Herrmann.
+\newblock Interpolating solutions of the {Helmholtz} equation with compressed
+  sensing.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~27, pages
+  2122--2126. SEG, 01 2008.
+
+\bibitem{lin2015IIPFWIsws}
+Tim~T.Y. Lin, Curt~Da Silva, and Felix~J. Herrmann.
+\newblock Software and workflows at {SLIM}/{SINBAD}.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{lin2010SEGspm}
+Tim~T.Y. Lin, Ning Tu, and Felix~J. Herrmann.
+\newblock Sparsity-promoting migration from surface-related multiples.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~29, pages
+  3333--3337. SEG, 10 2010.
+
+\bibitem{lin2013SEGdss}
+Tim~T.Y. Lin, Haneet Wason, and Felix~J. Herrmann.
+\newblock Dense shot-sampling via time-jittered marine sources.
+\newblock In {\em SEG Workshop on Simultaneous Sources; Houston}, 09 2013.
+
+\bibitem{liu2018ssi}
+Michelle Liu, Rajiv Kumar, Eldad Haber, and Aleksandr~Y. Aravkin.
+\newblock Simultaneous-shot inversion for pde-constrained optimization problems
+  with missing data.
+\newblock {\em Inverse Problems}, 35(2):025003, 2018.
+\newblock (Inverse Problems).
+
+\bibitem{lopez2015EAGErma}
+Oscar Lopez, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Rank minimization via alternating optimization: seismic data
+  interpolation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE, Madrid).
+
+\bibitem{lopez2015IEEEogl}
+Oscar Lopez, Rajiv Kumar, Ozgur Yilmaz, and Felix~J. Herrmann.
+\newblock Off-the-grid low-rank matrix recovery and seismic data
+  reconstruction.
+\newblock {\em IEEE Journal of Selected Topics in Signal Processing},
+  10(4):658--671, 06 2016.
+\newblock (IEEE Journal of Selected Topics in Signal Processing).
+
+\bibitem{lopez2016CMSogl}
+Oscar Lopez, Rajiv Kumar, Ozgur Yilmaz, and Felix~J. Herrmann.
+\newblock Off-the-grid low-rank matrix recovery: seismic data reconstruction.
+\newblock In {\em Canadian Mathematical Society Summer Meeting}, 06 2016.
+\newblock (CMS, Edmonton, Alberta).
+
+\bibitem{lopez2015SEGWSsfm}
+Oscar Lopez, Haneet Wason, Curt~Da Silva, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock {SVD}-free matrix completion in randomized marine acquisition.
+\newblock In {\em SEG Workshop on Rank-Reduction and Other Sparse Transform
+  Methods with Application to Data Reconstruction, De-Noising, De-Blending and
+  Imaging; New Orleans}, 10 2015.
+\newblock (SEG, New Orleans).
+
+\bibitem{louboutin2016SEGocp}
+Mathias Louboutin, Gerard Gorman, and Felix~J. Herrmann.
+\newblock Optimizing the computational performance and maintainability of
+  time-domain modelling---leveraging multiple right-hand-sides.
+\newblock Technical Report TR-EOAS-2016-2, UBC, 06 2016.
+
+\bibitem{louboutin2016OGHPCocp}
+Mathias Louboutin, Gerard Gorman, and Felix~J. Herrmann.
+\newblock Optimizing the computational performance of time-domain
+  modelling---leveraging multiple right-hand-sides.
+\newblock Technical Report TR-EOAS-2017-2, UBC, 2017.
+
+\bibitem{louboutin2017EAGEdns}
+Mathias Louboutin, Llu\'{i}s Guasch, and Felix~J. Herrmann.
+\newblock Data normalization strategies for full-waveform inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2017.
+\newblock (EAGE, Paris).
+
+\bibitem{louboutin2015SEGtcs}
+Mathias Louboutin and Felix~J. Herrmann.
+\newblock Time compressively sampled full-waveform inversion with stochastic
+  optimization.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 5153--5157,
+  10 2015.
+\newblock (SEG, New Orleans).
+
+\bibitem{louboutin2017EAGEess}
+Mathias Louboutin and Felix~J. Herrmann.
+\newblock Extending the search space of time-domain adjoint-state {FWI} with
+  randomized implicit time shifts.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2017.
+\newblock (EAGE, Paris).
+
+\bibitem{louboutin2016ppf}
+Mathias Louboutin, Michael Lange, Felix~J. Herrmann, Navjot Kukreja, and Gerard
+  Gorman.
+\newblock Performance prediction of finite-difference solvers for different
+  computer architectures.
+\newblock {\em Computers \& Geosciences}, 105:148--157, 08 2017.
+\newblock (Computers \& Geosciences).
+
+\bibitem{louboutin2017SIAMras}
+Mathias Louboutin, Michael Lange, Navjot Kukreja, Fabio Luporini, Felix~J.
+  Herrmann, and Gerard Gorman.
+\newblock Raising the abstraction to separate concerns: enabling different
+  physics for geophysical exploration.
+\newblock In {\em SIAM Conference on Computational Science and Engineering},
+  02-03 2017.
+\newblock (SIAM Conference on Computational Science and Engineering, Atlanta).
+
+\bibitem{louboutin2018dae}
+Mathias Louboutin, Michael Lange, Fabio Luporini, Navjot Kukreja, Philipp~A.
+  Witte, Felix~J. Herrmann, Paulius Velesko, and Gerard~J. Gorman.
+\newblock Devito (v3.1.0): an embedded domain-specific language for finite
+  differences and geophysical exploration.
+\newblock {\em Geoscientific Model Development}, 2019.
+\newblock (Geoscientific Model Development).
+
+\bibitem{louboutin2015IIPFWIrwi}
+Mathias Louboutin, Bas Peters, Brendan~R. Smithyman, and Felix~J. Herrmann.
+\newblock Regularizing waveform inversion by projections onto convex sets.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{louboutin2018SEGeow}
+Mathias Louboutin, Philipp~A. Witte, and Felix~J. Herrmann.
+\newblock Effects of wrong adjoints for rtm in tti media.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 331--335, 10
+  2018.
+\newblock (SEG, Anaheim).
+
+\bibitem{louboutin2017fwi}
+Mathias Louboutin, Philipp~A. Witte, Michael Lange, Navjot Kukreja, Fabio
+  Luporini, Gerard Gorman, and Felix~J. Herrmann.
+\newblock Full-waveform inversion - part 1: forward modeling.
+\newblock {\em The Leading Edge}, 36(12):1033--1036, 12 2017.
+\newblock (The Leading Edge).
+
+\bibitem{louboutin2017fwip2}
+Mathias Louboutin, Philipp~A. Witte, Michael Lange, Navjot Kukreja, Fabio
+  Luporini, Gerard Gorman, and Felix~J. Herrmann.
+\newblock Full-waveform inversion - part 2: adjoint modeling.
+\newblock {\em The Leading Edge}, 37(1):69--72, 01 2018.
+\newblock (The Leading Edge).
+
+\bibitem{luporini2018aap}
+FABIO LUPORINI, MICHAEL LANGE, MATHIAS LOUBOUTIN, NAVJOT KUKREJA, JAN
+  HUCKELHEIM, CHARLES YOUNT, PHILIPP~A. WITTE, PAUL H.~J. KELLY, GERARD~J.
+  GORMAN, and FELIX~J. HERRMANN.
+\newblock Architecture and performance of devito, a system for automated
+  stencil computation.
+\newblock Submitted to SIAM Journal on Scientific Computing on July 9, 2018.,
+  2018.
+
+\bibitem{mansour2012SSPwspgl1}
+Hassan Mansour.
+\newblock Beyond $\ell_1$ norm minimization for sparse signal recovery.
+\newblock In {\em 2012 IEEE Statistical Signal Processing Workshop (SSP)
+  (SSP'12)}, Ann Arbor, Michigan, USA, 03 2012. IEEE.
+
+\bibitem{mansour2013GEOPiwr}
+Hassan Mansour, Felix~J. Herrmann, and Ozgur Yilmaz.
+\newblock Improved wavefield reconstruction from randomized sampling via
+  weighted one-norm minimization.
+\newblock {\em Geophysics}, 78(5):V193--V206, 08 2013.
+
+\bibitem{mansour2011SBGFcspsma}
+Hassan Mansour, Haneet Wason, Tim~T.Y. Lin, and Felix~J. Herrmann.
+\newblock A compressive sensing perspective on simultaneous marine acquisition.
+\newblock In {\em SBGF}. SBGF, 2011.
+
+\bibitem{Mansour11TRssma}
+Hassan Mansour, Haneet Wason, Tim~T.Y. Lin, and Felix~J. Herrmann.
+\newblock Randomized marine acquisition with compressive sampling matrices.
+\newblock {\em Geophysical Prospecting}, 60(4):648--662, 07 2012.
+
+\bibitem{Mansour11TRwmmw}
+Hassan Mansour and Ozgur Yilmaz.
+\newblock Weighted -$\ell_1$ minimization with multiple weighting sets.
+\newblock In {\em Proc. SPIE}, volume 8138, pages 813809--813809--13, 09 2011.
+
+\bibitem{mansour2012ICASSadapt}
+Hassan Mansour and Ozgur Yilmaz.
+\newblock Adaptive compressed sensing for video acquisition.
+\newblock In {\em ICASSP}, 2012.
+
+\bibitem{mansour2012ICASSsupport}
+Hassan Mansour and Ozgur Yilmaz.
+\newblock Support driven reweighted $\ell_1$ minimization.
+\newblock In {\em ICASSP}, 2012.
+
+\bibitem{maysami2006SINBADrro}
+Mohammad Maysami.
+\newblock Recent results on seismic deconvolution.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{maysami08THlcs}
+Mohammad Maysami.
+\newblock Lithology constraints from seismic waveforms: application to opal-{A}
+  to opal-{CT} transition.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 02
+  2008.
+\newblock (MSc).
+
+\bibitem{maysami2007EAGEsrc}
+Mohammad Maysami and Felix~J. Herrmann.
+\newblock Seismic reflector characterization by a multiscale
+  detection-estimation method.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2007.
+
+\bibitem{maysami2008SEGlcf}
+Mohammad Maysami and Felix~J. Herrmann.
+\newblock Lithological constraints from seismic waveforms: application to
+  opal-{A} to opal-{CT} transition.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~27, pages
+  2011--2015. SEG, 11 2008.
+
+\bibitem{miao2014THesi}
+Lina Miao.
+\newblock Efficient seismic imaging with spectral projector and joint sparsity.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 03
+  2014.
+\newblock (MSc).
+
+\bibitem{miao2013CSEGaospsa}
+Lina Miao and Felix~J. Herrmann.
+\newblock Acceleration on sparse promoting seismic applications.
+\newblock In {\em CSEG Annual Conference Proceedings}, 05 2013.
+
+\bibitem{miao2014SEGrhss}
+Lina Miao, Polina Zheglova, and Felix~J. Herrmann.
+\newblock Randomized {HSS} acceleration for full-wave-equation depth stepping
+  migration.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 3752--3756,
+  10 2014.
+\newblock (SEG).
+
+\bibitem{modzelewski2006SINBADdas}
+Henryk Modzelewski.
+\newblock Design and specifications for {SLIM{\textquoteright}s} software
+  framework.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{modzelewski2008SINBADdas}
+Henryk Modzelewski.
+\newblock Design and specifications for {SLIM{\textquoteright}s} software
+  framework.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{moghaddam2006SINBADioa}
+Peyman~P. Moghaddam.
+\newblock Imaging operator approximation using curvelets.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{moghaddam2006SINBADsac}
+Peyman~P. Moghaddam.
+\newblock Sparsity- and continuity-promoting norms for seismic images.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{moghaddam2008SINBADrtm}
+Peyman~P. Moghaddam.
+\newblock Reverse-time migration amplitude recovery with curvelets.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{moghaddam10phd}
+Peyman~P. Moghaddam.
+\newblock {\em Curvelet-based migration amplitude recovery}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 05 2010.
+\newblock (PhD).
+
+\bibitem{moghaddam2008SEGcbm}
+Peyman~P. Moghaddam, Cody~R. Brown, and Felix~J. Herrmann.
+\newblock Curvelet-based migration preconditioning.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~27, pages
+  2211--2215. SEG, 11 2008.
+
+\bibitem{moghaddam2004SEGmpw}
+Peyman~P. Moghaddam and Felix~J. Herrmann.
+\newblock Migration preconditioning with curvelets.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~23, pages
+  2204--2207. SEG, 2004.
+
+\bibitem{moghaddam2010SEGrfw}
+Peyman~P. Moghaddam and Felix~J. Herrmann.
+\newblock Randomized full-waveform inversion: a dimenstionality-reduction
+  approach.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~29, pages
+  977--982. SEG, 10 2010.
+
+\bibitem{moghaddam2007CSEGmar}
+Peyman~P. Moghaddam, Felix~J. Herrmann, and Christiaan~C. Stolk.
+\newblock Migration amplitude recovery using curvelets.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2007.
+
+\bibitem{moghaddam2007SEGrsi}
+Peyman~P. Moghaddam, Felix~J. Herrmann, and Christiaan~C. Stolk.
+\newblock Robust seismic-images amplitude recovery using curvelets.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~26, pages
+  2225--2229. SEG, 2007.
+
+\bibitem{moghaddam2007EAGEsar}
+Peyman~P. Moghaddam, Felix~J. Herrmann, and Christiaan~C. Stolk.
+\newblock Seismic amplitude recovery with curvelets.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2007.
+
+\bibitem{moghaddam2007CSEGsac}
+Peyman~P. Moghaddam, Felix~J. Herrmann, and Christiaan~C. Stolk.
+\newblock Sparsity and continuity enhancing seismic imaging.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2007.
+
+\bibitem{moghaddam2013GEOPnoa}
+Peyman~P. Moghaddam, Henk Keers, Felix~J. Herrmann, and Wim~A. Mulder.
+\newblock A new optimization approach for source-encoding full-waveform
+  inversion.
+\newblock {\em Geophysics}, 78(3):R125--R132, 05 2013.
+
+\bibitem{moldoveanu2018SEGcsbdl}
+Nick Moldoveanu, Philip Bilsby, John Quigley, Rajiv Kumar, and Felix~J.
+  Herrmann.
+\newblock Compressive sensing based design for land and obs surveys: The noise
+  issue.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 102--106, 10
+  2018.
+\newblock (SEG, Anaheim).
+
+\bibitem{oghenekohwo2017THetl}
+Felix Oghenekohwo.
+\newblock {\em Economic time-lapse seismic acquisition and imaging---{Reaping}
+  the benefits of randomized sampling with distributed compressive sensing}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 08 2017.
+\newblock (PhD).
+
+\bibitem{oghenekohwo2014EAGEtls}
+Felix Oghenekohwo, Ernie Esser, and Felix~J. Herrmann.
+\newblock Time-lapse seismic without repetition: reaping the benefits from
+  randomized sampling and joint recovery.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{oghenekohwo2013CSEGnratld}
+Felix Oghenekohwo and Felix~J. Herrmann.
+\newblock Assessing the need for repeatability in acquisition of time-lapse
+  data.
+\newblock In {\em CSEG Annual Conference Proceedings}, 05 2013.
+
+\bibitem{oghenekohwo2013SEGtlswrs}
+Felix Oghenekohwo and Felix~J. Herrmann.
+\newblock Time-lapse seismics with randomized sampling.
+\newblock Technical Report TR-EOAS-2013-3, UBC, 2013.
+
+\bibitem{oghenekohwo2015CSEGctl}
+Felix Oghenekohwo and Felix~J. Herrmann.
+\newblock Compressive time-lapse seismic data processing using shared
+  information.
+\newblock In {\em CSEG Annual Conference Proceedings}, 05 2015.
+\newblock (CSEG, Calgary).
+
+\bibitem{oghenekohwo2015PIMSntc}
+Felix Oghenekohwo and Felix~J. Herrmann.
+\newblock A new take on compressive time-lapse seismic acquisition, imaging and
+  inversion.
+\newblock In {\em PIMS Workshop on Advances in Seismic Imaging and Inversion},
+  05 2015.
+\newblock (PIMS Workshop on Advances in Seismic Imaging and Inversion,
+  University of Alberta, Edmonton).
+
+\bibitem{oghenekohwo2017hrt}
+Felix Oghenekohwo and Felix~J. Herrmann.
+\newblock Highly repeatable time-lapse seismic with distributed {Compressive}
+  {Sensing}---mitigating effects of calibration errors.
+\newblock {\em The Leading Edge}, 36(8):688--694, 08 2017.
+\newblock (The Leading Edge).
+
+\bibitem{oghenekohwo2017EAGEitl}
+Felix Oghenekohwo and Felix~J. Herrmann.
+\newblock Improved time-lapse data repeatability with randomized sampling and
+  distributed compressive sensing.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2017.
+\newblock (EAGE, Paris).
+
+\bibitem{oghenekohwo2015IIPFWItlf}
+Felix Oghenekohwo, Rajiv Kumar, Ernie Esser, and Felix~J. Herrmann.
+\newblock Time-lapse {FWI} with distributed compressed sensing.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{oghenekohwo2015EAGEuci}
+Felix Oghenekohwo, Rajiv Kumar, Ernie Esser, and Felix~J. Herrmann.
+\newblock Using common information in compressive time-lapse full-waveform
+  inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE, Madrid).
+
+\bibitem{oghenekohwo2014SEGrsw}
+Felix Oghenekohwo, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Randomized sampling without repetition in time-lapse surveys.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4848--4852,
+  10 2014.
+\newblock (SEG).
+
+\bibitem{oghenekohwo2016GEOPctl}
+Felix Oghenekohwo, Haneet Wason, Ernie Esser, and Felix~J. Herrmann.
+\newblock Low-cost time-lapse seismic with distributed compressive
+  sensing---{Part} 1: exploiting common information among the vintages.
+\newblock {\em Geophysics}, 82(3):P1--P13, 05 2017.
+\newblock (Geophysics).
+
+\bibitem{min2012EAGEefwi}
+Ju-Won Oh, Dong-Joo Min, and Felix~J. Herrmann.
+\newblock Frequency-domain elastic waveform inversion using weighting factors
+  related to source-deconvolved residuals.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2012.
+
+\bibitem{min2012CSEGrgfe}
+Ju-Won Oh, Dong-Joo Min, and Felix~J. Herrmann.
+\newblock Re-establishment of gradient in frequency-domain elastic waveform
+  inversion.
+\newblock In {\em CSEG Annual Conference Proceedings}, 02 2012.
+
+\bibitem{peters2019THiso}
+Bas Peters.
+\newblock {\em Intersections and sums of sets for the regularization of inverse
+  problems}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 05 2019.
+\newblock (PhD).
+
+\bibitem{peters2015SEGrwi}
+Bas Peters, Zhilong Fang, Brendan~R. Smithyman, and Felix~J. Herrmann.
+\newblock Regularizing waveform inversion by projections onto convex sets ---
+  application to the {2D} {Chevron} 2014 synthetic blind-test dataset.
+\newblock Technical Report TR-EOAS-2015-7, UBC, 06 2015.
+
+\bibitem{peters2015PRECONasl}
+Bas Peters, Chen Greif, and Felix~J. Herrmann.
+\newblock An algorithm for solving least-squares problems with a {Helmholtz}
+  block and multiple right-hand-sides.
+\newblock In {\em International Conference On Preconditioning Techniques For
+  Scientific And Industrial Applications}, 06 2015.
+\newblock (PRECON, The Netherlands).
+
+\bibitem{peters2014SEGsrh}
+Bas Peters and Felix~J. Herrmann.
+\newblock A sparse reduced hessian approximation for multi-parameter wavefield
+  reconstruction inversion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1206--1210,
+  10 2014.
+\newblock (SEG).
+
+\bibitem{peters2015SEGWSsew}
+Bas Peters and Felix~J. Herrmann.
+\newblock Simultaneous estimation of wavefields and medium parameters -
+  reduced-space versus full-space waveform inversion.
+\newblock In {\em SEG Workshop on The Limit of FWI in Subsurface Parameter
+  Recovery; New Orleans}, 10 2015.
+\newblock (SEG, New Orleans).
+
+\bibitem{peters2015AIPwri}
+Bas Peters and Felix~J. Herrmann.
+\newblock Wavefield-reconstruction inversion.
+\newblock In {\em Conference on Applied Inverse Problems}, 05 2015.
+\newblock (AIP, Helsinki).
+
+\bibitem{peters2016cvp}
+Bas Peters and Felix~J. Herrmann.
+\newblock Constraints versus penalties for edge-preserving full-waveform
+  inversion.
+\newblock {\em The Leading Edge}, 36(1):94--100, 01 2017.
+\newblock (The Leading Edge).
+
+\bibitem{peters2018CMSWMissrip}
+Bas Peters and Felix~J. Herrmann.
+\newblock Intersections and sums of sets for the regularization of inverse
+  problems.
+\newblock In {\em Canadian Mathematical Society Winter Meeting}, 12 2018.
+\newblock (CMSWM).
+
+\bibitem{peters2019SIAMGEOgmrip}
+Bas Peters and Felix~J. Herrmann.
+\newblock Generalized minkowski sets for the regularization of inverse
+  problems.
+\newblock In {\em SIAM Conference on Mathematical and Computational Issues in
+  the Geosciences}, 05 2019.
+\newblock (SIAM).
+
+\bibitem{peters2019SEGans}
+Bas Peters and Felix~J. Herrmann.
+\newblock A numerical solver for least-squares sub-problems in 3d wavefield
+  reconstruction inversion and related problem formulations.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1536--1540,
+  09 2019.
+\newblock (SEG, San Antonio).
+
+\bibitem{peters2015SIAMmfq}
+Bas Peters, Felix~J. Herrmann, and Chen Greif.
+\newblock Matrix-free quadratic-penalty methods for {PDE}-constrained
+  optimization.
+\newblock In {\em SIAM Conference on Computational Science and Engineering}, 03
+  2015.
+\newblock (SIAM, Salt Lake City).
+
+\bibitem{peters2014EAGEweb}
+Bas Peters, Felix~J. Herrmann, and Tristan van Leeuwen.
+\newblock Wave-equation based inversion with the penalty method: adjoint-state
+  versus wavefield-reconstruction inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{peters2015EAGErwi}
+Bas Peters, Brendan~R. Smithyman, and Felix~J. Herrmann.
+\newblock Regularizing waveform inversion by projection onto intersections of
+  convex sets.
+\newblock Technical Report TR-EOAS-2015-4, UBC, 01 2015.
+
+\bibitem{peters2018pmf}
+Bas Peters, Brendan~R. Smithyman, and Felix~J. Herrmann.
+\newblock Projection methods and applications for seismic nonlinear inverse
+  problems with multiple constraints.
+\newblock {\em Geophysics}, 2018.
+\newblock (Published online in Geophysics).
+
+\bibitem{peters2016SEGprs}
+Bas Peters, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Parallel reformulation of the sequential adjoint-state method.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1411--1415,
+  10 2016.
+\newblock (SEG, Dallas).
+
+\bibitem{petrenko2014THaih}
+Art Petrenko.
+\newblock Accelerating an iterative {Helmholtz} solver using reconfigurable
+  hardware.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 04
+  2014.
+\newblock (MSc).
+
+\bibitem{petrenko2014OGHPCaih}
+Art Petrenko, Felix~J. Herrmann, Diego Oriato, Simon Tilbury, and Tristan van
+  Leeuwen.
+\newblock Accelerating an iterative {Helmholtz} solver with {FPGAs}.
+\newblock In {\em OGHPC}, 03 2014.
+
+\bibitem{petrenko2013HPCSsaoc}
+Art Petrenko, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Software acceleration of {CARP}, an iterative linear solver and
+  preconditioner.
+\newblock HPCS, 06 2013.
+
+\bibitem{petrenko2013SEGsaoc}
+Art Petrenko, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Software acceleration of {CARP}, an iterative linear solver and
+  preconditioner.
+\newblock Technical Report TR-EOAS-2013-4, UBC, 2013.
+
+\bibitem{petrenko2014EAGEaih}
+Art Petrenko, Tristan van Leeuwen, Diego Oriato, Simon Tilbury, and Felix~J.
+  Herrmann.
+\newblock Accelerating an iterative {Helmholtz} solver with {FPGAs}.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{rizzuti2019SEGadf}
+Gabrio Rizzuti, Mathias Louboutin, Rongrong Wang, Emmanouil Daskalakis, and
+  Felix~J. Herrmann.
+\newblock A dual formulation for time-domain wavefield reconstruction
+  inversion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1480--1485,
+  09 2019.
+\newblock (SEG, San Antonio).
+
+\bibitem{rizzuti2019SIAMGStwri}
+Gabrio Rizzuti, Mathias Louboutin, Rongrong Wang, Emmanouil Daskalakis, and
+  Felix~J. Herrmann.
+\newblock A dual formulation for time-domain wavefield reconstruction
+  inversion.
+\newblock In {\em SIAM Conference on Mathematical and Computational Issues in
+  the Geosciences}, 03 2019.
+\newblock (SIAM GS).
+
+\bibitem{rizzuti2019EAGElis}
+Gabrio Rizzuti, Ali Siahkoohi, and Felix~J. Herrmann.
+\newblock Learned iterative solvers for the helmholtz equation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2019.
+\newblock (EAGE, Copenhagen).
+
+\bibitem{ross2008SINBADsit}
+Sean Ross-Ross.
+\newblock Seismic inversion through operator overloading.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{rossross07MNsda}
+Sean Ross-Ross, Henryk Modzelewski, Cody~R. Brown, and Felix~J. Herrmann.
+\newblock {\em {SLIMpy} development and programming interface for seismic
+  processing}, 2007.
+
+\bibitem{rossross08MNsai}
+Sean Ross-Ross, Henryk Modzelewski, and Felix~J. Herrmann.
+\newblock {\em {SLIMPy}: a python interface for unix-pipe based coordinate-free
+  scientific computing}, 07 2008.
+
+\bibitem{saab2008SINBADcps}
+Rayan Saab.
+\newblock Curvelet-based primary-multiple separation from a {Bayesian}
+  perspective.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{saab2008ICASSPssa}
+Rayan Saab, Rick Chartrand, and Ozgur Yilmaz.
+\newblock Stable sparse approximations via nonconvex optimization.
+\newblock In {\em ICASSP}. ICASSP, 2008.
+
+\bibitem{saab2007SEGcbp}
+Rayan Saab, Deli Wang, Ozgur Yilmaz, and Felix~J. Herrmann.
+\newblock Curvelet-based primary-multiple separation from a {Bayesian}
+  perspective.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~26, pages
+  2510--2514. SEG, 2007.
+
+\bibitem{saab2009SAMPTAnccs}
+Rayan Saab and Ozgur Yilmaz.
+\newblock A short note on non-convex compressed sensing.
+\newblock In {\em SAMPTA technical program}. SAMPTA, 2009.
+
+\bibitem{saab2008ACHAsrb}
+Rayan Saab and Ozgur Yilmaz.
+\newblock Sparse recovery by non-convex optimization - instance optimality.
+\newblock {\em Applied and Computational Harmonic Analysis}, 29(1):30--48, 07
+  2010.
+
+\bibitem{sastry2007SINBADnor}
+Challa~S. Sastry.
+\newblock Norm-one recovery from irregular sampled data.
+\newblock In {\em SINBAD 2007}, 2007.
+
+\bibitem{sastry2007SINBADrfu}
+Challa~S. Sastry, Gilles Hennenfent, and Felix~J. Herrmann.
+\newblock Recovery from unstructured data.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{challa2007EAGEsrf}
+Challa~S. Sastry, Gilles Hennenfent, and Felix~J. Herrmann.
+\newblock Signal reconstruction from incomplete and misplaced measurements.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2007.
+
+\bibitem{shahidi2009SEGcmf}
+Reza Shahidi and Felix~J. Herrmann.
+\newblock Curvelet-domain matched filtering with frequency-domain
+  regularization.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~28, pages
+  3645--3649. SEG, 10 2009.
+
+\bibitem{shahidi2013GPars}
+Reza Shahidi, Gang Tang, Jianwei Ma, and Felix~J. Herrmann.
+\newblock Application of randomized sampling schemes to curvelet-based
+  sparsity-promoting seismic data recovery.
+\newblock {\em Geophysical Prospecting}, 61(5):973--997, 09 2013.
+
+\bibitem{sharan2018IEEEIUSspoa}
+Shashin Sharan, Rajiv Kumar, Diego~S. Dumani, Mathias Louboutin, Rongrong Wang,
+  Stanislav Emelianov, and Felix~J. Herrmann.
+\newblock Sparsity-promoting photoacoustic imaging with source estimation.
+\newblock In {\em 2018 IEEE International Ultrasonics Symposium (IUS)}, pages
+  206--212, 10 2018.
+\newblock (IEEE IUS, Kobe).
+
+\bibitem{sharan2018SEGada}
+Shashin Sharan, Rajiv Kumar, Rongrong Wang, and Felix~J. Herrmann.
+\newblock A debiasing approach to microseismic.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2942--2946,
+  10 2018.
+\newblock (SEG, Anaheim).
+
+\bibitem{sharan2017SEGhrf}
+Shashin Sharan, Rongrong Wang, and Felix~J. Herrmann.
+\newblock High resolution fast microseismic source collocation and source time
+  function estimation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2778--2783,
+  09 2017.
+\newblock (SEG, Houston).
+
+\bibitem{sharan2018fsp}
+Shashin Sharan, Rongrong Wang, and Felix~J. Herrmann.
+\newblock Fast sparsity-promoting microseismic source estimation.
+\newblock {\em Geophysical Journal International}, 216(1):164--181, 01 2019.
+\newblock (Geophysical Journal International).
+
+\bibitem{sharan2016SEGspj}
+Shashin Sharan, Rongrong Wang, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Sparsity-promoting joint microseismic source collocation and
+  source-time function estimation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2574--2579,
+  10 2016.
+\newblock (SEG, Dallas).
+
+\bibitem{siahkoohi2018EAGEsdr}
+Ali Siahkoohi, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Seismic data reconstruction with generative adversarial networks.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2018.
+\newblock (EAGE, Copenhagen).
+
+\bibitem{siahkoohi2019SEGdlb}
+Ali Siahkoohi, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Deep-learning based ocean bottom seismic wavefield recovery.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2232--2237,
+  09 2019.
+\newblock (SEG, San Antonio).
+
+\bibitem{siahkoohi2019itl}
+Ali Siahkoohi, Mathias Louboutin, and Felix~J. Herrmann.
+\newblock The importance of transfer learning in seismic modeling and imaging.
+\newblock {\em Geophysics}, 2019.
+\newblock (Accepted in GEOPHYSICS).
+
+\bibitem{siahkoohi2018SEGcnn}
+Ali Siahkoohi, Mathias Louboutin, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Deep convolutional neural networks in prestack seismic---two
+  exploratory examples.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 2196--2200,
+  10 2018.
+\newblock (SEG, Anaheim).
+
+\bibitem{siahkoohi2019SEGsrm}
+Ali Siahkoohi, Dirk~J. Verschuur, and Felix~J. Herrmann.
+\newblock Surface-related multiple elimination with deep learning.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4629--4634,
+  09 2019.
+\newblock (SEG, San Antonio).
+
+\bibitem{dasilva2017THlso}
+Curt~Da Silva.
+\newblock {\em Large-scale optimization algorithms for missing data completion
+  and inverse problems}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 09 2017.
+\newblock (PhD).
+
+\bibitem{dasilva2013EAGEhtucktensor}
+Curt~Da Silva and Felix~J. Herrmann.
+\newblock Hierarchical {Tucker} tensor optimization - applications to {4D}
+  seismic data interpolation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2013.
+
+\bibitem{dasilva2013SAMPTAhtuck}
+Curt~Da Silva and Felix~J. Herrmann.
+\newblock Hierarchical {Tucker} tensor optimization - applications to tensor
+  completion.
+\newblock 07 2013.
+
+\bibitem{dasilva2013SEGhtuck}
+Curt~Da Silva and Felix~J. Herrmann.
+\newblock Structured tensor missing-trace interpolation in the {Hierarchical}
+  {Tucker} format.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~32, pages
+  3623--3627. SEG, 09 2013.
+
+\bibitem{dasilva2014EAGEhtucknoisy}
+Curt~Da Silva and Felix~J. Herrmann.
+\newblock Low-rank promoting transformations and tensor interpolation -
+  applications to seismic data denoising.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{dasilva2015WSLRigt}
+Curt~Da Silva and Felix~J. Herrmann.
+\newblock Irregular grid tensor completion.
+\newblock In {\em Workshop on Low-rank Optimization and Applications}, 06 2015.
+\newblock (Workshop on Low-rank Optimization and Applications, University of
+  Bonn, Germany).
+
+\bibitem{dasilva2015EAGEogt}
+Curt~Da Silva and Felix~J. Herrmann.
+\newblock Off the grid tensor completion for seismic data interpolation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE, Madrid).
+
+\bibitem{dasilva2014htuck}
+Curt~Da Silva and Felix~J. Herrmann.
+\newblock Optimization on the {Hierarchical} {Tucker} manifold - applications
+  to tensor completion.
+\newblock {\em Linear Algebra and its Applications}, 481:131--173, 09 2015.
+\newblock (Linear Algebra and its Applications).
+
+\bibitem{dasilva2016SEGuse}
+Curt~Da Silva and Felix~J. Herrmann.
+\newblock A unified {2D/3D} software environment for large scale time-harmonic
+  full waveform inversion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1169--1173,
+  10 2016.
+\newblock (SEG, Dallas).
+
+\bibitem{dasilva2017uls}
+Curt~Da Silva and Felix~J. Herrmann.
+\newblock A unified {2D/3D} large scale software environment for nonlinear
+  inverse problems.
+\newblock {\em ACM Transactions on Mathematical Software}, 2019.
+\newblock Accepted on January 27, 2019.
+
+\bibitem{silva2018alr}
+Curt~Da Silva, Yiming Zhang, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Applications of low-rank compressed seismic data to full waveform
+  inversion and extended image volumes.
+\newblock {\em Geophysics}, 2019.
+\newblock Accepted on January 22, 2019.
+
+\bibitem{smithyman2014SEGjfw}
+Brendan~R. Smithyman, Bas Peters, Bryan DeVault, and Felix~J. Herrmann.
+\newblock Joint full-waveform inversion of on-land surface and {VSP} data from
+  the {Permian} {Basin}.
+\newblock Technical Report TR-EOAS-2014-4, UBC, 04 2014.
+
+\bibitem{smithyman2015EAGEcwi}
+Brendan~R. Smithyman, Bas Peters, and Felix~J. Herrmann.
+\newblock Constrained waveform inversion of colocated {VSP} and surface seismic
+  data.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE, Madrid).
+
+\bibitem{tang2009SEGhdb}
+Gang Tang, Reza Shahidi, Felix~J. Herrmann, and Jianwei Ma.
+\newblock Higher dimensional blue-noise sampling schemes for curvelet-based
+  seismic data recovery.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~28, pages
+  191--195. SEG, 10 2009.
+
+\bibitem{tang09TRdtr}
+Gang Tang, Reza Shahidi, and Jianwei Ma.
+\newblock Design of two-dimensional randomized sampling schemes for
+  curvelet-based sparsity-promoting seismic data recovery.
+\newblock Technical Report TR-EOAS-2009-3, UBC Earth and Ocean Sciences
+  Department, 2009.
+
+\bibitem{tang2008CITEocs}
+Wen Tang, Jianwei Ma, and Felix~J. Herrmann.
+\newblock Optimized compressed sensing for curvelet-based seismic data
+  reconstruction.
+\newblock {\em CiteSeer}, 2008.
+
+\bibitem{thomson2006SINBADlss}
+Darren Thomson.
+\newblock Large-scale seismic data recovery by the parallel windowed curvelet
+  transform.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{thomson2006SINBADppe}
+Darren Thomson.
+\newblock {(P)SLIMPy}: parallel extension.
+\newblock In {\em SINBAD 2006}, 2006.
+
+\bibitem{thomson2006SEGpwfd}
+Darren Thomson, Gilles Hennenfent, Henryk Modzelewski, and Felix~J. Herrmann.
+\newblock A parallel windowed fast discrete curvelet transform applied to
+  seismic processing.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~25, pages
+  2767--2771. SEG, 2006.
+
+\bibitem{tschannen2014tdl}
+Valentin Tschannen, Zhilong Fang, and Felix~J. Herrmann.
+\newblock Time domain least squares migration and dimensionality reduction.
+\newblock Technical Report TR-EOAS-2014-9, UBC, 06 2014.
+
+\bibitem{tu2015THfis}
+Ning Tu.
+\newblock {\em Fast imaging with surface-related multiples}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 08 2015.
+\newblock (PhD).
+
+\bibitem{tu2013EAGElsm}
+Ning Tu, Aleksandr~Y. Aravkin, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Fast least-squares migration with multiples and source estimation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2013.
+
+\bibitem{tu2015GJIsem}
+Ning Tu, Aleksandr~Y. Aravkin, Tristan van Leeuwen, Tim~T.Y. Lin, and Felix~J.
+  Herrmann.
+\newblock Source estimation with surface-related multiples---fast
+  ambiguity-resolved seismic imaging.
+\newblock {\em Geophysical Journal International}, 205:1492--1511, 03 2016.
+\newblock (published online in Geophysical Journal International).
+
+\bibitem{tu2012SEGima}
+Ning Tu and Felix~J. Herrmann.
+\newblock Imaging with multiples accelerated by message passing.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~31, pages
+  1--6. SEG, 11 2012.
+
+\bibitem{tu2012EAGElsm}
+Ning Tu and Felix~J. Herrmann.
+\newblock Least-squares migration of full wavefield with source encoding.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2012.
+
+\bibitem{herrmann2014SEGWSfli}
+Ning Tu and Felix~J. Herrmann.
+\newblock Fast linearized inversion with surface-related multiples with source
+  estimation.
+\newblock In {\em SEG Workshop on Using Multiples as Signal for Imaging;
+  Denver}, 10 2014.
+\newblock (SEG Workshop, Denver).
+
+\bibitem{tu2014fis}
+Ning Tu and Felix~J. Herrmann.
+\newblock Fast imaging with surface-related multiples by sparse inversion.
+\newblock {\em Geophysical Journal International}, 201(1):304--317, 04 2015.
+\newblock (Geophysical Journal International).
+
+\bibitem{tu2015TLEfls}
+Ning Tu and Felix~J. Herrmann.
+\newblock Fast least-squares imaging with surface-related multiples:
+  application to a {North}-{Sea} data set.
+\newblock {\em The Leading Edge}, 34(7):788–794, 07 2015.
+\newblock (The Leading Edge).
+
+\bibitem{tu2015PIMSsls}
+Ning Tu and Felix~J. Herrmann.
+\newblock Sparse least-squares seismic imaging with source estimation utilizing
+  multiples.
+\newblock In {\em PIMS Workshop on Advances in Seismic Imaging and Inversion},
+  05 2015.
+\newblock (PIMS Workshop on Advances in Seismic Imaging and Inversion,
+  University of Alberta, Edmonton).
+
+\bibitem{tu2013SEGcle}
+Ning Tu, Xiang Li, and Felix~J. Herrmann.
+\newblock Controlling linearization errors in $\ell_1$ regularized inversion by
+  rerandomization.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~32, pages
+  4640--4644, 09 2013.
+
+\bibitem{tu2011SEGmult}
+Ning Tu, Tim~T.Y. Lin, and Felix~J. Herrmann.
+\newblock Migration with surface-related multiples from incomplete seismic
+  data.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~30, pages
+  3222--3227. SEG, 09 2011.
+
+\bibitem{tu2011EAGEspmsrm}
+Ning Tu, Tim~T.Y. Lin, and Felix~J. Herrmann.
+\newblock Sparsity-promoting migration with surface-related multiples.
+\newblock In {\em EAGE Annual Conference Proceedings}, 05 2011.
+
+\bibitem{tu2013SEGldi}
+Ning Tu, Tristan van Leeuwen, and Felix~J. Herrmann.
+\newblock Limitations of the deconvolutional imaging condition for two-way
+  propagators.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~32, pages
+  3916--3920, 09 2013.
+
+\bibitem{vandenberg2008IAMesr}
+Ewout {van den Berg}.
+\newblock Exact sparse reconstruction and neighbourly polytopes.
+\newblock In {\em IAM}, 2008.
+
+\bibitem{vandenberg2008SINBADsat}
+Ewout {van den Berg}.
+\newblock Sparco: A testing framework for sparse reconstruction.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{vandenberg07VONipo}
+Ewout van~den Berg and Michael~P. Friedlander.
+\newblock In pursuit of a root.
+\newblock Von Neumann Symposium, 07 2007.
+
+\bibitem{vandenberg2007SINBADipo1}
+Ewout {van den Berg} and Michael~P. Friedlander.
+\newblock In pursuit of a root.
+\newblock In {\em 2007 Von Neumann Symposium}, 2007.
+
+\bibitem{vandenberg07TRipr}
+Ewout {van den Berg} and Michael~P. Friedlander.
+\newblock In pursuit of a root.
+\newblock Technical Report TR-EOAS-2007-19, Department of Computer Science,
+  University of British Columbia, Vancouver, 06 2007.
+
+\bibitem{vandenberg07MNsat}
+Ewout {van den Berg} and Michael~P. Friedlander.
+\newblock {\em {SPARCO}: a toolbox for testing sparse reconstruction
+  algorithms}, 10 2007.
+
+\bibitem{berg2008SJSCpareto}
+Ewout {van den Berg} and Michael~P. Friedlander.
+\newblock Probing the {Pareto} frontier for basis pursuit solutions.
+\newblock {\em SIAM Journal on Scientific Computing}, 31(2):890--912, 01 2008.
+
+\bibitem{friedlander2009SCAIMspot}
+Ewout {van den Berg} and Michael~P. Friedlander.
+\newblock Spot: A linear-operator toolbox for matlab.
+\newblock In {\em SCAIM}, University of British Columbia, 2009. SCAIM Seminar.
+
+\bibitem{vandenberg2010IEEEter}
+Ewout {van den Berg} and Michael~P. Friedlander.
+\newblock Theoretical and empirical results for recovery from multiple
+  measurements.
+\newblock {\em IEEE Transactions on Information Theory}, 56(5):2516--2527, 05
+  2010.
+
+\bibitem{vandenberg2011SIAMsol}
+Ewout {van den Berg} and Michael~P. Friedlander.
+\newblock Sparse optimization with least-squares constraints.
+\newblock {\em SIAM Journal on Optimization}, 21(4):1201–1229, 11 2011.
+
+\bibitem{vandenberg2009ACMstf}
+Ewout {van den Berg}, Michael~P. Friedlander, Gilles Hennenfent, Felix~J.
+  Herrmann, Rayan Saab, and Ozgur Yilmaz.
+\newblock Sparco: a testing framework for sparse reconstruction.
+\newblock {\em ACM Transactions on Mathematical Software}, 35(4):1--16, 02
+  2009.
+
+\bibitem{vandenberg08gsv}
+Ewout {van den Berg}, Mark Schmidt, Michael~P. Friedlander, and K.~Murphy.
+\newblock Group sparsity via linear-time projection.
+\newblock Technical Report TR-2008-09, UBC - Department of Computer Science, 06
+  2008.
+
+\bibitem{vandenberg2009SLIMocf}
+Ewout {van den Berg}, Mark Schmidt, Michael~P. Friedlander, and K.~Murphy.
+\newblock Optimizing costly functions with simple constraints: a limited-memory
+  projected {Quasi-Newton} algorithm.
+\newblock In {\em SLIM}, volume~12 of {\em Twelfth International Conference on
+  Artificial Intelligence and Statistics}, 04 2009.
+
+\bibitem{vanderneut2012EAGEdecomp}
+Joost {van der Neut} and Felix~J. Herrmann.
+\newblock Up / down wavefield decomposition by sparse inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2012.
+
+\bibitem{vanderneut2013GJIirs}
+Joost {van der Neut} and Felix~J. Herrmann.
+\newblock Interferometric redatuming by sparse inversion.
+\newblock {\em Geophysical Journal International}, 192:666--670, 02 2013.
+
+\bibitem{vanderneut2012SEGirs}
+Joost {van der Neut}, Felix~J. Herrmann, and Kees Wapenaar.
+\newblock Interferometric redatuming with simultaneous and missing sources
+  using sparsity promotion in the curvelet domain.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~31, pages
+  1--7. SEG, 11 2012.
+
+\bibitem{vanleeuwen2011ICIAMcbmcwe}
+Tristan van Leeuwen.
+\newblock A correlation-based misfit criterion for wave-equation traveltime
+  tomography.
+\newblock In {\em ICIAM}. ICIAM 2011, 07 2011.
+\newblock Presented at ICIAM 2011, Vancouver BC.
+
+\bibitem{vanleeuwen2012CGMN}
+Tristan van Leeuwen.
+\newblock Fourier analysis of the {CGMN} method for solving the {Helmholtz}
+  equation.
+\newblock Technical Report TR-EOAS-2012-1, Department of Earth, Ocean and
+  Atmospheric Sciences, The University of British Columbia, Vancouver, 2012.
+
+\bibitem{vanleeuwen2012smii}
+Tristan van Leeuwen.
+\newblock A parallel matrix-free framework for frequency-domain seismic
+  modelling, imaging and inversion in matlab.
+\newblock Technical Report TR-EOAS-2012-5, 07 2012.
+
+\bibitem{vanleeuwen2013EAGErobustFWI}
+Tristan van Leeuwen, Aleksandr~Y. Aravkin, Henri Calandra, and Felix~J.
+  Herrmann.
+\newblock In which domain should we measure the misfit for robust full waveform
+  inversion?
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2013.
+
+\bibitem{vanLeeuwen2010IJGswi}
+Tristan van Leeuwen, Aleksandr~Y. Aravkin, and Felix~J. Herrmann.
+\newblock Seismic waveform inversion by stochastic optimization.
+\newblock {\em International Journal of Geophysics}, 2011, 12 2011.
+\newblock Article ID: 689041, 18pages.
+
+\bibitem{vanLeeuwen2014GEOPcav}
+Tristan van Leeuwen, Aleksandr~Y. Aravkin, and Felix~J. Herrmann.
+\newblock Comment on: “application of the variable projection scheme for
+  frequency-domain full-waveform inversion” (m. li, j. rickett, and a.
+  abubakar, geophysics, 78, no. 6, r249–r257).
+\newblock {\em Geophysics}, 79(3):X11--X17, 05 2014.
+\newblock (discussion by Tristan van Leeuwen, Aleksandr Y. Aravkin, and Felix
+  J. Herrmann).
+
+\bibitem{vanleeuwen2012EAGEcarpcg}
+Tristan van Leeuwen, Dan Gordon, Rachel Gordon, and Felix~J. Herrmann.
+\newblock Preconditioning the {Helmholtz} equation via row-projections.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2012.
+
+\bibitem{vanleeuwen2011SEGext}
+Tristan van Leeuwen and Felix~J. Herrmann.
+\newblock Probing the extended image volume.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~30, pages
+  4045--4050. SEG, 09 2011.
+
+\bibitem{vanleeuwen2011WAVESpeiv}
+Tristan van Leeuwen and Felix~J. Herrmann.
+\newblock Probing the extended image volume for seismic velocity inversion.
+\newblock In {\em WAVES}. Waves 2011, 07 2011.
+
+\bibitem{vanleeuwen2012SEGparallel}
+Tristan van Leeuwen and Felix~J. Herrmann.
+\newblock A parallel, object-oriented framework for frequency-domain wavefield
+  imaging and inversion.
+\newblock Technical Report TR-EOAS-2012-2, Department of Earth and Ocean
+  Sciences, University of British Columbia, Vancouver, 04 2012.
+
+\bibitem{vanleeuwen2012EAGEext}
+Tristan {van Leeuwen} and Felix~J. Herrmann.
+\newblock Wave-equation extended images: computation and velocity continuation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2012.
+
+\bibitem{VanLeeuwen11TRfwiwse}
+Tristan van Leeuwen and Felix~J. Herrmann.
+\newblock Fast waveform inversion without source encoding.
+\newblock {\em Geophysical Prospecting}, 61:10--19, 06 2013.
+\newblock Article first published online: 10 JULY 2012.
+
+\bibitem{vanLeeuwen2013GJImlm}
+Tristan van Leeuwen and Felix~J. Herrmann.
+\newblock Mitigating local minima in full-waveform inversion by expanding the
+  search space.
+\newblock {\em Geophysical Journal International}, 195:661--667, 10 2013.
+
+\bibitem{vanLeeuwen2013Penalty2}
+Tristan van Leeuwen and Felix~J. Herrmann.
+\newblock A penalty method for {PDE}-constrained optimization.
+\newblock Technical Report TR-EOAS-2013-6, UBC, 04 2013.
+
+\bibitem{herrmann2013SEGpmc}
+Tristan van Leeuwen and Felix~J. Herrmann.
+\newblock A penalty method for pde-constrained optimization with applications
+  to wave-equation based seismic inversion.
+\newblock In {\em SEG Workshop on Computational Mathematics for Geophysics;
+  Houston}, 09 2013.
+
+\bibitem{vanLeeuwen2014SISC3Dfds}
+Tristan van Leeuwen and Felix~J. Herrmann.
+\newblock {3D} frequency-domain seismic inversion with controlled sloppiness.
+\newblock {\em SIAM Journal on Scientific Computing}, 36(5):S192--S217, 10
+  2014.
+\newblock (SISC).
+
+\bibitem{vanleeuwen2015IPpmp}
+Tristan van Leeuwen and Felix~J. Herrmann.
+\newblock A penalty method for {PDE}-constrained optimization in inverse
+  problems.
+\newblock {\em Inverse Problems}, 32(1):015007, 12 2015.
+\newblock (Inverse Problems).
+
+\bibitem{leeuwen2014EAGEntf}
+Tristan van Leeuwen, Felix~J. Herrmann, and Bas Peters.
+\newblock A new take on {FWI}: wavefield reconstruction inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\bibitem{vanleeuwen2011EAGEhsdomwi}
+Tristan van Leeuwen, Felix~J. Herrmann, Mark Schmidt, and Michael~P.
+  Friedlander.
+\newblock A hybrid stochastic-deterministic optimization method for waveform
+  inversion.
+\newblock In {\em EAGE Annual Conference Proceedings}, 05 2011.
+
+\bibitem{vanleeuwen2015EAGEafs}
+Tristan van Leeuwen, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Affordable full subsurface image volume---an application to {WEMVA}.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE Workshop on Wave Equation based Migration Velocity Analysis,
+  Madrid).
+
+\bibitem{vanleeuwen2015GPWEMVA}
+Tristan van Leeuwen, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Enabling affordable omnidirectional subsurface extended image volumes
+  via probing.
+\newblock {\em Geophysical Prospecting}, 65(2):385--406, 03 2017.
+\newblock (Geophysical Prospecting).
+
+\bibitem{vanleeuwen2011SIAMGEOmawt}
+Tristan van Leeuwen and Wim~A. Mulder.
+\newblock Multiscale aspects of waveform tomography.
+\newblock In {\em SIAMGEO}. SIAM GeoSciences 2011, 2011.
+
+\bibitem{vanleeuwen2011AMPhsdmwi}
+Tristan van Leeuwen, Mark Schmidt, Michael~P. Friedlander, and Felix~J.
+  Herrmann.
+\newblock A hybrid stocahstic-deterministic method for waveform inversion.
+\newblock In {\em AMP}. WAVES 2011, 07 2011.
+\newblock Presented at AMP Medical and Seismic Imaging, 2011, Vancouver BC.
+
+\bibitem{verschuur2007SEGmmp}
+D.~J. Verschuur, Deli Wang, and Felix~J. Herrmann.
+\newblock Multiterm multiple prediction using separated reflections and
+  diffractions combined with curvelet-based subtraction.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~26, pages
+  2535--2539. SEG, 2007.
+
+\bibitem{wang2007SEGrri}
+Deli Wang, Rayan Saab, Ozgur Yilmaz, and Felix~J. Herrmann.
+\newblock Recent results in curvelet-based primary-multiple separation:
+  application to real data.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~26, pages
+  2500--2504. SEG, 2007.
+
+\bibitem{wang2008GEOPbws}
+Deli Wang, Rayan Saab, Ozgur Yilmaz, and Felix~J. Herrmann.
+\newblock Bayesian wavefield separation by transform-domain sparsity promotion.
+\newblock {\em Geophysics}, 73(5):1--6, 07 2008.
+
+\bibitem{wang2008SINBADrri}
+Deli Wang, Rayan Saab, Ozgur Yilmaz, and Felix~J. Herrmann.
+\newblock Recent results in curvelet-based primary-multiple separation.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{wang2016SEGfde}
+Rongrong Wang and Felix~J. Herrmann.
+\newblock Frequency down-extrapolation with {TV} norm minimization.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1380--1384,
+  10 2016.
+\newblock (SEG, Dallas).
+
+\bibitem{wang2017SEGdff}
+Rongrong Wang and Felix~J. Herrmann.
+\newblock A denoising formulation of full-waveform inversion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1594--1598,
+  09 2017.
+\newblock (SEG, Houston).
+
+\bibitem{wang2014SEGfwi}
+Rongrong Wang, Ozgur Yilmaz, and Felix~J. Herrmann.
+\newblock Full waveform inversion with interferometric measurements.
+\newblock Technical Report TR-EOAS-2014-5, UBC, 04 2014.
+
+\bibitem{wang2015SIAMwds}
+Rongrong Wang, Ozgur Yilmaz, and Felix~J. Herrmann.
+\newblock Wavefield-denoising and source encoding.
+\newblock In {\em SIAM Conference on Mathematical and Computational Issues in
+  the Geosciences}, 06-07 2015.
+\newblock (SIAM Conference on Mathematical and Computational Issues in the
+  Geosciences, Stanford University, California).
+
+\bibitem{wason2017THsss}
+Haneet Wason.
+\newblock {\em Simultaneous-source seismic data acquisition and processing with
+  compressive sensing}.
+\newblock PhD thesis, The University of British Columbia, Vancouver, 08 2017.
+\newblock (PhD).
+
+\bibitem{wason2012CSEGode}
+Haneet Wason and Felix~J. Herrmann.
+\newblock Only dither: efficient simultaneous marine acquisition.
+\newblock In {\em CSEG Annual Conference Proceedings}, 02 2012.
+
+\bibitem{wason2012EAGEode}
+Haneet Wason and Felix~J. Herrmann.
+\newblock Only dither: efficient simultaneous marine acquisition.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2012.
+
+\bibitem{wason2013EAGEobs}
+Haneet Wason and Felix~J. Herrmann.
+\newblock Ocean bottom seismic acquisition via jittered sampling.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2013.
+
+\bibitem{wason2013SEGtjo}
+Haneet Wason and Felix~J. Herrmann.
+\newblock Time-jittered ocean bottom seismic acquisition.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~32, pages
+  1--6, 09 2013.
+
+\bibitem{wason2011SEGsprsd}
+Haneet Wason, Felix~J. Herrmann, and Tim~T.Y. Lin.
+\newblock Sparsity-promoting recovery from simultaneous data: a compressive
+  sensing approach.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~30, pages
+  6--10. SEG, 09 2011.
+
+\bibitem{wason2014SEGsss}
+Haneet Wason, Rajiv Kumar, Aleksandr~Y. Aravkin, and Felix~J. Herrmann.
+\newblock Source separation via {SVD}-free rank minimization in the
+  hierarchical semi-separable representation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 120--126, 10
+  2014.
+\newblock (SEG).
+
+\bibitem{wason2014SEGrrt}
+Haneet Wason, Felix Oghenekohwo, and Felix~J. Herrmann.
+\newblock Randomization and repeatability in time-lapse marine acquisition.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 46--51, 10
+  2014.
+\newblock (SEG).
+
+\bibitem{herrmann2014EAGEWSrrt}
+Haneet Wason, Felix Oghenekohwo, and Felix~J. Herrmann.
+\newblock Randomization and repeatability in time-lapse marine acquisition.
+\newblock In {\em EAGE Workshop on Land and Ocean Bottom; Broadband Full
+  Azimuth Seismic Surveys; Spain}, 04 2014.
+\newblock (EAGE Workshop, Spain).
+
+\bibitem{wason2015EAGEcsm}
+Haneet Wason, Felix Oghenekohwo, and Felix~J. Herrmann.
+\newblock Compressed sensing in {4-D marine}---recovery of dense time-lapse
+  data from subsampled data without repetition.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2015.
+\newblock (EAGE, Madrid).
+
+\bibitem{wason2016GEOPctl}
+Haneet Wason, Felix Oghenekohwo, and Felix~J. Herrmann.
+\newblock Low-cost time-lapse seismic with distributed compressive
+  sensing---{Part} 2: impact on repeatability.
+\newblock {\em Geophysics}, 82(3):P15--P30, 05 2017.
+\newblock (Geophysics).
+
+\bibitem{witte2016OGHPClst}
+Philipp~A. Witte, Mathias Louboutin, Gerard Gorman, and Felix~J. Herrmann.
+\newblock A large-scale time-domain seismic modeling and inversion workflow in
+  {Julia}.
+\newblock Technical Report TR-EOAS-2017-1, UBC, 2017.
+
+\bibitem{witte2015TRoam}
+Philipp~A. Witte, Mathias Louboutin, and Felix~J. Herrmann.
+\newblock Overview on anisotropic modeling and inversion.
+\newblock Technical Report TR-EOAS-2015-6, UBC, 08 2015.
+
+\bibitem{witte2015IIPFWItdf}
+Philipp~A. Witte, Mathias Louboutin, and Felix~J. Herrmann.
+\newblock Time-domain {FWI} in {TTI} media.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{witte2017SIAMlsw}
+Philipp~A. Witte, Mathias Louboutin, and Felix~J. Herrmann.
+\newblock Large-scale workflows for wave-equation based inversion in {Julia}.
+\newblock In {\em SIAM Conference on Computational Science and Engineering},
+  02-03 2017.
+\newblock (SIAM Conference on Computational Science and Engineering, Atlanta).
+
+\bibitem{witte2019HOTCSEdsagip}
+Philipp~A. Witte, Mathias Louboutin, and Felix~J. Herrmann.
+\newblock Domain-specific abstractions for large-scale geophysical inverse
+  problems, 2019.
+\newblock (HotCSE).
+
+\bibitem{witte2018alf}
+Philipp~A. Witte, Mathias Louboutin, Navjot Kukreja, Fabio Luporini, Michael
+  Lange, Gerard~J. Gorman, and Felix~J. Herrmann.
+\newblock A large-scale framework for symbolic implementations of seismic
+  inversion algorithms in julia.
+\newblock Submitted to Geophysics on March 1, 2018., 2018.
+
+\bibitem{witte2019ecl}
+Philipp~A. Witte, Mathias Louboutin, Navjot Kukreja, Fabio Luporini, Michael
+  Lange, Gerard~J. Gorman, and Felix~J. Herrmann.
+\newblock Geophysics bright spots: Efficient coding of large-scale seismic
+  inversion algorithms.
+\newblock {\em The Leading Edge}, 38(6):482--484, 2019.
+\newblock (The Leading Edge).
+
+\bibitem{witte2018fwip3}
+Philipp~A. Witte, Mathias Louboutin, Keegan Lensink, Michael Lange, Navjot
+  Kukreja, Fabio Luporini, Gerard Gorman, and Felix~J. Herrmann.
+\newblock Full-waveform inversion - part 3: optimization.
+\newblock {\em The Leading Edge}, 37(2):142--145, 01 2018.
+\newblock (The Leading Edge).
+
+\bibitem{witte2018cls}
+Philipp~A. Witte, Mathias Louboutin, Fabio Luporini, Gerard~J. Gorman, and
+  Felix~J. Herrmann.
+\newblock Compressive least-squares migration with on-the-fly fourier
+  transforms.
+\newblock Submitted to Geophysics on June 28, 2018., 2018.
+
+\bibitem{witte2019SIAMCSEclsmft}
+Philipp~A. Witte, Mathias Louboutin, Fabio Luporini, Gerard~J. Gorman, and
+  Felix~J. Herrmann.
+\newblock Compressive least squares migration with on-the-fly fourier
+  transforms.
+\newblock In {\em SIAM Conference on Computational Science and Engineering}, 03
+  2019.
+\newblock (SIAM CSE).
+
+\bibitem{witte2019SEGedw}
+Philipp~A. Witte, Mathias Louboutin, Henryk Modzelewski, Charles Jones, James
+  Selvage, and Felix~J. Herrmann.
+\newblock Event-driven workflows for large-scale seismic imaging in the cloud.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 3984--3988,
+  09 2019.
+\newblock (SEG, San Antonio).
+
+\bibitem{witte2016SEGpve}
+Philipp~A. Witte, Christiaan~C. Stolk, and Felix~J. Herrmann.
+\newblock Phase velocity error minimizing scheme for the anisotropic pure
+  {P-wave} equation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 452--457, 10
+  2016.
+\newblock (SEG, Dallas).
+
+\bibitem{witte2015IIPFWIspl}
+Philipp~A. Witte, Ning Tu, Ernie Esser, Mengmeng Yang, Mathias Louboutin, and
+  Felix~J. Herrmann.
+\newblock Sparsity-promoting least-square migration with linearized {Bregman}
+  and compressive sensing.
+\newblock In {\em Inaugural Full-Waveform Inversion Workshop}, 08-09 2015.
+\newblock (Natal, Brazil).
+
+\bibitem{witte2017TRcls}
+Philipp~A. Witte, Mengmeng Yang, and Felix~J. Herrmann.
+\newblock Compressive least-squares migration with source estimation.
+\newblock Technical Report TR-EOAS-2017-3, UBC, 2017.
+
+\bibitem{witte2017EAGEspl}
+Philipp~A. Witte, Mengmeng Yang, and Felix~J. Herrmann.
+\newblock Sparsity-promoting least-squares migration with the linearized
+  inverse scattering imaging condition.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2017.
+\newblock (EAGE, Paris).
+
+\bibitem{yan2008SINBADwru}
+Jiupeng Yan.
+\newblock Wavefield reconstruction using simultaneous denoising interpolation
+  vs. denoising after interpolation.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{yan2009SEGgpb2}
+Jiupeng Yan and Felix~J. Herrmann.
+\newblock Groundroll prediction by interferometry and separation by
+  curvelet-domain filtering.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, 2009.
+
+\bibitem{yan2009SEGgpb}
+Jiupeng Yan and Felix~J. Herrmann.
+\newblock Groundroll prediction by interferometry and separation by
+  curvelet-domain matched filtering.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~28, pages
+  3297--3301. SEG, 10 2009.
+
+\bibitem{yang2017SEGfsp}
+Mengmeng Yang, Emmanouil Daskalakis, and Felix~J. Herrmann.
+\newblock Fast sparsity-promoting least-squares migration with multiples in
+  time domain.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4828--4832,
+  09 2017.
+\newblock (SEG, Houston).
+
+\bibitem{yang2019SEGlrr}
+Mengmeng Yang, Marie Graff, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Low-rank representation of subsurface extended image volumes with
+  power iterations.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4470--4474,
+  09 2019.
+\newblock (SEG, San Antonio).
+
+\bibitem{yang2017SEGWStds}
+Mengmeng Yang and Felix~J. Herrmann.
+\newblock Time domain sparsity promoting lsrtm with surface-related multiples
+  in shallow-water case.
+\newblock In {\em SEG Workshop on Multiples: Status, Progress, Challenges and
+  Open issues; Houston}, 09 2017.
+\newblock (SEG Workshop, Houston).
+
+\bibitem{yang2018SEGrde}
+Mengmeng Yang, Rajiv Kumar, Rongrong Wang, and Felix~J. Herrmann.
+\newblock Removing density effects in ls-rtm with a low-rank matched filter.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4251--4255,
+  10 2018.
+\newblock (SEG, Anaheim).
+
+\bibitem{yang2016SEGtds}
+Mengmeng Yang, Philipp~A. Witte, Zhilong Fang, and Felix~J. Herrmann.
+\newblock Time-domain sparsity-promoting least-squares migration with source
+  estimation.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 4225--4229,
+  10 2016.
+\newblock (SEG, Dallas).
+
+\bibitem{yarham2007SINBADnsw}
+Carson Yarham.
+\newblock Nonlinear surface wave prediction and separation.
+\newblock In {\em SINBAD 2007}, 2007.
+
+\bibitem{yarham2008SINBADbss}
+Carson Yarham.
+\newblock Bayesian signal separation applied to ground-roll removal.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{yarham08THsgs}
+Carson Yarham.
+\newblock Seismic ground-roll separation using sparsity promoting $\ell_1$
+  minimization.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 05
+  2008.
+\newblock (MSc).
+
+\bibitem{yarham2006SEGcgrr}
+Carson Yarham, Urs Boeniger, and Felix~J. Herrmann.
+\newblock Curvelet-based ground roll removal.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~25, pages
+  2777--2782. SEG, 2006.
+
+\bibitem{yarham2007EAGEcai}
+Carson Yarham, Gilles Hennenfent, and Felix~J. Herrmann.
+\newblock Curvelet applications in surface wave removal.
+\newblock In {\em EAGE Workshop on Curvelets, contourlets, seislets, … in
+  seismic data processing - where are we and where are we going?}, 06 2007.
+
+\bibitem{yarham2008SEGbgr}
+Carson Yarham and Felix~J. Herrmann.
+\newblock Bayesian ground-roll seperation by curvelet-domain sparsity
+  promotion.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, volume~27, pages
+  2576--2580. SEG, 11 2008.
+
+\bibitem{yarham2004CSEGgrr}
+Carson Yarham, Felix~J. Herrmann, and Daniel Trad.
+\newblock Ground roll removal using non-separable wavelet transforms.
+\newblock In {\em CSEG Annual Conference Proceedings}, 2004.
+
+\bibitem{yarham2004CSEGcpa}
+Carson Yarham, Daniel Trad, and Felix~J. Herrmann.
+\newblock Curvelet processing and imaging: adaptive ground roll removal.
+\newblock In {\em CSEG Annual Conference Proceedings}. CSEG, 05 2004.
+
+\bibitem{yarman2017GPmbd}
+Can~Evren Yarman, Rajiv Kumar, and James Rickett.
+\newblock A model based data driven dictionary learning for seismic data
+  representation.
+\newblock {\em Geophysical Prospecting}, 04 2017.
+\newblock (published online in Geophysical Prospecting).
+
+\bibitem{yilmaz2008SINBADsse}
+Ozgur Yilmaz.
+\newblock Stable sparse expansions via non-convex optimization.
+\newblock In {\em SINBAD 2008}, 2008.
+
+\bibitem{zhang2019SEGhfw}
+Yijun Zhang, Shashin Sharan, and Felix~J. Herrmann.
+\newblock High-frequency wavefield recovery with weighted matrix
+  factorizations.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 3959--3963,
+  09 2019.
+\newblock (SEG, San Antonio).
+
+\bibitem{zhang2018THlss}
+Yiming Zhang.
+\newblock Large-scale seismic data compression: application to full waveform
+  inversion and extended image volume.
+\newblock Master's thesis, The University of British Columbia, Vancouver, 04
+  2018.
+\newblock (MSc).
+
+\bibitem{zhang2017SEGmsd}
+Yiming Zhang, Curt~Da Silva, Rajiv Kumar, and Felix~J. Herrmann.
+\newblock Massive {3D} seismic data compression and inversion with hierarchical
+  {Tucker}.
+\newblock In {\em SEG Technical Program Expanded Abstracts}, pages 1347--1352,
+  09 2017.
+\newblock (SEG, Houston).
+
+\bibitem{zheglova2014EAGEams}
+Polina Zheglova and Felix~J. Herrmann.
+\newblock Application of matrix square root and its inverse to downward
+  wavefield extrapolation.
+\newblock In {\em EAGE Annual Conference Proceedings}, 06 2014.
+
+\end{thebibliography}

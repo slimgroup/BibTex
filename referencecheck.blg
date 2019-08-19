@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d (TeX Live 2018/MacPorts 2018.47642_1)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: referencecheck.aux
+The style file: plain.bst
+Database file #1: conference.bib
+Reallocated field_info (elt_size=4) to 10014 items from 5000.
+Database file #2: bscthesis.bib
+Database file #3: masterthesis.bib
+Database file #4: techreport.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Reallocated field_info (elt_size=4) to 15028 items from 10014.
+Database file #5: unpublished.bib
+Database file #6: book.bib
+Database file #7: article.bib
+Database file #8: manual.bib
+Database file #9: phdthesis.bib
+Database file #10: booklet.bib
+Database file #11: inbook.bib
+Database file #12: incollection.bib
+Database file #13: misc.bib
+Database file #14: proceedings.bib
+Warning--empty school in fenelon08msc
+Warning--there's a number but no series in herrmann2011SPIEmsp
+Warning--can't use both volume and number fields in herrmann2008SEGcdm
+Warning--empty booktitle in Herrmann2011BG
+Warning--empty booktitle in petrenko2013HPCSsaoc
+Warning--empty booktitle in dasilva2013SAMPTAhtuck
+Warning--empty booktitle in vandenberg07VONipo
+Warning--empty institution in vanleeuwen2012smii
+You've used 557 entries,
+            2118 wiz_defined-function locations,
+            2961 strings with 87670 characters,
+and the built_in function-call counts, 188003 in all, are:
+= -- 17716
+> -- 8869
+< -- 211
++ -- 3540
+- -- 2935
+* -- 12108
+:= -- 30559
+add.period$ -- 1971
+call.type$ -- 557
+change.case$ -- 3123
+chr.to.int$ -- 0
+cite$ -- 565
+duplicate$ -- 8184
+empty$ -- 15923
+format.name$ -- 2935
+if$ -- 40648
+int.to.chr$ -- 0
+int.to.str$ -- 557
+missing$ -- 476
+newline$ -- 2994
+num.names$ -- 1116
+pop$ -- 4052
+preamble$ -- 1
+purify$ -- 2580
+quote$ -- 0
+skip$ -- 5401
+stack$ -- 0
+substring$ -- 8054
+swap$ -- 2083
+text.length$ -- 211
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2228
+warning$ -- 8
+while$ -- 1408
+width$ -- 560
+write$ -- 6430
+(There were 8 warnings)

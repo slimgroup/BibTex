@@ -3,6 +3,118 @@
 
 %-----2019-----%
 
+@CONFERENCE{rizzuti2019EAGElis,
+  author = {Gabrio Rizzuti and Ali Siahkoohi and Felix J. Herrmann},
+  title = {Learned iterative solvers for the Helmholtz equation},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2019},
+  month = {06},
+  abstract = {We propose a ‘learned’ iterative solver for the Helmholtz equation, by combining traditional Krylov-based solvers with machine learning. The method is, in principle, able to circumvent the shortcomings of classical iterative solvers, and has clear advantages over purely data-driven ap- proaches. We demonstrate the effectiveness of this approach under a 1.5-D assumption, when ade- quate a priori information about the velocity distribution is known.},
+  keywords = {EAGE, Helmholtz, Iterative, Machine learning},
+  note = {(EAGE, Copenhagen)},
+  doi = {10.3997/2214-4609.201901542},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2019/rizzuti2019EAGElis/rizzuti2019EAGElis.pdf},
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2019/rizzuti2019EAGElis/rizzuti2019EAGElis_pres.pdf}
+}
+
+@CONFERENCE{peters2019SEGans,
+  author = {Bas Peters and Felix J. Herrmann},
+  title = {A numerical solver for least-squares sub-problems in 3D wavefield reconstruction inversion and related problem formulations},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  year = {2019},
+  month = {09},
+  pages = {1536-1540},
+  abstract = {Recent years saw a surge of interest in seismic waveform inversion approaches based on quadratic-penalty or augmented-Lagrangian methods, including Wavefield Reconstruction Inversion. These methods typically need to solve a least-squares sub-problem that contains a discretization of the Helmholtz equation. Memory requirements for direct solvers are often prohibitively large in three dimensions, and this limited the examples in the literature to two dimensions. We present an algorithm that uses iterative Helmholtz solvers as a black-box to solve the least-squares problem corresponding to 3D grids. This algorithm enables Wavefield Reconstruction Inversion and related formulations, in three dimensions. Our new algorithm also includes a root-finding method to convert a penalty into a constraint on the data-misfit without additional computational cost, by reusing precomputed quantities. Numerical experiments show that the cost of parallel communication and other computations are small compared to the main cost of solving one Helmholtz problem per source and one per receiver.},
+  keywords = {SEG, Least-squares, numerical linear algebra, penalty method, quadratic constraints, full-waveform inversion, root finding},
+  note = {(SEG, San Antonio)},
+  doi = {10.1190/segam2019-3216638.1},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/peters2019SEGans/peters2019SEGans.pdf}
+}  
+
+@CONFERENCE{rizzuti2019SEGadf,
+  author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann},
+  title = {A dual formulation for time-domain wavefield reconstruction inversion},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  year = {2019},
+  month = {09},
+  pages = {1480-1485},
+  abstract = {We illustrate a dual formulation for full-waveform inversion potentially apt to large 3-D problems. It is based on the optimization of the wave equation compliance, under the constraint of data misfit not exceeding a prescribed noise level. In the Lagrangian formulation, model and wavefield state variables are complemented with multipliers having the same dimension of data ("dual data" variables). Analogously to classical wavefield reconstruction inversion, the wavefield unknowns can be projected out in closed form, by solving a version of the augmented wave equation. This leads to a saddle-point problem whose variables are only model and dual data. As such, this formulation represents a model extension, and is potentially robust against local minima. The classical downsides of model extension methods and wavefield reconstruction inversion are here effectively mitigated: storage of the dual variables is affordable, the augmented wave equation is amenable to time-marching finite-difference schemes, and no continuation strategy for penalty parameters is needed, with the prospect of 3-D applications.},
+  keywords = {SEG, full-waveform inversion, time-domain, 3D},
+  note = {(SEG, San Antonio)},
+  doi = {10.1190/segam2019-3216760.1},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/rizzuti2019SEGadf/rizzuti2019SEGadf.html}
+}
+
+@CONFERENCE{siahkoohi2019SEGdlb,
+  author = {Ali Siahkoohi and Rajiv Kumar and Felix J. Herrmann},
+  title = {Deep-learning based ocean bottom seismic wavefield recovery},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  year = {2019},
+  month = {09},
+  pages = {2232-2237},
+  abstract = {Ocean bottom surveys usually suffer from having very sparse receivers. Assuming a desirable source sampling, achievable by existing methods such as (simultaneous-source) randomized marine acquisition, we propose a deep-learning based scheme to bring the receivers to the same spatial grid as sources using a convolutional neural network. By exploiting source-receiver reciprocity, we construct training pairs by artificially subsampling the fully-sampled single-receiver frequency slices using a random training mask and later, we deploy the trained neural network to fill-in the gaps in single-source frequency slices. Our experiments show that a random training mask is essential for successful wavefield recovery, even when receivers are on a periodic gird. No external training data is required and experiments on a 3D synthetic data set demonstrate that we are able to recover receivers for up to 90 % missing receivers, missing either randomly or periodically, with a better recovery for random case, at low to midrange frequencies.},
+  keywords = {SEG, obn, reconstruction, machine learning, reciprocity},
+  note = {(SEG, San Antonio)},
+  doi = {10.1190/segam2019-3216632.1},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/siahkoohi2019SEGdlb/siahkoohi2019SEGdlb.html}
+}
+
+@CONFERENCE{siahkoohi2019SEGsrm,
+  author = {Ali Siahkoohi and Dirk J. Verschuur and Felix J. Herrmann},
+  title = {Surface-related multiple elimination with deep learning},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  year = {2019},
+  month = {09},
+  pages = {4629-4634},
+  abstract = {We explore the potential of neural networks in approximating the action of the computationally expensive Estimation of Primaries by Sparse Inversion (EPSI) algorithm, applied to real data, via a supervised learning algorithm. We show that given suitable training data, consisting of a relatively cheap prediction of multiples and pairs of shot records with and without surface-related multiples, obtained via EPSI, a well-trained neural network is capable of providing an approximation to the action of the EPSI algorithm. We perform our numerical experiment on the field Nelson data set. Our results demonstrate that the quality of the multiple elimination via our neural network improves compared to the case where we only feed the network with shot records with surface-related multiples. We take these benefits by supplying the neural network with a relatively poor prediction of the multiples, e.g. obtained by a relatively cheap single step of Surface-Related Multiple Elimination.},
+  keywords = {SEG, SRME, EPSI, machine learning},
+  note = {(SEG, San Antonio)},
+  doi = {10.1190/segam2019-3216723.1},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/siahkoohi2019SEGsrm/siahkoohi2019SEGsrm.html}
+}
+
+@CONFERENCE{witte2019SEGedw,
+  author = {Philipp A. Witte and Mathias Louboutin and Henryk Modzelewski and Charles Jones and James Selvage and Felix J. Herrmann},
+  title = {Event-driven workflows for large-scale seismic imaging in the cloud},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  year = {2019},
+  month = {09},
+  pages = {3984-3988},
+  abstract = {Cloud computing has seen a large rise in popularity in recent years and is becoming a cost effective alternative to on-premise computing, with theoretically unlimited scalability. However, so far little progress has been made in adapting the cloud for high performance computing (HPC) tasks, such as seismic imaging and inversion. As the cloud does not provide the same type of fast and reliable connections as conventional HPC clusters, porting legacy codes developed for HPC environments to the cloud is ineffective and misses out on an opportunity to take advantage of new technologies presented by the cloud. We present a novel approach of bringing seismic imaging and inversion workflows to the cloud, which does not rely on a traditional HPC environment, but is based on serverless and event-driven computations. Computational resources are assigned dynamically in response to events, thus minimizing idle time and providing resilience to hardware failures. We test our workflow on two large-scale imaging examples and demonstrate that cost-effective HPC in the cloud is possible, but requires careful reconsiderations of how to bring software to the cloud.},
+  keywords = {SEG, cloud, large-scale, imaging, RTM, LS-RTM, workflow},
+  note = {(SEG, San Antonio)},
+  doi = {10.1190/segam2019-3215069.1},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/witte2019SEGedw/witte2019SEGedw.html}
+}
+
+@CONFERENCE{yang2019SEGlrr,
+  author = {Mengmeng Yang and Marie Graff and Rajiv Kumar and Felix J. Herrmann},
+  title = {Low-rank representation of subsurface extended image volumes with power iterations},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  year = {2019},
+  month = {09},
+  pages = {4470-4474},
+  abstract = {Full subsurface extended image volumes (EIVs) contain abundant information such as subsurface image gathers used in imaging, interpretation of rock properties or velocity analysis, but are expensive in term of computational cost and storage requirement due to their large size. Yet, due to their redundant information, monochromatic EIVs exhibit a low-rank structure that allows us to get a good approximation at a computational cost proportional to the rank k , while conventional techniques require at least the number of sources. Such low-rank factorized EIVs are computed thanks to the randomized singular values decomposition (SVD) algorithm. However, recent developments on low-rank approximations of EIVs raise two major questions. First, monochromatic EIVs rely on time-harmonic wave equation solvers, which do not scale well to realistic 3D models. Second, the rank of the monochromatic EIVs increases with the frequency, which yields increasing computational costs and storage. Here, we propose a construction approach based on a time-domain finite-difference wave-equation solver with time stepping, which is combined to power iteration schemes in the randomized SVD algorithm to accelerate the decay of the singular values. We compare the performances of simultaneous iterations, block-Krylov iterations and the original randomized SVD on the computation of the EIV for a small section of the Marmousi model. Then, we show further results on the full Marmousi model to validate our approach.},
+  keywords = {SEG, full extended image volumes, time domain, randomized SVD, power iterations},
+  note = {(SEG, San Antonio)},
+  doi = {10.1190/segam2019-3215961.1},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/yang2019SEGlrr/yang2019SEGlrr.html}
+}
+
+@CONFERENCE{zhang2019SEGhfw,
+  author = {Yijun Zhang and Shashin Sharan and Felix J. Herrmann},
+  title = {High-frequency wavefield recovery with weighted matrix factorizations},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  year = {2019},
+  month = {09},
+  pages = {3959-3963},
+  abstract = {Acquired seismic data is normally not the fully sampled data we would like to work with since traces are missing due to physical constraints or budget limitations. Rank minimization is an effective way to recovering the missing trace data. Unfortunately, this technique's performance may deteriorate at higher frequency because high-frequency data can not necessarily be captured accurately by low-rank matrix factorizations albeit remedies exist such as hierarchical semi-separable matrices. As a result, recovered data often suffers from low signal to noise ratio S/Rs at the higher frequencies. To deal with this situation, we propose a weighted recovery method that improves the performance at the high frequencies by recursively using information from matrix factorizations at neighboring lower frequencies. Essentially, we include prior information from previously reconstructed frequency slices during the wavefield reconstruction. We apply our method to data collected from the Gulf of Suez, which shows that our method performs well compared to the traditional method without weighting.},
+  keywords = {SEG, algorithm, data reconstruction, interpolation, processing, frequency-domain},
+  note = {(SEG, San Antonio)},
+  doi = {10.1190/segam2019-3215103.1},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/zhang2019SEGhfw/zhang2019SEGhfw.html}
+}
+
 @CONFERENCE{peters2019SIAMGEOgmrip,
   author = {Bas Peters and Felix J. Herrmann},
   title = {Generalized Minkowski sets for the regularization of inverse problems},
@@ -18532,90 +18644,6 @@ land velocity and density model.},
 
 %-----2019-----%
 
-@UNPUBLISHED{siahkoohi2019itl,
-  author = {Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
-  title = {The importance of transfer learning in seismic modeling and imaging},
-  year = {2019},
-  abstract = {Accurate forward modeling is essential for solving inverse problems
-in exploration seismology. Unfortunately, it is often not possible to afford being
-physically or numerically accurate. To overcome this conundrum, we make use of raw and processed data from nearby surveys. We propose to use this data, consisting of shot records or velocity models, to pre-train a neural network to
-correct for the effects of, for instance, the free surface or numerical dispersion, both of which can be considered as proxies for incomplete or inaccurate physics. Given this pre-trained neural network, we apply transfer learning to finetune this pre-trained neural network so it performs well on its task of mapping low-cost, but low-fidelity, solutions to high-fidelity solutions for the current survey. As long as we can limit ourselves during finetuning
-to using only a small fraction of high-fidelity data, we gain processing the current survey while using information from nearby surveys. We demonstrate this principle by removing surface-related multiples and ghosts from shot records and the effects of numerical dispersion from migrated images and wave simulations},
-  keywords = {deep learning, transfer learning, modeling, imaging, SRME, private},
-  note = {Submitted to GEOPHYSICS on February 5, 2019},
-  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/siahkoohi2019itl/siahkoohi2019itl.html}
-}
-
-@UNPUBLISHED{peters2019SEGans,
-  author = {Bas Peters and Felix J. Herrmann},
-  title = {A numerical solver for least-squares sub-problems in 3D wavefield reconstruction inversion and related problem formulations},
-  year = {2019},
-  abstract = {Recent years saw a surge of interest in seismic waveform inversion approaches based on quadratic-penalty or augmented-Lagrangian methods, including Wavefield Reconstruction Inversion. These methods typically need to solve a least-squares sub-problem that contains a discretization of the Helmholtz equation. Memory requirements for direct solvers are often prohibitively large in three dimensions, and this limited the examples in the literature to two dimensions. We present an algorithm that uses iterative Helmholtz solvers as a black-box to solve the least-squares problem corresponding to 3D grids. This algorithm enables Wavefield Reconstruction Inversion and related formulations, in three dimensions. Our new algorithm also includes a root-finding method to convert a penalty into a constraint on the data-misfit without additional computational cost, by reusing precomputed quantities. Numerical experiments show that the cost of parallel communication and other computations are small compared to the main cost of solving one Helmholtz problem per source and one per receiver.},
-  keywords = {Least-squares, numerical linear algebra, penalty method, quadratic constraints, full-waveform inversion, root finding, private},
-  note = {Submitted to SEG on April 1, 2019},
-  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/peters2019SEGans/peters2019SEGans.pdf}
-}
-
-@UNPUBLISHED{rizzuti2019SEGadf,
-  author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann},
-  title = {A dual formulation for time-domain wavefield reconstruction inversion},
-  year = {2019},
-  abstract = {We illustrate a dual formulation for full-waveform inversion potentially apt to large 3-D problems. It is based on the optimization of the wave equation compliance, under the constraint of data misfit not exceeding a prescribed noise level. In the Lagrangian formulation, model and wavefield state variables are complemented with multipliers having the same dimension of data ("dual data" variables). Analogously to classical wavefield reconstruction inversion, the wavefield unknowns can be projected out in closed form, by solving a version of the augmented wave equation. This leads to a saddle-point problem whose variables are only model and dual data. As such, this formulation represents a model extension, and is potentially robust against local minima. The classical downsides of model extension methods and wavefield reconstruction inversion are here effectively mitigated: storage of the dual variables is affordable, the augmented wave equation is amenable to time-marching finite-difference schemes, and no continuation strategy for penalty parameters is needed, with the prospect of 3-D applications.},
-  keywords = {full-waveform inversion, time-domain, 3D, private},
-  note = {Submitted to SEG on April 1, 2019},
-  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/rizzuti2019SEGadf/rizzuti2019SEGadf.html}
-}
-
-@UNPUBLISHED{siahkoohi2019SEGdlb,
-  author = {Ali Siahkoohi and Rajiv Kumar and Felix J. Herrmann},
-  title = {Deep-learning based ocean bottom seismic wavefield recovery},
-  year = {2019},
-  abstract = {Ocean bottom surveys usually suffer from having very sparse receivers. Assuming a desirable source sampling, achievable by existing methods such as (simultaneous-source) randomized marine acquisition, we propose a deep-learning based scheme to bring the receivers to the same spatial grid as sources using a convolutional neural network. By exploiting source-receiver reciprocity, we construct training pairs by artificially subsampling the fully-sampled single-receiver frequency slices using a random training mask and later, we deploy the trained neural network to fill-in the gaps in single-source frequency slices. Our experiments show that a random training mask is essential for successful wavefield recovery, even when receivers are on a periodic gird. No external training data is required and experiments on a 3D synthetic data set demonstrate that we are able to recover receivers for up to 90 % missing receivers, missing either randomly or periodically, with a better recovery for random case, at low to midrange frequencies.},
-  keywords = {obn, reconstruction, machine learning, reciprocity, private},
-  note = {Submitted to SEG on April 1, 2019},
-  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/siahkoohi2019SEGdlb/siahkoohi2019SEGdlb.html}
-}
-
-@UNPUBLISHED{siahkoohi2019SEGsrm,
-  author = {Ali Siahkoohi and Dirk J. Verschuur and Felix J. Herrmann},
-  title = {Surface-related multiple elimination with deep learning},
-  year = {2019},
-  abstract = {We explore the potential of neural networks in approximating the action of the computationally expensive Estimation of Primaries by Sparse Inversion (EPSI) algorithm, applied to real data, via a supervised learning algorithm. We show that given suitable training data, consisting of a relatively cheap prediction of multiples and pairs of shot records with and without surface-related multiples, obtained via EPSI, a well-trained neural network is capable of providing an approximation to the action of the EPSI algorithm. We perform our numerical experiment on the field Nelson data set. Our results demonstrate that the quality of the multiple elimination via our neural network improves compared to the case where we only feed the network with shot records with surface-related multiples. We take these benefits by supplying the neural network with a relatively poor prediction of the multiples, e.g. obtained by a relatively cheap single step of Surface-Related Multiple Elimination.},
-  keywords = {SRME, EPSI, machine learning, private},
-  note = {Submitted to SEG on April 1, 2019},
-  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/siahkoohi2019SEGsrm/siahkoohi2019SEGsrm.html}
-}
-
-@UNPUBLISHED{witte2019SEGedw,
-  author = {Philipp A. Witte and Mathias Louboutin and Henryk Modzelewski and Charles Jones and James Selvage and Felix J. Herrmann},
-  title = {Event-driven workflows for large-scale seismic imaging in the cloud},
-  year = {2019},
-  abstract = {Cloud computing has seen a large rise in popularity in recent years and is becoming a cost effective alternative to on-premise computing, with theoretically unlimited scalability. However, so far little progress has been made in adapting the cloud for high performance computing (HPC) tasks, such as seismic imaging and inversion. As the cloud does not provide the same type of fast and reliable connections as conventional HPC clusters, porting legacy codes developed for HPC environments to the cloud is ineffective and misses out on an opportunity to take advantage of new technologies presented by the cloud. We present a novel approach of bringing seismic imaging and inversion workflows to the cloud, which does not rely on a traditional HPC environment, but is based on serverless and event-driven computations. Computational resources are assigned dynamically in response to events, thus minimizing idle time and providing resilience to hardware failures. We test our workflow on two large-scale imaging examples and demonstrate that cost-effective HPC in the cloud is possible, but requires careful reconsiderations of how to bring software to the cloud.},
-  keywords = {cloud, large-scale, imaging, RTM, LS-RTM, workflow, private},
-  note = {Submitted to SEG on March 29, 2019},
-  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/witte2019SEGedw/witte2019SEGedw.html}
-}
-
-@UNPUBLISHED{yang2019SEGlrr,
-  author = {Mengmeng Yang and Marie Graff and Rajiv Kumar and Felix J. Herrmann},
-  title = {Low-rank representation of subsurface extended image volumes with power iterations},
-  year = {2019},
-  abstract = {Full subsurface extended image volumes (EIVs) contain abundant information such as subsurface image gathers used in imaging, interpretation of rock properties or velocity analysis, but are expensive in term of computational cost and storage requirement due to their large size. Yet, due to their redundant information, monochromatic EIVs exhibit a low-rank structure that allows us to get a good approximation at a computational cost proportional to the rank k , while conventional techniques require at least the number of sources. Such low-rank factorized EIVs are computed thanks to the randomized singular values decomposition (SVD) algorithm. However, recent developments on low-rank approximations of EIVs raise two major questions. First, monochromatic EIVs rely on time-harmonic wave equation solvers, which do not scale well to realistic 3D models. Second, the rank of the monochromatic EIVs increases with the frequency, which yields increasing computational costs and storage. Here, we propose a construction approach based on a time-domain finite-difference wave-equation solver with time stepping, which is combined to power iteration schemes in the randomized SVD algorithm to accelerate the decay of the singular values. We compare the performances of simultaneous iterations, block-Krylov iterations and the original randomized SVD on the computation of the EIV for a small section of the Marmousi model. Then, we show further results on the full Marmousi model to validate our approach.},
-  keywords = {full extended image volumes, time domain, randomized SVD, power iterations, private},
-  note = {Submitted to SEG on April 1, 2019},
-  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/yang2019SEGlrr/yang2019SEGlrr.html}
-}
-
-@UNPUBLISHED{zhang2019SEGhfw,
-  author = {Yijun Zhang and Shashin Sharan and Felix J. Herrmann},
-  title = {High-frequency wavefield recovery with weighted matrix factorizations},
-  year = {2019},
-  abstract = {Acquired seismic data is normally not the fully sampled data we would like to work with since traces are missing due to physical constraints or budget limitations. Rank minimization is an effective way to recovering the missing trace data. Unfortunately, this technique's performance may deteriorate at higher frequency because high-frequency data can not necessarily be captured accurately by low-rank matrix factorizations albeit remedies exist such as hierarchical semi-separable matrices. As a result, recovered data often suffers from low signal to noise ratio S/Rs at the higher frequencies. To deal with this situation, we propose a weighted recovery method that improves the performance at the high frequencies by recursively using information from matrix factorizations at neighboring lower frequencies. Essentially, we include prior information from previously reconstructed frequency slices during the wavefield reconstruction. We apply our method to data collected from the Gulf of Suez, which shows that our method performs well compared to the traditional method without weighting.},
-  keywords = {algorithm, data reconstruction, interpolation, processing, frequency-domain, private},
-  note = {Submitted to SEG on April 1, 2019},
-  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/zhang2019SEGhfw/zhang2019SEGhfw.html}
-}
-
 @UNPUBLISHED{kukreja2019PASCccd,
   author = {Navjot Kukreja and Jan Huckelheim and Mathias Louboutin and Kaiyuan Hou and Paul Hovland and Gerard Gorman},
   title = {Combining checkpointing and data compression to accelerate adjoint-based optimization problems},
@@ -18626,15 +18654,7 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/kukreja2019PASCccd/kukreja2019PASCccd.pdf}
 }
 
-@UNPUBLISHED{rizzuti2019EAGElis,
-  author = {Gabrio Rizzuti and Ali Siahkoohi and Felix J. Herrmann},
-  title = {Learned iterative solvers for the Helmholtz equation},
-  year = {2019},
-  abstract = {We propose a ‘learned’ iterative solver for the Helmholtz equation, by combining traditional Krylov-based solvers with machine learning. The method is, in principle, able to circumvent the shortcomings of classical iterative solvers, and has clear advantages over purely data-driven ap- proaches. We demonstrate the effectiveness of this approach under a 1.5-D assumption, when ade- quate a priori information about the velocity distribution is known.},
-  keywords = {Helmholtz, Iterative, Machine learning, private},
-  note = {Submitted to EAGE on January 15, 2019},
-  url = {https://slim.gatech.edu/Publications/Private/Submitted/2019/rizzuti2019EAGElis/rizzuti2019EAGElis.pdf}
-}
+
 
 %-----2018-----%
 
@@ -18674,6 +18694,22 @@ performed by the Devito compiler through a series of intermediate representation
 % Encoding: MacRoman
 
 %----- 2019 -----%
+
+@ARTICLE{siahkoohi2019itl,
+  author = {Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
+  title = {The importance of transfer learning in seismic modeling and imaging},
+  journal = {Geophysics},
+  year = {2019},
+  abstract = {Accurate forward modeling is essential for solving inverse problems
+in exploration seismology. Unfortunately, it is often not possible to afford being
+physically or numerically accurate. To overcome this conundrum, we make use of raw and processed data from nearby surveys. We propose to use this data, consisting of shot records or velocity models, to pre-train a neural network to
+correct for the effects of, for instance, the free surface or numerical dispersion, both of which can be considered as proxies for incomplete or inaccurate physics. Given this pre-trained neural network, we apply transfer learning to finetune this pre-trained neural network so it performs well on its task of mapping low-cost, but low-fidelity, solutions to high-fidelity solutions for the current survey. As long as we can limit ourselves during finetuning
+to using only a small fraction of high-fidelity data, we gain processing the current survey while using information from nearby surveys. We demonstrate this principle by removing surface-related multiples and ghosts from shot records and the effects of numerical dispersion from migrated images and wave simulations},
+  keywords = {deep learning, transfer learning, modeling, imaging, SRME},
+  doi = {10.1190/geo2019-0056.1},
+  note = {(Accepted in GEOPHYSICS)},
+  url = {https://slim.gatech.edu/Publications/Public/Journals/Geophysics/2019/siahkoohi2019itl/siahkoohi2019itl.html}
+}
 
 @ARTICLE{witte2019ecl,
   author = {Philipp A. Witte and Mathias Louboutin and Navjot Kukreja and Fabio Luporini and Michael Lange and Gerard J. Gorman and Felix J. Herrmann},

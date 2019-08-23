@@ -3322,6 +3322,13 @@ Philipp~A. Witte, Mathias Louboutin, Fabio Luporini, Gerard~J. Gorman, and
   2019.
 \newblock (SIAM CSE).
 
+\bibitem{witte2019TPDedas}
+Philipp~A. Witte, Mathias Louboutin, Henryk Modzelewski, Charles Jones, James
+  Selvage, and Felix~J. Herrmann.
+\newblock An event-driven approach to serverless seismic imaging in the cloud.
+\newblock Submitted to IEEE Transactions on Parallel and Distributed Systems on
+  August 20, 2019, 2019.
+
 \bibitem{witte2019SEGedw}
 Philipp~A. Witte, Mathias Louboutin, Henryk Modzelewski, Charles Jones, James
   Selvage, and Felix~J. Herrmann.

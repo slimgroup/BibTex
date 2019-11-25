@@ -18750,6 +18750,47 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   url = {https://slim.gatech.edu/Publications/Public/Journals/Geophysics/2019/siahkoohi2019itl/siahkoohi2019itl.html}
 }
 
+@ARTICLE{peters2019aos,
+  author = {Bas Peters and Felix J. Herrmann},
+  title = {Algorithms and software for projections onto intersections of convex
+               and non-convex sets with applications to inverse problems},
+  journal = {arXiv e-prints},
+  year = {2019},
+  month = {03},
+  abstract = {We propose algorithms and software for computing projections onto the intersection of multiple convex and non-convex constraint sets. The software package, called SetIntersectionProjection, is intended for the regularization of inverse problems in physical parameter estimation and image processing. The primary design criterion is working with multiple sets, which allows us to solve inverse problems with multiple pieces of prior knowledge. Our algorithms outperform the well known Dykstra's algorithm when individual sets are not easy to project onto because we exploit similarities between constraint sets. Other design choices that make the software fast and practical to use, include recently developed automatic selection methods for auxiliary algorithm parameters, fine and coarse grained parallelism, and a multilevel acceleration scheme. We provide implementation details and examples that show how the software can be used to regularize inverse problems. Results show that we benefit from working with all available prior information and are not limited to one or two regularizers because of algorithmic, computational, or hyper-parameter selection issues.},
+  keywords = {software, algorithm},
+  eprint={1902.09699},
+  note = {(arXiv)},
+  url = {http://arxiv.org/abs/1902.09699}
+}
+
+@ARTICLE{peters2019gms,
+  author = {Bas Peters and Felix J. Herrmann},
+  title = {Generalized Minkowski sets for the regularization of inverse problems},
+  journal = {arXiv e-prints},
+  year = {2019},
+  month = {03},
+  abstract = {Many works on inverse problems in the imaging sciences consider regularization via one or more penalty
+functions or constraint sets. When the models/images are not easily described using one or a few penalty
+functions/constraints, additive model descriptions for regularization lead to better imaging results. These
+include cartoon-texture decomposition, morphological component analysis, and robust principal component
+analysis; methods that typically rely on penalty functions. We propose a regularization framework, based
+on the Minkowski set, that merges the strengths of additive models and constrained formulations. We
+generalize the Minkowski set, such that the model parameters are the sum of two components, each of
+which is constrained to an intersection of sets. Furthermore, the sum of the components is also an element
+of another intersection of sets. These generalizations allow us to include multiple pieces of prior knowledge
+on each of the components, as well as on the sum of components, which is necessary to ensure physical
+feasibility of partial-differential-equation based parameters estimation problems. We derive the projection
+operation onto the generalized Minkowski sets and construct an algorithm based on the alternating
+direction method of multipliers. We illustrate how we benefit from using more prior knowledge in the
+form of the generalized Minkowski set using seismic waveform inversion and video background-anomaly
+separation.},
+  keywords = {inverse},
+  eprint={1903.03942},
+  note = {(arXiv)},
+  url = {http://arxiv.org/abs/1903.03942}
+}
+
 @ARTICLE{witte2018alf,
   author = {Philipp A. Witte and Mathias Louboutin and Navjot Kukreja and Fabio Luporini and Michael Lange and Gerard J. Gorman and Felix J. Herrmann},
   title = {A large-scale framework for symbolic implementations of seismic inversion algorithms in Julia},
@@ -18954,11 +18995,15 @@ experiments illustrate the flexibility and efficiency of the approach.},
   author = {Bas Peters and Brendan R. Smithyman and Felix J. Herrmann},
   title = {Projection methods and applications for seismic nonlinear inverse problems with multiple constraints},
   journal = {Geophysics},
+  volume = {84},
+  number = {2},
+  pages = {R251-R269},
   year = {2018},
+  month = {02},
   abstract = {Nonlinear inverse problems are often hampered by non-uniqueness and local minima because of missing low frequencies and far offsets in the data, lack of access to good starting models, noise, and modeling errors. A well-known approach to counter these deficiencies is to include prior information on the unknown model, which regularizes the inverse problem. While conventional regularization methods have resulted in enormous progress in ill-posed (geophysical) inverse problems, challenges remain when the prior information consists of multiple pieces. To handle this situation, we propose an optimization framework that allows us to add multiple pieces of prior information in the form of constraints. Compared to additive regularization penalties, constraints have a number of advantages making them more suitable for inverse problems such as full-waveform inversion. The proposed framework is rigorous because it offers assurances that multiple constraints are imposed uniquely at each iteration, irrespective of the order in which they are invoked. To project onto the intersection of multiple sets uniquely, we employ Dykstra’s algorithm that scales to large problems and does not rely on trade-off parameters. In that sense, our approach differs substantially from approaches such as Tikhonov regularization, penalty methods, and gradient filtering. None of these offer assurances, which makes them less suitable to full-waveform inversion where unrealistic intermediate results effectively derail the iterative inversion process. By working with intersections of sets, we keep expensive objective and gradient calculations unaltered, separate from projections, and we also avoid trade-off parameters. These features allow for easy integration into existing code bases. In addition to more predictable behavior, working with constraints also allows for heuristics where we built up the complexity of the model gradually by relaxing the constraints. This strategy helps to avoid convergence to local minima that represent unrealistic models. We illustrate this unique feature with examples of varying complexity.},
   keywords = {full-waveform inversion, optimization, constraints, regularization, projection, intersection},
   doi = {10.1190/geo2018-0192.1},
-  note = {(Published online in Geophysics)},
+  note = {(Geophysics)},
   url = {https://slim.gatech.edu/Publications/Public/Journals/Geophysics/2018/peters2018pmf/peters2018pmf.html}
 }
 

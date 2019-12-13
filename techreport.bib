@@ -1,6 +1,37 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+%-----2019-----%
+
+@TECHREPORT{siahkoohi2019TRnna,
+  author = {Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
+  title = {Neural network augmented wave-equation simulation},
+  year = {2019},
+  month = {09},
+  number = {TR-CSE-2019-1},
+  institution = {Georgia Institute of Technology},
+  abstract = {Accurate forward modeling is important for solving inverse
+problems. An inaccurate wave-equation simulation, as a forward operator, will
+offset the results obtained via inversion. In this work, we consider the case
+where we deal with incomplete physics. One proxy of incomplete physics is an
+inaccurate discretization of Laplacian in simulation of wave equation via
+finite-difference method. We exploit intrinsic one-to-one similarities
+between timestepping algorithm with Convolutional Neural Networks (CNNs), and
+propose to intersperse CNNs between low-fidelity timesteps. Augmenting neural
+networks with low-fidelity timestepping algorithms may allow us to take large
+timesteps while limiting the numerical dispersion artifacts. While simulating
+the wave-equation with low-fidelity timestepping algorithm, by correcting the
+wavefield several time during propagation, we hope to limit the numerical
+dispersion artifact introduced by a poor discretization of the Laplacian. As
+a proof of concept, we demonstrate this principle by correcting for numerical
+dispersion by keeping the velocity model fixed, and varying the source
+locations to generate training and testing pairs for our supervised learning
+algorithm.},
+  keywords = {wave equation, deep learning, finite difference},
+  url = {https://slim.gatech.edu/Publications/Public/TechReport/2019/siahkoohi2019TRnna/siahkoohi2019TRnna.html},
+  url2 = {https://arxiv.org/pdf/1910.00925.pdf}
+}
+
 %-----2017-----%
 
 @TECHREPORT{louboutin2016OGHPCocp,

@@ -18707,7 +18707,70 @@ algorithm.},
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+%-----2020-----%
+
+@UNPUBLISHED{rizzuti2020EAGEtwri,
+  author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Felix J. Herrmann},
+  title = {Time-domain wavefield reconstruction inversion for large-scale
+seismics},
+  year = {2020},
+  month = {1},
+  abstract = {Wavefield reconstruction inversion is an imaging technique akin to
+full-waveform inversion, albeit based on a relaxed version of the wave
+equation. This relaxation aims to beat the multimodality typical of
+full-waveform inversion. However it prevents the use of time-marching solvers
+for the augmented equation and, as a consequence, cannot be straightforwardly
+employed to large 3D problems. In this work, we formulate a dual version of
+wavefield reconstruction inversion amenable to explicit time-domain solvers,
+yielding a robust and scalable inversion technique.},
+  keywords = {3D, Full-waveform inversion, EAGE, Time-domain},
+  note = {Submitted to EAGE},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/rizzuti2020EAGEtwri/rizzuti2020EAGEtwri.html}
+}
+
+@UNPUBLISHED{siahkoohi2020EAGEdlb,
+  author = {Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann},
+  title = {A deep-learning based Bayesian approach to seismic imaging and
+uncertainty quantification},
+  year = {2020},
+  month = {1},
+  abstract = {Uncertainty quantification is essential when dealing with ill-conditioned
+inverse problems due to the inherent nonuniqueness of the solution. Bayesian
+approaches allow us to determine how likely an estimation of the unknown
+parameters is via formulating the posterior distribution. Unfortunately, it
+is often not possible to formulate a prior distribution that precisely
+encodes our prior knowledge about the unknown. Furthermore, adherence to
+handcrafted priors may greatly bias the outcome of the Bayesian analysis. To
+address this issue, we propose to use the functional form of a randomly
+initialized convolutional neural network as an implicit structured prior,
+which is shown to promote natural images and excludes images with unnatural
+noise. In order to incorporate the model uncertainty into the final estimate,
+we sample the posterior distribution using stochastic gradient Langevin
+dynamics and perform Bayesian model averaging on the obtained samples. Our
+synthetic numerical experiment verifies that deep priors combined with
+Bayesian model averaging are able to partially circumvent imaging artifacts
+and reduce the risk of overfitting in the presence of extreme noise. Finally,
+we present pointwise variance of the estimates as a measure of uncertainty,
+which coincides with regions that are difficult to image.},
+  keywords = {seismic imaging, uncertainty quantification, stochastic gradient
+Langevin dynamics, deep learning, EAGE},
+  note = {Submitted to EAGE},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/siahkoohi2020EAGEdlb/siahkoohi2020EAGEdlb.html}
+}
+
 %-----2019-----%
+
+@UNPUBLISHED{daskalakis2019SIAMJISasr,
+  author = {Emmanouil Daskalakis and Felix J. Herrmann and Rachel Kuske},
+  title = {ACCELERATING SPARSE RECOVERY BY REDUCING CHATTER},
+  year = {2019},
+  abstract = {Compressive Sensing has driven a resurgence of sparse recovery algorithms with
+  l_1-norm minimization. While these minimizations are relatively well understood for small underdetermined, possibly inconsistent systems, their behavior for large over-determined and inconsistent systems has received much less attention. Specifically, we focus on large systems where computational restrictions call for algorithms that use randomized subsets of rows that are touched a limited number of times. In that regime, l_1-norm minimization algorithms exhibit unwanted fluctuations near the desired solution, and the Linear Bregman iterations are no exception. We explain this observed lack of performance in terms of chatter, a well-known phenomena observed in non-smooth dynamical systems, where intermediate solutions wander between different states stifling convergence. By identifying chatter as the culprit, we modify the Bregman iterations with chatter reducing adaptive element-wise step lengths in combination with potential support detection via threshold crossing. We demonstrate the performance of our algorithm on carefully selected stylized examples and a realistic seismic imaging problem involving millions of unknowns and matrix-free matrix-vector products that involve expensive wave-equation solves.},
+  keywords = {sparsity promotion, inconsistent linear systems, Kacmarz, linearized Bregman
+dynamical systems, non-smooth dynamics, chatter},
+  note = {Submitted to SIAM Journal on Imaging Sciences},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2019/daskalakis2019SIAMJISasr/daskalakis2019SIAMJISasr.pdf}
+}
 
 @UNPUBLISHED{witte2019RHPCssi,
   author = {Philipp A. Witte and Mathias Louboutin and Charles Jones and Felix J. Herrmann},

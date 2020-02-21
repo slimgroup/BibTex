@@ -22566,6 +22566,71 @@ experiments illustrate the flexibility and efficiency of the approach.},
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+%-----2020-----%
+
+@PHDTHESIS{witte2020THsal,
+  author = {Philipp A. Witte},
+  title = {Software and algorithms for large-scale seismic inverse problems},
+  school = {Georgia Institute of Technology},
+  year = {2020},
+  month = {02},
+  address = {Atlanta},
+  abstract = {Seismic imaging and parameter estimation are an import class of inverse
+problems with practical relevance in resource exploration, carbon control and
+monitoring systems for geohazards. The goal of seismic inverse problems is to
+image subsurface geological structures and estimate physical rock properties
+such as wave speed or density. Mathematically, this can be achieved by
+solving an optimization problem in which we minimize the mismatch between
+numerically modeled data and observed data from a seismic survey. As wave
+propagation through a medium is described by wave equations, seismic inverse
+problems involve solving a large number of partial differential equations
+(PDEs) during numerical optimization using finite difference modeling, making
+them computationally expensive. Additionally, seismic inverse problems are
+typically ill-posed, non-convex or ill-conditioned, thus making them
+challenging from a mathematical standpoint as well. Similar to the field of
+deep learning, this calls for software that is not only optimized for
+performance, but also enables geophysical domain specialists to experiment
+with algorithms in high-level programming languages and using different
+computing environments, such as high-performance computing (HPC) clusters or
+the cloud. Furthermore, they call for the adaption of dimensionality
+reduction techniques and stochastic algorithms to address computational cost
+from the algorithmic side.
+
+This thesis makes three distinct contributions to address computational
+challenges encountered in seismic inverse problems and to facilitate
+algorithmic development in this field. Part one introduces a large-scale
+framework for seismic modeling and inversion based on the paradigm of
+separation of concerns, which combines a user interface based on domain
+specific abstractions with a Python package for automatic code generation to
+solve the underlying PDEs. The modular code structure makes it possible to
+manage the complexity of a seismic inversion code, while matrix-free linear
+operators and data containers enable the implementation of algorithms in a
+fashion that closely resembles the underlying mathematical notation. The
+second contribution of this thesis is an algorithm for seismic imaging, that
+addresses its high computational cost and large memory imprint through a
+combination of on-the-fly Fourier transforms, stochastic sampling techniques
+and sparsity-promoting optimization. The algorithm combines the best of both
+time- and frequency-domain inversion, as the memory imprint is independent of
+the number of modeled time steps, while time-to-frequency conversions avoid
+the need to solve Helmholtz equations, which involve inverting
+ill-conditioned matrices. Part three of this thesis introduces a novel
+approach for adapting the cloud for high-performance computing applications
+like seismic imaging, which does not rely on a fixed cluster of permanently
+running virtual machines. Instead, computational resources are automatically
+started and terminated by the cloud environment during runtime and the
+workflow takes advantage of cloud-native technologies such as event-driven
+computations and containerized batch processing. The performance and cost
+analysis shows that this approach is able to address current shortcomings of
+the cloud such as inferior resilience, while at the same time reducing
+operating cost up to an order of magnitude. As such, the workflow provides a
+strategy for cost effectively running large-scale seismic imaging problems in
+the cloud and is a viable alternative to conventional HPC clusters.},
+  keywords = {PhD, seismic, imaging, RTM, FWI, AWS, software, algorithms},
+  note = {(PhD)},
+  url = {https://slim.gatech.edu/Publications/Public/Thesis/2020/witte2020THsal/witte2020THsal.pdf},
+  presentation = {https://slim.gatech.edu/Publications/Public/Thesis/2020/witte2020THsal/witte2020THsal_pres.pdf}
+}
+
 %-----2019-----%
 
 @PHDTHESIS{peters2019THiso,
@@ -23190,6 +23255,37 @@ scale problems with an acceptable computational cost.},
   keywords = {curvelet transform, reconstruction, SLIM},
   note = {(PhD)},
   url = {https://slim.gatech.edu/Publications/Public/Thesis/2008/hennenfent08phd.pdf}
+}
+
+%----- 2020 -----%
+
+@MISC{siahkoohi2020SEGCHAPTERGTdlbuq,
+  title = {A deep-learning based Bayesian approach to seismic imaging and uncertainty quantification},
+  booktitle = {GT SEG Student Chapter},  
+  year = {2020},
+  abstract = {Uncertainty quantification is essential when dealing with
+ill-conditioned inverse problems due to the inherent nonuniqueness of the
+solution. Bayesian approaches allow us to determine how likely an estimation
+of the unknown parameters is via formulating the posterior distribution.
+Unfortunately, it is often not possible to formulate a prior distribution
+that precisely encodes our prior knowledge about the unknown. Furthermore,
+adherence to handcrafted priors may greatly bias the outcome of the Bayesian
+analysis. To address this issue, we propose to use the functional form of a
+randomly initialized convolutional neural network as an implicit structured
+prior, which is shown to promote natural images and excludes images with
+unnatural noise. In order to incorporate the model uncertainty into the final
+estimate, we sample the posterior distribution using stochastic gradient
+Langevin dynamics and perform Bayesian model averaging on the obtained
+samples. Our synthetic numerical experiment verifies that deep priors
+combined with Bayesian model averaging are able to partially circumvent
+imaging artifacts and reduce the risk of overfitting in the presence of
+extreme noise. Finally, we present pointwise variance of the estimates as a
+measure of uncertainty, which coincides with regions that are more difficult
+to image.},
+  keywords = {deep learning, seismic imaging, stochastic gradient Langevin dynamics, uncertainty quantification},
+  note = {(SEG Student Chapter)},
+  url = {https://slim.gatech.edu/Publications/Public/Lectures/SEGCHAPTERGT/2020/siahkoohi2020SEGCHAPTERGTdlbuq/siahkoohi2020SEGCHAPTERGTdlbuq.pdf},
+  author = {Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann}
 }
 
 %----- 2019 -----%

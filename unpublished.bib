@@ -3,6 +3,46 @@
 
 %-----2020-----%
 
+@UNPUBLISHED{yang2020lrpo,
+  author = {Mengmeng Yang and Marie Graff and Rajiv Kumar and Felix J. Herrmann},
+  title = {Low-rank representation of omnidirectional subsurface extended image
+volumes},
+  year = {2020},
+  month = {3},
+  abstract = {Subsurface-offset gathers play an increasingly important role in seismic
+imaging. These gathers are used during velocity model building and inversion
+of rock properties from amplitude variations. While powerful, these gathers
+come with high computational and storage demands to form and manipulate these
+high dimensional objects. This explains why only limited numbers of image
+gathers are computed over a limited offset range. We avoid these high costs
+by working with highly compressed low-rank factorizations. We arrive at these
+factorizations via a combination of probings with the double two-way wave
+equation and randomized singular value decompositions. In turn, the resulting
+factorizations give us access to all subsurface offsets without having to
+form the full extended image volumes. The latter is computationally
+prohibitive because extended image volumes are quadratic in image size. As a
+result, we can easily handle situations where conventional horizontal offset
+gathers are no longer focused. More importantly, the factorization also
+provides a mechanism to use the invariance relation of extended image volumes
+for velocity continuation. With this technique, extended image volumes for
+one background velocity model can directly be mapped to those of another
+background velocity model. Our low-rank factorization inherits this
+invariance property so we incur factorization costs only once when examining
+different imaging scenarios. Because all imaging experiments only involve the
+factors, they are computationally cheap with costs that scale with the rank
+of the factorization. We validate our methodology on 2D synthetics including
+a challenging imaging example with salt. Our experiments show that our
+low-rank factorization parameterizes extended image volumes naturally.
+Instead of brute force explicit cross-correlations between shifted source and receiver
+wavefields, our approach relies on the underlying linear-algebra structure
+that enables us to work with these objects without incurring unfeasible
+demands on computation and storage.},
+  keywords = {extended image volumes, low rank, randomized linear algebra, power
+schemes, invariance relationship},
+  note = {Submitted to Geophysics},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/yang2020lrpo/yang2020lrpo.html}
+}
+
 @UNPUBLISHED{yang2020tdsp,
   author = {Mengmeng Yang and Zhilong Fang and Philipp A. Witte and Felix J. Herrmann},
   title = {Time-domain sparsity promoting least-squares reverse time migration

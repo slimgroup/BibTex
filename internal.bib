@@ -1,6 +1,57 @@
 % This file was created with JabRef 2.9.
 % Encoding: ISO8859_1
 
+%-----2020-----%
+
+@CONFERENCE{rizzuti2020EAGEtwri,
+  author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Felix J. Herrmann},
+  title = {Time-domain wavefield reconstruction inversion for large-scale
+seismics},
+  year = {2020},
+  month = {1},
+  abstract = {Wavefield reconstruction inversion is an imaging technique akin to
+full-waveform inversion, albeit based on a relaxed version of the wave
+equation. This relaxation aims to beat the multimodality typical of
+full-waveform inversion. However it prevents the use of time-marching solvers
+for the augmented equation and, as a consequence, cannot be straightforwardly
+employed to large 3D problems. In this work, we formulate a dual version of
+wavefield reconstruction inversion amenable to explicit time-domain solvers,
+yielding a robust and scalable inversion technique.},
+  keywords = {3D, Full-waveform inversion, EAGE, Time-domain},
+  note = {Accepted in EAGE},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2020/rizzuti2020EAGEtwri/rizzuti2020EAGEtwri.html}
+}
+
+@CONFERENCE{siahkoohi2020EAGEdlb,
+  author = {Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann},
+  title = {A deep-learning based Bayesian approach to seismic imaging and
+uncertainty quantification},
+  year = {2020},
+  month = {1},
+  abstract = {Uncertainty quantification is essential when dealing with ill-conditioned
+inverse problems due to the inherent nonuniqueness of the solution. Bayesian
+approaches allow us to determine how likely an estimation of the unknown
+parameters is via formulating the posterior distribution. Unfortunately, it
+is often not possible to formulate a prior distribution that precisely
+encodes our prior knowledge about the unknown. Furthermore, adherence to
+handcrafted priors may greatly bias the outcome of the Bayesian analysis. To
+address this issue, we propose to use the functional form of a randomly
+initialized convolutional neural network as an implicit structured prior,
+which is shown to promote natural images and excludes images with unnatural
+noise. In order to incorporate the model uncertainty into the final estimate,
+we sample the posterior distribution using stochastic gradient Langevin
+dynamics and perform Bayesian model averaging on the obtained samples. Our
+synthetic numerical experiment verifies that deep priors combined with
+Bayesian model averaging are able to partially circumvent imaging artifacts
+and reduce the risk of overfitting in the presence of extreme noise. Finally,
+we present pointwise variance of the estimates as a measure of uncertainty,
+which coincides with regions that are difficult to image.},
+  keywords = {seismic imaging, uncertainty quantification, stochastic gradient
+Langevin dynamics, deep learning, EAGE},
+  note = {Accepted in EAGE},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2020/siahkoohi2020EAGEdlb/siahkoohi2020EAGEdlb.html}
+}
+
 %-----2019-----%
 
 @CONFERENCE{herrmann2019NIPSliwcuc,
@@ -18709,6 +18760,42 @@ algorithm.},
 
 %-----2020-----%
 
+@UNPUBLISHED{siahkoohi2020SEGuqi,
+  author = {Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann},
+  title = {Uncertainty quantification in imaging and automatic horizon
+tracking—a Bayesian deep-prior based approach},
+  year = {2020},
+  month = {3},
+  abstract = {In inverse problems, uncertainty quantification (UQ) deals with a
+probabilistic description of the solution nonuniqueness and data noise
+sensitivity. Setting seismic imaging into a Bayesian framework allows for a
+principled way of studying uncertainty by solving for the model posterior
+distribution. Imaging, however, typically constitutes only the first stage of
+a sequential workflow, and UQ becomes even more relevant when applied to
+subsequent tasks that are highly sensitive to the inversion outcome. In this
+paper, we focus on how UQ trickles down to horizon tracking for the
+determination of stratigraphic models and investigate its sensitivity with
+respect to the imaging result. As such, the main contribution of this work
+consists in a data-guided approach to horizon tracking uncertainty analysis.
+This work is fundamentally based on a special reparameterization of
+reflectivity, known as "deep prior". Feasible models are restricted to the
+output of a convolutional neural network with a fixed input, while weights
+and biases are Gaussian random variables. Given a deep prior model, the
+network parameters are sampled from the posterior distribution via a Markov
+chain Monte Carlo method, from which the conditional mean and point-wise
+standard deviation of the inferred reflectivities are approximated. For each
+sample of the posterior distribution, a reflectivity is generated, and the
+horizons are tracked automatically. In this way, uncertainty on model
+parameters naturally translates to horizon tracking. As part of the
+validation for the proposed approach, we verified that the estimated
+confidence intervals for the horizon tracking coincide with geologically
+complex regions, such as faults.},
+  keywords = {machine learning, uncertainty quantification, imaging, horizon
+picking, SEG},
+  note = {Submitted to SEG},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/siahkoohi2020SEGuqi/siahkoohi2020SEGuqi.html}
+}
+
 @UNPUBLISHED{yang2020lrpo,
   author = {Mengmeng Yang and Marie Graff and Rajiv Kumar and Felix J. Herrmann},
   title = {Low-rank representation of omnidirectional subsurface extended image
@@ -18761,54 +18848,6 @@ with source estimation},
   url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/yang2020tdsp/yang2020tdsp.html}
 }
 
-@UNPUBLISHED{rizzuti2020EAGEtwri,
-  author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Felix J. Herrmann},
-  title = {Time-domain wavefield reconstruction inversion for large-scale
-seismics},
-  year = {2020},
-  month = {1},
-  abstract = {Wavefield reconstruction inversion is an imaging technique akin to
-full-waveform inversion, albeit based on a relaxed version of the wave
-equation. This relaxation aims to beat the multimodality typical of
-full-waveform inversion. However it prevents the use of time-marching solvers
-for the augmented equation and, as a consequence, cannot be straightforwardly
-employed to large 3D problems. In this work, we formulate a dual version of
-wavefield reconstruction inversion amenable to explicit time-domain solvers,
-yielding a robust and scalable inversion technique.},
-  keywords = {3D, Full-waveform inversion, EAGE, Time-domain},
-  note = {Submitted to EAGE},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/rizzuti2020EAGEtwri/rizzuti2020EAGEtwri.html}
-}
-
-@UNPUBLISHED{siahkoohi2020EAGEdlb,
-  author = {Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann},
-  title = {A deep-learning based Bayesian approach to seismic imaging and
-uncertainty quantification},
-  year = {2020},
-  month = {1},
-  abstract = {Uncertainty quantification is essential when dealing with ill-conditioned
-inverse problems due to the inherent nonuniqueness of the solution. Bayesian
-approaches allow us to determine how likely an estimation of the unknown
-parameters is via formulating the posterior distribution. Unfortunately, it
-is often not possible to formulate a prior distribution that precisely
-encodes our prior knowledge about the unknown. Furthermore, adherence to
-handcrafted priors may greatly bias the outcome of the Bayesian analysis. To
-address this issue, we propose to use the functional form of a randomly
-initialized convolutional neural network as an implicit structured prior,
-which is shown to promote natural images and excludes images with unnatural
-noise. In order to incorporate the model uncertainty into the final estimate,
-we sample the posterior distribution using stochastic gradient Langevin
-dynamics and perform Bayesian model averaging on the obtained samples. Our
-synthetic numerical experiment verifies that deep priors combined with
-Bayesian model averaging are able to partially circumvent imaging artifacts
-and reduce the risk of overfitting in the presence of extreme noise. Finally,
-we present pointwise variance of the estimates as a measure of uncertainty,
-which coincides with regions that are difficult to image.},
-  keywords = {seismic imaging, uncertainty quantification, stochastic gradient
-Langevin dynamics, deep learning, EAGE},
-  note = {Submitted to EAGE},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/siahkoohi2020EAGEdlb/siahkoohi2020EAGEdlb.html}
-}
 
 %-----2019-----%
 

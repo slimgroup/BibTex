@@ -1,0 +1,260 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww20460\viewh16600\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs40 \cf0 # SLIM bibtex and website maintenance\
+\
+### Author: Haneet Wason, Email: hwason@eoas.ubc.ca\
+\
+Dear Bibtex Manager,\
+\
+If you are reading this at your own will and have volunteered to manage SLIM\'92s bibtex and website\'85..good for you! If you have been volunteered for this job, well, get used to it. Either way, managing the bibtex and website is not as bad as it sounds. It is pretty simple and I hope the guidelines below help you keep it simple. Feel free to contact me if there are any questions.\
+\
+Have fun!\
+\
+\
+## Bibtex maintenance\
+\
+SVN repository for SLIM bibtex: https://wave.eos.ubc.ca/SLIM/SLIM.Projects.bibtex.database/\
+\
+### Bibtex entry types\
+\
+For details, refer to the wikipedia link for Bibtex: {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/BibTeX"}}{\fldrslt https://en.wikipedia.org/wiki/BibTeX}}.\
+\
+1. article\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+@ARTICLE\{bibtexkey,\
+  author = \{\},\
+  title = \{\},\
+  journal = \{\},\
+  year = \{\},\
+  month = \{\},\
+  volume = \{\},\
+  number = \{\},\
+  pages = \{\},\
+  abstract = \{\},\
+  keywords = \{\},\
+  doi  = \{\},\
+  note = \{()\}, [NOTE: use parentheses inside curly brackets, see explanation below]\
+  url = \{https://www.slim.eos.ubc.ca/Publications/Public/Journals/\'85\} [NOTE: no comma after the last field]\
+\}\
+\pard\pardeftab720
+\cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 bibtexkey format: lastnameYYYYtitle (e.g.: herrmann2010rss) \\\
+- Once an entry has been posted on the website, no matter the bibtex entry type, do NOT change the bibtexkey in the bibtex database when moving entries from one .bib file to the other. \
+- First alphabet of last name of first author is lowercase, i.e., herrrmann, not Herrmann.\
+- Title typically includes first alphabet of the first three words in the title to keep the length of the bibtexkey short. For e.g., for the title \'93\expnd0\expndtw0\kerning0
+Randomized sampling and sparsity: getting more information from fewer samples,\'94 the bibtexkey will include rss. Note that we do not use the first alphabet of words like: a, an, and, the, of, for, to, is, if, etc. \kerning1\expnd0\expndtw0 \
+- Name of the journal to which the article is first submitted for review is not included in the bibtexkey for privacy, in case the submitted article is rejected for publication. Journal name was included in the past but not anymore.\
+- author: Use \'93and\'94 between multiple author names. For e.g., author = \{Felix J. Herrmann and Rongrong Wang and \expnd0\expndtw0\kerning0
+Emmanouil Daskalakis\kerning1\expnd0\expndtw0 \}. NOTE: Do NOT use different versions of an author\'92s name, i.e., use Felix J. Herrmann every time for this author, not Felix Herrmann or any other version. This prevents from making multiple entries in the list of authors for one author.\
+- title: Only capitalize the first alphabet of the first word in the title, NOT the first alphabet of every word unless it is a noun or acronym. For e.g., title = \{\expnd0\expndtw0\kerning0
+Massive \{3D\} seismic data compression and inversion with hierarchical \{Tucker\}\}. NOTE: use curly brackets around words that have capitalized alphabets. This ensures capitalization is properly rendered when importing bibtex on the website.\kerning1\expnd0\expndtw0 \
+\pard\pardeftab720
+\cf0 - month: entered as 01, 02, 03,\'85.., 09, 10, 11, 12.\
+- doi: Do not use this field if doi is not available.\
+- note: Specifies the journal name. Remember to use parentheses inside the curly brackets for better display on the front page. For e.g., note = \{(Geophysics)\}, or note = \{(The Leading Edge)\}, etc. Sometimes a bibtex entry is never displayed on the front page. Hence, the parentheses are not used but you can use parentheses every time for consistency.\
+- url: Points to the preprint on the slimweb server, i.e., the final version of the paper that is accepted for publication. The doi field serves as the actual journal link. If no doi is available, add a second url field for the journal link, for e.g., url2 = \{\}.  \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+2. conference\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+@CONFERENCE\{\kerning1\expnd0\expndtw0 bibtexkey\expnd0\expndtw0\kerning0
+,\
+  author = \{\},\
+  title = \{\},\
+  booktitle = \{\},\
+  year = \{\},\
+  month = \{\},\
+  pages = \{\}, [NOTE: EAGE abstracts do NOT have page numbers]\
+  abstract = \{\},\
+  keywords = \{\},\
+  doi  = \{\},\
+  note = \{()\},\
+  url = \{https://www.slim.eos.ubc.ca/Publications/Public/Conferences/\'85\},\
+  presentation = \{https://www.slim.eos.ubc.ca/Publications/Public/Conferences/\'85\}	\
+\}\
+\pard\pardeftab720
+\cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 bibtexkey format: lastnameYYYYCONFtitle (e.g.: herrmann2016SEGcvp) \\\
+bibtexkey format for workshops (WS): lastnameYYYYCONFWStitle (e.g.: herrmann2016SEGWScvp) \\\
+- Once an entry has been posted on the website, no matter the bibtex entry type, do NOT change the bibtexkey in the bibtex database when moving entries from one .bib file to the other. \
+- Most workshop presentations do not have corresponding extended abstracts. In this case, remove the url field.\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+- booktitle: For SEG, booktitle = \{SEG Technical Program Expanded Abstracts\}. For EAGE = \{EAGE Annual Conference Proceedings\}. NOTE: EAGE conference abstracts do NOT have page numbers as they are not compiled in a book. They only have doi\'92s. For other conferences, use book titles accordingly.\
+- note: Usually contains name of the conference and location. For e.g., note = \{(SEG, Houston)\}, note = \{(EAGE, Madrid)\}, etc.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \kerning1\expnd0\expndtw0 \
+\
+3. manual\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \expnd0\expndtw0\kerning0
+@MANUAL\{\kerning1\expnd0\expndtw0 bibtexkey\expnd0\expndtw0\kerning0
+,\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+  title = \{\},\
+  author = \{\},\
+  year = \{\},\
+  month = \{\},\
+  abstract = \{\},\
+  keywords = \{\},\
+  url = \{\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \kerning1\expnd0\expndtw0 \
+bibtexkey format: lastnameYYYYMNtitle (e.g.: \expnd0\expndtw0\kerning0
+hennenfent2008MNrap\kerning1\expnd0\expndtw0 ) \\\
+- Once an entry has been posted on the website, no matter the bibtex entry type, do NOT change the bibtexkey in the bibtex database when moving entries from one .bib file to the other. \
+- MN: Refers to manual.\
+\
+\
+4. masterthesis\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+@MASTERSTHESIS\{\kerning1\expnd0\expndtw0 bibtexkey\expnd0\expndtw0\kerning0
+,\
+  author = \{\},\
+  title = \{\},\
+  school = \{The University of British Columbia\},\
+  year = \{\},\
+  month = \{\},\
+  address = \{Vancouver\},\
+  abstract = \{\},\
+  keywords = \{MSc, \},\
+  note = \{(MSc)\},\
+  url = \{https://www.slim.eos.ubc.ca/Publications/Public/Thesis/\'85\},\
+  presentation = \{https://www.slim.eos.ubc.ca/Publications/Public/Thesis/\'85\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \kerning1\expnd0\expndtw0 \
+bibtexkey format: lastnameYYYYTHtitle (e.g.: \expnd0\expndtw0\kerning0
+bougher2016THmla\kerning1\expnd0\expndtw0 ) \\\
+- Once an entry has been posted on the website, no matter the bibtex entry type, do NOT change the bibtexkey in the bibtex database when moving entries from one .bib file to the other. \
+- TH: Refers to thesis.\
+\
+\
+5. phdthesis\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+@PHDTHESIS\{\kerning1\expnd0\expndtw0 bibtexkey\expnd0\expndtw0\kerning0
+,\
+  author = \{\},\
+  title = \{\},\
+  school = \{The University of British Columbia\},\
+  year = \{\},\
+  month = \{\},\
+  address = \{Vancouver\},\
+  abstract = \{\},\
+  keywords = \{PhD, \},\
+  note = \{(PhD)\},\
+  url = \{https://www.slim.eos.ubc.ca/Publications/Public/Thesis/\'85\},\
+  presentation = \{https://www.slim.eos.ubc.ca/Publications/Public/Thesis/\'85\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \kerning1\expnd0\expndtw0 \
+bibtexkey format: lastnameYYYYTHtitle (e.g.: dasilva2017THlso) \\\
+- Once an entry has been posted on the website, no matter the bibtex entry type, do NOT change the bibtexkey in the bibtex database when moving entries from one .bib file to the other. \
+- TH: Refers to thesis.\
+\
+\
+6. presentation\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+@PRESENTATION\{bibtexkey,\
+  author = \{\},\
+  title = \{\},\
+  booktitle = \{SINBAD Fall consortium talks\},  [NOTE: replace \'93Fall\'94 with \'93Spring\'94 for Spring consortium talks]\
+  organization = \{SINBAD\},\
+  year = \{\},\
+  abstract = \{\},\
+  keywords = \{presentation, SINBAD, SINBADFALLyear, SLIM, private\},\
+  url = \{https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/year/Fall/\'85\},\
+  url2 = \{https://www.slim.eos.ubc.ca/Publications/Private/Conferences/SINBAD/year/Fall/\'85\}\
+\}\
+\pard\pardeftab720
+\cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 bibtexkey format: lastnameYYYYTHtitle (e.g.: \expnd0\expndtw0\kerning0
+fang2016SINBADFeaq\kerning1\expnd0\expndtw0 ) \\\
+- Once an entry has been posted on the website, no matter the bibtex entry type, do NOT change the bibtexkey in the bibtex database when moving entries from one .bib file to the other. \
+- This bibtex entry type has been custom-made for SINBAD consortium presentations.\
+- SINBADF: Refers to the SINBAD Fall meeting; SINBAD: refers to the SINBAD Spring meeting (note, no \'92S\'92 at the end of the word).\
+- keywords: Make sure to add the \'93private\'94 keyword for each entry since these presentations are made available only to our sponsors. Add SINBADFALLyear or SINBADSPRINGyear for Fall or Spring consortium talks, respectively.\
+- url: This url points to the pdf of the presentation. Replace \'93Fall\'94 with \'93Spring\'94 for Spring consortium talks.\
+- url2: This url points to the recording of the presentation. Replace \'93Fall\'94 with \'93Spring\'94 for Spring consortium talks.\
+\
+\
+7. techreport\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+@TECHREPORT\{bibtexkey,\
+  author = \{\},\
+  title = \{\},\
+  year = \{\},\
+  number = \{TR-EOAS-year-number\},\
+  institution = \{UBC\},\
+  abstract = \{\},\
+  keywords = \{\},\
+  url = \{https://www.slim.eos.ubc.ca/Publications/Public/TechReport/\'85\}\
+\}\
+\pard\pardeftab720
+\cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 bibtexkey format: lastnameYYYYTRtitle (e.g.: \expnd0\expndtw0\kerning0
+witte2017TRcls\kerning1\expnd0\expndtw0 ) \\ \
+- Once an entry has been posted on the website, no matter the bibtex entry type, do NOT change the bibtexkey in the bibtex database when moving entries from one .bib file to the other. \
+- TR: Refers to technical report.\
+- When moving rejected papers/conference abstracts to techreport.bib, do NOT change the bibtexkey.\
+- \expnd0\expndtw0\kerning0
+number: For e.g., number = \{TR-EOAS-2017-1\}.\kerning1\expnd0\expndtw0 \
+\
+\
+8. unpublished\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+@UNPUBLISHED\{bibtexkey,\
+  author = \{\},\
+  title = \{\},\
+  booktitle = \{\}, [NOTE: use this field for submitted conference abstracts]\
+  year = \{\},\
+  abstract = \{\},\
+  keywords = \{\'85, private\},\
+  note = \{()\},\
+  url = \{https://www.slim.eos.ubc.ca/Publications/Private/Submitted/\'85\}\
+\}\
+\pard\pardeftab720
+\cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 bibtexkey format: depends on the submitted paper/conference abstract.\
+- Once an entry has been posted on the website, no matter the bibtex entry type, do NOT change the bibtexkey in the bibtex database when moving entries from one .bib file to the other.\
+- All submitted conference abstracts and submitted journal papers are first entered as unpublished entries on the website. For submitted conference abstracts, the entries are updated once the decision about the acceptance/rejection is known. The accepted abstract entries are moved to conference.bib (with a note = \{(to be presented at the SEG/EAGE/etc.)\}) while the rejected ones are moved to techreport.bib. For submitted journal papers, the url is updated with each revision. Accepted paper entries are moved to article.bib while the rejected ones are moved to techreport.bib.\
+- keywords: Remember to use the \'93private\'94 keyword for submitted journal papers and conference abstracts. This keyword is removed only for conference abstracts after 45 days. \
+\
+Other available entry types: book, booklet, inbook, incollection, misc, proceedings. These entry types have not been used so far. Refer to the wikipedia link for details on each.\
+\
+\
+## Updating bibtex files in SVN\
+1. Once a particular .bib file has been updated, run \'93scons\'94 in the terminal window. In case of an error, fix it and run \'93scons\'94 again. Repeat until there is no error. \
+2. Import the bibtex (internal.bib) onto SLIM website before committing the updated .bib files in SVN.\
+\
+\
+## Importing bibtex onto SLIM website\
+1. Log in to your user account at https://www.slim.eos.ubc.ca/user.\
+2. Go to Publications/Import.\
+3. For Import file(s): choose the internal.bib from the SVN repository.\
+4. For File Type: choose the \'93BibTex\'94 option.\
+5. Click \'93IMPORT\'94 and wait for the entries to be uploaded.\
+6. Once the entries have been uploaded, make sure to check that the link for each entry and the url\'92s inside are working.\
+7. Log out from your account.\
+8. Finally, commit all the updated .bib files in SVN.\
+\
+}

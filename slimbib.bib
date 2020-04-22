@@ -172,6 +172,25 @@ directly train a network capable of generating samples from the posterior. The m
   presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/witte2019SEGedw/witte2019SEGedw_pres.pdf}
 }
 
+@CONFERENCE{witte2019RHPCssi,
+  author = {Philipp A. Witte and Mathias Louboutin and Charles Jones and Felix J. Herrmann},
+  title = {Serverless seismic imaging in the cloud},
+  year = {2020},
+  month = {03},
+  abstract = {This talk presents a serverless approach to seismic imaging in the
+cloud based on high-throughput containerized batch processing, event-driven
+computations and a  domain-specific language compiler for solving the
+underlying wave equations. A 3D case study on Azure demonstrates that this
+approach allows reducing the operating cost of up to a factor of 6, making
+the cloud a viable alternative to on-premise HPC clusters for seismic
+imaging.},
+  keywords = {cloud, hpc, reverse-time migration, serverless},
+  note = {Rice Oil and Gas High Performance Computing Conference 2020},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/RHPC/2019/witte2019RHPCssi/witte2019RHPCssi.html},
+  url2 = {https://www.youtube.com/watch?v=epilCpa078A&list=PLcsG4X8Zn_UA3m7tgIMbOdXD8eOEPiUYD&index=17},
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/RHPC/2019/witte2019RHPCssi/witte2019RHPCssi_pres.pdf}
+}
+
 @CONFERENCE{yang2019SEGlrr,
   author = {Mengmeng Yang and Marie Graff and Rajiv Kumar and Felix J. Herrmann},
   title = {Low-rank representation of subsurface extended image volumes with power iterations},
@@ -18760,6 +18779,34 @@ algorithm.},
 
 %-----2020-----%
 
+@UNPUBLISHED{louboutin2020SCsta,
+  author = {Mathias Louboutin and Fabio Luporini and Philipp A. Witte and Rhodri
+Nelson and George Bisbas and Jan Thorbecke and Felix J. Herrmann and Gerard
+Gorman},
+  title = {Scaling through abstractions – high-performance vectorial wave
+simulations for seismic inversion with Devito},
+  year = {2020},
+  month = {4},
+  abstract = {[Devito] is an open-source Python project based on domain-specific
+language and compiler technology. Driven by the requirements of rapid HPC
+applications development in exploration seismology, the language and compiler
+have evolved significantly since inception. Sophisticated boundary
+conditions, tensor contractions, sparse operations and features such as
+staggered grids and sub-domains are all supported; operators of essentially
+arbitrary complexity can be generated. To accommodate this flexibility whilst
+ensuring performance, data dependency analysis is utilized to schedule loops
+and detect computational-properties such as parallelism. In this article, the
+generation and simulation of MPI-parallel propagators (along with their
+adjoints) for the pseudo-acoustic wave-equation in tilted transverse
+isotropic media and the elastic wave-equation are presented. Simulations are
+carried out on industry scale synthetic models in a HPC Cloud system and
+reach a performance of 28TFLOP/s, hence demonstrating Devito's suitability
+for production-grade seismic inversion problems.},
+  keywords = {HPC, Devito, finite-difference, large-scale, RTM, elastic, TTI},
+  note = {Submitted to SC20},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/louboutin2020SCsta/louboutin2020SCsta.pdf}
+}
+
 @UNPUBLISHED{louboutin2020SEGtwri,
   author = {Mathias Louboutin and Gabrio Rizzuti and Felix J. Herrmann},
   title = {Time-domain Wavefield Reconstruction Inversion in a TTI medium},
@@ -19040,22 +19087,6 @@ dynamical systems, non-smooth dynamics, chatter},
   url = {https://slim.gatech.edu/Publications/Public/Submitted/2019/daskalakis2019SIAMJISasr/daskalakis2019SIAMJISasr.pdf}
 }
 
-@UNPUBLISHED{witte2019RHPCssi,
-  author = {Philipp A. Witte and Mathias Louboutin and Charles Jones and Felix J. Herrmann},
-  title = {Serverless seismic imaging in the cloud},
-  year = {2019},
-  abstract = {This talk presents a serverless approach to seismic imaging in the
-cloud based on high-throughput containerized batch processing, event-driven
-computations and a  domain-specific language compiler for solving the
-underlying wave equations. A 3D case study on Azure demonstrates that this
-approach allows reducing the operating cost of up to a factor of 6, making
-the cloud a viable alternative to on-premise HPC clusters for seismic
-imaging.},
-  keywords = {cloud, hpc, reverse-time migration, serverless},
-  note = {Submitted to Rice Oil and Gas High Performance Computing Conference 2020 on November 27, 2019},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2019/witte2019RHPCssi/witte2019RHPCssi.html}
-}
-
 @UNPUBLISHED{witte2019TPDedas,
   author = {Philipp A. Witte and Mathias Louboutin and Henryk Modzelewski and Charles Jones and James Selvage and Felix J. Herrmann},
   title = {An Event-Driven Approach to Serverless Seismic Imaging in the Cloud},
@@ -19083,18 +19114,6 @@ clusters for large-scale seismic imaging.},
   note = {Submitted to IEEE Transactions on Parallel and Distributed Systems on August 20, 2019},
   url = {https://slim.gatech.edu/Publications/Public/Submitted/2019/witte2019TPDedas/witte2019TPDedas.html}
 }
-
-@UNPUBLISHED{kukreja2019PASCccd,
-  author = {Navjot Kukreja and Jan Huckelheim and Mathias Louboutin and Kaiyuan Hou and Paul Hovland and Gerard Gorman},
-  title = {Combining checkpointing and data compression to accelerate adjoint-based optimization problems},
-  year = {2019},
-  abstract = {Seismic inversion and imaging are adjoint-based optimization problems that processes up to terabytes of data, regularly exceeding the memory capacity of available computers. Data compression is an effective strategy to reduce this memory requirement by a certain factor, particularly if some loss in accuracy is acceptable. A popular alternative is checkpointing, where data is stored at selected points in time, and values at other times are recomputed as needed from the last stored state. This allows arbitrarily large adjoint computations with limited memory, at the cost of additional recomputations. In this paper we combine compression and checkpointing for the first time to compute a realistic seismic inversion. The combination of checkpointing and compression allows larger adjoint computations compared to using only compression, and reduces the recomputation overhead significantly compared to using only checkpointing.},
-  keywords = {Adjoint-state, FD, checkpointing, compression, HPC, inverse problems},
-  note = {Submitted to PASC19 on January 16, 2019},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2019/kukreja2019PASCccd/kukreja2019PASCccd.pdf}
-}
-
-
 
 %-----2018-----%
 
@@ -19130,6 +19149,20 @@ to using only a small fraction of high-fidelity data, we gain processing the cur
   doi = {10.1190/geo2019-0056.1},
   note = {(Accepted in GEOPHYSICS)},
   url = {https://slim.gatech.edu/Publications/Public/Journals/Geophysics/2019/siahkoohi2019itl/siahkoohi2019itl.html}
+}
+
+@ARTICLE{kukreja2019PASCccd,
+  author = {Navjot Kukreja and Jan Huckelheim and Mathias Louboutin and Paul Hovland and Gerard Gorman},
+  title = {Combining checkpointing and data compression to accelerate adjoint-based optimization problems},
+  journal = {Euro-Par 2019: Parallel Processing},
+  year = {2019},
+  pages = {87-100},
+  publisher = {Springer International Publishing},
+  abstract = {Seismic inversion and imaging are adjoint-based optimization problems that processes up to terabytes of data, regularly exceeding the memory capacity of available computers. Data compression is an effective strategy to reduce this memory requirement by a certain factor, particularly if some loss in accuracy is acceptable. A popular alternative is checkpointing, where data is stored at selected points in time, and values at other times are recomputed as needed from the last stored state. This allows arbitrarily large adjoint computations with limited memory, at the cost of additional recomputations. In this paper we combine compression and checkpointing for the first time to compute a realistic seismic inversion. The combination of checkpointing and compression allows larger adjoint computations compared to using only compression, and reduces the recomputation overhead significantly compared to using only checkpointing.},
+  keywords = {Adjoint-state, FD, checkpointing, compression, HPC, inverse problems},
+  doi = {10.1007/978-3-030-29400-7_7},
+  note = {(Euro-Par 2019: Parallel Processing)},
+  url = {https://slim.gatech.edu/Publications/Public/Journals/PASC/2019/kukreja2019PASCccd/kukreja2019PASCccd.pdf}
 }
 
 @ARTICLE{peters2019aos,

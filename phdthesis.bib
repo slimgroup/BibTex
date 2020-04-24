@@ -122,6 +122,65 @@ the cloud and is a viable alternative to conventional HPC clusters.},
   presentation = {https://slim.gatech.edu/Publications/Public/Thesis/2020/witte2020THsal/witte2020THsal_pres.pdf}
 }
 
+@PHDTHESIS{yang2020THsiw,
+  author = {Mengmeng Yang},
+  title = {Seismic imaging with extended image volumes and source estimation},
+  school = {Georgia Institute of Technology},
+  year = {2020},
+  month = {03},
+  address = {Atlanta},
+  abstract = {Seismic imaging is an important tool for the exploration and production of
+oil & gas, carbon sequestration, and the mitigation of geohazards. Through
+the process of seismic migration, images of subsurface geological structures
+are created from data collected at the surface. These images reflect changes
+in the physical rock properties such as wave speed and density. While
+significant progress has been made in the development of 3D imaging
+technology for complex geological areas, several challenges remain, some of
+which are addressed in this thesis. The first main contribution of this
+thesis is in the area of creating so-called subsurface-offset gathers, which
+play an increasingly important role in seismic imaging because they provide a
+multitude of information ranging from the reflection mechanism itself to
+information of the dips of specific reflectors and the accuracy of the
+background velocity model. Unfortunately, the formation and manipulation of
+these gathers
+come with exceedingly high computational and storage costs because extended
+image volumes are quadratic in the image size. These high costs are avoided
+by using techniques from modern randomized linear algebra that allow for
+compression of extended image volumes
+into low-rank factorized form—i.e., the image volume is approximately
+written as an outer product of a tall and a wide matrix. It is demonstrated
+that this factorization provides access to different types of sub-surface
+offset gathers, including common-image (point)
+gathers, without the need to explicitly form this outer product. As a result,
+challenging steep dip imaging situations, where conventional horizontal
+offset gathers no longer focus, can be handled. Moreover, extended image
+volumes for one background velocity model can directly be mapped to those of
+another background velocity model. As a result, factorization costs are
+incurred only once when examining imaging scenarios for different background
+velocity models. The second main contribution of this thesis is on the
+development of computationally efficient sparsity-promoting imaging
+techniques and on-the-fly source estimation. In this work, an adaptive
+technique is proposed where the unknown time signature of the sources is
+estimated during imaging. Without accurate knowledge of these source
+signatures, seismic images can be wrongly positioned and can have the wrong
+amplitudes hampering subsequent geophysical and geological interpretations.
+With the presented technique, this problem is mitigated. Finally, a
+contribution is made to address the detrimental effects of surface-related
+multiples. If not handled correctly, these multiples give rise to unwanted
+artifacts in the image. A new technique is introduced to address this issue
+in realistic settings where there is a strong density contrast at the ocean
+bottom. As a result, the surface-related multiples are mapped to the
+reflectors. Because bounce points at the surface can be considered as
+sources, this mapping of the multiples rather than removal increases the
+subsurface illumination.},
+  keywords = {PhD, Extended image volumes, low rank, randomized linear algebra,
+sparsity-promoting inversion, multiples, source estimation},
+  note = {(PhD)},
+  url = {https://slim.gatech.edu/Publications/Public/Thesis/2020/yang2020THsiw/yang2020THsiw.pdf},
+  presentation = {https://slim.gatech.edu/Publications/Public/Thesis/2020/yang2020THsiw/yang2020THsiw_pres.pdf}
+}
+
+
 %-----2019-----%
 
 @PHDTHESIS{peters2019THiso,

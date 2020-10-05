@@ -17601,7 +17601,37 @@ work presented here is based on a recently proposed dual formulation of
 wavefield reconstruction inversion, which allows time-domain propagator that
 are suitable to both large scales and more accurate physics.},
   keywords = {FWI, WRI, anisotropy, TTI},
-  url = {https://arxiv.org/pdf/2004.07355.pdf}
+  url = {https://slim.gatech.edu/Publications/Public/TechReport/2020/louboutin2020SEGtwri/louboutin2020SEGtwri.html},
+  url2 = {https://arxiv.org/pdf/2004.07355.pdf}
+}
+
+@TECHREPORT{louboutin2020SCsta,
+  author = {Mathias Louboutin and Fabio Luporini and Philipp A. Witte and Rhodri
+Nelson and George Bisbas and Jan Thorbecke and Felix J. Herrmann and Gerard
+Gorman},
+  title = {Scaling through abstractions – high-performance vectorial wave
+simulations for seismic inversion with Devito},
+  year = {2020},
+  month = {4},
+  number = {TR-CSE-2020-3},
+  institution = {Georgia Institute of Technology},
+  abstract = {[Devito] is an open-source Python project based on domain-specific
+language and compiler technology. Driven by the requirements of rapid HPC
+applications development in exploration seismology, the language and compiler
+have evolved significantly since inception. Sophisticated boundary
+conditions, tensor contractions, sparse operations and features such as
+staggered grids and sub-domains are all supported; operators of essentially
+arbitrary complexity can be generated. To accommodate this flexibility whilst
+ensuring performance, data dependency analysis is utilized to schedule loops
+and detect computational-properties such as parallelism. In this article, the
+generation and simulation of MPI-parallel propagators (along with their
+adjoints) for the pseudo-acoustic wave-equation in tilted transverse
+isotropic media and the elastic wave-equation are presented. Simulations are
+carried out on industry scale synthetic models in a HPC Cloud system and
+reach a performance of 28TFLOP/s, hence demonstrating Devito's suitability
+for production-grade seismic inversion problems.},
+  keywords = {HPC, Devito, finite-difference, large-scale, RTM, elastic, TTI},
+  url = {https://slim.gatech.edu/Publications/Public/TechReport/2020/louboutin2020SCsta/louboutin2020SCsta.html}
 }
 
 %-----2019-----%
@@ -19053,34 +19083,62 @@ algorithm.},
 
 %-----2020-----%
 
-@UNPUBLISHED{louboutin2020SCsta,
-  author = {Mathias Louboutin and Fabio Luporini and Philipp A. Witte and Rhodri
-Nelson and George Bisbas and Jan Thorbecke and Felix J. Herrmann and Gerard
-Gorman},
-  title = {Scaling through abstractions – high-performance vectorial wave
-simulations for seismic inversion with Devito},
+@UNPUBLISHED{rizzuti2020dfw,
+  author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Felix J. Herrmann},
+  title = {A dual formulation of wavefield reconstruction inversion for
+large-scale seismic inversion},
   year = {2020},
-  month = {4},
-  abstract = {[Devito] is an open-source Python project based on domain-specific
-language and compiler technology. Driven by the requirements of rapid HPC
-applications development in exploration seismology, the language and compiler
-have evolved significantly since inception. Sophisticated boundary
-conditions, tensor contractions, sparse operations and features such as
-staggered grids and sub-domains are all supported; operators of essentially
-arbitrary complexity can be generated. To accommodate this flexibility whilst
-ensuring performance, data dependency analysis is utilized to schedule loops
-and detect computational-properties such as parallelism. In this article, the
-generation and simulation of MPI-parallel propagators (along with their
-adjoints) for the pseudo-acoustic wave-equation in tilted transverse
-isotropic media and the elastic wave-equation are presented. Simulations are
-carried out on industry scale synthetic models in a HPC Cloud system and
-reach a performance of 28TFLOP/s, hence demonstrating Devito's suitability
-for production-grade seismic inversion problems.},
-  keywords = {HPC, Devito, finite-difference, large-scale, RTM, elastic, TTI},
-  note = {Submitted to SC20},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/louboutin2020SCsta/louboutin2020SCsta.html}
+  month = {10},
+  abstract = {Most of the seismic inversion techniques currently proposed focus
+on robustness with respect to the background model choice or inaccurate
+physical modeling assumptions, but are not apt to large-scale 3D
+applications. On the other hand, methods that are computationally feasible
+for industrial problems, such as full waveform inversion, are notoriously
+bogged down by local minima and require adequate starting models. We propose
+a novel solution that is both scalable and less sensitive to starting model
+or inaccurate physics when compared to full waveform inversion. The method is
+based on a dual (Lagrangian) reformulation of the classical wavefield
+reconstruction inversion, whose robustness with respect to local minima is
+well documented in the literature. However, it is not suited to 3D, as it
+leverages expensive frequency-domain solvers for the wave equation. The
+proposed reformulation allows the deployment of state-of-the-art time-domain
+finite-difference methods, and is computationally mature for industrial scale
+problems.},
+  keywords = {3D, Full-waveform inversion, Wave equation, Finite-difference},
+  note = {Submitted to Geophysics},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/rizzuti2020dfw/rizzuti2020dfw.html}
 }
 
+@UNPUBLISHED{kukreja2020lcc,
+  author = {Navjot Kukreja and Jan Hueckelheim and Mathias Louboutin and John Washbourne and Paul H.J. Kelly and Gerard J. Gorman},
+  title = {Lossy Checkpoint Compression in Full Waveform Inversion},
+  year = {2020},
+  month = {9},
+  abstract = {This paper proposes a new method that combines check-pointing
+methods with error-controlled lossy compression for large-scale
+high-performance Full-Waveform Inversion (FWI), an inverse problem commonly
+used in geophysical exploration. This combination can significantly reduce
+data movement, allowing a reduction in run time as well as peak memory. In
+the Exascale computing era, frequent data transfer (e.g., memory bandwidth,
+PCIe bandwidth for GPUs, or network) is the performance bottleneck rather
+than the peak FLOPS of the processing unit. Like many other adjoint-based
+optimization problems, FWI is costly in terms of the number of floating-point
+operations, large memory footprint during backpropagation, and data transfer
+overheads. Past work for adjoint methods has developed checkpointing methods
+that reduce the peak memory requirements during backpropagation at the cost
+of additional floating-point computations. Combining this traditional
+checkpointing with error-controlled lossy compression, we explore the
+three-way tradeoff between memory, precision, and time to solution. We
+investigate how approximation errors introduced by lossy compression of the
+forward solution impact the objective function gradient and final inverted
+solution. Empirical results from these numerical experiments indicate that
+high lossy-compression rates (compression factors ranging up to 100) have a
+relatively minor impact on convergence rates and the quality of the final
+solution.},
+  keywords = {Lossy compression, Full waveform inversion, checkpointing, memory},
+  note = {Submitted to GMD},
+  url = {https://arxiv.org/pdf/2009.12623.pdf}
+}
 
 @UNPUBLISHED{yang2020lrpo,
   author = {Mengmeng Yang and Marie Graff and Rajiv Kumar and Felix J. Herrmann},

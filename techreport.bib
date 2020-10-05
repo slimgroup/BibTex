@@ -56,7 +56,37 @@ work presented here is based on a recently proposed dual formulation of
 wavefield reconstruction inversion, which allows time-domain propagator that
 are suitable to both large scales and more accurate physics.},
   keywords = {FWI, WRI, anisotropy, TTI},
-  url = {https://arxiv.org/pdf/2004.07355.pdf}
+  url = {https://slim.gatech.edu/Publications/Public/TechReport/2020/louboutin2020SEGtwri/louboutin2020SEGtwri.html},
+  url2 = {https://arxiv.org/pdf/2004.07355.pdf}
+}
+
+@TECHREPORT{louboutin2020SCsta,
+  author = {Mathias Louboutin and Fabio Luporini and Philipp A. Witte and Rhodri
+Nelson and George Bisbas and Jan Thorbecke and Felix J. Herrmann and Gerard
+Gorman},
+  title = {Scaling through abstractions – high-performance vectorial wave
+simulations for seismic inversion with Devito},
+  year = {2020},
+  month = {4},
+  number = {TR-CSE-2020-3},
+  institution = {Georgia Institute of Technology},
+  abstract = {[Devito] is an open-source Python project based on domain-specific
+language and compiler technology. Driven by the requirements of rapid HPC
+applications development in exploration seismology, the language and compiler
+have evolved significantly since inception. Sophisticated boundary
+conditions, tensor contractions, sparse operations and features such as
+staggered grids and sub-domains are all supported; operators of essentially
+arbitrary complexity can be generated. To accommodate this flexibility whilst
+ensuring performance, data dependency analysis is utilized to schedule loops
+and detect computational-properties such as parallelism. In this article, the
+generation and simulation of MPI-parallel propagators (along with their
+adjoints) for the pseudo-acoustic wave-equation in tilted transverse
+isotropic media and the elastic wave-equation are presented. Simulations are
+carried out on industry scale synthetic models in a HPC Cloud system and
+reach a performance of 28TFLOP/s, hence demonstrating Devito's suitability
+for production-grade seismic inversion problems.},
+  keywords = {HPC, Devito, finite-difference, large-scale, RTM, elastic, TTI},
+  url = {https://slim.gatech.edu/Publications/Public/TechReport/2020/louboutin2020SCsta/louboutin2020SCsta.html}
 }
 
 %-----2019-----%

@@ -19083,6 +19083,17 @@ algorithm.},
 
 %-----2020-----%
 
+@UNPUBLISHED{sharan2020lsh,
+  author = {Shashin Sharan and Yijun Zhang and Oscar Lopez and Felix J. Herrmann},
+  title = {Large scale high-frequency wavefield reconstruction with recursively weighted matrix factorizations},
+  year = {2020},
+  month = {10},
+  abstract = {Acquiring seismic data on a regular periodic fine grid is challenging. By exploiting the low-rank approximation property of fully sampled seismic data in some transform domain, low-rank matrix completion offers a scalable way to reconstruct seismic data on a regular periodic fine grid from coarsely randomly sampled data acquired in the field. While wavefield reconstruction have been applied successfully at the lower end of the spectrum, its performance deteriorates at the higher frequencies where the low-rank assumption no longer holds rendering this type of wavefield reconstruction ineffective in situations where high resolution images are desired. We overcome this shortcoming by exploiting similarities between adjacent frequency slices explicitly. During low-rank matrix factorization, these similarities translate to alignment of subspaces of the factors, a notion we propose to employ as we reconstruct monochromatic frequency slices recursively starting at the low frequencies. While this idea is relatively simple in its core, to turn this recent insight into a successful scalable wavefield reconstruction scheme for 3D seismic requires a number of important steps. First, we need to move the weighting matrices, which encapsulate the prior information from adjacent frequency slices, from the objective to the data misfit constraint. This move considerably improves the performance of the weighted low-rank matrix factorization on which our wavefield reconstructions is based. Secondly, we introduce approximations that allow us to decouple computations on a row-by-row and column-by-column basis, which in turn allow to parallelize the alternating optimization on which our low-rank factorization relies. The combination of weighting and decoupling leads to a computationally feasible full-azimuth wavefield reconstruction scheme that scales to industry-scale problem sizes. We demonstrate the performance of the proposed parallel algorithm on a 2D field data and on a 3D synthetic dataset. In both cases our approach produces high-fidelity broadband wavefield reconstructions from severely subsampled data.},
+  keywords = {5D reconstruction, compressed sensing, frequency-domain, parallel, signal processing},
+  note = {Submitted to Geophysics},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/sharan2020lsh/sharan2020lsh.html}
+}
+
 @UNPUBLISHED{rizzuti2020dfw,
   author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Felix J. Herrmann},
   title = {A dual formulation of wavefield reconstruction inversion for

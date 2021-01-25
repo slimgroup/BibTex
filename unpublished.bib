@@ -8,7 +8,7 @@
   year = {2020},
   month = {12},
   abstract = {Randomized sampling techniques have become increasingly useful in seismic data acquisition and processing, allowing practitioners to achieve dense wavefield reconstruction from a substantially reduced number of field samples. However, typical designs studied in the low-rank matrix recovery and compressive sensing literature are difficult to achieve by standard industry hardware. For practical purposes, a compromise between stochastic and realizable samples is needed. In this paper, we propose a deterministic and computationally cheap tool to alleviate randomized acquisition design, prior to survey deployment and large-scale optimization. We consider universal and deterministic matrix completion results in the context of seismology, where a bipartite graph representation of the source-receiver layout allows for the respective spectral gap to act as a quality metric for wavefield reconstruction. We provide realistic survey design scenarios to demonstrate the utility of the spectral gap for successful seismic data acquisition via low-rank and sparse signal recovery.},
-  keywords = {spectral gap, compressed sensing, low-rank reconstruction, acquisition},
+  keywords = {acquisition, compressed sensing, data reconstruction, survey design, algorithm},
   note = {Submitted to Geophysics},
   url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/lopez2020gsb/lopez2020gsb.pdf}
 }
@@ -113,44 +113,4 @@ solution.},
   keywords = {Lossy compression, Full waveform inversion, checkpointing, memory},
   note = {Submitted to GMD},
   url = {https://arxiv.org/pdf/2009.12623.pdf}
-}
-
-@UNPUBLISHED{yang2020lrpo,
-  author = {Mengmeng Yang and Marie Graff and Rajiv Kumar and Felix J. Herrmann},
-  title = {Low-rank representation of omnidirectional subsurface extended image
-volumes},
-  year = {2020},
-  month = {3},
-  abstract = {Subsurface-offset gathers play an increasingly important role in seismic
-imaging. These gathers are used during velocity model building and inversion
-of rock properties from amplitude variations. While powerful, these gathers
-come with high computational and storage demands to form and manipulate these
-high dimensional objects. This explains why only limited numbers of image
-gathers are computed over a limited offset range. We avoid these high costs
-by working with highly compressed low-rank factorizations. We arrive at these
-factorizations via a combination of probings with the double two-way wave
-equation and randomized singular value decompositions. In turn, the resulting
-factorizations give us access to all subsurface offsets without having to
-form the full extended image volumes. The latter is computationally
-prohibitive because extended image volumes are quadratic in image size. As a
-result, we can easily handle situations where conventional horizontal offset
-gathers are no longer focused. More importantly, the factorization also
-provides a mechanism to use the invariance relation of extended image volumes
-for velocity continuation. With this technique, extended image volumes for
-one background velocity model can directly be mapped to those of another
-background velocity model. Our low-rank factorization inherits this
-invariance property so we incur factorization costs only once when examining
-different imaging scenarios. Because all imaging experiments only involve the
-factors, they are computationally cheap with costs that scale with the rank
-of the factorization. We validate our methodology on 2D synthetics including
-a challenging imaging example with salt. Our experiments show that our
-low-rank factorization parameterizes extended image volumes naturally.
-Instead of brute force explicit cross-correlations between shifted source and receiver
-wavefields, our approach relies on the underlying linear-algebra structure
-that enables us to work with these objects without incurring unfeasible
-demands on computation and storage.},
-  keywords = {extended image volumes, low rank, randomized linear algebra, power
-schemes, invariance relationship},
-  note = {Submitted to Geophysics},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2020/yang2020lrpo/yang2020lrpo.html}
 }

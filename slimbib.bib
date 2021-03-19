@@ -3,6 +3,18 @@
 
 %-----2021-----%
 
+@CONFERENCE{herrmann2021Microsoftrla,
+  author = {Felix J. Herrmann and Mathias Louboutin and Ali Siahkoohi},
+  title = {Randomized linear algebra as an enabler of large-scale memory efficient deep learning},
+  booktitle = {Microsoft},
+  year = {2021},
+  month = {03},
+  abstract = {Deep Learning for large-scale applications such as video encoding or seismic segmentation are challenged by the excessive amounts of memory that is required for training networks via backpropagation. In this talk, I will discuss how techniques from randomized linear algebra can be used to address these bottle necks and bring down the memory footprint of training CNNs by up to a factor of O(N) (where N is number of pixels) without increasing computational cost. Additionally, I will illustrate how the seemingly disparate technologies of deep learning and large-scale PDE-constrained optimization share important similarities that can be taken advantage of in the development of next-generation deep learning technologies, with possible applications in scientific computing and sustainability.},
+  keywords = {Randomized linear algebra, deep learning, uncertainty quantification},
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/Microsoft/2021/herrmann2021Microsoftrla/herrmann2021Microsoftrla_pres.pdf},
+  note = {Talk at Microsoft}
+}
+
 @CONFERENCE{herrmann2021KAUSTdbi,
   author = {Ali Siahkoohi and Gabrio Rizzuti and Mathias Louboutin and Philipp A. Witte and Felix J. Herrmann},
   title = {Deep Bayesian Inference for Task-based Seismic Imaging},
@@ -11,7 +23,8 @@
   month = {03},
   abstract = {High dimensionality, complex physics, and lack of access to the ground truth make seismic imaging one of the most challenging inversion problems in the computational imaging sciences. If these challenges were not bad enough, modern applications of computational imaging increasingly call for the assessment of uncertainty on the image itself and on subsequent tasks conducted on these images. By making use of a Markov-chain Monte Carlo (McMC) sampling technique, we demonstrate how uncertainty in the data can be propagated to the task of seismic horizon tracking. While this example shows that uncertainty can in principle be handled in a systematic manner by using neural nets as deep priors, it unfortunately also reveals that the McMC method fundamentally lacks ability to scale to relevant problem sizes. To overcome this shortcoming, we introduce a variational formulation based on normalizing flows. In this approach, invertible neural networks are trained to generate samples from the posterior. There are strong indications that this approach has the capability to scale better to problems where the forward operator is expensive to evaluate.},
   keywords = {Inverse problems, Bayesian inference, seismic imaging, Uncertainty quantification},
-  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/KAUST/2021/herrmann2021KAUSTdbi/Kaust.pdf}
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/KAUST/2021/herrmann2021KAUSTdbi/Kaust.pdf},
+  note = {Talk at KAUST}
 }
 
 @CONFERENCE{siahkoohi2021AABIpto,

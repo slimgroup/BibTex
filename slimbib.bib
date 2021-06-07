@@ -3,6 +3,99 @@
 
 %-----2021-----%
 
+@CONFERENCE{zhang2021SEGapw,
+  author = {Yijun Zhang and Felix J. Herrmann},
+  title = {A practical workflow for land seismic wavefield recovery with weighted
+matrix factorization},
+  year = {2021},
+  month = {06},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  abstract = {While wavefield reconstruction through weighted low-rank matrix
+factorizations has been shown to perform well on marine data, out-of-the-box
+application of this technology to land data is hampered by ground roll. The
+presence of these strong surface waves tends to dominate the reconstruction
+at the expense of the weaker body waves. Because ground roll is slow, it also
+suffers more from aliasing. To overcome these challenges, we introduce a
+practical workflow where the ground roll and body wave components are
+recovered separately and combined. We test the proposed approach blindly on a
+subset of the 3D SEAM Barrett dataset. With our technique, we recover densely
+sampled data from 25 percent randomly subsampled receivers. Independent
+comparisons on a single shot demonstrate significant improvements achievable
+with the presented workflow.},
+  keywords = {wavefield reconstruction, 3D SEAM Barrett dataset, weighted matrix
+factorization, ground roll},
+  note = {(SEG, just accepted)},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2021/zhang2021SEGapw/Yijun2021.html},
+  software = {https://github.com/slimgroup/Software.SEG2021}
+}
+
+@CONFERENCE{yin2021SEGcts,
+  author = {Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
+  title = {Compressive time-lapse seismic monitoring of carbon storage and sequestration with the joint recovery model},
+  year = {2021},
+  month = {06},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  abstract = {Time-lapse seismic monitoring of carbon storage and sequestration is often challenging because the time-lapse signature of the growth of CO2 plumes is weak in amplitude and therefore difficult to detect seismically. This situation is compounded by the fact that the surveys are often coarsely sampled and not replicated to reduce costs. As a result, images obtained for different vintages (baseline and monitor surveys) often contain artifacts that may be attributed wrongly to time-lapse changes. To address these issues, we propose to invert the baseline and monitor surveys jointly. By using the joint recovery model, we exploit information shared between multiple time-lapse surveys. Contrary to other time-lapse methods, our approach does not rely on replicating the surveys to detect time-lapse changes. To illustrate this advantage, we present a numerical sensitivity study where CO2 is injected in a realistic synthetic model. This model is representative of the geology in the southeast of the North Sea, an area currently considered for carbon sequestration. Our example demonstrates that the joint recovery model improves the quality of time-lapse images allowing us to monitor the CO2 plume seismically.},
+  keywords = {compressive sensing, joint recovery method, imaging, CCS, marine, time-lapse},
+  note = {(SEG, just accepted)},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2021/yin2021SEGcts/yin2021SEGcts.html},
+  software = {https://github.com/slimgroup/Software.SEG2021}
+}
+
+@CONFERENCE{louboutin2021SEGulm,
+  author = {Mathias Louboutin and Felix J. Herrmann},
+  title = {Ultra-low memory seismic inversion with randomized trace estimation},
+  year = {2021},
+  month = {06},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  abstract = {Inspired by recent work on extended image volumes that lays the
+ground for randomized probing of extremely large seismic wavefield matrices,
+we present a memory frugal and computationally efficient inversion
+methodology that uses techniques from randomized linear algebra. By means of
+a carefully selected realistic synthetic example, we demonstrate that we are
+capable of achieving competitive inversion results at a fraction of the
+memory cost of conventional full-waveform inversion with limited
+computational overhead. By exchanging memory for negligible computational
+overhead, we open with the presented technology the door towards the use of
+low-memory accelerators such as GPUs.},
+  keywords = {FWI, Randomized linear algebra, HPC, Inversion},
+  note = {(SEG, just accepted)},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2021/louboutin2021SEGulm/louboutinp.html},
+  software = {https://github.com/slimgroup/TimeProbeSeismic.jl}
+}
+
+@CONFERENCE{siahkoohi2021SEGlbe,
+  author = {Ali Siahkoohi and Felix J. Herrmann},
+  title = {Learning by example: fast reliability-aware seismic imaging with normalizing flows},
+  year = {2021},
+  month = {06},
+  booktitle = {SEG Technical Program Expanded Abstracts},
+  abstract = {Uncertainty quantification provides quantitative measures on the reliability
+of candidate solutions of ill-posed inverse problems. Due to their sequential
+nature, Monte Carlo sampling methods require large numbers of sampling steps
+for accurate Bayesian inference and are often computationally infeasible for
+large-scale inverse problems, such as seismic imaging. Our main contribution
+is a data-driven variational inference approach where we train a normalizing
+flow (NF), a type of invertible neural net, capable of cheaply sampling the
+posterior distribution given previously unseen seismic data from neighboring
+surveys. To arrive at this result, we train the NF on pairs of low- and
+high-fidelity migrated images. In our numerical example, we obtain
+high-fidelity images from the Parihaka dataset and low-fidelity images are
+derived from these images through the process of demigration, followed by
+adding noise and migration. During inference, given shot records from a new
+neighboring seismic survey, we first compute the reverse-time migration
+image. Next, by feeding this low-fidelity migrated image to the NF we gain
+access to samples from the posterior distribution virtually for free. We use
+these samples to compute a high-fidelity image including a first assessment
+of the image's reliability. To our knowledge, this is the first attempt to
+train a conditional network on what we know from neighboring images to
+improve the current and assess its reliability.},
+  keywords = {Variational Inference, Seismic Imaging, Normalizing Flows, Deep Learning},
+  note = {(SEG, just accepted)},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2021/siahkoohi2021SEGlbe/abstract.html},
+  software = {https://github.com/slimgroup/Software.SEG2021}
+}
+
 @CONFERENCE{herrmann2021Microsoftrla,
   author = {Felix J. Herrmann and Mathias Louboutin and Ali Siahkoohi},
   title = {ML@scale using randomized linear algebra},
@@ -19221,43 +19314,6 @@ algorithm.},
 
 %-----2021-----%
 
-@UNPUBLISHED{zhang2021SEGapw,
-  author = {Yijun Zhang and Felix J. Herrmann},
-  title = {A practical workflow for land seismic wavefield recovery with weighted
-matrix factorization},
-  year = {2021},
-  month = {04},
-  abstract = {While wavefield reconstruction through weighted low-rank matrix
-factorizations has been shown to perform well on marine data, out-of-the-box
-application of this technology to land data is hampered by ground roll. The
-presence of these strong surface waves tends to dominate the reconstruction
-at the expense of the weaker body waves. Because ground roll is slow, it also
-suffers more from aliasing. To overcome these challenges, we introduce a
-practical workflow where the ground roll and body wave components are
-recovered separately and combined. We test the proposed approach blindly on a
-subset of the 3D SEAM Barrett dataset. With our technique, we recover densely
-sampled data from 25 percent randomly subsampled receivers. Independent
-comparisons on a single shot demonstrate significant improvements achievable
-with the presented workflow.},
-  keywords = {wavefield reconstruction, 3D SEAM Barrett dataset, weighted matrix
-factorization, ground roll},
-  note = {Submitted to SEG 2021},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2021/zhang2021SEGapw/Yijun2021.html},
-  software = {https://github.com/slimgroup/Software.SEG2021}
-}
-
-@UNPUBLISHED{yin2021SEGcts,
-  author = {Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
-  title = {Compressive time-lapse seismic monitoring of carbon storage and sequestration with the joint recovery model},
-  year = {2021},
-  month = {04},
-  abstract = {Time-lapse seismic monitoring of carbon storage and sequestration is often challenging because the time-lapse signature of the growth of CO2 plumes is weak in amplitude and therefore difficult to detect seismically. This situation is compounded by the fact that the surveys are often coarsely sampled and not replicated to reduce costs. As a result, images obtained for different vintages (baseline and monitor surveys) often contain artifacts that may be attributed wrongly to time-lapse changes. To address these issues, we propose to invert the baseline and monitor surveys jointly. By using the joint recovery model, we exploit information shared between multiple time-lapse surveys. Contrary to other time-lapse methods, our approach does not rely on replicating the surveys to detect time-lapse changes. To illustrate this advantage, we present a numerical sensitivity study where CO2 is injected in a realistic synthetic model. This model is representative of the geology in the southeast of the North Sea, an area currently considered for carbon sequestration. Our example demonstrates that the joint recovery model improves the quality of time-lapse images allowing us to monitor the CO2 plume seismically.},
-  keywords = {compressive sensing, joint recovery method, imaging, CCS, marine, time-lapse},
-  note = {Submitted to SEG 2021},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2021/yin2021SEGcts/yin2021SEGcts.html},
-  software = {https://github.com/slimgroup/Software.SEG2021}
-}
-
 @UNPUBLISHED{kumar2021SEGeuq,
   author = {Rajiv Kumar and Maria Kotsi and Ali Siahkoohi and Alison Malcolm},
   title = {Enabling uncertainty quantification for seismic data pre-processing
@@ -19281,58 +19337,6 @@ better characterize the data as it is passed to the post-processing phase.},
   keywords = {deep learning, wavefield reconstruction, normalizing flow},
   note = {Submitted to SEG 2021},
   url = {https://slim.gatech.edu/Publications/Public/Submitted/2021/kumar2021SEGeuq/kumar2021SEGeuq.pdf},
-  software = {https://github.com/slimgroup/Software.SEG2021}
-}
-
-@UNPUBLISHED{louboutin2021SEGulm,
-  author = {Mathias Louboutin and Felix J. Herrmann},
-  title = {Ultra-low memory seismic inversion with randomized trace estimation},
-  year = {2021},
-  month = {04},
-  abstract = {Inspired by recent work on extended image volumes that lays the
-ground for randomized probing of extremely large seismic wavefield matrices,
-we present a memory frugal and computationally efficient inversion
-methodology that uses techniques from randomized linear algebra. By means of
-a carefully selected realistic synthetic example, we demonstrate that we are
-capable of achieving competitive inversion results at a fraction of the
-memory cost of conventional full-waveform inversion with limited
-computational overhead. By exchanging memory for negligible computational
-overhead, we open with the presented technology the door towards the use of
-low-memory accelerators such as GPUs.},
-  keywords = {FWI, Randomized linear algebra, HPC, Inversion},
-  note = {Submitted to SEG 2021},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2021/louboutin2021SEGulm/louboutinp.html},
-  software = {https://github.com/slimgroup/TimeProbeSeismic.jl}
-}
-
-@UNPUBLISHED{siahkoohi2021SEGlbe,
-  author = {Ali Siahkoohi and Felix J. Herrmann},
-  title = {Learning by example: fast reliability-aware seismic imaging with normalizing flows},
-  year = {2021},
-  month = {04},
-  abstract = {Uncertainty quantification provides quantitative measures on the reliability
-of candidate solutions of ill-posed inverse problems. Due to their sequential
-nature, Monte Carlo sampling methods require large numbers of sampling steps
-for accurate Bayesian inference and are often computationally infeasible for
-large-scale inverse problems, such as seismic imaging. Our main contribution
-is a data-driven variational inference approach where we train a normalizing
-flow (NF), a type of invertible neural net, capable of cheaply sampling the
-posterior distribution given previously unseen seismic data from neighboring
-surveys. To arrive at this result, we train the NF on pairs of low- and
-high-fidelity migrated images. In our numerical example, we obtain
-high-fidelity images from the Parihaka dataset and low-fidelity images are
-derived from these images through the process of demigration, followed by
-adding noise and migration. During inference, given shot records from a new
-neighboring seismic survey, we first compute the reverse-time migration
-image. Next, by feeding this low-fidelity migrated image to the NF we gain
-access to samples from the posterior distribution virtually for free. We use
-these samples to compute a high-fidelity image including a first assessment
-of the image's reliability. To our knowledge, this is the first attempt to
-train a conditional network on what we know from neighboring images to
-improve the current and assess its reliability.},
-  keywords = {Variational Inference, Seismic Imaging, Normalizing Flows, Deep Learning},
-  note = {Submitted to SEG 2021},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2021/siahkoohi2021SEGlbe/abstract.html},
   software = {https://github.com/slimgroup/Software.SEG2021}
 }
 

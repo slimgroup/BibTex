@@ -3,6 +3,41 @@
 
 %-----2021-----%
 
+@CONFERENCE{siahkoohi2021EarthMLfar,
+  author = {Ali Siahkoohi and Rafael Orozco and Gabrio Rizzuti and Philipp A. Witte and Mathias Louboutin and Felix J. Herrmann},
+  title = {Fast and reliability-aware seismic imaging with conditional normalizing flows},
+  year = {2021},
+  month = {06},
+  booktitle = {Intelligent illumination of the Earth},
+  abstract = {The posterior probability distribution provides a comprehensive
+description of the solution in ill-posed inverse problems. Sampling from the
+posterior distribution in the context of seismic imaging is challenged by the
+high-dimensionality of the unknown and the expensive-to-evaluate forward
+operator. These challenges limit the applicability of Markov Chain sampling
+methods due to the costs associated with the forward operator. Moreover,
+explicitly choosing a prior distribution that captures the true heterogeneity
+exhibited by the Earth's subsurface further complicates casting seismic
+imaging into a Bayesian framework. To handle this situation and to assess
+uncertainty, we propose a data-driven variational inference approach based on
+conditional normalizing flows (NFs). The proposed scheme leverages existing
+data, which are in the form of low- and high-fidelity migrated image pairs,
+to train a conditional NF capable of characterizing the posterior
+distribution. After training, the NF can be used to sample from the posterior
+distribution associated with a previously unseen seismic survey, which is in
+some sense close, e.g., data from a neighboring survey area. In our numerical
+example, we obtain high-fidelity images from the Parihaka dataset and
+low-fidelity images are derived from these images through the process of
+demigration, followed by adding band-limited noise and migration. During
+inference, given shot records from a new neighboring seismic survey, we first
+compute the reverse-time migration image. Next, by feeding this low-fidelity
+migrated image to the NF we gain access to samples from the posterior
+distribution virtually for free. We use these samples to compute a
+high-fidelity image including a first assessment of the image's reliability.},
+  keywords = {Normalizing Flows, Seismic Imaging, Uncertainty Quantification},
+  note = {(KAUST, virtual)},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/KAUST/2021/siahkoohi2021EarthMLfar/siahkoohi2021EarthMLfar.pdf}
+}
+
 @CONFERENCE{rizzuti2021SIAMGSwrid,
   author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Felix J. Herrmann},
   title = {Time-domain Wavefield Reconstruction Inversion for large-scale seismic inversion},

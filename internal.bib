@@ -3,6 +3,19 @@
 
 %-----2021-----%
 
+@CONFERENCE{herrmann2021Delftlwi,
+  author = {Felix Herrmann and Ali Siahkoohi and Rafael Orozco and Gabrio Rizzuti and Philipp A. Witte and Mathias Louboutin},
+  title = {Learned wave-based imaging – variational inference at scale},
+  year = {2021},
+  month = {06},
+  booktitle = {Delft},
+  abstract = {High dimensionality, complex physics, and lack of access to the ground truth rank medical ultrasound and seismic imaging amongst the most challenging problems in the computational imaging sciences. If these challenges were not bad enough, modern applications of computational imaging increasingly call for the assessment of uncertainty on the image itself and on subsequent tasks. During this talk, I will show how recent developments in Normalizing Flows, a new type of invertible neural networks, can be used to cast wave-based imaging into a scalable Bayesian framework. Contrary to conventional methods, where sample images are drawn from the posterior distribution during inversion, our approach trains Normalizing Flows capable of generating samples from the posterior. Aside from greatly reducing the computational cost, this approach gives us access to the image itself (via Maximum a posteriori or mean estimation) and its multidimensional statistical distribution including its pointwise variance.},
+  keywords = {Normalizing Flows, Seismic Imaging, Uncertainty Quantification},
+  note = {(Delft, virtual)},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/Delft/2021/herrmann2021Delftlwi/herrmann2021Delftlwi.pdf},
+  url2 = {https://slim.gatech.edu/Publications/Public/Conferences/Delft/2021/herrmann2021Delftlwi/herrmann2021Delftlwi.mp4},
+}
+
 @CONFERENCE{siahkoohi2021EarthMLfar,
   author = {Ali Siahkoohi and Rafael Orozco and Gabrio Rizzuti and Philipp A. Witte and Mathias Louboutin and Felix J. Herrmann},
   title = {Fast and reliability-aware seismic imaging with conditional normalizing flows},
@@ -200,7 +213,7 @@ improve the current and assess its reliability.},
   abstract = {High dimensionality, complex physics, and lack of access to the ground truth make seismic imaging one of the most challenging inversion problems in the computational imaging sciences. If these challenges were not bad enough, modern applications of computational imaging increasingly call for the assessment of uncertainty on the image itself and on subsequent tasks conducted on these images. By making use of a Markov-chain Monte Carlo (McMC) sampling technique, we demonstrate how uncertainty in the data can be propagated to the task of seismic horizon tracking. While this example shows that uncertainty can in principle be handled in a systematic manner by using neural nets as deep priors, it unfortunately also reveals that the McMC method fundamentally lacks ability to scale to relevant problem sizes. To overcome this shortcoming, we introduce a variational formulation based on normalizing flows. In this approach, invertible neural networks are trained to generate samples from the posterior. There are strong indications that this approach has the capability to scale better to problems where the forward operator is expensive to evaluate.},
   keywords = {Inverse problems, Bayesian inference, seismic imaging, Uncertainty quantification},
   presentation = {https://slim.gatech.edu/Publications/Public/Conferences/KAUST/2021/herrmann2021KAUSTdbi/Kaust.pdf},
-  note = {Talk at KAUST}
+  note = {(KAUST, virtual)}
 }
 
 @CONFERENCE{siahkoohi2021AABIpto,

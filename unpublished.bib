@@ -3,6 +3,18 @@
 
 %-----2021-----%
 
+@UNPUBLISHED{ren2021AGUsvi,
+  author = {Yuxiao Ren and Philipp A. Witte and Ali Siahkoohi and Mathias Louboutin and Ziyi Yin and Felix J. Herrmann},
+  title = {Seismic Velocity Inversion and Uncertainty Quantification Using Conditional Normalizing Flows},
+  year = {2021},
+  month = {08},
+  abstract = {In this work, we use a conditional normalizing flow (CNF) to address the seismic velocity inversion problem. Considering the large dimension difference between seismic data and velocity model, we reduce the data dimension by calculating its reverse time. After that, we train the CNF on pairs of migrated data and velocity. During inference, given a new seismic data, feeding the corresponding migrated image into the trained CNF will lead to posterior samples of the velocity inversion distribution. In addition, uncertainty quantification of the inverted results can be achieved by statistical metrics like mean and standard deviation. In our numerical example, the implementation is based on open-sourced software InvertibleNetworks.jl (Witte et al., 2021), JUDI.jl (Witte et al., 2019) and Devito (Louboutin et al., 2019). The training dataset are built based on the SEG/EAGE Overthrust model. For an unseen seismic data, the posterior samples of inversion results given by the trained CNF can be considered as good estimates of the true velocity. Especially, judging from the metrics like MAE, MSE, PSNR, SSIM, et al., the posterior mean is usually closer to the true velocity and the standard deviation indicates that the velocity value is more reliable within the subsurface layers than that on layer edges. Moreover, the inverted results, either the posterior samples or posterior mean, can be used as an initial model in the subsequent FWI for a more accurate result.},
+  keywords = {Machine Learning, Normalizing Flows, Inversion, Uncertainity Quantification},
+  note = {Submitted to AGU 2021},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2021/ren2021AGUsvi/ren2021AGUsvi.pdf},
+  software = {https://github.com/slimgroup/INN_Velocity-Migration}
+}
+
 @UNPUBLISHED{louboutin2021NIPSmcte,
   author = {Mathias Louboutin and Ali Siahkoohi and Rongrong Wang and Felix J. Herrmann},
   title = {Low-memory stochastic backpropagation with multi-channel randomized trace estimation},

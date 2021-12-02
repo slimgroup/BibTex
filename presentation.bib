@@ -1,4 +1,127 @@
 
+%----- 2021 -----%
+
+@PRESENTATION{zhang2021ML4SEISMICiss,
+  author = {Yijun Zhang and Felix J. Herrmann},
+  title = {Improved seismic survey design by maximizing the spectral gap with global optimization},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {Random subsampling is increasingly being used in the acquisition of seismic data to shorten the acquisition time and to reduce costs. However, the design of optimal acquisition geometries is still an ongoing area of research. Matrix completion (MC) is a computationally efficient method to reconstruct fully sampled wavefields from sparsely sampled seismic data. In MC theory, the spectral gap (SG), which is a measure of the connectedness of the graph in expander graph theory, has been used to predict, and to some degree quantify, the quality of wavefield reconstruction, given a specific subsampling scheme (acquisition mask). Building on these insights, we propose an optimization scheme, based on simulated annealing, which finds subsampling masks with large SGs that improve the quality of wavefield reconstruction with MC. The experimental results show that the proposed method successfully increases the SG of the subsampling mask starting from randomly initialized masks. Increasing the SG leads to improved connectivity between the sources and receivers and therefore of the wavefield reconstruction. Numerical experiments confirm a direct relationship between increased SG and improved reconstruction quality. This confirms the value SG analysis brings to the design of seismic surveys without the need to carry out expensive wavefield reconstructions to optimize the acquisition design.},
+  keywords = {ML4SEISMIC, SLIM, acquisition, compressive sensing, survey design, wavefield reconstruction},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/zhang2021ML4SEISMICiss/Tue-10-30-Zhang.pdf}
+}
+
+@PRESENTATION{yin2021ML4SEISMICism,
+  author = {Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
+  title = {Improved seismic monitoring of CO2 sequestration with the weighted joint recovery model},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {Time-lapse seismic monitoring of CO2 sequestration is challenging because the time-lapse signature of CO2 plumes is weak in amplitude and often contaminated by imaging artifacts due to coarsely sampled, noisy, and non-replicated surveys. In this talk, we present a sparsity-promoting least-squares imaging method where the baseline, and the current and past monitor surveys are inverted jointly. We demonstrate that the sensitivity of seismic monitoring can be improved by inverting for the common component—i.e., the component shared by all vintages, and innovations with respect to this common component. Combining this joint approach with weighted l1,2-norm minimization leads to a monitoring scheme capable of detecting irregular CO2-plume growth in a realistic geological setting.},
+  keywords = {ML4SEISMIC, SLIM, CCS, Compressive Sensing, Imaging, JRM, time-lapse},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/yin2021ML4SEISMICism/Tue-11-20-Yin.html}
+}
+
+@PRESENTATION{witte2021ML4SEISMICrtc,
+  author = {Philipp A. Witte},
+  title = {Redwood – towards clusterless supercomputing in the cloud},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {We present Redwood, a Julia framework for clusterless supercomputing in the cloud. Redwood provides a set of distributed programming macros that enable users to remotely execute Julia functions in parallel through cloud services for batch and serverless computing. We present the architecture and design of Redwood, as well as its application to existing Julia packages for machine learning and inverse problems.},
+  keywords = {ML4SEISMIC, SLIM, HPC, clusterless, julia, cloud computing},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/witte2021ML4SEISMICrtc/Mon-10-30-Witte.pdf}
+}
+
+@PRESENTATION{siahkoohi2021ML4SEISMICuqi,
+  author = {Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann},
+  title = {Uncertainty quantification in imaging and automatic horizon tracking—a Bayesian deep-prior based approach},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {In inverse problems, uncertainty quantification (UQ) deals with a probabilistic description of the solution nonuniqueness and data noise sensitivity. Setting seismic imaging into a Bayesian framework allows for a principled way of studying uncertainty by solving for the model posterior distribution. Imaging, however, typically constitutes only the first stage of a sequential workflow, and UQ becomes even more relevant when applied to subsequent tasks that are highly sensitive to the inversion outcome. In this paper, we focus on how UQ trickles down to horizon tracking for the determination of stratigraphic models and investigate its sensitivity with respect to the imaging result. As such, the main contribution of this work consists in a data-guided approach to horizon tracking uncertainty analysis. This work is fundamentally based on a special reparameterization of reflectivity, known as “deep prior”. Feasible models are restricted to the output of a convolutional neural network with a fixed input, while weights and biases are Gaussian random variables. Given a deep prior model, the network parameters are sampled from the posterior distribution via a Markov chain Monte Carlo method, from which the conditional mean and point-wise standard deviation of the inferred reflectivities are approximated. For each sample of the posterior distribution, a reflectivity is generated, and the horizons are tracked automatically. In this way, uncertainty on model parameters naturally translates to horizon tracking. As part of the validation for the proposed approach, we verified that the estimated confidence intervals for the horizon tracking coincide with geologically complex regions, such as faults.},
+  keywords = {ML4SEISMIC, SLIM, horizon picking, Imaging, machine learning, Uncertainty quantification},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/siahkoohi2021ML4SEISMICuqi/Mon-10-20-Siahkoohi.pdf}
+}
+
+@PRESENTATION{siahkoohi2021ML4SEISMICmcn,
+  author = {Ali Siahkoohi and Rafael Orozco and Gabrio Rizzuti and Philipp A. Witte and Mathias Louboutin and Felix J. Herrmann},
+  title = {Multifidelity conditional normalizing flows for physics-guided Bayesian inference},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {We introduce a scalable Bayesian inference approach that combines techniques from deep learning with a physic-based variational inference formulation. Bayesian inference for ill-posed inverse problems is challenged by the high-dimensionality of the unknown, computationally expensive forward operator, and choosing a prior distribution that accurately encodes prior knowledge on the unknown. To handle this situation and to assess uncertainty, we propose to approximate the posterior distribution using a pretrained conditional normalizing flow, which is trained on existing low- and high-fidelity estimations of the unknown. To further improve the accuracy of this approximation, we use transfer learning and finetune this normalizing flow by minimizing the Kullback-Leibler divergence between the predicted and the desired high-fidelity posterior density. This amounts to minimizing a physic-based variational inference objective with respect to the network weights, which we believe might scale better than Bayesian inference with Markov Chain sampling methods. We apply the proposed Bayesian inference approach to seismic imaging where we use quasi-real data obtained from the Parihaka dataset.},
+  keywords = {ML4SEISMIC, SLIM, deep learning, Normalizing flows, seismic imaging, Variational Inference},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/siahkoohi2021ML4SEISMICmcn/Mon-10-45-Siahkoohi.pdf}
+}
+
+@PRESENTATION{rizzuti2021ML4SEISMICdfw,
+  author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Felix J. Herrmann},
+  title = {A dual formulation of wavefield reconstruction inversion for large-scale seismic inversion},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {Many of the seismic inversion techniques currently proposed that focus on robustness with respect to the background model choice are not apt to large-scale 3D applications, and the methods that are computationally feasible for industrial problems, such as full waveform inversion, are notoriously limited by convergence stagnation and require adequate starting models. We propose a novel solution that is both scalable and less sensitive to starting models or inaccurate parameters (such as anisotropy) that are typically kept fixed during inversion. It is based on a dual reformulation of the classical wavefield reconstruction inversion, whose empirical robustness with respect to these issues is well documented in the literature. While the classical version is not suited to 3D, as it leverages expensive frequency-domain solvers for the wave equation, our proposal allows the deployment of state-of-the-art time-domain finite-difference methods, and is potentially mature for industrial-scale problems.},
+  keywords = {ML4SEISMIC, SLIM, FWI, WRI, wave-equation},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/rizzuti2021ML4SEISMICdfw/Tue-10-55-Rizzuti.pdf}
+}
+
+@PRESENTATION{orozco2021ML4SEISMICvia,
+  author = {Rafael Orozco and Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann},
+  title = {Variational inference for artifact removal of adjoint solutions in photoacoustic problems},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {Photoacoustic is a medical imaging modality which combines light and ultrasound waves to image internal structures of biological tissue. The inverse problem reconstructs the tissue initially excited by light given propagated ultrasound data at receivers outside the tissue. Due to noisy, limited-view and sparse receiver data, traditional time-reversal adjoint solutions are highly ill-posed. This necessitates uncertainty quantification to communicate to practitioners which areas of the image can be trusted. We propose a framework which leverages a machine learning based method (Conditional Normalizing Flows) to learn the full posterior distribution of viable solutions given the time-reversal adjoint solution. We show that areas of calculated uncertainty correlate with structures that are known to be difficult to image. In addition, we also propose a MAP based solution, which solves the variational least-squares problem while using the trained Conditional Normalizing Flow as a prior distribution.},
+  keywords = {ML4SEISMIC, SLIM, Photoacoustic, Normalizing flow, Variational inference, conditional prior, deep image, MAP},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/orozco2021ML4SEISMICvia/Tue-09-00-Orozco.html}
+}
+
+@PRESENTATION{louboutin2021ML4SEISMICrla,
+  author = {Mathias Louboutin and Felix J. Herrmann},
+  title = {Randomized linear algebra for inversion},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {Inverse problems in exploration geophysics or machine learning heavily relies on linear algebra and large matrices manipulations. To tackle the growing cost of storing these matrices, randomized algorithms have been developed to obtain information from these matrices via randomized sketching. Inspired by previous work on extended image volumes, we will first show in this talk how the seismic imaging condition can be expressed in a randomized linear algebra framework leading to drastic memory savings. In a second part, we will extend this idea to convolutional neural networks to reduce the memory cost of training by orders of magnitude. We will demonstrate the practicality of these methods on representative examples.},
+  keywords = {ML4SEISMIC, SLIM, software, randomized linear algebra, HPC, inversion, FWI},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/louboutin2021ML4SEISMICrla/Tue-10-20-Louboutin.pdf}
+}
+
+@PRESENTATION{louboutin2021ML4SEISMICmos,
+  author = {Mathias Louboutin},
+  title = {ML4Seismic open source software environment},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {Software is at the core of research and development in inverse problems. At SLIM, we have experience developing scalable and performant software, such as our legacy parallel MATLAB framework. With ML4Seismic, we are dedicated to build on this experience to develop HPC open source software (OSS) for the scientific community in collaboration with our partners. In this talk, we will describe our OSS Julia and Python environment, our high-level abstraction principles, and the range of solutions we offer for seismic processing and inversion and for machine learning. We will emphasize our aim to provide scalable software that can be easily applied to industrial problems.},
+  keywords = {ML4SEISMIC, SLIM, software},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/louboutin2021ML4SEISMICmos/Mon-10-10-Louboutin.pdf}
+}
+
+@PRESENTATION{herrmann2021ML4SEISMICintro,
+  author = {Felix J. Herrmann},
+  title = {Introduction inaugural ML4Seismic Partners Meeting},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {During this presentation, an overview of the 2021 ML4Seismic Program will be given including organization of the meeting, setup of ML4Seismic, and the Informal Sessions in the afternoon.},
+  keywords = {ML4SEISMIC, SLIM},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/herrmann2021ML4SEISMICintro/Mon-09-00-Herrmann.pdf}
+}
+
+@PRESENTATION{grady2021ML4SEISMICdfn,
+  author = {Thomas J. Grady II and Rishi Khan and Felix J. Herrmann},
+  title = {Distributed Fourier Neural Operators},
+  booktitle = {ML4SEISMIC Partners Meeting 2021},
+  year = {2021},
+  month = {11},
+  abstract = {Fourier Neural Operators (FNOs) are a class of neural operator, which use weightings on the Fourier transform of their inputs to approximate infinite-dimensional mappings between function spaces. They are particularly useful in approximating the solutions of smooth parametric (e.g. by permeability) partial differential equations (PDEs), and once trained are capable of producing a nearly identical output to a traditional numerical solver roughly three orders of magnitude faster, making them very useful in a wide variety of engineering applications that require repeated PDE solves (e.g. during uncertainty quantification). Until now, FNOs have been limited to small problems, as their memory intensive design makes them difficult to scale in a traditional machine learning setting on a single computer or GPU. In this work, a decomposition scheme is described and implemented in PyTorch using the DistDL distributed deep learning framework, which is capable of scaling FNOs to arbitrary dimension and input size running on many nodes in a distributed memory system. This parallel implementations allows FNOs to be trained and run on problems of a practical scale on both CPU and GPU clusters.},
+  keywords = {ML4SEISMIC, SLIM, FNO, deep learning, CCS},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/grady2021ML4SEISMICdfn/Tue-12-10-Grady.pdf}
+}
+
 %----- 2017 (FALL) -----%
 
 @PRESENTATION{alfaraj2017SINBADFros,

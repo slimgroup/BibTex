@@ -1,6 +1,37 @@
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+%-----2021-----%
+
+@TECHREPORT{louboutin2021NIPSmcte,
+  author = {Mathias Louboutin and Ali Siahkoohi and Rongrong Wang and Felix J. Herrmann},
+  title = {Low-memory stochastic backpropagation with multi-channel randomized trace estimation},
+  year = {2021},
+  month = {06},
+  number = {TR-CSE-2021-1},
+  abstract = {Thanks to the combination of state-of-the-art accelerators and highly
+optimized open software frameworks, there has been tremendous progress in
+the performance of deep neural networks. While these developments have
+been responsible for many breakthroughs, progress towards solving large-scale
+problems, such as video encoding and semantic segmentation in 3D,
+is hampered because access to on-premise memory is often limited.
+Instead of relying on (optimal) checkpointing or invertibility of the
+network layers---to recover the activations during backpropagation---we
+propose to approximate the gradient of convolutional layers in neural
+networks with a multi-channel randomized trace estimation technique. Compared
+to other methods, this approach is simple, amenable to analyses, and leads to a
+greatly reduced memory footprint. Even though the randomized trace
+estimation introduces stochasticity during training, we argue that this
+is of little consequence as long as the induced errors are of the same
+order as errors in the gradient due to the use of stochastic gradient
+descent. We discuss the performance of networks trained with stochastic
+backpropagation and how the error can be controlled while maximizing
+memory usage and minimizing computational overhead.},
+  keywords = {HPC, Machine Learning, Randomized Linear Algebra, Convolutions, Low Memory},
+  url = {https://slim.gatech.edu/Publications/Public/TechReport/2021/louboutin2021NIPSmcte/louboutin2021NIPSmcte.pdf},
+  software = {https://github.com/slimgroup/XConv}
+}
+
 %-----2020-----%
 
 @TECHREPORT{siahkoohi2020TRfuqf,

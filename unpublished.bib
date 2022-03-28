@@ -3,6 +3,77 @@
 
 %-----2022-----%
 
+@UNPUBLISHED{zhang2022SEGass,
+  author = {Yijun Zhang and Mathias Louboutin and Ali Siahkoohi and Ziyi Yin and Rajiv Kumar and Felix J. Herrmann},
+  title = {A simulation-free seismic survey design by maximizing the spectral gap},
+  year = {2022},
+  month = {03},
+  abstract = {Due to the tremendous cost of seismic data acquisition, methods have been developed to reduce the amount of data acquired by designing optimal missing trace reconstruction algorithms. These technologies are designed to record as little data as possible in the field, while providing accurate wavefield reconstruction in the areas of the survey that are not recorded. This is achieved by designing randomized subsampling masks that allow for accurate wavefield reconstruction via matrix completion methods. Motivated by these recent results, we propose a simulation-free seismic survey design that aims at improving the quality of a given randomized subsampling using a simulated annealing algorithm that iteratively increases the spectral gap of the subsampling mask, a property recently linked to the quality of the reconstruction. We demonstrate that our proposed method improves the data reconstruction quality for a fixed subsampling rate on a realistic synthetic dataset.},
+  keywords = {acquisition, survey design, wavefield reconstruction, spectral gap, matrix factorization},
+  note = {Submitted},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2022/zhang2022SEG/Yijun2022SEGass.html}
+}
+
+@UNPUBLISHED{yin2022SEGlci,
+  author = {Ziyi Yin and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
+  title = {Learned coupled inversion for carbon sequestration monitoring and forecasting with Fourier neural operators},
+  year = {2022},
+  month = {03},
+  abstract = {Seismic monitoring of carbon storage sequestration is a challenging problem involving both fluid-flow physics and wave physics. Additionally, monitoring usually requires the solvers for these physics to be coupled and differentiable to effectively invert for the subsurface properties of interest. To drastically reduce the computational cost, we introduce a learned coupled inversion framework based on the wave modeling operator, rock property conversion and a proxy fluid-flow simulator. We show that we can accurately use a Fourier neural operator as a proxy for the fluid-flow simulator for a fraction of the computational cost. We demonstrate the efficacy of our proposed method by means of a synthetic experiment. Finally, our framework is extended to carbon sequestration forecasting, where we effectively use the surrogate Fourier neural operator to forecast the CO2 plume in the future at near-zero additional cost.},
+  keywords = {Fourier neural operators, CCS, multiphysics, machine learning, deep learning, time-lapse, inversion},
+  note = {Submitted},
+  software = {https://github.com/slimgroup/FNO4CO2},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2022/yin2022SEGlci/paper.html}
+}
+
+@UNPUBLISHED{louboutin2022SEGais,
+  author = {Mathias Louboutin and Philipp A. Witte and Ali Siahkoohi and Gabrio Rizzuti and Ziyi Yin and Rafael Orozco and Felix J. Herrmann},
+  title = {Accelerating innovation with software abstractions for scalable computational geophysics},
+  year = {2022},
+  month = {03},
+  abstract = {We present the SLIM open-source software framework for
+computational geophysics, and more generally, inverse problems based on the
+wave-equation (e.g., medical ultrasound). We developed a software environment
+aimed at scalable research and development by designing multiple layers of
+abstractions. This environment allows the researchers to easily formulate
+their problem in an abstract fashion, while still being able to exploit the
+latest developments in high-performance computing. We illustrate and
+demonstrate the benefits of our software design on many geophysical
+applications, including seismic inversion and physics-informed machine
+learning for geophysics(e.g., loop unrolled imaging, uncertainty
+quantification), all while facilitating the integration of external software.},
+  keywords = {Software, inversion, FWI, HPC, Devito, JUDI, Machine Learning, Uncertainty Quantification, CCS},
+  note = {Submitted},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2022/louboutin2022SEGais/louboutin_seg22.html}
+}
+
+@UNPUBLISHED{siahkoohi2022SEGvcw,
+  author = {Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
+  title = {Velocity continuation with Fourier neural operators for accelerated uncertainty quantification},
+  year = {2022},
+  month = {03},
+  abstract = {Seismic imaging is an ill-posed inverse problem that is challenged
+by noisy data and modeling inaccuracies---due to errors in the background
+squared-slowness model. Uncertainty quantification is essential for
+determining how variability in the background models affects seismic imaging.
+Due to the costs associated with the forward Born modeling operator as well
+as the high dimensionality of seismic images, quantification of uncertainty
+is computationally expensive. As such, the main contribution of this work is
+a survey-specific Fourier neural operator surrogate to velocity continuation
+that maps seismic images associated with one background model to another
+virtually for free. While being trained with only 200 background and seismic
+image pairs, this surrogate is able to accurately predict seismic images
+associated with new background models, thus accelerating seismic imaging
+uncertainty quantification. We support our method with a realistic data
+example in which we quantify seismic imaging uncertainties using a Fourier
+neural operator surrogate, illustrating how variations in background models
+affect the position of reflectors in a seismic image.},
+  keywords = {Fourier neural operators, Velocity continuation, Uncertainty quantification},
+  note = {Submitted},
+  software = {https://github.com/slimgroup/velocity_continuation_with_FNOs},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2022/siahkoohi2022SEGvcw/abstract.html}
+}
+
 %-----2021-----%
 
 @UNPUBLISHED{siahkoohi2021dbif,

@@ -3,6 +3,37 @@
 
 %-----2022-----%
 
+@CONFERENCE{siahkoohi2022EAGEweb,
+  author = {Ali Siahkoohi and Rafael Orozco and Gabrio Rizzuti and Felix J. Herrmann},
+  title = {Wave-equation based inversion with amortized variational Bayesian inference},
+  booktitle = {EAGE Annual Conference Proceedings},
+  year = {2022},
+  month = {06},
+  pages = {Session 2: Velocity model building and imaging (different domains)},
+  abstract = {Solving inverse problems involving measurement noise and modeling
+errors requires regularization in order to avoid data overfit. Geophysical
+inverse problems, in which the Earth's highly heterogeneous structure is
+unknown, present a challenge in encoding prior knowledge through analytical
+expressions. Our main contribution is a generative-model-based regularization
+approach, robust to out-of-distribution data, which exploits the prior
+knowledge embedded in existing data and model pairs. Utilizing an amortized
+variational inference objective, a conditional normalizing flow (NF) is
+pretrained on pairs of low- and high-fidelity migrated images in order to
+achieve a low-fidelity approximation to the seismic imaging posterior
+distribution for previously unseen data. The NF is used after pretraining to
+reparameterize the unknown seismic image in an inversion scheme involving
+physics-guided data misfit and a Gaussian prior on the NF latent variable.
+Solving this optimization problem with respect to the latent variable enables
+us to leverage the benefits of data-driven conditional priors whilst being
+informed by physics and data. The numerical experiments demonstrate that the
+proposed inversion scheme produces seismic images with limited artifacts when
+dealing with noisy and out-of-distribution data.},
+  keywords = {EAGE, seismic imaging, normalizing flows, conditional priors},
+  note = {(EAGE, Madrid)},
+  software = {https://github.com/slimgroup/ConditionalNFs4Imaging.jl},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2022/siahkoohi2022EAGEweb/abstract.html}
+}
+
 @CONFERENCE{siahkoohi2022SEGvcw,
   author = {Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
   title = {Velocity continuation with Fourier neural operators for accelerated uncertainty quantification},
@@ -88,7 +119,7 @@ quantification), all while facilitating the integration of external software.},
   title = {Enabling wave-based inversion on GPUs with randomized trace estimation},
   booktitle = {EAGE Annual Conference Proceedings},
   year = {2022},
-  month = {03},
+  month = {06},
   pages = {Seismic Wave Modelling & Least Square Migration 2 session},
   abstract = {By building on recent advances in the use of randomized trace
 estimation to drastically reduce the memory footprint of adjoint-state
@@ -100,7 +131,8 @@ wave-based inversion technology with a memory footprint that matches the
 hardware and that runs exclusively on clusters of GPUs without the
 undesirable need to offload certain tasks to CPUs.},
   keywords = {EAGE, Stochastic, RTM, Image Volumes, Inversion, TTI, SEAM},
-  note = {(EAGE, madrid)},
+  note = {(EAGE, Madrid)},
+  software = {https://github.com/slimgroup/TimeProbeSeismic.jl},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2022/louboutin2022eageewi/louboutinp.html}
 }
 
@@ -19813,8 +19845,6 @@ algorithm.},
 
 %-----2022-----%
 
-https://www.dropbox.com/home/EAS-Herrmann-TEAM-Ext/DoNotSync/WebServer/Publications/Public/Conferences/MIDL/2022
-
 @UNPUBLISHED{orozco2022MIDLmei,
   author = {Rafael Orozco and Mathias Louboutin and Felix J. Herrmann},
   title = {Memory Efficient Invertible Neural Networks for 3D Photoacoustic Imaging},
@@ -19860,35 +19890,6 @@ dynamics in the Earth's subsurface.},
   note = {Submitted},
   software = {https://github.com/slimgroup/dfno},
   url = {https://arxiv.org/pdf/2204.01205.pdf}
-}
-
-@UNPUBLISHED{siahkoohi2022EAGEweb,
-  author = {Ali Siahkoohi and Rafael Orozco and Gabrio Rizzuti and Felix J. Herrmann},
-  title = {Wave-equation based inversion with amortized variational Bayesian inference},
-  year = {2022},
-  month = {03},
-  abstract = {Solving inverse problems involving measurement noise and modeling
-errors requires regularization in order to avoid data overfit. Geophysical
-inverse problems, in which the Earth's highly heterogeneous structure is
-unknown, present a challenge in encoding prior knowledge through analytical
-expressions. Our main contribution is a generative-model-based regularization
-approach, robust to out-of-distribution data, which exploits the prior
-knowledge embedded in existing data and model pairs. Utilizing an amortized
-variational inference objective, a conditional normalizing flow (NF) is
-pretrained on pairs of low- and high-fidelity migrated images in order to
-achieve a low-fidelity approximation to the seismic imaging posterior
-distribution for previously unseen data. The NF is used after pretraining to
-reparameterize the unknown seismic image in an inversion scheme involving
-physics-guided data misfit and a Gaussian prior on the NF latent variable.
-Solving this optimization problem with respect to the latent variable enables
-us to leverage the benefits of data-driven conditional priors whilst being
-informed by physics and data. The numerical experiments demonstrate that the
-proposed inversion scheme produces seismic images with limited artifacts when
-dealing with noisy and out-of-distribution data.},
-  keywords = {seismic imaging, normalizing flows, conditional priors},
-  note = {Submitted},
-  software = {https://github.com/slimgroup/ConditionalNFs4Imaging.jl},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2022/siahkoohi2022EAGEweb/abstract.html}
 }
 
 %-----2021-----%

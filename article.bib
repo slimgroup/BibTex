@@ -3,6 +3,41 @@
 
 %----- 2022 -----%
 
+@ARTICLE{kukreja2020lcc,
+  author = {Navjot Kukreja and Jan Hueckelheim and Mathias Louboutin and John Washbourne and Paul H. J. Kelly and Gerard J. Gorman},
+  title = {Lossy Checkpoint Compression in Full Waveform Inversion},
+  year = {2022},
+  month = {5},
+  volume = {15},
+  number = {9},
+  pages = {3815-3829},
+  abstract = {This paper proposes a new method that combines check-pointing
+methods with error-controlled lossy compression for large-scale
+high-performance Full-Waveform Inversion (FWI), an inverse problem commonly
+used in geophysical exploration. This combination can significantly reduce
+data movement, allowing a reduction in run time as well as peak memory. In
+the Exascale computing era, frequent data transfer (e.g., memory bandwidth,
+PCIe bandwidth for GPUs, or network) is the performance bottleneck rather
+than the peak FLOPS of the processing unit. Like many other adjoint-based
+optimization problems, FWI is costly in terms of the number of floating-point
+operations, large memory footprint during backpropagation, and data transfer
+overheads. Past work for adjoint methods has developed checkpointing methods
+that reduce the peak memory requirements during backpropagation at the cost
+of additional floating-point computations. Combining this traditional
+checkpointing with error-controlled lossy compression, we explore the
+three-way tradeoff between memory, precision, and time to solution. We
+investigate how approximation errors introduced by lossy compression of the
+forward solution impact the objective function gradient and final inverted
+solution. Empirical results from these numerical experiments indicate that
+high lossy-compression rates (compression factors ranging up to 100) have a
+relatively minor impact on convergence rates and the quality of the final
+solution.},
+  keywords = {GMD, Lossy compression, Full waveform inversion, checkpointing, memory},
+  note = {(Geoscientific Model Development)},
+  doi = {10.5194/gmd-15-3815-2022},
+  url = {https://arxiv.org/pdf/2009.12623.pdf}
+}
+
 @ARTICLE{siahkoohi2021dbif,
   author = {Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann},
   title = {Deep Bayesian inference for seismic imaging with tasks},

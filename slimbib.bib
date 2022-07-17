@@ -3,6 +3,18 @@
 
 %-----2022-----%
 
+@CONFERENCE{siahkoohi2022SEGWSrav,
+  author = {Ali Siahkoohi and Gabrio Rizzuti and Rafael Orozco and Felix J. Herrmann},
+  title = {Reliable amortized variational inference with conditional normalizing flows via physics-based latent distribution correction},
+  booktitle = {SEG Workshop on Subsurface Uncertainty Description and Estimation - Moving Away from Single Prediction with Distribution Learning},
+  year = {2022},
+  month = {09},
+  abstract = {Bayesian inference for high-dimensional inverse problems is challenged by the computational costs associated with the forward operator during posterior sampling, as well as the selection of an appropriate prior distribution that encodes our prior knowledge about the unknown. Amortized variational inference addresses these challenges by pretraining a conditional normalizing flow (cNF) that approximates the posterior distribution over the existing model and data joint samples where the prior is implicitly learned from the data. When fed data and normally distributed latent samples as input, the pretrained cNF provides posterior samples for previously unseen data virtually for free. The accuracy of this purely data-driven approach, however, is dependent on the availability of high-fidelity training data, which is rarely the case with geophysical inverse problems, due to the highly heterogeneous structure of the Earth. To overcome this challenge and to minimize the negative bias of data distribution shifts during inference, we propose learning a physics-based correction to the cNF latent distribution to provide a more accurate approximation to the posterior distribution. We accomplish this by parameterizing the cNF latent distribution by a Gaussian distribution with an unknown mean and diagonal covariance, which are estimated by minimizing the Kullback-Leibler divergence between the corrected posterior distribution estimate and the true posterior distribution. For a relatively well-trained cNF, this approach provides reliable posterior samples with a limited computational cost while remaining bound to data and physics. We showcase the computational gains of this approach on a "quasi" real seismic imaging example.},
+  keywords = {SEG, workshop, Deep Learning, Imaging, Uncertainty Quantification, Inverse Problems, Generative models, Bayesian Inference},
+  note = {(IMAGE Workshop, Houston)},
+  url = {https://www.imageevent.org/Workshop/subsurface-uncertainty-description-estimation-moving-away-single-prediction-distribution-learning}
+}
+
 @CONFERENCE{siahkoohi2022INTERSPEECHulbs,
   author = {Ali Siahkoohi and Michael Chinen and Tom Denton and W. Bastiaan Kleijn and Jan Skoglund},
   title = {Ultra-Low-Bitrate Speech Coding with Pretrained Transformers},
@@ -261,7 +273,7 @@ based on the acquired ultrasonic data.},
   year = {2021},
   month = {10},
   keywords = {SEG, workshop, CCS, imaging, JRM, multiple, born},
-  note = {(SEG Workshop, virtual)},
+  note = {(IMAGE Workshop, virtual)},
   presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2021/herrmann2021SEGWSlts/herrmann2021SEGWSlts_pres.pdf}
 }
 
@@ -324,7 +336,7 @@ vectorized spatially-blocked code of up to 1.6x.},
 
 @CONFERENCE{herrmann2021Delftlwi,
   author = {Felix J. Herrmann and Ali Siahkoohi and Rafael Orozco and Gabrio Rizzuti and Philipp A. Witte and Mathias Louboutin},
-  title = {Learned wave-based imaging – variational inference at scale},
+  title = {Learned wave-based imaging - variational inference at scale},
   year = {2021},
   month = {06},
   booktitle = {Delft},
@@ -950,7 +962,7 @@ directly train a network capable of generating samples from the posterior. The m
 
 @CONFERENCE{herrmann2019EAGEHPCaii,
   author = {Felix J. Herrmann and Charles Jones and Gerard Gorman and Jan Hückelheim and Keegan Lensink and Paul H. J. Kelly and Navjot Kukreja and Henryk Modzelewski and Michael Lange and Mathias Louboutin and Fabio Luporini and James Selvages and Philipp A. Witte},
-  title = {Accelerating ideation & innovation cheaply in the Cloud the power of abstraction, collaboration & reproducibility},
+  title = {Accelerating ideation and innovation cheaply in the Cloud the power of abstraction, collaboration and reproducibility},
   booktitle = {4th EAGE Workshop on High-performance Computing},
   year = {2019},
   month = {10},
@@ -23964,6 +23976,57 @@ experiments illustrate the flexibility and efficiency of the approach.},
 % Encoding: ISO8859_1
 
 %-----2020-----%
+
+@PHDTHESIS{siahkoohi2022THdgmf,
+  author = {Ali Siahkoohi},
+  title = {Deep generative models for solving geophysical inverse problems},
+  school = {Georgia Institute of Technology},
+  year = {2022},
+  month = {07},
+  address = {Atlanta},
+  abstract = {My thesis presents several novel methods to facilitate solving large-scale
+inverse problems by utilizing recent advances in machine learning, and
+particularly deep generative modeling. Inverse problems involve reliably
+estimating unknown parameters of a physical model from indirect observed data
+that are noisy. Solving inverse problems presents primarily two challenges.
+The first challenge is to capture and incorporate prior knowledge into
+ill-posed inverse problems whose solutions cannot be uniquely identified. The
+second challenge is the computational complexity of solving inverse problems,
+particularly the cost of quantifying uncertainty. The main goal of this
+thesis is to address these issues by developing practical data-driven methods
+that are scalable to geophysical applications in which access to high-quality
+training data is often limited.
+
+There are six papers included in this thesis. A majority of these papers
+focus on addressing computational challenges associated with Bayesian
+inference and uncertainty quantification, while others focus on developing
+regularization techniques to improve inverse problem solution quality and
+accelerate the solution process. These papers demonstrate the applicability
+of the proposed methods to seismic imaging, a large-scale geophysical inverse
+problem with a computationally expensive forward operator for which
+sufficiently capturing the variability in the Earth's heterogeneous
+subsurface through a training dataset is challenging.
+
+The first two papers present computationally feasible methods of applying a
+class of methods commonly referred to as deep priors to seismic imaging and
+uncertainty quantification. I also present a systematic Bayesian approach to
+translate uncertainty in seismic imaging to uncertainty in downstream tasks
+performed on the image. The next two papers aim to address the reliability
+concerns surrounding data-driven methods for solving Bayesian inverse
+problems by leveraging variational inference formulations that offer the
+benefits of fully-learned posteriors while being directly informed by physics
+and data. The last two papers are concerned with correcting forward modeling
+errors where the first proposes an adversarially learned postprocessing step
+to attenuate numerical dispersion artifacts in wave-equation simulations due
+to coarse finite-difference discretizations, while the second trains a
+Fourier neural operator surrogate forward model in order to accelerate the
+qualification of uncertainty due to errors in the forward model
+parameterization.},
+  keywords = {PhD, Geophysics, Inverse Problems, Generative models, Bayesian Inference, Deep Learning},
+  note = {(PhD)},
+  url = {https://slim.gatech.edu/Publications/Public/Thesis/2022/siahkoohi2022THdgmf/siahkoohi2022THdgmf.pdf},
+  presentation = {https://slim.gatech.edu/Publications/Public/Thesis/2022/sharan2020THlsh/siahkoohi2022THdgmf_pres.pdf}
+}
 
 @PHDTHESIS{sharan2020THlsh,
   author = {Shashin Sharan},

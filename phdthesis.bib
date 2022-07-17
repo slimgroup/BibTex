@@ -3,6 +3,57 @@
 
 %-----2020-----%
 
+@PHDTHESIS{siahkoohi2022THdgmf,
+  author = {Ali Siahkoohi},
+  title = {Deep generative models for solving geophysical inverse problems},
+  school = {Georgia Institute of Technology},
+  year = {2022},
+  month = {07},
+  address = {Atlanta},
+  abstract = {My thesis presents several novel methods to facilitate solving large-scale
+inverse problems by utilizing recent advances in machine learning, and
+particularly deep generative modeling. Inverse problems involve reliably
+estimating unknown parameters of a physical model from indirect observed data
+that are noisy. Solving inverse problems presents primarily two challenges.
+The first challenge is to capture and incorporate prior knowledge into
+ill-posed inverse problems whose solutions cannot be uniquely identified. The
+second challenge is the computational complexity of solving inverse problems,
+particularly the cost of quantifying uncertainty. The main goal of this
+thesis is to address these issues by developing practical data-driven methods
+that are scalable to geophysical applications in which access to high-quality
+training data is often limited.
+
+There are six papers included in this thesis. A majority of these papers
+focus on addressing computational challenges associated with Bayesian
+inference and uncertainty quantification, while others focus on developing
+regularization techniques to improve inverse problem solution quality and
+accelerate the solution process. These papers demonstrate the applicability
+of the proposed methods to seismic imaging, a large-scale geophysical inverse
+problem with a computationally expensive forward operator for which
+sufficiently capturing the variability in the Earth's heterogeneous
+subsurface through a training dataset is challenging.
+
+The first two papers present computationally feasible methods of applying a
+class of methods commonly referred to as deep priors to seismic imaging and
+uncertainty quantification. I also present a systematic Bayesian approach to
+translate uncertainty in seismic imaging to uncertainty in downstream tasks
+performed on the image. The next two papers aim to address the reliability
+concerns surrounding data-driven methods for solving Bayesian inverse
+problems by leveraging variational inference formulations that offer the
+benefits of fully-learned posteriors while being directly informed by physics
+and data. The last two papers are concerned with correcting forward modeling
+errors where the first proposes an adversarially learned postprocessing step
+to attenuate numerical dispersion artifacts in wave-equation simulations due
+to coarse finite-difference discretizations, while the second trains a
+Fourier neural operator surrogate forward model in order to accelerate the
+qualification of uncertainty due to errors in the forward model
+parameterization.},
+  keywords = {PhD, Geophysics, Inverse Problems, Generative models, Bayesian Inference, Deep Learning},
+  note = {(PhD)},
+  url = {https://slim.gatech.edu/Publications/Public/Thesis/2022/siahkoohi2022THdgmf/siahkoohi2022THdgmf.pdf},
+  presentation = {https://slim.gatech.edu/Publications/Public/Thesis/2022/sharan2020THlsh/siahkoohi2022THdgmf_pres.pdf}
+}
+
 @PHDTHESIS{sharan2020THlsh,
   author = {Shashin Sharan},
   title = {Large scale high-frequency seismic wavefield reconstruction, acquisition via rank minimization and sparsity-promoting source estimation},

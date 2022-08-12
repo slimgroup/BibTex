@@ -12177,6 +12177,74 @@ land velocity and density model.},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/grady2021ML4SEISMICdfn/Tue-12-10-Grady.pdf}
 }
 
+%----- 2020 -----%
+
+@PRESENTATION{siahkoohi2020SEGCHAPTERGTdlbuq,
+  title = {A deep-learning based Bayesian approach to seismic imaging and uncertainty quantification},
+  booktitle = {GT SEG Student Chapter},  
+  year = {2020},
+  abstract = {Uncertainty quantification is essential when dealing with
+ill-conditioned inverse problems due to the inherent nonuniqueness of the
+solution. Bayesian approaches allow us to determine how likely an estimation
+of the unknown parameters is via formulating the posterior distribution.
+Unfortunately, it is often not possible to formulate a prior distribution
+that precisely encodes our prior knowledge about the unknown. Furthermore,
+adherence to handcrafted priors may greatly bias the outcome of the Bayesian
+analysis. To address this issue, we propose to use the functional form of a
+randomly initialized convolutional neural network as an implicit structured
+prior, which is shown to promote natural images and excludes images with
+unnatural noise. In order to incorporate the model uncertainty into the final
+estimate, we sample the posterior distribution using stochastic gradient
+Langevin dynamics and perform Bayesian model averaging on the obtained
+samples. Our synthetic numerical experiment verifies that deep priors
+combined with Bayesian model averaging are able to partially circumvent
+imaging artifacts and reduce the risk of overfitting in the presence of
+extreme noise. Finally, we present pointwise variance of the estimates as a
+measure of uncertainty, which coincides with regions that are more difficult
+to image.},
+  keywords = {deep learning, seismic imaging, stochastic gradient Langevin dynamics, uncertainty quantification},
+  note = {(SEG Student Chapter)},
+  url = {https://slim.gatech.edu/Publications/Public/Lectures/SEGCHAPTERGT/2020/siahkoohi2020SEGCHAPTERGTdlbuq/siahkoohi2020SEGCHAPTERGTdlbuq.pdf},
+  author = {Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann}
+}
+
+%----- 2019 -----%
+
+@PRESENTATION{Herrmann2019SEGDL,
+  title = {Sometimes it pays to be cheap – Compressive time-lapse seismic data acquisition},
+  booktitle = {SEG Distinguished Lecture},  
+  organization = {Society of Exploration Geophysicists},
+  year = {2019},
+  abstract = {During these times of sustained low oil prices, it is essential to look for new innovative ways to collect (time-lapse) seismic data at reduced costs and preferably also at reduced environmental impact. By now, there is an increasing body of corroborating evidence — whether these are simulated case studies or actual acquisitions on land and marine — that seismic acquisition based on the principles of compressive sensing delivers on this premise by removing the need to acquire replicated dense surveys. Up to ten-fold increases in acquisition efficiency have been reported by industry while there are indications that this breakthrough is only the beginning of a paradigm shift where full-azimuth time-lapse processing will become a reality. To familiarize the audience with this new technology, I will first describe the basics of compressive sensing, how it relates to missing-trace interpolation and simultaneous source acquisition, followed by how this technology is driving innovations in full-azimuth (time-lapse) acquisition, yielding high-fidelity data with a high degree of repeatability and at a fraction of the costs.},
+  keywords = {presentation, Compressive Sensing, Time-lapse Marine Acquisition},
+  note = {(SEG Distinguished Lecture)},
+  url = {https://slim.gatech.edu/Publications/Public/Lectures/SEG-DL/2019/Herrmann2019SEGDL/Herrmann2019SEGDL/},
+  url2 = {https://slim.gatech.edu/Publications/Public/Lectures/SEG-DL/2019/Herrmann2019SEGDL/Herrmann2019SEGDL.pdf},
+  author = {Felix J. Herrmann}
+}
+
+@PRESENTATION{witte2019HOTCSEdsagip,
+  title = {Domain-specific abstractions for large-scale geophysical inverse problems},
+  booktitle = {HotCSE Seminar},  
+  year = {2019},
+  abstract = {During these times of sustained low oil prices, it is essential to look for new innovative ways to collect (time-lapse) seismic data at reduced costs and preferably also at reduced environmental impact. By now, there is an increasing body of corroborating evidence — whether these are simulated case studies or actual acquisitions on land and marine — that seismic acquisition based on the principles of compressive sensing delivers on this premise by removing the need to acquire replicated dense surveys. Up to ten-fold increases in acquisition efficiency have been reported by industry while there are indications that this breakthrough is only the beginning of a paradigm shift where full-azimuth time-lapse processing will become a reality. To familiarize the audience with this new technology, I will first describe the basics of compressive sensing, how it relates to missing-trace interpolation and simultaneous source acquisition, followed by how this technology is driving innovations in full-azimuth (time-lapse) acquisition, yielding high-fidelity data with a high degree of repeatability and at a fraction of the costs.},
+  keywords = {software, julia, large-scale, inversion, full-waveform-inversion, imaging},
+  note = {(HotCSE)},
+  url = {https://slim.gatech.edu/Publications/Public/Lectures/HotCSE/2019/witte2019HOTCSEdsagip/witte2019HOTCSEdsagip.pdf},
+  author = {Philipp A. Witte and Mathias Louboutin and Felix J. Herrmann}
+}
+
+@PRESENTATION{herrmann2019HOTCSEliwcuq,
+  title = {Learned imaging with constraints and uncertainty quantification},
+  booktitle = {HotCSE Seminar},  
+  year = {2019},
+  abstract = {We outline new approaches to incorporate ideas from convolutional networks into wave-based least-squares imaging. The aim is to combine hand-crafted constraints with deep convolutional networks allowing us to directly train a network capable of generating samples from the posterior. The main contributions include combination of weak deep priors with hard handcrafted constraints and a possible new way to sample the posterior.},
+  keywords = {HotCSE, Uncertainty quantification, Deep Learning, Imaging, Expectation Maximization},
+  note = {(HotCSE)},
+  url = {https://slim.gatech.edu/Publications/Public/Lectures/HotCSE/2019/herrmann2019HOTCSEliwcuq/herrmann2019HOTCSEliwcuq.pdf},
+  author = {Felix J. Herrmann and Ali Siahkoohi and Gabrio Rizzuti}
+}
+
 %----- 2017 (FALL) -----%
 
 @PRESENTATION{alfaraj2017SINBADFros,
@@ -24971,70 +25039,3 @@ scale problems with an acceptable computational cost.},
   url = {https://slim.gatech.edu/Publications/Public/Thesis/2008/hennenfent08phd.pdf}
 }
 
-%----- 2020 -----%
-
-@MISC{siahkoohi2020SEGCHAPTERGTdlbuq,
-  title = {A deep-learning based Bayesian approach to seismic imaging and uncertainty quantification},
-  booktitle = {GT SEG Student Chapter},  
-  year = {2020},
-  abstract = {Uncertainty quantification is essential when dealing with
-ill-conditioned inverse problems due to the inherent nonuniqueness of the
-solution. Bayesian approaches allow us to determine how likely an estimation
-of the unknown parameters is via formulating the posterior distribution.
-Unfortunately, it is often not possible to formulate a prior distribution
-that precisely encodes our prior knowledge about the unknown. Furthermore,
-adherence to handcrafted priors may greatly bias the outcome of the Bayesian
-analysis. To address this issue, we propose to use the functional form of a
-randomly initialized convolutional neural network as an implicit structured
-prior, which is shown to promote natural images and excludes images with
-unnatural noise. In order to incorporate the model uncertainty into the final
-estimate, we sample the posterior distribution using stochastic gradient
-Langevin dynamics and perform Bayesian model averaging on the obtained
-samples. Our synthetic numerical experiment verifies that deep priors
-combined with Bayesian model averaging are able to partially circumvent
-imaging artifacts and reduce the risk of overfitting in the presence of
-extreme noise. Finally, we present pointwise variance of the estimates as a
-measure of uncertainty, which coincides with regions that are more difficult
-to image.},
-  keywords = {deep learning, seismic imaging, stochastic gradient Langevin dynamics, uncertainty quantification},
-  note = {(SEG Student Chapter)},
-  url = {https://slim.gatech.edu/Publications/Public/Lectures/SEGCHAPTERGT/2020/siahkoohi2020SEGCHAPTERGTdlbuq/siahkoohi2020SEGCHAPTERGTdlbuq.pdf},
-  author = {Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann}
-}
-
-%----- 2019 -----%
-
-@MISC{Herrmann2019SEGDL,
-  title = {Sometimes it pays to be cheap – Compressive time-lapse seismic data acquisition},
-  booktitle = {SEG Distinguished Lecture},  
-  organization = {Society of Exploration Geophysicists},
-  year = {2019},
-  abstract = {During these times of sustained low oil prices, it is essential to look for new innovative ways to collect (time-lapse) seismic data at reduced costs and preferably also at reduced environmental impact. By now, there is an increasing body of corroborating evidence — whether these are simulated case studies or actual acquisitions on land and marine — that seismic acquisition based on the principles of compressive sensing delivers on this premise by removing the need to acquire replicated dense surveys. Up to ten-fold increases in acquisition efficiency have been reported by industry while there are indications that this breakthrough is only the beginning of a paradigm shift where full-azimuth time-lapse processing will become a reality. To familiarize the audience with this new technology, I will first describe the basics of compressive sensing, how it relates to missing-trace interpolation and simultaneous source acquisition, followed by how this technology is driving innovations in full-azimuth (time-lapse) acquisition, yielding high-fidelity data with a high degree of repeatability and at a fraction of the costs.},
-  keywords = {presentation, Compressive Sensing, Time-lapse Marine Acquisition},
-  note = {(SEG Distinguished Lecture)},
-  url = {https://slim.gatech.edu/Publications/Public/Lectures/SEG-DL/2019/Herrmann2019SEGDL/Herrmann2019SEGDL/},
-  url2 = {https://slim.gatech.edu/Publications/Public/Lectures/SEG-DL/2019/Herrmann2019SEGDL/Herrmann2019SEGDL.pdf},
-  author = {Felix J. Herrmann}
-}
-
-@MISC{witte2019HOTCSEdsagip,
-  title = {Domain-specific abstractions for large-scale geophysical inverse problems},
-  booktitle = {HotCSE Seminar},  
-  year = {2019},
-  abstract = {During these times of sustained low oil prices, it is essential to look for new innovative ways to collect (time-lapse) seismic data at reduced costs and preferably also at reduced environmental impact. By now, there is an increasing body of corroborating evidence — whether these are simulated case studies or actual acquisitions on land and marine — that seismic acquisition based on the principles of compressive sensing delivers on this premise by removing the need to acquire replicated dense surveys. Up to ten-fold increases in acquisition efficiency have been reported by industry while there are indications that this breakthrough is only the beginning of a paradigm shift where full-azimuth time-lapse processing will become a reality. To familiarize the audience with this new technology, I will first describe the basics of compressive sensing, how it relates to missing-trace interpolation and simultaneous source acquisition, followed by how this technology is driving innovations in full-azimuth (time-lapse) acquisition, yielding high-fidelity data with a high degree of repeatability and at a fraction of the costs.},
-  keywords = {software, julia, large-scale, inversion, full-waveform-inversion, imaging},
-  note = {(HotCSE)},
-  url = {https://slim.gatech.edu/Publications/Public/Lectures/HotCSE/2019/witte2019HOTCSEdsagip/witte2019HOTCSEdsagip.pdf},
-  author = {Philipp A. Witte and Mathias Louboutin and Felix J. Herrmann}
-}
-
-@MISC{herrmann2019HOTCSEliwcuq,
-  title = {Learned imaging with constraints and uncertainty quantification},
-  booktitle = {HotCSE Seminar},  
-  year = {2019},
-  abstract = {We outline new approaches to incorporate ideas from convolutional networks into wave-based least-squares imaging. The aim is to combine hand-crafted constraints with deep convolutional networks allowing us to directly train a network capable of generating samples from the posterior. The main contributions include combination of weak deep priors with hard handcrafted constraints and a possible new way to sample the posterior.},
-  keywords = {HotCSE, Uncertainty quantification, Deep Learning, Imaging, Expectation Maximization},
-  note = {(HotCSE)},
-  url = {https://slim.gatech.edu/Publications/Public/Lectures/HotCSE/2019/herrmann2019HOTCSEliwcuq/herrmann2019HOTCSEliwcuq.pdf},
-  author = {Felix J. Herrmann and Ali Siahkoohi and Gabrio Rizzuti}
-}

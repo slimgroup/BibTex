@@ -9,9 +9,21 @@
   booktitle = {SEG Workshop on What's Next for FWI and its Derived Products},
   year = {2022},
   month = {09},
+  abstract = {We present the SLIM open-source software framework for
+computational geophysics, and more generally, inverse problems based on the
+wave-equation (e.g., medical ultrasound). We developed a software environment
+aimed at scalable research and development by designing multiple layers of
+abstractions. This environment allows the researchers to easily formulate
+their problem in an abstract fashion, while still being able to exploit the
+latest developments in high-performance computing. We illustrate and
+demonstrate the benefits of our software design on many geophysical
+applications, including seismic inversion and physics-informed machine
+learning for geophysics (e.g., loop unrolled imaging, uncertainty
+quantification), all while facilitating the integration of external software.},
   keywords = {SEG, workshop, algorithms, Deep Learning, Imaging, FWI, LSRTM, software, JUDI, Devito},
   note = {(IMAGE Workshop, Houston)},
-  url = {https://www.imageevent.org/Workshop/next-fwi-derived-products}
+  url = {https://www.imageevent.org/Workshop/next-fwi-derived-products},
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/louboutin2022SEGWSaaa/Thu-4-10-Louboutin.pdf}
 }
 
 @CONFERENCE{siahkoohi2022SEGWSrav,
@@ -23,7 +35,8 @@
   abstract = {Bayesian inference for high-dimensional inverse problems is challenged by the computational costs associated with the forward operator during posterior sampling, as well as the selection of an appropriate prior distribution that encodes our prior knowledge about the unknown. Amortized variational inference addresses these challenges by pretraining a conditional normalizing flow (cNF) that approximates the posterior distribution over the existing model and data joint samples where the prior is implicitly learned from the data. When fed data and normally distributed latent samples as input, the pretrained cNF provides posterior samples for previously unseen data virtually for free. The accuracy of this purely data-driven approach, however, is dependent on the availability of high-fidelity training data, which is rarely the case with geophysical inverse problems, due to the highly heterogeneous structure of the Earth. To overcome this challenge and to minimize the negative bias of data distribution shifts during inference, we propose learning a physics-based correction to the cNF latent distribution to provide a more accurate approximation to the posterior distribution. We accomplish this by parameterizing the cNF latent distribution by a Gaussian distribution with an unknown mean and diagonal covariance, which are estimated by minimizing the Kullback-Leibler divergence between the corrected posterior distribution estimate and the true posterior distribution. For a relatively well-trained cNF, this approach provides reliable posterior samples with a limited computational cost while remaining bound to data and physics. We showcase the computational gains of this approach on a "quasi" real seismic imaging example.},
   keywords = {SEG, workshop, Deep Learning, Imaging, Uncertainty Quantification, Inverse Problems, Generative models, Bayesian Inference},
   note = {(IMAGE Workshop, Houston)},
-  url = {https://www.imageevent.org/Workshop/subsurface-uncertainty-description-estimation-moving-away-single-prediction-distribution-learning}
+  url = {https://www.imageevent.org/Workshop/subsurface-uncertainty-description-estimation-moving-away-single-prediction-distribution-learning},
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/siahkoohi2022SEGWSrav/Thur-15-55-Siahkoohi.pdf}
 }
 
 @CONFERENCE{siahkoohi2022INTERSPEECHulbs,
@@ -64,7 +77,7 @@ that of conventional codecs operating at three to four times the rate.},
   pages = {AI in Geoscience and Geophysics: Current Trends and Future Prospects (Dedicated Session)},
   keywords = {EAGE, seismic imaging, uncertainty quantification, Fourier neural operators, CCS, JRM},
   note = {(EAGE, Madrid)},
-  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2022/herrmann2022EAGEcvm/Tuesday-Herrmann-10-10.pdf}
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2022/herrmann2022EAGEcvm/index.html}
 }
 
 @CONFERENCE{louboutin2022RHPCafa,
@@ -149,7 +162,8 @@ affect the position of reflectors in a seismic image.},
   keywords = {SEG, Fourier neural operators, Velocity continuation, Uncertainty quantification},
   note = {(IMAGE, just accepted)},
   software = {https://github.com/slimgroup/fno4vc},
-  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/siahkoohi2022SEGvcw/abstract.html}
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/siahkoohi2022SEGvcw/abstract.html},
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/siahkoohi2022SEGvcw/Tue-16-30-Siahkoohi.pdf}
 }
 
 @CONFERENCE{louboutin2022SEGais,
@@ -172,7 +186,8 @@ learning for geophysics(e.g., loop unrolled imaging, uncertainty
 quantification), all while facilitating the integration of external software.},
   keywords = {SEG, Software, inversion, FWI, HPC, Devito, JUDI, Machine Learning, Uncertainty Quantification, CCS},
   note = {(IMAGE, just accepted)},
-  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/louboutin2022SEGais/louboutin_seg22.html}
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/louboutin2022SEGais/louboutin_seg22.html},
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/louboutin2022SEGais/Wed-3-10-Louboutin.pdf}
 }
 
 @CONFERENCE{zhang2022SEGass,
@@ -186,7 +201,8 @@ quantification), all while facilitating the integration of external software.},
   keywords = {SEG, acquisition, survey design, wavefield reconstruction, spectral gap, matrix factorization},
   note = {(IMAGE, just accepted)},
   software ={https://github.com/slimgroup/opt_spectral_gap},
-  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/zhang2022SEGass/Yijun2022SEGass.html}
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/zhang2022SEGass/Yijun2022SEGass.html},
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/zhang2022SEGass/index.html}
 }
 
 @CONFERENCE{yin2022SEGlci,
@@ -200,7 +216,8 @@ quantification), all while facilitating the integration of external software.},
   keywords = {SEG, Fourier neural operators, CCS, multiphysics, machine learning, deep learning, time-lapse, inversion},
   note = {(IMAGE, just accepted)},
   software = {https://github.com/slimgroup/FNO4CO2},
-  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/yin2022SEGlci/paper.html}
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/yin2022SEGlci/paper.html},
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/yin2022SEGlci/index.html}
 }
 
 @CONFERENCE{louboutin2022EAGEewi,

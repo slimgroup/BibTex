@@ -3,10 +3,35 @@
 
 %-----2022-----%
 
+@CONFERENCE{erdinc2022AAAIdcc,
+  author = {Huseyin Tuna Erdinc and Abhinav P. Gahlot and Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
+  title = {De-risking Carbon Capture and Sequestration with Explainable CO2 Leakage Detection in Time-lapse Seismic Monitoring Images},
+  year = {2022},
+  month = {08},
+  abstract = {With the growing global deployment of carbon capture and
+sequestration technology to combat climate change, monitor-
+ing and detection of potential CO2 leakage through existing
+or storage induced faults are critical to the safe and long-term
+viability of the technology. Recent work on time-lapse seis-
+mic monitoring of CO2 storage has shown promising results
+in its ability to monitor the growth of the CO2 plume from
+surface recorded seismic data. However, due to the low sen-
+sitivity of seismic imaging to CO2 concentration, additional
+developments are required to efficiently interpret the seis-
+mic images for leakage. In this work, we introduce a binary
+classification of time-lapse seismic images to delineate CO2
+plumes (leakage) using state-of-the-art deep learning models.
+Additionally, we localize the leakage region of CO2 plumes
+by leveraging Class Activation Mapping (CAM) methods.},
+  keywords = {AAAI, Seismic Imaging, JRM, CCS, classification, CAM, explainability},
+  note = {Accepted in AAAI 2022 Fall Symposium: The Role of AI in Responding to Climate Challenges},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/AAAI/2022/erdinc2022AAAIdcc/erdinc2022AAAIdcc.pdf}
+}
+
 @CONFERENCE{louboutin2022SEGWSaaa,
   author = {Mathias Louboutin and Felix J. Herrmann},
   title = {Abstractions and algorithms for efficient seismic inversion on accelerators},
-  booktitle = {SEG Workshop on What's Next for FWI and its Derived Products},
+  booktitle = {IMAGE Workshop on What's Next for FWI and its Derived Products},
   year = {2022},
   month = {09},
   abstract = {We present the SLIM open-source software framework for
@@ -29,7 +54,7 @@ quantification), all while facilitating the integration of external software.},
 @CONFERENCE{siahkoohi2022SEGWSrav,
   author = {Ali Siahkoohi and Gabrio Rizzuti and Rafael Orozco and Felix J. Herrmann},
   title = {Reliable amortized variational inference with conditional normalizing flows via physics-based latent distribution correction},
-  booktitle = {SEG Workshop on Subsurface Uncertainty Description and Estimation - Moving Away from Single Prediction with Distribution Learning},
+  booktitle = {IMAGE Workshop on Subsurface Uncertainty Description and Estimation - Moving Away from Single Prediction with Distribution Learning},
   year = {2022},
   month = {09},
   abstract = {Bayesian inference for high-dimensional inverse problems is challenged by the computational costs associated with the forward operator during posterior sampling, as well as the selection of an appropriate prior distribution that encodes our prior knowledge about the unknown. Amortized variational inference addresses these challenges by pretraining a conditional normalizing flow (cNF) that approximates the posterior distribution over the existing model and data joint samples where the prior is implicitly learned from the data. When fed data and normally distributed latent samples as input, the pretrained cNF provides posterior samples for previously unseen data virtually for free. The accuracy of this purely data-driven approach, however, is dependent on the availability of high-fidelity training data, which is rarely the case with geophysical inverse problems, due to the highly heterogeneous structure of the Earth. To overcome this challenge and to minimize the negative bias of data distribution shifts during inference, we propose learning a physics-based correction to the cNF latent distribution to provide a more accurate approximation to the posterior distribution. We accomplish this by parameterizing the cNF latent distribution by a Gaussian distribution with an unknown mean and diagonal covariance, which are estimated by minimizing the Kullback-Leibler divergence between the corrected posterior distribution estimate and the true posterior distribution. For a relatively well-trained cNF, this approach provides reliable posterior samples with a limited computational cost while remaining bound to data and physics. We showcase the computational gains of this approach on a "quasi" real seismic imaging example.},
@@ -160,7 +185,8 @@ example in which we quantify seismic imaging uncertainties using a Fourier
 neural operator surrogate, illustrating how variations in background models
 affect the position of reflectors in a seismic image.},
   keywords = {SEG, Fourier neural operators, Velocity continuation, Uncertainty quantification},
-  note = {(IMAGE, just accepted)},
+  note = {(IMAGE, Houston)},
+  doi = {10.1190/image2022-3750475.1},
   software = {https://github.com/slimgroup/fno4vc},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/siahkoohi2022SEGvcw/abstract.html},
   presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/siahkoohi2022SEGvcw/Tue-16-30-Siahkoohi.pdf}
@@ -185,7 +211,8 @@ applications, including seismic inversion and physics-informed machine
 learning for geophysics(e.g., loop unrolled imaging, uncertainty
 quantification), all while facilitating the integration of external software.},
   keywords = {SEG, Software, inversion, FWI, HPC, Devito, JUDI, Machine Learning, Uncertainty Quantification, CCS},
-  note = {(IMAGE, just accepted)},
+  note = {(IMAGE, Houston)},
+  doi = {10.1190/image2022-3750561.1},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/louboutin2022SEGais/louboutin_seg22.html},
   presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/louboutin2022SEGais/Wed-3-10-Louboutin.pdf}
 }
@@ -199,7 +226,8 @@ quantification), all while facilitating the integration of external software.},
   session = {Marine Acquisition 1},
   abstract = {Due to the tremendous cost of seismic data acquisition, methods have been developed to reduce the amount of data acquired by designing optimal missing trace reconstruction algorithms. These technologies are designed to record as little data as possible in the field, while providing accurate wavefield reconstruction in the areas of the survey that are not recorded. This is achieved by designing randomized subsampling masks that allow for accurate wavefield reconstruction via matrix completion methods. Motivated by these recent results, we propose a simulation-free seismic survey design that aims at improving the quality of a given randomized subsampling using a simulated annealing algorithm that iteratively increases the spectral gap of the subsampling mask, a property recently linked to the quality of the reconstruction. We demonstrate that our proposed method improves the data reconstruction quality for a fixed subsampling rate on a realistic synthetic dataset.},
   keywords = {SEG, acquisition, survey design, wavefield reconstruction, spectral gap, matrix factorization},
-  note = {(IMAGE, just accepted)},
+  note = {(IMAGE, Houston)},
+  doi = {10.1190/image2022-3751690.1},
   software ={https://github.com/slimgroup/opt_spectral_gap},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/zhang2022SEGass/Yijun2022SEGass.html},
   presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/zhang2022SEGass/index.html}
@@ -214,7 +242,8 @@ quantification), all while facilitating the integration of external software.},
   session = {Monitoring Using Seismic Methods 2},
   abstract = {Seismic monitoring of carbon storage sequestration is a challenging problem involving both fluid-flow physics and wave physics. Additionally, monitoring usually requires the solvers for these physics to be coupled and differentiable to effectively invert for the subsurface properties of interest. To drastically reduce the computational cost, we introduce a learned coupled inversion framework based on the wave modeling operator, rock property conversion and a proxy fluid-flow simulator. We show that we can accurately use a Fourier neural operator as a proxy for the fluid-flow simulator for a fraction of the computational cost. We demonstrate the efficacy of our proposed method by means of a synthetic experiment. Finally, our framework is extended to carbon sequestration forecasting, where we effectively use the surrogate Fourier neural operator to forecast the CO2 plume in the future at near-zero additional cost.},
   keywords = {SEG, Fourier neural operators, CCS, multiphysics, machine learning, deep learning, time-lapse, inversion},
-  note = {(IMAGE, just accepted)},
+  note = {(IMAGE, Houston)},
+  doi = {10.1190/image2022-3722848.1},
   software = {https://github.com/slimgroup/FNO4CO2},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/yin2022SEGlci/paper.html},
   presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2022/yin2022SEGlci/index.html}
@@ -238,6 +267,7 @@ hardware and that runs exclusively on clusters of GPUs without the
 undesirable need to offload certain tasks to CPUs.},
   keywords = {EAGE, Stochastic, RTM, Image Volumes, Inversion, TTI, SEAM},
   note = {(EAGE, Madrid)},
+  doi = {10.3997/2214-4609.202210531},
   software = {https://github.com/slimgroup/TimeProbeSeismic.jl},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2022/louboutin2022eageewi/louboutinp.html},
   presentation = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2022/louboutin2022eageewi/Jun-9-3-15-mloubout.pdf}

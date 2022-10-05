@@ -38,13 +38,13 @@ def sendmail(error_list):
 		s = smtplib.SMTP()
 		s.connect(host='smtp.eos.ubc.ca',port=25)
 		s.sendmail(msg['From'],[admin_email], msg.as_string())
-		print "Message sent"
+		print("Message sent")
 		s.close()
 	else:	
-		print "All entries updated"
+		print("All entries updated")
         
         
-print "Reading..."
+print("Reading...")
 for line in fileIN:	
 	line=line.strip()
 	if typename.lower() in line.lower():
@@ -64,7 +64,7 @@ for line in fileIN:
 		if diff > timer_days:
 			error_list.append(key)
 		if diff < 0:
-			print "Error:Invalid Date"
+			print("Error:Invalid Date")
 			quit()
             
             

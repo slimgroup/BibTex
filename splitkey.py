@@ -36,18 +36,17 @@ setlist=[]
 
 #CHECKING NUMBER OF FILES
 if (num_files <= 3):
-	print "Enter command in following format: python splitkey.py outputfile inputfile1.bib inputfile2.bib etc"
-        quit()
-
+	print("Enter command in following format: python splitkey.py outputfile inputfile1.bib inputfile2.bib etc")
+	quit()
 else:
-	print "Reading..."
-        output=sys.argv[1]
+	print("Reading...")
+	output=sys.argv[1]
 	i=2
-        while i < num_files:
-                input_files.append(sys.argv[i])
-                i=i+1	
+	while i < num_files:
+		input_files.append(sys.argv[i])
+		i=i+1	
 
-#--------------Working on input files---------
+	#--------------Working on input files---------
 	for each in input_files:
 		int_keys=set()
 		f=0
@@ -61,7 +60,7 @@ else:
 					split_entry= entry.split("{")[1]
 					key=split_entry.split(",")[0]
 					if key in int_keys:
-						print "Error: The key", key, " already exists in file",each,".Not added again.Edit it and try again"
+						print("Error: The key", key, " already exists in file",each,".Not added again.Edit it and try again")
 						quit()
 					int_keys.add(key)						
 		setlist.append(int_keys)
@@ -77,15 +76,15 @@ else:
 			if len(common) ==0:
 				k=k+1
 			else:
-				print "Duplicate entry found",common
-				print "Write failed"
+				print("Duplicate entry found",common)
+				print("Write failed")
 				quit()
 		j=j+1	
 	fout=open(output,"w")
 	for each in input_files:
 		for line in open(each):
 			fout.write(line)
-		print "File" ,each, "copied successfully to ", output 	
+		print("File" ,each, "copied successfully to ", output)	
 		 
 	fout.close()
 		

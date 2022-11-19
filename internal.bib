@@ -12113,6 +12113,159 @@ land velocity and density model.},
 
 %----- 2022 -----%
 
+@PRESENTATION{yu2022ML4SEISMICmsb,
+  author = {Ting-ying Yu and Rafael Orozco and Ziyi Yin and Felix J. Herrmann},
+  title = {Monitoring with sequential Bayesian inference},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {For this study, we apply sequential Bayesian inference to monitor the time evolution of subsurface flow of CO2 from indirect acoustic measurements at the surface. Upon receiving new acoustic measurements, we infer the current state of the CO2 by sampling from a learned posterior. Using the incoming data, we then perform online updates of the current posterior. This is accomplished by using the fluid flow model to advance the estimated state variable forward in time in order to update the learned posterior. With a synthetic experiment, we demonstrate this method can track the flow evolution accurately as measured by PSNR metrics. Since the posterior is a learned network, we can compute estimates faster than traditional least squares methods. This method can also quantify the uncertainty due to stochasticity in fluid flow model and the limited-azimuth imaging configuration.},
+  keywords = {ML4SEISMIC, SLIM, time-lapse, uncertainty quantification, sequential Bayes, conditional normalizing flows, CCS, GCS, monitoring},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/yu2022ML4SEISMICmsb/index.html}
+}
+
+@PRESENTATION{zhang2022ML4SEISMICtss,
+  author = {Yijun Zhang and Mathias Louboutin and Ali Siahkoohi and Ziyi Yin and Rajiv Kumar and Oscar Lopez and Felix J. Herrmann},
+  title = {Time-lapse seismic survey design by maximizing the spectral gap},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {While time-lapse seismic has been applied successfully to CO2 sequestration monitoring, it remains a challenging problem since replicated dense surveys come at a very high cost in the field. Wavefield reconstruction based on matrix completion (MC) from randomized subsampled data is an efficient way to reduce operational costs. This technique allows for accurate time-lapse reconstruction by employing the joint recovery model (JRM), which capitalizes on the fact that different vintages share a common component. However, combining JRM with optimal time-lapse acquisition survey design remains an unexplored area of research. In expander graph theory, spectral gap (SG) reveals the source-receiver layout connectivity and is related to reconstruction quality during MC. Building on these insights, we proposed a simulation free time-lapse survey design based on JRM that aims to get similar reconstructed quality without insisting on replicate surveys, which significantly reduces the cost in the field. This approach uses the simulated annealing algorithm to find subsampling masks for each vintage. Numerical experiments confirm a direct correlation between increased spectral gap and promising time-lapse reconstruction quality.},
+  keywords = {ML4SEISMIC, SLIM, time-lapse, acquisition, survey design, wavefield reconstruction, spectral gap, matrix factorization, JRM},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/zhang2022ML4SEISMICtss/index.html}
+}
+
+@PRESENTATION{yin2022ML4SEISMICutc,
+  author = {Ziyi Yin and Rafael Orozco and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
+  title = {Uncertainty-aware time-lapse {CO$_2$} monitoring with learned end-to-end inversion},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {Seismic monitoring of CO2 sequestration is computationally expensive as it involves modeling of both fluid-flow physics modeling and wave physics and differentiation through the solvers with respect to the subsurface properties of interest. In this talk, we demonstrate the effectiveness of learned coupled inversion framework using a pre-trained Fourier neural operator as a learned surrogate for the fluid-flow simulator, which greatly reduces the cost associated with fluid-flow modeling and differentiation through the solver. We study the effectiveness and correctness of inversion based on Fourier neural operator surrogate and a normalizing flow prior. We also demonstrate the efficacy of this framework on monitoring the growth of CO2 plumes during sequestration, and on uncertainty quantification of the permeability and CO2 plumes with conditional normalizing flow. With this framework, we can further forecast the CO2 plume in the future without any acquired seismic data with uncertainty estimation.},
+  keywords = {ML4SEISMIC, SLIM, normalizing flows, Fourier neural operators, GCS, conditional normalizing flows, uncertain quantification, machine learning, deep learning, time-lapse, inversion, amortized Bayes},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/yin2022ML4SEISMICutc/index.html}
+}
+
+@PRESENTATION{yin2022ML4SEISMICsfg,
+  author = {Ziyi Yin and Huseyin Tuna Erdinc and Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann},
+  title = {Simulation-based framework for geological carbon storage monitoring},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {While various monitoring modalities exist to track the behavior of CO2 plumes to ensure safe operations and compliance with regulatory requirements, active 3D time-lapse seismic monitoring has proven superior but costly. At SLIM, we aim to reduce the operating costs by optimizing acquisition design, to help drive innovations in seismic monitoring acquisition design and imaging, and to test novel time-lapse acquisition and imaging technologies in silico at scale. In this talk, we will introduce our open-source software platform simulation-based monitoring design framework. We demonstrate how to make use of proxy models for seismic properties derived from real 3D imaged seismic and well data to conduct realistic synthetic geological carbon storage projects. Furthermore, we discuss our proposed sparse non-replicated seismic acquisition and cutting-edge methodology to recover the dense data or to directly image the sparse non-replicated via joint recovery model. This automatic workflow ends with deep neural classifiers to detect potential CO2 leakage over seal through pressure-induced fault openings. We envisage the development of an automatic workflow to handle the large number of continuously monitored CO2 injection sites needed to help combat climate change.},
+  keywords = {ML4SEISMIC, SLIM, CCS, GCS, Imaging, JRM, time-lapse, CAM, machine learning, deep learning, classification, explainability},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/yin2022ML4SEISMICsfg/index.html}
+}
+
+@PRESENTATION{yin2022ML4SEISMICavc,
+  author = {Ali Siahkoohi and Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
+  title = {Amortized velocity continuation with Fourier neural operators},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {Velocity continuation aims to map the migration image using one background model to the image using another background model. It is of great importance to quantify the uncertainty in seismic imaging result from various background models. With Fourier neural operators as a learned surrogate, this continuation from a given background model to an unseen background model can be quite accurately estimated with near-zero cost. However, the limitation of the prior art is that the input background model and the survey area are assumed to be fixed. The main contribution of this work is to extend the Fourier neural operator surrogate to be amortized over different given background models and survey areas. We verify the effectiveness of our learned surrogates by a realistic example on different areas of Parihaka dataset against different background models.},
+  keywords = {ML4SEISMIC, SLIM, Fourier neural operators, velocity continuation, uncertainty quantification},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/yin2022ML4SEISMICavc/index.html}
+}
+
+@PRESENTATION{siahkoohi2022ML4SEISMICluq,
+  author = {Ali Siahkoohi and Gabrio Rizzuti and Rafael Orozco and Felix J. Herrmann},
+  title = {Low-cost uncertainty quantification for large-scale inverse problems},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {Bayesian inference for large-scale inverse problems is challenged by the computationally costly forward operator evaluations during posterior distribution sampling. Recent advances in variational inference and deep learning reduce these costs by pretraining a neural network capable of sampling the posterior distribution for previously unseen observed data. In geophysical applications, however, the accuracy of these methods depends on sufficiently capturing subsurface variability through a training dataset, which is challenging given the heterogeneity of the Earth’s subsurface and our lack of access to it. Moreover, these methods may be unreliable in the presence of data distribution shifts, e.g., a change in the number of source experiments, noise distribution, or geological features to be imaged. As such, we present a solution that increases the robustness of deep-learning-based Bayesian inference approaches when faced with changes in data distribution. Our proposed method involves a physics-based adaptation to the latent distribution of a conditional normalizing flow that is pretrained to approximate the posterior distribution for previously unseen data. Instead of feeding standard Gaussian latent samples to the conditional normalizing flow, this method parameterizes the latent distribution by a Gaussian distribution with an unknown mean and diagonal covariance, estimated by minimizing the Kullback-Leibler divergence between predicted and true posterior distributions. This method is applicable to a wide range of inverse problems and has the potential to significantly reduce the costs of Bayesian variational inference. By means of a realistic seismic imaging example we demonstrate that the proposed latent distribution adaptation method mitigates the Bayesian inference errors induced by data distribution shifts, including shifts in the forward model and prior distribution.},
+  keywords = {ML4SEISMIC, SLIM, Variational Inference, Seismic Imaging, Normalizing Flows, Inverse Problems, Uncertainty Quantification},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/siahkoohi2022ML4SEISMICluq/siahkoohi2022ML4SEISMICluq_pres.pdf}
+}
+
+@PRESENTATION{orozco2022ML4SEISMICnfr,
+  author = {Rafael Orozco and Mathias Louboutin and Felix J. Herrmann},
+  title = {Normalizing flows for regularization of 3D seismic inverse problems},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {We present the first known exploration of a normalizing flow (NF) for generative 3D volumes. First, we tackle computational issues surrounding the high dimensionality of our desired 3D volume output. This is of particular concern in normalizing flows since their invertibility constraint implies equal dimension of output and input. Our findings show that by “freezing” expensive layers we can efficiently train a normalizing flow on 3D volumes. Using this NF architecture, we train a generative model on volume sections of the 3D BG compass model. Our method produces visually plausible generative samples which are efficient to produce. We demonstrate its practical use by using our trained generative model as an implicit prior in a Maximum A Posteriori (MAP) framework. We evaluate this MAP framework by estimating the solution of a inverse problem in seismic imaging. Our method results in higher SNR estimates than the baseline and in less iterations, importantly saving the computational cost of evaluating the expensive 3D PDE solver during optimization. Finally, through scaling analysis of training cost, we show that NF convolutional layers allow this approach to scale favorably to larger volumes.},
+  keywords = {ML4SEISMIC, SLIM, Uncertainty Quantification, Bayesian Inference, Normalizing Flows, Inverse Problems, 3D, Machine Learning, Deep Learning},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/orozco2022ML4SEISMICnfr/index.html}
+}
+
+@PRESENTATION{orozco2022ML4SEISMICaos,
+  author = {Rafael Orozco and Mathias Louboutin and Ali Siahkoohi and Gabrio Rizzuti and Felix J. Herrmann},
+  title = {Adjoint operators as summary functions in amortized Bayesian inference frameworks},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {An important concern in seismic inverse problems is the large and varying size of observed data. The large size can cause computational cost concerns and its varying size (such as when changing receiver geometries) implies the need to rerun inference algorithms from scratch for each new observation. Motivated by these two problems, we take inspiration from the statistics literature which commonly relies on summary statistic of observed data. Summary statistic compress the observed data leaving only information needed for inference. In this work, we argue that the adjoint operator provides a natural candidate for a summary function in the context of physics-based inverse problems. We first mathematically show that for certain general assumptions transforming data under the adjoint operator defines a new conditional distribution which preserves the expectations of the original posterior. We validate our hypothesis by evaluating our framework in a learned amortized inference algorithm. Our seismic and medical synthetic experiments show computational gains and increased quality of point estimates using our framework. We discuss statistical metrics that show our learned posterior is well calibrated therefore justifying its use in uncertainty quantification.},
+  keywords = {ML4SEISMIC, SLIM, Uncertainty Quantification, Bayesian Inference, Amortized Inference, Normalizing Flows, Inverse Problems, Medical Imaging, Machine Learning, Deep Learning},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/orozco2022ML4SEISMICaos/index.html}
+}
+
+@PRESENTATION{louboutin2022ML4SEISMICmos,
+  author = {Mathias Louboutin and Yadhu Kartha and Rafael Orozco and Felix J. Herrmann},
+  title = {ML4Seismic open-source software: updates and developments},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {Software is at the core of research and development in inverse problems. At SLIM, we have experience developing scalable and performant software, such as our legacy parallel MATLAB framework. With ML4Seismic, we are dedicated to build on this experience to develop HPC open source software (OSS) for the scientific community in collaboration with our partners. In this talk, we will describe our OSS Julia and Python environment, our high-level abstraction principles, and the range of solutions we offer for seismic processing and inversion and for machine learning. We will emphasize our aim to provide scalable software that can be easily applied to industrial problems.},
+  keywords = {ML4SEISMIC, SLIM, open-source, software},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/louboutin2022ML4SEISMICmos/index.html}
+}
+
+@PRESENTATION{louboutin2022ML4SEISMIClew,
+  author = {Mathias Louboutin and Yadhu Kartha and Rafael Orozco and Felix J. Herrmann},
+  title = {Learned extensions for wave-based simulation and inversion},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {We introduce a new method that explores velocities as an operator (extended velocities) for wave-equation based inversion. Through this extended formulation, we obtain the known benefits of working with subsurface offset volumes. The offset-dependence of these volumes has been studied in the linear case, i.e as part of extended Born scattering and extended least-squares reverse-time migration, but has been avoided for non-linear inversion due to computational concderns and challenges. By using techniques from randomized linear algebra, we will show that we can work with extended velocities for inversion while maintaining an acceptable computational cost much lower than solving one PDE per extended velocity model.},
+  keywords = {ML4SEISMIC, SLIM, deep learning, wave equation, imaging},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/louboutin2022ML4SEISMIClew/index.html}
+}
+
+@PRESENTATION{herrmann2022ML4SEISMICmod,
+  author = {Felix J. Herrmann},
+  title = {Meet our digital twin for geological carbon storage},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {By embracing recent developments in simulation-based Bayesian inference—i.e., the task of deriving statistical information from a system based on in silico simulations—we envisage the development of an uncertainty-aware Digital Twin for seismic monitoring of Geologic Carbon Storage (GCS). According to IBM, “A digital twin is a virtual representation of an object or system that spans its lifecycle, is updated from real-time data, and uses simulation, machine learning and reasoning to help decision-making”. This Digital Twin will be designed to maximally benefit from vastly improved abilities to simulate complex phenomena, including the development of CO2 plumes in saline aquifers, and from the ability of neural networks to learn by example as part of inference. For GCS, this means that systematic assessment of uncertainties now becomes possible when observing CO2 plumes from time-lapse geophysical data (e.g., seismic). Because the proposed Digital Twin’s neural networks are taught to produce samples from the probability distribution for the CO2 plume conditioned by the observed time-lapse data, this approach will provide access to this information on uncertainty. As part of ML4Seismic, we are working on various aspects regarding the development of the Digital Twin including: (i) capability to generate realistic time-lapse data in response to CO2 injection in large strongly heterogeneous reservoirs. This simulation framework will facilitate the design of high-fidelity monitoring systems and is unique since it uses proxy Earth models with realistic CO2 plumes and heterogeneity; (ii) An inversion framework capable of producing high-fidelity time-lapse images of CO2 plumes and reservoir properties from time-lapse data collected in response to CO2 injection; (iii) uncertainty-aware data-assimilation framework based on techniques from sequential Bayes and capable of rapidly producing high-fidelity CO2 plume forecasts that are consistent with observed time-lapse data; (iv) A scalable uncertainty-aware early warning system designed to safeguard CO2 injection operations built on the latest insights from interpretable and trustworthy (explainable and robust) machine learning. After describing how to build a Digital Twin for GSC, early results will be presented on the use of Fourier Neural Networks as surrogates for the two-phase flow equations, seismic monitoring with our joint recovery model, and the use of spectral ratio to design low-cost acquisitions for time-lapse seismic.},
+  keywords = {ML4SEISMIC, SLIM, digital twin, GCS, CCS},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/herrmann2022ML4SEISMICmod/index.html}
+}
+
+@PRESENTATION{herrmann2022ML4SEISMICintro,
+  author = {Felix J. Herrmann},
+  title = {Introduction to 2022 ML4SEISMIC Partners Meeting},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  keywords = {ML4SEISMIC, SLIM},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/herrmann2022ML4SEISMICintro/index.html}
+}
+
+@PRESENTATION{grady2022ML4SEISMICesn,
+  author = {Thomas J. Grady II and Rishi Khan and Mathias Louboutin and Ziyi Yin and Philipp A. Witte and Ranveer Chandra and Russell J. Hewett and Felix J. Herrmann},
+  title = {Effective scaling of numerical surrogates via domain-decomposed Fourier neural operators},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {Numerical surrogates are models which learn to mimic a complex physical process (such as the solution to a PDE produced by a solver) from a set of input/output pairs. Fourier neural operators (FNOs) are a specific type of numerical surrogate which use a learned matched filter to quickly approximate solutions to relatively smooth complex physical processes. In the case of carbon capture sequestration (CCS) technology, FNOs have been shown to well-approximate solutions to the two-phase flow equations, with speedups of 1,000 to 10,000 times at inference time versus a tradtitional solver. This speed combined with the fact that FNOs are differentiable with respect to their input parameters allows for inverse and uncertainty quantification problems to theoretically be solved on real 3D data, a previously intractible task. However, due to the size of the input data, network weights, and optimizer state, FNOs have thus far been limited to small to medium 2D and 3D problems, well below the size of an industry standard such as the Sleipner benchmark. Here we alleviate this problem by proposing a model-parallel FNO which makes use of domain decomposition of the input data and network weights, and exploits architectural features of FNOs to also include a natural form of asynchronous pipeline parallelism. Our network can scale to arbitrary problem sizes on CPU and GPU systems.},
+  keywords = {ML4SEISMIC, SLIM, Fourier neural operators, deep learning, CCS, HPC},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/grady2022ML4SEISMICesn/index.html}
+}
+
+@PRESENTATION{erdinc2022ML4SEISMICdgp,
+  author = {Huseyin Tuna Erdinc and Abhinav Prakash Gahlot and Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
+  title = {De-risking GCS projects with explainable {CO$_2$} leakage detection in time-lapse seismic images},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2022},
+  month = {11},
+  abstract = {With the global deployment of Carbon, capture and storage (CCS) technology to combat climate change, there is an associated risk of contamination with CO2 leaking back to the atmosphere. Thus, it requires continuous monitoring of CO2 after the injection stops at the storage site. In this work, we generated synthetic CO2 plume development data with both leakage and no leakage scenarios. We trained a convolutional neural network (CNN) discriminative classifier and also a generative classifier and compared their performances in CO2 leakage detection. The accuracy of our discriminative classifier on the test data is 85% and that of the generative classifier is 90%. The Class Activation Mapping (CAM) results of the discriminative classifier and the latent space representation of our dataset in the case of generative classifier strengthens our claims about trustworthy leakage classification.},
+  keywords = {ML4SEISMIC, SLIM, GCS, CCS, JRM, classification, CAM, explainability, imaging},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/erdinc2022ML4SEISMICdgp/index.html}
+}
+
 @PRESENTATION{herrmann2022DIRACCudt,
   author = {Felix J. Herrmann},
   title = {Uncertainty-aware Digital Twin for Monitoring Geological Carbon Storage},
@@ -12123,8 +12276,6 @@ land velocity and density model.},
   keywords = {Diracc, SLIM, CCS, classification, CAM, explainability, time-lapse, uncertain quantification, digital twin},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/Diracc/2022/herrmann2022DIRACCudt/index.html}
 }
-
-%----- 2021 -----%
 
 @PRESENTATION{yin2022TRANSFORMjulia,
   author = {Ziyi Yin and Mathias Louboutin and Philipp A. Witte and Ali Siahkoohi and Gabrio Rizzuti and Rafael Orozco and Henryk Modzelewski and Felix J. Herrmann},
@@ -12138,6 +12289,8 @@ land velocity and density model.},
   url2 = {https://www.youtube.com/watch?v=HyWfp3NzIbg},
   software = {https://github.com/slimgroup/SLIMTutorials}
 }
+
+%----- 2021 -----%
 
 @PRESENTATION{zhang2021ML4SEISMICiss,
   author = {Yijun Zhang and Felix J. Herrmann},
@@ -12256,7 +12409,7 @@ land velocity and density model.},
   year = {2021},
   month = {11},
   abstract = {Fourier Neural Operators (FNOs) are a class of neural operator, which use weightings on the Fourier transform of their inputs to approximate infinite-dimensional mappings between function spaces. They are particularly useful in approximating the solutions of smooth parametric (e.g. by permeability) partial differential equations (PDEs), and once trained are capable of producing a nearly identical output to a traditional numerical solver roughly three orders of magnitude faster, making them very useful in a wide variety of engineering applications that require repeated PDE solves (e.g. during uncertainty quantification). Until now, FNOs have been limited to small problems, as their memory intensive design makes them difficult to scale in a traditional machine learning setting on a single computer or GPU. In this work, a decomposition scheme is described and implemented in PyTorch using the DistDL distributed deep learning framework, which is capable of scaling FNOs to arbitrary dimension and input size running on many nodes in a distributed memory system. This parallel implementations allows FNOs to be trained and run on problems of a practical scale on both CPU and GPU clusters.},
-  keywords = {ML4SEISMIC, SLIM, FNO, deep learning, CCS},
+  keywords = {ML4SEISMIC, SLIM, Fourier neural operators, deep learning, CCS},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/grady2021ML4SEISMICdfn/Tue-12-10-Grady.pdf}
 }
 
@@ -20202,20 +20355,22 @@ same cost as five reverse-time migrations.},
 % This file was created with JabRef 2.8.1.
 % Encoding: MacRoman
 
-%----- 2022 -----%
+%----- 2023 -----%
 
 @ARTICLE{yin2022TLEdgc,
   author = {Ziyi Yin and Huseyin Tuna Erdinc and Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann},
   title = {De-risking geological carbon storage from high resolution time-lapse seismic to explainable leakage detection},
   journal = {The Leading Edge},
-  year = {2022},
-  month = {09},
+  year = {2023},
+  month = {01},
   abstract = {Geological carbon storage represents one of the few truly scalable technologies capable of reducing the {CO$_2$} concentration in the atmosphere. While this technology has the potential to scale, its success hinges on our ability to mitigate its risks. An important aspect of risk mitigation concerns assurances that the injected {CO$_2$} remains within the storage complex. Amongst the different monitoring modalities, seismic imaging stands out with its ability to attain high resolution and high fidelity images. However, these superior features come, unfortunately, at prohibitive costs and time-intensive efforts potentially rendering extensive seismic monitoring undesirable. To overcome this shortcoming, we present a methodology where time-lapse images are created by inverting non-replicated time-lapse monitoring data jointly. By no longer insisting on replication of the surveys to obtain high fidelity time-lapse images and differences, extreme costs and time-consuming labor are averted. To demonstrate our approach, hundreds of noisy time-lapse seismic datasets are simulated that contain imprints of regular {CO$_2$} plumes and irregular plumes that leak. These time-lapse datasets are subsequently inverted to produce time-lapse difference images used to train a deep neural classifier. The testing results show that the classifier is capable of detecting {CO$_2$} leakage automatically on unseen data and with a reasonable accuracy.},
   keywords = {Seismic Imaging, JRM, CCS, classification, CAM, explainability, time-lapse},
   note = {Just accepted in the January 2023 special section in seismic resolution},
   software = {https://github.com/slimgroup/GCS-CAM},
   url = {https://slim.gatech.edu/Publications/Public/Journals/TheLeadingEdge/2022/yin2022TLEdgc/paper.html}
 }
+
+%----- 2022 -----%
 
 @ARTICLE{kukreja2020lcc,
   author = {Navjot Kukreja and Jan Hueckelheim and Mathias Louboutin and John Washbourne and Paul H. J. Kelly and Gerard J. Gorman},

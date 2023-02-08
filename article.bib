@@ -3,6 +3,50 @@
 
 %----- 2023 -----%
 
+@ARTICLE{siahkoohi2022ravi,
+  author = {Ali Siahkoohi and Gabrio Rizzuti and Rafael Orozco and Felix J. Herrmann},
+  title = {Reliable amortized variational inference with physics-based latent distribution correction},
+  journal = {Geophysics},
+  year = {2023},
+  month = {02},
+  volume = {88},
+  number = {3},
+  abstract = {Bayesian inference for high-dimensional inverse problems is
+challenged by the computational costs of the forward operator and the
+selection of an appropriate prior distribution. Amortized variational
+inference addresses these challenges where a neural network is trained to
+approximate the posterior distribution over existing pairs of model and data.
+When fed previously unseen data and normally distributed latent samples as
+input, the pretrained deep neural network---in our case a conditional
+normalizing flow---provides posterior samples with virtually no cost.
+However, the accuracy of this approach relies on the availability of
+high-fidelity training data, which seldom exists in geophysical inverse
+problems because of the highly heterogeneous structure of the Earth. In
+addition, accurate amortized variational inference requires the observed data
+to be drawn from the training data distribution. As such, we offer a solution
+that increases the resilience of amortized variational inference when faced
+with data distribution shifts, e.g., changes in the forward model or prior
+distribution. Our method involves a physics-based correction to the
+conditional normalizing flow latent distribution to provide a more accurate
+approximation to the posterior distribution for the observed data at hand. To
+accomplish this, instead of a standard Gaussian latent distribution, we
+parameterize the latent distribution by a Gaussian distribution with an
+unknown mean and diagonal covariance. These unknown quantities are then
+estimated by minimizing the Kullback-Leibler divergence between the corrected
+and true posterior distributions. While generic and applicable to other
+inverse problems, by means of a seismic imaging example, we show that our
+correction step improves the robustness of amortized variational inference
+with respect to changes in number of source experiments, noise variance, and
+shifts in the prior distribution. This approach provides a seismic image with
+limited artifacts and an assessment of its uncertainty with approximately the
+same cost as five reverse-time migrations.},
+  keywords = {Variational Inference, Seismic Imaging, Normalizing Flows, Inverse Problems, Uncertainty Quantification},
+  doi = {10.1190/geo2022-0472.1},
+  note = {(Geophysics)},
+  software = {https://github.com/slimgroup/ReliableAVI.jl},
+  url = {https://slim.gatech.edu/Publications/Public/Journals/Geophysics/2023/siahkoohi2022ravi/paper.html},
+}
+
 @ARTICLE{lopez2020gsb,
   author = {Oscar Lopez and Rajiv Kumar and Nick Moldoveanu and Felix J. Herrmann},
   title = {Spectral Gap-Based Seismic Survey Design},

@@ -3,6 +3,28 @@
 
 %-----2023-----%
 
+@CONFERENCE{yin2023EMIutm,
+  author = {Ziyi Yin and Rafael Orozco and Mathias Louboutin and Ali Siahkoohi and Felix J. Herrmann},
+  title = {Uncertainty-aware time-lapse monitoring of geological carbon storage with learned surrogates},
+  booktitle = {Engineering Mechanics Institute Conference},
+  year = {2023},
+  month = {06},
+  abstract = {Time-lapse seismic monitoring of CO2 sequestration is computationally expensive as it involves modeling of both fluid-flow physics and wave physics. It also requires differentiation through the solvers with respect to properties of interest in the subsurface. In this talk, we present a learned end-to-end inversion framework, which uses a pre-trained Fourier neural operator as a learned surrogate for the fluid-flow simulator in order to greatly reduces the cost associated with fluid-flow modeling and differentiation through the solver. Through synthetic experiments, we demonstrate the efficacy of this framework on inverting the subsurface permeability of the reservoir and on monitoring CO2 plumes. We further quantify the uncertainty of the permeability and CO2 plumes with conditional normalizing flow. With this framework, we can also forecast the growth of CO2 plumes in the future with uncertainty estimation without any acquired seismic data.},
+  keywords = {EMI, end-to-end, normalizing flows, Fourier neural operators, GCS, conditional normalizing flows, uncertain quantification, machine learning, deep learning, time-lapse, inversion, amortized Bayes},
+  note = {(EMI, Atlanta)}
+}
+
+@CONFERENCE{herrmann2023SIAMCSEtns,
+  author = {Felix J. Herrmann and Mathias Louboutin and Thomas J. Grady II and Ziyi Yin and Rishi Khan},
+  title = {The Next Step: Interoperable Domain-Specific Programming},
+  booktitle = {SIAM Conference on Computational Science and Engineering},
+  year = {2023},
+  month = {02},
+  abstract = {Even though domain-specific programming approaches allow for readable, scalable, and maintainable software without sacrificing performance, the new paradigm of learned physics-informed models calls for an interdisciplinary approach typically involving multiple domain-specific languages. Take for example the problem of inverting for the fluid-flow properties from time-lapse seismic data, which entails domain-specific programming on the intersection of wave simulators, matrix-free linear algebra, learned neural surrogates for two-phase flow, and prior and posterior distributions for the fluid-flow properties. While domain-specific solutions exist for each of these sub-disciplines, integrating these approaches – which may involve different programming languages – into a single coupled scalable inversion framework that supports algorithmic differentiation can be a challenge. However, we show that challenges like this can be met when working with proper abstractions. In our inversion example, this involves math-inspired symbolic abstractions for numerical solutions of the wave equation (Devito), matrix-free implementations for its Jacobians (JUDI.jl), abstractions for Automatic Differentiation (ChainRules.jl), and homegrown implementations for conditional Invertible Neural Networks (InvertibleNetworks.jl) and Fourier Neural Operators (ParametricOperators.jl).},
+  keywords = {SIAM, workshop, algorithms, Deep Learning, GCS, software, JUDI, Devito, Jutul, Fourier neural operators, end-to-end},
+  note = {(SIAM CSE, Amsterdam)}
+}
+
 @CONFERENCE{orozco2022SPIEadjoint,
   author = {Rafael Orozco and Ali Siahkoohi and Gabrio Rizzuti and Tristan van Leeuwen and Felix J. Herrmann},
   title = {Adjoint operators enable fast and amortized machine learning based Bayesian uncertainty quantification},

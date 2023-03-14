@@ -3,6 +3,31 @@
 
 %-----2023-----%
 
+@UNPUBLISHED{louboutin2023rte,
+  author = {Mathias Louboutin and Felix J. Herrmann},
+  title = {Wave-based inversion at scale on GPUs with randomized trace estimation},
+  year = {2023},
+  month = {03},
+  abstract = {Thanks to continued performance improvements in software and
+hardware, wave-equation based imaging technologies, such full-waveform
+inversion and reverse-time migration, are becoming more common place.
+However, wide-spread adaptation of these advanced imaging modalities has not
+yet materialized because current implementations are not able to reap the
+full benefits from accelerators, in particular those offered by memory-scarce
+graphics processing units. Through the use of randomized trace estimation, we
+overcome the memory bottleneck of this type of hardware. At the cost of
+limited computational overhead and controllable incoherent errors in the
+gradient, the memory footprint of adjoint-state methods is reduced
+drastically. Thanks to this relatively simple to implement memory reduction
+via an approximate imaging condition, we are able to benefit from graphics
+processing units without memory offloading. We demonstrate the performance of
+the proposed algorithm on acoustic 2- and 3-D full-waveform inversion
+examples and on the formation of image gathers in transverse tilted isotropic
+media.},
+  keywords = {FWI, Stochastic, Random trace, CIG, GPUs},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2023/louboutin2023rte/paper.html},
+}
+
 @UNPUBLISHED{zhang2023otl,
   author = {Yijun Zhang and Ziyi Yin and Oscar Lopez and Ali Siahkoohi and Mathias Louboutin and Rajiv Kumar and Felix J. Herrmann},
   title = {Optimized time-lapse acquisition design via spectral gap ratio minimization},

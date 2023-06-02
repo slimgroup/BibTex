@@ -3,6 +3,72 @@
 
 %-----2023-----%
 
+@CONFERENCE{gahlot2023IMAGEtsm,
+  author = {Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann},
+  title = {Time-lapse seismic monitoring of geological carbon storage with the nonlinear joint recovery model},
+  year = {2023},
+  month = {08},
+  abstract = {During time-lapse seismic monitoring, weak 4D signal below the level of inversion or migration artifacts poses challenges. To address these, low-cost randomized non-replicated acquisitions and linear joint recovery model (JRM) have been introduced to take advantage of the shared information between different vintages in the time-lapse seismic data and subsurface structure undergoing localized changes. Since the relationship between seismic data and subsurface properties is seldomly linear, we propose a more versatile nonlinear JRM, which extends linear JRM to nonlinear forward modeling.},
+  keywords = {SEG, jrm, ccs, monitoring},
+  url = {https://slimgroup.github.io/IMAGE2023/NonLinear-JRM/abstract.html},
+  note = {(IMAGE, Houston)}
+}
+
+@CONFERENCE{orozco2023IMAGEgsk,
+  author = {Rafael Orozco and Mathias Louboutin and Felix J. Herrmann},
+  title = {Generative Seismic Kriging with Normalizing Flows},
+  year = {2023},
+  month = {08},
+  abstract = {The objective is to demonstrate the applicability of Normalizing Flows (NFs) to subsurface kriging from wells. We will show that after supervised training, we can generate multiple realistic samples of plausible earth models that match the observed wells. We observe that these samples produce uncertainty statistics that are correlated with the complex parts of the model. The applicability of this method is for areas nearby the original survey used for training. Finally, we compare the speed and quality of our solutions with those obtained using a traditional variogram approach.},
+  keywords = {SEG, uncertainty quantification, kriging, normalizing flows},
+  url = {https://slimgroup.github.io/IMAGE2023/BayesianKrig/abstract.html},
+  note = {(IMAGE, Houston)}
+}
+
+@CONFERENCE{orozco2023IMAGEabf,
+  author = {Rafael Orozco and Mathias Louboutin and Felix J. Herrmann},
+  title = {Amortized Bayesian Full Waveform Inversion and Experimental Design with Normalizing Flows},
+  year = {2023},
+  month = {08},
+  abstract = {Probabilistic approaches to Full-Waveform Inversion (FWI), such as Bayesian ones, traditionally require expensive computations involving many wave-equation solves. To reduce the computational burden at test time, we propose to amortize the computational cost with offline training. After training, we aim to efficiently generate probabilistic FWI solutions with uncertainty. This aim is achieved by exploiting the ability of networks (i.e Normalizing Flows) to learn distributions, such as the Bayesian posterior. The posterior uncertainty is used during training to optimize the receiver sampling.},
+  keywords = {SEG, uncertainty quantification, experimental design, FWI, bayesian, normalizing flows},
+  url = {https://slimgroup.github.io/IMAGE2023/BayesianFWI/abstract.html},
+  note = {(IMAGE, Houston)}
+}
+
+@CONFERENCE{yin2023IMAGEcpi,
+  author = {Ziyi Yin and Mathias Louboutin and Olav Møyner and Felix J. Herrmann},
+  title = {Coupled physics inversion for geological carbon storage monitoring},
+  year = {2023},
+  month = {08},
+  abstract = {Understanding CO2 plume behavior is key to the success of geological carbon storage projects. While two-phase flow equations provide a good model to make predictions on future CO2 plume behavior, these equations rely on having access to the true permeability model. Unfortunately, accurate information on the permeability is unavailable, which greatly jeopardizes our ability to predict CO2 plume behavior. To overcome this problem, we estimate the permeability from time-lapse seismic data via a coupled inversion methodology that improve as more monitoring data becomes available over time.},
+  keywords = {SEG, ccs, coupled inversion, end-to-end, fluid-flow, inversion, monitoring},
+  url = {https://slimgroup.github.io/IMAGE2023/yin2023IMAGEend2end/abstract.html},
+  note = {(IMAGE, Houston)}
+}
+
+@CONFERENCE{yu2023IMAGEmsc,
+  author = {Ting-ying Yu and Rafael Orozco and Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
+  title = {Monitoring Subsurface CO2 Plumes with Sequential Bayesian Inference},
+  year = {2023},
+  month = {08},
+  abstract = {To monitor and predict CO2 plume dynamics during geological carbon storage, reservoir engineers usually perform two-phase flow simulations. While these simulations may provide useful insights, their usefulness is limited due to numerous complicating factors including uncertainty in the dynamics of the plume itself. To study this phenomenon, we consider stochasticity in the dynamic caused by unknown random changes in the injection rate. By conditioning the CO2 plume predictions on seismic observations, we correct the CO2 plume predictions and quantify uncertainty with machine learning.},
+  keywords = {SEG, ccs, deep learning, uncertainty quantification, bayesian inference, imaging, monitoring},
+  url = {https://slimgroup.github.io/IMAGE2023/SequentialBayes/abstract.html},
+  note = {(IMAGE, Houston)}
+}
+
+@CONFERENCE{louboutin2023IMAGEloi,
+  author = {Mathias Louboutin and Rafael Orozco and Ali Siahkoohi and Felix J. Herrmann},
+  title = {Learned non-linear simultenous source and corresponding supershot for seismic imaging.},
+  year = {2023},
+  month = {08},
+  abstract = {Seismic imaging's main limiting factor is the scale of the involved dataset and the number of independent wave-equation solves required to migrate thousands of shots. To tackle this dimensionality curse, we introduce a learned framework that extends the conventional computationally reductive linear source superposition (e.g., via random simultaneous-source encoding) to a nonlinear learned source superposition and its corresponding learned supershot. With this method, we can image the subsurface at the cost of a one-shot migration by learning the most informative superposition of shots.},
+  keywords = {SEG, imaging, deep learning, simultaneous},
+  url = {https://slimgroup.github.io/IMAGE2023/OneShot/abstract.html},
+  note = {(IMAGE, Houston)}
+}
+
 @CONFERENCE{herrmann2023CCUSdgs,
   author = {Felix J. Herrmann and Huseyin Tuna Erdinc and Abhinav Prakash Gahlot and Ziyi Yin and Mathias Louboutin},
   title = {Derisking geological storage with simulation-based seismic monitoring design and machine learning},
@@ -18740,6 +18806,29 @@ to image.},
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+%-----2023-----%
+
+@TECHREPORT{erdinc2023IMAGEecl,
+  author = {Huseyin Tuna Erdinc and Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann},
+  title = {Enhancing CO2 Leakage Detectability via Dataset Augmentation},
+  year = {2023},
+  month = {03},
+  abstract = {Previous work showed that neural classifiers can be trained to detect CO2 leakage from time-lapse seismic images. While this result is crucial to the global deployment of geological carbon storage (GCS), its success depends on relatively dense non-replicated time-lapse data acquisition. In this study, we show that by augmenting the training set with various coarse receiver samplings and corresponding seismic images, we can improve the leakage detection capabilities and accuracy while increasing the robustness with respect to low-cost coarse receiver samplings, e.g. ocean bottom nodes (OBNs).},
+  keywords = {classifier, ccs, leakage detection, deep learning},
+  url = {https://slimgroup.github.io/IMAGE2023/DetectabilityWithVision/abstract.html}
+}
+
+@TECHREPORT{zhang2023IMAGEssd,
+  author = {Yijun Zhang and Ziyi Yin and Oscar Lopez and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
+  title = {3D seismic survey design by maximizing the spectral gap},
+  year = {2023},
+  month = {03},
+  number = {TR-CSE-2023-1},
+  abstract = {The massive cost of 3D acquisition calls for methods to reduce the number of receivers by designing optimal receiver sampling masks. Recent studies on 2D seismic showed that maximizing the spectral gap of the subsampling mask leads to better wavefield reconstruction results. We enrich the current study by proposing a simulation-free method to generate optimal 3D acquisition by maximizing the spectral gap of the subsampling mask via a simulated annealing algorithm. Numerical experiments confirm improvement of the proposed method over receiver sampling locations obtained by jittered sampling.},
+  keywords = {acquisition, survey design, wavefield reconstruction, spectral gap, matrix factorization},
+  url = {https://slimgroup.github.io/IMAGE2023/zhang2023IMAGEsg/abstract.html}
+}
+
 %-----2022-----%
 
 @TECHREPORT{orozco2022MIDLmei,
@@ -20343,104 +20432,6 @@ algorithm.},
 
 %-----2023-----%
 
-@UNPUBLISHED{louboutin2023lmi,
-  author = {Mathias Louboutin and Ziyi Yin and Rafael Orozco and Thomas J. Grady II and Ali Siahkoohi and Gabrio Rizzuti and Philipp A. Witte and Olav Møyner and Gerard J. Gorman and Felix J. Herrmann},
-  title = {Learned multiphysics inversion with differentiable programming and machine learning},
-  year = {2023},
-  month = {04},
-  abstract = {We present the Seismic Laboratory for Imaging and Modeling/Monitoring (SLIM) open-source software framework for computational geophysics and, more generally, inverse problems involving the wave-equation (e.g., seismic and medical ultrasound), regularization with learned priors, and learned neural surrogates for multiphase flow simulations. By integrating multiple layers of abstraction, our software is designed to be both readable and scalable. This allows researchers to easily formulate their problems in an abstract fashion while exploiting the latest developments in high-performance computing. We illustrate and demonstrate our design principles and their benefits by means of building a scalable prototype for permeability inversion from time-lapse crosswell seismic data, which aside from coupling of wave physics and multiphase flow, involves machine learning.},
-  keywords = {SLIM, Invertible Networks, ccs, gcs, monitoring, imaging, Fourier neural operators, multiphysics, machine learning, deep learning, time-lapse, inversion, normalizing flows, software},
-  url = {https://slim.gatech.edu/Publications/Public/Submitted/2023/louboutin2023lmi/le_software.html}
-}
-
-@UNPUBLISHED{gahlot2023IMAGEtsm,
-  author = {Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann},
-  title = {Time-lapse seismic monitoring of geological carbon storage with the nonlinear joint recovery model},
-  year = {2023},
-  month = {03},
-  abstract = {During time-lapse seismic monitoring, weak 4D signal below the level of inversion or migration artifacts poses challenges. To address these, low-cost randomized non-replicated acquisitions and linear joint recovery model (JRM) have been introduced to take advantage of the shared information between different vintages in the time-lapse seismic data and subsurface structure undergoing localized changes. Since the relationship between seismic data and subsurface properties is seldomly linear, we propose a more versatile nonlinear JRM, which extends linear JRM to nonlinear forward modeling.},
-  keywords = {jrm, ccs, monitoring},
-  url = {https://slimgroup.github.io/IMAGE2023/NonLinear-JRM/abstract.html},
-  note = {Submitted to IMAGE 2023}
-}
-
-@UNPUBLISHED{zhang2023IMAGEssd,
-  author = {Yijun Zhang and Ziyi Yin and Oscar Lopez and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
-  title = {3D seismic survey design by maximizing the spectral gap},
-  year = {2023},
-  month = {03},
-  abstract = {The massive cost of 3D acquisition calls for methods to reduce the number of receivers by designing optimal receiver sampling masks. Recent studies on 2D seismic showed that maximizing the spectral gap of the subsampling mask leads to better wavefield reconstruction results. We enrich the current study by proposing a simulation-free method to generate optimal 3D acquisition by maximizing the spectral gap of the subsampling mask via a simulated annealing algorithm. Numerical experiments confirm improvement of the proposed method over receiver sampling locations obtained by jittered sampling.},
-  keywords = {classifier, ccs, leakage detection, deep learning},
-  url = {https://slimgroup.github.io/IMAGE2023/zhang2023IMAGEsg/abstract.html},
-  note = {Submitted to IMAGE 2023}
-}
-
-@UNPUBLISHED{erdinc2023IMAGEecl,
-  author = {Huseyin Tuna Erdinc and Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann},
-  title = {Enhancing CO2 Leakage Detectability via Dataset Augmentation},
-  year = {2023},
-  month = {03},
-  abstract = {Previous work showed that neural classifiers can be trained to detect CO2 leakage from time-lapse seismic images. While this result is crucial to the global deployment of geological carbon storage (GCS), its success depends on relatively dense non-replicated time-lapse data acquisition. In this study, we show that by augmenting the training set with various coarse receiver samplings and corresponding seismic images, we can improve the leakage detection capabilities and accuracy while increasing the robustness with respect to low-cost coarse receiver samplings, e.g. ocean bottom nodes (OBNs).},
-  keywords = {classifier, ccs, leakage detection, deep learning},
-  url = {https://slimgroup.github.io/IMAGE2023/DetectabilityWithVision/abstract.html},
-  note = {Submitted to IMAGE 2023}
-}
-
-@UNPUBLISHED{orozco2023IMAGEgsk,
-  author = {Rafael Orozco and Mathias Louboutin and Felix J. Herrmann},
-  title = {Generative Seismic Kriging with Normalizing Flows},
-  year = {2023},
-  month = {03},
-  abstract = {The objective is to demonstrate the applicability of Normalizing Flows (NFs) to subsurface kriging from wells. We will show that after supervised training, we can generate multiple realistic samples of plausible earth models that match the observed wells. We observe that these samples produce uncertainty statistics that are correlated with the complex parts of the model. The applicability of this method is for areas nearby the original survey used for training. Finally, we compare the speed and quality of our solutions with those obtained using a traditional variogram approach.},
-  keywords = {uncertainty quantification, kriging, normalizing flows},
-  url = {https://slimgroup.github.io/IMAGE2023/BayesianKrig/abstract.html},
-  note = {Submitted to IMAGE 2023}
-}
-
-@UNPUBLISHED{orozco2023IMAGEabf,
-  author = {Rafael Orozco and Mathias Louboutin and Felix J. Herrmann},
-  title = {Amortized Bayesian Full Waveform Inversion and Experimental Design with Normalizing Flows},
-  year = {2023},
-  month = {03},
-  abstract = {Probabilistic approaches to Full-Waveform Inversion (FWI), such as Bayesian ones, traditionally require expensive computations involving many wave-equation solves. To reduce the computational burden at test time, we propose to amortize the computational cost with offline training. After training, we aim to efficiently generate probabilistic FWI solutions with uncertainty. This aim is achieved by exploiting the ability of networks (i.e Normalizing Flows) to learn distributions, such as the Bayesian posterior. The posterior uncertainty is used during training to optimize the receiver sampling.},
-  keywords = {uncertainty quantification, experimental design, FWI, bayesian, normalizing flows},
-  url = {https://slimgroup.github.io/IMAGE2023/BayesianFWI/abstract.html},
-  note = {Submitted to IMAGE 2023}
-}
-
-@UNPUBLISHED{yin2023IMAGEcpi,
-  author = {Ziyi Yin and Mathias Louboutin and Olav Møyner and Felix J. Herrmann},
-  title = {Coupled physics inversion for geological carbon storage monitoring},
-  year = {2023},
-  month = {03},
-  abstract = {Understanding CO2 plume behavior is key to the success of geological carbon storage projects. While two-phase flow equations provide a good model to make predictions on future CO2 plume behavior, these equations rely on having access to the true permeability model. Unfortunately, accurate information on the permeability is unavailable, which greatly jeopardizes our ability to predict CO2 plume behavior. To overcome this problem, we estimate the permeability from time-lapse seismic data via a coupled inversion methodology that improve as more monitoring data becomes available over time.},
-  keywords = {ccs, coupled inversion, end-to-end, fluid-flow, inversion, monitoring},
-  url = {https://slimgroup.github.io/IMAGE2023/yin2023IMAGEend2end/abstract.html},
-  note = {Submitted to IMAGE 2023}
-}
-
-@UNPUBLISHED{yu2023IMAGEmsc,
-  author = {Ting-ying Yu and Rafael Orozco and Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
-  title = {Monitoring Subsurface CO2 Plumes with Sequential Bayesian Inference},
-  year = {2023},
-  month = {03},
-  abstract = {To monitor and predict CO2 plume dynamics during geological carbon storage, reservoir engineers usually perform two-phase flow simulations. While these simulations may provide useful insights, their usefulness is limited due to numerous complicating factors including uncertainty in the dynamics of the plume itself. To study this phenomenon, we consider stochasticity in the dynamic caused by unknown random changes in the injection rate. By conditioning the CO2 plume predictions on seismic observations, we correct the CO2 plume predictions and quantify uncertainty with machine learning.},
-  keywords = {ccs, deep learning, uncertainty quantification, bayesian inference, imaging, monitoring},
-  url = {https://slimgroup.github.io/IMAGE2023/SequentialBayes/abstract.html},
-  note = {Submitted to IMAGE 2023}
-}
-
-@UNPUBLISHED{louboutin2023IMAGEloi,
-  author = {Mathias Louboutin and Rafael Orozco and Ali Siahkoohi and Felix J. Herrmann},
-  title = {Learned non-linear simultenous source and corresponding supershot for seismic imaging.},
-  year = {2023},
-  month = {03},
-  abstract = {Seismic imaging's main limiting factor is the scale of the involved dataset and the number of independent wave-equation solves required to migrate thousands of shots. To tackle this dimensionality curse, we introduce a learned framework that extends the conventional computationally reductive linear source superposition (e.g., via random simultaneous-source encoding) to a nonlinear learned source superposition and its corresponding learned supershot. With this method, we can image the subsurface at the cost of a one-shot migration by learning the most informative superposition of shots.},
-  keywords = {imaging, deep learning, simultaneous},
-  url = {https://slimgroup.github.io/IMAGE2023/OneShot/abstract.html},
-  note = {Submitted to IMAGE 2023}
-}
-
 @UNPUBLISHED{louboutin2023rte,
   author = {Mathias Louboutin and Felix J. Herrmann},
   title = {Wave-based inversion at scale on GPUs with randomized trace estimation},
@@ -20485,6 +20476,18 @@ media.},
 % Encoding: MacRoman
 
 %----- 2023 -----%
+
+@ARTICLE{louboutin2023lmi,
+  author = {Mathias Louboutin and Ziyi Yin and Rafael Orozco and Thomas J. Grady II and Ali Siahkoohi and Gabrio Rizzuti and Philipp A. Witte and Olav Møyner and Gerard J. Gorman and Felix J. Herrmann},
+  title = {Learned multiphysics inversion with differentiable programming and machine learning},
+  journal = {The Leading Edge},
+  year = {2023},
+  month = {07},
+  abstract = {We present the Seismic Laboratory for Imaging and Modeling/Monitoring (SLIM) open-source software framework for computational geophysics and, more generally, inverse problems involving the wave-equation (e.g., seismic and medical ultrasound), regularization with learned priors, and learned neural surrogates for multiphase flow simulations. By integrating multiple layers of abstraction, our software is designed to be both readable and scalable. This allows researchers to easily formulate their problems in an abstract fashion while exploiting the latest developments in high-performance computing. We illustrate and demonstrate our design principles and their benefits by means of building a scalable prototype for permeability inversion from time-lapse crosswell seismic data, which aside from coupling of wave physics and multiphase flow, involves machine learning.},
+  keywords = {SLIM, Invertible Networks, ccs, gcs, monitoring, imaging, Fourier neural operators, multiphysics, machine learning, deep learning, time-lapse, inversion, normalizing flows, software},
+  note = {(The Leading Edge)},
+  url = {https://slim.gatech.edu/Publications/Public/Journals/TheLeadingEdge/2023/louboutin2023lmi/le_software.html}
+}
 
 @ARTICLE{zhang2023otl,
   author = {Yijun Zhang and Ziyi Yin and Oscar Lopez and Ali Siahkoohi and Mathias Louboutin and Rajiv Kumar and Felix J. Herrmann},

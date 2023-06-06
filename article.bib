@@ -3,6 +3,19 @@
 
 %----- 2023 -----%
 
+@ARTICLE{grady2022SCtll,
+  author = {Thomas J. Grady II and Rishi Khan and Mathias Louboutin and Ziyi Yin and Philipp A. Witte and Ranveer Chandra and Russell J. Hewett and Felix J. Herrmann},
+  title = {Model-Parallel Fourier Neural Operators as Learned Surrogates for Large-Scale Parametric PDEs},
+  journal = {Computers \& Geosciences},
+  year = {2023},
+  month = {06},
+  abstract = {Fourier neural operators (FNOs) are a recently introduced neural network architecture for learning solution operators of partial differential equations (PDEs), which have been shown to perform significantly better than comparable deep learning approaches. Once trained, FNOs can achieve speed-ups of multiple orders of magnitude over conventional numerical PDE solvers. However, due to the high dimensionality of their input data and network weights, FNOs have so far only been applied to two-dimensional or small three-dimensional problems. To remove this limited problem-size barrier, we propose a model-parallel version of FNOs based on domain-decomposition of both the input data and network weights. We demonstrate that our model-parallel FNO is able to predict time-varying PDE solutions of over 2.6 billion variables on Perlmutter using up to 512 A100 GPUs and show an example of training a distributed FNO on the Azure cloud for simulating multiphase CO2 dynamics in the Earth's subsurface.},
+  keywords = {Computers and Geosciences, Fourier neural operators, HPC, large-scale, CCS, deep learning, Operator Learning, Model Parallelism, Multiphase Flow},
+  software = {https://github.com/slimgroup/dfno},
+  url = {https://slim.gatech.edu/Publications/Public/Journals/ComputersAndGeosciences/2023/grady2022SCtll/grady2022SCtll.pdf},
+  note = {(Just accepted in Computers \& Geosciences)}
+}
+
 @ARTICLE{louboutin2023lmi,
   author = {Mathias Louboutin and Ziyi Yin and Rafael Orozco and Thomas J. Grady II and Ali Siahkoohi and Gabrio Rizzuti and Philipp A. Witte and Olav Møyner and Gerard J. Gorman and Felix J. Herrmann},
   title = {Learned multiphysics inversion with differentiable programming and machine learning},
@@ -27,7 +40,7 @@
   keywords = {time-lapse, JRM, acquisition, survey design, wavefield reconstruction, spectral gap, matrix factorization},
   doi = {10.1190/geo2023-0024.1},
   note = {(Geophysics)},
-  url = {https://slim.gatech.edu/Publications/Public/Journals/Geophysics/2023/zhang2023otl/Spectral_Gap_Paper.html},
+  url = {https://slim.gatech.edu/Publications/Public/Journals/Geophysics/2023/zhang2023otl/Spectral_Gap_Paper.html}
 }
 
 @ARTICLE{siahkoohi2022ravi,
@@ -71,7 +84,7 @@ same cost as five reverse-time migrations.},
   doi = {10.1190/geo2022-0472.1},
   note = {(Geophysics)},
   software = {https://github.com/slimgroup/ReliableAVI.jl},
-  url = {https://slim.gatech.edu/Publications/Public/Journals/Geophysics/2023/siahkoohi2022ravi/paper.html},
+  url = {https://slim.gatech.edu/Publications/Public/Journals/Geophysics/2023/siahkoohi2022ravi/paper.html}
 }
 
 @ARTICLE{lopez2020gsb,

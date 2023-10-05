@@ -3,6 +3,41 @@
 
 %-----2023-----%
 
+@CONFERENCE{orozco2023AABIiter,
+  author = {Rafael Orozco and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
+  title = {Refining Amortized Posterior Approximations using Gradient-Based Summary Statistics},
+  year = {2023},
+  month = {06},
+  booktitle = {5th Symposium on Advances in Approximate Bayesian Inference},
+  keywords = {AABI, Conditional Normalizing Flows, Summary Statistics, Bayesian Inference, Amortized Variational Inference, Amortization Gap},
+  url = {https://arxiv.org/abs/2305.08733},
+  presentation = {https://slim.gatech.edu/Publications/Public/Conferences/AABI/2023/orozco2023AABIiter/aabi_poster.pdf},
+  note = {(AABI, Honolulu)},
+  abstract = {We present an iterative framework to improve the amortized
+approximations of posterior distributions in the context of Bayesian inverse
+problems, which is inspired by loop-unrolled gradient descent methods and is
+theoretically grounded in maximally informative summary statistics. Amortized
+variational inference is restricted by the expressive power of the chosen
+variational distribution and the availability of training data in the form of
+joint data and parameter samples, which often lead to approximation errors
+such as the amortization gap. To address this issue, we propose an iterative
+framework that refines the current amortized posterior approximation at each
+step. Our approach involves alternating between two steps: (1) constructing a
+training dataset consisting of pairs of summarized data residuals and
+parameters, where the summarized data residual is generated using a
+gradient-based summary statistic, and (2) training a conditional generative
+model -- a normalizing flow in our examples -- on this dataset to obtain a
+probabilistic update of the unknown parameter. This procedure leads to
+iterative refinement of the amortized posterior approximations without the
+need for extra training data. We validate our method in a controlled setting
+by applying it to a stylized problem, and observe improved posterior
+approximations with each iteration. Additionally, we showcase the capability
+of our method in tackling realistically sized problems by applying it to
+transcranial ultrasound, a high-dimensional, nonlinear inverse problem
+governed by wave physics, and observe enhanced posterior quality through
+better image reconstruction with the posterior mean.}
+}
+
 @CONFERENCE{herrmann2023IMAGEWSfnf,
   author = {Rafael Orozco and Mathias Louboutin and Felix J. Herrmann},
   title = {Fast neural FWI with amortized uncertainty quantification},

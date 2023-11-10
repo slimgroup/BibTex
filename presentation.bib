@@ -1,3 +1,139 @@
+%----- 2023 -----%
+
+@PRESENTATION{erdinc2023ML4SEISMICias,
+  author = {Huseyin Tuna Erdinc and Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann},
+  title = {Improved automatic seismic CO2 leakage detection via dataset augmentation},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2023},
+  month = {11},
+  abstract = {Previous works showed that neural classifiers can be trained to detect CO2 leakage from time-lapse seismic images. While this result is crucial to the global deployment of geological carbon storage (GCS), its success depends on relatively dense non-replicated time-lapse data acquisition. In this study, we present an approach to enhance the detection accuracy and robustness of CO2 leakage detection by augmenting the training dataset with a variety of coarsely sampled receiver data and their corresponding receiver numbers. This augmentation strategy is particularly beneficial for scenarios where low-cost coarse receiver samplings, such as with ocean bottom nodes (OBNs), are utilized. Furthermore, we explore interpretability of the classifier's decisions by generating saliency maps for further analysis.},
+  keywords = {ML4SEISMIC, SLIM, classifier, ccs, leakage detection, deep learning},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/erdinc2023ML4SEISMICias}
+}
+
+@PRESENTATION{herrmann2023ML4SEISMICmsc,
+  author = {Abhinav Prakash Gahlot and Ting-ying Yu and Rafael Orozco and Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
+  title = {Monitoring subsurface CO2 plumes with learned sequential Bayesian inference},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2023},
+  month = {11},
+  abstract = {Reservoir engineers frequently employ two-phase flow simulations and history-matching to oversee and anticipate the behavior of CO2 plumes within geological carbon storage. These simulations, while valuable for gaining insights, face limitations due to several complex factors, such as uncertainties surrounding the plume’s dynamics. To investigate this phenomenon more comprehensively, we introduce the concept of stochasticity in the dynamics, accounting for uncertainties in the underlying permeability of the reservoir. To enhance the accuracy of CO2 plume predictions and quantify the uncertainties involved, we utilize machine learning techniques to condition these predictions on time-lapse seismic and well observations. This framework works on the principle of sequential Bayesian inference that continuously assimilates information from time-lapse observations, updates the CO2 plume predictions, and characterizes uncertainties about the plumes.},
+  keywords = {ML4SEISMIC, SLIM, ccs, deep learning, uncertainty quantification, bayesian inference, imaging, monitoring},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/herrmann2023ML4SEISMICmsc}
+}
+
+@PRESENTATION{bruer2023ML4SEISMICcrm,
+  author = {Grant Bruer and Felix J. Herrmann and Edmond Chow},
+  title = {CO2 reservoir monitoring through Bayesian data assimilation},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2023},
+  month = {11},
+  abstract = {Carbon capture and storage can be implemented by injecting supercritical carbon dioxide (CO2) into geological carbon reservoirs for long-term containment. Monitoring the pressure and saturation of the CO2 is necessary to optimize the injection amount without causing CO2 leakage or seismic activity. Directly measuring the CO2 at locations within the reservoir requires expensive drilling procedures that may damage the reservoir, so direct measurements are sparse and usually lie along injection and production wells. Indirect measurements such as seismic data are typically noisy, and inverting for the CO2 state is ill-posed. Bayesian data assimilation techniques allow us to integrate known physics for CO2 flow into this inversion process. The most well-established data assimilation algorithms are the family of Kalman filters. The ensemble Kalman filter is designed to efficiently work with large problem sizes and nonlinearity. In this work, we apply the ensemble Kalman filter to seismic measurements of a CO2 reservoir, yielding an estimate of the saturation and pressure fields with quantified uncertainties. This method models the CO2 plume state as a random field with a known distribution and assimilates information from seismic measurements with information from a physics model describing the CO2 flow. We show that the data assimilation strategy is a valuable contribution to advancing reservoir monitoring technology.},
+  keywords = {ML4SEISMIC, SLIM, kalman, data assimilation, bayes, ccs, monitoring},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/bruer2023ML4SEISMICcrm}
+}
+
+@PRESENTATION{gahlot2023ML4SEISMICtsm,
+  author = {Abhinav Prakash Gahlot and Mathias Louboutin and Ziyi Yin and Felix J. Herrmann},
+  title = {Time-lapse seismic monitoring of geological carbon storage with the nonlinear joint recovery model},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2023},
+  month = {11},
+  abstract = {During time-lapse seismic monitoring of CO2 plumes, a weak 4D signal below the level of inversion or migration artifacts poses challenges. To address these, low-cost randomized non-replicated acquisitions and a linear joint recovery model (JRM) have been introduced. It takes advantage of the shared information between different vintages in the time-lapse seismic data and subsurface structure undergoing localized changes. Since the relationship between seismic data and subsurface properties is seldom linear, we propose a more versatile nonlinear JRM (nJRM) to invert for the squared slowness of the vintages. The nJRM takes advantage of the full nonlinear relation between these squared slownesses and time-lapse data through the wave equation. Also, careful derivation of the gradients makes the computational cost of nJRM equivalent to the independent recovery. We present a synthetic study for geological carbon storage (GCS) which shows that the non-replication can be beneficial to time-lapse imaging, making seismic monitoring of GCS less costly for the long term sustainability of the technology.},
+  keywords = {ML4SEISMIC, SLIM, jrm, ccs, monitoring},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/gahlot2023ML4SEISMICtsm}
+}
+
+@PRESENTATION{rex2023ML4SEISMIClsp,
+  author = {Richard Rex and Thomas J. Grady II and Rishi Khan and Ziyi Yin and Felix J. Herrmann},
+  title = {Large-scale parametric PDE approximations with model-parallel Fourier neural operators},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2023},
+  month = {11},
+  abstract = {Solving PDEs to simulate two-phase flow is expensive since it involves the inversion of large ill-conditioned matrices. FNOs represent a special type of neural network capable of approximating solutions to two-phase flow equations. In order to speed up this computation, we develop a high-level software abstraction tool to exploit the linearly separable property of Fourier Transforms via Kronecker products. We perform a series of all-to-all operations where we partition the data to apply the operations in a distributed fashion. We apply these FNOs to predict the evolution of CO2-plumes in subsurface environments. Our model takes an input permeability model, and outputs time-varying CO2 saturations in a quick and cost-effective manner. Additionally, our research involves developing a distributed matrix-free abstraction library that can be used to represent any generic linear and nonlinear operator. This library is scalable and auto-differentiable thanks to the hand-written customized AD rules, allowing us to represent and train any network. We provide an evaluation on the accuracy of FNO simulations compared to traditional PDE simulations in solving various classes of PDEs.},
+  keywords = {ML4SEISMIC, SLIM, Fourier neural operators, deep learning, CCS, HPC},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/rex2023ML4SEISMIClsp}
+}
+
+@PRESENTATION{li2023ML4SEISMICmci,
+  author = {Haoyun Li and Ziyi Yin and Olav Møyner and Felix J. Herrmann},
+  title = {Maximizing CO2 injectivity within fracture pressure},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2023},
+  month = {11},
+  abstract = {In geological carbon storage projects, optimizing CO2 injection strategies is paramount to enhance storage efficiency and prevent leakage. The objective is to maximize the CO2 injection volume without surpassing the fracture pressure. Traditional adjoint-based approaches necessitate extensive numerical simulations, leading to significant computational overhead. To circumvent this challenge, we introduce an optimization framework based on physics-informed deep convolutional neural networks. Trained on different permeability slices, our model can rapidly predict the maximal CO2 injection volume for new permeability fields in real-time.},
+  keywords = {ML4SEISMIC, SLIM, ccs, optimization, reservoir simulation},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/li2023ML4SEISMICmci}
+}
+
+@PRESENTATION{orozco2023ML4SEISMICtgs,
+  author = {Rafael Orozco and Mathias Louboutin and Felix J. Herrmann},
+  title = {Towards generative seismic kriging with normalizing flows},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2023},
+  month = {11},
+  abstract = {Our goal is to build realistic parameterized (acoustic, velocity, permeability etc) earth models where the training and testing phase of our method uses only data that is available in the field. We first demonstrate the expressive power of normalizing flows to generate detailed realistic earth models by training on supervised pairs of full earth models and borehole wells. Our results are compared with traditional variogram kriging to show that our generated models can be used in parameterizations of various downstream tasks such as simulations of realistic acoustic waves and fluid flow for reservoir simulations. Then we introduce a novel unsupervised training objective that can train normalizing flows to generate full earth models without needing training pairs of the full earth models. By using a known proxy earth model as a testbed, we make preliminary prescriptions on how many wells our method needs to generate permissible earth models in a target area.},
+  keywords = {ML4SEISMIC, SLIM, uncertainty quantification, kriging, normalizing flows},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/orozco2023ML4SEISMICtgs}
+}
+
+@PRESENTATION{orozco2023ML4SEISMICuqs,
+  author = {Rafael Orozco and Mathias Louboutin and Peng Chen and Felix J. Herrmann},
+  title = {Uncertainty quantification so what? Leveraging probabilistic seismic inversion for experimental design},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2023},
+  month = {11},
+  abstract = {Combining physics with recent developments of generative machine learning enables a scalable probabilistic framework for tackling seismic inversion problems including Full-Waveform Inversion. These probabilistic results can be proven to be from the Bayesian posterior but how exactly can we use them for practical downstream tasks? In this talk, we answer the question with a practical application of the probabilistic framework towards designing ocean bottom node placement of seismic imaging. With a simple adjustment to the original training objective, we show that jointly optimizing for an experimental design corresponds to maximizing the expected information gain used by the Bayesian community. After verifying this novel joint optimization with a stylized problem, we demonstrate its application for optimizing the placement of ocean bottom nodes in a synthetic seismic imaging experiment.},
+  keywords = {ML4SEISMIC, SLIM, uncertainty quantification, experimental design, FWI, bayesian, normalizing flows},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/orozco2023ML4SEISMICuqs}
+}
+
+@PRESENTATION{yin2023ML4SEISMICe2e,
+  author = {Ziyi Yin and Mathias Louboutin and Olav Møyner and Felix J. Herrmann},
+  title = {End-to-end permeability inversion from prestack time-lapse seismic data: a case study on Compass model},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2023},
+  month = {11},
+  abstract = {Effective geological carbon storage hinges on a deep understanding of CO2 plume behavior. The dynamics of these plumes can be modeled using multiphase flow equations, but their accuracy is tied to a precise permeability model. A significant challenge is that we often lack detailed permeability data, limiting our predictive capabilities. To bridge this gap, we’ve developed a multiphysics inversion method. This technique inverts for the permeability from observed time-lapse seismic data. Through a case study on the Compass model, we’ve compared this approach with traditional 4D FWI in forecasting CO2 plume movements. Additionally, our research delves into how different initial permeability models, acquisition setups, and survey frequencies affect the results. Across the board, the inversion method not only enhances our current estimations but also provides valuable insights into future plume dynamics, even without continuous monitoring.},
+  keywords = {ML4SEISMIC, SLIM, ccs, coupled inversion, end-to-end, fluid-flow, inversion, monitoring},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/yin2023ML4SEISMICe2e}
+}
+
+@PRESENTATION{yin2023ML4SEISMICwise,
+  author = {Ziyi Yin and Rafael Orozco and Mathias Louboutin and Felix J. Herrmann},
+  title = {WISE: Full-waveform Inference with Subsurface Extensions},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2023},
+  month = {11},
+  abstract = {Quantifying uncertainty in full-waveform inversion is complex given the large sizes of both the model and data. A previous approach employed a variational inference framework, leveraging reverse-time migration to summarize observed data and approximate the posterior distribution through conditional normalizing flows. While reverse-time migration effectively summarizes the data when the background model is close to the true one, its accuracy diminishes with a less accurate background model. In our study, we suggest utilizing subsurface offset gathers as the summary statistics for the variational inference of full-waveform inversion. These gathers retain all the information in seismic data, even when the background model is cycle-skipped or fails to flatten the gathers. Through a case study on Compass model, we confirm our framework's effectiveness and show that subsurface offset gathers offer a better summary statistic than just reverse-time migration.},
+  keywords = {ML4SEISMIC, SLIM, normalizing flows, variational inference, FWI, conditional normalizing flows, uncertain quantification, machine learning, deep learning, summary statistics, inversion, amortized Bayes},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/yin2023ML4SEISMICwise}
+}
+
+@PRESENTATION{yin2023CSEslim,
+  title = {Introduction to Seismic Laboratory for Imaging and Modeling},
+  booktitle = {CSE Student Recruiting Event},  
+  year = {2023},
+  month = {11},
+  abstract = {We introduce the latest research developments in Seismic Laboratory for Imaging and Modeling (SLIM), including geological carbon storage monitoring, seismic and medical imaging and uncertainty quantification, and advancements in scientific machine learning and high performance computing.},
+  keywords = {SLIM, uncertainty quantification, GCS, CCS, medical imaging, PDE, Fourier neural operators, normalizing flows, multiphysics, deep learning, learned surrogates, learned constraints, inverse problems},
+  note = {(CSE Student Recruiting Event)},
+  url = {https://slim.gatech.edu/Publications/Public/Conference/CSE/2023/SLIM.pdf},
+  author = {Ziyi Yin}
+}
+
+@PRESENTATION{yin2023HOTCSEspi,
+  title = {Solving PDE-based inverse problems with learned surrogates and constraints},
+  booktitle = {HotCSE Seminar},  
+  year = {2023},
+  month = {11},
+  abstract = {In this presentation, I will introduce a learned inversion algorithm for solving inverse problems with computationally expensive forward operators. We tackle this challenge by combining learned surrogates (Fourier neural operators) with learned constraints (normalizing flows). After jointly training these networks with the same samples, the learned surrogates lead to computationally efficient surrogate-assisted inversion. Meanwhile, the learned constraints safeguard the accuracy of the surrogates by forcing the model iterates to remain in-distribution. By combining the two, we come up with a homotopy / continuation scheme where the constraints are relaxed slowly so that the data misfit objective can be minimized while the model iterates always remain in the statistical distribution on which the surrogates are trained. We demonstrate the efficacy of our learned inversion algorithm through carefully selected experiments centered around the problem of geological carbon storage monitoring.},
+  keywords = {PDE, Fourier neural operators, normalizing flows, multiphysics, deep learning, learned surrogates, learned constraints, inverse problems},
+  note = {(HotCSE)},
+  url = {https://slim.gatech.edu/Publications/Public/Lectures/HotCSE/2023/yin2023HOTCSEspi},
+  author = {Ziyi Yin and Rafael Orozco and Mathias Louboutin and Felix J. Herrmann}
+}
+
 %----- 2022 -----%
 
 @PRESENTATION{herrmann2023SCAIMact,

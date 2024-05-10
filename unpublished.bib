@@ -3,6 +3,41 @@
 
 %-----2024-----%
 
+@UNPUBLISHED{orozco2024IPaspire,
+  author = {Rafael Orozco and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
+  title = {ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems},
+  year = {2024},
+  month = {5},
+  abstract = {Due to their uncertainty quantification, Bayesian solutions to
+inverse problems are the framework of choice in applications that are risk
+averse. These benefits come at the cost of computations that are in general,
+intractable. New advances in machine learning and variational inference (VI)
+have lowered the computational barrier by learning from examples. Two VI
+paradigms have emerged that represent different tradeoffs: amortized and
+non-amortized. Amortized VI can produce fast results but due to generalizing
+to many observed datasets it produces suboptimal inference results.
+Non-amortized VI is slower at inference but finds better posterior
+approximations since it is specialized towards a single observed dataset.
+Current amortized VI techniques run into a sub-optimality wall that can not
+be improved without more expressive neural networks or extra training data.
+We present a solution that enables iterative improvement of amortized
+posteriors that uses the same networks architectures and training data. The
+benefits of our method requires extra computations but these remain frugal
+since they are based on physics-hybrid methods and summary statistics.
+Importantly, these computations remain mostly offline thus our method
+maintains cheap and reusable online evaluation while bridging the
+approximation gap these two paradigms. We denote our proposed method
+ASPIRE - Amortized posteriors with Summaries that are
+Physics-based and Iteratively REfined. We first validate our
+method on a stylized problem with a known posterior then demonstrate its
+practical use on a high-dimensional and nonlinear transcranial medical
+imaging problem with ultrasound. Compared with the baseline and previous
+methods from the literature our method stands out as an computationally
+efficient and high-fidelity method for posterior inference.},
+  keywords = {Normalizing flows, amortization gap, Bayesian inference, simulation-based inference, amortized variational inference, medical imaging},
+  doi = {10.48550/arXiv.2405.05398}
+}
+
 @UNPUBLISHED{yin2024wiser,
   author = {Ziyi Yin and Rafael Orozco and Felix J. Herrmann},
   title = {WISER: multimodal variational inference for full-waveform inversion without dimensionality reduction},

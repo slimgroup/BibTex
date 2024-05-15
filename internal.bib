@@ -8,7 +8,7 @@
   title = {Enhancing Full-Waveform Variational Inference through Stochastic Resampling and Data Augmentation},
   year = {2024},
   month = {8},
-  keywords = {WISE, FWI, RTM, imaging, CIG, conditional normalizing flows, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics, MVA},
+  keywords = {SEG, IMAGE, WISE, FWI, RTM, imaging, CIG, conditional normalizing flows, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics, MVA},
   url = {https://slimgroup.github.io/IMAGE2024/Yunlin_Zeng2024SEG/paper.html},
   booktitle = {International Meeting for Applied Geoscience and Energy}
 }
@@ -19,7 +19,7 @@
   year = {2024},
   month = {8},
   abstract = {Diffusion generative models are powerful frameworks for learning high-dimensional distributions and synthesizing high-fidelity images. However, their efficacy in training predominantly hinges on the availability of complete, high-quality training datasets, a condition that often proves unattainable, particularly in the domain of subsurface velocity-model generation. In this work, we propose to synthesize proxy subsurface velocities from incomplete well and imaged seismic observations by introducing additional corruptions to the observations during the training phase. In this context, proxy velocity models refer to random realizations of subsurface velocities that are close in distribution to the actual subsurface velocities. These proxy models can be used as priors to train neural networks with simulation-based inference. Our approach facilitates the generation of these proxy velocity samples by utilizing available datasets composed merely of seismic images and 5 (for now) wells per seismic image.After training, our foundation generative model permits the generation of velocity samples derived from unseen RTMs without the need of having access to wells.},
-  keywords = {kriging, diffusion, geostatistics, generative modeling, deep learning, velocity model building},
+  keywords = {SEG, IMAGE, kriging, diffusion, geostatistics, generative modeling, deep learning, velocity model building},
   url = {https://slimgroup.github.io/IMAGE2024/erdinc2024SEG/abstract.html},
   booktitle = {International Meeting for Applied Geoscience and Energy}
 }
@@ -30,7 +30,7 @@
   year = {2024},
   month = {8},
   abstract = {Common-image gathers (CIGs) are pivotal in migration-velocity analysis (MVA). However, MVA is often hindered by the computational burden of traditional migration methods. To bypass these limitations, we introduce a neural-surrogate learning approach that utilizes Fourier Neural Operators (FNOs, Li et al. 2020) to accelerate MVA. Following the velocity-continuation scheme of Siahkoohi, Louboutin, and Herrmann (2022), we train a survey-specific FNO to map the CIGs associated with one migration-velocity model to another without remigration. This methodology leverages the capacity of FNOs to approximate complex PDE-based mappings, rendering computational cost at inference negligible, thereby expediting MVA. By enabling rapid generation and evaluation of CIGs across various velocity models, it offers a pathway to quickly examine velocity models according to preferred properties and to quantify uncertainties in imaged reflectivities at the same time. Additionally, this methodology paves the way for inverse design optimization, updating velocity models to produce CIGs with desirable characteristics.},
-  keywords = {FNO, CIG, velocity continuation, uncertainty quantification, deep learning, imaging},
+  keywords = {SEG, IMAGE, FNO, CIG, velocity continuation, uncertainty quantification, deep learning, imaging},
   url = {https://slimgroup.github.io/IMAGE2024/Rex2024SEG/paper.html},
   booktitle = {International Meeting for Applied Geoscience and Energy}
 }
@@ -41,7 +41,7 @@
   year = {2024},
   month = {8},
   abstract = {We present an uncertainty-aware Digital Twin (DT) for geologic carbon storage (GCS), capable of handling multimodal time-lapse data and controlling CO2 injectivity to mitigate reservoir fracturing risks. In GCS, DT represents virtual replicas of subsurface systems that incorporate real-time data and advanced generative Artificial Intelligence (genAI) techniques, including neural posterior density estimation via simulation-based inference and sequential Bayesian inference. These methods enable the effective monitoring and control of CO2 storage projects, addressing challenges such as subsurface complexity, operational optimization, and risk mitigation. By integrating diverse monitoring data, e.g., geophysical well observations and imaged seismic, DT can bridge the gaps between seemingly distinct fields like geophysics and reservoir engineering. In addition, the recent advancements in genAI also facilitate DT with principled uncertainty quantification. Through recursive training and inference, DT utilizes simulated current state samples, e.g., CO2 saturation, paired with corresponding geophysical field observations to train its neural networks and enable posterior sampling upon receiving new field data. However, it lacks decision-making and control capabilities, which is necessary for full DT functionality. This study aims to demonstrate how DT can inform decision-making processes to prevent risks such as cap rock fracturing during CO2 storage operations.},
-  keywords = {GCS, digital twin, sequential Bayes, conditional normalizing flows, Bayesian inference, uncertainty quantification, deep learning, control},
+  keywords = {SEG, IMAGE, GCS, digital twin, sequential Bayes, conditional normalizing flows, Bayesian inference, uncertainty quantification, deep learning, control},
   url = {https://slimgroup.github.io/IMAGE2024/GahlotLi2024SEG/paper.html},
   doi = {10.48550/arXiv.2403.19819},
   booktitle = {International Meeting for Applied Geoscience and Energy}
@@ -65,7 +65,7 @@ within a Bayesian framework for optimal experimental design, ensuring scalabilit
 and mathematical optimality. We use a realistic case study to verify these claims
 by demonstrating our method's application in a large scale domains and optimal
 performance as compared to baseline well placement.},
-  keywords = {GCS, conditional normalizing flows, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, OED},
+  keywords = {SEG, IMAGE, GCS, conditional normalizing flows, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, OED},
   doi = {10.48550/arXiv.2404.00075},
   booktitle = {International Meeting for Applied Geoscience and Energy}
 }
@@ -76,7 +76,7 @@ performance as compared to baseline well placement.},
   year = {2024},
   month = {8},
   abstract = {We introduce a cost-effective Bayesian inference method for full-waveform inversion (FWI) to quantify uncertainty in migration-velocity models and its impact on imaging. Our method targets inverse uncertainty due to null-space of the wave modeling operators and observational noise, and forward uncertainty where the uncertainty in velocity models is propagated to uncertainty in amplitude and positioning of imaged reflectivities. This is achieved by integrating generative artificial intelligence (genAI) with physics-informed common-image gathers (CIGs), which greatly reduces reliance on accurate initial FWI-velocity models. In addition, we illustrate the capability of fine-tuning the generative AI networks with frugal physics-based refinements to improve the inference accuracy.},
-  keywords = {WISE, WISER, FWI, RTM, imaging, CIG, conditional normalizing flows, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics, MVA},
+  keywords = {SEG, IMAGE, WISE, WISER, FWI, RTM, imaging, CIG, conditional normalizing flows, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics, MVA},
   url = {https://slimgroup.github.io/IMAGE2024/yin2024SEG/paper.html},
   booktitle = {International Meeting for Applied Geoscience and Energy}
 }

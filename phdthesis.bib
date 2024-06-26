@@ -3,6 +3,23 @@
 
 %-----2020-----%
 
+@PHDTHESIS{yin2024THsgi,
+  author = {Ziyi Yin},
+  title = {Solving geophysical inverse problems with scientific machine learning},
+  school = {Georgia Institute of Technology},
+  year = {2024},
+  month = {06},
+  address = {Atlanta},
+  abstract = {Solving inverse problems involves estimating unknown parameters of interest from indirect measurements. Specifically, geophysical inverse problems seek to determine various Earth properties critical for geophysical exploration, carbon control, monitoring, and earthquake detection. These problems pose unique challenges: the parameters of interest are often high-dimensional, and the mapping from parameters to observables is computationally demanding. Moreover, these problems are typically non-convex and ill-posed, meaning that multiple sets of model parameters can adequately fit the observations, and inversion algorithms depend on accurate initial model parameters.
+
+This thesis introduces several innovative methods to tackle these challenges using scientific machine learning techniques. It discusses algorithms and software frameworks that utilize surrogate and generative models to achieve scalable and reliable inversion. It also examines the integration of conditional generative models with physics for Bayesian variational inference and uncertainty quantification. These methods have been applied to two critical inverse problems in geophysical applications: monitoring geological carbon storage and full-waveform inversion, both of which are plagued by the aforementioned computational challenges.
+
+The thesis consists of six papers. The first two papers present a scalable, interoperable, and differentiable programming framework for learned multiphysics inversion, showcased through realistic synthetic case studies in geological carbon storage monitoring. The third paper introduces a computationally efficient and reliable algorithm that employs surrogate models, particularly Fourier neural operators, to accelerate inversion. The reliability of this algorithm is ensured by using normalizing flows as learned constraints to safeguard the accuracy of the surrogate models throughout the inversion process. The subsequent paper explores a joint inversion approach and an explainable deep neural classifier for time-lapse seismic imaging and carbon dioxide leakage detection during geological carbon storage. The final two papers introduce amortized and semi-amortized variational inference approaches that employ information-preserving physics-informed summary statistics and refinements to provide computationally feasible and reliable uncertainty quantification in high-dimensional full-waveform inversion problems. They also assess the impact of the inherent uncertainty in these ill-posed inversion problems on subsequent imaging tasks.},
+  keywords = {PhD, inverse problems, generative models, Bayesian inference, time-lapse, JRM, ccs, gcs, end-to-end, Fourier neural operators, normalizing flows, conditional normalizing flows, variational inference, WISE, WISER, monitoring, FWI, RTM, CIG, uncertainty quantification, scientific machine learning},
+  note = {(PhD)},
+  presentation = {https://slim.gatech.edu/Publications/Public/Thesis/2024/yin2024THsgi/yin2024THsgi_pres.pdf}
+}
+
 @PHDTHESIS{zhang2023THlsw,
   author = {Yijun Zhang},
   title = {Large scale wavefield reconstruction via weighted matrix factorization and seismic survey design},

@@ -3,6 +3,16 @@
 
 %-----2024-----%
 
+@UNPUBLISHED{gahlot2024uads,
+  author = {Abhinav Prakash Gahlot and Rafael Orozco and Haoyun Li and Huseyin Tuna Erdinc and Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
+  title = {An uncertainty-aware Digital Shadow for underground multimodal CO2 storage monitoring},
+  year = {2024},
+  month = {10},
+  abstract = {As a society, we are faced with important challenges to combat climate change. Geological Carbon Storage (GCS), during which gigatonnes of super-critical CO2 are stored underground, is arguably the only scalable net-negative CO2-emission technology that is available. While promising, subsurface complexities and heterogeneity of reservoir properties demand a systematic approach to quantify uncertainty when optimizing production and mitigating storage risks, which include assurances of Containment and Conformance of injected supercritical CO2. As a first step towards the design and implementation of a Digital Twin for monitoring and control of underground storage operations, a machine-learning-based data-assimilation framework is introduced and validated on carefully designed realistic numerical simulations. Because our implementation is based on Bayesian inference, but does not yet support control and decision-making, we coin our approach an uncertainty-aware Digital Shadow. To characterize the posterior distribution for the state of CO2 plumes (its CO2 concentration and pressure), conditioned on multi-modal time-lapse data, the envisioned Shadow combines techniques from Simulation-Based Inference (SBI) and Ensemble Bayesian Filtering to establish probabilistic baselines and assimilate multi-modal data for GCS problems that are challenged by large degrees of freedom, nonlinear multiphysics, non-Gaussianity, and computationally expensive to evaluate fluid-flow and seismic simulations. To enable SBI for dynamic systems, a recursive scheme is proposed where the Digital Shadow’s neural networks are trained on simulated ensembles for their state and observed data (well and/or seismic). Once training is completed, the system’s state is inferred when time-lapse field data becomes available. Contrary to ensemble Kalman filtering, corrections to the predicted simulated states are not based on linear updates, but instead follow during the Analysis step of Bayesian filtering from a prior-to-posterior mapping through the latent space of a nonlinear transform. Starting from a probabilistic model for the permeability field, derived from a baseline surface-seismic survey, the proposed Digital Shadow is validated on unseen simulated ground-truth time-lapse data. In this computational study, we observe that a lack of knowledge on the permeability field can be factored into the Digital Shadow’s uncertainty quantification. Our results also indicate that the highest reconstruction quality is achieved when the state of the CO2 plume is conditioned on both time-lapse seismic data and wellbore measurements. Despite the incomplete knowledge of the permeability field, the proposed Digital Shadow was able to accurately track the unseen physical state of the subsurface throughout the duration of a realistic CO2 injection project. To the best of our knowledge, this work represents the first proof-of-concept of an uncertainty-aware, in-principle scalable, Digital Shadow that captures the uncertainty arising from unknown reservoir properties and noisy observations. This framework provides a foundation for the development of a Digital Twin aimed at mitigating risks and optimizing the management of underground storage projects.},
+  keywords = {GCS, digital twin, sequential Bayes, conditional normalizing flows, Bayesian inference, uncertainty quantification, deep learning, inverse problems, summary statistics},
+  url = {https://slim.gatech.edu/Publications/Public/Submitted/2024/gahlot2024/DT.html},
+}
+
 @UNPUBLISHED{orozco2024IPaspire,
   author = {Rafael Orozco and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
   title = {ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems},
@@ -50,13 +60,3 @@ efficient and high-fidelity method for posterior inference.},
 }
 
 %-----2023-----%
-
-@UNPUBLISHED{orozco2023invnet,
-  author = {Rafael Orozco and Philipp A. Witte and Mathias Louboutin and Ali Siahkoohi and Gabrio Rizzuti and Bas Peters and Felix J. Herrmann},
-  title = {InvertibleNetworks.jl: A Julia package for scalable normalizing flows},
-  year = {2023},
-  month = {12},
-  abstract = {InvertibleNetworks.jl is a Julia package designed for the scalable implementation of normalizing flows, a method for density estimation and sampling in high-dimensional distributions. This package excels in memory efficiency by leveraging the inherent invertibility of normalizing flows, which significantly reduces memory requirements during backpropagation compared to existing normalizing flow packages that rely on automatic differentiation frameworks. InvertibleNetworks.jl has been adapted for diverse applications, including seismic imaging, medical imaging, and CO2 monitoring, demonstrating its effectiveness in learning high-dimensional distributions.},
-  keywords = {normalizing flows, software, conditional normalizing flows, Bayesian inference, uncertainty quantification, deep learning, inverse problems, memory, HPC, computing},
-  doi = {10.48550/arXiv.2312.13480}
-}

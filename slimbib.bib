@@ -12522,6 +12522,160 @@ land velocity and density model.},
 
 %----- 2024 -----%
 
+@PRESENTATION{orozco2024ML4SEISMICmev,
+  author = {Rafael Orozco and Huseyin Tuna Erdinc and Thales Souza and Yunlin Zeng and Ziyi Yin and Felix J. Herrmann},
+  title = {Machine-learning enabled velocity-model building with uncertainty quantification},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {Accurately characterizing subsurface properties is crucial for a wide range of geophysical applications, from hydrocarbon exploration to monitoring of CO2 sequestration projects. Traditional characterization methods such as Full-Waveform Inversion (FWI) represent powerful tools but often struggle with the inherent complexities of the inverse problem, including noise, limited bandwidth and aperture of data, limited azimuth and computational constraints. To address these challenges, we propose a scalable methodology that integrates generative modeling with physics-informed summary statistics, making it suitable for complicated imaging problems potentially including field datasets. Our approach leverages the power of conditional diffusion networks, and methodologically incorporates physics in the form of summary statistics, allowing for the computationally efficient generation of Bayesian posterior samples that offer an useful assessment of uncertainty of the inferred migration-velocity models. To validate our approach, we introduce a battery of tests that measure the quality of the image estimates as well as the quality of the inferred uncertainties. With modern synthetic datasets, we maximally leverage the advantages of using subsurface-offset Common Image Gathers (CIGs) as the conditioning observable. Next, we tackle the challenging SEAM salt model that requires incorporating salt flooding into our approach based on the iterative refinements of ASPIRE — Amortized posteriors with Summaries that are Physics-based and Iteratively REfined.},
+  keywords = {ML4SEISMIC, SLIM, FWI, RTM, imaging, WISE, diffusion models, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/orozco2024ML4SEISMICmev}
+}
+
+@PRESENTATION{rex2024ML4SEISMICfca,
+  author = {Richard Rex and Rafael Orozco and Ziyi Yin and Felix J. Herrmann},
+  title = {FNO-charged ASPIRE},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {During this talk, we will demonstrate how extended re-migrations—i.e, formation of subsurface-offset Common-Image Gathers (CIGs) for a new velocity model, can be avoided altogether by training Fourier Neural Operators during training of ASPIRE — Amortized posteriors with Summaries that are Physics-based and Iteratively REfined. In this approach, FNOs are trained as surrogates capable of mapping CIGs for one migration-velocity model to the other. The approach is computationally feasible because it uses the same training set as used during ASPIRE. As a result, additional training costs are small and the inference costs are reduced by a factor equal to the number of ASPIRE refinements.},
+  keywords = {ML4SEISMIC, SLIM, two-phase flow, kronecker product, hierarchical tucker tensor, FNO, deep learning, inverse problems},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/rex2024ML4SEISMICfca}
+}
+
+@PRESENTATION{zeng2024ML4SEISMICefv,
+  author = {Yunlin Zeng and Ziyi Yin and Rafael Orozco and Mathias Louboutin and Felix J. Herrmann},
+  title = {Enhancing Full-Waveform Variational Inference through Stochastic Resampling},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {Recent developments in simulation-based inference, like the full-waveform variational inference via subsurface extensions (WISE), enable rapid online estimation of subsurface velocities by leveraging pre-trained models. To achieve this, WISE employs subsurface-offset common image gathers to convert shot data into physics-informed summary statistics. While common image gathers effectively retain critical information even when initial velocity estimates are inaccurate, WISE’s performance still depends on the assumption that the initial migration-velocity model is a single 1D velocity model. In this work, we present experiments using both 1D and 2D velocity models and develop a stochastic resampling method to generate variations of initial migration-velocity models. This technique allows us to systematically infer alternative velocity models that are consistent with the observed data, while enhancing the posterior sample quality and reducing dependency on the initial velocity model compared to the standard WISE approach.},
+  keywords = {FWI, RTM, imaging, WISE, CIG, conditional normalizing flows, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics, MVA},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/zeng2024ML4SEISMICefv},
+}
+
+@PRESENTATION{bhar2024ML4SEISMICshs,
+  author = {Ipsita Bhar and Abhinav Prakash Gahlot and Felix J. Herrmann},
+  title = {Sensitivity of Horizontal shear waves on Geological Carbon Storage},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {With the growing focus on Carbon Capture and Storage (CCS) activities, the significance of shear wave velocity (Vs) in monitoring CO2 is becoming increasingly important. Shear waves are instrumental in detecting CO2 leakage, evaluating CCS-induced seismicity, and identifying caprock failure. According to Biot-Gassmann rock physics models, changes in seismic velocity are expected during CO2 injection. This work specifically focuses on the horizontal component of shear wave velocity (Vsh). Shear (Sh) waves are more sensitive to density variations than P-wave or Sv wave velocities, leading us to anticipate changes in Sh velocity as CO2 saturation increases. While P-wave velocity tends to decrease with supercritical CO2 injection, the investigation of its effects on Sh waves presents a particularly compelling area of study. Therefore, we simulated the wave equation incorporating both P-wave and Sh wave velocities to better understand their impacts on imaging and CO2 injection processes.},
+  keywords = {ML4SEISMIC, SLIM, SH wave, FWI, RTM, imaging, inverse problems},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/bhar2024ML4SEISMICshs}
+}
+
+@PRESENTATION{li2024ML4SEISMICrps,
+  author = {Haoyun Li and Shiqin Zeng and Abhinav Prakash Gahlot and Felix J. Herrmann},
+  title = {Reconstructing Permeability and Saturation in Reservoir Simulation Using Diffusion PDE Models},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {This study explores the application of a diffusion partial differential equation (PDE) model for reservoir simulation, particularly aimed at reconstructing permeability and saturation fields within a saline aquifer. Focusing on pairs of input permeability and output saturation, the model is trained to capture the underlying dynamics governing fluid flow in porous media. Post-training, the model is capable of inferring or recovering the complete permeability and saturation distributions when provided with limited vertical pixel data of permeability and saturation. This approach offers a novel pathway for enhancing the resolution of subsurface characteristics, contributing to more accurate predictions in reservoir engineering and carbon storage simulations.},
+  keywords = {ML4SEISMIC, SLIM, two-phase flow, diffusion models, Bayesian inference, uncertainty quantification, deep learning, inverse problems, summary statistics, augmentation},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/li2024ML4SEISMICrps}
+}
+
+@PRESENTATION{zeng2024ML4SEISMICiic,
+  author = {Shiqin Zeng and Rafael Orozco and Huseyin Tuna Erdinc and Felix J. Herrmann},
+  title = {Enhancing Performance with Uncertainty Estimation in Geological Carbon Storage Leakage Detection from Time-Lapse Seismic Data},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {Seismic denoising is essential for enhancing the clarity, accuracy, and reliability of seismic data. Traditional seismic denoising methods, while effective for specific types of noise, often rely on well-established mathematical techniques that can be time-consuming, require manual tuning, and struggle with more complex noise patterns. Leveraging the 500 paired synthetic seismic datasets provided by the Think Onward community, we incorporate a 3D U-Net deep learning model with residual blocks and spatial attention to capture both local and global features for the seismic denoising task. During training, we apply the Laplacian operator to preserve edge details, followed by the Structural Similarity Index Measure (SSIM) loss to fine-tune the model, effectively removing concurrent noise and recovering the original seismic information. The resulting individual model achieves an SSIM of 0.99 compared to the ground truth seismic data. Additionally, we implement Langevin dynamics and Equivariant Bootstrapping techniques to estimate uncertainty during the training and inference phases, further improving the robustness of the denoising process.},
+  keywords = {ML4SEISMIC, SLIM, GCS, CCS, JRM, classification, CAM, explainability, imaging, uncertainty quantification, inverse problems},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/zeng2024ML4SEISMICiic}
+}
+
+@PRESENTATION{zeng2024ML4SEISMICepu,
+  author = {Shiqin Zeng and Huseyin Tuna Erdinc and Ziyi Yin and Abhinav Prakash Gahlot and Felix J. Herrmann},
+  title = {Enhancing Performance with Uncertainty Estimation in Geological Carbon Storage Leakage Detection from Time-Lapse Seismic Data},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {Ensuring CO~2~ non-leakage is a critical aspect of Geological Carbon Storage (GCS). While previous approaches that develop deep neural networks demonstrate promising automatic leakage detection and potential cost reduction in dataset collection from time-lapse seismic images, they face challenges, such as a limited ability to reduce false alarms in CO~2~ leakage instances and a lack of uncertainty analysis in detection results. This paper introduced a framework aimed at enhancing the deep neural network model's ability to detect GCS leakage risk through a multi-criteria decision-making (MCDM)-based ensemble algorithm. The proposed method can improve the detection ability of leakage cases while accurately distinguishing them from non-leakage instances. Furthermore, the proposed uncertainty analysis method utilizing Monte Carlo (MC) dropout technique efficiently identifies misclassified non-leakage cases and categorizes them as undetermined for further investigation. This comprehensive approach enhances both the reliability and performance of the model in detecting GCS leakage risks.},
+  keywords = {ML4SEISMIC, SLIM, GCS, CCS, JRM, classification, CAM, explainability, imaging, uncertainty quantification, inverse problems},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/zeng2024ML4SEISMICepu}
+}
+
+@PRESENTATION{bruer2024ML4SEISMICsmp,
+  author = {Grant Bruer and Abhinav Prakash Gahlot and Edmond Chow and Felix J. Herrmann},
+  title = {Seismic monitoring of CO2 plume dynamics using ensemble Kalman filtering},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {Monitoring CO~2~ injected and stored in subsurface reservoirs is critical for avoiding failure scenarios and enables real-time optimization of CO~2~ injection rates. Sequential Bayesian data assimilation (DA) is a statistical method for combining information over time from multiple sources to estimate a hidden state, such as the spread of the subsurface CO~2~ plume. An example of scalable and efficient sequential Bayesian DA is the ensemble Kalman filter (EnKF). We improve upon existing DA literature in the seismic-CO~2~ monitoring domain by applying this scalable DA algorithm to a high-dimensional CO~2~ reservoir using two-phase flow dynamics and time-lapse full waveform seismic data with a realistic surface-seismic survey design. We show more accurate estimates of the CO~2~ saturation field using the EnKF compared to using either the seismic data or the fluid physics alone. Furthermore, we test a range of values for the EnKF hyperparameters and give guidance on their selection for seismic CO~2~ reservoir monitoring.},
+  keywords = {ML4SEISMIC, SLIM, two-phase flow,  FWI, RTM, imaging, ensemble Kalman filter, data assimilation, Bayesian inference, uncertainty quantification, inverse problems},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/bruer2024ML4SEISMICsmp}
+}
+
+@PRESENTATION{park2024ML4SEISMICpbi,
+  author = {Jeongjin Park and Huseyin Tuna Erdinc and Haoyun Li and Richard Rex and Nisha Chandramoorthy and Felix J. Herrmann},
+  title = {Physical Bayesian Inference for Two-Phase Flow Problems},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {Previous research on surrogate modeling of multiphase flow systems has shown that even models with low generalization error in forward predictions can generate posterior estimates that are out of distribution and physically unrealistic. To address this, we propose a regularization method that leverages the Fisher Information Matrix (FIM) to guide the training process. By integrating the FIM into a differentiable optimization framework, we aim to improve the reliability of surrogate models, such as Fourier Neural Operators (FNO), for both forward predictions and posterior inference. Our experiments on benchmark problems, including the Lorenz-63 system and Navier-Stokes equations, demonstrate that our approach significantly enhances physical consistency throughout time evolution, keeping predictions within the correct spatial distribution. Looking ahead, we plan to extend our framework to more complex applications, such as Geological Carbon Storage, with an emphasis on scaling FIM computations for high-dimensional problems.},
+  keywords = {ML4SEISMIC, SLIM, two-phase flow, FNO, Fisher Information Matrix, Bayesian inference, uncertainty quantification, deep learning, inverse problems},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/park2024ML4SEISMICpbi}
+}
+
+@PRESENTATION{herrmann2024ML4SEISMICdtg,
+  author = {Abhinav Prakash Gahlot and Haoyun Li and Ziyi Yin and Rafael Orozco and Felix J. Herrmann},
+  title = {A Digital Twin for Geological Carbon Storage with Controlled Injectivity},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {We present an uncertainty-aware Digital Twin (DT) for geologic carbon storage (GCS), capable of handling multimodal time-lapse data and controlling CO~2~ injectivity to mitigate reservoir fracturing risks. In GCS, DT represents virtual replicas of subsurface systems that incorporate real-time data and advanced generative Artificial Intelligence (genAI) techniques, including neural posterior density estimation via simulation-based inference and sequential Bayesian inference. These methods enable the effective monitoring and control of CO~2~ storage projects, addressing challenges such as subsurface complexity, operational optimization, and risk mitigation. By integrating diverse monitoring data, e.g., geophysical well observations and imaged seismic, DT can bridge the gaps between seemingly distinct fields like geophysics and reservoir engineering. In addition, the recent advancements in genAI also facilitate DT with principled uncertainty quantification. Through recursive training and inference, DT utilizes simulated current state samples, e.g., CO~2~ saturation, paired with corresponding geophysical field observations to train its neural networks and enable posterior sampling upon receiving new field data. However, it lacks decision-making and control capabilities, which is necessary for full DT functionality. This study aims to demonstrate how DT can inform decision-making processes to prevent risks such as cap rock fracturing during CO~2~ storage operations.},
+  keywords = {ML4SEISMIC, SLIM, FWI, RTM, imaging, conditional normalizing flows, rock physics, data assimilation, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics, augmentation},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/herrmann2024ML4SEISMICdtg}
+}
+
+@PRESENTATION{rex2024ML4SEISMIChtc,
+  author = {Richard Rex and Srikanth Avasarala and Thomas Grady and Felix J. Herrmann},
+  title = {Tucker Compression for Scalable Operator Learning in Large-Scale Parametric PDE Models},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {Simulating two-phase flow via PDEs is computationally expensive due to the inversion of large, ill-conditioned matrices. To accelerate these computations, we reformulate Hierarchical Tucker Tensor (HTT) decompositions into Kronecker products, enabling scalable Fourier Neural Operators (FNOs) for CO2 saturation predictions in subsurface environments. This reformulation allows efficient scaling across multiple GPUs while maintaining a large number of modes. Building on our existing matrix-free abstraction library, we extend its capabilities to support distributed tensor operators. The extended library is auto-differentiable, with customized AD rules for training complex networks. We demonstrate the performance and scalability of our approach by evaluating FNO simulations against traditional PDE solvers for predicting time-varying CO2 saturations from permeability models in large-scale subsurface environments.},
+  keywords = {ML4SEISMIC, SLIM, two-phase flow, kronecker product, hierarchical tucker tensor, FNO, deep learning, inverse problems},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/rex2024ML4SEISMIChtc}
+}
+
+@PRESENTATION{deng2024ML4SEISMICpjr,
+  author = {Zijun Deng and Rafael Orozco and Abhinav Prakash Gahlot and Felix J. Herrmann},
+  title = {Probabilistic Joint Recovery Method for CO2 plume monitoring},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {Accurately predicting fluid flow patterns in Carbon Capture and Storage (CCS) is a challenging task, particularly due to uncertainties in CO~2~ plume dynamics and reservoir properties. While previous deterministic methods such as the Joint Recovery Method (JRM) have provided valuable insights, their effectiveness is limited as tools for decision-making since they do not communicate uncertainty. To address this, we propose a Probabilistic Joint Recovery Method (PJRM) that computes the posterior distribution at each monitoring survey while leveraging the shared structure among surveys through a common generative model. By efficiently computing posterior distributions for each monitoring survey, this method aims to provide valuable uncertainty information to decision-makers in CCS projects, augmenting their workflow with principled risk minimization.},
+  keywords = {ML4SEISMIC, SLIM, FWI, imaging, conditional normalizing flows, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/deng2024ML4SEISMICpjr}
+}
+
+@PRESENTATION{gahlot2024ML4SEISMICosm,
+  author = {Abhinav Prakash Gahlot and Felix J. Herrmann},
+  title = {Optimizing CO2 Storage Monitoring with Enhanced Rock Physics Modeling},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {Based on the latest data-assimilation and machine-learning techniques, Digital Twins (DTs) have shown promise for high-fidelity monitoring and control of underground CO2​ storage. While the use of these techniques have important advantages, they do rely on certain assumptions. If these assumptions are not met, the DT’s neural networks may no longer infer the state of the CO2 plume (pressure/saturation) accurately. By augmenting the forecast ensemble, we address this issue.},
+  keywords = {ML4SEISMIC, SLIM, FWI, RTM, imaging, conditional normalizing flows, rock physics, data assimilation, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics, augmentation},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/gahlot2024ML4SEISMICosm}
+}
+
+@PRESENTATION{erdinc2024ML4SEISMICsfm,
+  author = {Huseyin Tuna Erdinc and Rafael Orozco and Felix J. Herrmann},
+  title = {SAGE -- Subsurface foundational model with AI-driven Geostatical Extraction},
+  booktitle = {ML4SEISMIC Partners Meeting},
+  year = {2024},
+  month = {11},
+  abstract = {In this study, we present a novel approach for synthesizing diverse subsurface velocity models using diffusion-based generative models. Traditional methods often depend on large, high-quality datasets of 2D velocity models, which can be difficult to obtain in subsurface applications. In contrast, our method leverages incomplete well and seismic data to generate high-fidelity velocity samples without requiring fully sampled training datasets.The results demonstrate that the generative model accurately captures long-range geological structures and aligns well with unseen ground-truth velocity models. Furthermore, it is shown that the diversity of generated velocity models can be increased through prior guidance in the training phase, and model uncertainties can be reduced with well conditioning during inference.Experiments conducted with multiple datasets (BG, Synthoseis, and North Sea data) and velocity models featuring various geological structures (e.g., faults, salt bodies) suggest that our approach facilitates realistic subsurface velocity synthesis, providing valuable inputs for full-waveform inversion and enhancing seismic-based subsurface modeling.},
+  keywords = {ML4SEISMIC, SLIM, FWI, RTM, imaging, WISE, diffusion models, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/erdinc2024ML4SEISMICsfm}
+}
+
 @PRESENTATION{orozco2024ICLnwi,
   author = {Rafael Orozco and Ziyi Yin and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann},
   title = {Neural wave-based imaging with amortized uncertainty quantification},
@@ -12539,9 +12693,10 @@ land velocity and density model.},
   year = {2024},
   month = {6},
   abstract = {Our industry is experiencing significant changes due to AI and the challenges of the energy transition. While some view these changes as threats, recent advances in AI offer unique opportunities, especially in the context of Digital Twins for subsurface monitoring and control. IBM defines "A digital twin is a virtual representation of an object or system that spans its lifecycle, is updated from real-time data, and uses simulation, machine learning and reasoning to help decision-making." During this talk, I will explore these concepts and their significance in addressing the challenges of monitoring & control of geological CO2 storage projects. This talk also aims to illustrate how Digital Twins can serve as a platform to integrate the seemingly disparate and siloed fields of geophysics and reservoir engineering.},
-  keywords = {GCS, digital twin, control, WISE, FWI, RTM, imaging, CIG, conditional normalizing flows, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics, MVA},
+  keywords = {GCS, digital twin, control, WISE, FWI, RTM, imaging, CIG, conditional normalizing flows, data assimilation, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics, MVA},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/ICL/2024/gahlot2024ICLdtg},
 }
+
 @PRESENTATION{herrmann2024dt4gcs,
   author = {Abhinav Prakash Gahlot and Rafael Orozco and Haoyun Li and Huseyin Tuna Erdinc and Ziyi Yin and Mathias Louboutin and Felix J. Herrmann},
   title = {Digital Twins in the Era of Generative AI: Application to Geological CO2 Storage},
@@ -12561,7 +12716,7 @@ land velocity and density model.},
   year = {2024},
   month = {1},
   abstract = {We introduce a probabilistic technique for full-waveform inversion, employing variational inference and conditional normalizing flows to quantify uncertainty in migration-velocity models and its impact on imaging. Our approach integrates generative artificial intelligence with physics-informed common-image gathers, reducing reliance on accurate initial velocity models. Considered case studies demonstrate its efficacy producing realizations of migration-velocity models conditioned by the data. These models are used to quantify amplitude and positioning effects during subsequent imaging.},
-  keywords = {GT, SLIM, normalizing flows, variational inference, FWI, conditional normalizing flows, uncertain quantification, machine learning, deep learning, summary statistics, inversion, amortized Bayes, generative AI},
+  keywords = {GT, SLIM, normalizing flows, variational inference, FWI, conditional normalizing flows, uncertainty quantification, machine learning, deep learning, summary statistics, inversion, amortized Bayes, generative AI},
   url = {https://slim.gatech.edu/Publications/Public/Lectures/GTseminar/2024/yin2024GTwise}
 }
 

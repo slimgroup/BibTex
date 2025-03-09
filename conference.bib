@@ -3,15 +3,79 @@
 
 %-----2025-----%
 
-@CONFERENCE{gahlot2024IMAGEocs,
+@CONFERENCE{orozco2025SIAMisu,
+  author = {Rafael Orozco and Huseyin Tuna Erdinc and Mathias Louboutin and Felix J. Herrmann},
+  title = {Industry-Scale Uncertainty-Aware Full Waveform Inference with Generative Models},
+  booktitle = {SIAM Conference on Computational Science and Engineering (CSE25)},
+  year = {2025},
+  month = {03},
+  abstract = {In this talk, we address the challenge of Bayesian sampling for ill-posed inverse 
+  problems involving expensive PDE forward operators. To tackle this, we propose the use of 
+  generative models and discuss three key challenges along with our solutions. First, we address 
+  the constraints of GPU memory by introducing patch-based training and memory-efficient invertible 
+  networks, enabling the handling of large-scale data. Second, we demonstrate that these models can 
+  be effectively trained using only prior data available from acoustic observations and borehole well 
+  data, making the approach practical for real-world applications. Third, we explore various strategies 
+  to enhance the reliability of posterior samples by incorporating physics-based constraints through 
+  the wave operator. We conclude by presenting experiments that showcase the capabilities of these 
+  methods in field-data Full Waveform Inversion (FWI) workflows, scaling up to industry-scale problems 
+  with large 2D (512x7000 degrees of freedom) and 3D models.},
+  keywords = {SIAM, normalizing flows, FWI, generative models, Bayesian sampling, inverse problems},
+  note = {(SIAM CSE25, Dallas)},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SIAMCSE/2025/orozco2025SIAMisu},
+  url2 = {},
+}
+
+@CONFERENCE{herrmann2025SIAMrdt,
+  author = {Felix J. Herrmann and Abhinav Prakash Gahlot and Rafael Orozco and Ziyi Yin and Grant Bruer},
+  title = {Robust Digital Twin for Geological Carbon Storage },
+  booktitle = {SIAM Conference on Computational Science and Engineering (CSE25)},
+  year = {2025},
+  month = {03},
+  abstract = {While recent work has shown that conditional neural networks 
+  can be used to effectuate prior-to-posterior mappings during ensemble Kalman 
+  filtering, their accuracy relies on the quality of the training ensemble, consisting 
+  of the simulated time-advanced nonlinear state and possibly nonlinear observations. Its 
+  precision also depends on the generative neural networks' ability to generalize.
+
+  In this work, we will report progress on how to make our Digital Twin more robust 
+  with respect to distribution shifts and modeling errors, e.g. due to erroneous choices 
+  for the physics within the Forecast Step. To this end, we will follow a two-pronged approach 
+  consisting of augmenting the Forecast step, e.g. by including different models for the rock 
+  physics that map the Digital Twin's state to seismic properties, and by adding more physics 
+  during the prior-to-posterior mapping. In its current implementation, training of our Digital 
+  Twin's neural networks relies on relative low-fidelity amortization of the Forecast Ensemble, 
+  which is susceptible to distribution shifts. By conducting non-amortized inference informed by 
+  the physics and low-fidelity prior-to-posterior mapping, we propose an approach that is more 
+  robust than the current implementation of the Digital Twin.},
+  keywords = {SIAM, CSE25, rock physics, digital twin, sequential Bayes, conditional normalizing flows, Bayesian inference, uncertainty quantification},
+  note = {(SIAM CSE25, Dallas)},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SIAMCSE/2025/herrmann2025SIAMrdt},
+  url2 = {},
+}
+
+@CONFERENCE{herrmann2025HPCuam,
+  author = {Felix J. Herrmann},
+  title = {Uncertainty-aware machine-learning enabled velocity-model building with Devito},
+  booktitle = {18th Annual Energy High Performance Computing Conference 2025, RICE},
+  year = {2025},
+  month = {02},
+  pages = {4th Annual Devito User and Developer Workshop},
+  abstract = {},
+  keywords = {RICE, HPC, Software, inversion, FWI, HPC, Devito, JUDI, Machine Learning, Uncertainty Quantification, velocity model},
+  note = {18th Annual High Performance Computing Conference 2025},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/RHPC/2025/herrmann2025HPCuam},
+  url2 = {}
+}
+
+@CONFERENCE{gahlot2025CCUSocs,
   author = {Abhinav Prakash Gahlot and Haoyun Li and Felix J. Herrmann},
   title = {Optimizing CO2 Storage Monitoring with Enhanced Rock Physics Modeling and Optimal Pressure Control},
   year = {2025},
   month = {3},
   abstract = {Based on the latest data-assimilation and machine-learning techniques, Digital Twins (DTs) have shown promise for high-fidelity monitoring and control of underground CO2​ storage. While the use of these techniques have important advantages, they do rely on certain assumptions. If these assumptions are not met, the DT’s neural networks may no longer infer the state of the CO2 plume (pressure/saturation) accurately. By augmenting the forecast ensemble, we address this issue.},
   keywords = {SEG, CCUS, GCS, rock physics, digital twin, sequential Bayes, conditional normalizing flows, Bayesian inference, uncertainty quantification, deep learning, control},
-  url = {},
-  doi = {},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/CCUS/2025/gahlot2025CCUSocs},
   booktitle = {CCUS 2025 - Carbon Capture, Utilization, and Storage Conference}
 }
 

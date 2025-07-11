@@ -7,7 +7,13 @@
   title = {Context- and uncertainty-aware Digital Twins for Integrated Reservoir Management},
   year = {2025},
   month = {7},
-  abstract = {},
+  abstract = {We present a new framework for Digital Twins (DTs) that supports uncertainty-aware monitoring, optimization, and risk management of underground storage operations, with a particular focus on Geological Carbon Storage (GCS) and Enhanced Oil Recovery (EOR). The proposed DT addresses key challenges in reservoir characterization, surveillance, and management by integrating generative AI methods with simulation-based inference, enabling scalable, probabilistic decision support under uncertainty.
+
+Our approach combines sensitivity-aware amortized Bayesian inference (SA-ABI) with ensemble-based data assimilation to efficiently incorporate multimodal time-lapse observations, such as seismic and well data, into dynamic reservoir models. By embedding context-awareness into neural networks, we account for variability in rock-physics relationships linking pressure, saturation, and seismic responses, and quantify uncertainties arising from model misspecifications---e.g. usage of patchy versus uniform saturation models. Computational efficiency is maintained through weight sharing across the network trained on different rock-physics scenarios, enabling rapid evaluation of the impact changing the underlying rock-physics model.
+
+The DT is built on industry-strength open-source software: `JutulDarcy.jl` for fully coupled multiphase flow simulations and `JUDI.jl`, a seismic inversion package leveraging the `Devito` finite-difference framework. This computational foundation allows scalable integration of physics-based simulations and data assimilation across large reservoir models, while retaining flexibility to adapt to varying physical contexts such as the inclusion of pressure-dependence of the compressional wavespeed. 
+
+The resulting DT not only delivers posterior distributions for the reservoir's state (pressure/saturation) conditioned on available observations but also enables rapid “what-if” scenario analysis by drawing posterior samples across a range of physical contexts without retraining. This capability supports proactive storage management, optimization of injection operations, and improved assurance of storage conformance.},
   keywords = {SEG, SPE, GCS, digital twin, WISE, RTM, imaging, rock physics, permeability, reservoir simulation, conditional normalizing flows, data assimilation, experimental design, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics},
   url = {https://slim.gatech.edu/Publications/Public/Conferences/SEGSPE/2025/herrmann2025SEGSPEcua},
   url2 = {},

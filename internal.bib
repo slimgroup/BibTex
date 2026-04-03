@@ -21531,6 +21531,130 @@ algorithm.},
 % This file was created with JabRef 2.9.
 % Encoding: MacRoman
 
+%-----2026-----%
+
+@UNPUBLISHED{bhar2026IMAGEolr,
+  author = {Ipsita Bhar and Huseyin Tuna Erdinc and Thales Souza and Charles Jones and Felix J. Herrmann},
+  title = {OpenSeisML: Open Large-Scale Real Seismic and well-log Dataset for Generative AI},
+  year = {2026},
+  month = {3},
+  abstract = {The advent of machine learning (ML) and computer vision has significantly accelerated seismic inversion workflows by reducing the computational cost of traditionally expensive iterative methods. However, the development and evaluation of ML methods remains limited by the scarcity of realistic velocity models, as most high-quality data are privately owned by oil and gas companies. To address this gap, we present *OpenSeisML*, a collection of real seismic datasets designed to support generative AI (Gen-AI) workflows for seismic inversion. The datasets are curated from publicly available surveys in the UK National Data Repository (NDR). When seismic volumes are in the time domain and wells are in depth, a time-to-depth conversion is required. We use checkshot data to establish the time–depth relationship and construct a velocity model through interpolation for accurate conversion of post-stack seismic data. Here, we present an automated data curation pipeline that enables seismic data preparation while ensuring reproducibility. The objective is to train a generative model that captures the statistical distribution of subsurface properties, enabling the synthesis of multiple statistically consistent realizations for uncertainty quantification which can act as a prior for seismic inversion.
+},
+  keywords = {SEG, IMAGE, WISE, imaging, generative model, deep learning, inverse problems, real seismic data, well logs, time-to-depth conversion},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/bhar2026IMAGEolr/abstract.html},
+  url2 = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/2026IMAGEolr/IMAGE_Ipsita.pdf},
+  presentation = {},
+  booktitle = {International Meeting for Applied Geoscience and Energy},
+  doi = {},
+}
+
+@UNPUBLISHED{erdinc2026IMAGEsai,
+  author = {Huseyin Tuna Erdinc and Ipsita Bhar and Rafael Orozco and Thales Souza and Felix J. Herrmann},
+  title = {SAGE: Subsurface AI-driven Geostatistical Extraction with proxy posterior},
+  year = {2026},
+  month = {3},
+  abstract = {Recent advances in generative networks have enabled new approaches to subsurface velocity model synthesis, offering a compelling alternative to traditional methods such as Full Waveform Inversion. However, these approaches predominantly rely on the availability of large-scale datasets of high-quality, geologically realistic subsurface velocity models, which are often difficult to obtain in practice. We introduce SAGE, a novel framework for statistically consistent proxy velocity generation from incomplete observations, specifically sparse well logs and migrated seismic images. During training, SAGE learns a proxy posterior over velocity models conditioned on both modalities (wells and seismic); at inference, it produces full-resolution velocity fields conditioned solely on migrated images, with well information implicitly encoded in the learned distribution. This enables the generation of geologically plausible and statistically accurate velocity realizations. We validate SAGE on both synthetic and field datasets, demonstrating its ability to capture complex subsurface variability under limited observational constraints. Furthermore, samples drawn from the learned proxy distribution can be leveraged to train downstream networks, supporting inversion workflows. Overall, SAGE provides a scalable and data-efficient pathway toward learning geological proxy posterior for seismic imaging and inversion. Repo link: https://github.com/slimgroup/SAGE."
+},
+  keywords = {SEG, IMAGE, WISE, RTM, imaging, uncertainty quantification, Bayesian inference, SAGE, score, generative model, deep learning, inverse problems, summary statistics},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/erdinc2026IMAGEsai/abstract.html},
+  url2 = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/erdinc2026IMAGEsai/IMAGE_Tuna.pdf},
+  presentation = {},
+  booktitle = {International Meeting for Applied Geoscience and Energy},
+  doi = {},
+}
+
+@UNPUBLISHED{park2026IMAGEnoa,
+  author = {Jeongjin Park and Huseyin Tuna Erdinc and Grant Bruer and Richard Rex and Nisha Chandramoorthy and Felix J. Herrmann},
+  title = {Neural Operators with Accurate Jacobian for High-Fidelity Image-Domain Seismic Inversion},
+  year = {2026},
+  month = {3},
+  abstract = {Neural operators (NOs) provide efficient surrogates for wave-equation-based imaging operators, but accurate forward prediction alone does not guarantee reliable inversion. As inversion updates depend on the adjoint Jacobian, errors in learned sensitivities lead to unphysical updates and degraded quality in recovered models. To this end, we propose a Jacobian-informed training strategy that enforces accuracy in Jacobian in the directions where gradient descent occurs during Least-Squares. Numerical experiments with Fourier Neural Operators demonstrate that supervising only a small fraction ($0.1 \sim 0.01\%$) of Jacobian information significantly improves gradient quality and leads to more accurate subsurface velocity reconstruction. In particular, the proposed approach reduces mid to deep layer artifacts and improves structural continuity compared to models trained only with forward misfit term. These results highlight that learning inversion-relevant sensitivities, rather than forward mappings alone, is critical for reliable surrogate-assisted seismic inversion.
+},
+  keywords = {SEG, IMAGE, FNO, RTM, imaging, derivative-informed, reduced-order modeling, Fisher-information, uncertainty quantification, deep learning, inverse problems},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/park2026IMAGEnoa/abstract.html},
+  url2 = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/park2026IMAGEnoa/IMAGE_Jayjay.pdf},
+  presentation = {},
+  booktitle = {International Meeting for Applied Geoscience and Energy},
+  doi = {},
+}
+
+@UNPUBLISHED{li2026IMAGEsca,
+  author = {Haoyun Li and Abhinav Prakash Gahlot and Felix J. Herrmann},
+  title = {JUDIAgent: a scientific coding agent for JUDI workflows in wave-equation imaging},
+  year = {2026},
+  month = {3},
+  abstract = {We present JUDIAgent, a scientific coding assistant for JUDI.jl, an open-source Julia framework for wave-equation-based seismic modeling, imaging, and inversion. In seismic experimentation, the practical difficulty is not only writing executable code, but assembling a complete seismic workflow with the required physical model, acquisition geometry, modeling or migration operator, and saved outputs needed for inspection.
+
+  JUDIAgent addresses this problem by retrieving JUDI examples, generating Julia code, running the code in the target environment, and checking whether the generated script contains the requested workflow pieces and outputs, such as acquisition geometry and saved figures. We demonstrate the system with validated 2D forward-modeling and reverse-time migration (RTM) examples. These case studies show that, for JUDI-based seismic scripts, domain-aware validation can turn a lightweight user request into a more complete experimental workflow by detecting missing workflow steps that are not captured by runtime correctness alone and by making the resulting scripts easier to inspect and revise.
+  },
+  keywords = {SEG, IMAGE, FWI, RTM, imaging, Agentic AI, JUDI, Devito, scientific coding agent},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/li2026IMAGEsca/abstract.html},
+  url2 = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/li2026IMAGEsca/IMAGE_Haoyun.pdf},
+  presentation = {},
+  booktitle = {International Meeting for Applied Geoscience and Energy},
+  doi = {},
+}
+
+@UNPUBLISHED{zeng2026IMAGEssn,
+  author = {Shiqin Zeng and Yunlin Zeng and Abhinav Prakash Gahlot and Zijun Deng and Felix J. Herrmann},
+  title = {Self-attention summary networks for subsurface velocity-model building from common-image gathers},
+  year = {2026},
+  month = {3},
+  abstract = {Common-image gathers (CIGs) contain physically meaningful information about velocity-model errors through reflector focusing and residual moveout, but in conventional imaging workflows they are typically used only as diagnostic tools. In this work, we propose a multiscale self-attention summary network that maps high-dimensional 3D CIG volumes into compact conditioning embeddings for probabilistic subsurface velocity inversion. These learned embeddings preserve offset-dependent kinematic structure and spatial coherence while reducing variability caused by background-velocity mismatch. Conditioned on these summary embeddings, a flow-matching model learns a transport from a Gaussian source distribution to the posterior distribution of plausible velocity fields. Numerical experiments show that, compared with direct conditioning on raw CIGs, the proposed summary network improves posterior velocity inference. In particular, the multiscale attention design provides greater robustness to background-model mismatch, yielding more accurate posterior reconstructions and lower predictive uncertainty.
+  },
+  keywords = {SEG, IMAGE, WISE, FWI, RTM, imaging, CIG, Bayesian inference, diffusion models, uncertainty quantification, uncertainty calibration, attention, deep learning, inverse problems, learned summary statistics, velocity model building},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/zeng2026IMAGEssn/abstract.html},
+  url2 = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/zeng2026IMAGEssn/IMAGE_Shiqin.pdf},
+  presentation = {},
+  booktitle = {International Meeting for Applied Geoscience and Energy},
+  doi = {},
+}
+
+@UNPUBLISHED{zeng2026IMAGEbjv,
+  author = {Yunlin Zeng and Huseyin Tuna Erdinc and Felix J. Herrmann},
+  title = {Bayesian Joint Velocity and Impedance Inversion via Diffusion Models Conditioned on Common Image Gathers},
+  year = {2026},
+  month = {3},
+  abstract = {We present a multi-parameter simulation-based inference framework for joint Bayesian recovery of subsurface velocity and acoustic impedance from seismic data. A score-based diffusion model is conditioned on two complementary Common Image Gathers (CIGs): an inverse-scattering CIG encoding reflectivity amplitude and an anti-ISIC CIG encoding kinematic velocity errors. The model simultaneously samples the posterior distributions of both parameters. Training labels are deliberately decoupled to prevent the model from exploiting the Gardner relationship: velocity targets are lightly smoothed to match the long-wavelength content of the anti-ISIC CIG, while impedance targets retain the unsmoothed ground truth. On the Compass benchmark the model achieves velocity SSIM of 0.967 (RMSE 0.050 km/s) and impedance SSIM 0.867 (RMSE 0.279 km/s·g/cm³), with velocity quality confirmed by CIG focusing.
+  },
+  keywords = {SEG, IMAGE, WISE, FWI, RTM, imaging, CIG, Bayesian inference, diffusion models, uncertainty quantification, deep learning, inverse problems, summary statistics, MVA},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/zeng2026IMAGEbjv/abstract.html},
+  url2 = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/zeng2026IMAGEbjv/IMAGE_Yunlin.pdf},
+  presentation = {},
+  booktitle = {International Meeting for Applied Geoscience and Energy},
+  doi = {},
+}
+
+@UNPUBLISHED{gahlot2026IMAGEirs,
+  author = {Abhinav Prakash Gahlot and Felix J. Herrmann},
+  title = {Improving reservoir state prediction in digital shadows using Radon-transformed subsurface common-offset gathers},
+  year = {2026},
+  month = {3},
+  abstract = {Digital shadows for subsurface monitoring use simulation-based inference to map seismic and well-log observations to evolving reservoir states such as CO~2~ saturation and pressure. When the simulation forward models rely on simplified or misspecified rock physics, predictions become biased and uncertainty quantification degrades. We address this by combining rock-physics-aware amortized Bayesian inference with inference in the Radon domain of common-image gathers (CIGs). Angle-dependent information from Radon-transformed subsurface offset gathers improves separation of fluid and stress effects: fluids exhibit distinct amplitude-variation-with-angle (AVA) signatures, so conditioning the digital shadow on angle gathers yields more accurate and physically consistent joint estimates of saturation and pressure than conditioning on migrated stacks or offset-domain gathers. We train a context-aware amortized posterior estimator that conditions on seismic data and rock-physics context, enabling robustness to model misspecification and structured what-if analysis at inference time without retraining. On a synthetic 2D geological carbon storage scenario, conditioning on Radon-transformed CIGs improves joint saturation and pressure prediction relative to reverse-time migrated images, while context conditioning preserves interpretability and calibration under rock physics uncertainty.
+  },
+  keywords = {SEG, IMAGE, GCS, digital twin, WISE, RTM, imaging, rock physics, permeability, reservoir simulation, conditional normalizing flows, data assimilation, experimental design, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, summary statistics},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/gahlot2026IMAGEirs/abstract.html},
+  url2 = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/gahlot2026IMAGEirs/IMAGE_Abhinav.pdf},
+  presentation = {},
+  booktitle = {International Meeting for Applied Geoscience and Energy},
+  doi = {},
+}
+
+@UNPUBLISHED{deng2026IMAGEbag,
+  author = {Zijun Deng and Abhinav Prakash Gahlot and Shiqin Zeng and Felix J. Herrmann},
+  title = {Bridging the Acoustic-Elastic Gap in Seismic Inversion via Robust Summary Statistics},
+  year = {2026},
+  month = {3},
+  abstract = {Simulation-based seismic inversion provides a principled framework for uncertainty quantification, but its performance degrades when the physics used in simulation differ from those of observed data. {==In practice, seismic inversion is often misspecified because the true physics are only partially known or too costly to model at scale, making field observations out of distribution relative to the simulations used for training; here, we study this issue through the acoustic-elastic gap.==}{>> (SOLVED) I do not think that is the main reason. I would say that we just lack full knowledge or do not have the computational resources to fully model. In either case, field data is often OOD. The proceed by saying that we take acoustic/elastic as an example which has the additional benefit of being potentially cheaper.<<} We introduce ElasNet, a misspecification-robust probabilistic inversion framework that bridges acoustic simulations and elastic observations through physics-informed summary statistics. We use acoustically imaged common-image gathers (CIGs) {++ (SOLVED)You need to say that these CIGs are imaged acoustically++} as structured summaries of seismic data, compress them with an attention-based summary network, and use maximum mean discrepancy (MMD) to align acoustic and elastic feature distributions during training while learning a conditional normalizing flow for posterior estimation with only acoustic data. Experiments on 2D Compass models show that the proposed approach reduces acoustic-elastic discrepancies in inferred velocity models and improves structural consistency and uncertainty calibration {++(SOLVED; Venice: We are using elastic data during the training by MMD, since MMD loss is added to the total loss) You need to make it more clear that you are training on acoustic and inferring on elastic data. That needs to be abundantly clea++}. These results demonstrate that robust summary statistics and distribution matching provide a scalable pathway for simulation-based seismic inversion under realistic physics mismatch.
+},
+  keywords = {SEG, IMAGE, FWI, imaging, Bayesian inference, amortized variational inference, uncertainty quantification, deep learning, inverse problems, mmd, summary statistics},
+  url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/deng2026IMAGEbag/abstract.html},
+  url2 = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/deng2026IMAGEbag/IMAGE_Venice.pdf},
+  presentation = {},
+  booktitle = {International Meeting for Applied Geoscience and Energy},
+  doi = {},
+}
+
 %-----2025-----%
 
 @UNPUBLISHED{deng2025EAGEpjrm,
